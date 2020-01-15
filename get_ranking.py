@@ -2,13 +2,16 @@ import braacket
 import pprint
 import json
 
-bracket = braacket.Braacket('liga_ultra_arcade_s1')
+ligas = [
+	'teamdashsp',
+	'liga_ultra_arcade_s1'
+]
 
-ranking = bracket.get_ranking()
+for liga in ligas:
 
-pp = pprint.PrettyPrinter()
+	bracket = braacket.Braacket(liga)
 
-pp.pprint(ranking)
+	ranking = bracket.get_ranking()
 
-with open('ranking.json', 'w') as outfile:
-  json.dump(ranking, outfile)
+	with open('out/'+liga+'.json', 'w') as outfile:
+	  json.dump(ranking, outfile)
