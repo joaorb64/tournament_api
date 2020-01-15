@@ -2,12 +2,10 @@ import braacket
 import pprint
 import json
 
-ligas = [
-	'teamdashsp',
-	'liga_ultra_arcade_s1'
-]
+f = open('leagues.json')
+json_obj = json.load(f)
 
-for liga in ligas:
+for liga in json_obj['leagues']:
 
 	bracket = braacket.Braacket(liga)
 
