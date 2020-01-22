@@ -34,6 +34,8 @@ for liga in json_obj.keys():
 		name = text_to_id(ranking[player]['name'])
 		if not os.path.exists("player_data/"+name):
 			os.makedirs("player_data/"+name)
+			with open("player_data/"+name+"/data.json", 'w') as outfile:
+				json.dump({}, outfile)
 		else:
 			if os.path.exists("player_data/"+name+"/data.json"):
 				player_extra_file = open("player_data/"+name+"/data.json")
