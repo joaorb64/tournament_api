@@ -168,5 +168,5 @@ for player in players:
 			
 	players[player]["score"] = sum(scores)
 
-with open('out/brpth.json', 'w') as outfile:
+with open('out/prpth.json', 'w') as outfile:
 	json.dump(players, outfile)
