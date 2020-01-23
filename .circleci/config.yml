@@ -32,7 +32,7 @@ workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "0 */12 * * *"
+          cron: "0 0,12 * * *"
           filters:
             branches:
               only:
