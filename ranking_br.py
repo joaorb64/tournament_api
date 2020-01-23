@@ -102,6 +102,8 @@ tournaments = bracket.get_tournaments()
 for tournament in tournaments:
 	if tournament in json_obj:
 		continue
+	if tournament == "prbth":
+		continue
 	tournaments[tournament]["ranking"] = bracket.get_tournament_ranking(tournament)
 	tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
 
