@@ -28,21 +28,24 @@ for liga in json_obj.keys():
 		}
 		json.dump(league, outfile)
 
-	ranking = bracket.get_ranking()
+	try:
+		ranking = bracket.get_ranking()
 
-	for player in ranking.keys():
-		name = text_to_id(ranking[player]['name'])
-		if not os.path.exists("player_data/"+name):
-			os.makedirs("player_data/"+name)
-			with open("player_data/"+name+"/data.json", 'w') as outfile:
-				json.dump({}, outfile)
-		else:
-			if os.path.exists("player_data/"+name+"/data.json"):
-				player_extra_file = open("player_data/"+name+"/data.json")
-				player_extra_json = json.load(player_extra_file)
-				ranking[player].update(player_extra_json)
-			if os.path.exists("player_data/"+name+"/avatar.png"):
-				ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
+		for player in ranking.keys():
+			name = text_to_id(ranking[player]['name'])
+			if not os.path.exists("player_data/"+name):
+				os.makedirs("player_data/"+name)
+				with open("player_data/"+name+"/data.json", 'w') as outfile:
+					json.dump({}, outfile)
+			else:
+				if os.path.exists("player_data/"+name+"/data.json"):
+					player_extra_file = open("player_data/"+name+"/data.json")
+					player_extra_json = json.load(player_extra_file)
+					ranking[player].update(player_extra_json)
+				if os.path.exists("player_data/"+name+"/avatar.png"):
+					ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
 
-	with open('out/'+liga+'.json', 'w') as outfile:
-	  json.dump(ranking, outfile)
+		with open('out/'+liga+'.json', 'w') as outfile:
+			json.dump(ranking, outfile)
+	except:
+		pass

@@ -118,13 +118,16 @@ json_obj = json.load(f)
 
 for player in players:
 	for liga in json_obj.keys():
-		f_league = open('out/'+liga+'.json')
-		json_league_players = json.load(f_league)
-		
-		for league_player in json_league_players:
-			if players[player]["name"] == json_league_players[league_player]["name"]:
-				players[player].update(json_league_players[league_player])
-				break
+		try:
+			f_league = open('out/'+liga+'.json')
+			json_league_players = json.load(f_league)
+			
+			for league_player in json_league_players:
+				if players[player]["name"] == json_league_players[league_player]["name"]:
+					players[player].update(json_league_players[league_player])
+					break
+		except:
+			pass
 
 	scores = []
 
@@ -163,7 +166,7 @@ for player in players:
 	scores.sort(reverse=True)
 	scores = scores[:10]
 			
-	players[player]["total_score"] = sum(scores)
+	players[player]["score"] = sum(scores)
 
-with open('out/ranking_br.json', 'w') as outfile:
+with open('out/brpth.json', 'w') as outfile:
 	json.dump(players, outfile)
