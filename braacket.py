@@ -46,6 +46,102 @@ class Braacket:
             uuid = url_extract.match(player['href']).group(1)
             self.player_cache[player.string] = uuid
     
+    def get_tournaments(self):
+        r = requests.get(
+            'https://braacket.com/league/'
+            f'{self.league}/tournament?rows=200', verify=False) # the upperbound is 200
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        content = soup.find('div', {"id": "content_body"}) # get content body
+        headings = content.findAll('div', {"class": "panel-heading text-transform-none"})
+
+        tournaments = {}
+
+        for heading in headings:
+            link = heading.find("a")
+            tournament = {}
+            tournament["name"] = link.string
+            tournament["id"] = link["href"].rsplit('/', 1)[1]
+            tournaments[tournament["id"]] = tournament
+        
+        return tournaments
+    
+    def get_players(self):
+        r = requests.get(
+            'https://braacket.com/league/'
+            f'{self.league}/player?rows=200&embed=1', verify=False) # the upperbound is 200
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        table = soup.find('table') # get main table
+        tbody = table.find('tbody') # skip the table's header
+        lines = tbody.select("tr") # get each of the table's lines
+        url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+        bye_extract = re.compile(r'bye[0-9]+$')
+
+        players = {}
+
+        for line in lines:
+            player = {}
+
+            children = line.findChildren(recursive=False)
+
+            # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+
+            # name
+            player["name"] = children[0].find("a").string
+
+            # dont get bye*
+            if bye_extract.match(player["name"]):
+                continue
+
+            # uuid
+            player["uuid"] = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
+
+            players[player["uuid"]] = player
+        return players
+    
+    def get_tournament_ranking(self, id):
+        r = requests.get(
+            'https://braacket.com/tournament/'
+            f'{id}/ranking?rows=200', verify=False) # the upperbound is 200
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        table = soup.find('table') # get main table
+        tbody = table.find('tbody') # skip the table's header
+        lines = tbody.select("tr") # get each of the table's lines
+        url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+        bye_extract = re.compile(r'bye[0-9]+$')
+
+        pranking = {}
+
+        for line in lines:
+            player = {}
+
+            children = line.findChildren(recursive=False)
+
+            # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+
+            badge = line.find('a', {"class": "badge"})
+
+            if badge == None:
+                continue
+
+            # name
+            player["name"] = badge['aria-label']
+
+            # dont get bye*
+            if bye_extract.match(player["name"]):
+                continue
+
+            # uuid
+            player["uuid"] = url_extract.match(badge['href']).group(1).replace("?", "")
+
+            # rank
+            player["rank"] = children[0].string.strip()
+
+            pranking[player["uuid"]] = player
+        return pranking
+    
     def get_ranking(self):
         # returns player ranking with basic data available at the ranking page
 

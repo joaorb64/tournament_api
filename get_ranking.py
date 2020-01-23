@@ -10,7 +10,7 @@ def remove_accents(input_str):
 	return u"".join([c for c in nfkd_form if not unicodedata.combining(c)])
 
 def text_to_id(text):
-	text = remove_accents(text.lower())
+	text = remove_accents(text)
 	text = re.sub('[ ]+', '_', text)
 	text = re.sub('[^0-9a-zA-Z_-]', '', text)
 	return text
