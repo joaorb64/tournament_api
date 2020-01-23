@@ -72,32 +72,40 @@ class Braacket:
             f'{self.league}/player?rows=200&embed=1', verify=False) # the upperbound is 200
         soup = BeautifulSoup(r.text, 'html.parser')
 
-        table = soup.find('table') # get main table
-        tbody = table.find('tbody') # skip the table's header
-        lines = tbody.select("tr") # get each of the table's lines
-        url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-        bye_extract = re.compile(r'bye[0-9]+$')
+        pages = len(soup.find('select', {"id": "search-page"}).findChildren(recursive=False))
 
         players = {}
 
-        for line in lines:
-            player = {}
+        for page in range(pages):
+            r = requests.get(
+                'https://braacket.com/league/'
+                f'{self.league}/player?rows=200&embed=1', verify=False) # the upperbound is 200
+            soup = BeautifulSoup(r.text, 'html.parser')        
 
-            children = line.findChildren(recursive=False)
+            table = soup.find('table') # get main table
+            tbody = table.find('tbody') # skip the table's header
+            lines = tbody.select("tr") # get each of the table's lines
+            url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+            bye_extract = re.compile(r'bye[0-9]+$')
 
-            # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+            for line in lines:
+                player = {}
 
-            # name
-            player["name"] = children[0].find("a").string
+                children = line.findChildren(recursive=False)
 
-            # dont get bye*
-            if bye_extract.match(player["name"]):
-                continue
+                # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
 
-            # uuid
-            player["uuid"] = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
+                # name
+                player["name"] = children[0].find("a").string
 
-            players[player["uuid"]] = player
+                # dont get bye*
+                if bye_extract.match(player["name"]):
+                    continue
+
+                # uuid
+                player["uuid"] = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
+
+                players[player["uuid"]] = player
         return players
     
     def get_tournament_ranking(self, id):
