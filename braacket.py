@@ -76,11 +76,11 @@ class Braacket:
 
         players = {}
 
-        for page in range(pages):
+        for page in range(1, pages+1):
             r = requests.get(
                 'https://braacket.com/league/'
-                f'{self.league}/player?rows=200&embed=1', verify=False) # the upperbound is 200
-            soup = BeautifulSoup(r.text, 'html.parser')        
+                f'{self.league}/player?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
+            soup = BeautifulSoup(r.text, 'html.parser')
 
             table = soup.find('table') # get main table
             tbody = table.find('tbody') # skip the table's header
