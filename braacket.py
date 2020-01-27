@@ -222,6 +222,7 @@ class Braacket:
 
     def get_league_name(self):
         # returns the league's name
+        print("get_league_name("+self.league+")")
         r = requests.get(
             'https://braacket.com/league/'f'{self.league}', verify=False)
         soup = BeautifulSoup(r.text, 'html.parser')
