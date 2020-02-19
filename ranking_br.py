@@ -166,8 +166,8 @@ for player in players:
 	
 	scores.sort(reverse=True)
 	scores = scores[:10]
-			
-	players[player]["score"] = sum(scores)
+
+	players[player]["ranking"] = {"prbth": {"score": sum(scores)}}
 
 	# Update player data
 	name = text_to_id(players[player]["name"])
@@ -184,7 +184,9 @@ for player in players:
 			if not "rank" in player_extra_json.keys():
 				player_extra_json["rank"] = {}
 
-			player_extra_json["rank"]["prbth"] = {"score": players[player]["score"]}
+			player_extra_json["rank"]["prbth"] = {
+				"score": players[player]["ranking"]["prbth"]["score"]
+			}
 
 			with open("player_data/"+name+"/data.json", 'w') as outfile:
 				json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
