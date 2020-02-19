@@ -192,7 +192,8 @@ class Braacket:
 
             # rank
             rank = children[0].string.strip()
-            pranking[uuid]["rank"] = rank
+            pranking[uuid]["rank"] = {}
+            pranking[uuid]["rank"][self.league] = {"rank": rank}
 
             # name
             pranking[uuid]["name"] = children[2].find('a').string
@@ -217,7 +218,7 @@ class Braacket:
             
             # score
             score = children[5].string.strip()
-            pranking[uuid]["score"] = score
+            pranking[uuid]["rank"][self.league]["score"] = score
         return pranking
 
     def get_league_name(self):

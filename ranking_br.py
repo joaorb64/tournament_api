@@ -169,5 +169,25 @@ for player in players:
 			
 	players[player]["score"] = sum(scores)
 
+	# Update player data
+	name = text_to_id(players[player]["name"])
+
+	if name:
+		if not os.path.exists("player_data/"+name):
+			os.makedirs("player_data/"+name)
+			with open("player_data/"+name+"/data.json", 'w') as outfile:
+				json.dump({}, outfile)
+		else:
+			player_extra_file = open("player_data/"+name+"/data.json")
+			player_extra_json = json.load(player_extra_file)
+
+			if not "rank" in player_extra_json.keys():
+				player_extra_json["rank"] = {}
+
+			player_extra_json["rank"]["prbth"] = {"score": players[player]["score"]}
+
+			with open("player_data/"+name+"/data.json", 'w') as outfile:
+				json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
+
 with open('out/prbth.json', 'w') as outfile:
 	json.dump(players, outfile)

@@ -38,12 +38,19 @@ for liga in json_obj.keys():
 				with open("player_data/"+name+"/data.json", 'w') as outfile:
 					json.dump({}, outfile)
 			else:
-				if os.path.exists("player_data/"+name+"/data.json"):
-					player_extra_file = open("player_data/"+name+"/data.json")
-					player_extra_json = json.load(player_extra_file)
-					ranking[player].update(player_extra_json)
-				if os.path.exists("player_data/"+name+"/avatar.png"):
-					ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
+				player_extra_file = open("player_data/"+name+"/data.json")
+				player_extra_json = json.load(player_extra_file)
+
+				if "rank" in player_extra_json.keys():
+					ranking[player]["rank"].update(player_extra_json["rank"])
+
+				player_extra_json.update(ranking[player])
+				ranking[player] = player_extra_json
+			if os.path.exists("player_data/"+name+"/avatar.png"):
+				ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
+
+			with open("player_data/"+name+"/data.json", 'w') as outfile:
+				json.dump(ranking[player], outfile, indent=4, sort_keys=True)
 
 		with open('out/'+liga+'.json', 'w') as outfile:
 			json.dump(ranking, outfile)
