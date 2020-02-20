@@ -189,20 +189,20 @@ for player in ordered:
 			os.makedirs("player_data/"+name)
 			with open("player_data/"+name+"/data.json", 'w') as outfile:
 				json.dump({}, outfile)
-		else:
-			player_extra_file = open("player_data/"+name+"/data.json")
-			player_extra_json = json.load(player_extra_file)
+		
+		player_extra_file = open("player_data/"+name+"/data.json")
+		player_extra_json = json.load(player_extra_file)
 
-			if not "rank" in player_extra_json.keys():
-				player_extra_json["rank"] = {}
+		if not "rank" in player_extra_json.keys():
+			player_extra_json["rank"] = {}
 
-			player_extra_json["rank"]["prbth"] = {
-				"score": players[player]["ranking"]["prbth"]["score"],
-				"rank": i
-			}
+		player_extra_json["rank"]["prbth"] = {
+			"score": players[player]["ranking"]["prbth"]["score"],
+			"rank": i
+		}
 
-			with open("player_data/"+name+"/data.json", 'w') as outfile:
-				json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
+		with open("player_data/"+name+"/data.json", 'w') as outfile:
+			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
 		i += 1
 
 with open('out/prbth.json', 'w') as outfile:
