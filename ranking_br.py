@@ -4,6 +4,7 @@ import json
 import os
 import unicodedata
 import re
+import functools
 
 def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
@@ -169,6 +170,17 @@ for player in players:
 
 	players[player]["ranking"] = {"prbth": {"score": sum(scores)}}
 
+def orderByScore(a, b):
+	if int(players[a]["ranking"]["prbth"]["score"]) > int(players[b]["ranking"]["prbth"]["score"]):
+		return -1
+	else:
+		return 1
+	
+ordered = list(players.keys())
+ordered.sort(key=functools.cmp_to_key(orderByScore))
+
+i=1
+for player in ordered:
 	# Update player data
 	name = text_to_id(players[player]["name"])
 
@@ -185,11 +197,13 @@ for player in players:
 				player_extra_json["rank"] = {}
 
 			player_extra_json["rank"]["prbth"] = {
-				"score": players[player]["ranking"]["prbth"]["score"]
+				"score": players[player]["ranking"]["prbth"]["score"],
+				"rank": i
 			}
 
 			with open("player_data/"+name+"/data.json", 'w') as outfile:
 				json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
+		i += 1
 
 with open('out/prbth.json', 'w') as outfile:
 	json.dump(players, outfile)
