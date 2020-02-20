@@ -41,7 +41,7 @@ for liga in json_obj.keys():
 				player_extra_file = open("player_data/"+name+"/data.json")
 				player_extra_json = json.load(player_extra_file)
 
-				if "rank" in player_extra_json.keys():
+				if "rank" in player_extra_json.keys() or player_extra_json["rank"] is not dict:
 					ranking[player]["rank"].update(player_extra_json["rank"])
 
 				player_extra_json.update(ranking[player])
