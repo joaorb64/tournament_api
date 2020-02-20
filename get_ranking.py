@@ -4,6 +4,7 @@ import json
 import os
 import unicodedata
 import re
+import copy
 
 def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
@@ -37,15 +38,23 @@ for liga in json_obj.keys():
 				os.makedirs("player_data/"+name)
 				with open("player_data/"+name+"/data.json", 'w') as outfile:
 					json.dump({}, outfile)
-			else:
-				player_extra_file = open("player_data/"+name+"/data.json")
-				player_extra_json = json.load(player_extra_file)
 
-				if "rank" in player_extra_json.keys() or player_extra_json["rank"] is not dict:
-					ranking[player]["rank"].update(player_extra_json["rank"])
+			player_extra_file = open("player_data/"+name+"/data.json")
+			player_extra_json = json.load(player_extra_file)
 
-				player_extra_json.update(ranking[player])
-				ranking[player] = player_extra_json
+			if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
+				player_extra_json["rank"] = {}
+
+			file_rank = player_extra_json["rank"].copy()
+			
+			player_extra_json.update(ranking[player])
+
+			player_extra_json["rank"] = file_rank
+
+			player_extra_json["rank"].update(ranking[player]["rank"])
+
+			ranking[player] = player_extra_json
+			
 			if os.path.exists("player_data/"+name+"/avatar.png"):
 				ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
 
