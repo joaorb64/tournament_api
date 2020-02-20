@@ -168,10 +168,10 @@ for player in players:
 	scores.sort(reverse=True)
 	scores = scores[:10]
 
-	players[player]["ranking"] = {"prbth": {"score": sum(scores)}}
+	players[player]["rank"] = {"prbth": {"score": sum(scores)}}
 
 def orderByScore(a, b):
-	if int(players[a]["ranking"]["prbth"]["score"]) > int(players[b]["ranking"]["prbth"]["score"]):
+	if int(players[a]["rank"]["prbth"]["score"]) > int(players[b]["rank"]["prbth"]["score"]):
 		return -1
 	else:
 		return 1
@@ -197,13 +197,15 @@ for player in ordered:
 			player_extra_json["rank"] = {}
 
 		player_extra_json["rank"]["prbth"] = {
-			"score": players[player]["ranking"]["prbth"]["score"],
+			"score": players[player]["rank"]["prbth"]["score"],
 			"rank": i
 		}
+
+		players[player]["rank"]["prbth"]["rank"] = i
 
 		with open("player_data/"+name+"/data.json", 'w') as outfile:
 			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
 		i += 1
 
 with open('out/prbth.json', 'w') as outfile:
-	json.dump(players, outfile)
+	json.dump(players, outfile, indent=4, sort_keys=True)
