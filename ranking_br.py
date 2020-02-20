@@ -201,6 +201,8 @@ for player in ordered:
 			"rank": i
 		}
 
+		players[player].update(player_extra_json)
+
 		players[player]["rank"]["prbth"]["rank"] = i
 
 		with open("player_data/"+name+"/data.json", 'w') as outfile:
