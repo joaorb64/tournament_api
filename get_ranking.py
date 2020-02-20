@@ -21,6 +21,9 @@ json_obj = json.load(f)
 
 for liga in json_obj.keys():
 
+	if liga == "prbth":
+		continue
+
 	bracket = braacket.Braacket(liga)
 
 	with open('league_info/'+liga+'.json', 'w') as outfile:
@@ -29,11 +32,13 @@ for liga in json_obj.keys():
 		}
 		json.dump(league, outfile)
 
-	try:
-		ranking = bracket.get_ranking()
+	
+	ranking = bracket.get_ranking()
 
-		for player in ranking.keys():
-			name = text_to_id(ranking[player]['name'])
+	for player in ranking.keys():
+		name = text_to_id(ranking[player]['name'])
+
+		if name:
 			if not os.path.exists("player_data/"+name):
 				os.makedirs("player_data/"+name)
 				with open("player_data/"+name+"/data.json", 'w') as outfile:
@@ -61,7 +66,5 @@ for liga in json_obj.keys():
 			with open("player_data/"+name+"/data.json", 'w') as outfile:
 				json.dump(ranking[player], outfile, indent=4, sort_keys=True)
 
-		with open('out/'+liga+'.json', 'w') as outfile:
-			json.dump(ranking, outfile)
-	except:
-		pass
+	with open('out/'+liga+'.json', 'w') as outfile:
+		json.dump(ranking, outfile, indent=4, sort_keys=True)

@@ -3,6 +3,8 @@ import requests
 import re 
 from difflib import SequenceMatcher
 
+requests.packages.urllib3.disable_warnings()
+
 class Braacket:
     
     def __init__(self, league):
@@ -77,6 +79,7 @@ class Braacket:
         players = {}
 
         for page in range(1, pages+1):
+            print('['+str(page)+"/"+str(pages)+']')
             r = requests.get(
                 'https://braacket.com/league/'
                 f'{self.league}/player?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
@@ -109,46 +112,49 @@ class Braacket:
         return players
     
     def get_tournament_ranking(self, id):
-        r = requests.get(
-            'https://braacket.com/tournament/'
-            f'{id}/ranking?rows=200', verify=False) # the upperbound is 200
-        soup = BeautifulSoup(r.text, 'html.parser')
+        try:
+            r = requests.get(
+                'https://braacket.com/tournament/'
+                f'{id}/ranking?rows=200', verify=False) # the upperbound is 200
+            soup = BeautifulSoup(r.text, 'html.parser')
 
-        table = soup.find('table') # get main table
-        tbody = table.find('tbody') # skip the table's header
-        lines = tbody.select("tr") # get each of the table's lines
-        url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-        bye_extract = re.compile(r'bye[0-9]+$')
+            table = soup.find('table') # get main table
+            tbody = table.find('tbody') # skip the table's header
+            lines = tbody.select("tr") # get each of the table's lines
+            url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+            bye_extract = re.compile(r'bye[0-9]+$')
 
-        pranking = {}
+            pranking = {}
 
-        for line in lines:
-            player = {}
+            for line in lines:
+                player = {}
 
-            children = line.findChildren(recursive=False)
+                children = line.findChildren(recursive=False)
 
-            # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+                # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
 
-            badge = line.find('a', {"class": "badge"})
+                badge = line.find('a', {"class": "badge"})
 
-            if badge == None:
-                continue
+                if badge == None:
+                    continue
 
-            # name
-            player["name"] = badge['aria-label']
+                # name
+                player["name"] = badge['aria-label']
 
-            # dont get bye*
-            if bye_extract.match(player["name"]):
-                continue
+                # dont get bye*
+                if bye_extract.match(player["name"]):
+                    continue
 
-            # uuid
-            player["uuid"] = url_extract.match(badge['href']).group(1).replace("?", "")
+                # uuid
+                player["uuid"] = url_extract.match(badge['href']).group(1).replace("?", "")
 
-            # rank
-            player["rank"] = children[0].string.strip()
+                # rank
+                player["rank"] = children[0].string.strip()
 
-            pranking[player["uuid"]] = player
-        return pranking
+                pranking[player["uuid"]] = player
+            return pranking
+        except requests.exceptions.RequestException as e:
+            print(e)
     
     def get_ranking(self):
         # returns player ranking with basic data available at the ranking page
@@ -169,57 +175,60 @@ class Braacket:
         #   },
         #   ...
         # }
-        r = requests.get(
-            'https://braacket.com/league/'
-            f'{self.league}/ranking?rows=200&embed=1', verify=False) # the upperbound is 200
-        soup = BeautifulSoup(r.text, 'html.parser')
+        try:
+            r = requests.get(
+                'https://braacket.com/league/'
+                f'{self.league}/ranking?rows=200&embed=1', verify=False) # the upperbound is 200
+            soup = BeautifulSoup(r.text, 'html.parser')
 
-        table = soup.findAll('table')[1] # first table is ranking system, second has the player list
-        tbody = table.find('tbody') # skip the table's header
-        lines = tbody.select("tr") # get each of the table's lines
-        url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+            table = soup.findAll('table')[1] # first table is ranking system, second has the player list
+            tbody = table.find('tbody') # skip the table's header
+            lines = tbody.select("tr") # get each of the table's lines
+            url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
-        pranking = {}
+            pranking = {}
 
-        for line in lines:
-            children = line.findChildren(recursive=False)
+            for line in lines:
+                children = line.findChildren(recursive=False)
 
-            # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+                # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
 
-            # uuid
-            uuid = url_extract.match(children[2].find('a')['href']).group(1)
-            pranking[uuid] = {}
+                # uuid
+                uuid = url_extract.match(children[2].find('a')['href']).group(1)
+                pranking[uuid] = {}
 
-            # rank
-            rank = children[0].string.strip()
-            pranking[uuid]["rank"] = {}
-            pranking[uuid]["rank"][self.league] = {"rank": rank}
+                # rank
+                rank = children[0].string.strip()
+                pranking[uuid]["rank"] = {}
+                pranking[uuid]["rank"][self.league] = {"rank": rank}
 
-            # name
-            pranking[uuid]["name"] = children[2].find('a').string
+                # name
+                pranking[uuid]["name"] = children[2].find('a').string
 
-            # mains
-            pranking[uuid]["mains"] = []
-            mains = children[2].findAll('img')
+                # mains
+                pranking[uuid]["mains"] = []
+                mains = children[2].findAll('img')
 
-            for main in mains:
-                character = {}
-                character["name"] = main["title"]
-                character["icon"] = main["src"]
-                pranking[uuid]["mains"].append(character)
+                for main in mains:
+                    character = {}
+                    character["name"] = main["title"]
+                    character["icon"] = main["src"]
+                    pranking[uuid]["mains"].append(character)
 
-            # twitter
-            links = children[3].select('a')
+                # twitter
+                links = children[3].select('a')
 
-            for link in links:
-                if link.has_attr('href'):
-                    if "twitter.com" in link['href']:
-                        pranking[uuid]["twitter"] = link['href']
-            
-            # score
-            score = children[5].string.strip()
-            pranking[uuid]["rank"][self.league]["score"] = score
-        return pranking
+                for link in links:
+                    if link.has_attr('href'):
+                        if "twitter.com" in link['href']:
+                            pranking[uuid]["twitter"] = link['href']
+                
+                # score
+                score = children[5].string.strip()
+                pranking[uuid]["rank"][self.league]["score"] = score
+            return pranking
+        except requests.exceptions.RequestException as e:
+            print(e)
 
     def get_league_name(self):
         # returns the league's name
@@ -232,6 +241,7 @@ class Braacket:
         title = titleContainer.find('h1')
 
         return title.find('a').string
+        
 
     def player_search(self, tag):
         tag = tag.strip()
