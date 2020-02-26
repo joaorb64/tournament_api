@@ -5,6 +5,15 @@ import os
 import unicodedata
 import re
 import functools
+import collections.abc
+
+def update(d, u):
+	for k, v in u.items():
+			if isinstance(v, collections.abc.Mapping):
+					d[k] = update(d.get(k, {}), v)
+			else:
+					d[k] = v
+	return d
 
 def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
@@ -12,6 +21,7 @@ def remove_accents(input_str):
 
 def text_to_id(text):
 	text = remove_accents(text)
+	text = text.replace("@", "_At_")
 	text = re.sub('[ ]+', '_', text)
 	text = re.sub('[^0-9a-zA-Z_-]', '', text)
 	return text
@@ -94,23 +104,21 @@ if not os.path.exists("out/tournament/"+'prbth'+".json"):
 	with open("out/tournament/"+'prbth'+".json", 'w') as outfile:
 		json.dump({}, outfile)
 
-f = open("out/tournament/"+'prbth'+".json")
+f = open("out/tournament/"+'prbth_override'+".json")
 json_obj = json.load(f)
 
 tournaments = bracket.get_tournaments()
 
 for tournament in tournaments:
-	if tournament in json_obj:
-		continue
 	if tournament == "prbth":
 		continue
 	tournaments[tournament]["ranking"] = bracket.get_tournament_ranking(tournament)
 	tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
 
-tournaments.update(json_obj)
+update(json_obj, tournaments)
 
 with open("out/tournament/"+'prbth'+".json", 'w') as outfile:
-	json.dump(tournaments, outfile, indent=4, sort_keys=True)
+	json.dump(json_obj, outfile, indent=4, sort_keys=True)
 
 
 players = bracket.get_players()
