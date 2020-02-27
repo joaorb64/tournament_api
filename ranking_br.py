@@ -22,6 +22,7 @@ def remove_accents(input_str):
 def text_to_id(text):
 	text = remove_accents(text)
 	text = text.replace("@", "_At_")
+	text = text.replace("~", "_Tilde_")
 	text = re.sub('[ ]+', '_', text)
 	text = re.sub('[^0-9a-zA-Z_-]', '', text)
 	return text

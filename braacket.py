@@ -113,6 +113,7 @@ class Braacket:
     
     def get_tournament_ranking(self, id):
         try:
+            print("get_tournament_ranking: "+str(id))
             r = requests.get(
                 'https://braacket.com/tournament/'
                 f'{id}/ranking?rows=200', verify=False) # the upperbound is 200
