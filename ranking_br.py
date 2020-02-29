@@ -117,6 +117,7 @@ for tournament in tournaments:
 	tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
 
 update(json_obj, tournaments)
+tournaments = json_obj
 
 with open("out/tournament/"+'prbth'+".json", 'w') as outfile:
 	json.dump(json_obj, outfile, indent=4, sort_keys=True)
