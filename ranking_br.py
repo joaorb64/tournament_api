@@ -141,6 +141,7 @@ for player in players:
 			pass
 
 	scores = []
+	tournaments_went = []
 
 	for tournament in tournaments:
 		if player in tournaments[tournament]["ranking"]:
@@ -162,21 +163,35 @@ for player in players:
 			else:
 				if tournaments[tournament]["player_number"] >= 65:
 					point_system = point_system_65
+					tournaments[tournament]["rank"] = "S"
 				elif tournaments[tournament]["player_number"] >= 49:
 					point_system = point_system_49
+					tournaments[tournament]["rank"] = "A"
 				elif tournaments[tournament]["player_number"] >= 33:
 					point_system = point_system_33
+					tournaments[tournament]["rank"] = "B"
 				elif tournaments[tournament]["player_number"] >= 25:
 					point_system = point_system_25
+					tournaments[tournament]["rank"] = "C"
 				else:
 					point_system = point_system_1
+					tournaments[tournament]["rank"] = "D"
 
 			if rank in point_system:
 				scores.append(point_system[rank])
+				tournaments_went.append({
+					"name": tournaments[tournament]["name"],
+					"rank": tournaments[tournament]["rank"],
+					"placing": tournaments[tournament]["ranking"][player]["rank"],
+					"points": point_system[rank]
+				})
 	
 	scores.sort(reverse=True)
 	scores = scores[:10]
 
+	players[player]
+	players[player]["tournaments"] = tournaments_went
+	players[player]["tournament_points"] = scores
 	players[player]["rank"] = {"prbth": {"score": sum(scores)}}
 
 def orderByScore(a, b):
@@ -209,6 +224,8 @@ for player in ordered:
 			"score": players[player]["rank"]["prbth"]["score"],
 			"rank": i
 		}
+		player_extra_json["tournaments"] = players[player]["tournaments"]
+		player_extra_json["tournament_points"] = players[player]["tournament_points"]
 
 		players[player].update(player_extra_json)
 
