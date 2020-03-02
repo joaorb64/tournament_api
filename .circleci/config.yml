@@ -18,6 +18,7 @@ jobs:
             . venv/bin/activate
             python get_ranking.py
             python ranking_br.py
+            python statistics.py
       - run:
           name: Commit data back to Github
           command: |
