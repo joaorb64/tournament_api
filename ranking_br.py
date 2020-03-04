@@ -6,6 +6,7 @@ import unicodedata
 import re
 import functools
 import collections.abc
+import copy
 
 def update(d, u):
 	for k, v in u.items():
@@ -110,11 +111,19 @@ json_obj = json.load(f)
 
 tournaments = bracket.get_tournaments()
 
-for tournament in tournaments:
-	if tournament == "prbth":
-		continue
-	tournaments[tournament]["ranking"] = bracket.get_tournament_ranking(tournament)
-	tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+redownload_tournaments = True
+
+if redownload_tournaments:
+	for i, tournament in enumerate(tournaments):
+		if tournament == "prbth":
+			continue
+		print("["+str(i+1)+"/"+str(len(tournaments))+"]")
+
+		tournaments[tournament]["ranking"] = bracket.get_tournament_ranking(tournament)
+		tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+else:
+	with open("out/tournament/"+'prbth'+".json", 'r') as outfile:
+		tournaments = json.load(outfile)
 
 update(json_obj, tournaments)
 tournaments = json_obj
@@ -131,6 +140,8 @@ json_obj = json.load(f)
 for player in players:
 	for liga in json_obj.keys():
 		try:
+			if liga == "prbth":
+				continue
 			f_league = open('out/'+liga+'.json')
 			json_league_players = json.load(f_league)
 			
@@ -190,7 +201,6 @@ for player in players:
 	scores.sort(reverse=True)
 	scores = scores[:10]
 
-	players[player]
 	players[player]["tournaments"] = tournaments_went
 	players[player]["tournament_points"] = scores
 	players[player]["rank"] = {"prbth": {"score": sum(scores)}}
@@ -228,6 +238,10 @@ for player in ordered:
 		player_extra_json["tournaments"] = players[player]["tournaments"]
 		player_extra_json["tournament_points"] = players[player]["tournament_points"]
 
+		if "mains" in players[player].keys() and len(players[player]["mains"]) > 0 and \
+			((not "mains" in player_extra_json.keys()) or len(player_extra_json["mains"]) == 0):
+			player_extra_json["mains"] = players[player]["mains"]
+		
 		players[player].update(player_extra_json)
 
 		players[player]["rank"]["prbth"]["rank"] = i

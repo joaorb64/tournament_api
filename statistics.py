@@ -165,11 +165,14 @@ with open("out/"+'prbth'+".json") as infile:
 	charUsage = {}
 
 	for c in characters:
-		charUsage[characters[c]] = 0
+		charUsage[c] = {
+			"usage": 0
+		}
 		for p in json_obj:
 			if "mains" in json_obj[p].keys() and len(json_obj[p]["mains"]) > 0:
 				if json_obj[p]["mains"][0]["name"] == characters[c]:
-					charUsage[characters[c]] += 1
+					charUsage[c]["usage"] += 1
+					charUsage[c]["icon"] = json_obj[p]["mains"][0]["icon"]
 		
 	outInfo["char_usage"] = charUsage
 

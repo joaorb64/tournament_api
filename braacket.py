@@ -109,6 +109,25 @@ class Braacket:
                 player["uuid"] = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
 
                 players[player["uuid"]] = player
+
+                # mains
+                player["mains"] = []
+                mains = children[0].findAll('img')
+
+                for main in mains:
+                    character = {}
+                    character["name"] = main["title"]
+                    character["icon"] = main["src"]
+                    player["mains"].append(character)
+
+                # twitter
+                links = children[1].select('a')
+
+                for link in links:
+                    if link.has_attr('href'):
+                        if "twitter.com" in link['href']:
+                            player["twitter"] = link['href']
+
         return players
     
     def get_tournament_ranking(self, id):
