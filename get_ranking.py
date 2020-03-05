@@ -60,6 +60,12 @@ for liga in json_obj.keys():
 
 			player_extra_json["rank"].update(ranking[player]["rank"])
 
+			if len(ranking[player]["mains"]) > 0:
+				player_extra_json["mains"] = ranking[player]["mains"]
+
+			if "twitter" in ranking[player]:
+				player_extra_json["twitter"] = ranking[player]["twitter"]
+
 			ranking[player] = player_extra_json
 			
 			if os.path.exists("player_data/"+name+"/avatar.png"):
