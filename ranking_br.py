@@ -114,12 +114,10 @@ tournaments = bracket.get_tournaments()
 redownload_tournaments = True
 
 if redownload_tournaments:
-	for i, tournament in enumerate(tournaments):
-		if tournament == "prbth":
-			continue
-		print("["+str(i+1)+"/"+str(len(tournaments))+"]")
+	got = bracket.get_tournament_ranking_all([tournament for tournament in tournaments])
 
-		tournaments[tournament]["ranking"] = bracket.get_tournament_ranking(tournament)
+	for i, tournament in enumerate(tournaments):
+		tournaments[tournament]["ranking"] = got[tournament]
 		tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
 else:
 	with open("out/tournament/"+'prbth'+".json", 'r') as outfile:

@@ -11,7 +11,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install beautifulsoup4 requests pprint
+            pip install beautifulsoup4 requests pprint faster_than_requests
       - run:
           name: Update data
           command: |
@@ -33,7 +33,7 @@ workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "0 0,12 * * *"
+          cron: "0 0,8,16 * * *"
           filters:
             branches:
               only:

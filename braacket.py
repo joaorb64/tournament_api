@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re 
 from difflib import SequenceMatcher
+import faster_than_requests
 
 requests.packages.urllib3.disable_warnings()
 
@@ -130,13 +131,19 @@ class Braacket:
 
         return players
     
-    def get_tournament_ranking(self, id):
+    def get_tournament_ranking(self, id, req = None):
         try:
             print("get_tournament_ranking: "+str(id))
-            r = requests.get(
-                'https://braacket.com/tournament/'
-                f'{id}/ranking?rows=200', verify=False) # the upperbound is 200
-            soup = BeautifulSoup(r.text, 'html.parser')
+            
+            if req == None:
+                r = requests.get(
+                    'https://braacket.com/tournament/'
+                    f'{id}/ranking?rows=200', verify=False) # the upperbound is 200
+                r = r.text
+            else:
+                r = req
+            
+            soup = BeautifulSoup(r, 'html.parser')
 
             table = soup.find('table') # get main table
             tbody = table.find('tbody') # skip the table's header
@@ -175,6 +182,17 @@ class Braacket:
             return pranking
         except requests.exceptions.RequestException as e:
             print(e)
+    
+    def get_tournament_ranking_all(self, ids):
+        reqs = faster_than_requests.get2str2(
+            ['https://braacket.com/tournament/'f'{tournament}/ranking?rows=200' for tournament in ids],
+            threads = True
+        )
+        tournament_rankings = {}
+        for i, req in enumerate(reqs):
+            print(str(i+1)+"/"+str(len(reqs)))
+            tournament_rankings[ids[i]] = self.get_tournament_ranking(ids[i], reqs[i])
+        return tournament_rankings
     
     def get_ranking(self):
         # returns player ranking with basic data available at the ranking page
