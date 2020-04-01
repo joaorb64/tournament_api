@@ -186,15 +186,22 @@ for player in players:
 				else:
 					point_system = point_system_1
 					tournaments[tournament]["rank"] = "D"
+			
+			if rank not in point_system:
+				if int(rank) < int(list(point_system.keys())[-1]):
+					rank = str(next(x for x in list(point_system.keys()) if int(x) > int(rank)))
 
 			if rank in point_system:
 				scores.append(point_system[rank])
-				tournaments_went.append({
-					"name": tournaments[tournament]["name"],
-					"rank": tournaments[tournament]["rank"],
-					"placing": tournaments[tournament]["ranking"][player]["rank"],
-					"points": point_system[rank]
-				})
+			else:
+				scores.append(0)
+
+			tournaments_went.append({
+				"name": tournaments[tournament]["name"],
+				"rank": tournaments[tournament]["rank"],
+				"placing": tournaments[tournament]["ranking"][player]["rank"],
+				"points": point_system[rank] if rank in point_system else 0
+			})
 	
 	scores.sort(reverse=True)
 	scores = scores[:10]
