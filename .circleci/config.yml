@@ -20,6 +20,12 @@ jobs:
             python ranking_br.py
             python statistics.py
       - run:
+          name: Update granblue
+          command: |
+            . venv/bin/activate
+            cd granblue
+            python ranking_br.py
+      - run:
           name: Commit data back to Github
           command: |
             git config user.email "joaorb64@gmail.com"
