@@ -133,6 +133,38 @@ with open("out/"+'prbth'+".json") as infile:
 	}
 
 # Players per region
+with open("out/"+'prbth'+".json") as infile:
+	json_obj = json.load(infile)
+
+	playersPerRegion = {}
+
+	for p in json_obj:
+		if "rank" in json_obj[p].keys():
+			for liga in json_obj[p]["rank"]:
+				if liga != 'prbth':
+					if liga in playersPerRegion:
+						playersPerRegion[liga] += 1
+					else:
+						playersPerRegion[liga] = 1
+	
+	outInfo["players_per_region"] = playersPerRegion
+
+# Score per region
+with open("out/"+'prbth'+".json") as infile:
+	json_obj = json.load(infile)
+
+	scorePerRegion = {}
+
+	for p in json_obj:
+		if "rank" in json_obj[p].keys():
+			for liga in json_obj[p]["rank"]:
+				if liga != 'prbth':
+					if liga in scorePerRegion:
+						scorePerRegion[liga] += json_obj[p]["rank"]['prbth']["score"]
+					else:
+						scorePerRegion[liga] = json_obj[p]["rank"]['prbth']["score"]
+	
+	outInfo["score_per_region"] = scorePerRegion
 
 # Best of each character
 with open("out/"+'prbth'+".json") as infile:
