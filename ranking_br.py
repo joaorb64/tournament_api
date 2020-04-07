@@ -251,6 +251,8 @@ for player in ordered:
 
 		players[player]["rank"]["prbth"]["rank"] = i
 
+		player_extra_json["name"] = players[player]["name"]
+
 		with open("player_data/"+name+"/data.json", 'w') as outfile:
 			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
 		i += 1
