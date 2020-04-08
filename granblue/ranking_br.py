@@ -182,7 +182,7 @@ for player in players:
 					rank = rank_pc
 					best_console = "PC"
 				else:
-					if rank_ps4 < rank_pc:
+					if int(rank_ps4) < int(rank_pc):
 						rank = rank_ps4
 						best_console = "PS4"
 					else:
