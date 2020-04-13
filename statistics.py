@@ -123,9 +123,9 @@ with open("out/"+'prbth'+".json") as infile:
 
 	unlinked = []
 
-	for p in json_obj:
-		if not ("rank" in json_obj[p].keys() and len(json_obj[p]["rank"]) > 1):
-			unlinked.append(json_obj[p])
+	for p in json_obj["ranking"]:
+		if not ("rank" in json_obj["ranking"][p].keys() and len(json_obj["ranking"][p]["rank"]) > 1):
+			unlinked.append(json_obj["ranking"][p])
 		
 	outInfo["linkage"] = {
 		"unlinked": unlinked,
@@ -138,9 +138,9 @@ with open("out/"+'prbth'+".json") as infile:
 
 	playersPerRegion = {}
 
-	for p in json_obj:
-		if "rank" in json_obj[p].keys():
-			for liga in json_obj[p]["rank"]:
+	for p in json_obj["ranking"]:
+		if "rank" in json_obj["ranking"][p].keys():
+			for liga in json_obj["ranking"][p]["rank"]:
 				if liga != 'prbth':
 					if liga in playersPerRegion:
 						playersPerRegion[liga] += 1
@@ -155,14 +155,14 @@ with open("out/"+'prbth'+".json") as infile:
 
 	scorePerRegion = {}
 
-	for p in json_obj:
-		if "rank" in json_obj[p].keys():
-			for liga in json_obj[p]["rank"]:
+	for p in json_obj["ranking"]:
+		if "rank" in json_obj["ranking"][p].keys():
+			for liga in json_obj["ranking"][p]["rank"]:
 				if liga != 'prbth':
 					if liga in scorePerRegion:
-						scorePerRegion[liga] += json_obj[p]["rank"]['prbth']["score"]
+						scorePerRegion[liga] += json_obj["ranking"][p]["rank"]['prbth']["score"]
 					else:
-						scorePerRegion[liga] = json_obj[p]["rank"]['prbth']["score"]
+						scorePerRegion[liga] = json_obj["ranking"][p]["rank"]['prbth']["score"]
 	
 	outInfo["score_per_region"] = scorePerRegion
 
@@ -171,21 +171,21 @@ with open("out/"+'prbth'+".json") as infile:
 	json_obj = json.load(infile)
 
 	def orderByRank(a, b):
-		if json_obj[a]["rank"]["prbth"]["score"] < json_obj[b]["rank"]["prbth"]["score"]:
+		if json_obj["ranking"][a]["rank"]["prbth"]["score"] < json_obj["ranking"][b]["rank"]["prbth"]["score"]:
 			return 1
 		else:
 			return -1
 		
-	ordered = list(json_obj.keys())
+	ordered = list(json_obj["ranking"].keys())
 	ordered.sort(key=functools.cmp_to_key(orderByRank))
 
 	bestWithEachChar = {}
 
 	for c in characters:
 		for p in ordered:
-			if "mains" in json_obj[p].keys() and len(json_obj[p]["mains"]) > 0:
-				if json_obj[p]["mains"][0]["name"] == characters[c]:
-					bestWithEachChar[c] = json_obj[p]
+			if "mains" in json_obj["ranking"][p].keys() and len(json_obj["ranking"][p]["mains"]) > 0:
+				if json_obj["ranking"][p]["mains"][0]["name"] == characters[c]:
+					bestWithEachChar[c] = json_obj["ranking"][p]
 					break
 
 	outInfo["best_player_character"] = bestWithEachChar
@@ -200,11 +200,11 @@ with open("out/"+'prbth'+".json") as infile:
 		charUsage[c] = {
 			"usage": 0
 		}
-		for p in json_obj:
-			if "mains" in json_obj[p].keys() and len(json_obj[p]["mains"]) > 0:
-				if json_obj[p]["mains"][0]["name"] == characters[c]:
+		for p in json_obj["ranking"]:
+			if "mains" in json_obj["ranking"][p].keys() and len(json_obj["ranking"][p]["mains"]) > 0:
+				if json_obj["ranking"][p]["mains"][0]["name"] == characters[c]:
 					charUsage[c]["usage"] += 1
-					charUsage[c]["icon"] = json_obj[p]["mains"][0]["icon"]
+					charUsage[c]["icon"] = json_obj["ranking"][p]["mains"][0]["icon"]
 		
 	outInfo["char_usage"] = charUsage
 
