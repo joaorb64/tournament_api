@@ -101,6 +101,7 @@ class Braacket:
 
                 # name
                 player["name"] = children[0].find("a").string
+                player["braacket_link"] = {self.league: children[0].find("a")['href']}
 
                 # dont get bye*
                 if bye_extract.match(player["name"]):
@@ -242,6 +243,7 @@ class Braacket:
 
                 # name
                 pranking[uuid]["name"] = children[2].find('a').string
+                pranking[uuid]["braacket_link"] = {self.league: children[2].find("a")['href']}
 
                 # mains
                 pranking[uuid]["mains"] = []
@@ -266,9 +268,13 @@ class Braacket:
                 pranking[uuid]["rank"][self.league]["score"] = score
             return pranking
         except requests.exceptions.RequestException as e:
-            print(e)
+            print(self.league + ": " + str(e))
+            return {}
+        except IndexError as e:
+            print(self.league + ": " + str(e))
+            return {}
 
-    def get_league_name(self):
+    def get_league_data(self):
         # returns the league's name
         print("get_league_name("+self.league+")")
         r = requests.get(
@@ -278,7 +284,12 @@ class Braacket:
         titleContainer = soup.findAll('div', {"class": "content_header-body"})[0]
         title = titleContainer.find('h1')
 
-        return title.find('a').string
+        league = {}
+
+        league["name"] = title.find('a').string
+        league["braacket_link"] = 'https://braacket.com/league/'f'{self.league}'
+
+        return league
         
 
     def player_search(self, tag):

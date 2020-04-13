@@ -9,6 +9,7 @@ import re
 import functools
 import collections.abc
 import copy
+from datetime import datetime
 
 def update(d, u):
 	for k, v in u.items():
@@ -262,6 +263,8 @@ for player in ordered:
 		with open("player_data/"+name+"/data.json", 'w') as outfile:
 			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
 		i += 1
+
+players["update_time"] = str(datetime.utcnow())
 
 with open('out/ranking.json', 'w') as outfile:
 	json.dump(players, outfile, indent=4, sort_keys=True)

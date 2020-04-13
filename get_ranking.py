@@ -5,6 +5,7 @@ import os
 import unicodedata
 import re
 import copy
+from datetime import datetime, tzinfo
 
 def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
@@ -29,50 +30,51 @@ for liga in json_obj.keys():
 	bracket = braacket.Braacket(liga)
 
 	with open('league_info/'+liga+'.json', 'w') as outfile:
-		league = {
-			"name": bracket.get_league_name()
-		}
+		league = bracket.get_league_data()
+		league.update(json_obj[liga])
 		json.dump(league, outfile)
-
 	
 	ranking = bracket.get_ranking()
 
-	for player in ranking.keys():
-		name = text_to_id(ranking[player]['name'])
+	if ranking != None:
+		for player in ranking.keys():
+			name = text_to_id(ranking[player]['name'])
 
-		if name:
-			if not os.path.exists("player_data/"+name):
-				os.makedirs("player_data/"+name)
+			if name:
+				if not os.path.exists("player_data/"+name):
+					os.makedirs("player_data/"+name)
+					with open("player_data/"+name+"/data.json", 'w') as outfile:
+						json.dump({}, outfile)
+
+				player_extra_file = open("player_data/"+name+"/data.json")
+				player_extra_json = json.load(player_extra_file)
+
+				if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
+					player_extra_json["rank"] = {}
+
+				file_rank = player_extra_json["rank"].copy()
+				
+				player_extra_json.update(ranking[player])
+
+				player_extra_json["rank"] = file_rank
+
+				player_extra_json["rank"].update(ranking[player]["rank"])
+
+				if len(ranking[player]["mains"]) > 0:
+					player_extra_json["mains"] = ranking[player]["mains"]
+
+				if "twitter" in ranking[player]:
+					player_extra_json["twitter"] = ranking[player]["twitter"]
+
+				ranking[player] = player_extra_json
+				
+				if os.path.exists("player_data/"+name+"/avatar.png"):
+					ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
+
 				with open("player_data/"+name+"/data.json", 'w') as outfile:
-					json.dump({}, outfile)
-
-			player_extra_file = open("player_data/"+name+"/data.json")
-			player_extra_json = json.load(player_extra_file)
-
-			if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
-				player_extra_json["rank"] = {}
-
-			file_rank = player_extra_json["rank"].copy()
-			
-			player_extra_json.update(ranking[player])
-
-			player_extra_json["rank"] = file_rank
-
-			player_extra_json["rank"].update(ranking[player]["rank"])
-
-			if len(ranking[player]["mains"]) > 0:
-				player_extra_json["mains"] = ranking[player]["mains"]
-
-			if "twitter" in ranking[player]:
-				player_extra_json["twitter"] = ranking[player]["twitter"]
-
-			ranking[player] = player_extra_json
-			
-			if os.path.exists("player_data/"+name+"/avatar.png"):
-				ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
-
-			with open("player_data/"+name+"/data.json", 'w') as outfile:
-				json.dump(ranking[player], outfile, indent=4, sort_keys=True)
+					json.dump(ranking[player], outfile, indent=4, sort_keys=True)
+	
+	ranking["update_time"] = str(datetime.utcnow())
 
 	with open('out/'+liga+'.json', 'w') as outfile:
 		json.dump(ranking, outfile, indent=4, sort_keys=True)

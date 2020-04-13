@@ -16,6 +16,7 @@ jobs:
           name: Update data
           command: |
             . venv/bin/activate
+            python clean_directories.py
             python get_ranking.py
             python ranking_br.py
             python statistics.py
@@ -28,8 +29,8 @@ jobs:
       - run:
           name: Commit data back to Github
           command: |
-            git config user.email "joaorb64@gmail.com"
-            git config user.name "joaorb64"
+            git config user.email "joaorbezerra@hotmail.com"
+            git config user.name "tournamentapibot"
             DATE_TODAY=$(date +"%Y-%m-%d")
             git pull origin master
             git commit -am "[skip ci] Updating Data ${DATE_TODAY}" --allow-empty
