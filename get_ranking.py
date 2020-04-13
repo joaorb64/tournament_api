@@ -74,7 +74,8 @@ for liga in json_obj.keys():
 				with open("player_data/"+name+"/data.json", 'w') as outfile:
 					json.dump(ranking[player], outfile, indent=4, sort_keys=True)
 	
-	ranking["update_time"] = str(datetime.utcnow())
+	out = {"ranking": ranking}
+	out["update_time"] = str(datetime.utcnow())
 
 	with open('out/'+liga+'.json', 'w') as outfile:
-		json.dump(ranking, outfile, indent=4, sort_keys=True)
+		json.dump(out, outfile, indent=4, sort_keys=True)

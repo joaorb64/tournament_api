@@ -264,7 +264,8 @@ for player in ordered:
 			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
 		i += 1
 
-players["update_time"] = str(datetime.utcnow())
+out = {"ranking": players}
+out["update_time"] = str(datetime.utcnow())
 
 with open('out/ranking.json', 'w') as outfile:
 	json.dump(players, outfile, indent=4, sort_keys=True)
