@@ -6,6 +6,7 @@ import unicodedata
 import re
 import copy
 from datetime import datetime, tzinfo
+import collections
 
 def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
@@ -57,13 +58,17 @@ for liga in json_obj.keys():
 				player_extra_file = open("player_data/"+name+"/data.json")
 				player_extra_json = json.load(player_extra_file)
 
+				player_extra_json_original = copy.deepcopy(player_extra_json)
+
 				if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
 					player_extra_json["rank"] = {}
 
 				file_rank = player_extra_json["rank"].copy()
 				file_mains = copy.deepcopy(player_extra_json["mains"]) if "mains" in player_extra_json.keys() else []
 
-				player_extra_json.update(ranking[player])
+				update(player_extra_json, ranking[player])
+
+				player_extra_json["braacket_link"].update(ranking[player]["braacket_link"])
 
 				player_extra_json["rank"] = file_rank
 

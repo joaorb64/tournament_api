@@ -81,9 +81,11 @@ class Braacket:
 
         for page in range(1, pages+1):
             print('['+str(page)+"/"+str(pages)+']')
-            r = requests.get(
-                'https://braacket.com/league/'
-                f'{self.league}/player?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
+
+            if page != 1:
+                r = requests.get(
+                    'https://braacket.com/league/'
+                    f'{self.league}/player?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
             soup = BeautifulSoup(r.text, 'html.parser')
 
             table = soup.find('table') # get main table
@@ -220,57 +222,70 @@ class Braacket:
                 f'{self.league}/ranking?rows=200&embed=1', verify=False) # the upperbound is 200
             soup = BeautifulSoup(r.text, 'html.parser')
 
-            table = soup.findAll('table')[1] # first table is ranking system, second has the player list
-            tbody = table.find('tbody') # skip the table's header
-            lines = tbody.select("tr") # get each of the table's lines
-            url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+            pages = len(soup.find('select', {"id": "search-page"}).findChildren(recursive=False))
 
             pranking = {}
 
-            for line in lines:
-                children = line.findChildren(recursive=False)
+            for page in range(1, pages+1):
+                print('['+str(page)+"/"+str(pages)+']')
 
-                # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+                if page != 1:
+                    r = requests.get(
+                        'https://braacket.com/league/'
+                        f'{self.league}/ranking?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
 
-                # uuid
-                uuid = url_extract.match(children[2].find('a')['href']).group(1)
-                pranking[uuid] = {}
+                table = soup.findAll('table')[1] # first table is ranking system, second has the player list
+                tbody = table.find('tbody') # skip the table's header
+                lines = tbody.select("tr") # get each of the table's lines
+                url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
-                # rank
-                rank = children[0].string.strip()
-                pranking[uuid]["rank"] = {}
-                pranking[uuid]["rank"][self.league] = {"rank": rank}
+                for line in lines:
+                    children = line.findChildren(recursive=False)
 
-                # name
-                pranking[uuid]["name"] = children[2].find('a').string
-                pranking[uuid]["braacket_link"] = {self.league: children[2].find("a")['href']}
+                    # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
 
-                # mains
-                pranking[uuid]["mains"] = []
-                mains = children[2].findAll('img')
+                    # uuid
+                    uuid = url_extract.match(children[2].find('a')['href']).group(1)
+                    pranking[uuid] = {}
 
-                for main in mains:
-                    character = {}
-                    character["name"] = main["title"]
-                    character["icon"] = main["src"]
-                    pranking[uuid]["mains"].append(character)
+                    # rank
+                    rank = children[0].string.strip()
+                    pranking[uuid]["rank"] = {}
+                    pranking[uuid]["rank"][self.league] = {"rank": rank}
 
-                # twitter
-                links = children[3].select('a')
+                    # name
+                    pranking[uuid]["name"] = children[2].find('a').string
+                    pranking[uuid]["braacket_link"] = {self.league: children[2].find("a")['href']}
 
-                for link in links:
-                    if link.has_attr('href'):
-                        if "twitter.com" in link['href']:
-                            pranking[uuid]["twitter"] = link['href']
-                
-                # score
-                score = children[5].string.strip()
-                pranking[uuid]["rank"][self.league]["score"] = score
+                    # mains
+                    pranking[uuid]["mains"] = []
+                    mains = children[2].findAll('img')
+
+                    for main in mains:
+                        character = {}
+                        character["name"] = main["title"]
+                        character["icon"] = main["src"]
+                        pranking[uuid]["mains"].append(character)
+
+                    # twitter
+                    links = children[3].select('a')
+
+                    for link in links:
+                        if link.has_attr('href'):
+                            if "twitter.com" in link['href']:
+                                pranking[uuid]["twitter"] = link['href']
+                    
+                    # score
+                    score = children[5].string.strip()
+                    pranking[uuid]["rank"][self.league]["score"] = score
             return pranking
         except requests.exceptions.RequestException as e:
             print(self.league + ": " + str(e))
             return {}
         except IndexError as e:
+            print(self.league + ": " + str(e))
+            return {}
+        except AttributeError as e:
             print(self.league + ": " + str(e))
             return {}
 

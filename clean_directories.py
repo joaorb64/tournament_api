@@ -12,8 +12,10 @@ for directory in directories:
   will_delete = False
 
   with open('player_data/'+directory+'/data.json', 'r') as player_file:
+
     player_data = json.load(player_file)
-    if len(player_data.keys()) == 0:
+
+    if len(player_data.keys()) == 0 or "rank" not in player_data.keys():
       will_delete = True
     elif "rank" in player_data.keys():
       player_data["rank"] = {}
