@@ -60,6 +60,9 @@ for liga in json_obj.keys():
 
 				player_extra_json["rank"].update(ranking[player]["rank"])
 
+				if "wifi" in json_obj[liga].keys():
+					player_extra_json["rank"][liga]["wifi"] = True
+
 				if len(ranking[player]["mains"]) > 0:
 					player_extra_json["mains"] = ranking[player]["mains"]
 

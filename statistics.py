@@ -141,6 +141,8 @@ with open("out/"+'prbth'+".json") as infile:
 	for p in json_obj["ranking"]:
 		if "rank" in json_obj["ranking"][p].keys():
 			for liga in json_obj["ranking"][p]["rank"]:
+				if "wifi" in json_obj["ranking"][p]["rank"][liga]:
+					continue
 				if liga != 'prbth':
 					if liga in playersPerRegion:
 						playersPerRegion[liga] += 1
@@ -158,7 +160,7 @@ with open("out/"+'prbth'+".json") as infile:
 	for p in json_obj["ranking"]:
 		if "rank" in json_obj["ranking"][p].keys():
 			for liga in json_obj["ranking"][p]["rank"]:
-				if liga != 'prbth':
+				if liga != 'prbth' and "wifi" not in json_obj["ranking"][p]["rank"][liga]:
 					if liga in scorePerRegion:
 						scorePerRegion[liga] += json_obj["ranking"][p]["rank"]['prbth']["score"]
 					else:
