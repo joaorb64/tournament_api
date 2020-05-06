@@ -11,6 +11,14 @@ def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
 	return u"".join([c for c in nfkd_form if not unicodedata.combining(c)])
 
+def update(d, u):
+	for k, v in u.items():
+			if isinstance(v, collections.abc.Mapping):
+					d[k] = update(d.get(k, {}), v)
+			else:
+					d[k] = v
+	return d
+
 def text_to_id(text):
 	text = remove_accents(text)
 	text = text.replace("@", "_At_")
@@ -53,7 +61,8 @@ for liga in json_obj.keys():
 					player_extra_json["rank"] = {}
 
 				file_rank = player_extra_json["rank"].copy()
-				
+				file_mains = copy.deepcopy(player_extra_json["mains"]) if "mains" in player_extra_json.keys() else []
+
 				player_extra_json.update(ranking[player])
 
 				player_extra_json["rank"] = file_rank
@@ -63,13 +72,15 @@ for liga in json_obj.keys():
 				if "wifi" in json_obj[liga].keys():
 					player_extra_json["rank"][liga]["wifi"] = True
 
-				if len(ranking[player]["mains"]) > 0:
-					player_extra_json["mains"] = ranking[player]["mains"]
-
 				if "twitter" in ranking[player]:
 					player_extra_json["twitter"] = ranking[player]["twitter"]
 
 				ranking[player] = player_extra_json
+
+				if len(ranking[player]["mains"]) > 0:
+					player_extra_json["mains"] = ranking[player]["mains"]
+				else:
+					ranking[player]["mains"] = copy.deepcopy(file_mains)
 				
 				if os.path.exists("player_data/"+name+"/avatar.png"):
 					ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
