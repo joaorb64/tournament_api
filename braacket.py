@@ -233,6 +233,7 @@ class Braacket:
                     r = requests.get(
                         'https://braacket.com/league/'
                         f'{self.league}/ranking?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
+                    soup = BeautifulSoup(r.text, 'html.parser')
 
                 table = soup.findAll('table')[1] # first table is ranking system, second has the player list
                 tbody = table.find('tbody') # skip the table's header
