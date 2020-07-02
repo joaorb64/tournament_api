@@ -42,7 +42,7 @@ all_players = {
 }
 
 # Load from spreadsheet
-'''
+
 for player in gsheet["values"][1:]:
     # 'Nick', 'Org', 'Estado', 'Braacket Links', 'Nome real', 'Twitter', 'Mains'
     while len(player) < 7:
@@ -72,9 +72,9 @@ with open('allplayers.json', 'w') as outfile:
 #     body={"values": values},
 #     valueInputOption='USER_ENTERED'
 # ).execute()
+
+
 '''
-
-
 # Upload inicial
 
 directories = os.listdir("./player_data")
@@ -106,7 +106,7 @@ with open('allplayers.csv', mode='w') as player_csv:
                 player_data.get("twitter"),
                 "\n".join([main.get("name") for main in player_data.get("mains")]) if player_data.get("mains") is not None else ""
             ])
-
+'''
 '''
 r = requests.get('https://docs.google.com/spreadsheets/d/1ppEf-oCuoQ9i_EJsZao4Lb8QXnRi0xkGj7JxJmIPYvI/export?format=csv&gid=0')
 data = StringIO(r.text)
