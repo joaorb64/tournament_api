@@ -17,6 +17,8 @@ jobs:
           command: |
             . venv/bin/activate
             python clean_directories.py
+            echo ${GCP_PROJECT_KEY} | base64 --decode --ignore-garbage > credentials.json
+            python docs.py
             python get_ranking.py
             python ranking_br.py
             python statistics.py

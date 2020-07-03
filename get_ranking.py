@@ -98,3 +98,18 @@ for liga in json_obj.keys():
 
 	with open('out/'+liga+'.json', 'w') as outfile:
 		json.dump(out, outfile, indent=4, sort_keys=True)
+
+	ap_file = open('allplayers.json')
+	ap = json.load(ap_file)
+
+	for p in out["ranking"]:
+		if p in ap["mapping"]:
+			id = ap["mapping"][p]
+
+			if "ranking" not in ap["players"][id]:
+				ap["players"][id]["ranking"] = {}
+
+			update(ap["players"][id]["ranking"], out["ranking"][p]["rank"])
+
+	with open('allplayers.json', 'w') as outfile:
+		json.dump(ap, outfile, indent=4, sort_keys=True)
