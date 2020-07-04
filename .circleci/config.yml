@@ -11,7 +11,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install beautifulsoup4 requests pprint faster_than_requests
+            pip install beautifulsoup4 requests pprint faster_than_requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
       - run:
           name: Update data
           command: |
