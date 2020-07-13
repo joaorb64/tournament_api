@@ -147,6 +147,7 @@ for player in players:
 			for league_player in json_league_players:
 				if players[player]["name"] == json_league_players[league_player]["name"]:
 					players[player].update(json_league_players[league_player])
+					players[player]["braacket_link"]["prbth"] = player
 					break
 		except:
 			pass
@@ -243,6 +244,12 @@ for player in ordered:
 		}
 		player_extra_json["tournaments"] = players[player]["tournaments"]
 		player_extra_json["tournament_points"] = players[player]["tournament_points"]
+
+		if "braacket_link" in players[player].keys():
+			if "prbth" in players[player]["braacket_link"].keys():
+				if not "braacket_link" in player_extra_json:
+					player_extra_json["braacket_link"] = {}
+				player_extra_json["braacket_link"]["prbth"] = players[player]["braacket_link"]["prbth"]
 
 		if "mains" in players[player].keys() and len(players[player]["mains"]) > 0 and \
 			((not "mains" in player_extra_json.keys()) or len(player_extra_json["mains"]) == 0):
