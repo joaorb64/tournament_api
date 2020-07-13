@@ -16,7 +16,6 @@ jobs:
           name: Update data
           command: |
             . venv/bin/activate
-            python clean_directories.py
             echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
             python docs.py
             python get_ranking.py
