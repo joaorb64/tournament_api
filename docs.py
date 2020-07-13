@@ -120,3 +120,63 @@ print(csv_reader)
 for row in csv_reader:
     print(row)
 '''
+'''
+# atualizar dados de jogadores sem ter que recriar tudo~
+
+def update(d, u):
+	for k, v in u.items():
+			if isinstance(v, collections.abc.Mapping):
+					d[k] = update(d.get(k, {}), v)
+			else:
+					d[k] = v
+	return d
+
+with open('allplayers.json', 'r') as allplayers_data:
+    allplayers = json.load(allplayers_data)
+
+directories = os.listdir("./player_data")
+
+with open('allplayers.csv', mode='w') as player_csv:
+
+    player_csv_writer = csv.writer(player_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+    for i, player in enumerate(allplayers["players"]):
+        print("["+str(i)+"/"+str(len(allplayers["players"])))
+        done = False
+        for directory in directories:
+            if done:
+                break
+            with open('player_data/'+directory+'/data.json', 'r') as player_file:
+
+                player_data = json.load(player_file)
+
+                if len(player_data.keys()) == 0:
+                    continue
+
+                if "braacket_link" not in player_data.keys():
+                    continue
+
+                mapping = {}
+
+                if player_data.get("braacket_link"):
+                    for link in player_data.get("braacket_link"):
+                        if link == "prbth":
+                            mapping[re.split('/|\?',player_data["braacket_link"][link])[-1]] = link
+                        else:
+                            mapping[re.split('/|\?',player_data["braacket_link"][link])[-2]] = link
+
+                for i, link in enumerate(player["braacket_links"]):
+                    if link in mapping.keys():
+                        player["braacket_links"][i] = mapping[link]+":"+link
+        
+        player_csv_writer.writerow([
+            player.get("name"),
+            player.get("org"),
+            player.get("state"),
+            '\n'.join(player.get("braacket_links")),
+            player.get("full_name"),
+            player.get("twitter"),
+            '\n'.join(player.get("mains")),
+        ])
+    
+'''
