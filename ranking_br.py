@@ -110,6 +110,9 @@ if not os.path.exists("out/tournament/"+'prbth'+".json"):
 f = open("out/tournament/"+'prbth_override'+".json")
 json_obj = json.load(f)
 
+f2 = open('allplayers.json')
+allplayers = json.load(f2)
+
 tournaments = bracket.get_tournaments()
 
 redownload_tournaments = True
@@ -130,27 +133,31 @@ tournaments = json_obj
 with open("out/tournament/"+'prbth'+".json", 'w') as outfile:
 	json.dump(json_obj, outfile, indent=4, sort_keys=True)
 
-
 players = bracket.get_players()
 
 f = open('leagues.json')
 json_obj = json.load(f)
 
 for player in players:
-	for liga in json_obj.keys():
-		try:
-			if liga == "prbth":
-				continue
-			f_league = open('out/'+liga+'.json')
-			json_league_players = json.load(f_league)
-			
-			for league_player in json_league_players:
-				if players[player]["name"] == json_league_players[league_player]["name"]:
-					players[player].update(json_league_players[league_player])
-					players[player]["braacket_link"]["prbth"] = player
-					break
-		except:
-			pass
+	id = None
+	
+	if "prbth:"+player in allplayers["mapping"]:
+		id = allplayers["mapping"]["prbth:"+player]
+	else:
+		allplayers["players"].append({
+			"name": players[player]["name"],
+			"braacket_links": ["prbth:"+player],
+			"rank": {},
+			"mains": players[player]["mains"]
+		})
+		id = len(allplayers["players"])-1
+		allplayers["mapping"]["prbth:"+player] = id
+
+	instance = allplayers["players"][id]
+
+	# override mains if possible
+	if len(players[player]["mains"]) > 0 and len(instance["mains"]) == 0:
+		instance["mains"] = copy.deepcopy(players[player]["mains"])
 
 	scores = []
 	tournaments_went = []
@@ -223,50 +230,29 @@ ordered.sort(key=functools.cmp_to_key(orderByScore))
 
 i=1
 for player in ordered:
-	# Update player data
-	name = text_to_id(players[player]["name"])
+	id = allplayers["mapping"]["prbth:"+player]
 
-	if name:
-		if not os.path.exists("player_data/"+name):
-			os.makedirs("player_data/"+name)
-			with open("player_data/"+name+"/data.json", 'w') as outfile:
-				json.dump({}, outfile)
-		
-		player_extra_file = open("player_data/"+name+"/data.json")
-		player_extra_json = json.load(player_extra_file)
+	if not "rank" in allplayers["players"][id].keys():
+		allplayers["players"][id]["rank"] = {}
+	
+	allplayers["players"][id]["rank"]["prbth"] = {
+		"score": players[player]["rank"]["prbth"]["score"],
+		"rank": i
+	}
 
-		if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
-			player_extra_json["rank"] = {}
+	allplayers["players"][id]["tournaments"] = players[player]["tournaments"]
+	allplayers["players"][id]["tournament_points"] = players[player]["tournament_points"]
 
-		player_extra_json["rank"]["prbth"] = {
-			"score": players[player]["rank"]["prbth"]["score"],
-			"rank": i
-		}
-		player_extra_json["tournaments"] = players[player]["tournaments"]
-		player_extra_json["tournament_points"] = players[player]["tournament_points"]
+	players[player]["rank"]["prbth"]["rank"] = i
 
-		if "braacket_link" in players[player].keys():
-			if "prbth" in players[player]["braacket_link"].keys():
-				if not "braacket_link" in player_extra_json:
-					player_extra_json["braacket_link"] = {}
-				player_extra_json["braacket_link"]["prbth"] = players[player]["braacket_link"]["prbth"]
-
-		if "mains" in players[player].keys() and len(players[player]["mains"]) > 0 and \
-			((not "mains" in player_extra_json.keys()) or len(player_extra_json["mains"]) == 0):
-			player_extra_json["mains"] = players[player]["mains"]
-		
-		players[player].update(player_extra_json)
-
-		players[player]["rank"]["prbth"]["rank"] = i
-
-		player_extra_json["name"] = players[player]["name"]
-
-		with open("player_data/"+name+"/data.json", 'w') as outfile:
-			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
-		i += 1
+	i += 1
 
 out = {"ranking": players}
 out["update_time"] = str(datetime.utcnow())
 
 with open('out/prbth.json', 'w') as outfile:
 	json.dump(out, outfile, indent=4, sort_keys=True)
+
+# update allplayers
+with open('allplayers.json', 'w') as outfile:
+	json.dump(allplayers, outfile, indent=4, sort_keys=True)

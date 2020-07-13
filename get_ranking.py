@@ -31,6 +31,9 @@ def text_to_id(text):
 f = open('leagues.json')
 json_obj = json.load(f)
 
+f2 = open('allplayers.json')
+allplayers = json.load(f2)
+
 for liga in json_obj.keys():
 
 	if liga == "prbth":
@@ -47,69 +50,53 @@ for liga in json_obj.keys():
 
 	if ranking != None:
 		for player in ranking.keys():
-			name = text_to_id(ranking[player]['name'])
+			id = None
 
-			if name:
-				if not os.path.exists("player_data/"+name):
-					os.makedirs("player_data/"+name)
-					with open("player_data/"+name+"/data.json", 'w') as outfile:
-						json.dump({}, outfile)
+			if liga+":"+player in allplayers["mapping"].keys():
+				id = allplayers["mapping"][liga+":"+player]
+			else:
+				allplayers["players"].append({})
+				id = len(allplayers["players"])-1
+				allplayers["mapping"][liga+":"+player] = id
 
-				player_extra_file = open("player_data/"+name+"/data.json")
-				player_extra_json = json.load(player_extra_file)
+			instance = allplayers["players"][id]
 
-				player_extra_json_original = copy.deepcopy(player_extra_json)
+			# name for new players
+			if "name" not in instance.keys():
+				instance["name"] = ranking[player]["name"]
+			
+			# braacket link for new players
+			if "braacket_links" not in instance.keys():
+				instance["braacket_links"] = []
+				instance["braacket_links"].append(liga+":"+player)
 
-				if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
-					player_extra_json["rank"] = {}
+			# rank
+			if "rank" not in instance.keys():
+				instance["rank"] = {}
 
-				file_rank = player_extra_json["rank"].copy()
-				file_mains = copy.deepcopy(player_extra_json["mains"]) if "mains" in player_extra_json.keys() else []
+			instance["rank"].update(ranking[player]["rank"])
 
-				update(player_extra_json, ranking[player])
+			if "wifi" in json_obj[liga].keys():
+				instance["rank"][liga]["wifi"] = True
 
-				player_extra_json["braacket_link"].update(ranking[player]["braacket_link"])
+			# mains if not present
+			if "mains" not in instance.keys():
+				instance["mains"] = []
 
-				player_extra_json["rank"] = file_rank
-
-				player_extra_json["rank"].update(ranking[player]["rank"])
-
-				if "wifi" in json_obj[liga].keys():
-					player_extra_json["rank"][liga]["wifi"] = True
-
-				if "twitter" in ranking[player]:
-					player_extra_json["twitter"] = ranking[player]["twitter"]
-
-				ranking[player] = player_extra_json
-
-				if len(ranking[player]["mains"]) > 0:
-					player_extra_json["mains"] = ranking[player]["mains"]
-				else:
-					ranking[player]["mains"] = copy.deepcopy(file_mains)
-				
-				if os.path.exists("player_data/"+name+"/avatar.png"):
-					ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
-
-				with open("player_data/"+name+"/data.json", 'w') as outfile:
-					json.dump(ranking[player], outfile, indent=4, sort_keys=True)
+			if len(ranking[player]["mains"]) > 0 and len(instance["mains"]) == 0:
+				ranking[player]["mains"] = copy.deepcopy(ranking[player]["mains"])
+			
+			# image avatar... dropped?
+			#if os.path.exists("player_data/"+name+"/avatar.png"):
+			#	ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
 	
 	out = {"ranking": ranking}
 	out["update_time"] = str(datetime.utcnow())
 
+	# league out file
 	with open('out/'+liga+'.json', 'w') as outfile:
 		json.dump(out, outfile, indent=4, sort_keys=True)
 
-	ap_file = open('allplayers.json')
-	ap = json.load(ap_file)
-
-	for p in out["ranking"]:
-		if p in ap["mapping"]:
-			id = ap["mapping"][p]
-
-			if "ranking" not in ap["players"][id]:
-				ap["players"][id]["ranking"] = {}
-
-			update(ap["players"][id]["ranking"], out["ranking"][p]["rank"])
-
+	# update allplayers
 	with open('allplayers.json', 'w') as outfile:
-		json.dump(ap, outfile, indent=4, sort_keys=True)
+		json.dump(allplayers, outfile, indent=4, sort_keys=True)

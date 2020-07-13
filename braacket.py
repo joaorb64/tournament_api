@@ -119,10 +119,7 @@ class Braacket:
                 mains = children[0].findAll('img')
 
                 for main in mains:
-                    character = {}
-                    character["name"] = main["title"]
-                    character["icon"] = main["src"]
-                    player["mains"].append(character)
+                    player["mains"].append(main["title"])
 
                 # twitter
                 links = children[1].select('a')
@@ -263,10 +260,7 @@ class Braacket:
                     mains = children[2].findAll('img')
 
                     for main in mains:
-                        character = {}
-                        character["name"] = main["title"]
-                        character["icon"] = main["src"]
-                        pranking[uuid]["mains"].append(character)
+                        pranking[uuid]["mains"].append(main["title"])
 
                     # twitter
                     links = children[3].select('a')

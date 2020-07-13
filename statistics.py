@@ -116,97 +116,72 @@ pprint = pprint.PrettyPrinter()
 # saida final
 outInfo = {}
 
-# Linked players
-# Players in BR ranking also in a local ranking
-with open("out/"+'prbth'+".json") as infile:
-	json_obj = json.load(infile)
+with open("allplayers.json") as ap:
+	allplayers = json.load(ap)
 
-	unlinked = []
+	# Players per league
+	playersPerLeague = {}
 
-	for p in json_obj["ranking"]:
-		if not ("rank" in json_obj["ranking"][p].keys() and len(json_obj["ranking"][p]["rank"]) > 1):
-			unlinked.append(json_obj["ranking"][p])
-		
-	outInfo["linkage"] = {
-		"unlinked": unlinked,
-		"total": len(json_obj.keys())
-	}
-
-# Players per region
-with open("out/"+'prbth'+".json") as infile:
-	json_obj = json.load(infile)
-
-	playersPerRegion = {}
-
-	for p in json_obj["ranking"]:
-		if "rank" in json_obj["ranking"][p].keys():
-			for liga in json_obj["ranking"][p]["rank"]:
-				if "wifi" in json_obj["ranking"][p]["rank"][liga]:
+	for p in allplayers["players"]:
+		if "rank" in p.keys():
+			for liga in p["rank"]:
+				if "wifi" in p["rank"][liga]:
 					continue
 				if liga != 'prbth':
-					if liga in playersPerRegion:
-						playersPerRegion[liga] += 1
+					if liga in playersPerLeague:
+						playersPerLeague[liga] += 1
 					else:
-						playersPerRegion[liga] = 1
+						playersPerLeague[liga] = 1
 	
-	outInfo["players_per_region"] = playersPerRegion
+	outInfo["players_per_region"] = playersPerLeague
 
-# Score per region
-with open("out/"+'prbth'+".json") as infile:
-	json_obj = json.load(infile)
-
+	# Score per league
 	scorePerRegion = {}
 
-	for p in json_obj["ranking"]:
-		if "rank" in json_obj["ranking"][p].keys():
-			for liga in json_obj["ranking"][p]["rank"]:
-				if liga != 'prbth' and "wifi" not in json_obj["ranking"][p]["rank"][liga]:
+	for p in allplayers["players"]:
+		if "rank" in p.keys() and "prbth" in p["rank"]:
+			for liga in p["rank"]:
+				if liga != 'prbth' and "wifi" not in p["rank"][liga]:
 					if liga in scorePerRegion:
-						scorePerRegion[liga] += json_obj["ranking"][p]["rank"]['prbth']["score"]
+						scorePerRegion[liga] += p["rank"]['prbth']["score"]
 					else:
-						scorePerRegion[liga] = json_obj["ranking"][p]["rank"]['prbth']["score"]
+						scorePerRegion[liga] = p["rank"]['prbth']["score"]
 	
 	outInfo["score_per_region"] = scorePerRegion
 
-# Best of each character
-with open("out/"+'prbth'+".json") as infile:
-	json_obj = json.load(infile)
-
+	# Best of each character
 	def orderByRank(a, b):
-		if json_obj["ranking"][a]["rank"]["prbth"]["score"] < json_obj["ranking"][b]["rank"]["prbth"]["score"]:
+		if a["rank"]["prbth"]["score"] < b["rank"]["prbth"]["score"]:
 			return 1
 		else:
 			return -1
-		
-	ordered = list(json_obj["ranking"].keys())
+			
+	ordered = [p for p in allplayers["players"] if "rank" in p and "prbth" in p["rank"] and len(p["mains"]) > 0]
 	ordered.sort(key=functools.cmp_to_key(orderByRank))
 
 	bestWithEachChar = {}
 
 	for c in characters:
 		for p in ordered:
-			if "mains" in json_obj["ranking"][p].keys() and len(json_obj["ranking"][p]["mains"]) > 0:
-				if json_obj["ranking"][p]["mains"][0]["name"] == characters[c]:
-					bestWithEachChar[c] = json_obj["ranking"][p]
+			if "mains" in p.keys() and len(p["mains"]) > 0:
+				if p["mains"][0] == characters[c]:
+					bestWithEachChar[c] = p
 					break
 
 	outInfo["best_player_character"] = bestWithEachChar
 
-# Character usage
-with open("out/"+'prbth'+".json") as infile:
-	json_obj = json.load(infile)
-
+	# Character usage
 	charUsage = {}
 
 	for c in characters:
 		charUsage[c] = {
-			"usage": 0
+			"usage": 0,
+			"name": characters[c]
 		}
-		for p in json_obj["ranking"]:
-			if "mains" in json_obj["ranking"][p].keys() and len(json_obj["ranking"][p]["mains"]) > 0:
-				if json_obj["ranking"][p]["mains"][0]["name"] == characters[c]:
+		for p in allplayers["players"]:
+			if "mains" in p.keys() and len(p["mains"]) > 0:
+				if p["mains"][0] == characters[c]:
 					charUsage[c]["usage"] += 1
-					charUsage[c]["icon"] = json_obj["ranking"][p]["mains"][0]["icon"]
 		
 	outInfo["char_usage"] = charUsage
 
