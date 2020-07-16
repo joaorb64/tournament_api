@@ -113,56 +113,86 @@ characters = {
 
 pprint = pprint.PrettyPrinter()
 
-# saida final
-outInfo = {}
+f = open('leagues.json')
+ligas = json.load(f)
 
-with open("allplayers.json") as ap:
-	allplayers = json.load(ap)
+ap = open("allplayers.json")
+allplayers = json.load(ap)
 
-	# Players per league
-	playersPerLeague = {}
+for liga in ligas:
+	outInfo = {}
 
-	for p in allplayers["players"]:
-		if "rank" in p.keys():
-			for liga in p["rank"]:
-				if "wifi" in p["rank"][liga]:
+	# somente para ligas BR
+	if ligas[liga]["state"] == "BR":
+		# Players per league
+		playersPerLeague = {}
+
+		for p in allplayers["players"]:
+			if "rank" in p.keys():
+				if liga not in p["rank"].keys():
 					continue
-				if liga != 'prbth':
-					if liga in playersPerLeague:
-						playersPerLeague[liga] += 1
-					else:
-						playersPerLeague[liga] = 1
-	
-	outInfo["players_per_region"] = playersPerLeague
+				for pliga in p["rank"]:
+					if "wifi" in p["rank"][pliga]:
+						continue
+					if pliga != liga and pliga in ligas.keys() and ligas[pliga]["state"] != "BR":
+						if pliga in playersPerLeague:
+							playersPerLeague[pliga] += 1
+						else:
+							playersPerLeague[pliga] = 1
+		
+		outInfo["players_per_league"] = playersPerLeague
 
-	# Score per league
-	scorePerRegion = {}
+		# Score per league
+		scorePerLeague = {}
 
-	for p in allplayers["players"]:
-		if "rank" in p.keys() and "prbth" in p["rank"]:
-			for liga in p["rank"]:
-				if liga != 'prbth' and "wifi" not in p["rank"][liga]:
-					if liga in scorePerRegion:
-						scorePerRegion[liga] += p["rank"]['prbth']["score"]
+		for p in allplayers["players"]:
+			if "rank" in p.keys() and liga in p["rank"]:
+				if liga not in p["rank"].keys():
+					continue
+				for pliga in p["rank"]:
+					if "wifi" in p["rank"][pliga]:
+						continue
+					if pliga != liga and pliga in ligas.keys() and ligas[pliga]["state"] != "BR":
+						if pliga in scorePerLeague:
+							scorePerLeague[pliga] += p["rank"][liga]["score"]
+						else:
+							scorePerLeague[pliga] = p["rank"][liga]["score"]
+		
+		outInfo["score_per_league"] = scorePerLeague
+
+		# Players per state
+		playersPerState = {}
+
+		for p in allplayers["players"]:
+			if "rank" in p.keys():
+				if liga not in p["rank"].keys():
+					continue
+				if "state" in p.keys():
+					if p["state"] == "":
+						p["state"] = "null"
+					if p["state"] in playersPerState:
+						playersPerState[p["state"]] += 1
 					else:
-						scorePerRegion[liga] = p["rank"]['prbth']["score"]
-	
-	outInfo["score_per_region"] = scorePerRegion
+						playersPerState[p["state"]] = 1
+		
+		outInfo["players_per_state"] = playersPerState
 
 	# Best of each character
 	def orderByRank(a, b):
-		if a["rank"]["prbth"]["score"] < b["rank"]["prbth"]["score"]:
+		if a["rank"][liga]["score"] < b["rank"][liga]["score"]:
 			return 1
 		else:
 			return -1
 			
-	ordered = [p for p in allplayers["players"] if "rank" in p and "prbth" in p["rank"] and len(p["mains"]) > 0]
+	ordered = [p for p in allplayers["players"] if "rank" in p and liga in p["rank"] and len(p["mains"]) > 0]
 	ordered.sort(key=functools.cmp_to_key(orderByRank))
 
 	bestWithEachChar = {}
 
 	for c in characters:
 		for p in ordered:
+			if liga not in p["rank"].keys():
+					continue
 			if "mains" in p.keys() and len(p["mains"]) > 0:
 				if p["mains"][0] == characters[c]:
 					bestWithEachChar[c] = p
@@ -179,11 +209,18 @@ with open("allplayers.json") as ap:
 			"name": characters[c]
 		}
 		for p in allplayers["players"]:
-			if "mains" in p.keys() and len(p["mains"]) > 0:
-				if p["mains"][0] == characters[c]:
-					charUsage[c]["usage"] += 1
+			if "rank" in p.keys():
+				if liga not in p["rank"].keys():
+						continue
+				if "mains" in p.keys() and len(p["mains"]) > 0:
+					if p["mains"][0] == characters[c]:
+						charUsage[c]["usage"] += 1
 		
 	outInfo["char_usage"] = charUsage
 
-with open('out/statistics.json', 'w') as outfile:
-	json.dump(outInfo, outfile, indent=4, sort_keys=True)
+	league_file = open("out/"+liga+".json")
+	league_json = json.load(league_file)
+	league_json["statistics"] = outInfo
+
+	with open('out/'+liga+'.json', 'w') as outfile:
+		json.dump(league_json, outfile, indent=4, sort_keys=True)
