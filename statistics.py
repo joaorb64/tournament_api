@@ -179,7 +179,7 @@ for liga in ligas:
 
 	# Best of each character
 	def orderByRank(a, b):
-		if a["rank"][liga]["score"] < b["rank"][liga]["score"]:
+		if int(a["rank"][liga]["score"]) < int(b["rank"][liga]["score"]):
 			return 1
 		else:
 			return -1
