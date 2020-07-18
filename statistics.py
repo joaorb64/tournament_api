@@ -154,9 +154,12 @@ for liga in ligas:
 						continue
 					if pliga != liga and pliga in ligas.keys() and ligas[pliga]["state"] != "BR":
 						if pliga in scorePerLeague:
-							scorePerLeague[pliga] += p["rank"][liga]["score"]
+							scorePerLeague[pliga]["score"] += p["rank"][liga]["score"]
 						else:
-							scorePerLeague[pliga] = p["rank"][liga]["score"]
+							scorePerLeague[pliga] = {"score": p["rank"][liga]["score"]}
+		
+		for pliga in scorePerLeague:
+			scorePerLeague[pliga]["average"] = float(scorePerLeague[pliga]["score"]) / float(playersPerLeague[pliga])
 		
 		outInfo["score_per_league"] = scorePerLeague
 
