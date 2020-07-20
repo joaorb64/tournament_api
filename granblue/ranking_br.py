@@ -80,6 +80,9 @@ if not os.path.exists("out/tournaments.json"):
 f = open("out/tournaments_override.json")
 json_obj = json.load(f)
 
+f2 = open('allplayers.json')
+allplayers = json.load(f2)
+
 tournaments = bracket.get_tournaments()
 
 redownload_tournaments = True
@@ -141,6 +144,21 @@ with open("out/tournaments.json", 'w') as outfile:
 players = bracket.get_players()
 
 for player in players:
+	id = None
+	
+	if player in allplayers["mapping"]:
+		id = allplayers["mapping"][player]
+	else:
+		allplayers["players"].append({
+			"name": players[player]["name"],
+			"braacket_link": [player],
+			"rank": {},
+			"mains": players[player]["mains"]
+		})
+		id = len(allplayers["players"])-1
+		allplayers["mapping"][player] = id
+
+	instance = allplayers["players"][id]
 
 	scores = []
 	tournaments_went = []
@@ -228,44 +246,29 @@ ordered.sort(key=functools.cmp_to_key(orderByScore))
 
 i=1
 for player in ordered:
-	# Update player data
-	name = text_to_id(players[player]["name"])
+	id = allplayers["mapping"][player]
 
-	if name:
-		if not os.path.exists("player_data/"+name):
-			os.makedirs("player_data/"+name)
-			with open("player_data/"+name+"/data.json", 'w') as outfile:
-				json.dump({}, outfile)
-		
-		player_extra_file = open("player_data/"+name+"/data.json")
-		player_extra_json = json.load(player_extra_file)
+	if not "rank" in allplayers["players"][id].keys():
+		allplayers["players"][id]["rank"] = {}
+	
+	allplayers["players"][id]["rank"] = {
+		"score": players[player]["rank"]["score"],
+		"rank": i
+	}
 
-		if "rank" not in player_extra_json.keys() or type(player_extra_json["rank"]) is not dict:
-			player_extra_json["rank"] = {}
+	allplayers["players"][id]["tournaments"] = players[player]["tournaments"]
+	allplayers["players"][id]["tournament_points"] = players[player]["tournament_points"]
 
-		player_extra_json["rank"] = {
-			"score": players[player]["rank"]["score"],
-			"rank": i
-		}
-		player_extra_json["tournaments"] = players[player]["tournaments"]
-		player_extra_json["tournament_points"] = players[player]["tournament_points"]
+	players[player]["rank"]["rank"] = i
 
-		if "mains" in players[player].keys() and len(players[player]["mains"]) > 0 and \
-			((not "mains" in player_extra_json.keys()) or len(player_extra_json["mains"]) == 0):
-			player_extra_json["mains"] = players[player]["mains"]
-		
-		players[player].update(player_extra_json)
-
-		players[player]["rank"]["rank"] = i
-
-		player_extra_json["name"] = players[player]["name"]
-
-		with open("player_data/"+name+"/data.json", 'w') as outfile:
-			json.dump(player_extra_json, outfile, indent=4, sort_keys=True)
-		i += 1
+	i += 1
 
 out = {"ranking": players}
 out["update_time"] = str(datetime.utcnow())
 
 with open('out/ranking.json', 'w') as outfile:
 	json.dump(out, outfile, indent=4, sort_keys=True)
+
+# update allplayers
+with open('allplayers.json', 'w') as outfile:
+	json.dump(allplayers, outfile, indent=4, sort_keys=True)
