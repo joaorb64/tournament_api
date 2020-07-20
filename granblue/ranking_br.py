@@ -160,6 +160,13 @@ for player in players:
 
 	instance = allplayers["players"][id]
 
+	# mains if not present
+	if "mains" not in instance.keys():
+		instance["mains"] = []
+
+	if len(players[player]["mains"]) > 0 and len(instance["mains"]) == 0:
+		players[player]["mains"] = copy.deepcopy(players[player]["mains"])
+
 	scores = []
 	tournaments_went = []
 
