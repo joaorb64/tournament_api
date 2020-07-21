@@ -168,15 +168,14 @@ for player in players:
 		players[player]["mains"] = copy.deepcopy(players[player]["mains"])
 
 	scores = []
+	scores_pc = []
+	scores_ps4 = []
 	tournaments_went = []
 
 	for tournament in tournaments:
-		if ("ranking" in tournaments[tournament].keys() and
-				player in tournaments[tournament]["ranking"]) or \
-			("ranking_PC" in tournaments[tournament].keys() and
-				player in tournaments[tournament]["ranking_PC"]) or \
-			("ranking_PS4" in tournaments[tournament].keys() and
-				player in tournaments[tournament]["ranking_PS4"]):
+		if ("ranking" in tournaments[tournament].keys() and player in tournaments[tournament]["ranking"]) or \
+		("ranking_PC" in tournaments[tournament].keys() and player in tournaments[tournament]["ranking_PC"]) or \
+		("ranking_PS4" in tournaments[tournament].keys() and player in tournaments[tournament]["ranking_PS4"]):
 
 			point_system = None
 
@@ -188,10 +187,9 @@ for player in players:
 				elif tournaments[tournament]["tier"] == "SSR":
 					point_system = point_system_ssr
 			
-			rank = None
 			rank_pc = None
 			rank_ps4 = None
-			best_console = None
+			rank = None
 
 			if tournaments[tournament]["tier"] == "R":
 				if("ranking_PC" in tournaments[tournament].keys() and
@@ -201,30 +199,36 @@ for player in players:
 				player in tournaments[tournament]["ranking_PS4"]):
 					rank_ps4 = tournaments[tournament]["ranking_PS4"][player]["rank"]
 				
-				if rank_pc == None:
-					rank = rank_ps4
-					best_console = "PS4"
-				elif rank_ps4 == None:
-					rank = rank_pc
-					best_console = "PC"
-				else:
-					if int(rank_ps4) < int(rank_pc):
-						rank = rank_ps4
-						best_console = "PS4"
+				if rank_pc:
+					if rank_pc not in point_system:
+						if int(rank_pc) < int(list(point_system.keys())[-1]):
+							rank_pc = str(next(x for x in list(point_system.keys()) if int(x) > int(rank_pc)))
+					
+					if rank_pc in point_system:
+						scores_pc.append(point_system[rank_pc])
 					else:
-						rank = rank_pc
-						best_console = "PC"
+						scores_pc.append(0)
+
+				if rank_ps4:
+					if rank_ps4 and rank_ps4 not in point_system:
+						if int(rank_ps4) < int(list(point_system.keys())[-1]):
+							rank_ps4 = str(next(x for x in list(point_system.keys()) if int(x) > int(rank_ps4)))
+
+					if rank_ps4 in point_system:
+						scores_ps4.append(point_system[rank_ps4])
+					else:
+						scores_ps4.append(0)
 			else:
 				rank = tournaments[tournament]["ranking"][player]["rank"]
 			
-			if rank not in point_system:
-				if int(rank) < int(list(point_system.keys())[-1]):
-					rank = str(next(x for x in list(point_system.keys()) if int(x) > int(rank)))
+				if rank not in point_system:
+					if int(rank) < int(list(point_system.keys())[-1]):
+						rank = str(next(x for x in list(point_system.keys()) if int(x) > int(rank)))
 
-			if rank in point_system:
-				scores.append(point_system[rank])
-			else:
-				scores.append(0)
+				if rank in point_system:
+					scores.append(point_system[rank])
+				else:
+					scores.append(0)
 
 			tournaments_went.append({
 				"name": tournaments[tournament]["name"],
@@ -232,27 +236,32 @@ for player in players:
 				"placing": rank,
 				"placing_pc": rank_pc,
 				"placing_ps4": rank_ps4,
-				"points": point_system[rank] if rank in point_system else 0
+				"points": point_system[rank] if rank in point_system else 0,
+				"points_pc": point_system[rank_pc] if rank_pc in point_system else 0,
+				"points_ps4": point_system[rank_ps4] if rank_ps4 in point_system else 0
 			})
 	
 	scores.sort(reverse=True)
 	scores = scores[:10]
 
+	scores_pc.sort(reverse=True)
+	scores_pc = scores_pc[:10]
+
+	scores_ps4.sort(reverse=True)
+	scores_ps4 = scores_ps4[:10]
+
 	players[player]["tournaments"] = tournaments_went
 	players[player]["tournament_points"] = scores
-	players[player]["rank"] = {"score": sum(scores)}
+	players[player]["tournament_points_pc"] = scores_pc
+	players[player]["tournament_points_ps4"] = scores_ps4
 
-def orderByScore(a, b):
-	if int(players[a]["rank"]["score"]) > int(players[b]["rank"]["score"]):
-		return -1
-	else:
-		return 1
-	
-ordered = list(players.keys())
-ordered.sort(key=functools.cmp_to_key(orderByScore))
+	players[player]["rank"] = {
+		"score": sum(scores),
+		"score_pc": sum(scores_pc),
+		"score_ps4": sum(scores_ps4),
+	}
 
-i=1
-for player in ordered:
+for player in players:
 	id = allplayers["mapping"][player]
 
 	if not "rank" in allplayers["players"][id].keys():
@@ -265,8 +274,8 @@ for player in ordered:
 
 	allplayers["players"][id]["tournaments"] = players[player]["tournaments"]
 	allplayers["players"][id]["tournament_points"] = players[player]["tournament_points"]
-
-	players[player]["rank"]["rank"] = i
+	allplayers["players"][id]["tournament_points_pc"] = players[player]["tournament_points_pc"]
+	allplayers["players"][id]["tournament_points_ps4"] = players[player]["tournament_points_ps4"]
 
 	i += 1
 
