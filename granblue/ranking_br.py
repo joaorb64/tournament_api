@@ -255,11 +255,9 @@ for player in players:
 	players[player]["tournament_points_pc"] = scores_pc
 	players[player]["tournament_points_ps4"] = scores_ps4
 
-	players[player]["rank"] = {
-		"score": sum(scores),
-		"score_pc": sum(scores_pc),
-		"score_ps4": sum(scores_ps4),
-	}
+	players[player]["score"] = sum(scores)
+	players[player]["score_pc"] = sum(scores_pc)
+	players[player]["score_ps4"] = sum(scores_ps4)
 
 for player in players:
 	id = allplayers["mapping"][player]
@@ -267,10 +265,9 @@ for player in players:
 	if not "rank" in allplayers["players"][id].keys():
 		allplayers["players"][id]["rank"] = {}
 	
-	allplayers["players"][id]["rank"] = {
-		"score": players[player]["rank"]["score"],
-		"rank": i
-	}
+	allplayers["players"][id]["score"] = players[player]["score"]
+	allplayers["players"][id]["score_pc"] = players[player]["score_pc"]
+	allplayers["players"][id]["score_ps4"] = players[player]["score_ps4"]
 
 	allplayers["players"][id]["tournaments"] = players[player]["tournaments"]
 	allplayers["players"][id]["tournament_points"] = players[player]["tournament_points"]
