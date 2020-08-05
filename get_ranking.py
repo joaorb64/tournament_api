@@ -80,7 +80,7 @@ for liga in json_obj.keys():
 				instance["rank"][liga]["wifi"] = True
 
 			# mains if not present
-			if "mains" not in instance.keys():
+			if "mains" not in instance.keys() or (len(instance["mains"]) == 1 and len(instance["mains"][0]) == 0):
 				instance["mains"] = []
 
 			if len(ranking[player]["mains"]) > 0 and len(instance["mains"]) == 0:
