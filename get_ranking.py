@@ -84,7 +84,12 @@ for liga in json_obj.keys():
 				instance["mains"] = []
 
 			if len(ranking[player]["mains"]) > 0 and len(instance["mains"]) == 0:
-				ranking[player]["mains"] = copy.deepcopy(ranking[player]["mains"])
+				instance["mains"] = copy.deepcopy(ranking[player]["mains"])
+
+			# twitter if on braacket but not on spreadsheet
+			if ("twitter" not in instance.keys() or len(instance["twitter"]) == 0):
+				if ("twitter" in ranking[player].keys() and len(ranking[player]["twitter"]) > 0):
+					instance["twitter"] = ranking[player]["twitter"]
 			
 			# image avatar... dropped?
 			#if os.path.exists("player_data/"+name+"/avatar.png"):
