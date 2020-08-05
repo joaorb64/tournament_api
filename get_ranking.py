@@ -51,6 +51,7 @@ for liga in json_obj.keys():
 	if ranking != None:
 		for player in ranking.keys():
 			id = None
+			unlinked = False
 
 			if liga+":"+player in allplayers["mapping"].keys():
 				id = allplayers["mapping"][liga+":"+player]
@@ -58,8 +59,12 @@ for liga in json_obj.keys():
 				allplayers["players"].append({})
 				id = len(allplayers["players"])-1
 				allplayers["mapping"][liga+":"+player] = id
+				unlinked = True
 
 			instance = allplayers["players"][id]
+
+			if unlinked:
+				instance["unlinked"] = True
 
 			# name for new players
 			if "name" not in instance.keys():

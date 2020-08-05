@@ -31,40 +31,33 @@ SPREADSHEET_ID = '1ppEf-oCuoQ9i_EJsZao4Lb8QXnRi0xkGj7JxJmIPYvI'
 
 # data = {'values': values}
 
-gsheet = service.spreadsheets().values().get(
-    spreadsheetId=SPREADSHEET_ID,
-    range='PlayerData'
-).execute()
+# Upload UnlinkedPlayers to spreadhseet
 
-all_players = {
-    "players": [],
-    "mapping": {}
-}
+with open('allplayers.json', 'r') as outfile:
+  allplayers = json.load(outfile)
 
-# Load from spreadsheet
+  values = []
 
-for player in gsheet["values"][1:]:
-    # 'Nick', 'Org', 'Estado', 'Braacket Links', 'Nome real', 'Twitter', 'Mains'
-    while len(player) < 7:
-        player.append("")
+  for player in allplayers["players"]:
+    if "unlinked" in player.keys():
+      values.append(
+        [
+          player["name"],
+          "",
+          "",
+          "\n".join(player["braacket_links"]),
+          "",
+          player["twitter"] if "twitter" in player.keys() else "",
+          "\n".join(player["mains"])
+        ]
+      )
 
-    link = player[3].split("\n")[0]
-
-    all_players["players"].append({
-        "name": player[0],
-        "org": player[1],
-        "state": player[2],
-        "braacket_links": player[3].split("\n"),
-        "full_name": player[4],
-        "twitter": player[5],
-        "mains": player[6].split("\n"),
-    })
-
-    for link in player[3].split("\n"):
-        all_players["mapping"][link] = len(all_players["players"]) - 1
-
-with open('allplayers.json', 'w') as outfile:
-    json.dump(all_players, outfile, indent=4, sort_keys=True)
+  service.spreadsheets().values().update(
+      spreadsheetId=SPREADSHEET_ID,
+      range='UnlinkedPlayers!A2',
+      body={"values": values},
+      valueInputOption='USER_ENTERED'
+  ).execute()
 
 
 '''
