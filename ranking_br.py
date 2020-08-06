@@ -152,6 +152,7 @@ for player in players:
 		})
 		id = len(allplayers["players"])-1
 		allplayers["mapping"]["prbth:"+player] = id
+		allplayers["players"][id]["unlinked"] = True
 
 	instance = allplayers["players"][id]
 
