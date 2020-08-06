@@ -52,6 +52,12 @@ with open('allplayers.json', 'r') as outfile:
         ]
       )
 
+  service.spreadsheets().values().clear(
+      spreadsheetId=SPREADSHEET_ID,
+      range='UnlinkedPlayers!A2:G',
+      body={}
+  ).execute()
+
   service.spreadsheets().values().update(
       spreadsheetId=SPREADSHEET_ID,
       range='UnlinkedPlayers!A2',
