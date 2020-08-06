@@ -33,11 +33,14 @@ with open('allplayers.json', 'r') as outfile:
 
   playernames = [p["name"] for p in allplayers["players"]]
 
-  for player in playernames:
+  for i,player in enumerate(playernames):
     playernames_copy = list(playernames)
     playernames_copy.remove(player)
 
     ratios = process.extract(player, playernames_copy, limit=3)
+
+    if "unlinked" in allplayers["players"][i]:
+      player += " (unlinked)"
 
     values.append([
       player,
