@@ -11,7 +11,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install beautifulsoup4 requests pprint faster_than_requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
+            pip install beautifulsoup4 requests pprint faster_than_requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein
       - run:
           name: Update data
           command: |
@@ -22,6 +22,7 @@ jobs:
             python ranking_br.py
             python statistics.py
             python docs_after.py
+            python players_to_link.py
       - run:
           name: Update granblue
           command: |
