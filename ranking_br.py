@@ -249,7 +249,7 @@ for player in ordered:
 	i += 1
 
 out = {"ranking": players}
-out["update_time"] = str(datetime.utcnow())
+out["update_time"] = str(datetime.now())
 
 with open('out/prbth.json', 'w') as outfile:
 	json.dump(out, outfile, indent=4, sort_keys=True)

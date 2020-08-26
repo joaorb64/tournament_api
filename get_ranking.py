@@ -101,7 +101,7 @@ for liga in json_obj.keys():
 			#	ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
 	
 	out = {"ranking": ranking}
-	out["update_time"] = str(datetime.utcnow())
+	out["update_time"] = str(datetime.now())
 
 	# league out file
 	with open('out/'+liga+'.json', 'w') as outfile:
