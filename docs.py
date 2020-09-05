@@ -68,7 +68,7 @@ for player in gsheet["values"][1:]:
             continue
         if main[-1].isnumeric():
             player_obj["skins"][i] = int(main[-1])
-            player_obj["mains"][i] = player_obj["mains"][:-1]
+            player_obj["mains"][i] = player_obj["mains"][i][:-1]
 
     for link in player[3].split("\n"):
         all_players["mapping"][link] = len(all_players["players"]) - 1
