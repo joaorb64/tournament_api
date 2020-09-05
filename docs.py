@@ -58,7 +58,17 @@ for player in gsheet["values"][1:]:
         "full_name": player[4],
         "twitter": player[5],
         "mains": player[6].split("\n"),
+        "skins": [0 for m in player[6].split("\n")]
     })
+
+    player_obj = all_players["players"][-1]
+
+    for i, main in enumerate(player_obj["mains"]):
+        if len(main) == 0:
+            continue
+        if main[-1].isnumeric():
+            player_obj["skins"][i] = int(main[-1])
+            player_obj["mains"][i] = player_obj["mains"][:-1]
 
     for link in player[3].split("\n"):
         all_players["mapping"][link] = len(all_players["players"]) - 1
