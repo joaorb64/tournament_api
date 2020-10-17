@@ -108,6 +108,8 @@ characters = {
 	"Banjo & Kazooie": "Banjo-Kazooie",
 	"Terry": "Terry",
 	"Byleth": "Byleth",
+	"Min Min": "Min Min",
+	"Steve": "Steve"
 }
 ###
 
