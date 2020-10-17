@@ -160,9 +160,9 @@ class Braacket:
 
                 # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
 
-                badge = line.find('a', {"class": "badge"})
+                badge = line.find('a', {"class": "badge-primary"})
 
-                if badge == None:
+                if badge is None:
                     continue
 
                 # name
@@ -182,15 +182,18 @@ class Braacket:
             return pranking
         except requests.exceptions.RequestException as e:
             print(e)
+        except AttributeError as ae:
+            print("Torneio invalido")
+            return None
     
     def get_tournament_ranking_all(self, ids):
-        reqs = faster_than_requests.get2str2(
-            ['https://braacket.com/tournament/'f'{tournament}/ranking?rows=200' for tournament in ids],
-            threads = True
-        )
+        reqs = []
+        links = ['https://braacket.com/tournament/'f'{tournament}/ranking?rows=200' for tournament in ids]
         tournament_rankings = {}
-        for i, req in enumerate(reqs):
-            print(str(i+1)+"/"+str(len(reqs)))
+
+        for i, link in enumerate(links):
+            print("Fetch tournament: "+str(i+1)+"/"+str(len(links)))
+            reqs.append(faster_than_requests.get2str(link))
             tournament_rankings[ids[i]] = self.get_tournament_ranking(ids[i], reqs[i])
         return tournament_rankings
     

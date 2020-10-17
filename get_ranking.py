@@ -34,6 +34,8 @@ json_obj = json.load(f)
 f2 = open('allplayers.json')
 allplayers = json.load(f2)
 
+alltournaments = {}
+
 for liga in json_obj.keys():
 
 	if liga == "prbth":
@@ -102,6 +104,25 @@ for liga in json_obj.keys():
 	
 	out = {"ranking": ranking}
 	out["update_time"] = str(datetime.now())
+
+	# get tournaments
+	tournaments = bracket.get_tournaments()
+	got = bracket.get_tournament_ranking_all([tournament for tournament in tournaments])
+
+	for i, tournament in enumerate(tournaments):
+		tournaments[tournament]["ranking"] = got[tournament]
+
+		if tournaments[tournament]["ranking"] != None:
+			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+		else:
+			tournaments[tournament]["player_number"] = None
+
+	out["tournaments"] = tournaments
+
+	alltournaments[liga] = tournaments
+
+	with open('alltournaments.json', 'w') as outfile:
+		json.dump(alltournaments, outfile, indent=4, sort_keys=True)
 
 	# league out file
 	with open('out/'+liga+'.json', 'w') as outfile:
