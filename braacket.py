@@ -3,6 +3,7 @@ import requests
 import re 
 from difflib import SequenceMatcher
 import faster_than_requests
+import datetime
 
 requests.packages.urllib3.disable_warnings()
 
@@ -66,6 +67,13 @@ class Braacket:
             tournament["name"] = link.string
             tournament["id"] = link["href"].rsplit('/', 1)[1]
             tournaments[tournament["id"]] = tournament
+
+            parent = heading.parent
+            sibling = parent.findNext('div', {"class": "panel-body"})
+
+            date = sibling.findChildren(recursive = False)[1].findChildren(recursive = False)[1].string
+
+            tournament["time"] = datetime.datetime.strptime(date, "%d %B %Y").timestamp()
         
         return tournaments
     
