@@ -73,7 +73,10 @@ class Braacket:
 
             date = sibling.findChildren(recursive = False)[1].findChildren(recursive = False)[1].string
 
-            tournament["time"] = datetime.datetime.strptime(date, "%d %B %Y").timestamp()
+            if date is not None:
+                tournament["time"] = datetime.datetime.strptime(date, "%d %B %Y").timestamp()
+            else:
+                tournament["time"] = None
         
         return tournaments
     
