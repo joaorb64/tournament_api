@@ -260,6 +260,7 @@ for player in ordered:
 	i += 1
 
 out = {"ranking": players}
+out["tournaments"] = tournaments
 out["update_time"] = str(datetime.now())
 
 with open('out/prbth.json', 'w') as outfile:
