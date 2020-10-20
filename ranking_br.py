@@ -113,6 +113,9 @@ json_obj = json.load(f)
 f2 = open('allplayers.json')
 allplayers = json.load(f2)
 
+f3 = open('alltournaments.json')
+alltournaments = json.load(f3)
+
 tournaments = bracket.get_tournaments()
 
 redownload_tournaments = True
@@ -122,7 +125,15 @@ if redownload_tournaments:
 
 	for i, tournament in enumerate(tournaments):
 		tournaments[tournament]["ranking"] = got[tournament]
-		tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+		if tournaments[tournament]["ranking"] != None:
+			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+		else:
+			tournaments[tournament]["player_number"] = None
+	
+	alltournaments["prbth"] = tournaments
+	
+	with open('alltournaments.json', 'w') as outfile:
+		json.dump(alltournaments, outfile, indent=4, sort_keys=True)
 else:
 	with open("out/tournament/"+'prbth'+".json", 'r') as outfile:
 		tournaments = json.load(outfile)
