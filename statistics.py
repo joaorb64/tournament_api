@@ -211,6 +211,7 @@ for liga in ligas:
 	for c in characters:
 		charUsage[c] = {
 			"usage": 0,
+			"secondary": 0,
 			"name": characters[c]
 		}
 		for p in allplayers["players"]:
@@ -220,6 +221,10 @@ for liga in ligas:
 				if "mains" in p.keys() and len(p["mains"]) > 0:
 					if p["mains"][0] == characters[c]:
 						charUsage[c]["usage"] += 1
+				if "mains" in p.keys() and len(p["mains"]) > 1:
+					for main in p["mains"][1:]:
+						if main == characters[c]:
+							charUsage[c]["secondary"] += 1
 		
 	outInfo["char_usage"] = charUsage
 
