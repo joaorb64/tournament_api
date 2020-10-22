@@ -25,14 +25,6 @@ jobs:
             python docs_after.py
             python players_to_link.py
       - run:
-          name: Update granblue
-          command: |
-            . venv/bin/activate
-            cd granblue
-            python docs.py
-            python ranking_br.py
-            python statistics.py
-      - run:
           name: Commit data back to Github
           command: |
             git config user.email "joaorbezerra@hotmail.com"

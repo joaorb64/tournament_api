@@ -82,7 +82,7 @@ characters = {
 	"Little Mac": "Little Mac",
 	"Greninja": "Greninja",
 	"Mii Fighter": "Mii Brawler",
-	"Mii Swordighter": "Mii Swordfighter",
+	"Mii Swordfighter": "Mii Swordfighter",
 	"Mii Gunner": "Mii Gunner",
 	"Palutena": "Palutena",
 	"PAC-MAN": "Pac Man",
