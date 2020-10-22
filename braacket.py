@@ -4,6 +4,7 @@ import re
 from difflib import SequenceMatcher
 import faster_than_requests
 import datetime
+import time
 
 requests.packages.urllib3.disable_warnings()
 
@@ -51,6 +52,8 @@ class Braacket:
             self.player_cache[player.string] = uuid
     
     def get_tournaments(self):
+        print("get_tournaments")
+        
         r = requests.get(
             'https://braacket.com/league/'
             f'{self.league}/tournament?rows=200', verify=False) # the upperbound is 200
@@ -67,6 +70,8 @@ class Braacket:
             tournament["name"] = link.string
             tournament["id"] = link["href"].rsplit('/', 1)[1]
             tournaments[tournament["id"]] = tournament
+
+            tournament["link"] = self.get_tournament_link(tournament["id"])
 
             parent = heading.parent
             sibling = parent.findNext('div', {"class": "panel-body"})
@@ -148,6 +153,29 @@ class Braacket:
 
         return players
     
+    def get_tournament_link(self, id):
+        print("get_tournament_link: "+str(id))
+        r = requests.get(
+            'https://braacket.com/tournament/'
+            f'{id}/', verify=False)
+        r = r.text
+
+        soup = BeautifulSoup(r, 'html.parser')
+
+        links = soup.findAll('a')
+
+        tournament_link = None
+
+        try:
+            for link in links:
+                if "smash.gg" in link.attrs['href']:
+                    tournament_link = link.attrs['href']
+                    break
+        except:
+            print("Erro no link?")
+        
+        return tournament_link
+    
     def get_tournament_ranking(self, id, req = None):
         try:
             print("get_tournament_ranking: "+str(id))
@@ -182,6 +210,9 @@ class Braacket:
                 if badge is None:
                     continue
 
+                # tournament name
+                player["tournament_name"] = children[1].find("a").string
+
                 # name
                 player["name"] = badge['aria-label']
 
@@ -210,7 +241,7 @@ class Braacket:
 
         for i, link in enumerate(links):
             print("Fetch tournament: "+str(i+1)+"/"+str(len(links)))
-            reqs.append(faster_than_requests.get2str(link))
+            reqs.append(requests.get(link, verify=False).text)
             tournament_rankings[ids[i]] = self.get_tournament_ranking(ids[i], reqs[i])
         return tournament_rankings
     
