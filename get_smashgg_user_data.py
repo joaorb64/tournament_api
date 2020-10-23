@@ -130,7 +130,8 @@ for league in alltournaments:
                         id
                         slug
                         name
-                        authorizations(types: [TWITTER]) {
+                        authorizations {
+                          type
                           externalUsername
                         }
                         player {
@@ -139,7 +140,6 @@ for league in alltournaments:
                         }
                         location {
                           city
-                          state
                         }
                         images(type: "profile") {
                           url
@@ -160,6 +160,7 @@ for league in alltournaments:
         resp = json.loads(r.text)
 
         if resp is None or resp.get("data") is None or resp.get("data").get("event") is None:
+          print(resp)
           continue
 
         data_entrants = resp["data"]["event"]["entrants"]["nodes"]
@@ -187,7 +188,12 @@ for league in alltournaments:
               player_obj["org"] = gg_entrant["participants"][0]["user"]["player"]["prefix"]
 
               if gg_entrant["participants"][0]["user"]["authorizations"] is not None:
-                player_obj["twitter"] = "https://twitter.com/"+gg_entrant["participants"][0]["user"]["authorizations"][0]["externalUsername"]
+                for authorization in gg_entrant["participants"][0]["user"]["authorizations"]:
+                  player_obj[authorization["type"].lower()] = authorization["externalUsername"]
+              
+              if gg_entrant["participants"][0]["user"]["location"] is not None:
+                if gg_entrant["participants"][0]["user"]["location"]["city"] is not None:
+                  player_obj["city"] = gg_entrant["participants"][0]["user"]["location"]["city"]
 
               if gg_entrant["participants"][0]["user"]["images"] is not None:
                 if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
