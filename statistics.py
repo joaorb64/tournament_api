@@ -205,7 +205,7 @@ for liga in ligas:
 					if "bestPlayerCharacter" not in p.keys():
 						p["bestPlayerCharacter"] = {}
 					
-					p["bestPlayerCharacter"][liga] = c
+					p["bestPlayerCharacter"][liga] = [c, characters[c]]
 
 					break
 
