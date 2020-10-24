@@ -201,6 +201,12 @@ for liga in ligas:
 			if "mains" in p.keys() and len(p["mains"]) > 0:
 				if p["mains"][0] == characters[c]:
 					bestWithEachChar[c] = p
+
+					if "bestPlayerCharacter" not in p.keys():
+						p["bestPlayerCharacter"] = {}
+					
+					p["bestPlayerCharacter"][liga] = c
+
 					break
 
 	outInfo["best_player_character"] = bestWithEachChar
@@ -234,3 +240,6 @@ for liga in ligas:
 
 	with open('out/'+liga+'.json', 'w') as outfile:
 		json.dump(league_json, outfile, indent=4, sort_keys=True)
+
+with open('allplayers.json', 'w') as outfile:
+  json.dump(allplayers, outfile, indent=4, sort_keys=True)
