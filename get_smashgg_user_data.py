@@ -61,7 +61,7 @@ characters = {
 	"Rosalina": "Rosalina And Luma",
 	"Little Mac": "Little Mac",
 	"Greninja": "Greninja",
-	"Mii Fighter": "Mii Brawler",
+	"Mii Brawler": "Mii Brawler",
 	"Mii Swordfighter": "Mii Swordfighter",
 	"Mii Gunner": "Mii Gunner",
 	"Palutena": "Palutena",
@@ -111,173 +111,181 @@ for league in alltournaments:
         tournament_slug_start = tournament["link"].index("tournament/")
         slug = tournament["link"][tournament_slug_start:]
 
-        print(slug)
+        print(league + ": " + slug)
 
-        r = requests.post(
-          'https://api.smash.gg/gql/alpha',
-          headers={
-            'Authorization': 'Bearer'+SMASHGG_KEY,
-          },
-          json={
-            'query': '''
-            query evento($eventSlug: String!) {
-              event(slug: $eventSlug) {
-                entrants {
-                  nodes{
-                    name
-                    participants {
-                      user {
-                        id
-                        slug
-                        name
-                        authorizations {
-                          type
-                          externalUsername
-                        }
-                        player {
-                          gamerTag
-                          prefix
-                        }
-                        location {
-                          city
-                        }
-                        images(type: "profile") {
-                          url
+        page = 1
+
+        while True:
+          r = requests.post(
+            'https://api.smash.gg/gql/alpha',
+            headers={
+              'Authorization': 'Bearer'+SMASHGG_KEY,
+            },
+            json={
+              'query': '''
+              query evento($eventSlug: String!) {
+                event(slug: $eventSlug) {
+                  entrants(query: {page: '''+str(page)+''', perPage: 64}) {
+                    nodes{
+                      name
+                      participants {
+                        user {
+                          id
+                          slug
+                          name
+                          authorizations {
+                            type
+                            externalUsername
+                          }
+                          player {
+                            gamerTag
+                            prefix
+                          }
+                          location {
+                            city
+                          }
+                          images(type: "profile") {
+                            url
+                          }
                         }
                       }
                     }
                   }
                 }
-              }
-            },
-          ''',
-            'variables': {
-              "eventSlug": slug
-            },
-          }
-        )
+              },
+            ''',
+              'variables': {
+                "eventSlug": slug
+              },
+            }
+          )
+          time.sleep(1)
+          resp = json.loads(r.text)
 
-        resp = json.loads(r.text)
+          if resp is None or resp.get("data") is None or resp.get("data").get("event") is None:
+            print(resp)
+            break
 
-        if resp is None or resp.get("data") is None or resp.get("data").get("event") is None:
-          print(resp)
-          continue
+          data_entrants = resp["data"]["event"]["entrants"]["nodes"]
 
-        data_entrants = resp["data"]["event"]["entrants"]["nodes"]
+          if data_entrants is None or len(data_entrants) == 0:
+            break
 
-        for gg_entrant in data_entrants:
-          for braacket_entrant in tournament["ranking"].values():
-            if braacket_entrant["tournament_name"] is None:
-              continue
-            if gg_entrant["name"] == braacket_entrant["tournament_name"]:
-              player_id = allplayers["mapping"].get(league+":"+braacket_entrant["uuid"])
+          print("Page: "+str(page)+"\tEntries: "+str(len(data_entrants)))
 
-              if player_id is None:
-                print("Not found: "+str(braacket_entrant))
+          for gg_entrant in data_entrants:
+            for braacket_entrant in tournament["ranking"].values():
+              if braacket_entrant["tournament_name"] is None:
                 continue
+              if gg_entrant["name"] == braacket_entrant["tournament_name"]:
+                player_id = allplayers["mapping"].get(league+":"+braacket_entrant["uuid"])
 
-              player_obj = allplayers["players"][player_id]
+                if player_id is None:
+                  print("Not found: "+str(braacket_entrant))
+                  continue
 
-              if gg_entrant["participants"][0]["user"] is None:
-                continue
+                player_obj = allplayers["players"][player_id]
 
-              player_obj["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
-              player_obj["smashgg_slug"] = gg_entrant["participants"][0]["user"]["slug"]
-              player_obj["full_name"] = gg_entrant["participants"][0]["user"]["name"]
-              player_obj["name"] = gg_entrant["participants"][0]["user"]["player"]["gamerTag"]
-              player_obj["org"] = gg_entrant["participants"][0]["user"]["player"]["prefix"]
+                if gg_entrant["participants"][0]["user"] is None:
+                  continue
 
-              if gg_entrant["participants"][0]["user"]["authorizations"] is not None:
-                for authorization in gg_entrant["participants"][0]["user"]["authorizations"]:
-                  player_obj[authorization["type"].lower()] = authorization["externalUsername"]
-              
-              if gg_entrant["participants"][0]["user"]["location"] is not None:
-                if gg_entrant["participants"][0]["user"]["location"]["city"] is not None:
-                  player_obj["city"] = gg_entrant["participants"][0]["user"]["location"]["city"]
+                player_obj["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
+                player_obj["smashgg_slug"] = gg_entrant["participants"][0]["user"]["slug"]
+                player_obj["full_name"] = gg_entrant["participants"][0]["user"]["name"]
+                player_obj["name"] = gg_entrant["participants"][0]["user"]["player"]["gamerTag"]
+                player_obj["org"] = gg_entrant["participants"][0]["user"]["player"]["prefix"]
 
-              if gg_entrant["participants"][0]["user"]["images"] is not None:
-                if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
-                  player_obj["smashgg_image"] = gg_entrant["participants"][0]["user"]["images"][0]["url"]
+                if gg_entrant["participants"][0]["user"]["authorizations"] is not None:
+                  for authorization in gg_entrant["participants"][0]["user"]["authorizations"]:
+                    player_obj[authorization["type"].lower()] = authorization["externalUsername"]
+                
+                if gg_entrant["participants"][0]["user"]["location"] is not None:
+                  if gg_entrant["participants"][0]["user"]["location"]["city"] is not None:
+                    player_obj["city"] = gg_entrant["participants"][0]["user"]["location"]["city"]
 
-              if len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
-                r = requests.post(
-                'https://api.smash.gg/gql/alpha',
-                headers={
-                  'Authorization': 'Bearer'+SMASHGG_KEY,
-                },
-                json={
-                  'query': '''
-                  query user($userId: ID!) {
-                    user(id: $userId) {
-                      player {
-                        sets(page: 1, perPage: 10) {
-                          nodes {
-                            games {
-                              selections {
-                                entrant {
-                                  participants {
-                                    user {
-                                      id
+                if gg_entrant["participants"][0]["user"]["images"] is not None:
+                  if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
+                    player_obj["smashgg_image"] = gg_entrant["participants"][0]["user"]["images"][0]["url"]
+
+                if len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
+                  r = requests.post(
+                  'https://api.smash.gg/gql/alpha',
+                  headers={
+                    'Authorization': 'Bearer'+SMASHGG_KEY,
+                  },
+                  json={
+                    'query': '''
+                    query user($userId: ID!) {
+                      user(id: $userId) {
+                        player {
+                          sets(page: 1, perPage: 10) {
+                            nodes {
+                              games {
+                                selections {
+                                  entrant {
+                                    participants {
+                                      user {
+                                        id
+                                      }
                                     }
                                   }
+                                  selectionValue
                                 }
-                                selectionValue
                               }
                             }
                           }
                         }
                       }
                     }
-                  }
-                  ''',
-                    'variables': {
-                      "userId": player_obj["smashgg_id"]
-                    },
-                  }
-                )
-                resp = json.loads(r.text)
-                
-                if resp is not None:
-                  selections = Counter()
+                    ''',
+                      'variables': {
+                        "userId": player_obj["smashgg_id"]
+                      },
+                    }
+                  )
+                  time.sleep(1)
+                  resp = json.loads(r.text)
+                  
+                  if resp is not None:
+                    selections = Counter()
 
-                  for set_ in resp["data"]["user"]["player"]["sets"]["nodes"]:
-                    if set_["games"] is None:
-                      continue
-                    for game in set_["games"]:
-                      if game["selections"] is None:
+                    for set_ in resp["data"]["user"]["player"]["sets"]["nodes"]:
+                      if set_["games"] is None:
                         continue
-                      for selection in game["selections"]:
-                        if selection.get("entrant"):
-                          if selection.get("entrant").get("participants"):
-                            if len(selection.get("entrant").get("participants")) > 0:
-                              if selection.get("entrant").get("participants") is None:
-                                continue
-                              if selection.get("entrant").get("participants")[0] is None:
-                                continue
-                              if selection.get("entrant").get("participants")[0]["user"] is None:
-                                continue
-                              participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
-                              if player_obj["smashgg_id"] == participant_id:
-                                if selection["selectionValue"] is not None:
-                                  selections[selection["selectionValue"]] += 1
-                  
-                  mains = []
+                      for game in set_["games"]:
+                        if game["selections"] is None:
+                          continue
+                        for selection in game["selections"]:
+                          if selection.get("entrant"):
+                            if selection.get("entrant").get("participants"):
+                              if len(selection.get("entrant").get("participants")) > 0:
+                                if selection.get("entrant").get("participants") is None:
+                                  continue
+                                if selection.get("entrant").get("participants")[0] is None:
+                                  continue
+                                if selection.get("entrant").get("participants")[0]["user"] is None:
+                                  continue
+                                participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
+                                if player_obj["smashgg_id"] == participant_id:
+                                  if selection["selectionValue"] is not None:
+                                    selections[selection["selectionValue"]] += 1
+                    
+                    mains = []
 
-                  if 1746 in selections.keys():
-                    del selections[1746] # Remove random
+                    if 1746 in selections.keys():
+                      del selections[1746] # Remove random
 
-                  for character in selections.most_common(2):
-                    found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
-                    if found:
-                      mains.append(characters[found["name"]])
-                  
-                  if len(mains) > 0:
-                    player_obj["mains"] = mains
-                    print(mains)
+                    for character in selections.most_common(2):
+                      found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
+                      if found:
+                        mains.append(characters[found["name"]])
+                    
+                    if len(mains) > 0:
+                      player_obj["mains"] = mains
 
-              break
+                break
 
-        time.sleep(1)
+          page += 1
 
 with open('allplayers.json', 'w') as outfile:
   json.dump(allplayers, outfile, indent=4, sort_keys=True)
