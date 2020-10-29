@@ -193,6 +193,10 @@ for league in alltournaments:
 
                 player_obj = allplayers["players"][player_id]
 
+                if "smashgg_id" in player_obj.keys():
+                  # already did this
+                  continue
+
                 player_obj["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
                 player_obj["smashgg_slug"] = gg_entrant["participants"][0]["user"]["slug"]
                 player_obj["full_name"] = gg_entrant["participants"][0]["user"]["name"]
@@ -211,8 +215,7 @@ for league in alltournaments:
                   if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
                     player_obj["smashgg_image"] = gg_entrant["participants"][0]["user"]["images"][0]["url"]
 
-                if "mains" not in player_obj.keys() or len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "" \
-                and "smashgg_id" not in player_obj.keys():
+                if "mains" not in player_obj.keys() or len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
                   r = requests.post(
                   'https://api.smash.gg/gql/alpha',
                   headers={
