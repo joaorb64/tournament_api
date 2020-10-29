@@ -1,6 +1,8 @@
 import json
 import os
 import unicodedata
+import collections
+import collections.abc
 
 def update(d, u):
 	for k, v in u.items():
@@ -28,7 +30,7 @@ for i, player in enumerate(allplayers["players"]):
             player["braacket_links"].append(link)
             allplayers["mapping"][link] = i
 
-        player = update(player, player2)
+        player = update(player2, player)
 
         allplayers["players"][j] = None
 
