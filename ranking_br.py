@@ -187,6 +187,9 @@ for player in allplayers["mapping"]:
 
 	instance["tournaments"] = tournaments_went
 	instance["tournament_points"] = scores
+
+	if not "rank" in instance.keys():
+		instance["rank"] = {}
 	instance["rank"]["prbth"] = {"score": sum(scores)}
 
 	players.append(player)

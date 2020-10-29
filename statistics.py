@@ -189,7 +189,7 @@ for liga in ligas:
 		else:
 			return -1
 			
-	ordered = [p for p in allplayers["players"] if "rank" in p and liga in p["rank"] and len(p["mains"]) > 0]
+	ordered = [p for p in allplayers["players"] if "rank" in p and liga in p["rank"] and "mains" in p and len(p["mains"]) > 0]
 	ordered.sort(key=functools.cmp_to_key(orderByRank))
 
 	bestWithEachChar = {}
