@@ -28,7 +28,7 @@ for i, player in enumerate(allplayers["players"]):
 
         # copy braacket links
         for link in player2["braacket_links"]:
-          if link not in player2["braacket_links"]:
+          if link not in player["braacket_links"]:
             player["braacket_links"].append(link)
             allplayers["mapping"][link] = i
 
