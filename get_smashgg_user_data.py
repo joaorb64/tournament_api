@@ -185,7 +185,9 @@ for league in alltournaments:
                   continue
 
                 if player_id is None:
-                  allplayers["players"].append({})
+                  allplayers["players"].append({
+                    "braacket_links": [league+":"+braacket_entrant["uuid"],]
+                  })
                   player_id = len(allplayers["players"])-1
                   allplayers["mapping"][league+":"+braacket_entrant["uuid"]] = player_id
 
