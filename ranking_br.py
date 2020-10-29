@@ -101,14 +101,8 @@ point_system_1 = {
 
 ###
 
-bracket = braacket.Braacket('prbth')
-
-if not os.path.exists("out/tournament/"+'prbth'+".json"):
-	with open("out/tournament/"+'prbth'+".json", 'w') as outfile:
-		json.dump({}, outfile)
-
 f = open("out/tournament/"+'prbth_override'+".json")
-json_obj = json.load(f)
+tournament_override = json.load(f)
 
 f2 = open('allplayers.json')
 allplayers = json.load(f2)
@@ -116,67 +110,31 @@ allplayers = json.load(f2)
 f3 = open('alltournaments.json')
 alltournaments = json.load(f3)
 
-tournaments = bracket.get_tournaments()
+update(tournament_override, alltournaments["prbth"])
+alltournaments["prbth"] = tournament_override
 
-redownload_tournaments = True
-
-if redownload_tournaments:
-	got = bracket.get_tournament_ranking_all([tournament for tournament in tournaments])
-
-	for i, tournament in enumerate(tournaments):
-		tournaments[tournament]["ranking"] = got[tournament]
-		if tournaments[tournament]["ranking"] != None:
-			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
-		else:
-			tournaments[tournament]["player_number"] = None
-	
-	alltournaments["prbth"] = tournaments
-	
-	with open('alltournaments.json', 'w') as outfile:
-		json.dump(alltournaments, outfile, indent=4, sort_keys=True)
-else:
-	with open("out/tournament/"+'prbth'+".json", 'r') as outfile:
-		tournaments = json.load(outfile)
-
-update(json_obj, tournaments)
-tournaments = json_obj
+players = []
 
 with open("out/tournament/"+'prbth'+".json", 'w') as outfile:
-	json.dump(json_obj, outfile, indent=4, sort_keys=True)
+	json.dump(alltournaments["prbth"], outfile, indent=4, sort_keys=True)
 
-players = bracket.get_players()
+for player in allplayers["mapping"]:
+	if not player.startswith("prbth"):
+		continue
 
-f = open('leagues.json')
-json_obj = json.load(f)
-
-for player in players:
-	id = None
-	
-	if "prbth:"+player in allplayers["mapping"]:
-		id = allplayers["mapping"]["prbth:"+player]
-	else:
-		allplayers["players"].append({
-			"name": players[player]["name"],
-			"braacket_links": ["prbth:"+player],
-			"rank": {},
-			"mains": players[player]["mains"]
-		})
-		id = len(allplayers["players"])-1
-		allplayers["mapping"]["prbth:"+player] = id
-		allplayers["players"][id]["unlinked"] = True
-
+	id = allplayers["mapping"][player]
 	instance = allplayers["players"][id]
-
-	# override mains if possible
-	if len(players[player]["mains"]) > 0 and len(instance["mains"]) == 0:
-		instance["mains"] = copy.deepcopy(players[player]["mains"])
 
 	scores = []
 	tournaments_went = []
 
+	tournaments = alltournaments["prbth"]
+
+	prbth_id = player.split(":")[1]
+
 	for tournament in tournaments:
-		if player in tournaments[tournament]["ranking"]:
-			rank = tournaments[tournament]["ranking"][player]["rank"]
+		if prbth_id in tournaments[tournament]["ranking"]:
+			rank = tournaments[tournament]["ranking"][prbth_id]["rank"]
 
 			point_system = None
 
@@ -220,51 +178,43 @@ for player in players:
 			tournaments_went.append({
 				"name": tournaments[tournament]["name"],
 				"rank": tournaments[tournament]["rank"],
-				"placing": tournaments[tournament]["ranking"][player]["rank"],
+				"placing": tournaments[tournament]["ranking"][prbth_id]["rank"],
 				"points": point_system[rank] if rank in point_system else 0
 			})
 	
 	scores.sort(reverse=True)
 	scores = scores[:10]
 
-	players[player]["tournaments"] = tournaments_went
-	players[player]["tournament_points"] = scores
-	players[player]["rank"] = {"prbth": {"score": sum(scores)}}
+	instance["tournaments"] = tournaments_went
+	instance["tournament_points"] = scores
+	instance["rank"]["prbth"] = {"score": sum(scores)}
+
+	players.append(player)
 
 def orderByScore(a, b):
-	if int(players[a]["rank"]["prbth"]["score"]) > int(players[b]["rank"]["prbth"]["score"]):
+	p1 = allplayers["players"][int(allplayers["mapping"][a])]
+	p2 = allplayers["players"][int(allplayers["mapping"][b])]
+	if int(p1["rank"]["prbth"]["score"]) > int(p2["rank"]["prbth"]["score"]):
 		return -1
 	else:
 		return 1
 	
-ordered = list(players.keys())
+ordered = players
 ordered.sort(key=functools.cmp_to_key(orderByScore))
 
 i=1
 for player in ordered:
-	id = allplayers["mapping"]["prbth:"+player]
+	id = allplayers["mapping"][player]
 
 	if not "rank" in allplayers["players"][id].keys():
 		allplayers["players"][id]["rank"] = {}
 	
-	allplayers["players"][id]["rank"]["prbth"] = {
-		"score": players[player]["rank"]["prbth"]["score"],
-		"rank": i
-	}
-
-	allplayers["players"][id]["tournaments"] = players[player]["tournaments"]
-	allplayers["players"][id]["tournament_points"] = players[player]["tournament_points"]
-
-	players[player]["rank"]["prbth"]["rank"] = i
+	allplayers["players"][id]["rank"]["prbth"]["rank"] = i
 
 	i += 1
 
-out = {"ranking": players}
-out["tournaments"] = tournaments
-out["update_time"] = str(datetime.now())
-
-with open('out/prbth.json', 'w') as outfile:
-	json.dump(out, outfile, indent=4, sort_keys=True)
+with open('alltournaments.json', 'w') as outfile:
+	json.dump(alltournaments, outfile, indent=4, sort_keys=True)
 
 # update allplayers
 with open('allplayers.json', 'w') as outfile:

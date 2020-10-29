@@ -37,10 +37,6 @@ allplayers = json.load(f2)
 alltournaments = {}
 
 for liga in json_obj.keys():
-
-	if liga == "prbth":
-		continue
-
 	bracket = braacket.Braacket(liga)
 
 	with open('league_info/'+liga+'.json', 'w') as outfile:

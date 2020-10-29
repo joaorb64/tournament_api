@@ -25,12 +25,23 @@ for i, player in enumerate(allplayers["players"]):
     if "smashgg_id" in player.keys() and "smashgg_id" in player2.keys():
       if player["smashgg_id"] == player2["smashgg_id"]:
         print(player["name"] + " is " + player2["name"])
+
+        # copy braacket links
         for link in player2["braacket_links"]:
           if link not in player2["braacket_links"]:
             player["braacket_links"].append(link)
             allplayers["mapping"][link] = i
 
-        player = update(player2, player)
+        # join rankings
+        if "rank" in player2.keys():
+          if not "rank" in player.keys():
+            player["rank"] = {}
+          player["rank"] = update(player2["rank"], player["rank"])
+
+        # get mains if secondary account has them
+        if "mains" not in player.keys() or len(player["mains"]) == 0 or player["mains"][0] == "":
+          if "mains" in player2.keys() and len(player["mains"]) > 0 and player["mains"][0] != "":
+            player["mains"] = player2["mains"]
 
         allplayers["players"][j] = None
 
