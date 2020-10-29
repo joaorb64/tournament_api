@@ -2,6 +2,14 @@ import json
 import os
 import unicodedata
 
+def update(d, u):
+	for k, v in u.items():
+			if isinstance(v, collections.abc.Mapping):
+					d[k] = update(d.get(k, {}), v)
+			else:
+					d[k] = v
+	return d
+
 f = open('allplayers.json')
 allplayers = json.load(f)
 
@@ -19,6 +27,9 @@ for i, player in enumerate(allplayers["players"]):
           if link not in player2["braacket_links"]:
             player["braacket_links"].append(link)
             allplayers["mapping"][link] = i
+
+        player = update(player, player2)
+
         allplayers["players"][j] = None
 
 # Remove Null entries
