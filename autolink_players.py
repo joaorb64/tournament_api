@@ -21,6 +21,16 @@ for i, player in enumerate(allplayers["players"]):
             allplayers["mapping"][link] = i
         allplayers["players"][j] = None
 
+# Remove Null entries
+moveup = 0
+for i, player in enumerate(allplayers["players"]):
+  if player is None:
+    moveup += 1
+    continue
+  for link in player["braacket_links"]:
+    allplayers["mapping"][link] -= moveup
+
+allplayers["players"] = [i for i in allplayers["players"] if i] 
 
 with open('allplayers.json', 'w') as outfile:
   json.dump(allplayers, outfile, indent=4, sort_keys=True)
