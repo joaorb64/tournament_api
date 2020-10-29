@@ -23,13 +23,13 @@ for player in allplayers["players"]:
                 None
             )
 
-            if municipio:
+            if municipio is not None:
                 estado = next(
                     (e for e in estados if e["codigo_uf"] == municipio["codigo_uf"]),
                     None
                 )
 
-                if estado:
+                if estado is not None:
                     player["state"] = estado["uf"]
                     print(estado["uf"])
 

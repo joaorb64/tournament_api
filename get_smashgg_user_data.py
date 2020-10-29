@@ -65,7 +65,7 @@ characters = {
 	"Mii Swordfighter": "Mii Swordfighter",
 	"Mii Gunner": "Mii Gunner",
 	"Palutena": "Palutena",
-	"PAC-MAN": "Pac Man",
+	"Pac-Man": "Pac Man",
 	"Robin": "Robin",
 	"Shulk": "Shulk",
 	"Bowser Jr.": "Bowser Jr",
@@ -77,7 +77,7 @@ characters = {
 	"Bayonetta": "Bayonetta",
 	"Inkling": "Inkling",
 	"Ridley": "Ridley",
-	"Simon": "Simon",
+	"Simon Belmont": "Simon",
 	"Richter": "Richter",
 	"King K. Rool": "King K Rool",
 	"Isabelle": "Isabelle",
@@ -180,14 +180,16 @@ for league in alltournaments:
               if gg_entrant["name"] == braacket_entrant["tournament_name"]:
                 player_id = allplayers["mapping"].get(league+":"+braacket_entrant["uuid"])
 
-                if player_id is None:
-                  print("Not found: "+str(braacket_entrant))
+                if gg_entrant["participants"][0]["user"] is None:
+                  # no smashgg data, nothing to do here
                   continue
+
+                if player_id is None:
+                  allplayers["players"].append({})
+                  player_id = len(allplayers["players"])-1
+                  allplayers["mapping"][league+":"+braacket_entrant["uuid"]] = player_id
 
                 player_obj = allplayers["players"][player_id]
-
-                if gg_entrant["participants"][0]["user"] is None:
-                  continue
 
                 player_obj["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
                 player_obj["smashgg_slug"] = gg_entrant["participants"][0]["user"]["slug"]
@@ -207,7 +209,8 @@ for league in alltournaments:
                   if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
                     player_obj["smashgg_image"] = gg_entrant["participants"][0]["user"]["images"][0]["url"]
 
-                if len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
+                if "mains" not in player_obj.keys() or len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "" \
+                and "smashgg_id" not in player_obj.keys():
                   r = requests.post(
                   'https://api.smash.gg/gql/alpha',
                   headers={
