@@ -273,6 +273,7 @@ class Braacket:
             pages = len(soup.find('select', {"id": "search-page"}).findChildren(recursive=False))
 
             pranking = {}
+            ranking_info = {}
 
             for page in range(1, pages+1):
                 print('['+str(page)+"/"+str(pages)+']')
@@ -282,6 +283,28 @@ class Braacket:
                         'https://braacket.com/league/'
                         f'{self.league}/ranking?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
                     soup = BeautifulSoup(r.text, 'html.parser')
+                
+                if page == 1:
+                    active_ranking = soup.find('tr', {"class": "active"})
+
+                    ranking_info["name"] = active_ranking.find('a').text.strip()
+
+                    active_ranking_body = active_ranking.find('div', {'class': "my-table-subinfos"})
+                    children = active_ranking_body.findChildren(recursive=False)
+
+                    # ranking type, (dateStart - dateEnd) or (All times), rule?, rebalancing, point system
+                    ranking_info["type"] = children[0].text
+
+                    ranking_info["alltimes"] = children[1].text == "All times"
+
+                    if ranking_info["alltimes"] == False:
+                        timestart = children[1].text.split("-")[0].strip()
+                        timeend = children[1].text.split("-")[1].strip()
+
+                        ranking_info["timeStart"] = datetime.datetime.strptime(timestart, "%d %B %Y").timestamp()
+                        ranking_info["timeEnd"] = datetime.datetime.strptime(timeend, "%d %B %Y").timestamp()
+                    
+                    print(ranking_info)
 
                 table = soup.findAll('table')[1] # first table is ranking system, second has the player list
                 tbody = table.find('tbody') # skip the table's header
@@ -324,7 +347,8 @@ class Braacket:
                     # score
                     score = children[5].string.strip()
                     pranking[uuid]["rank"][self.league]["score"] = score
-            return pranking
+            ranking_info["ranking"] = pranking
+            return ranking_info
         except requests.exceptions.RequestException as e:
             print(self.league + ": " + str(e))
             return {}

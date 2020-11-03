@@ -162,7 +162,7 @@ for league in alltournaments:
           time.sleep(1)
           resp = json.loads(r.text)
 
-          if resp is None or resp.get("data") is None or resp.get("data").get("event") is None:
+          if resp is None or resp.get("data") is None or resp.get("data").get("event") or resp["data"]["event"].get("entrants") is None:
             print(resp)
             break
 

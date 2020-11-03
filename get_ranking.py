@@ -47,7 +47,7 @@ for liga in json_obj.keys():
 	ranking = bracket.get_ranking()
 
 	if ranking != None:
-		for player in ranking.keys():
+		for player in ranking["ranking"].keys():
 			id = None
 			unlinked = False
 
@@ -66,7 +66,7 @@ for liga in json_obj.keys():
 
 			# name for new players
 			if "name" not in instance.keys():
-				instance["name"] = ranking[player]["name"]
+				instance["name"] = ranking["ranking"][player]["name"]
 			
 			# braacket link for new players
 			if "braacket_links" not in instance.keys():
@@ -77,7 +77,7 @@ for liga in json_obj.keys():
 			if "rank" not in instance.keys():
 				instance["rank"] = {}
 
-			instance["rank"].update(ranking[player]["rank"])
+			instance["rank"].update(ranking["ranking"][player]["rank"])
 
 			if "wifi" in json_obj[liga].keys():
 				instance["rank"][liga]["wifi"] = True
@@ -86,19 +86,19 @@ for liga in json_obj.keys():
 			if "mains" not in instance.keys() or (len(instance["mains"]) == 1 and len(instance["mains"][0]) == 0):
 				instance["mains"] = []
 
-			if len(ranking[player]["mains"]) > 0 and len(instance["mains"]) == 0:
-				instance["mains"] = copy.deepcopy(ranking[player]["mains"])
+			if len(ranking["ranking"][player]["mains"]) > 0 and len(instance["mains"]) == 0:
+				instance["mains"] = copy.deepcopy(ranking["ranking"][player]["mains"])
 
 			# twitter if on braacket but not on spreadsheet
 			if ("twitter" not in instance.keys() or len(instance["twitter"]) == 0):
-				if ("twitter" in ranking[player].keys() and len(ranking[player]["twitter"]) > 0):
-					instance["twitter"] = ranking[player]["twitter"]
+				if ("twitter" in ranking["ranking"][player].keys() and len(ranking["ranking"][player]["twitter"]) > 0):
+					instance["twitter"] = ranking["ranking"][player]["twitter"]
 			
 			# image avatar... dropped?
 			#if os.path.exists("player_data/"+name+"/avatar.png"):
-			#	ranking[player].update({"avatar": "player_data/"+name+"/avatar.png"})
+			#	ranking["ranking"][player].update({"avatar": "player_data/"+name+"/avatar.png"})
 	
-	out = {"ranking": ranking}
+	out = ranking
 	out["update_time"] = str(datetime.now())
 
 	# get tournaments

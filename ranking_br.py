@@ -110,6 +110,14 @@ allplayers = json.load(f2)
 f3 = open('alltournaments.json')
 alltournaments = json.load(f3)
 
+f4 = open('out/prbth.json')
+league = json.load(f4)
+league["alltimes"] = True
+league["type"] = "Olímpico"
+
+with open('out/prbth.json', 'w') as outfile:
+	json.dump(league, outfile, indent=4, sort_keys=True)
+
 update(tournament_override, alltournaments["prbth"])
 alltournaments["prbth"] = tournament_override
 
