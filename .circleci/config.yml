@@ -40,7 +40,7 @@ workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "54 2,11,14,17,20,23 * * *"
+          cron: "0 2,11,14,17,20,23 * * *"
           filters:
             branches:
               only:
