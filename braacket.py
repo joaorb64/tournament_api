@@ -304,8 +304,8 @@ class Braacket:
                         try:
                             ranking_info["timeStart"] = datetime.datetime.strptime(timestart, "%d %B %Y").timestamp()
                             ranking_info["timeEnd"] = datetime.datetime.strptime(timeend, "%d %B %Y").timestamp()
-                        except Exception e:
-                            print e
+                        except Exception as e:
+                            print(e)
                             ranking_info["timeStart"] = None
                             ranking_info["timeEnd"] = None
 
