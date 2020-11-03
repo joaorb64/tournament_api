@@ -301,8 +301,14 @@ class Braacket:
                         timestart = children[1].text.split("-")[0].strip()
                         timeend = children[1].text.split("-")[1].strip()
 
-                        ranking_info["timeStart"] = datetime.datetime.strptime(timestart, "%d %B %Y").timestamp()
-                        ranking_info["timeEnd"] = datetime.datetime.strptime(timeend, "%d %B %Y").timestamp()
+                        try:
+                            ranking_info["timeStart"] = datetime.datetime.strptime(timestart, "%d %B %Y").timestamp()
+                            ranking_info["timeEnd"] = datetime.datetime.strptime(timeend, "%d %B %Y").timestamp()
+                        except Exception e:
+                            print e
+                            ranking_info["timeStart"] = None
+                            ranking_info["timeEnd"] = None
+
                     
                     print(ranking_info)
 
