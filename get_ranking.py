@@ -46,7 +46,7 @@ for liga in json_obj.keys():
 	
 	ranking = bracket.get_ranking()
 
-	if ranking != None:
+	if ranking != None and "ranking" in ranking.keys():
 		for player in ranking["ranking"].keys():
 			id = None
 			unlinked = False
