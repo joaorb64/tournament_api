@@ -135,9 +135,9 @@ for liga in ligas:
 
 	# build object with centered data
 	for p in league_players["players"]:
-		apid = allplayers["mapping"][liga+":"+p]
-		league_players["players"][p] = allplayers["players"][apid]
 		if p in league_ranking["ranking"]["ranking"].keys():
+			apid = allplayers["mapping"][liga+":"+p]
+			league_players["players"][p] = allplayers["players"][apid]
 			league_players["players"][p]["rank"] = league_ranking["ranking"]["ranking"][p]["rank"]
 			league_players["players"][p]["apid"] = apid
 
@@ -158,7 +158,7 @@ for liga in ligas:
 		if "country_code" in p.keys():
 			if p["country_code"] == "":
 				p["country_code"] = "null"
-			if p["country_code"] in playersPerState:
+			if p["country_code"] in playersPerCountry:
 				playersPerCountry[p["country_code"]] += 1
 			else:
 				playersPerCountry[p["country_code"]] = 1
