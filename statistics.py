@@ -152,9 +152,9 @@ for liga in ligas:
 			if p["state"] == "":
 				p["state"] = "null"
 			if p["state"] in playersPerState:
-				playersPerState[p["state"]] += 1
+				playersPerState[p["state"]]["count"] += 1
 			else:
-				playersPerState[p["state"]] = 1
+				playersPerState[p["state"]] = {"count": 1, "country_code": p["country_code"]}
 		if "country_code" in p.keys():
 			if p["country_code"] == "":
 				p["country_code"] = "null"
