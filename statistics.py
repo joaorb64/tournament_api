@@ -212,6 +212,8 @@ for liga in ligas:
 				for main in p["mains"][1:]:
 					if main == characters[c]:
 						charUsage[c]["secondary"] += 1
+	
+	outInfo["char_usage"] = charUsage
 
 	with open('out/'+liga+'/statistics.json', 'w') as outfile:
 		json.dump(outInfo, outfile, indent=4, sort_keys=True)
