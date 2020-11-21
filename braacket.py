@@ -125,16 +125,13 @@ class Braacket:
 
                 # name
                 player["name"] = children[0].find("a").string
-                player["braacket_link"] = {self.league: children[0].find("a")['href']}
 
                 # dont get bye*
                 if bye_extract.match(player["name"]):
                     continue
 
                 # uuid
-                player["uuid"] = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
-
-                players[player["uuid"]] = player
+                uuid = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
 
                 # mains
                 player["mains"] = []
@@ -150,7 +147,8 @@ class Braacket:
                     if link.has_attr('href'):
                         if "twitter.com" in link['href']:
                             player["twitter"] = link['href']
-
+                
+                players[uuid] = player
         return players
     
     def get_tournament_link(self, id):
@@ -214,19 +212,19 @@ class Braacket:
                 player["tournament_name"] = children[1].find("a").string
 
                 # name
-                player["name"] = badge['aria-label']
+                name = badge['aria-label']
 
                 # dont get bye*
-                if bye_extract.match(player["name"]):
+                if bye_extract.match(name):
                     continue
 
                 # uuid
-                player["uuid"] = url_extract.match(badge['href']).group(1).replace("?", "")
+                uuid = url_extract.match(badge['href']).group(1).replace("?", "")
 
                 # rank
                 player["rank"] = children[0].string.strip()
 
-                pranking[player["uuid"]] = player
+                pranking[uuid] = player
             return pranking
         except requests.exceptions.RequestException as e:
             print(e)
@@ -328,31 +326,11 @@ class Braacket:
 
                     # rank
                     rank = children[0].string.strip()
-                    pranking[uuid]["rank"] = {}
-                    pranking[uuid]["rank"][self.league] = {"rank": rank}
+                    pranking[uuid]["rank"] = rank
 
-                    # name
-                    pranking[uuid]["name"] = children[2].find('a').string
-                    pranking[uuid]["braacket_link"] = {self.league: children[2].find("a")['href']}
-
-                    # mains
-                    pranking[uuid]["mains"] = []
-                    mains = children[2].findAll('img')
-
-                    for main in mains:
-                        pranking[uuid]["mains"].append(main["title"])
-
-                    # twitter
-                    links = children[3].select('a')
-
-                    for link in links:
-                        if link.has_attr('href'):
-                            if "twitter.com" in link['href']:
-                                pranking[uuid]["twitter"] = link['href']
-                    
                     # score
                     score = children[5].string.strip()
-                    pranking[uuid]["rank"][self.league]["score"] = score
+                    pranking[uuid]["score"] = score
             ranking_info["ranking"] = pranking
             return ranking_info
         except requests.exceptions.RequestException as e:

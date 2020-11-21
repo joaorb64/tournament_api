@@ -1,0 +1,48 @@
+version: 2.1
+
+jobs:
+  update_data:
+    docker:
+      - image: circleci/python:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install beautifulsoup4 requests faster_than_requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein
+      - run:
+          name: Update data
+          command: |
+            . venv/bin/activate
+            echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
+            python get_ranking.py
+            python get_smashgg_user_data.py
+            python autolink_players.py
+            python ranking_br.py
+            python match_states.py
+            python statistics.py
+            python docs_after.py
+            python players_to_link.py
+      - run:
+          name: Commit data back to Github
+          command: |
+            git config user.email "joaorbezerra@hotmail.com"
+            git config user.name "tournamentapibot"
+            DATE_TODAY=$(date +"%Y-%m-%d")
+            git add .
+            git commit -am "[skip ci] Updating Data ${DATE_TODAY}" || true
+            git push origin master || true
+
+workflows:
+  daily_data_update:
+    triggers:
+      - schedule:
+          cron: "0 2,11,14,17,20,23 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - update_data
