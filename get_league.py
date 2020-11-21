@@ -87,5 +87,10 @@ def update_league(liga):
 		json.dump(out, outfile, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
-	for liga in leagues.keys():
-		update_league(liga)
+	if len(sys.argv) >= 2:
+		for liga in leagues.keys():
+			if liga == sys.argv[1]:
+				update_league(liga)
+	else:
+		for liga in leagues.keys():
+			update_league(liga)

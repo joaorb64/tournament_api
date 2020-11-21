@@ -6,6 +6,7 @@ import pprint
 import datetime
 import os
 from collections import Counter
+import sys
 
 characters = {
 	"Mario": "Mario",
@@ -101,6 +102,9 @@ f = open('ultimate.json')
 smashgg_character_data = json.load(f)
 
 for league in leagues:
+	if len(sys.argv) >= 2:
+		if league != sys.argv[1]:
+			continue
 	print(league)
 
 	f = open('out/'+league+'/tournaments.json')
