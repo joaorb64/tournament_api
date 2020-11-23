@@ -114,14 +114,28 @@ for league in leagues:
 	original_players = json.load(f)
 	players = original_players["players"]
 
-	for tournament in tournaments.items():
-		if not tournament[1]["link"]:
-			continue
+	totalTournaments = len(tournaments.items())
 
+	for i, tournament in enumerate(tournaments.items()):
+		# not on smashgg, skip
+		if not tournament[1]["link"]:
+			print("Not on smashgg, skipping")
+			continue
+		
 		tournament_slug_start = tournament[1]["link"].index("tournament/")
 		slug = tournament[1]["link"][tournament_slug_start:]
 
-		print(league + ": " + slug)
+		print(league + ": " + slug + " ["+str(i+1)+"/"+str(totalTournaments)+"]")
+
+		# all players already got smashgg ids, skip
+		allPlayersGotSmashggId = True
+		for p in tournament[1]["ranking"]:
+			if "smashgg_id" not in players[p].keys():
+				allPlayersGotSmashggId = False
+				break
+		if allPlayersGotSmashggId:
+			print("All players already have smashgg data, skipping")
+			continue
 
 		page = 1
 
@@ -135,7 +149,7 @@ for league in leagues:
 					'query': '''
 					query evento($eventSlug: String!) {
 						event(slug: $eventSlug) {
-							entrants(query: {page: '''+str(page)+''', perPage: 64}) {
+							entrants(query: {page: '''+str(page)+''', perPage: 80}) {
 								nodes{
 									name
 									participants {
@@ -154,7 +168,6 @@ for league in leagues:
 											location {
 												city
 												country
-												countryId
 											}
 											images(type: "profile") {
 												url
@@ -218,8 +231,6 @@ for league in leagues:
 								player_obj["city"] = gg_entrant["participants"][0]["user"]["location"]["city"]
 							if gg_entrant["participants"][0]["user"]["location"]["country"] is not None:
 								player_obj["country"] = gg_entrant["participants"][0]["user"]["location"]["country"]
-							if gg_entrant["participants"][0]["user"]["location"]["countryId"] is not None:
-								player_obj["countryId"] = gg_entrant["participants"][0]["user"]["location"]["countryId"]
 
 						if gg_entrant["participants"][0]["user"]["images"] is not None:
 							if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
@@ -298,6 +309,12 @@ for league in leagues:
 									found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
 									if found:
 										mains.append(characters[found["name"]])
+                
+								player_obj["character_usage"] = {}
+								for character in selections.items():
+									found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
+									if found:
+										player_obj["character_usage"][found["name"]] = selections[character]
 								
 								if len(mains) > 0:
 									player_obj["mains"] = mains

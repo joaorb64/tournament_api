@@ -8,6 +8,7 @@ import copy
 from datetime import datetime, tzinfo
 import collections
 import sys
+from joblib import Parallel, delayed
 
 f = open('leagues.json')
 leagues = json.load(f)
@@ -92,5 +93,4 @@ if __name__ == "__main__":
 			if liga == sys.argv[1]:
 				update_league(liga)
 	else:
-		for liga in leagues.keys():
-			update_league(liga)
+		Parallel(n_jobs=4)(delayed(update_league)(liga) for liga in leagues.keys())
