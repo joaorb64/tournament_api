@@ -257,7 +257,8 @@ for league in alltournaments:
                   time.sleep(1)
                   resp = json.loads(r.text)
                   
-                  if resp is not None:
+                  if resp is not None and \
+							    resp["data"]["user"]["player"]["sets"]["nodes"] is not None:
                     selections = Counter()
 
                     for set_ in resp["data"]["user"]["player"]["sets"]["nodes"]:
