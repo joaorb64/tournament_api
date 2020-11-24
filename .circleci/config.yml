@@ -33,7 +33,7 @@ jobs:
             DATE_TODAY=$(date +"%Y-%m-%d")
             git add .
             git commit -am "[skip ci] Updating Data ${DATE_TODAY}" || true
-            git push origin master || true
+            git push origin sudamerica || true
 
 workflows:
   daily_data_update:
@@ -43,6 +43,6 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - sudamerica
     jobs:
       - update_data
