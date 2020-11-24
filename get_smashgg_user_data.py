@@ -236,86 +236,86 @@ for league in leagues:
 							if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
 								player_obj["smashgg_image"] = gg_entrant["participants"][0]["user"]["images"][0]["url"]
 
-						if "mains" not in player_obj.keys() or len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
-							r = requests.post(
-							'https://api.smash.gg/gql/alpha',
-							headers={
-								'Authorization': 'Bearer'+SMASHGG_KEY,
-							},
-							json={
-								'query': '''
-								query user($userId: ID!) {
-									user(id: $userId) {
-										player {
-											sets(page: 1, perPage: 10) {
-												nodes {
-													games {
-														selections {
-															entrant {
-																participants {
-																	user {
-																		id
-																	}
+						r = requests.post(
+						'https://api.smash.gg/gql/alpha',
+						headers={
+							'Authorization': 'Bearer'+SMASHGG_KEY,
+						},
+						json={
+							'query': '''
+							query user($userId: ID!) {
+								user(id: $userId) {
+									player {
+										sets(page: 1, perPage: 30) {
+											nodes {
+												games {
+													selections {
+														entrant {
+															participants {
+																user {
+																	id
 																}
 															}
-															selectionValue
 														}
+														selectionValue
 													}
 												}
 											}
 										}
 									}
 								}
-								''',
-									'variables': {
-										"userId": player_obj["smashgg_id"]
-									},
-								}
-							)
-							time.sleep(1)
-							resp = json.loads(r.text)
-							
-							if resp is not None and \
-							resp["data"]["user"]["player"]["sets"]["nodes"] is not None:
-								selections = Counter()
+							}
+							''',
+								'variables': {
+									"userId": player_obj["smashgg_id"]
+								},
+							}
+						)
+						time.sleep(1)
+						resp = json.loads(r.text)
+						
+						if resp is not None and \
+						resp["data"]["user"]["player"]["sets"]["nodes"] is not None:
+							selections = Counter()
 
-								for set_ in resp["data"]["user"]["player"]["sets"]["nodes"]:
-									if set_["games"] is None:
+							for set_ in resp["data"]["user"]["player"]["sets"]["nodes"]:
+								if set_["games"] is None:
+									continue
+								for game in set_["games"]:
+									if game["selections"] is None:
 										continue
-									for game in set_["games"]:
-										if game["selections"] is None:
-											continue
-										for selection in game["selections"]:
-											if selection.get("entrant"):
-												if selection.get("entrant").get("participants"):
-													if len(selection.get("entrant").get("participants")) > 0:
-														if selection.get("entrant").get("participants") is None:
-															continue
-														if selection.get("entrant").get("participants")[0] is None:
-															continue
-														if selection.get("entrant").get("participants")[0]["user"] is None:
-															continue
-														participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
-														if player_obj["smashgg_id"] == participant_id:
-															if selection["selectionValue"] is not None:
-																selections[selection["selectionValue"]] += 1
-								
-								mains = []
+									for selection in game["selections"]:
+										if selection.get("entrant"):
+											if selection.get("entrant").get("participants"):
+												if len(selection.get("entrant").get("participants")) > 0:
+													if selection.get("entrant").get("participants") is None:
+														continue
+													if selection.get("entrant").get("participants")[0] is None:
+														continue
+													if selection.get("entrant").get("participants")[0]["user"] is None:
+														continue
+													participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
+													if player_obj["smashgg_id"] == participant_id:
+														if selection["selectionValue"] is not None:
+															selections[selection["selectionValue"]] += 1
+							
+							mains = []
 
-								if 1746 in selections.keys():
-									del selections[1746] # Remove random
+							if 1746 in selections.keys():
+								del selections[1746] # Remove random
 
-								for character in selections.most_common(2):
-									found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
-									if found:
-										mains.append(characters[found["name"]])
-                
-								player_obj["character_usage"] = {}
-								for character in selections.items():
-									found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
-									if found:
-										player_obj["character_usage"][found["name"]] = selections[character]
-								
+							for character in selections.most_common(2):
+								found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
+								if found:
+									mains.append(characters[found["name"]])
+							
+							player_obj["character_usage"] = {}
+							for character in selections.most_common():
+								found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
+								if found:
+									player_obj["character_usage"][found["name"]] = selections[character[0]]
+							
+							if "mains" not in player_obj.keys() or len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
 								if len(mains) > 0:
 									player_obj["mains"] = mains
 						break
