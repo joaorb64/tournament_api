@@ -93,7 +93,14 @@ characters = {
 	"Steve": "Steve"
 }
 
-SMASHGG_KEY = os.environ.get("SMASHGG_KEY")
+if os.path.exists("auth.json"):
+  f = open('auth.json')
+  auth_json = json.load(f)
+  SMASHGG_KEYS = auth_json["SMASHGG_KEYS"]
+else:
+  SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
+
+currentKey = 0
 
 f = open('leagues.json')
 leagues = json.load(f)
@@ -143,7 +150,7 @@ for league in leagues:
 			r = requests.post(
 				'https://api.smash.gg/gql/alpha',
 				headers={
-					'Authorization': 'Bearer'+SMASHGG_KEY,
+					'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
 				},
 				json={
 					'query': '''
@@ -184,7 +191,9 @@ for league in leagues:
 					},
 				}
 			)
-			time.sleep(1)
+			time.sleep(1/len(SMASHGG_KEYS))
+			currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+
 			resp = json.loads(r.text)
 
 			if resp is None or \
@@ -239,7 +248,7 @@ for league in leagues:
 						r = requests.post(
 						'https://api.smash.gg/gql/alpha',
 						headers={
-							'Authorization': 'Bearer'+SMASHGG_KEY,
+							'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
 						},
 						json={
 							'query': '''
@@ -271,7 +280,9 @@ for league in leagues:
 								},
 							}
 						)
-						time.sleep(1)
+						time.sleep(1/len(SMASHGG_KEYS))
+						currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+
 						resp = json.loads(r.text)
 						
 						if resp is not None and \
