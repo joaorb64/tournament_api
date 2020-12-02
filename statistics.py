@@ -164,7 +164,7 @@ for liga in ligas:
 		else:
 			canonicalState = p["country_code"]+"_"+p["state"]
 
-		if p["state"] in playersPerState:
+		if canonicalState in playersPerState:
 			playersPerState[canonicalState] += 1
 		else:
 			playersPerState[canonicalState] = 1
