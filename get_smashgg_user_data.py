@@ -7,6 +7,7 @@ import datetime
 import os
 from collections import Counter
 import sys
+from joblib import Parallel, delayed
 
 characters = {
 	"Mario": "Mario",
@@ -100,20 +101,13 @@ if os.path.exists("auth.json"):
 else:
   SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
 
-currentKey = 0
-
 f = open('leagues.json')
 leagues = json.load(f)
 
 f = open('ultimate.json')
 smashgg_character_data = json.load(f)
 
-for league in leagues:
-	if len(sys.argv) >= 2:
-		if league != sys.argv[1]:
-			continue
-	print(league)
-
+def update_league(league, key):
 	f = open('out/'+league+'/tournaments.json')
 	tournaments = json.load(f)["tournaments"]
 
@@ -150,7 +144,7 @@ for league in leagues:
 			r = requests.post(
 				'https://api.smash.gg/gql/alpha',
 				headers={
-					'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+					'Authorization': 'Bearer'+key,
 				},
 				json={
 					'query': '''
@@ -191,8 +185,7 @@ for league in leagues:
 					},
 				}
 			)
-			time.sleep(1/len(SMASHGG_KEYS))
-			currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+			time.sleep(1)
 
 			resp = json.loads(r.text)
 
@@ -248,7 +241,7 @@ for league in leagues:
 						r = requests.post(
 						'https://api.smash.gg/gql/alpha',
 						headers={
-							'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+							'Authorization': 'Bearer'+key,
 						},
 						json={
 							'query': '''
@@ -280,8 +273,7 @@ for league in leagues:
 								},
 							}
 						)
-						time.sleep(1/len(SMASHGG_KEYS))
-						currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+						time.sleep(1)
 
 						resp = json.loads(r.text)
 						
@@ -335,3 +327,11 @@ for league in leagues:
 	
 	with open('out/'+league+'/players.json', 'w') as outfile:
 		json.dump(original_players, outfile, indent=4, sort_keys=True)
+
+if __name__ == "__main__":
+	if len(sys.argv) >= 2:
+		for liga in leagues.keys():
+			if liga == sys.argv[1]:
+				update_league(liga)
+	else:
+		Parallel(n_jobs=len(SMASHGG_KEYS))(delayed(update_league)(liga, SMASHGG_KEYS[i%len(SMASHGG_KEYS)]) for i, liga in enumerate(leagues.keys()))
