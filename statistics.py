@@ -121,6 +121,7 @@ ligas = json.load(f)
 ap = open("out/allplayers.json")
 allplayers = json.load(ap)
 
+# League statistics
 for liga in ligas:
 	f = open('out/'+liga+'/players.json')
 	league_players = json.load(f)
@@ -143,25 +144,36 @@ for liga in ligas:
 
 	outInfo = {}
 
+	# Total number of players
+	outInfo["player_number"] = len(league_players["players"])
+
 	# Players per state and country
 	playersPerState = {}
 	playersPerCountry = {}
 
 	for p in league_players["players"].values():
-		if "state" in p.keys():
-			if p["state"] == "":
-				p["state"] = "null"
-			if p["state"] in playersPerState:
-				playersPerState[p["state"]]["count"] += 1
-			else:
-				playersPerState[p["state"]] = {"count": 1, "country_code": p["country_code"]}
-		if "country_code" in p.keys():
-			if p["country_code"] == "":
-				p["country_code"] = "null"
-			if p["country_code"] in playersPerCountry:
-				playersPerCountry[p["country_code"]] += 1
-			else:
-				playersPerCountry[p["country_code"]] = 1
+		if "state" not in p.keys() or p["state"] == "":
+			p["state"] = "null"
+		if "country_code" not in p.keys() or p["country_code"] == "":
+			p["country_code"] = "null"
+		
+		# state
+		canonicalState = ""
+		if p["country_code"] == "null" or p["state"] == "null":
+			canonicalState = "null"
+		else:
+			canonicalState = p["country_code"]+"_"+p["state"]
+
+		if p["state"] in playersPerState:
+			playersPerState[canonicalState] += 1
+		else:
+			playersPerState[canonicalState] = 1
+		
+		# country
+		if p["country_code"] in playersPerCountry:
+			playersPerCountry[p["country_code"]] += 1
+		else:
+			playersPerCountry[p["country_code"]] = 1
 	
 	outInfo["players_per_state"] = playersPerState
 	outInfo["players_per_country"] = playersPerCountry
@@ -217,6 +229,54 @@ for liga in ligas:
 
 	with open('out/'+liga+'/statistics.json', 'w') as outfile:
 		json.dump(outInfo, outfile, indent=4, sort_keys=True)
+
+# General statistics
+outInfo = {}
+
+outInfo["player_number"] = len(allplayers["players"])
+
+# Character usage
+charUsage = {}
+
+for c in characters:
+	charUsage[c] = {
+		"usage": 0,
+		"secondary": 0,
+		"name": characters[c]
+	}
+	for p in allplayers["players"]:
+		if "mains" in p.keys() and len(p["mains"]) > 0:
+			if p["mains"][0] == characters[c]:
+				charUsage[c]["usage"] += 1
+		if "mains" in p.keys() and len(p["mains"]) > 1:
+			for main in p["mains"][1:]:
+				if main == characters[c]:
+					charUsage[c]["secondary"] += 1
+	
+outInfo["char_usage"] = charUsage
+
+# Players per country
+playersPerCountry = {}
+
+for p in allplayers["players"]:
+	if "state" not in p.keys() or p["state"] == "":
+		p["state"] = "null"
+	if "country_code" not in p.keys() or p["country_code"] == "":
+		p["country_code"] = "null"
+	
+	# country
+	if p["country_code"] in playersPerCountry:
+		playersPerCountry[p["country_code"]] += 1
+	else:
+		playersPerCountry[p["country_code"]] = 1
+
+outInfo["players_per_country"] = playersPerCountry
+
+# Number of leagues
+outInfo["league_number"] = len(ligas)
+
+with open('out/statistics.json', 'w') as outfile:
+	json.dump(outInfo, outfile, indent=4, sort_keys=True)
 
 with open('out/allplayers.json', 'w') as outfile:
   json.dump(allplayers, outfile, indent=4, sort_keys=True)
