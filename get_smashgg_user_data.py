@@ -324,7 +324,8 @@ for league in leagues:
 							most_common = selections.most_common(1)
 
 							for character in selections.most_common(2):
-								if(character[1] > most_common[0][1]/3.0):
+								if(character[0] == most_common[0] or
+								character[1] > most_common[0][1]/3.0):
 									found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
 									if found:
 										mains.append(characters[found["name"]])
