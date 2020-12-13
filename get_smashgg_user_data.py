@@ -136,7 +136,13 @@ for league in leagues:
 
 		# all players already got smashgg ids, skip
 		allPlayersGotSmashggId = True
+
+		if tournament[1]["ranking"] is None:
+			continue
+
 		for p in tournament[1]["ranking"]:
+			if p not in players.keys():
+				continue
 			if "smashgg_id" not in players[p].keys():
 				allPlayersGotSmashggId = False
 				break
@@ -314,11 +320,14 @@ for league in leagues:
 
 							if 1746 in selections.keys():
 								del selections[1746] # Remove random
+							
+							most_common = selections.most_common(1)
 
 							for character in selections.most_common(2):
-								found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
-								if found:
-									mains.append(characters[found["name"]])
+								if(character[1] > most_common[0][1]/3.0):
+									found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
+									if found:
+										mains.append(characters[found["name"]])
 							
 							player_obj["character_usage"] = {}
 							for character in selections.most_common():
@@ -326,9 +335,8 @@ for league in leagues:
 								if found:
 									player_obj["character_usage"][found["name"]] = selections[character[0]]
 							
-							if "mains" not in player_obj.keys() or len(player_obj["mains"]) == 0 or player_obj["mains"][0] == "":
-								if len(mains) > 0:
-									player_obj["mains"] = mains
+							if len(mains) > 0:
+								player_obj["mains"] = mains
 						break
 
 			page += 1
