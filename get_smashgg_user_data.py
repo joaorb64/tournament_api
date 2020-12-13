@@ -292,6 +292,8 @@ for league in leagues:
 						resp = json.loads(r.text)
 						
 						if resp is not None and \
+						"data" in resp.keys() and \
+						resp["data"]["user"]["player"]["sets"] is not None and \
 						resp["data"]["user"]["player"]["sets"]["nodes"] is not None:
 							selections = Counter()
 
