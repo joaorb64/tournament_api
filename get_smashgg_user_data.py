@@ -162,29 +162,12 @@ for league in leagues:
 					'query': '''
 					query evento($eventSlug: String!) {
 						event(slug: $eventSlug) {
-							entrants(query: {page: '''+str(page)+''', perPage: 80}) {
+							entrants(query: {page: '''+str(page)+''', perPage: 120}) {
 								nodes{
 									name
 									participants {
 										user {
 											id
-											slug
-											name
-											authorizations {
-												type
-												externalUsername
-											}
-											player {
-												gamerTag
-												prefix
-											}
-											location {
-												city
-												country
-											}
-											images(type: "profile") {
-												url
-											}
 										}
 									}
 								}
@@ -230,26 +213,8 @@ for league in leagues:
 						if player_obj == None or "smashgg_id" in player_obj.keys():
 							# already did this
 							continue
-
+					
 						player_obj["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
-						player_obj["smashgg_slug"] = gg_entrant["participants"][0]["user"]["slug"]
-						player_obj["full_name"] = gg_entrant["participants"][0]["user"]["name"]
-						player_obj["name"] = gg_entrant["participants"][0]["user"]["player"]["gamerTag"]
-						player_obj["org"] = gg_entrant["participants"][0]["user"]["player"]["prefix"]
-
-						if gg_entrant["participants"][0]["user"]["authorizations"] is not None:
-							for authorization in gg_entrant["participants"][0]["user"]["authorizations"]:
-								player_obj[authorization["type"].lower()] = authorization["externalUsername"]
-						
-						if gg_entrant["participants"][0]["user"]["location"] is not None:
-							if gg_entrant["participants"][0]["user"]["location"]["city"] is not None:
-								player_obj["city"] = gg_entrant["participants"][0]["user"]["location"]["city"]
-							if gg_entrant["participants"][0]["user"]["location"]["country"] is not None:
-								player_obj["country"] = gg_entrant["participants"][0]["user"]["location"]["country"]
-
-						if gg_entrant["participants"][0]["user"]["images"] is not None:
-							if len(gg_entrant["participants"][0]["user"]["images"]) > 0:
-								player_obj["smashgg_image"] = gg_entrant["participants"][0]["user"]["images"][0]["url"]
 
 						r = requests.post(
 						'https://api.smash.gg/gql/alpha',
@@ -260,7 +225,23 @@ for league in leagues:
 							'query': '''
 							query user($userId: ID!) {
 								user(id: $userId) {
+									id
+									slug
+									name
+									authorizations {
+										type
+										externalUsername
+									}
+									location {
+										city
+										country
+									}
+									images(type: "profile") {
+										url
+									}
 									player {
+										gamerTag
+										prefix
 										sets(page: 1, perPage: 30) {
 											nodes {
 												games {
@@ -290,10 +271,32 @@ for league in leagues:
 						currentKey = (currentKey+1)%len(SMASHGG_KEYS)
 
 						resp = json.loads(r.text)
+
+						if resp is None or "data" not in resp.keys():
+							continue
+
+						player_obj["smashgg_id"] = resp["data"]["user"]["id"]
+						player_obj["smashgg_slug"] = resp["data"]["user"]["slug"]
+						player_obj["full_name"] = resp["data"]["user"]["name"]
+						player_obj["name"] = resp["data"]["user"]["player"]["gamerTag"]
+						player_obj["org"] = resp["data"]["user"]["player"]["prefix"]
+
+						if resp["data"]["user"]["authorizations"] is not None:
+							for authorization in resp["data"]["user"]["authorizations"]:
+								player_obj[authorization["type"].lower()] = authorization["externalUsername"]
 						
-						if resp is not None and \
-						"data" in resp.keys() and \
-						resp["data"]["user"]["player"]["sets"] is not None and \
+						if resp["data"]["user"]["location"] is not None:
+							if resp["data"]["user"]["location"]["city"] is not None:
+								player_obj["city"] = resp["data"]["user"]["location"]["city"]
+							if resp["data"]["user"]["location"]["country"] is not None:
+								player_obj["country"] = resp["data"]["user"]["location"]["country"]
+
+						if resp["data"]["user"]["images"] is not None:
+							if len(resp["data"]["user"]["images"]) > 0:
+								player_obj["smashgg_image"] = resp["data"]["user"]["images"][0]["url"]
+				
+						# character usage, mains
+						if resp["data"]["user"]["player"]["sets"] is not None and \
 						resp["data"]["user"]["player"]["sets"]["nodes"] is not None:
 							selections = Counter()
 
