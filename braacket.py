@@ -97,58 +97,62 @@ class Braacket:
             f'{self.league}/player?rows=200&embed=1', verify=False) # the upperbound is 200
         soup = BeautifulSoup(r.text, 'html.parser')
 
-        pages = len(soup.find('select', {"id": "search-page"}).findChildren(recursive=False))
+        try:
+            pages = len(soup.find('select', {"id": "search-page"}).findChildren(recursive=False))
 
-        players = {}
+            players = {}
 
-        for page in range(1, pages+1):
-            print('['+str(page)+"/"+str(pages)+']')
+            for page in range(1, pages+1):
+                print('['+str(page)+"/"+str(pages)+']')
 
-            if page != 1:
-                r = requests.get(
-                    'https://braacket.com/league/'
-                    f'{self.league}/player?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
-            soup = BeautifulSoup(r.text, 'html.parser')
+                if page != 1:
+                    r = requests.get(
+                        'https://braacket.com/league/'
+                        f'{self.league}/player?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
+                soup = BeautifulSoup(r.text, 'html.parser')
 
-            table = soup.find('table') # get main table
-            tbody = table.find('tbody') # skip the table's header
-            lines = tbody.select("tr") # get each of the table's lines
-            url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-            bye_extract = re.compile(r'bye[0-9]+$')
+                table = soup.find('table') # get main table
+                tbody = table.find('tbody') # skip the table's header
+                lines = tbody.select("tr") # get each of the table's lines
+                url_extract = re.compile(r'.*\/([^\/][^?]*)') # /league/{league}/player/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+                bye_extract = re.compile(r'bye[0-9]+$')
 
-            for line in lines:
-                player = {}
+                for line in lines:
+                    player = {}
 
-                children = line.findChildren(recursive=False)
+                    children = line.findChildren(recursive=False)
 
-                # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
+                    # [ [rank][0]- [icon][1] - [player name, mains][2] - [social media][3] - [?][4] - [score][5] ]
 
-                # name
-                player["name"] = children[0].find("a").string
+                    # name
+                    player["name"] = children[0].find("a").string
 
-                # dont get bye*
-                if bye_extract.match(player["name"]):
-                    continue
+                    # dont get bye*
+                    if bye_extract.match(player["name"]):
+                        continue
 
-                # uuid
-                uuid = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
+                    # uuid
+                    uuid = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
 
-                # mains
-                player["mains"] = []
-                mains = children[0].findAll('img')
+                    # mains
+                    player["mains"] = []
+                    mains = children[0].findAll('img')
 
-                for main in mains:
-                    player["mains"].append(main["title"])
+                    for main in mains:
+                        player["mains"].append(main["title"])
 
-                # twitter
-                links = children[1].select('a')
+                    # twitter
+                    links = children[1].select('a')
 
-                for link in links:
-                    if link.has_attr('href'):
-                        if "twitter.com" in link['href']:
-                            player["twitter"] = link['href']
-                
-                players[uuid] = player
+                    for link in links:
+                        if link.has_attr('href'):
+                            if "twitter.com" in link['href']:
+                                player["twitter"] = link['href']
+                    
+                    players[uuid] = player
+        except Exception as e:
+            print(e)
+            players = {}
         return players
     
     def get_tournament_link(self, id):
