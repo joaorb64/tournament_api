@@ -13,7 +13,7 @@ leagues = json.load(f)
 f = open('cities.json')
 cities = json.load(f)
 
-f = open('countries.json')
+f = open('countries+states.json')
 countries = json.load(f)
 
 for league in leagues:
@@ -36,6 +36,22 @@ for league in leagues:
 				player["country_code"] = country["iso2"]
 
 				if "city" in player.keys() and player["city"] is not None:
+					# State explicit?
+					split = player["city"].split(" ")
+
+					for part in split:
+						state = next(
+							(st for st in country["states"] if remove_accents_lower(st["state_code"]) == remove_accents_lower(part)),
+							None
+						)
+						if state is not None:
+							player["state"] = state["state_code"]
+							break
+
+					if "state" in player.keys() and player["state"] is not None:
+						continue
+
+					# no, so get by City
 					city = next(
 						(c for c in cities if remove_accents_lower(c["name"]) == remove_accents_lower(player["city"])
 						and c["country_code"] == player["country_code"]),
