@@ -123,7 +123,10 @@ for league in leagues:
 
 	totalTournaments = len(tournaments.items())
 
-	for i, tournament in enumerate(tournaments.items()):
+	sortedTournaments = list(tournaments.items())
+	sortedTournaments.sort(key=lambda x: -x[1]["time"])
+
+	for i, tournament in enumerate(sortedTournaments):
 		# not on smashgg, skip
 		if not tournament[1]["link"]:
 			print("Not on smashgg, skipping")
