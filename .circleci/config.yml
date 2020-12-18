@@ -37,15 +37,54 @@ jobs:
             git add .
             git commit -am "[skip ci] Updating Data ${DATE_TODAY}" || true
             git push origin sudamerica || true
+  
+  get_next_tournaments:
+    docker:
+      - image: circleci/python:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install beautifulsoup4 joblib requests faster_than_requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein
+      - run:
+          name: Update data
+          command: |
+            . venv/bin/activate
+            echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
+            echo ${SMASHGG_KEYS} | base64 --decode --ignore-garbage > auth.json
+            python get_next_tournaments.py
+      - run:
+          name: Commit data back to Github
+          command: |
+            git config user.email "joaorbezerra@hotmail.com"
+            git config user.name "tournamentapibot"
+            DATE_TODAY=$(date +"%Y-%m-%d")
+            git add .
+            git commit -am "[skip ci] Updating Data ${DATE_TODAY}" || true
+            git push origin sudamerica || true
 
 workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "30 * * * *"
+          cron: "0 0,6,12,18 * * *"
           filters:
             branches:
               only:
                 - sudamerica
     jobs:
       - update_data
+  
+  get_next_tournaments:
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - sudamerica
+    jobs:
+      - get_next_tournaments
