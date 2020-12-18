@@ -71,15 +71,16 @@ class Braacket:
             tournament["id"] = link["href"].rsplit('/', 1)[1]
             tournaments[tournament["id"]] = tournament
 
-            tournament["link"] = self.get_tournament_link(tournament["id"])
-
             parent = heading.parent
             sibling = parent.findNext('div', {"class": "panel-body"})
 
             date = sibling.findChildren(recursive = False)[1].findChildren(recursive = False)[1].string
 
             if date is not None:
-                tournament["time"] = datetime.datetime.strptime(date, "%d %B %Y").timestamp()
+                try:
+                    tournament["time"] = datetime.datetime.strptime(date, "%d %B %Y").timestamp()
+                except:
+                    print(self.league+"["+tournament["id"]+"]"+"[time]: "+str(e))
             else:
                 # When there's country
                 date = sibling.findChildren(recursive = False)[2].findChildren(recursive = False)[1].string
@@ -199,6 +200,7 @@ class Braacket:
             bye_extract = re.compile(r'bye[0-9]+$')
 
             pranking = {}
+            linkage = {}
 
             for line in lines:
                 player = {}
@@ -212,6 +214,10 @@ class Braacket:
                 if badge is None:
                     continue
 
+                # player id in this tournament
+                id_element = children[1].find("a")
+                uuid_in_tournament = url_extract.match(id_element['href']).group(1).replace("?", "")
+
                 # tournament name
                 player["tournament_name"] = children[1].find("a").string
 
@@ -222,16 +228,21 @@ class Braacket:
                 if bye_extract.match(name):
                     continue
 
-                # uuid
-                uuid = url_extract.match(badge['href']).group(1).replace("?", "")
+                # uuid linked to
+                uuid_linked = url_extract.match(badge['href']).group(1).replace("?", "")
 
                 # rank
                 player["rank"] = children[0].string.strip()
 
-                pranking[uuid] = player
-            return pranking
-        except requests.exceptions.RequestException as e:
+                pranking[uuid_in_tournament] = player
+                linkage[uuid_linked] = uuid_in_tournament
+            return {
+                "ranking": pranking,
+                "linkage": linkage
+            }
+        except Exception as e:
             print(e)
+            return None
         except AttributeError as ae:
             print("Torneio invalido")
             return None
@@ -246,6 +257,65 @@ class Braacket:
             reqs.append(requests.get(link, verify=False).text)
             tournament_rankings[ids[i]] = self.get_tournament_ranking(ids[i], reqs[i])
         return tournament_rankings
+    
+    def get_ranking_info(self):
+        try:
+            print("get_ranking_info("+self.league+")")
+
+            r = requests.get(
+                'https://braacket.com/league/'
+                f'{self.league}/ranking?rows=200&embed=1', verify=False) # the upperbound is 200
+            soup = BeautifulSoup(r.text, 'html.parser')
+
+            ranking_info = {}
+
+            r = requests.get(
+                'https://braacket.com/league/'
+                f'{self.league}/ranking?rows=200&embed=1&page='f'{1}', verify=False) # the upperbound is 200
+            soup = BeautifulSoup(r.text, 'html.parser')
+            
+            active_ranking = soup.find('tr', {"class": "active"})
+
+            update_time = active_ranking.findChildren(recursive=False)[2].find("span")["title"]
+            update_time = update_time[update_time.find("(")+1:update_time.find(")")]
+            
+            try:
+                ranking_info["update_time"] = datetime.datetime.strptime(update_time, "%d %B %Y %H:%M").timestamp()
+            except Exception as e:
+                print(self.league+"[update_time]: "+str(e))
+                ranking_info["update_time"] = None
+
+            ranking_info["name"] = active_ranking.find('a').text.strip()
+
+            active_ranking_body = active_ranking.find('div', {'class': "my-table-subinfos"})
+            children = active_ranking_body.findChildren(recursive=False)
+
+            # ranking type, (dateStart - dateEnd) or (All times), rule?, rebalancing, point system
+            ranking_info["type"] = children[0].text
+
+            ranking_info["alltimes"] = children[1].text == "All times"
+
+            if ranking_info["alltimes"] == False:
+                timestart = children[1].text.split("-")[0].strip()
+                timeend = children[1].text.split("-")[1].strip()
+
+                try:
+                    ranking_info["timeStart"] = datetime.datetime.strptime(timestart, "%d %B %Y").timestamp()
+
+                    if(timeend == "Today"):
+                        ranking_info["timeEnd"] = "Today"
+                    else:
+                        ranking_info["timeEnd"] = datetime.datetime.strptime(timeend, "%d %B %Y").timestamp()
+                except Exception as e:
+                    print(self.league+"[timeStart/timeEnd]: "+str(e))
+                    ranking_info["timeStart"] = None
+                    ranking_info["timeEnd"] = None
+
+            return(ranking_info)
+        except Exception as e:
+            print(self.league + ": " + str(e))
+            return {}
+        
     
     def get_ranking(self):
         # returns player ranking with basic data available at the ranking page
@@ -275,7 +345,6 @@ class Braacket:
             pages = len(soup.find('select', {"id": "search-page"}).findChildren(recursive=False))
 
             pranking = {}
-            ranking_info = {}
 
             for page in range(1, pages+1):
                 print('['+str(page)+"/"+str(pages)+']')
@@ -286,34 +355,6 @@ class Braacket:
                         f'{self.league}/ranking?rows=200&embed=1&page='f'{page}', verify=False) # the upperbound is 200
                     soup = BeautifulSoup(r.text, 'html.parser')
                 
-                if page == 1:
-                    active_ranking = soup.find('tr', {"class": "active"})
-
-                    ranking_info["name"] = active_ranking.find('a').text.strip()
-
-                    active_ranking_body = active_ranking.find('div', {'class': "my-table-subinfos"})
-                    children = active_ranking_body.findChildren(recursive=False)
-
-                    # ranking type, (dateStart - dateEnd) or (All times), rule?, rebalancing, point system
-                    ranking_info["type"] = children[0].text
-
-                    ranking_info["alltimes"] = children[1].text == "All times"
-
-                    if ranking_info["alltimes"] == False:
-                        timestart = children[1].text.split("-")[0].strip()
-                        timeend = children[1].text.split("-")[1].strip()
-
-                        try:
-                            ranking_info["timeStart"] = datetime.datetime.strptime(timestart, "%d %B %Y").timestamp()
-                            ranking_info["timeEnd"] = datetime.datetime.strptime(timeend, "%d %B %Y").timestamp()
-                        except Exception as e:
-                            print(e)
-                            ranking_info["timeStart"] = None
-                            ranking_info["timeEnd"] = None
-
-                    
-                    print(ranking_info)
-
                 table = soup.findAll('table')[1] # first table is ranking system, second has the player list
                 tbody = table.find('tbody') # skip the table's header
                 lines = tbody.select("tr") # get each of the table's lines
@@ -335,8 +376,7 @@ class Braacket:
                     # score
                     score = children[5].string.strip()
                     pranking[uuid]["score"] = score
-            ranking_info["ranking"] = pranking
-            return ranking_info
+            return pranking
         except requests.exceptions.RequestException as e:
             print(self.league + ": " + str(e))
             return {}

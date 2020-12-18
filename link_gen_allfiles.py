@@ -18,13 +18,53 @@ leagues = json.load(f)
 mapping = {}
 allplayers = []
 
+print("Gen alltournaments")
+
+alltournaments = {}
+
+for league in leagues.keys():
+  f = open('out/'+league+'/tournaments.json')
+  tournaments = json.load(f)
+  alltournaments[league] = tournaments["tournaments"]
+
+with open('out/alltournaments.json', 'w') as outfile:
+  json.dump(alltournaments, outfile, indent=4, sort_keys=True)
+
 print("Gen allplayers")
+
+allplayers_previous = None
+
+try:
+  f = open('out/allplayers.json')
+  allplayers_previous = json.load(f)
+except Exception as e:
+  print(e)
 
 for league in leagues.keys():
   f = open('out/'+league+'/players.json')
   players = json.load(f)
 
   for player in players["players"].items():
+    # Resolve smashgg id
+    if "smashgg_id" in player[1].keys():
+      break
+    my_league = league
+    my_uuid = player[0]
+
+    if my_league in alltournaments.keys():
+      for tournament in alltournaments[my_league].items():
+        # Not on smashgg
+        if "link" not in tournament[1].keys():
+          continue
+
+        if my_uuid in tournament[1]["linkage"]:
+          id_in_tournament = tournament[1]["linkage"][my_uuid]
+
+          if "smashgg_id" in tournament[1]["ranking"][id_in_tournament].keys():
+            player[1]["smashgg_id"] = tournament[1]["ranking"][id_in_tournament]["smashgg_id"]
+            break
+
+    # Either join to existing player or create a new entry
     found = False
     
     for i, player2 in enumerate(allplayers):
@@ -42,18 +82,6 @@ for league in leagues.keys():
 
 with open('out/allplayers.json', 'w') as outfile:
   json.dump({"mapping": mapping, "players": allplayers}, outfile, indent=4, sort_keys=True)
-
-print("Gen alltournaments")
-
-alltournaments = {}
-
-for league in leagues.keys():
-  f = open('out/'+league+'/tournaments.json')
-  tournaments = json.load(f)
-  alltournaments[league] = tournaments["tournaments"]
-
-with open('out/alltournaments.json', 'w') as outfile:
-  json.dump(alltournaments, outfile, indent=4, sort_keys=True)
 
 print("Gen allleagues")
 

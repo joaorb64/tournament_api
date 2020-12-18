@@ -9,6 +9,7 @@ from datetime import datetime, tzinfo
 import collections
 import sys
 from joblib import Parallel, delayed
+import get_smashgg_tournament_data as gg
 
 f = open('leagues.json')
 leagues = json.load(f)
@@ -19,10 +20,10 @@ def remove_accents(input_str):
 
 def update(d, u):
 	for k, v in u.items():
-			if isinstance(v, collections.abc.Mapping):
-					d[k] = update(d.get(k, {}), v)
-			else:
-					d[k] = v
+		if isinstance(v, collections.abc.Mapping):
+				d[k] = update(d.get(k, {}), v)
+		else:
+				d[k] = v
 	return d
 
 def text_to_id(text):
@@ -33,51 +34,20 @@ def text_to_id(text):
 	text = re.sub('[^0-9a-zA-Z_-]', '', text)
 	return text
 
-def update_league(liga):
+def update_league(liga, smashgg_key_id):
 	print("Updating league " + liga)
 	bracket = braacket.Braacket(liga)
 
 	if not os.path.exists('out/'+liga):
 		os.makedirs('out/'+liga)
 
-	# get ranking
-	ranking = bracket.get_ranking()
-
-	with open('out/'+liga+'/ranking.json', 'w') as outfile:
-		out = {
-			"ranking": ranking,
-			"update_time": str(datetime.now())
-		}
-		json.dump(out, outfile, indent=4, sort_keys=True)
+	previous_ranking = None
 	
-	# get players
-	players = bracket.get_players()
-
-	with open('out/'+liga+'/players.json', 'w') as outfile:
-		out = {
-			"players": players,
-			"update_time": str(datetime.now())
-		}
-		json.dump(out, outfile, indent=4, sort_keys=True)
-
-	# get tournaments
-	tournaments = bracket.get_tournaments()
-	got = bracket.get_tournament_ranking_all([tournament for tournament in tournaments])
-
-	for i, tournament in enumerate(tournaments):
-		tournaments[tournament]["ranking"] = got[tournament]
-
-		if tournaments[tournament]["ranking"] != None:
-			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
-		else:
-			tournaments[tournament]["player_number"] = None
-
-	with open('out/'+liga+'/tournaments.json', 'w') as outfile:
-		out = {
-			"tournaments": tournaments,
-			"update_time": str(datetime.now())
-		}
-		json.dump(out, outfile, indent=4, sort_keys=True)
+	try:
+		with open('out/'+liga+'/ranking.json', 'r') as infile:
+			previous_ranking = json.load(infile)
+	except Exception as e:
+		print(e)
 	
 	# get league data
 	league_data = bracket.get_league_data()
@@ -86,11 +56,91 @@ def update_league(liga):
 	with open('out/'+liga+'/data.json', 'w') as outfile:
 		out = league_data
 		json.dump(out, outfile, indent=4, sort_keys=True)
+	
+	# get league players
+	players = bracket.get_players()
+
+	with open('out/'+liga+'/players.json', 'w') as outfile:
+		out = {
+			"players": players,
+			"update_time": str(datetime.now())
+		}
+		json.dump(out, outfile, indent=4, sort_keys=True)
+	
+	# get ranking info
+	ranking_info = bracket.get_ranking_info()
+
+	try:
+		if("update_time" in ranking_info.keys() and "update_time" in previous_ranking["ranking"].keys()):
+			if ranking_info["update_time"] == previous_ranking["ranking"]["update_time"]:
+				print("Ranking unchanged")
+				return
+	except Exception as e:
+		print(e)
+
+	# get ranking
+	ranking = bracket.get_ranking()
+	ranking.update(ranking_info)
+
+	with open('out/'+liga+'/ranking.json', 'w') as outfile:
+		out = {
+			"ranking": ranking,
+			"update_time": str(datetime.now())
+		}
+		json.dump(out, outfile, indent=4, sort_keys=True)
+
+	# get tournaments
+	previous_tournaments = None
+
+	try:
+		with open('out/'+liga+'/tournaments.json', 'r') as infile:
+			previous_tournaments = json.load(infile)
+	except Exception as e:
+		print(e)
+
+	tournaments = bracket.get_tournaments()
+
+	for i, tournament in enumerate(tournaments):
+		if previous_tournaments and previous_tournaments["tournaments"]:
+			if tournament in previous_tournaments["tournaments"].keys():
+				tournaments[tournament] = previous_tournaments["tournaments"][tournament]
+				print("Tournament known. Still, linkage could have changed.")
+				ranking_get = bracket.get_tournament_ranking(tournament)
+				if ranking_get is not None:
+					tournaments[tournament]["linkage"] = ranking_get["linkage"]
+				else:
+					print("Could not get tournament? - "+tournament)
+				continue
+
+		tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
+		
+		ranking_get = bracket.get_tournament_ranking(tournament)
+
+		if ranking_get is not None:
+			tournaments[tournament]["ranking"] = ranking_get["ranking"]
+			tournaments[tournament]["linkage"] = ranking_get["linkage"]
+		else:
+			tournaments[tournament]["ranking"] = {}
+			tournaments[tournament]["linkage"] = {}
+
+		if tournaments[tournament]["ranking"] != None:
+			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+		else:
+			tournaments[tournament]["player_number"] = None
+		
+		gg.get_smashgg_tournament_info(tournaments[tournament], (smashgg_key_id)%len(gg.SMASHGG_KEYS))
+
+	with open('out/'+liga+'/tournaments.json', 'w') as outfile:
+		out = {
+			"tournaments": tournaments,
+			"update_time": str(datetime.now())
+		}
+		json.dump(out, outfile, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
 	if len(sys.argv) >= 2:
 		for liga in leagues.keys():
 			if liga == sys.argv[1]:
-				update_league(liga)
+				update_league(liga, 0)
 	else:
-		Parallel(n_jobs=4)(delayed(update_league)(liga) for liga in leagues.keys())
+		Parallel(n_jobs=len(gg.SMASHGG_KEYS))(delayed(update_league)(liga, i) for i, liga in enumerate(leagues.keys()))

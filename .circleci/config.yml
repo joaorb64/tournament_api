@@ -19,10 +19,11 @@ jobs:
             echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
             echo ${SMASHGG_KEYS} | base64 --decode --ignore-garbage > auth.json
             python get_league.py
-            python get_smashgg_user_data.py
-            python match_states.py
-            python link_gen_allfiles.py
             #python ranking_br.py
+            python link_gen_allfiles.py
+            python get_smashgg_user_data.py
+            python append_smasgg_cache_to_players.py
+            python match_states.py
             python statistics.py
             python get_next_tournaments.py
             #python docs_after.py
@@ -41,7 +42,7 @@ workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "0 0,8,16 * * *"
+          cron: "30 * * * *"
           filters:
             branches:
               only:
