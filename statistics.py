@@ -132,15 +132,13 @@ for liga in ligas:
 
 	if league_ranking.get("ranking") == None:
 		continue
-	if league_ranking.get("ranking").get("ranking") == None:
-		continue
 
 	# build object with centered data
 	for p in league_players["players"]:
-		if p in league_ranking["ranking"]["ranking"].keys():
+		if p in league_ranking["ranking"].keys():
 			apid = allplayers["mapping"][liga+":"+p]
 			league_players["players"][p] = allplayers["players"][apid]
-			league_players["players"][p]["rank"] = league_ranking["ranking"]["ranking"][p]["rank"]
+			league_players["players"][p]["rank"] = league_ranking["ranking"][p]["rank"]
 			league_players["players"][p]["apid"] = apid
 
 	outInfo = {}
