@@ -160,7 +160,7 @@ def fetchPlayer(currKey, playerIndex):
 					player {
 						gamerTag
 						prefix
-						sets(page: '''+str(i)+''', perPage: 25) {
+						sets(page: '''+str(i+1)+''', perPage: 25) {
 							nodes {
 								games {
 									selections {
