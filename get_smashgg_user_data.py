@@ -253,8 +253,7 @@ def fetchPlayer(currKey, playerIndex):
 		if len(mains) > 0:
 			resp["mains"] = mains
 
-	with cache_lock:
-		cache[player["smashgg_id"]] = resp
+	cache[player["smashgg_id"]] = resp
 
 	fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 	return
