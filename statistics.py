@@ -109,7 +109,8 @@ characters = {
 	"Terry": "Terry",
 	"Byleth": "Byleth",
 	"Min Min": "Min Min",
-	"Steve": "Steve"
+	"Steve": "Steve",
+	"Sephiroth": "Sephiroth"
 }
 ###
 

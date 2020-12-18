@@ -130,61 +130,70 @@ def fetchPlayer(currKey, playerIndex):
 	if "smashgg_id" not in player.keys():
 		fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 		return
+	
+	r = []
 
-	r = requests.post(
-	'https://api.smash.gg/gql/alpha',
-	headers={
-		'Authorization': 'Bearer'+currKey,
-	},
-	json={
-		'query': '''
-		query user($userId: ID!) {
-			user(id: $userId) {
-				id
-				slug
-				name
-				authorizations {
-					type
-					externalUsername
-				}
-				location {
-					city
-					country
-				}
-				images(type: "profile") {
-					url
-				}
-				player {
-					gamerTag
-					prefix
-					sets(page: 1, perPage: 50) {
-						nodes {
-							games {
-								selections {
-									entrant {
-										participants {
-											user {
-												id
+	for i in range(2):
+		r.append(requests.post(
+		'https://api.smash.gg/gql/alpha',
+		headers={
+			'Authorization': 'Bearer'+currKey,
+		},
+		json={
+			'query': '''
+			query user($userId: ID!) {
+				user(id: $userId) {
+					id
+					slug
+					name
+					authorizations {
+						type
+						externalUsername
+					}
+					location {
+						city
+						country
+					}
+					images(type: "profile") {
+						url
+					}
+					player {
+						gamerTag
+						prefix
+						sets(page: '''+str(i)+''', perPage: 25) {
+							nodes {
+								games {
+									selections {
+										entrant {
+											participants {
+												user {
+													id
+												}
 											}
 										}
+										selectionValue
 									}
-									selectionValue
 								}
 							}
 						}
 					}
 				}
 			}
-		}
-		''',
-			'variables': {
-				"userId": str(player["smashgg_id"])
-			},
-		}
-	)
-	time.sleep(1)
+			''',
+				'variables': {
+					"userId": str(player["smashgg_id"])
+				},
+			}
+		))
+		time.sleep(1)
 
-	resp = json.loads(r.text)
+	resp = json.loads(r[0].text)
+	resp2 = json.loads(r[1].text)
+
+	if resp.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}) and \
+	resp2.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
+		resp["data"]["user"]["player"]["sets"]["nodes"] = \
+			resp["data"]["user"]["player"]["sets"]["nodes"] + resp2["data"]["user"]["player"]["sets"]["nodes"]
 
 	if resp is None or "data" not in resp.keys():
 		print("Erro ao obter")
