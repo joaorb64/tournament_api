@@ -17,92 +17,6 @@ def update(d, u):
 			d[k] = v
 	return d
 
-characters = {
-	"Mario": "Mario",
-	"Donkey Kong": "Donkey Kong",
-	"Link": "Link",
-	"Samus": "Samus",
-	"Dark Samus": "Dark Samus",
-	"Yoshi": "Yoshi",
-	"Kirby": "Kirby",
-	"Fox": "Fox",
-	"Pikachu": "Pikachu",
-	"Luigi": "Luigi",
-	"Ness": "Ness",
-	"Captain Falcon": "Captain Falcon",
-	"Jigglypuff": "Jigglypuff",
-	"Peach": "Peach",
-	"Daisy": "Daisy",
-	"Bowser": "Bowser",
-	"Ice Climbers": "Ice Climbers",
-	"Sheik": "Sheik",
-	"Zelda": "Zelda",
-	"Dr. Mario": "Dr Mario",
-	"Pichu": "Pichu",
-	"Falco": "Falco",
-	"Marth": "Marth",
-	"Lucina": "Lucina",
-	"Young Link": "Young Link",
-	"Ganondorf": "Ganondorf",
-	"Mewtwo": "Mewtwo",
-	"Roy": "Roy",
-	"Chrom": "Chrom",
-	"Mr. Game & Watch": "Mr Game And Watch",
-	"Meta Knight": "Meta Knight",
-	"Pit": "Pit",
-	"Dark Pit": "Dark Pit",
-	"Zero Suit Samus": "Zero Suit Samus",
-	"Wario": "Wario",
-	"Snake": "Snake",
-	"Ike": "Ike",
-	"Pokemon Trainer": "Pokemon Trainer",
-	"Diddy Kong": "Diddy Kong",
-	"Lucas": "Lucas",
-	"Sonic": "Sonic",
-	"King Dedede": "King Dedede",
-	"Olimar": "Olimar",
-	"Lucario": "Lucario",
-	"R.O.B.": "Rob",
-	"Toon Link": "Toon Link",
-	"Wolf": "Wolf",
-	"Villager": "Villager",
-	"Mega Man": "Mega Man",
-	"Wii Fit Trainer": "Wii Fit Trainer",
-	"Rosalina": "Rosalina And Luma",
-	"Little Mac": "Little Mac",
-	"Greninja": "Greninja",
-	"Mii Brawler": "Mii Brawler",
-	"Mii Swordfighter": "Mii Swordfighter",
-	"Mii Gunner": "Mii Gunner",
-	"Palutena": "Palutena",
-	"Pac-Man": "Pac Man",
-	"Robin": "Robin",
-	"Shulk": "Shulk",
-	"Bowser Jr.": "Bowser Jr",
-	"Duck Hunt": "Duck Hunt",
-	"Ryu": "Ryu",
-	"Ken": "Ken",
-	"Cloud": "Cloud",
-	"Corrin": "Corrin",
-	"Bayonetta": "Bayonetta",
-	"Inkling": "Inkling",
-	"Ridley": "Ridley",
-	"Simon Belmont": "Simon",
-	"Richter": "Richter",
-	"King K. Rool": "King K Rool",
-	"Isabelle": "Isabelle",
-	"Incineroar": "Incineroar",
-	"Piranha Plant": "Piranha Plant",
-	"Joker": "Joker",
-	"Hero": "Hero",
-	"Banjo-Kazooie": "Banjo-Kazooie",
-	"Terry": "Terry",
-	"Byleth": "Byleth",
-	"Min Min": "Min Min",
-	"Steve": "Steve",
-	"Sephiroth": "Sephiroth"
-}
-
 if os.path.exists("auth.json"):
   f = open('auth.json')
   auth_json = json.load(f)
@@ -155,52 +69,10 @@ for i, player in enumerate(players):
 				player["smashgg_image"] = resp["images"][0]["url"]
 
 		# character usage, mains
-		if resp["player"]["sets"] is not None and \
-		resp["player"]["sets"]["nodes"] is not None:
-			selections = Counter()
-
-			for set_ in resp["player"]["sets"]["nodes"]:
-				if set_["games"] is None:
-					continue
-				for game in set_["games"]:
-					if game["selections"] is None:
-						continue
-					for selection in game["selections"]:
-						if selection.get("entrant"):
-							if selection.get("entrant").get("participants"):
-								if len(selection.get("entrant").get("participants")) > 0:
-									if selection.get("entrant").get("participants") is None:
-										continue
-									if selection.get("entrant").get("participants")[0] is None:
-										continue
-									if selection.get("entrant").get("participants")[0]["user"] is None:
-										continue
-									participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
-									if player["smashgg_id"] == participant_id:
-										if selection["selectionValue"] is not None:
-											selections[selection["selectionValue"]] += 1
-			
-			mains = []
-
-			if 1746 in selections.keys():
-				del selections[1746] # Remove random
-			
-			most_common = selections.most_common(1)
-
-			for character in selections.most_common(2):
-				if(character[1] > most_common[0][1]/3.0):
-					found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
-					if found:
-						mains.append(characters[found["name"]])
-			
-			player["character_usage"] = {}
-			for character in selections.most_common():
-				found = next((c for c in smashgg_character_data["character"] if c["id"] == character[0]), None)
-				if found:
-					player["character_usage"][found["name"]] = selections[character[0]]
-			
-			if len(mains) > 0:
-				player["mains"] = mains
+		if "character_usage" in resp.keys():
+			player["character_usage"] = resp["character_usage"]
+		if "mains" in resp.keys():
+			player["mains"] = resp["mains"]
 
 print("")
 
