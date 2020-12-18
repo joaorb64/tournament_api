@@ -7,7 +7,7 @@ import datetime
 import os
 from collections import Counter
 import sys
-from threading import Thread
+from threading import Thread, Lock
 
 characters = {
 	"Mario": "Mario",
@@ -178,7 +178,7 @@ def fetchPlayer(currKey, playerIndex):
 		}
 		''',
 			'variables': {
-				"userId": player["smashgg_id"]
+				"userId": str(player["smashgg_id"])
 			},
 		}
 	)
@@ -187,6 +187,8 @@ def fetchPlayer(currKey, playerIndex):
 	resp = json.loads(r.text)
 
 	if resp is None or "data" not in resp.keys():
+		print("Erro ao obter")
+		print(resp)
 		fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 		return
 	
@@ -242,12 +244,14 @@ def fetchPlayer(currKey, playerIndex):
 		if len(mains) > 0:
 			resp["mains"] = mains
 
-	cache[player["smashgg_id"]] = resp
+	with cache_lock:
+		cache[player["smashgg_id"]] = resp
 
 	fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 	return
 
 threads = []
+cache_lock = Lock()
 
 for i, k in enumerate(SMASHGG_KEYS):
 	thread = Thread(target=fetchPlayer, args=[k, i])

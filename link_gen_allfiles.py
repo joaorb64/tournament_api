@@ -45,9 +45,6 @@ for league in leagues.keys():
   players = json.load(f)
 
   for player in players["players"].items():
-    # Resolve smashgg id
-    if "smashgg_id" in player[1].keys():
-      break
     my_league = league
     my_uuid = player[0]
 
