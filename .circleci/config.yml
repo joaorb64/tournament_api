@@ -25,7 +25,6 @@ jobs:
             python append_smasgg_cache_to_players.py
             python match_states.py
             python statistics.py
-            python get_next_tournaments.py
             #python docs_after.py
             #python players_to_link.py
       - run:
@@ -34,8 +33,9 @@ jobs:
             git config user.email "joaorbezerra@hotmail.com"
             git config user.name "tournamentapibot"
             DATE_TODAY=$(date +"%Y-%m-%d")
+            git pull origin sudamerica
             git add .
-            git commit -am "[skip ci] Updating Data ${DATE_TODAY}" || true
+            git commit -am "[skip ci] Full update ${DATE_TODAY}" || true
             git push origin sudamerica || true
   
   get_next_tournaments:
@@ -62,8 +62,9 @@ jobs:
             git config user.email "joaorbezerra@hotmail.com"
             git config user.name "tournamentapibot"
             DATE_TODAY=$(date +"%Y-%m-%d")
+            git pull origin sudamerica
             git add .
-            git commit -am "[skip ci] Updating Data ${DATE_TODAY}" || true
+            git commit -am "[skip ci] Update next tournaments ${DATE_TODAY}" || true
             git push origin sudamerica || true
 
 workflows:
