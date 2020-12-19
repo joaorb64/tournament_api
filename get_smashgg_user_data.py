@@ -125,7 +125,7 @@ def fetchPlayer(currKey, playerIndex):
 		playerIndex += len(SMASHGG_KEYS)
 
 def fetchPlayerDo(currKey, playerIndex):
-	print(str(playerIndex)+"/"+str(len(players)))
+	print("Get smashgg data: "+str(playerIndex)+"/"+str(len(players)), end="\r")
 
 	if playerIndex >= len(players):
 		return
