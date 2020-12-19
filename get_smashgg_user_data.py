@@ -120,6 +120,11 @@ players = original_players["players"]
 cache = {}
 
 def fetchPlayer(currKey, playerIndex):
+	while playerIndex < len(players):
+		fetchPlayerDo(currKey, playerIndex)
+		playerIndex += len(SMASHGG_KEYS)
+
+def fetchPlayerDo(currKey, playerIndex):
 	print(str(playerIndex)+"/"+str(len(players)))
 
 	if playerIndex >= len(players):
@@ -128,7 +133,6 @@ def fetchPlayer(currKey, playerIndex):
 	player = players[playerIndex]
 
 	if "smashgg_id" not in player.keys():
-		fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 		return
 	
 	r = []
@@ -198,7 +202,6 @@ def fetchPlayer(currKey, playerIndex):
 	if resp is None or "data" not in resp.keys():
 		print("Erro ao obter")
 		print(resp)
-		fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 		return
 	
 	resp = resp["data"]["user"]
@@ -227,7 +230,10 @@ def fetchPlayer(currKey, playerIndex):
 								participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
 								if player["smashgg_id"] == participant_id:
 									if selection["selectionValue"] is not None:
-										selections[selection["selectionValue"]] += 1
+										# only get selections for smash!
+										found = next((c for c in smashgg_character_data["character"] if c["id"] == selection["selectionValue"]), None)
+										if found:
+											selections[selection["selectionValue"]] += 1
 		
 		mains = []
 
@@ -255,7 +261,6 @@ def fetchPlayer(currKey, playerIndex):
 
 	cache[player["smashgg_id"]] = resp
 
-	fetchPlayer(currKey, playerIndex+len(SMASHGG_KEYS))
 	return
 
 threads = []

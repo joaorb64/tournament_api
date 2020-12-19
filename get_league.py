@@ -79,7 +79,8 @@ def update_league(liga, smashgg_key_id):
 		print(e)
 
 	# get ranking
-	ranking = bracket.get_ranking()
+	ranking = {}
+	ranking["ranking"] = bracket.get_ranking()
 	ranking.update(ranking_info)
 
 	with open('out/'+liga+'/ranking.json', 'w') as outfile:
