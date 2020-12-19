@@ -1105,10 +1105,31 @@
         "region": "NA",
         "events": [
             {
+                "id": 532005,
+                "name": "Smash Ultimate Sephiroth Singles",
+                "isOnline": false,
+                "state": "ACTIVE",
+                "numEntrants": 8,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1608415200,
+                "phaseGroups": [
+                    {
+                        "id": 1407173,
+                        "phase": {
+                            "id": 879809,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ]
+            },
+            {
                 "id": 532004,
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
-                "state": "ACTIVE",
+                "state": "COMPLETED",
                 "numEntrants": 12,
                 "videogame": {
                     "id": 1386
@@ -1124,52 +1145,6 @@
                         "progressionsOut": null
                     }
                 ]
-            },
-            {
-                "id": 532005,
-                "name": "Smash Ultimate Sephiroth Singles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 6,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1608413400,
-                "phaseGroups": [
-                    {
-                        "id": 1407173,
-                        "phase": {
-                            "id": 879809,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "UFG Moscow 2020 Fall Season #5",
-                "tournament_id": 255121,
-                "city": "Moscow",
-                "url": "https://smash.gg/tournament/ufg-moscow-2020-fall-season-5",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1608404400,
-                "tournament_endAt": 1608418800,
-                "tournament_registrationClosesAt": 1608406200,
-                "images": [
-                    {
-                        "id": "3038432",
-                        "url": "https://images.smash.gg/images/tournament/255121/image-679f2419f873eac0fbb94243b4167e37.png",
-                        "type": "banner"
-                    },
-                    {
-                        "id": "3038433",
-                        "url": "https://images.smash.gg/images/tournament/255121/image-9241fee81cdcba953fd7ba54a276e0a5.png",
-                        "type": "profile"
-                    }
-                ],
-                "tournament_multievent": true,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "1021 Harold Ave, Moscow, ID 83843, USA",
-                "tournament_addrState": "ID"
             },
             {
                 "id": 540863,
@@ -1208,11 +1183,32 @@
                 ]
             },
             {
+                "id": 539397,
+                "name": "Ultimate Singles",
+                "isOnline": true,
+                "state": "ACTIVE",
+                "numEntrants": 19,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1608415200,
+                "phaseGroups": [
+                    {
+                        "id": 1422039,
+                        "phase": {
+                            "id": 890005,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ]
+            },
+            {
                 "id": 540339,
                 "name": "Competitive singles ($30 prize pool)",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 184,
+                "numEntrants": 205,
                 "videogame": {
                     "id": 1386
                 },
@@ -1438,7 +1434,7 @@
                     }
                 ],
                 "timezone": null,
-                "tournament_startAt": 1608411600,
+                "tournament_startAt": 1608415200,
                 "tournament_endAt": 1608444000,
                 "tournament_registrationClosesAt": 1615107600,
                 "images": [
@@ -1480,47 +1476,6 @@
                 ]
             },
             {
-                "id": 539397,
-                "name": "Ultimate Singles",
-                "isOnline": true,
-                "state": "CREATED",
-                "numEntrants": 24,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1608415200,
-                "phaseGroups": [],
-                "tournament": "Smash Harbor ($75 Prize Pot, Region Locked)",
-                "tournament_id": 260928,
-                "city": "Fort Myers",
-                "url": "https://smash.gg/tournament/smash-harbor-75-prize-pot-region-locked",
-                "streams": [
-                    {
-                        "streamName": "smashalley"
-                    }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1608415200,
-                "tournament_endAt": 1608440340,
-                "tournament_registrationClosesAt": 1608414300,
-                "images": [
-                    {
-                        "id": "3113178",
-                        "url": "https://images.smash.gg/images/tournament/260928/image-df656ac93e01f5ca1fef29e0edd89459.png",
-                        "type": "profile"
-                    },
-                    {
-                        "id": "3113396",
-                        "url": "https://images.smash.gg/images/tournament/260928/image-f05344e4f5185c7308f292e717d606db.png",
-                        "type": "banner"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "",
-                "tournament_addrState": "FL"
-            },
-            {
                 "id": 539631,
                 "name": "SSBU Singles",
                 "isOnline": true,
@@ -1544,7 +1499,11 @@
                 "tournament_id": 261117,
                 "city": "Middletown",
                 "url": "https://smash.gg/tournament/eon-online-4",
-                "streams": null,
+                "streams": [
+                    {
+                        "streamName": "eonssb"
+                    }
+                ],
                 "timezone": null,
                 "tournament_startAt": 1608415200,
                 "tournament_endAt": 1608785940,
@@ -1712,7 +1671,7 @@
                 "name": "Ultimate - Singles",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 25,
+                "numEntrants": 28,
                 "videogame": {
                     "id": 1386
                 },
@@ -2592,7 +2551,7 @@
                 "name": "Smash Ultimate",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 5,
+                "numEntrants": 6,
                 "videogame": {
                     "id": 1386
                 },
@@ -2636,56 +2595,6 @@
                 "tournament_venueName": null,
                 "tournament_venueAddress": "6000 Glades Rd Suite 1229, Boca Raton, FL 33431, USA",
                 "tournament_addrState": "FL"
-            },
-            {
-                "id": 535545,
-                "name": "Deck the halls",
-                "isOnline": true,
-                "state": "CREATED",
-                "numEntrants": 51,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1608678000,
-                "phaseGroups": [
-                    {
-                        "id": 1414799,
-                        "phase": {
-                            "id": 884641,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Lurrkers Sub Tourney 5# The Falco That Stole Christmas",
-                "tournament_id": 257659,
-                "city": "Corona",
-                "url": "https://smash.gg/tournament/lurrkers-sub-tourney-5-the-falco-that-stole-christmas",
-                "streams": [
-                    {
-                        "streamName": "larrylurr"
-                    }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1608678000,
-                "tournament_endAt": 1608694080,
-                "tournament_registrationClosesAt": 1608674400,
-                "images": [
-                    {
-                        "id": "3070677",
-                        "url": "https://images.smash.gg/images/tournament/257659/image-d56d2dd4708000c0abeb3a9e3da55371.png",
-                        "type": "banner"
-                    },
-                    {
-                        "id": "3074435",
-                        "url": "https://images.smash.gg/images/tournament/257659/image-c3d0f22fb1ec540b9182b48a9b35dc65.png",
-                        "type": "profile"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "Corona, CA, USA",
-                "tournament_addrState": "CA"
             },
             {
                 "id": 540867,
@@ -3274,6 +3183,56 @@
                 "tournament_venueName": null,
                 "tournament_venueAddress": "6070 Broadview Rd, Parma, OH 44134, USA",
                 "tournament_addrState": "OH"
+            },
+            {
+                "id": 535545,
+                "name": "Deck the halls",
+                "isOnline": true,
+                "state": "CREATED",
+                "numEntrants": 51,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1609282800,
+                "phaseGroups": [
+                    {
+                        "id": 1414799,
+                        "phase": {
+                            "id": 884641,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Lurrkers Sub Tourney 5# The Falco That Stole Christmas",
+                "tournament_id": 257659,
+                "city": "Corona",
+                "url": "https://smash.gg/tournament/lurrkers-sub-tourney-5-the-falco-that-stole-christmas",
+                "streams": [
+                    {
+                        "streamName": "larrylurr"
+                    }
+                ],
+                "timezone": null,
+                "tournament_startAt": 1609282800,
+                "tournament_endAt": 1609369200,
+                "tournament_registrationClosesAt": 1609279200,
+                "images": [
+                    {
+                        "id": "3070677",
+                        "url": "https://images.smash.gg/images/tournament/257659/image-d56d2dd4708000c0abeb3a9e3da55371.png",
+                        "type": "banner"
+                    },
+                    {
+                        "id": "3074435",
+                        "url": "https://images.smash.gg/images/tournament/257659/image-c3d0f22fb1ec540b9182b48a9b35dc65.png",
+                        "type": "profile"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "Corona, CA, USA",
+                "tournament_addrState": "CA"
             },
             {
                 "id": 453843,
