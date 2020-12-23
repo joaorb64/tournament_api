@@ -17,7 +17,7 @@ jobs:
           command: |
             . venv/bin/activate
             echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
-            echo ${SMASHGG_KEYS} | base64 --decode --ignore-garbage > auth.json
+            echo ${AUTH} | base64 --decode --ignore-garbage > auth.json
             python get_league.py
             #python ranking_br.py
             python link_gen_allfiles.py
@@ -54,7 +54,7 @@ jobs:
           command: |
             . venv/bin/activate
             echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
-            echo ${SMASHGG_KEYS} | base64 --decode --ignore-garbage > auth.json
+            echo ${AUTH} | base64 --decode --ignore-garbage > auth.json
             python get_next_tournaments.py
       - run:
           name: Commit data back to Github
@@ -65,6 +65,35 @@ jobs:
             git pull origin sudamerica
             git add .
             git commit -am "[skip ci] Update next tournaments ${DATE_TODAY}" || true
+            git push origin sudamerica || true
+  
+  get_top_clips:
+    docker:
+      - image: circleci/python:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install requests
+      - run:
+          name: Update data
+          command: |
+            . venv/bin/activate
+            echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
+            echo ${AUTH} | base64 --decode --ignore-garbage > auth.json
+            python twitch.py
+      - run:
+          name: Commit data back to Github
+          command: |
+            git config user.email "joaorbezerra@hotmail.com"
+            git config user.name "tournamentapibot"
+            DATE_TODAY=$(date +"%Y-%m-%d")
+            git pull origin sudamerica
+            git add .
+            git commit -am "[skip ci] Update twitch clips ${DATE_TODAY}" || true
             git push origin sudamerica || true
 
 workflows:
@@ -89,3 +118,14 @@ workflows:
                 - sudamerica
     jobs:
       - get_next_tournaments
+    
+  get_top_clips:
+    triggers:
+      - schedule:
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only:
+                - sudamerica
+    jobs:
+      - get_top_clips
