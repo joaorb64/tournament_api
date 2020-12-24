@@ -27,35 +27,38 @@ r = requests.get(
 resp = json.loads(r.text)
 print(resp)
 
-startTime = (datetime.datetime.utcnow()-datetime.timedelta(weeks=1)).isoformat("T") + "Z"
-endTime = datetime.datetime.utcnow().isoformat("T") + "Z"
-
-print(startTime)
-print(endTime)
-
-pagination = ""
 clips = {}
 
-for i in range(100):
-    r = requests.get(
-        "https://api.twitch.tv/helix/clips?game_id=504461&started_at="+startTime+"&ended_at="+endTime+"&first=100&after="+pagination,
-        headers={
-            'Authorization': 'Bearer '+token,
-            'Client-Id': 'rwixu6mzg5ziu2d1xi22rws67dk0lh'
-        }
-    )
-    resp = json.loads(r.text)
-    pagination = resp["pagination"].get("cursor", None)
+for j in range(7):
+    print(str(j) + " days back")
+    startTime = (datetime.datetime.utcnow()-datetime.timedelta(days=(j+2))).isoformat("T") + "Z"
+    endTime = (datetime.datetime.utcnow()-datetime.timedelta(days=(j+1))).isoformat("T") + "Z"
 
-    for c in resp["data"]:
-        if c["language"] not in clips:
-            clips[c["language"]] = []
-        clips[c["language"]].append(c)
-    
-    print(i)
-    
-    if pagination == None:
-        break
+    print(startTime)
+    print(endTime)
+
+    pagination = ""
+
+    for i in range(100):
+        r = requests.get(
+            "https://api.twitch.tv/helix/clips?game_id=504461&started_at="+startTime+"&ended_at="+endTime+"&first=100&after="+pagination,
+            headers={
+                'Authorization': 'Bearer '+token,
+                'Client-Id': 'rwixu6mzg5ziu2d1xi22rws67dk0lh'
+            }
+        )
+        resp = json.loads(r.text)
+        pagination = resp["pagination"].get("cursor", None)
+
+        for c in resp["data"]:
+            if c["language"] not in clips:
+                clips[c["language"]] = []
+            clips[c["language"]].append(c)
+        
+        print(i, end="\r")
+        
+        if pagination == None:
+            break
 
 with open('out/twitchclips.json', 'w') as outfile:
 	json.dump(clips, outfile, indent=4, sort_keys=True)
