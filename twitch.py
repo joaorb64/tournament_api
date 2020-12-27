@@ -48,9 +48,10 @@ for j in range(7):
             }
         )
         resp = json.loads(r.text)
-        pagination = resp["pagination"].get("cursor", None)
 
-        for c in resp["data"]:
+        pagination = resp.get("pagination", {}).get("cursor", None)
+
+        for c in resp.get("data", {}):
             if c["language"] not in clips:
                 clips[c["language"]] = []
             clips[c["language"]].append(c)
