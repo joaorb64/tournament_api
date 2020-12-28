@@ -70,6 +70,8 @@ for league in leagues.keys():
           found = True
           player2["braacket_links"].append(league+":"+player[0])
           mapping[league+":"+player[0]] = i
+          if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
+            player2["mains"] = player[1].get("mains")
           break
     
     if not found:
