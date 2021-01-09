@@ -403,7 +403,62 @@ class Braacket:
         league["braacket_link"] = 'https://braacket.com/league/'f'{self.league}'
 
         return league
-        
+    
+    def get_tournament_matches(self, id):
+        print("get_tournament_matches: "+id)
+        try:
+            r = requests.get(
+                'https://braacket.com/tournament/'f'{id}/stage', verify=False)
+            soup = BeautifulSoup(r.text, 'html.parser')
+            firstActive = soup
+
+            tables = soup.findAll('table')
+
+            stages = tables[0].find("tbody").findChildren(recursive=False)
+
+            all_matches = []
+
+            for i, stage in enumerate(stages):
+                print("Stage: "+str(i+1)+"/"+str(len(stages)))
+                if stage["class"] != "active":
+                    r = requests.get(
+                        'https://braacket.com/tournament/'f'{id}/stage', verify=False)
+                    soup = BeautifulSoup(r.text, 'html.parser')
+                else:
+                    soup = firstActive
+                
+                matches = soup.findAll('table', {"class": "tournament_encounter-row"})
+
+                for match in matches:
+                    try:
+                        match_score = {}
+
+                        match_score["participants"] = {}
+                        highestScore = -1
+                        highestScorePlayer = ""
+
+                        for row in match.findAll("tr"):
+                            participant = row.find("a")["href"]
+                            participant = participant[participant.find("/player/")+8:]
+
+                            scoreComponent = row.find("td", {"class": "tournament_encounter-score"})
+                            score = int(scoreComponent.text)
+
+                            match_score["participants"][participant] = score
+
+                            if score > highestScore:
+                                highestScore = score
+                                highestScorePlayer = participant
+                        
+                        match_score["winner"] = highestScorePlayer
+
+                        all_matches.append(match_score)
+                    except Exception as e:
+                        print(e)
+            return(all_matches)
+        except Exception as e:
+            print(e)
+            return None                
 
     def player_search(self, tag):
         tag = tag.strip()

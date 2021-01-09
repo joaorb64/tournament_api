@@ -116,6 +116,7 @@ def update_league(liga, smashgg_key_id):
 		tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
 		
 		ranking_get = bracket.get_tournament_ranking(tournament)
+		matches_get = bracket.get_tournament_matches(tournament)
 
 		if ranking_get is not None:
 			tournaments[tournament]["ranking"] = ranking_get["ranking"]
@@ -128,6 +129,11 @@ def update_league(liga, smashgg_key_id):
 			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
 		else:
 			tournaments[tournament]["player_number"] = None
+		
+		if matches_get is not None:
+			tournaments[tournament]["matches"] = matches_get
+		else:
+			tournaments[tournament]["matches"] = []
 		
 		gg.get_smashgg_tournament_info(tournaments[tournament], (smashgg_key_id)%len(gg.SMASHGG_KEYS))
 
