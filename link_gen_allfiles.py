@@ -18,9 +18,10 @@ leagues = json.load(f)
 mapping = {}
 allplayers = []
 
-print("Gen alltournaments")
+print("Gen alltournaments and allmatches")
 
 alltournaments = {}
+allmatches = {}
 
 for league in leagues.keys():
   f = open('out/'+league+'/tournaments.json')

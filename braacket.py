@@ -420,7 +420,8 @@ class Braacket:
 
             for i, stage in enumerate(stages):
                 print("Stage: "+str(i+1)+"/"+str(len(stages)))
-                if stage["class"] != "active":
+
+                if "active" not in stage["class"]:
                     r = requests.get(
                         'https://braacket.com/tournament/'f'{id}/stage', verify=False)
                     soup = BeautifulSoup(r.text, 'html.parser')
