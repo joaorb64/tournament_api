@@ -454,7 +454,7 @@ class Braacket:
                         
                         match_score["winner"] = highestScorePlayer
 
-                        all_matches.append(match_score)
+                        all_matches.insert(0, match_score)
                     except Exception as e:
                         print(e)
             return(all_matches)
