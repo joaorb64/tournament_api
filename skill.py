@@ -4,7 +4,6 @@ import unicodedata
 import collections
 import collections.abc
 import trueskill
-from decimal import *
 
 def update(d, u):
   for k, v in u.items():
