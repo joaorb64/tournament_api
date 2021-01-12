@@ -57,7 +57,7 @@ ts = trueskill.TrueSkill(draw_probability=0, mu=50.000, sigma=8.333)
 ts.make_as_global()
 
 for player in allplayers["players"]:
-    if player.get("apid"):
+    if player.get("apid", None) != None:
         players[player["apid"]] = {}
         players[player["apid"]]["player"] = player
         players[player["apid"]]["rating"] = trueskill.Rating()
