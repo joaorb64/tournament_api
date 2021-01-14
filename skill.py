@@ -28,6 +28,10 @@ for league in alltournaments:
         linkage = tournament["linkage"]
         for match in tournament["matches"]:
             myMatch = {}
+
+            if -1 in match["participants"].values():
+                continue
+
             p1 = next((p for p in linkage if linkage[p] == list(match["participants"].keys())[0]), None)
             p2 = next((p for p in linkage if linkage[p] == list(match["participants"].keys())[1]), None)
             winner = next((p for p in linkage if linkage[p] == match["winner"]), None)
