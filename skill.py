@@ -75,7 +75,7 @@ for match in allmatches:
 for p in players:
     players[p]["player"]["ts"] = ts.expose(players[p]["rating"])
     players[p]["player"]["mu"] = players[p]["rating"].mu
-    players[p]["player"]["sigma"] = players[p]["rating"].mu
+    players[p]["player"]["sigma"] = players[p]["rating"].sigma
 
 def mySort(p):
     return ts.expose(p["rating"])
