@@ -105,6 +105,7 @@ def update_league(liga, smashgg_key_id):
 		if previous_tournaments and previous_tournaments["tournaments"]:
 			if tournament in previous_tournaments["tournaments"].keys():
 				previous_tournaments["tournaments"][tournament]["name"] = tournaments[tournament]["name"]
+				previous_tournaments["tournaments"][tournament]["time"] = tournaments[tournament]["time"]
 				tournaments[tournament] = previous_tournaments["tournaments"][tournament]
 				print("Tournament known. Still, linkage could have changed.")
 				ranking_get = bracket.get_tournament_ranking(tournament)
