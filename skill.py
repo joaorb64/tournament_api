@@ -74,6 +74,8 @@ for match in allmatches:
 
 for p in players:
     players[p]["player"]["ts"] = ts.expose(players[p]["rating"])
+    players[p]["player"]["mu"] = players[p]["rating"].mu
+    players[p]["player"]["sigma"] = players[p]["rating"].mu
 
 def mySort(p):
     return ts.expose(p["rating"])
@@ -93,3 +95,10 @@ with open('out/leaderboardreadable.txt', 'w') as outfile:
 
 with open('out/allplayers.json', 'w') as outfile:
 	json.dump(allplayers, outfile, indent=4, sort_keys=True)
+
+with open('out/ts_env.json', 'w') as outfile:
+    json.dump({
+        "mu": ts.mu,
+        "sigma": ts.sigma,
+        "beta": ts.beta
+    }, outfile, indent=4)
