@@ -110,6 +110,7 @@ def update_league(liga, smashgg_key_id):
 				print("Tournament known. Still, linkage could have changed.")
 				ranking_get = bracket.get_tournament_ranking(tournament)
 				if ranking_get is not None:
+					tournaments[tournament]["ranking"] = ranking_get["ranking"]
 					tournaments[tournament]["linkage"] = ranking_get["linkage"]
 				else:
 					print("Could not get tournament? - "+tournament)
