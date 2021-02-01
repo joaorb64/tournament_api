@@ -17,15 +17,6 @@ def update(d, u):
 			d[k] = v
 	return d
 
-if os.path.exists("auth.json"):
-  f = open('auth.json')
-  auth_json = json.load(f)
-  SMASHGG_KEYS = auth_json["SMASHGG_KEYS"]
-else:
-  SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
-
-currentKey = 0
-
 f = open('leagues.json')
 leagues = json.load(f)
 
