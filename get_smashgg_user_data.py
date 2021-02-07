@@ -156,6 +156,7 @@ def fetchPlayerDo(currKey, playerIndex):
 					}
 					location {
 						city
+						state
 						country
 					}
 					images(type: "profile") {

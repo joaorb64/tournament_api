@@ -15,6 +15,9 @@ def update(d, u):
 f = open('leagues.json')
 leagues = json.load(f)
 
+f = open('allplayerskins.json')
+playerSkins = json.load(f)
+
 mapping = {}
 allplayers = []
 
@@ -79,6 +82,10 @@ for league in leagues.keys():
       player[1]["braacket_links"] = [league+":"+player[0]]
       allplayers.append(player[1])
       mapping[league+":"+player[0]] = len(allplayers)-1
+    
+    if "smashgg_id" in player[1]:
+      if str(player[1]["smashgg_id"]) in playerSkins:
+        player[1]["skins"] = playerSkins[str(player[1]["smashgg_id"])]
 
 with open('out/allplayers.json', 'w') as outfile:
   json.dump({"mapping": mapping, "players": allplayers}, outfile, indent=4, sort_keys=True)

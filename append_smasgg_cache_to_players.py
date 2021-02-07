@@ -54,6 +54,8 @@ for i, player in enumerate(players):
 				player["city"] = resp["location"]["city"]
 			if resp["location"]["country"] is not None:
 				player["country"] = resp["location"]["country"]
+			if resp["location"]["state"] is not None:
+				player["state"] = resp["location"]["state"]
 
 		if resp["images"] is not None:
 			if len(resp["images"]) > 0:

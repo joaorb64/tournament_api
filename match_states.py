@@ -33,6 +33,9 @@ def match_player_state_do(i):
 
 	print("Match states: "+str(i)+"/"+str(len(players["players"])-1))
 
+	if "state" in player.keys():
+		return
+
 	if "country" in player.keys() and player["country"] is not None:
 		country = next(
 			(c for c in countries if remove_accents_lower(c["name"]) == remove_accents_lower(player["country"])),

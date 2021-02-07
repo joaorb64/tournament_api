@@ -41,6 +41,12 @@ all_players = {
     "mapping": {}
 }
 
+f = open('out/allplayers.json')
+original_players = json.load(f)
+players = original_players["players"]
+
+out_obj = {}
+
 # Load from spreadsheet
 
 for player in gsheet["values"][1:]:
@@ -71,10 +77,25 @@ for player in gsheet["values"][1:]:
             player_obj["mains"][i] = player_obj["mains"][i][:-1]
 
     for link in player[3].split("\n"):
-        all_players["mapping"][link] = len(all_players["players"]) - 1
+        if link in original_players["mapping"]:
+            print("asso")
+            pid = original_players["mapping"][link]
+            p = original_players["players"][pid]
 
-with open('allplayers.json', 'w') as outfile:
-    json.dump(all_players, outfile, indent=4, sort_keys=True)
+            if "smashgg_id" in p:
+                out_obj[p["smashgg_id"]] = {}
+
+                for i, char in enumerate(player_obj["mains"]):
+                    if player_obj["skins"][i] == 0:
+                        continue
+                    print(out_obj[p["smashgg_id"]])
+                    out_obj[p["smashgg_id"]][char] = player_obj["skins"][i]
+                
+                if len(out_obj[p["smashgg_id"]]) == 0:
+                    del out_obj[p["smashgg_id"]]
+
+with open('allplayerskins.json', 'w') as outfile:
+    json.dump(out_obj, outfile, indent=4, sort_keys=True)
 
 
 '''
