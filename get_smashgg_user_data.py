@@ -160,6 +160,7 @@ def fetchPlayerDo(currKey, playerIndex):
 						country
 					}
 					images(type: "profile") {
+						type
 						url
 					}
 					player {

@@ -58,8 +58,9 @@ for i, player in enumerate(players):
 				player["state"] = resp["location"]["state"]
 
 		if resp["images"] is not None:
-			if len(resp["images"]) > 0:
-				player["smashgg_image"] = resp["images"][0]["url"]
+			for image in resp["images"]:
+				if image["type"] == "profile":
+					player["smashgg_image"] = image["url"]
 
 		# character usage, mains
 		if "character_usage" in resp.keys():
