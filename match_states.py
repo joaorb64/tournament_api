@@ -8,24 +8,22 @@ def remove_accents_lower(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
 	return u"".join([c for c in nfkd_form if not unicodedata.combining(c)]).lower()
 
-f = open('leagues.json')
-leagues = json.load(f)
-
 f = open('cities.json')
 cities = json.load(f)
 
 f = open('countries+states.json')
 countries = json.load(f)
 
-f = open('out/allplayers.json')
-players = json.load(f)
-
 def match_player_state(i, skipsize):
+	global players
+
 	while i < len(players["players"]):
 		match_player_state_do(i)
 		i+=skipsize
 
 def match_player_state_do(i):
+	global players
+
 	if i >= len(players["players"]):
 		return
 
@@ -69,19 +67,36 @@ def match_player_state_do(i):
 					if city is not None:
 						player["state"] = city["state_code"]
 	return
-print("")
 
-threads = []
-thread_number = 8
+def match_states(game):
+	global players
 
-for i in range(thread_number):
-	thread = Thread(target=match_player_state, args=[i, thread_number])
-	thread.daemon = True
-	threads.append(thread)
-	thread.start()
+	print("Game: "+game)
 
-for t in threads:
-	t.join()
+	f = open('./out/'+game+'/allplayers.json')
+	players = json.load(f)
 
-with open('out/allplayers.json', 'w') as outfile:
-	json.dump(players, outfile, indent=4, sort_keys=True)
+	threads = []
+	thread_number = 8
+
+	for i in range(thread_number):
+		thread = Thread(target=match_player_state, args=[i, thread_number])
+		thread.daemon = True
+		threads.append(thread)
+		thread.start()
+
+	for t in threads:
+		t.join()
+
+	with open('./out/'+game+'/allplayers.json', 'w') as outfile:
+		json.dump(players, outfile, indent=4, sort_keys=True)
+
+if __name__ == "__main__":
+	games = os.listdir("./games")
+
+	if len(sys.argv) >= 2:
+		game = sys.argv[1]
+		match_states(game)
+	else:
+		for game in games:
+			match_states(game)

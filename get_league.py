@@ -11,8 +11,7 @@ import sys
 from joblib import Parallel, delayed
 import get_smashgg_tournament_data as gg
 
-f = open('leagues.json')
-leagues = json.load(f)
+leagues = None
 
 def remove_accents(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
@@ -34,17 +33,17 @@ def text_to_id(text):
 	text = re.sub('[^0-9a-zA-Z_-]', '', text)
 	return text
 
-def update_league(liga, smashgg_key_id):
+def update_league(game, liga, smashgg_key_id):
 	print("Updating league " + liga)
 	bracket = braacket.Braacket(liga)
 
-	if not os.path.exists('out/'+liga):
-		os.makedirs('out/'+liga)
+	if not os.path.exists('./out/'+game+'/'+liga):
+		os.makedirs('./out/'+game+'/'+liga)
 
 	previous_ranking = None
 	
 	try:
-		with open('out/'+liga+'/ranking.json', 'r') as infile:
+		with open('./out/'+game+'/'+liga+'/ranking.json', 'r') as infile:
 			previous_ranking = json.load(infile)
 	except Exception as e:
 		print(e)
@@ -53,14 +52,14 @@ def update_league(liga, smashgg_key_id):
 	league_data = bracket.get_league_data()
 	league_data = update(league_data, leagues[liga])
 
-	with open('out/'+liga+'/data.json', 'w') as outfile:
+	with open('./out/'+game+'/'+liga+'/data.json', 'w') as outfile:
 		out = league_data
 		json.dump(out, outfile, indent=4, sort_keys=True)
 	
 	# get league players
 	players = bracket.get_players()
 
-	with open('out/'+liga+'/players.json', 'w') as outfile:
+	with open('./out/'+game+'/'+liga+'/players.json', 'w') as outfile:
 		out = {
 			"players": players,
 			"update_time": str(datetime.now())
@@ -83,7 +82,7 @@ def update_league(liga, smashgg_key_id):
 	ranking["ranking"] = bracket.get_ranking()
 	ranking.update(ranking_info)
 
-	with open('out/'+liga+'/ranking.json', 'w') as outfile:
+	with open('./out/'+game+'/'+liga+'/ranking.json', 'w') as outfile:
 		out = {
 			"ranking": ranking,
 			"update_time": str(datetime.now())
@@ -94,7 +93,7 @@ def update_league(liga, smashgg_key_id):
 	previous_tournaments = None
 
 	try:
-		with open('out/'+liga+'/tournaments.json', 'r') as infile:
+		with open('./out/'+game+'/'+liga+'/tournaments.json', 'r') as infile:
 			previous_tournaments = json.load(infile)
 	except Exception as e:
 		print(e)
@@ -144,7 +143,7 @@ def update_league(liga, smashgg_key_id):
 		
 		gg.get_smashgg_tournament_info(tournaments[tournament], (smashgg_key_id)%len(gg.SMASHGG_KEYS))
 
-	with open('out/'+liga+'/tournaments.json', 'w') as outfile:
+	with open('./out/'+game+'/'+liga+'/tournaments.json', 'w') as outfile:
 		out = {
 			"tournaments": tournaments,
 			"update_time": str(datetime.now())
@@ -152,9 +151,17 @@ def update_league(liga, smashgg_key_id):
 		json.dump(out, outfile, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
-	if len(sys.argv) >= 2:
+	games = os.listdir("./games")
+
+	if len(sys.argv) >= 3:
+		game = sys.argv[1]
+		f = open("./games/"+game+'/leagues.json')
+		leagues = json.load(f)
 		for liga in leagues.keys():
-			if liga == sys.argv[1]:
-				update_league(liga, 0)
+			if liga == sys.argv[2]:
+				update_league(game, liga, 0)
 	else:
-		Parallel(n_jobs=len(gg.SMASHGG_KEYS))(delayed(update_league)(liga, i) for i, liga in enumerate(leagues.keys()))
+		for game in games:
+			f = open("./games/"+game+'/leagues.json')
+			leagues = json.load(f)
+			Parallel(n_jobs=len(gg.SMASHGG_KEYS))(delayed(update_league)(game, liga, i) for i, liga in enumerate(leagues.keys()))

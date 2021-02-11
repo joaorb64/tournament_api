@@ -34,10 +34,10 @@ jobs:
             git config user.email "joaorbezerra@hotmail.com"
             git config user.name "tournamentapibot"
             DATE_TODAY=$(date +"%Y-%m-%d")
-            git pull origin sudamerica
+            git pull origin multigames
             git add .
             git commit -am "[skip ci] Full update ${DATE_TODAY}" || true
-            git push origin sudamerica || true
+            git push origin multigames || true
   
   get_next_tournaments:
     docker:
@@ -63,10 +63,10 @@ jobs:
             git config user.email "joaorbezerra@hotmail.com"
             git config user.name "tournamentapibot"
             DATE_TODAY=$(date +"%Y-%m-%d")
-            git pull origin sudamerica
+            git pull origin multigames
             git add .
             git commit -am "[skip ci] Update next tournaments ${DATE_TODAY}" || true
-            git push origin sudamerica || true
+            git push origin multigames || true
   
   get_top_clips:
     docker:
@@ -92,10 +92,10 @@ jobs:
             git config user.email "joaorbezerra@hotmail.com"
             git config user.name "tournamentapibot"
             DATE_TODAY=$(date +"%Y-%m-%d")
-            git pull origin sudamerica
+            git pull origin multigames
             git add .
             git commit -am "[skip ci] Update twitch clips ${DATE_TODAY}" || true
-            git push origin sudamerica || true
+            git push origin multigames || true
 
 workflows:
   daily_data_update:
@@ -105,7 +105,7 @@ workflows:
           filters:
             branches:
               only:
-                - sudamerica
+                - multigames
     jobs:
       - update_data
   
@@ -116,7 +116,7 @@ workflows:
           filters:
             branches:
               only:
-                - sudamerica
+                - multigames
     jobs:
       - get_next_tournaments
     
@@ -127,6 +127,6 @@ workflows:
           filters:
             branches:
               only:
-                - sudamerica
+                - multigames
     jobs:
       - get_top_clips

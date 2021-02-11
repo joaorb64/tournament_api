@@ -408,7 +408,7 @@ class Braacket:
         print("get_tournament_matches: "+id)
         try:
             r = requests.get(
-                'https://braacket.com/tournament/'f'{id}/stage', verify=False)
+                'https://braacket.com/tournament/'f'{id}/stage?&mode=table', verify=False)
             soup = BeautifulSoup(r.text, 'html.parser')
             firstActive = soup
 
@@ -424,7 +424,7 @@ class Braacket:
                 if "active" not in stage["class"]:
                     link = stage.find("a")["href"]
                     r = requests.get(
-                        'https://braacket.com/'+link, verify=False)
+                        'https://braacket.com/'+link+"?&mode=table", verify=False)
                     soup = BeautifulSoup(r.text, 'html.parser')
                 else:
                     soup = firstActive
