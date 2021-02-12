@@ -160,7 +160,7 @@ def fetchPlayerDo(currKey, playerIndex):
 			if(character[1] >= most_common[0][1]/3.0 or character[0] == most_common[0][0]):
 				found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
 				if found:
-					mains.append(charname_to_braacket[found["name"]])
+					mains.append(charname_to_braacket.get(found["name"], found["name"]))
 		
 		resp["character_usage"] = {}
 		for character in selections.most_common():
