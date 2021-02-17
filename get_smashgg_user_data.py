@@ -71,6 +71,7 @@ def fetchPlayerDo(currKey, playerIndex):
 						prefix
 						sets(page: '''+str(i+1)+''', perPage: 10) {
 							nodes {
+								id
 								event {
 									videogame {
 										id
