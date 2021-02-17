@@ -106,7 +106,12 @@ def update_league(game, liga, smashgg_key_id):
 				previous_tournaments["tournaments"][tournament]["name"] = tournaments[tournament]["name"]
 				previous_tournaments["tournaments"][tournament]["time"] = tournaments[tournament]["time"]
 				tournaments[tournament] = previous_tournaments["tournaments"][tournament]
+				
 				print("Tournament known. Still, linkage could have changed.")
+
+				if previous_tournaments["tournaments"][tournament]["link"] == None:
+					tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
+
 				ranking_get = bracket.get_tournament_ranking(tournament)
 				if ranking_get is not None:
 					# copy smashgg ids we got before
@@ -118,7 +123,7 @@ def update_league(game, liga, smashgg_key_id):
 				else:
 					print("Could not get tournament? - "+tournament)
 				continue
-
+		
 		tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
 		
 		ranking_get = bracket.get_tournament_ranking(tournament)

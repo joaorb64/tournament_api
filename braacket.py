@@ -165,15 +165,23 @@ class Braacket:
 
         soup = BeautifulSoup(r, 'html.parser')
 
-        links = soup.findAll('a')
+        infoPanel = soup.find('div', {"class": "info-read-more"})
+
+        link = None
+
+        if infoPanel:        
+            link = infoPanel.find('a')
 
         tournament_link = None
 
         try:
-            for link in links:
-                if "smash.gg" in link.attrs['href']:
+            if link:
+                if "smash.gg" in link.attrs['href'] or \
+                        "challonge.com" in link.attrs['href'] or \
+                        "braacket.com" in link.attrs['href']:
                     tournament_link = link.attrs['href']
-                    break
+            else:
+                tournament_link = 'https://braacket.com/tournament/'f'{id}/'
         except:
             print("Erro no link?")
         

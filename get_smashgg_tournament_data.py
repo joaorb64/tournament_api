@@ -19,7 +19,7 @@ def get_smashgg_tournament_info(tournament, currentKey):
 	global SMASHGG_KEYS
 
 	# not on smashgg, skip
-	if not tournament["link"]:
+	if not tournament["link"] or "smash.gg" in tournament.get("link", ""):
 		print("Not on smashgg, skipping")
 		return
 	
