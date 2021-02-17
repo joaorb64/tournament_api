@@ -40,7 +40,7 @@ def fetchPlayerDo(currKey, playerIndex):
 	
 	r = []
 
-	for i in range(2):
+	for i in range(5):
 		r.append(requests.post(
 		'https://api.smash.gg/gql/alpha',
 		headers={
@@ -69,7 +69,7 @@ def fetchPlayerDo(currKey, playerIndex):
 					player {
 						gamerTag
 						prefix
-						sets(page: '''+str(i+1)+''', perPage: 25) {
+						sets(page: '''+str(i+1)+''', perPage: 10) {
 							nodes {
 								event {
 									videogame {
@@ -122,10 +122,14 @@ def fetchPlayerDo(currKey, playerIndex):
 		selections = Counter()
 
 		for set_ in resp["player"]["sets"]["nodes"]:
+			if set_ is None:
+				continue
 			# Skip set if no games
 			if set_["games"] is None:
 				continue
 			# Skip set if not current videogame
+			if set_.get("event", None) == None:
+				continue
 			if set_.get("event", {}).get("videogame", {}).get("id", None) != gameconfig["smashgg_videogame_id"]:
 				continue
 			for game in set_["games"]:
@@ -150,9 +154,6 @@ def fetchPlayerDo(currKey, playerIndex):
 											selections[selection["selectionValue"]] += 1
 		
 		mains = []
-
-		if 1746 in selections.keys():
-			del selections[1746] # Remove random
 		
 		most_common = selections.most_common(1)
 
