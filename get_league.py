@@ -51,10 +51,6 @@ def update_league(game, liga, smashgg_key_id):
 	# get league data
 	league_data = bracket.get_league_data()
 	league_data = update(league_data, leagues[liga])
-
-	with open('./out/'+game+'/'+liga+'/data.json', 'w') as outfile:
-		out = league_data
-		json.dump(out, outfile, indent=4, sort_keys=True)
 	
 	# get league players
 	players = bracket.get_players()
@@ -111,6 +107,14 @@ def update_league(game, liga, smashgg_key_id):
 
 				if previous_tournaments["tournaments"][tournament]["link"] == None:
 					tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
+				
+				if len(previous_tournaments["tournaments"][tournament]["matches"]) == 0:
+					matches_get = bracket.get_tournament_matches(tournament)
+
+					if matches_get is not None:
+						tournaments[tournament]["matches"] = matches_get
+					else:
+						tournaments[tournament]["matches"] = []
 
 				ranking_get = bracket.get_tournament_ranking(tournament)
 				if ranking_get is not None:
@@ -153,6 +157,11 @@ def update_league(game, liga, smashgg_key_id):
 			"tournaments": tournaments,
 			"update_time": str(datetime.now())
 		}
+		json.dump(out, outfile, indent=4, sort_keys=True)
+	
+	# Save league data only at the end to avoid skipping data
+	with open('./out/'+game+'/'+liga+'/data.json', 'w') as outfile:
+		out = league_data
 		json.dump(out, outfile, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
