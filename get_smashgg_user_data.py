@@ -155,10 +155,17 @@ def fetchPlayerDo(currKey, playerIndex):
 											selections[selection["selectionValue"]] += 1
 		
 		mains = []
-		
-		most_common = selections.most_common(1)
 
-		for character in selections.most_common(2):
+		selectionsWithoutRandom = selections.copy()
+
+		for selection in list(selectionsWithoutRandom):
+			selectionName = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == selection), None)
+			if selectionName and "random" in selectionName["name"].lower():
+				del selectionsWithoutRandom[selection]
+
+		most_common = selectionsWithoutRandom.most_common(1)
+
+		for character in selectionsWithoutRandom.most_common(2):
 			if(character[1] >= most_common[0][1]/3.0 or character[0] == most_common[0][0]):
 				found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
 				if found:
