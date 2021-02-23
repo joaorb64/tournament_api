@@ -38,10 +38,10 @@ def fetchPlayerDo(currKey, playerIndex):
 	if "smashgg_id" not in player.keys():
 		return
 	
-	r = []
+	resps = []
 
 	for i in range(5):
-		r.append(requests.post(
+		resps.append(requests.post(
 		'https://api.smash.gg/gql/alpha',
 		headers={
 			'Authorization': 'Bearer'+currKey,
@@ -101,19 +101,27 @@ def fetchPlayerDo(currKey, playerIndex):
 			}
 		))
 		time.sleep(1)
+	
+	r = []
+	
+	for re in resps:
+		try:
+			r.append(json.loads(re.text))
+		except Exception as e:
+			print(e)
 
-	resp = json.loads(r[0].text)
-	resp2 = json.loads(r[1].text)
-
-	if resp.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}) and \
-	resp2.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
-		resp["data"]["user"]["player"]["sets"]["nodes"] = \
-			resp["data"]["user"]["player"]["sets"]["nodes"] + resp2["data"]["user"]["player"]["sets"]["nodes"]
-
-	if resp is None or "data" not in resp.keys():
+	if len(r) == 0 or r[0] is None or "data" not in r[0].keys():
 		print("Erro ao obter")
-		print(resp)
+		print(r[0])
 		return
+
+	if r[0].get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
+		for resp in r[1:]:
+			if resp.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
+				r[0]["data"]["user"]["player"]["sets"]["nodes"] += \
+					resp["data"]["user"]["player"]["sets"]["nodes"]
+	
+	resp = r[0]
 	
 	resp = resp["data"]["user"]
 	
@@ -201,6 +209,13 @@ def get_smashgg_data(game):
 	f = open('./out/'+game+'/alltournaments.json')
 	tournaments = json.load(f)
 
+	previous_cache = {}
+	try:
+		f = open('./out/'+game+'/smashgg_cache.json')
+		previous_cache = json.load(f)
+	except:
+		pass
+
 	f = open('./out/'+game+'/allplayers.json')
 	original_players = json.load(f)
 	players = original_players["players"]
@@ -218,12 +233,12 @@ def get_smashgg_data(game):
 
 	for t in threads:
 		t.join()
+	
+	for c in cache:
+		previous_cache[str(c)] = cache[c]
 
 	with open('./out/'+game+'/smashgg_cache.json', 'w') as outfile:
-		json.dump(cache, outfile, indent=4, sort_keys=True)
-
-	with open('./out/'+game+'/allplayers.json', 'w') as outfile:
-		json.dump(original_players, outfile, indent=4, sort_keys=True)
+		json.dump(previous_cache, outfile, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
 	games = os.listdir("./games")
