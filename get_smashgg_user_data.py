@@ -180,10 +180,11 @@ def fetchPlayerDo(currKey, playerIndex):
 					mains.append(charname_to_braacket.get(found["name"], found["name"]))
 		
 		resp["character_usage"] = {}
+
 		for character in selections.most_common():
 			found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
 			if found:
-				resp["character_usage"][found["name"]] = selections[character[0]]
+				resp["character_usage"][charname_to_braacket.get(found["name"], found["name"])] = selections[character[0]]
 		
 		del resp["player"]["sets"]
 		
