@@ -140,10 +140,7 @@ def update_league(game, liga, smashgg_key_id):
 			tournaments[tournament]["ranking"] = {}
 			tournaments[tournament]["linkage"] = {}
 
-		if tournaments[tournament]["ranking"] != None:
-			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
-		else:
-			tournaments[tournament]["player_number"] = None
+		tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
 		
 		if matches_get is not None:
 			tournaments[tournament]["matches"] = matches_get
