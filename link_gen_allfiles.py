@@ -48,7 +48,10 @@ def link_leagues(game):
       my_uuid = player[0]
 
       if my_league in alltournaments.keys():
-        for tournament in alltournaments[my_league].items():
+
+        tournaments_sorted = sorted(alltournaments[my_league].items(), key=lambda x: x[1]["time"], reverse=True)
+
+        for tournament in tournaments_sorted:
           # Not on smashgg
           if "link" not in tournament[1].keys():
             continue
