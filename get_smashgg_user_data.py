@@ -108,8 +108,7 @@ def fetchPlayerDo(currKey, playerIndex):
 					if "character_usage" in previous_cache[str(player["smashgg_id"])]:
 						resp["character_usage"] = previous_cache[str(player["smashgg_id"])]["character_usage"]
 					if "mains" in previous_cache[str(player["smashgg_id"])]:
-						resp["mains"] = previous_cache[str(player["smashgg_id"])]["mains"]
-'''
+						resp["mains"] = previous_cache[str(player["smashgg_id"])]["mains"]'''
 
 	if newSets:
 		r = []
