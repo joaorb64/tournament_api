@@ -101,7 +101,7 @@ workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "18 * * * *"
+          cron: "21 * * * *"
           filters:
             branches:
               only:
