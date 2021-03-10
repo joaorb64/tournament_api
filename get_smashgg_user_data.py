@@ -100,7 +100,7 @@ def fetchPlayerDo(currKey, playerIndex):
 	newSets = True
 
 
-	'''if previous_cache.get(str(player["smashgg_id"]), None) is not None and "latestSetId" in previous_cache[str(player["smashgg_id"])]:
+	if previous_cache.get(str(player["smashgg_id"]), None) is not None and "latestSetId" in previous_cache[str(player["smashgg_id"])]:
 		if resp.get("player", {}).get("sets", None) is not None:
 			if len(resp["player"]["sets"]["nodes"]) > 0 and resp["player"]["sets"]["nodes"][0] is not None:
 				if resp["player"]["sets"]["nodes"][0]["id"] == previous_cache[str(player["smashgg_id"])]["latestSetId"]:
@@ -108,7 +108,7 @@ def fetchPlayerDo(currKey, playerIndex):
 					if "character_usage" in previous_cache[str(player["smashgg_id"])]:
 						resp["character_usage"] = previous_cache[str(player["smashgg_id"])]["character_usage"]
 					if "mains" in previous_cache[str(player["smashgg_id"])]:
-						resp["mains"] = previous_cache[str(player["smashgg_id"])]["mains"]'''
+						resp["mains"] = previous_cache[str(player["smashgg_id"])]["mains"]
 
 	if newSets:
 		r = []
