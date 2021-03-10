@@ -26,7 +26,7 @@ def fetchPlayer(currKey, playerIndex):
 		playerIndex += len(SMASHGG_KEYS)
 
 def fetchPlayerDo(currKey, playerIndex):
-	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, smashgg_characters, gameconfig
+	global leagues, tournaments, players, charname_to_braacket, cache, previous_cache, currentKey, smashgg_characters, gameconfig
 
 	print("Get smashgg data: "+str(playerIndex)+"/"+str(len(players)), end="\r")
 
@@ -38,11 +38,8 @@ def fetchPlayerDo(currKey, playerIndex):
 	if "smashgg_id" not in player.keys():
 		return
 	
-	resps = []
-
-	for i in range(5):
-		resps.append(requests.post(
-		'https://api.smash.gg/gql/alpha',
+	# Get profile data and latest set
+	profileRequest = requests.post('https://api.smash.gg/gql/alpha',
 		headers={
 			'Authorization': 'Bearer'+currKey,
 		},
@@ -69,134 +66,198 @@ def fetchPlayerDo(currKey, playerIndex):
 					player {
 						gamerTag
 						prefix
-						sets(page: '''+str(i+1)+''', perPage: 10) {
+						sets(page: 1, perPage: 1) {
 							nodes {
 								id
-								event {
-									videogame {
-										id
+							}
+						}
+					}
+				}
+			}
+		''',
+			'variables': {
+				"userId": str(player["smashgg_id"])
+			},
+		}
+	)
+	time.sleep(1)
+	
+	try:
+		profileData = json.loads(profileRequest.text)
+	except Exception as e:
+		print(profileRequest.text)
+		print(e)
+		return
+
+	if len(profileData) == 0 or "data" not in profileData.keys() or "user" not in profileData["data"]:
+		print("Erro ao obter")
+		print(profileData)
+		return
+	
+	resp = profileData["data"]["user"]
+
+	# Check if no new sets
+	newSets = True
+
+	if previous_cache.get(str(player["smashgg_id"]), None) is not None and "latestSetId" in previous_cache[str(player["smashgg_id"])]:
+		if resp.get("player", {}).get("sets", None) is not None:
+			if len(resp["player"]["sets"]["nodes"]) > 0 and resp["player"]["sets"]["nodes"][0] is not None:
+				if resp["player"]["sets"]["nodes"][0]["id"] == previous_cache[str(player["smashgg_id"])]["latestSetId"]:
+					newSets = False
+					if "character_usage" in previous_cache[str(player["smashgg_id"])]:
+						resp["player"]["character_usage"] = previous_cache[str(player["smashgg_id"])]["character_usage"]
+					if "mains" in previous_cache[str(player["smashgg_id"])]:
+						resp["player"]["mains"] = previous_cache[str(player["smashgg_id"])]["mains"]
+
+	if newSets:
+		r = []
+
+		for i in range(5):
+			resposta = requests.post(
+			'https://api.smash.gg/gql/alpha',
+			headers={
+				'Authorization': 'Bearer'+currKey,
+			},
+			json={
+				'query': '''
+				query user($userId: ID!) {
+					user(id: $userId) {
+						player {
+							sets(page: '''+str(i+1)+''', perPage: 10) {
+								nodes {
+									id
+									event {
+										videogame {
+											id
+										}
 									}
-								}
-								games {
-									selections {
-										entrant {
-											participants {
-												user {
-													id
+									games {
+										selections {
+											entrant {
+												participants {
+													user {
+														id
+													}
 												}
 											}
+											selectionValue
 										}
-										selectionValue
 									}
 								}
 							}
 						}
 					}
 				}
-			}
-			''',
-				'variables': {
-					"userId": str(player["smashgg_id"])
-				},
-			}
-		))
-		time.sleep(1)
-	
-	r = []
-	
-	for re in resps:
-		try:
-			r.append(json.loads(re.text))
-		except Exception as e:
-			print(e)
+				''',
+					'variables': {
+						"userId": str(player["smashgg_id"])
+					},
+				}
+			)
+			time.sleep(1)
 
-	if len(r) == 0 or r[0] is None or "data" not in r[0].keys():
-		print("Erro ao obter")
-		print(r[0])
-		return
+			if resposta != None:
+				try:
+					r.append(json.loads(resposta.text))
 
-	if r[0].get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
-		for resp in r[1:]:
-			if resp.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
-				r[0]["data"]["user"]["player"]["sets"]["nodes"] += \
-					resp["data"]["user"]["player"]["sets"]["nodes"]
-	
-	resp = r[0]
-	
-	resp = resp["data"]["user"]
-	
-	# character usage, mains
-	if resp["player"]["sets"] is not None and \
-	resp["player"]["sets"]["nodes"] is not None:
-		selections = Counter()
+					gotSets = r[-1].get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", [])
 
-		for set_ in resp["player"]["sets"]["nodes"]:
-			if set_ is None:
-				continue
-			# Skip set if no games
-			if set_["games"] is None:
-				continue
-			# Skip set if not current videogame
-			if set_.get("event", None) == None:
-				continue
-			if set_.get("event", {}).get("videogame", {}).get("id", None) != gameconfig["smashgg_videogame_id"]:
-				continue
-			for game in set_["games"]:
-				if game["selections"] is None:
-					continue
-				for selection in game["selections"]:
-					if selection.get("entrant"):
-						if selection.get("entrant").get("participants"):
-							if len(selection.get("entrant").get("participants")) > 0:
-								if selection.get("entrant").get("participants") is None:
-									continue
-								if selection.get("entrant").get("participants")[0] is None:
-									continue
-								if selection.get("entrant").get("participants")[0]["user"] is None:
-									continue
-								participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
-								if player["smashgg_id"] == participant_id:
-									if selection["selectionValue"] is not None:
-										# only get selections for smash!
-										found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == selection["selectionValue"]), None)
-										if found:
-											selections[selection["selectionValue"]] += 1
+					if gotSets is None or len(gotSets) == 0:
+						break
+				except Exception as e:
+					print(e)
+					break
+
+		if "sets" not in resp["player"]:
+			resp["player"]["sets"] = {}
+
+		resp["player"]["sets"]["nodes"] = []
+
+		for setGroup in r:
+			if setGroup.get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", {}):
+				resp["player"]["sets"]["nodes"] += \
+					setGroup["data"]["user"]["player"]["sets"]["nodes"]
 		
-		mains = []
+		# character usage, mains
+		if resp["player"]["sets"] is not None and \
+		resp["player"]["sets"]["nodes"] is not None:
+			selections = Counter()
 
-		selectionsWithoutRandom = selections.copy()
+			for set_ in resp["player"]["sets"]["nodes"]:
+				if set_ is None:
+					continue
+				# Skip set if no games
+				if set_["games"] is None:
+					continue
+				# Skip set if not current videogame
+				if set_.get("event", None) == None:
+					continue
+				if set_.get("event", {}).get("videogame", {}).get("id", None) != gameconfig["smashgg_videogame_id"]:
+					continue
+				for game in set_["games"]:
+					if game["selections"] is None:
+						continue
+					for selection in game["selections"]:
+						if selection.get("entrant"):
+							if selection.get("entrant").get("participants"):
+								if len(selection.get("entrant").get("participants")) > 0:
+									if selection.get("entrant").get("participants") is None:
+										continue
+									if selection.get("entrant").get("participants")[0] is None:
+										continue
+									if selection.get("entrant").get("participants")[0]["user"] is None:
+										continue
+									participant_id = selection.get("entrant").get("participants")[0]["user"]["id"]
+									if player["smashgg_id"] == participant_id:
+										if selection["selectionValue"] is not None:
+											# only get selections for smash!
+											found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == selection["selectionValue"]), None)
+											if found:
+												selections[selection["selectionValue"]] += 1
+			
+			mains = []
 
-		for selection in list(selectionsWithoutRandom):
-			selectionName = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == selection), None)
-			if selectionName and "random" in selectionName["name"].lower():
-				del selectionsWithoutRandom[selection]
+			selectionsWithoutRandom = selections.copy()
 
-		most_common = selectionsWithoutRandom.most_common(1)
+			for selection in list(selectionsWithoutRandom):
+				selectionName = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == selection), None)
+				if selectionName and "random" in selectionName["name"].lower():
+					del selectionsWithoutRandom[selection]
 
-		for character in selectionsWithoutRandom.most_common(2):
-			if(character[1] >= most_common[0][1]/3.0 or character[0] == most_common[0][0]):
+			most_common = selectionsWithoutRandom.most_common(1)
+
+			for character in selectionsWithoutRandom.most_common(2):
+				if(character[1] >= most_common[0][1]/3.0 or character[0] == most_common[0][0]):
+					found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
+					if found:
+						mains.append(charname_to_braacket.get(found["name"], found["name"]))
+			
+			resp["character_usage"] = {}
+
+			for character in selections.most_common():
 				found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
 				if found:
-					mains.append(charname_to_braacket.get(found["name"], found["name"]))
-		
-		resp["character_usage"] = {}
+					resp["character_usage"][charname_to_braacket.get(found["name"], found["name"])] = selections[character[0]]
 
-		for character in selections.most_common():
-			found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
-			if found:
-				resp["character_usage"][charname_to_braacket.get(found["name"], found["name"])] = selections[character[0]]
-		
+			try:
+				resp["latestSetId"] = resp["player"]["sets"]["nodes"][0]["id"]
+			except Exception as e:
+				print(e)
+
+			del resp["player"]["sets"]
+			
+			if len(mains) > 0:
+				resp["mains"] = mains
+	
+	if "sets" in resp["player"]:
 		del resp["player"]["sets"]
-		
-		if len(mains) > 0:
-			resp["mains"] = mains
 
 	cache[player["smashgg_id"]] = resp
 
 	return
 
 def get_smashgg_data(game):
-	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, gameconfig
+	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, gameconfig, previous_cache
 
 	currentKey = 0
 	cache = {}

@@ -14,6 +14,15 @@ cities = json.load(f)
 f = open('countries+states.json')
 countries = json.load(f)
 
+cityToState = {}
+
+for c in cities:
+	if c["country_code"] not in cityToState:
+		cityToState[c["country_code"]] = {}
+	city_name = remove_accents_lower(c["name"])
+	if city_name not in cityToState[c["country_code"]]:
+		cityToState[c["country_code"]][city_name] = c["state_code"]
+
 def match_player_state(i, skipsize):
 	global players
 
@@ -58,14 +67,10 @@ def match_player_state_do(i):
 
 				if "state" not in player.keys() or player["state"] is None:
 					# no, so get by City
-					city = next(
-						(c for c in cities if remove_accents_lower(c["name"]) == remove_accents_lower(player["city"])
-						and c["country_code"] == player["country_code"]),
-						None
-					)
+					state = cityToState.get(player["country_code"], {}).get(remove_accents_lower(player["city"]), None)
 
-					if city is not None:
-						player["state"] = city["state_code"]
+					if state is not None:
+						player["state"] = state
 	return
 
 def match_states(game):
