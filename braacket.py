@@ -148,7 +148,7 @@ class Braacket:
                     for link in links:
                         if link.has_attr('href'):
                             if "twitter.com" in link['href']:
-                                player["twitter"] = link['href']
+                                player["twitter"] = link['href'].split("/")[-1]
                     
                     players[uuid] = player
         except Exception as e:

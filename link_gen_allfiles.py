@@ -75,6 +75,15 @@ def link_leagues(game):
             if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
               player2["mains"] = player[1].get("mains")
             break
+        if player[1].get("twitter") is not None and player2.get("twitter") is not None:
+          if player[1].get("twitter") == player2.get("twitter"):
+            print(">>>> merge twitter: "+player[1].get("twitter"))
+            found = True
+            player2["braacket_links"].append(league+":"+player[0])
+            mapping[league+":"+player[0]] = i
+            if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
+              player2["mains"] = player[1].get("mains")
+            break
       
       if not found:
         player[1]["braacket_links"] = [league+":"+player[0]]
