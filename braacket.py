@@ -148,7 +148,7 @@ class Braacket:
                     for link in links:
                         if link.has_attr('href'):
                             if "twitter.com" in link['href']:
-                                player["twitter"] = link['href'].split("/")[-1]
+                                player["twitter"] = link['href'].split("/")[-1].split("?")[0]
                             if link['href'].startswith("/account/"):
                                 player["braacket_account"] = link['href'].split("/")[-1].split("?")[0]
                     
