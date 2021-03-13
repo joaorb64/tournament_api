@@ -39,6 +39,9 @@ def link_leagues(game):
 
   print("Gen allplayers")
 
+  f = open('./out/'+game+'/smashgg_cache.json')
+  smashgg_cache = json.load(f)
+
   for league in leagues.keys():
     f = open('out/'+game+'/'+league+'/players.json')
     players = json.load(f)
@@ -61,6 +64,12 @@ def link_leagues(game):
 
             if "smashgg_id" in tournament[1]["ranking"][id_in_tournament].keys():
               player[1]["smashgg_id"] = tournament[1]["ranking"][id_in_tournament]["smashgg_id"]
+
+              if str(player[1]["smashgg_id"]) in smashgg_cache.keys():
+                resp = smashgg_cache[str(player[1]["smashgg_id"])]
+                if "authorizations" in resp and resp["authorizations"] is not None:
+                  for authorization in resp["authorizations"]:
+                    player[1][authorization["type"].lower()] = authorization["externalUsername"]
               break
 
       # Either join to existing player or create a new entry
