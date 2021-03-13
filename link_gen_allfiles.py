@@ -67,32 +67,39 @@ def link_leagues(game):
       found = False
       
       for i, player2 in enumerate(allplayers):
-        if player[1].get("smashgg_id") is not None and player2.get("smashgg_id") is not None:
-          if player[1].get("smashgg_id") == player2.get("smashgg_id"):
+        if player[1].get("smashgg_id") is not None and player2.get("smashgg_id") is not None and \
+          player[1].get("smashgg_id") == player2.get("smashgg_id"):
             found = True
-            player2["braacket_links"].append(league+":"+player[0])
-            mapping[league+":"+player[0]] = i
-            if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
-              player2["mains"] = player[1].get("mains")
-            break
-        if player[1].get("twitter") is not None and player2.get("twitter") is not None:
-          if player[1].get("twitter") == player2.get("twitter"):
+        elif player[1].get("twitter") is not None and player2.get("twitter") is not None and \
+          player[1].get("twitter") == player2.get("twitter"):
             print(">>>> merge twitter: "+player[1].get("twitter"))
             found = True
-            player2["braacket_links"].append(league+":"+player[0])
-            mapping[league+":"+player[0]] = i
-            if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
-              player2["mains"] = player[1].get("mains")
-            break
-        if player[1].get("braacket_account") is not None and player2.get("braacket_account") is not None:
-          if player[1].get("braacket_account") == player2.get("braacket_account"):
+        elif player[1].get("braacket_account") is not None and player2.get("braacket_account") is not None and \
+          player[1].get("braacket_account") == player2.get("braacket_account"):
             print(">>>> merge braacket: "+player[1].get("braacket_account"))
             found = True
-            player2["braacket_links"].append(league+":"+player[0])
-            mapping[league+":"+player[0]] = i
-            if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
-              player2["mains"] = player[1].get("mains")
-            break
+        
+        if found:
+          # merge braacket_links
+          player2["braacket_links"].append(league+":"+player[0])
+          mapping[league+":"+player[0]] = i
+
+          # merge mains
+          if len(player[1].get("mains", [])) > 0 and len(player2.get("mains",[])) == 0:
+            player2["mains"] = player[1].get("mains")
+
+          # merge twitter
+          if player[1].get("twitter", None) is not None and player2.get("twitter", None) is None:
+            player2["twitter"] = player[1].get("twitter")
+
+          # merge country_code
+          if player[1].get("country_code", None) is not None and player2.get("country_code", None) is None:
+            player2["country_code"] = player[1].get("country_code")
+
+          # merge braacket_account
+          if player[1].get("braacket_account", None) is not None and player2.get("braacket_account", None) is None:
+            player2["braacket_account"] = player[1].get("braacket_account")
+          break
       
       if not found:
         player[1]["braacket_links"] = [league+":"+player[0]]
