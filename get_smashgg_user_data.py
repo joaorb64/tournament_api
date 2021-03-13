@@ -24,14 +24,23 @@ def fetchPlayer(currKey):
 	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, currentIndex, indexLock
 	
 	playerIndex = -1
+	finished = False
 
-	while playerIndex < len(players):
+	while finished is False:
+		indexes = []
+		size = 50
+
 		indexLock.acquire()
-		playerIndex = currentIndex
-		currentIndex += 1
+		for i in range(size):
+			indexes.append(currentIndex+i)
+		currentIndex += size
 		indexLock.release()
 
-		fetchPlayerDo(currKey, playerIndex)
+		for playerIndex in indexes:
+			if playerIndex >= len(players):
+				finished = True
+				break
+			fetchPlayerDo(currKey, playerIndex)
 
 def fetchPlayerDo(currKey, playerIndex):
 	global leagues, tournaments, players, charname_to_braacket, cache, previous_cache, currentKey, smashgg_characters, gameconfig
@@ -291,7 +300,7 @@ def get_smashgg_data(game):
 
 	f = open('./out/'+game+'/allplayers.json')
 	original_players = json.load(f)
-	players = original_players["players"]
+	players = [p for p in original_players["players"] if p.get("smashgg_id", None) is not None]
 
 	threads = []
 
