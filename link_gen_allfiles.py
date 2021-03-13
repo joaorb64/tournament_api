@@ -99,6 +99,11 @@ def link_leagues(game):
           # merge braacket_account
           if player[1].get("braacket_account", None) is not None and player2.get("braacket_account", None) is None:
             player2["braacket_account"] = player[1].get("braacket_account")
+          
+          # merge smashgg_id
+          if player[1].get("smashgg_id", None) is not None and player2.get("smashgg_id", None) is None:
+            player2["smashgg_id"] = player[1].get("smashgg_id")
+
           break
       
       if not found:
