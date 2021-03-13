@@ -18,12 +18,20 @@ else:
 
 smashgg_characters = json.loads(requests.get("https://api.smash.gg/characters").text)
 
-def fetchPlayer(currKey, playerIndex):
-	global leagues, tournaments, players, charname_to_braacket, cache, currentKey
+currentIndex = 0
+
+def fetchPlayer(currKey):
+	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, currentIndex, indexLock
+	
+	playerIndex = -1
 
 	while playerIndex < len(players):
+		indexLock.acquire()
+		playerIndex = currentIndex
+		currentIndex += 1
+		indexLock.release()
+
 		fetchPlayerDo(currKey, playerIndex)
-		playerIndex += len(SMASHGG_KEYS)
 
 def fetchPlayerDo(currKey, playerIndex):
 	global leagues, tournaments, players, charname_to_braacket, cache, previous_cache, currentKey, smashgg_characters, gameconfig
@@ -258,10 +266,12 @@ def fetchPlayerDo(currKey, playerIndex):
 	return
 
 def get_smashgg_data(game):
-	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, gameconfig, previous_cache
+	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, gameconfig, previous_cache, currentIndex, indexLock
 
 	currentKey = 0
 	cache = {}
+	currentIndex = 0
+	indexLock = Lock()
 
 	f = open('./games/'+game+'/config.json')
 	gameconfig = json.load(f)
@@ -289,7 +299,7 @@ def get_smashgg_data(game):
 	charname_to_braacket = json.load(f)
 
 	for i, k in enumerate(SMASHGG_KEYS):
-		thread = Thread(target=fetchPlayer, args=[k, i])
+		thread = Thread(target=fetchPlayer, args=[k])
 		thread.daemon = True
 		threads.append(thread)
 		thread.start()
