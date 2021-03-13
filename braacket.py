@@ -149,6 +149,16 @@ class Braacket:
                         if link.has_attr('href'):
                             if "twitter.com" in link['href']:
                                 player["twitter"] = link['href'].split("/")[-1]
+                            if link['href'].startswith("/account/"):
+                                player["braacket_account"] = link['href'].split("/")[-1].split("?")[0]
+                    
+                    # country
+                    country_element = children[2].findAll('img')
+
+                    if country_element is not None and len(country_element) > 0:
+                        if country_element[0] is not None:
+                            if country_element[0].has_attr('src'):
+                                player["country_code"] = country_element[0]['src'].split("/")[-1].split(".")[0].upper()
                     
                     players[uuid] = player
         except Exception as e:
