@@ -191,8 +191,10 @@ def get_next_tournaments(game):
             page+=1
         
         for oldTournament in oldTournaments.get(country, {}).get("events", []):
-            if "tournament_endAt" in oldTournament:
-                if time.time() <= oldTournament["tournament_endAt"]:
+            if "tournament_endAt" in oldTournament and "id" in oldTournament:
+                found = next((t for t in tournaments if t.get("id", None) == oldTournament["id"]), None)
+
+                if not found and time.time() <= oldTournament["tournament_endAt"]:
                     tournaments.append(oldTournament)
 
         countries[country]["events"] = tournaments
