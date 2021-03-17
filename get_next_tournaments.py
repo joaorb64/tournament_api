@@ -23,6 +23,14 @@ def get_next_tournaments(game):
 
     f = open('./games/'+game+'/next_tournaments_countries.json')
     countries = json.load(f)
+    
+    oldTournaments = {}
+
+    try:
+        f = open('./out/'+game+'/nexttournaments.json')
+        oldTournaments = json.load(f)
+    except Exception as e:
+        print("No previous tournaments file")
 
     for country in countries:
 
@@ -183,6 +191,10 @@ def get_next_tournaments(game):
             page+=1
         
         countries[country]["events"] = tournaments
+    
+    for oldTournament in oldTournaments:
+        if time.time() <= oldTournaments[oldTournament]["tournament_endAt"]:
+            tournaments.append(oldTournaments[oldTournament])
 
     with open('./out/'+game+'/nexttournaments.json', 'w') as outfile:
         json.dump(countries, outfile, indent=4)
