@@ -193,8 +193,8 @@ def get_next_tournaments(game):
         countries[country]["events"] = tournaments
     
     for oldTournament in oldTournaments:
-        if time.time() <= oldTournaments[oldTournament]["tournament_endAt"]:
-            tournaments.append(oldTournaments[oldTournament])
+        if time.time() <= oldTournament["tournament_endAt"]:
+            tournaments.append(oldTournament)
 
     with open('./out/'+game+'/nexttournaments.json', 'w') as outfile:
         json.dump(countries, outfile, indent=4)
