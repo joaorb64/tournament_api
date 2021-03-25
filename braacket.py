@@ -419,7 +419,10 @@ class Braacket:
 
         if title:
             league = {}
-            league["name"] = title.find('a').string
+
+            if title.find('a'):
+                league["name"] = title.find('a').string
+            
             league["braacket_link"] = 'https://braacket.com/league/'f'{self.league}'
 
         return league
