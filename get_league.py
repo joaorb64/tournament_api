@@ -50,6 +50,11 @@ def update_league(game, liga, smashgg_key_id):
 	
 	# get league data
 	league_data = bracket.get_league_data()
+
+	if not league_data:
+		print("Could not get league: " + liga)
+		continue
+
 	league_data = update(league_data, leagues[liga])
 	
 	# get league players

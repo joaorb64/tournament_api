@@ -415,10 +415,12 @@ class Braacket:
         titleContainer = soup.findAll('div', {"class": "content_header-body"})[0]
         title = titleContainer.find('h1')
 
-        league = {}
+        league = None
 
-        league["name"] = title.find('a').string
-        league["braacket_link"] = 'https://braacket.com/league/'f'{self.league}'
+        if title:
+            league = {}
+            league["name"] = title.find('a').string
+            league["braacket_link"] = 'https://braacket.com/league/'f'{self.league}'
 
         return league
     
