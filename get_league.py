@@ -51,123 +51,122 @@ def update_league(game, liga, smashgg_key_id):
 	# get league data
 	league_data = bracket.get_league_data()
 
-	if not league_data:
+	if league_data == None:
 		print("Could not get league: " + liga)
-		continue
+	else:
+		league_data = update(league_data, leagues[liga])
+		
+		# get league players
+		players = bracket.get_players()
 
-	league_data = update(league_data, leagues[liga])
-	
-	# get league players
-	players = bracket.get_players()
-
-	with open('./out/'+game+'/'+liga+'/players.json', 'w') as outfile:
-		out = {
-			"players": players,
-			"update_time": str(datetime.now())
-		}
-		json.dump(out, outfile, indent=4, sort_keys=True)
-	
-	# get ranking info
-	ranking_info = bracket.get_ranking_info()
-
-	ranking_unchanged = False
-
-	try:
-		if("update_time" in ranking_info.keys() and "update_time" in previous_ranking["ranking"].keys()):
-			if ranking_info["update_time"] == previous_ranking["ranking"]["update_time"]:
-				print("Ranking unchanged")
-				ranking_unchanged = True
-	except Exception as e:
-		print(e)
-
-	if not ranking_unchanged:
-		# get ranking
-		ranking = {}
-		ranking["ranking"] = bracket.get_ranking()
-		ranking.update(ranking_info)
-
-		with open('./out/'+game+'/'+liga+'/ranking.json', 'w') as outfile:
+		with open('./out/'+game+'/'+liga+'/players.json', 'w') as outfile:
 			out = {
-				"ranking": ranking,
+				"players": players,
 				"update_time": str(datetime.now())
 			}
 			json.dump(out, outfile, indent=4, sort_keys=True)
+		
+		# get ranking info
+		ranking_info = bracket.get_ranking_info()
 
-		# get tournaments
-		previous_tournaments = None
+		ranking_unchanged = False
 
 		try:
-			with open('./out/'+game+'/'+liga+'/tournaments.json', 'r') as infile:
-				previous_tournaments = json.load(infile)
+			if("update_time" in ranking_info.keys() and "update_time" in previous_ranking["ranking"].keys()):
+				if ranking_info["update_time"] == previous_ranking["ranking"]["update_time"]:
+					print("Ranking unchanged")
+					ranking_unchanged = True
 		except Exception as e:
 			print(e)
 
-		tournaments = bracket.get_tournaments()
+		if not ranking_unchanged:
+			# get ranking
+			ranking = {}
+			ranking["ranking"] = bracket.get_ranking()
+			ranking.update(ranking_info)
 
-		for i, tournament in enumerate(tournaments):
-			if previous_tournaments and previous_tournaments["tournaments"]:
-				if tournament in previous_tournaments["tournaments"].keys():
-					previous_tournaments["tournaments"][tournament]["name"] = tournaments[tournament]["name"]
-					previous_tournaments["tournaments"][tournament]["time"] = tournaments[tournament]["time"]
-					tournaments[tournament] = previous_tournaments["tournaments"][tournament]
-					
-					print("Tournament known. Still, linkage could have changed.")
+			with open('./out/'+game+'/'+liga+'/ranking.json', 'w') as outfile:
+				out = {
+					"ranking": ranking,
+					"update_time": str(datetime.now())
+				}
+				json.dump(out, outfile, indent=4, sort_keys=True)
 
-					if previous_tournaments["tournaments"][tournament]["link"] == None:
-						tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
-					
-					if len(previous_tournaments["tournaments"][tournament]["matches"]) == 0:
-						matches_get = bracket.get_tournament_matches(tournament)
+			# get tournaments
+			previous_tournaments = None
 
-						if matches_get is not None:
-							tournaments[tournament]["matches"] = matches_get
+			try:
+				with open('./out/'+game+'/'+liga+'/tournaments.json', 'r') as infile:
+					previous_tournaments = json.load(infile)
+			except Exception as e:
+				print(e)
+
+			tournaments = bracket.get_tournaments()
+
+			for i, tournament in enumerate(tournaments):
+				if previous_tournaments and previous_tournaments["tournaments"]:
+					if tournament in previous_tournaments["tournaments"].keys():
+						previous_tournaments["tournaments"][tournament]["name"] = tournaments[tournament]["name"]
+						previous_tournaments["tournaments"][tournament]["time"] = tournaments[tournament]["time"]
+						tournaments[tournament] = previous_tournaments["tournaments"][tournament]
+						
+						print("Tournament known. Still, linkage could have changed.")
+
+						if previous_tournaments["tournaments"][tournament]["link"] == None:
+							tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
+						
+						if len(previous_tournaments["tournaments"][tournament]["matches"]) == 0:
+							matches_get = bracket.get_tournament_matches(tournament)
+
+							if matches_get is not None:
+								tournaments[tournament]["matches"] = matches_get
+							else:
+								tournaments[tournament]["matches"] = []
+
+						ranking_get = bracket.get_tournament_ranking(tournament)
+						if ranking_get is not None:
+							# copy smashgg ids we got before
+							for p in tournaments[tournament]["ranking"]:
+								if "smashgg_id" in tournaments[tournament]["ranking"][p] and p in ranking_get["ranking"]:
+									ranking_get["ranking"][p]["smashgg_id"] = tournaments[tournament]["ranking"][p]["smashgg_id"]
+							tournaments[tournament]["ranking"] = ranking_get["ranking"]
+							tournaments[tournament]["linkage"] = ranking_get["linkage"]
 						else:
-							tournaments[tournament]["matches"] = []
+							print("Could not get tournament? - "+tournament)
+						continue
+				
+				tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
+				
+				ranking_get = bracket.get_tournament_ranking(tournament)
+				matches_get = bracket.get_tournament_matches(tournament)
 
-					ranking_get = bracket.get_tournament_ranking(tournament)
-					if ranking_get is not None:
-						# copy smashgg ids we got before
-						for p in tournaments[tournament]["ranking"]:
-							if "smashgg_id" in tournaments[tournament]["ranking"][p] and p in ranking_get["ranking"]:
-								ranking_get["ranking"][p]["smashgg_id"] = tournaments[tournament]["ranking"][p]["smashgg_id"]
-						tournaments[tournament]["ranking"] = ranking_get["ranking"]
-						tournaments[tournament]["linkage"] = ranking_get["linkage"]
-					else:
-						print("Could not get tournament? - "+tournament)
-					continue
-			
-			tournaments[tournament]["link"] = bracket.get_tournament_link(tournament)
-			
-			ranking_get = bracket.get_tournament_ranking(tournament)
-			matches_get = bracket.get_tournament_matches(tournament)
+				if ranking_get is not None:
+					tournaments[tournament]["ranking"] = ranking_get["ranking"]
+					tournaments[tournament]["linkage"] = ranking_get["linkage"]
+				else:
+					tournaments[tournament]["ranking"] = {}
+					tournaments[tournament]["linkage"] = {}
 
-			if ranking_get is not None:
-				tournaments[tournament]["ranking"] = ranking_get["ranking"]
-				tournaments[tournament]["linkage"] = ranking_get["linkage"]
-			else:
-				tournaments[tournament]["ranking"] = {}
-				tournaments[tournament]["linkage"] = {}
+				tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
+				
+				if matches_get is not None:
+					tournaments[tournament]["matches"] = matches_get
+				else:
+					tournaments[tournament]["matches"] = []
+				
+				gg.get_smashgg_tournament_info(tournaments[tournament], (smashgg_key_id)%len(gg.SMASHGG_KEYS))
 
-			tournaments[tournament]["player_number"] = len(tournaments[tournament]["ranking"])
-			
-			if matches_get is not None:
-				tournaments[tournament]["matches"] = matches_get
-			else:
-				tournaments[tournament]["matches"] = []
-			
-			gg.get_smashgg_tournament_info(tournaments[tournament], (smashgg_key_id)%len(gg.SMASHGG_KEYS))
-
-		with open('./out/'+game+'/'+liga+'/tournaments.json', 'w') as outfile:
-			out = {
-				"tournaments": tournaments,
-				"update_time": str(datetime.now())
-			}
+			with open('./out/'+game+'/'+liga+'/tournaments.json', 'w') as outfile:
+				out = {
+					"tournaments": tournaments,
+					"update_time": str(datetime.now())
+				}
+				json.dump(out, outfile, indent=4, sort_keys=True)
+		
+		# Save league data only at the end to avoid skipping data
+		with open('./out/'+game+'/'+liga+'/data.json', 'w') as outfile:
+			out = league_data
 			json.dump(out, outfile, indent=4, sort_keys=True)
-	
-	# Save league data only at the end to avoid skipping data
-	with open('./out/'+game+'/'+liga+'/data.json', 'w') as outfile:
-		out = league_data
-		json.dump(out, outfile, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
 	games = os.listdir("./games")
