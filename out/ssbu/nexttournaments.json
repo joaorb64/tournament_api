@@ -873,7 +873,7 @@
                 "id": 566185,
                 "name": "Singles",
                 "isOnline": true,
-                "state": "ACTIVE",
+                "state": "COMPLETED",
                 "numEntrants": 30,
                 "videogame": {
                     "id": 1386
@@ -894,7 +894,7 @@
                 "id": 566353,
                 "name": "Singles Ultimate",
                 "isOnline": false,
-                "state": "ACTIVE",
+                "state": "COMPLETED",
                 "numEntrants": 11,
                 "videogame": {
                     "id": 1386
@@ -1284,7 +1284,7 @@
                 "name": "Singles OnLag",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 1,
+                "numEntrants": 10,
                 "videogame": {
                     "id": 1386
                 },
@@ -1843,7 +1843,7 @@
                 "id": 566271,
                 "name": "Round Robin",
                 "isOnline": false,
-                "state": "ACTIVE",
+                "state": "COMPLETED",
                 "numEntrants": 6,
                 "videogame": {
                     "id": 1386
@@ -1886,7 +1886,7 @@
                 "name": "Ultimate Ladder",
                 "isOnline": true,
                 "state": "ACTIVE",
-                "numEntrants": 38,
+                "numEntrants": 39,
                 "videogame": {
                     "id": 1386
                 },
@@ -1907,7 +1907,7 @@
                 "name": "Top Cut Bracket",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 0,
+                "numEntrants": 9,
                 "videogame": {
                     "id": 1386
                 },
@@ -1945,77 +1945,6 @@
                 ]
             },
             {
-                "id": 565301,
-                "name": "Competitive doubles",
-                "isOnline": true,
-                "state": "ACTIVE",
-                "numEntrants": 40,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1617404400,
-                "phaseGroups": [
-                    {
-                        "id": 1474434,
-                        "phase": {
-                            "id": 925791,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ]
-            },
-            {
-                "id": 565312,
-                "name": "Competitive singles ($60 prize pool)",
-                "isOnline": true,
-                "state": "CREATED",
-                "numEntrants": 167,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1617490800,
-                "phaseGroups": [
-                    {
-                        "id": 1474455,
-                        "phase": {
-                            "id": 925804,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "($60 PRIZE POOL) Wario's Smash Down 2021 week #45",
-                "tournament_id": 280929,
-                "city": null,
-                "url": "https://smash.gg/tournament/60-prize-pool-wario-s-smash-down-2021-week-45",
-                "streams": [
-                    {
-                        "streamName": "WSD_official"
-                    }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1617411600,
-                "tournament_endAt": 1617512400,
-                "tournament_registrationClosesAt": 1618718400,
-                "images": [
-                    {
-                        "id": "3401024",
-                        "url": "https://images.smash.gg/images/tournament/280929/image-e82c404229c359ef6262781e5cc26c86.jpg",
-                        "type": "profile"
-                    },
-                    {
-                        "id": "3401025",
-                        "url": "https://images.smash.gg/images/tournament/280929/image-b420b684957b7cd5f9bfd8a46db0f703.jpg",
-                        "type": "banner"
-                    }
-                ],
-                "tournament_multievent": true,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "United States",
-                "tournament_addrState": null
-            },
-            {
                 "id": 565139,
                 "name": "Get Smash Online!",
                 "isOnline": true,
@@ -2045,11 +1974,82 @@
                 ]
             },
             {
+                "id": 565301,
+                "name": "Competitive doubles",
+                "isOnline": true,
+                "state": "ACTIVE",
+                "numEntrants": 40,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1617404400,
+                "phaseGroups": [
+                    {
+                        "id": 1474434,
+                        "phase": {
+                            "id": 925791,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ]
+            },
+            {
+                "id": 565312,
+                "name": "Competitive singles ($60 prize pool)",
+                "isOnline": true,
+                "state": "CREATED",
+                "numEntrants": 168,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1617490800,
+                "phaseGroups": [
+                    {
+                        "id": 1474455,
+                        "phase": {
+                            "id": 925804,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "($60 PRIZE POOL) Wario's Smash Down 2021 week #45",
+                "tournament_id": 280929,
+                "city": null,
+                "url": "https://smash.gg/tournament/60-prize-pool-wario-s-smash-down-2021-week-45",
+                "streams": [
+                    {
+                        "streamName": "WSD_official"
+                    }
+                ],
+                "timezone": null,
+                "tournament_startAt": 1617415200,
+                "tournament_endAt": 1617512400,
+                "tournament_registrationClosesAt": 1618718400,
+                "images": [
+                    {
+                        "id": "3401024",
+                        "url": "https://images.smash.gg/images/tournament/280929/image-e82c404229c359ef6262781e5cc26c86.jpg",
+                        "type": "profile"
+                    },
+                    {
+                        "id": "3401025",
+                        "url": "https://images.smash.gg/images/tournament/280929/image-b420b684957b7cd5f9bfd8a46db0f703.jpg",
+                        "type": "banner"
+                    }
+                ],
+                "tournament_multievent": true,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "United States",
+                "tournament_addrState": null
+            },
+            {
                 "id": 566191,
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 5,
+                "numEntrants": 6,
                 "videogame": {
                     "id": 1386
                 },
@@ -2063,27 +2063,7 @@
                         },
                         "progressionsOut": null
                     }
-                ],
-                "tournament": "The Paper Plate #12",
-                "tournament_id": 281603,
-                "city": "Concord",
-                "url": "https://smash.gg/tournament/the-paper-plate-12",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1617415200,
-                "tournament_endAt": 1617429600,
-                "tournament_registrationClosesAt": 1617429600,
-                "images": [
-                    {
-                        "id": "3408866",
-                        "url": "https://images.smash.gg/images/tournament/281603/image-26e9fc276957783399f8babf39aad34c.jpg",
-                        "type": "profile"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "1888 Renee Way, Concord, CA 94521, USA",
-                "tournament_addrState": "CA"
+                ]
             },
             {
                 "id": 563676,
@@ -2253,7 +2233,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 10,
+                "numEntrants": 11,
                 "videogame": {
                     "id": 1386
                 },
@@ -2385,7 +2365,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 24,
+                "numEntrants": 26,
                 "videogame": {
                     "id": 1386
                 },
@@ -2548,7 +2528,7 @@
                 "timezone": null,
                 "tournament_startAt": 1617476400,
                 "tournament_endAt": 1617498000,
-                "tournament_registrationClosesAt": 1617411600,
+                "tournament_registrationClosesAt": 1617418800,
                 "images": [
                     {
                         "id": "3344578",
@@ -2598,7 +2578,7 @@
                 "timezone": null,
                 "tournament_startAt": 1617476400,
                 "tournament_endAt": 1617498000,
-                "tournament_registrationClosesAt": 1617411600,
+                "tournament_registrationClosesAt": 1617418800,
                 "images": [
                     {
                         "id": "3344578",
@@ -2621,7 +2601,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 16,
+                "numEntrants": 17,
                 "videogame": {
                     "id": 1386
                 },
@@ -2671,7 +2651,7 @@
                 "name": "BTBracket SSBU 1v1",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 7,
+                "numEntrants": 8,
                 "videogame": {
                     "id": 1386
                 },
@@ -2971,10 +2951,10 @@
                         "progressionsOut": null
                     }
                 ],
-                "tournament": "Super Saturdays! 4/2/21",
+                "tournament": "Super Saturdays! 4/3/21",
                 "tournament_id": 281745,
                 "city": "McAllen",
-                "url": "https://smash.gg/tournament/super-saturdays-4-2-21",
+                "url": "https://smash.gg/tournament/super-saturdays-4-3-21",
                 "streams": null,
                 "timezone": null,
                 "tournament_startAt": 1617490800,
@@ -3041,7 +3021,7 @@
                 "name": "One More Stock! Singles",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 0,
+                "numEntrants": 1,
                 "videogame": {
                     "id": 1386
                 },
@@ -3293,7 +3273,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 32,
+                "numEntrants": 35,
                 "videogame": {
                     "id": 1386
                 },
@@ -4309,7 +4289,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 14,
+                "numEntrants": 17,
                 "videogame": {
                     "id": 1386
                 },
@@ -5094,7 +5074,7 @@
                 "name": "Singles Tournament     1\ufe0f\u20e3\ud83c\udd9a 1\ufe0f\u20e3",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 18,
+                "numEntrants": 19,
                 "videogame": {
                     "id": 1386
                 },
@@ -6936,7 +6916,7 @@
                 "name": "Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 12,
+                "numEntrants": 13,
                 "videogame": {
                     "id": 1386
                 },
@@ -10586,7 +10566,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 7,
+                "numEntrants": 8,
                 "videogame": {
                     "id": 1386
                 },
@@ -13536,7 +13516,7 @@
                 "phaseGroups": [],
                 "tournament": "\u7b2c20.9\u56de \u7f8e\u3089\u30d6\u30e9SP \u30de\u30b9\u30bf\u30fc\u30ba\u676f",
                 "tournament_id": 281671,
-                "city": "\u90a3\u8987\u5e02",
+                "city": "\u5317\u8c37\u753a",
                 "url": "https://smash.gg/tournament/20-9-sp",
                 "streams": null,
                 "timezone": null,
@@ -13557,7 +13537,7 @@
                 ],
                 "tournament_multievent": false,
                 "tournament_venueName": null,
-                "tournament_venueAddress": "\u65e5\u672c\u3001\u3012900-0013 \u6c96\u7e04\u770c\u90a3\u8987\u5e02\u7267\u5fd7\uff12\u4e01\u76ee\uff17\u2212\uff12\uff12 \u30bd\u30b7\u30a2\u30eb\u30d3\u30eb \u30b3\u30b9\u30e2 4F",
+                "tournament_venueAddress": "\u65e5\u672c\u3001\u3012904-0117 \u6c96\u7e04\u770c\u4e2d\u982d\u90e1\u5317\u8c37\u753a\u5317\u524d\uff11\u4e01\u76ee \u753a\u5317\u524d\uff11\u4e01\u76ee\uff11\u2212\uff11\uff13",
                 "tournament_addrState": "\u6c96\u7e04\u770c"
             },
             {
