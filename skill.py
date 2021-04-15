@@ -98,15 +98,17 @@ def skill(game):
             if tournament["huge"]:
                 huge = True
 
+            results = list(match["participants"].values())
+            
             # p1 wins
-            for i in range(list(match["participants"].values())[0]):
+            if results[0] > results[1]:
                 myMatch = [p1apid, p2apid, wifi, local, huge]
                 allmatches.append(myMatch)
-
             # p2 wins
-            for i in range(list(match["participants"].values())[1]):
+            else:
                 myMatch = [p2apid, p1apid, wifi, local, huge]
                 allmatches.append(myMatch)
+                
     
     print("Matches: "+str(len(allmatches)))
     print("Players: "+str(len(allplayers["players"])))
