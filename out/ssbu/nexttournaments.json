@@ -1745,49 +1745,29 @@
                 "id": 571709,
                 "name": "Ultimate Singles",
                 "isOnline": false,
-                "state": "CREATED",
+                "state": "ACTIVE",
                 "numEntrants": 19,
                 "videogame": {
                     "id": 1386
                 },
                 "startAt": 1619487000,
-                "phaseGroups": [],
-                "tournament": "The Pilot Program Monday Edition #6",
-                "tournament_id": 285641,
-                "city": "Gilbert",
-                "url": "https://smash.gg/tournament/the-pilot-program-monday-edition-6",
-                "streams": [
+                "phaseGroups": [
                     {
-                        "streamName": "sakgamingtv"
+                        "id": 1487416,
+                        "phase": {
+                            "id": 934717,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
                     }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1619487000,
-                "tournament_endAt": 1619499600,
-                "tournament_registrationClosesAt": 1619485200,
-                "images": [
-                    {
-                        "id": "3463655",
-                        "url": "https://images.smash.gg/images/tournament/285641/image-5dcc788d4b01ef7959c286bcb31bc689.png",
-                        "type": "profile"
-                    },
-                    {
-                        "id": "3463656",
-                        "url": "https://images.smash.gg/images/tournament/285641/image-e42ca6a580f7a6454b4a426f28beba95.png",
-                        "type": "banner"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "1275 E Baseline Rd #107, Gilbert, AZ 85233, USA",
-                "tournament_addrState": "AZ"
+                ]
             },
             {
                 "id": 571206,
                 "name": "Ultimate Singles",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 139,
+                "numEntrants": 141,
                 "videogame": {
                     "id": 1386
                 },
@@ -2219,6 +2199,9 @@
                             },
                             {
                                 "id": 6481590
+                            },
+                            {
+                                "id": 6482591
                             }
                         ]
                     },
@@ -2252,6 +2235,9 @@
                             },
                             {
                                 "id": 6481434
+                            },
+                            {
+                                "id": 6482596
                             }
                         ]
                     },
@@ -2804,56 +2790,6 @@
                 "tournament_addrState": "MD"
             },
             {
-                "id": 571343,
-                "name": "Smash Ultimate Singles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 7,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1619560800,
-                "phaseGroups": [
-                    {
-                        "id": 1486742,
-                        "phase": {
-                            "id": 934212,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Smash Parmesan #42 - Smash Ultimate Weekly presented by 1Life2Play",
-                "tournament_id": 285357,
-                "city": "Parma",
-                "url": "https://smash.gg/tournament/smash-parmesan-42-smash-ultimate-weekly-presented-by-1life2play",
-                "streams": [
-                    {
-                        "streamName": "1life2play"
-                    }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1619560800,
-                "tournament_endAt": 1619578800,
-                "tournament_registrationClosesAt": 1619578800,
-                "images": [
-                    {
-                        "id": "3460509",
-                        "url": "https://images.smash.gg/images/tournament/285357/image-a6cd3648bab1d233d514623afde69cf6.png",
-                        "type": "profile"
-                    },
-                    {
-                        "id": "3460510",
-                        "url": "https://images.smash.gg/images/tournament/285357/image-93f45f5d2f9a1d69e3c909892564d936.jpg",
-                        "type": "banner"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "6070 Broadview Rd, Parma, OH 44134, USA",
-                "tournament_addrState": "OH"
-            },
-            {
                 "id": 572496,
                 "name": "Smash Ultimate",
                 "isOnline": false,
@@ -2954,11 +2890,61 @@
                 "tournament_addrState": "FL"
             },
             {
+                "id": 571343,
+                "name": "Smash Ultimate Singles",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 8,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1619560800,
+                "phaseGroups": [
+                    {
+                        "id": 1486742,
+                        "phase": {
+                            "id": 934212,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Smash Parmesan #42 - Smash Ultimate Weekly presented by 1Life2Play",
+                "tournament_id": 285357,
+                "city": "Parma",
+                "url": "https://smash.gg/tournament/smash-parmesan-42-smash-ultimate-weekly-presented-by-1life2play",
+                "streams": [
+                    {
+                        "streamName": "1life2play"
+                    }
+                ],
+                "timezone": null,
+                "tournament_startAt": 1619560800,
+                "tournament_endAt": 1619578800,
+                "tournament_registrationClosesAt": 1619578800,
+                "images": [
+                    {
+                        "id": "3460509",
+                        "url": "https://images.smash.gg/images/tournament/285357/image-a6cd3648bab1d233d514623afde69cf6.png",
+                        "type": "profile"
+                    },
+                    {
+                        "id": "3460510",
+                        "url": "https://images.smash.gg/images/tournament/285357/image-93f45f5d2f9a1d69e3c909892564d936.jpg",
+                        "type": "banner"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "6070 Broadview Rd, Parma, OH 44134, USA",
+                "tournament_addrState": "OH"
+            },
+            {
                 "id": 571155,
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 9,
                 "videogame": {
                     "id": 1386
                 },
@@ -3087,7 +3073,7 @@
                 "name": "Online Registration for Offline Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 13,
+                "numEntrants": 14,
                 "videogame": {
                     "id": 1386
                 },
@@ -3285,7 +3271,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 0,
+                "numEntrants": 4,
                 "videogame": {
                     "id": 1386
                 },
@@ -3376,7 +3362,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 21,
+                "numEntrants": 22,
                 "videogame": {
                     "id": 1386
                 },
@@ -3517,7 +3503,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 20,
+                "numEntrants": 21,
                 "videogame": {
                     "id": 1386
                 },
@@ -3609,7 +3595,7 @@
                 "name": "Singles - 1v1",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 38,
+                "numEntrants": 39,
                 "videogame": {
                     "id": 1386
                 },
@@ -4582,7 +4568,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 5,
+                "numEntrants": 6,
                 "videogame": {
                     "id": 1386
                 },
@@ -8607,7 +8593,7 @@
                 "name": "Ultimate Doubles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 3,
+                "numEntrants": 4,
                 "videogame": {
                     "id": 1386
                 },
@@ -11845,7 +11831,7 @@
                 "name": "Smash Odyssey\u2014\u2014Reviewing Soldier",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 31,
+                "numEntrants": 32,
                 "videogame": {
                     "id": 1386
                 },
