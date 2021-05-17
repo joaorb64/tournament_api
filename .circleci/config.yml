@@ -49,7 +49,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install beautifulsoup4 joblib requests faster_than_requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein
+            pip install beautifulsoup4 joblib requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein
       - run:
           name: Update data
           command: |
@@ -101,7 +101,7 @@ workflows:
   daily_data_update:
     triggers:
       - schedule:
-          cron: "0 0,6,12,18 * * *"
+          cron: "0 * * * *"
           filters:
             branches:
               only:
