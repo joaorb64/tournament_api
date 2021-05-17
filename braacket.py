@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import re 
 from difflib import SequenceMatcher
-import faster_than_requests
 import datetime
 import time
 
