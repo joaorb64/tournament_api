@@ -35,7 +35,7 @@ def link_leagues(game):
     alltournaments[league] = tournaments["tournaments"]
 
   with open('out/'+game+'/alltournaments.json', 'w') as outfile:
-    json.dump(alltournaments, outfile, indent=4, sort_keys=True)
+    json.dump(alltournaments, outfile, separators=(',', ':'))
 
   print("Gen allplayers")
 
@@ -125,7 +125,7 @@ def link_leagues(game):
           player[1]["skins"] = playerSkins[str(player[1]["smashgg_id"])]
 
   with open('out/'+game+'/allplayers.json', 'w') as outfile:
-    json.dump({"mapping": mapping, "players": allplayers}, outfile, indent=4, sort_keys=True)
+    json.dump({"mapping": mapping, "players": allplayers}, outfile, separators=(',', ':'))
 
   print("Gen allleagues")
 
@@ -137,7 +137,7 @@ def link_leagues(game):
     allleagues[league] = leaguedata
 
   with open('out/'+game+'/allleagues.json', 'w') as outfile:
-    json.dump(allleagues, outfile, indent=4, sort_keys=False)
+    json.dump(allleagues, outfile, separators=(',', ':'))
 
 if __name__ == "__main__":
   games = os.listdir("./games")

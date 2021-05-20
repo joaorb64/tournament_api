@@ -31,6 +31,44 @@ def get_smashgg_tournament_info(tournament, currentKey):
 
 	page = 1
 
+	# Get metadata
+	r = requests.post(
+		'https://api.smash.gg/gql/alpha',
+		headers={
+			'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+		},
+		json={
+			'query': '''
+			query evento($eventSlug: String!) {
+				event(slug: $eventSlug) {
+					tournament {
+						owner {
+							id
+						}
+					}
+				}
+			},
+		''',
+			'variables': {
+				"eventSlug": slug
+			},
+		}
+	)
+	time.sleep(1)
+
+	resp = json.loads(r.text)
+
+	if resp is not None and \
+		resp.get("data", {}) is not None and \
+		resp.get("data", {}).get("event", {}) is not None and \
+		resp.get("data", {}).get("event", {}).get("tournament", {}) is not None and \
+		resp.get("data", {}).get("event", {}).get("tournament", {}).get("owner", {}) is not None:
+		to = resp.get("data", {}).get("event", {}).get("tournament", {}).get("owner", {}).get("id", None)
+
+		if to is not None:
+			tournament["to"] = to
+
+	# Get entrants
 	while True:
 		r = requests.post(
 			'https://api.smash.gg/gql/alpha',
