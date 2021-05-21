@@ -207,7 +207,7 @@ def skill(game):
                 str(i+1) + "\t\t" + 
                 chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
                 (p.get("org")+" " if p.get("org") not in [None, "null", " "] else "") +
-                p["name"] +
+                str(p["name"]) +
                 " ("+p.get("country_code")+")" +
                 " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
                 "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
@@ -221,7 +221,7 @@ def skill(game):
                     str(i+1) + "\t\t" + 
                     chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
                     (p.get("org")+" " if p.get("org") not in [None, "null", " "] else "") +
-                    p["name"] +
+                    str(p["name"]) +
                     " ("+p.get("country_code")+")" +
                     " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
                     "\t\t\t\t\t\t" + str(p["ts"]) + "\n")

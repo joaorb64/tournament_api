@@ -4,6 +4,7 @@ import re
 from difflib import SequenceMatcher
 import datetime
 import time
+import traceback
 
 requests.packages.urllib3.disable_warnings()
 
@@ -92,6 +93,7 @@ class Braacket:
         return tournaments
     
     def get_players(self):
+        print(self.league + ": get_players")
         r = requests.get(
             'https://braacket.com/league/'
             f'{self.league}/player?rows=200&embed=1', verify=False) # the upperbound is 200
@@ -128,8 +130,9 @@ class Braacket:
                     player["name"] = children[0].find("a").string
 
                     # dont get bye*
-                    if bye_extract.match(player["name"]):
-                        continue
+                    if player["name"] is not None:
+                        if bye_extract.match(player["name"]):
+                            continue
 
                     # uuid
                     uuid = url_extract.match(children[0].find("a")['href']).group(1).replace("?", "")
@@ -161,8 +164,9 @@ class Braacket:
                     
                     players[uuid] = player
         except Exception as e:
-            print(e)
+            print(traceback.format_exc())
             players = {}
+        print("Players: "+str(len(players)))
         return players
     
     def get_tournament_link(self, id):
