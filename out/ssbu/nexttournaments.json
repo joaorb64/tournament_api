@@ -3367,27 +3367,6 @@
         "region": "NA",
         "events": [
             {
-                "id": 580138,
-                "name": "Singles",
-                "isOnline": false,
-                "state": "ACTIVE",
-                "numEntrants": 80,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1622160000,
-                "phaseGroups": [
-                    {
-                        "id": 1504342,
-                        "phase": {
-                            "id": 946258,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ]
-            },
-            {
                 "id": 580139,
                 "name": "Doubles",
                 "isOnline": false,
@@ -3402,6 +3381,27 @@
                         "id": 1504343,
                         "phase": {
                             "id": 946259,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ]
+            },
+            {
+                "id": 580138,
+                "name": "Singles",
+                "isOnline": false,
+                "state": "COMPLETED",
+                "numEntrants": 80,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1622160000,
+                "phaseGroups": [
+                    {
+                        "id": 1504342,
+                        "phase": {
+                            "id": 946258,
                             "name": "Bracket"
                         },
                         "progressionsOut": null
@@ -4307,7 +4307,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 9,
+                "numEntrants": 10,
                 "videogame": {
                     "id": 1386
                 },
@@ -4632,7 +4632,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 9,
+                "numEntrants": 10,
                 "videogame": {
                     "id": 1386
                 },
@@ -4768,7 +4768,7 @@
                 "name": "Singles Bracket",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 11,
+                "numEntrants": 12,
                 "videogame": {
                     "id": 1386
                 },
@@ -4877,7 +4877,7 @@
                 "name": "Don't Get Tilted Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 16,
+                "numEntrants": 17,
                 "videogame": {
                     "id": 1386
                 },
@@ -5379,7 +5379,7 @@
                 "name": "Singles: Open Bracket",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 36,
+                "numEntrants": 38,
                 "videogame": {
                     "id": 1386
                 },
@@ -5664,7 +5664,7 @@
                 "name": "Singles Bracket",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 64,
+                "numEntrants": 63,
                 "videogame": {
                     "id": 1386
                 },
@@ -5999,7 +5999,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 11,
+                "numEntrants": 12,
                 "videogame": {
                     "id": 1386
                 },
@@ -6028,47 +6028,6 @@
                 "tournament_venueName": null,
                 "tournament_venueAddress": "465 Cedar Sage Dr, Garland, TX 75040, USA",
                 "tournament_addrState": "TX"
-            },
-            {
-                "id": 579878,
-                "name": "Nerd Gear's Smash Bros. Ultimate Tournament",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 3,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1622329200,
-                "phaseGroups": [
-                    {
-                        "id": 1503827,
-                        "phase": {
-                            "id": 945931,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Nerd Gear Cards & Collectibles Super Smash Tournament",
-                "tournament_id": 290641,
-                "city": "Lakeland",
-                "url": "https://smash.gg/tournament/nerd-gear-cards-collectibles-super-smash-tournament",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1622329200,
-                "tournament_endAt": 1622343600,
-                "tournament_registrationClosesAt": 1622343600,
-                "images": [
-                    {
-                        "id": "3535926",
-                        "url": "https://images.smash.gg/images/tournament/290641/image-3ebff40dc83fc6faa4d5ba25e07ef643.png",
-                        "type": "profile"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "626 N Ingraham Ave, Lakeland, FL 33801, USA",
-                "tournament_addrState": "FL"
             },
             {
                 "id": 573226,
@@ -6212,11 +6171,52 @@
                 "tournament_addrState": "TX"
             },
             {
+                "id": 579878,
+                "name": "Nerd Gear's Smash Bros. Ultimate Tournament",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 4,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1622329200,
+                "phaseGroups": [
+                    {
+                        "id": 1503827,
+                        "phase": {
+                            "id": 945931,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Nerd Gear Cards & Collectibles Super Smash Tournament",
+                "tournament_id": 290641,
+                "city": "Lakeland",
+                "url": "https://smash.gg/tournament/nerd-gear-cards-collectibles-super-smash-tournament",
+                "streams": null,
+                "timezone": null,
+                "tournament_startAt": 1622329200,
+                "tournament_endAt": 1622343600,
+                "tournament_registrationClosesAt": 1622343600,
+                "images": [
+                    {
+                        "id": "3535926",
+                        "url": "https://images.smash.gg/images/tournament/290641/image-3ebff40dc83fc6faa4d5ba25e07ef643.png",
+                        "type": "profile"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "626 N Ingraham Ave, Lakeland, FL 33801, USA",
+                "tournament_addrState": "FL"
+            },
+            {
                 "id": 579988,
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 2,
+                "numEntrants": 3,
                 "videogame": {
                     "id": 1386
                 },
@@ -6814,7 +6814,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 34,
+                "numEntrants": 35,
                 "videogame": {
                     "id": 1386
                 },
@@ -7002,7 +7002,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 26,
+                "numEntrants": 27,
                 "videogame": {
                     "id": 1386
                 },
@@ -7118,7 +7118,7 @@
                 "name": "Ultimate Squad Strike",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 9,
+                "numEntrants": 10,
                 "videogame": {
                     "id": 1386
                 },
@@ -7741,7 +7741,7 @@
                 "name": "SSBU Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 12,
+                "numEntrants": 13,
                 "videogame": {
                     "id": 1386
                 },
@@ -10040,7 +10040,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 64,
+                "numEntrants": 63,
                 "videogame": {
                     "id": 1386
                 },
@@ -10984,7 +10984,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 37,
+                "numEntrants": 39,
                 "videogame": {
                     "id": 1386
                 },
@@ -14517,7 +14517,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 47,
+                "numEntrants": 48,
                 "videogame": {
                     "id": 1386
                 },
@@ -16721,7 +16721,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 37,
+                "numEntrants": 40,
                 "videogame": {
                     "id": 1386
                 },
@@ -20458,7 +20458,7 @@
                 "name": "Singles | FOS S2 - Weekly#9",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 17,
+                "numEntrants": 18,
                 "videogame": {
                     "id": 1386
                 },
@@ -20499,7 +20499,7 @@
                 "name": "Newbie 1V1",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 14,
+                "numEntrants": 15,
                 "videogame": {
                     "id": 1386
                 },
