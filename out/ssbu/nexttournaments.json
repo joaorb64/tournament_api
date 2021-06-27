@@ -1342,7 +1342,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": true,
                 "state": "CREATED",
-                "numEntrants": 134,
+                "numEntrants": 137,
                 "videogame": {
                     "id": 1386
                 },
@@ -4520,27 +4520,6 @@
                 ]
             },
             {
-                "id": 587557,
-                "name": "Ultimate Singles",
-                "isOnline": false,
-                "state": "ACTIVE",
-                "numEntrants": 83,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1624752000,
-                "phaseGroups": [
-                    {
-                        "id": 1518361,
-                        "phase": {
-                            "id": 956110,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ]
-            },
-            {
                 "id": 589786,
                 "name": "Ultimate Doubles",
                 "isOnline": false,
@@ -4555,6 +4534,27 @@
                         "id": 1522237,
                         "phase": {
                             "id": 959059,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ]
+            },
+            {
+                "id": 587557,
+                "name": "Ultimate Singles",
+                "isOnline": false,
+                "state": "COMPLETED",
+                "numEntrants": 83,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1624752000,
+                "phaseGroups": [
+                    {
+                        "id": 1518361,
+                        "phase": {
+                            "id": 956110,
                             "name": "Bracket"
                         },
                         "progressionsOut": null
@@ -4607,7 +4607,7 @@
                 "id": 588984,
                 "name": "Singles (Main Bracket)",
                 "isOnline": false,
-                "state": "ACTIVE",
+                "state": "COMPLETED",
                 "numEntrants": 45,
                 "videogame": {
                     "id": 1386
@@ -4805,21 +4805,7 @@
                     "id": 1386
                 },
                 "startAt": 1624770000,
-                "phaseGroups": [],
-                "tournament": "Smash Night",
-                "tournament_id": 298136,
-                "city": "Las Vegas",
-                "url": "https://smash.gg/tournament/smash-night-7",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1624770000,
-                "tournament_endAt": 1624777140,
-                "tournament_registrationClosesAt": 1624777140,
-                "images": [],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "6793 Cavatina Ave, Las Vegas, NV 89139, USA",
-                "tournament_addrState": "NV"
+                "phaseGroups": []
             },
             {
                 "id": 588565,
@@ -5229,7 +5215,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 15,
+                "numEntrants": 14,
                 "videogame": {
                     "id": 1386
                 },
@@ -5426,7 +5412,7 @@
                 "name": "Ultimate Singles (128 Cap)",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 23,
+                "numEntrants": 24,
                 "videogame": {
                     "id": 1386
                 },
@@ -5847,47 +5833,6 @@
                 "tournament_addrState": "TX"
             },
             {
-                "id": 579655,
-                "name": "Smash Ultimate Singles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 64,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1624824000,
-                "phaseGroups": [],
-                "tournament": "Back2Roots #1",
-                "tournament_id": 291289,
-                "city": "Santa Clara",
-                "url": "https://smash.gg/tournament/back2roots-1-1",
-                "streams": [
-                    {
-                        "streamName": "RedwoodSmash"
-                    }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1624824000,
-                "tournament_endAt": 1624849200,
-                "tournament_registrationClosesAt": 1624777140,
-                "images": [
-                    {
-                        "id": "3622899",
-                        "url": "https://images.smash.gg/images/tournament/291289/image-a17e81bcb50e134aca739a5d0d4ebbe3.jpg",
-                        "type": "banner"
-                    },
-                    {
-                        "id": "3622942",
-                        "url": "https://images.smash.gg/images/tournament/291289/image-fe2b1b30af88b5e2ec1156a52e2a2f88.png",
-                        "type": "profile"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "3464 El Camino Real, Santa Clara, CA 95051, USA",
-                "tournament_addrState": "CA"
-            },
-            {
                 "id": 583097,
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
@@ -5934,11 +5879,103 @@
                 "tournament_addrState": "AL"
             },
             {
+                "id": 579655,
+                "name": "Smash Ultimate Singles",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 64,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1624824000,
+                "phaseGroups": [
+                    {
+                        "id": 1522018,
+                        "phase": {
+                            "id": 958898,
+                            "name": "Pool A 1:00 PM"
+                        },
+                        "progressionsOut": [
+                            {
+                                "id": 6645010
+                            },
+                            {
+                                "id": 6645011
+                            },
+                            {
+                                "id": 6645012
+                            },
+                            {
+                                "id": 6645013
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1522019,
+                        "phase": {
+                            "id": 958899,
+                            "name": "Pool B 3:00 PM"
+                        },
+                        "progressionsOut": [
+                            {
+                                "id": 6645014
+                            },
+                            {
+                                "id": 6645015
+                            },
+                            {
+                                "id": 6645016
+                            },
+                            {
+                                "id": 6645017
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1522020,
+                        "phase": {
+                            "id": 958900,
+                            "name": "Top 8"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Back2Roots #1",
+                "tournament_id": 291289,
+                "city": "Santa Clara",
+                "url": "https://smash.gg/tournament/back2roots-1-1",
+                "streams": [
+                    {
+                        "streamName": "RedwoodSmash"
+                    }
+                ],
+                "timezone": null,
+                "tournament_startAt": 1624824000,
+                "tournament_endAt": 1624849200,
+                "tournament_registrationClosesAt": 1624777140,
+                "images": [
+                    {
+                        "id": "3622899",
+                        "url": "https://images.smash.gg/images/tournament/291289/image-a17e81bcb50e134aca739a5d0d4ebbe3.jpg",
+                        "type": "banner"
+                    },
+                    {
+                        "id": "3622942",
+                        "url": "https://images.smash.gg/images/tournament/291289/image-fe2b1b30af88b5e2ec1156a52e2a2f88.png",
+                        "type": "profile"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "3464 El Camino Real, Santa Clara, CA 95051, USA",
+                "tournament_addrState": "CA"
+            },
+            {
                 "id": 579944,
                 "name": "Ultimate Singles (3PM PDT)",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 30,
+                "numEntrants": 31,
                 "videogame": {
                     "id": 1386
                 },
@@ -6034,7 +6071,7 @@
                 "name": "Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 36,
+                "numEntrants": 35,
                 "videogame": {
                     "id": 1386
                 },
@@ -6080,7 +6117,7 @@
                 "name": "Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 13,
+                "numEntrants": 15,
                 "videogame": {
                     "id": 1386
                 },
@@ -6301,7 +6338,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 10,
+                "numEntrants": 12,
                 "videogame": {
                     "id": 1386
                 },
@@ -6538,7 +6575,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -6814,7 +6851,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -7081,43 +7118,6 @@
                 "tournament_addrState": "MI"
             },
             {
-                "id": 588955,
-                "name": "Ultimate Singles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 3,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1624921200,
-                "phaseGroups": [],
-                "tournament": "Smash @ Scrims III - Servomechanical Smackdown",
-                "tournament_id": 297343,
-                "city": "Lisle",
-                "url": "https://smash.gg/tournament/smash-scrims-iii-servomechanical-smackdown",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1624921200,
-                "tournament_endAt": 1624939200,
-                "tournament_registrationClosesAt": 1624921200,
-                "images": [
-                    {
-                        "id": "3621974",
-                        "url": "https://images.smash.gg/images/tournament/297343/image-6f3315eddd0c8aa72f87a4fa3cd352d6.png",
-                        "type": "profile"
-                    },
-                    {
-                        "id": "3621975",
-                        "url": "https://images.smash.gg/images/tournament/297343/image-63fdfde36a3ebeabb158bdd253e1b1b7.png",
-                        "type": "banner"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "2000 Ogden Ave, Lisle, IL 60532, USA",
-                "tournament_addrState": "IL"
-            },
-            {
                 "id": 589649,
                 "name": "Ultimate Singles",
                 "isOnline": false,
@@ -7345,6 +7345,43 @@
                 "tournament_addrState": "UT"
             },
             {
+                "id": 588955,
+                "name": "Ultimate Singles",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 4,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1624921200,
+                "phaseGroups": [],
+                "tournament": "Smash @ Scrims III - Servomechanical Smackdown",
+                "tournament_id": 297343,
+                "city": "Lisle",
+                "url": "https://smash.gg/tournament/smash-scrims-iii-servomechanical-smackdown",
+                "streams": null,
+                "timezone": null,
+                "tournament_startAt": 1624921200,
+                "tournament_endAt": 1624939200,
+                "tournament_registrationClosesAt": 1624921200,
+                "images": [
+                    {
+                        "id": "3621974",
+                        "url": "https://images.smash.gg/images/tournament/297343/image-6f3315eddd0c8aa72f87a4fa3cd352d6.png",
+                        "type": "profile"
+                    },
+                    {
+                        "id": "3621975",
+                        "url": "https://images.smash.gg/images/tournament/297343/image-63fdfde36a3ebeabb158bdd253e1b1b7.png",
+                        "type": "banner"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "2000 Ogden Ave, Lisle, IL 60532, USA",
+                "tournament_addrState": "IL"
+            },
+            {
                 "id": 589051,
                 "name": "Ultimate Singles",
                 "isOnline": false,
@@ -7441,7 +7478,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 32,
+                "numEntrants": 36,
                 "videogame": {
                     "id": 1386
                 },
@@ -7944,7 +7981,7 @@
                 "name": "SSBU Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 10,
+                "numEntrants": 12,
                 "videogame": {
                     "id": 1386
                 },
@@ -9710,7 +9747,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 15,
+                "numEntrants": 16,
                 "videogame": {
                     "id": 1386
                 },
@@ -9802,7 +9839,7 @@
                 "name": "Singles: Open Bracket",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -10563,6 +10600,85 @@
                 "tournament_venueName": "The Cave Fairfax",
                 "tournament_venueAddress": "10621 Braddock Rd, Fairfax, VA 22032, USA",
                 "tournament_addrState": "VA"
+            },
+            {
+                "id": 590504,
+                "name": "Ultimate Singles",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 0,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1625169600,
+                "phaseGroups": [
+                    {
+                        "id": 1523514,
+                        "phase": {
+                            "id": 960001,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": [
+                            {
+                                "id": 6650466
+                            },
+                            {
+                                "id": 6650467
+                            },
+                            {
+                                "id": 6650468
+                            },
+                            {
+                                "id": 6650469
+                            },
+                            {
+                                "id": 6650470
+                            },
+                            {
+                                "id": 6650471
+                            },
+                            {
+                                "id": 6650472
+                            },
+                            {
+                                "id": 6650473
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1523515,
+                        "phase": {
+                            "id": 960002,
+                            "name": "Top 8"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Nerdtorch Cafe: ALabama (NAL) 5",
+                "tournament_id": 298285,
+                "city": "Opelika",
+                "url": "https://smash.gg/tournament/nerdtorch-cafe-alabama-nal-5",
+                "streams": null,
+                "timezone": null,
+                "tournament_startAt": 1625169600,
+                "tournament_endAt": 1625198400,
+                "tournament_registrationClosesAt": 1625221800,
+                "images": [
+                    {
+                        "id": "3637574",
+                        "url": "https://images.smash.gg/images/tournament/298285/image-4d5316f576b3e84d22a935a15d7d6e5b.png",
+                        "type": "profile"
+                    },
+                    {
+                        "id": "3637575",
+                        "url": "https://images.smash.gg/images/tournament/298285/image-c381889a4690746de6d528571e5dcbee.png",
+                        "type": "banner"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "225 S 8th St, Opelika, AL 36801, USA",
+                "tournament_addrState": "AL"
             },
             {
                 "id": 587902,
@@ -11413,7 +11529,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 23,
+                "numEntrants": 24,
                 "videogame": {
                     "id": 1386
                 },
@@ -11778,7 +11894,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 3,
+                "numEntrants": 4,
                 "videogame": {
                     "id": 1386
                 },
@@ -12298,7 +12414,7 @@
                 "name": "USF Summer Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 49,
+                "numEntrants": 50,
                 "videogame": {
                     "id": 1386
                 },
@@ -17187,7 +17303,7 @@
                 "name": "Super Smash Bros Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 0,
+                "numEntrants": 1,
                 "videogame": {
                     "id": 1386
                 },
@@ -20970,7 +21086,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 1,
+                "numEntrants": 3,
                 "videogame": {
                     "id": 1386
                 },
@@ -23290,7 +23406,7 @@
                 "name": "Ultimate Doubles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 23,
+                "numEntrants": 24,
                 "videogame": {
                     "id": 1386
                 },
@@ -24151,41 +24267,6 @@
                 "tournament_addrState": "OK"
             },
             {
-                "id": 588998,
-                "name": "Ultimate Singles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 2,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1624752000,
-                "phaseGroups": [
-                    {
-                        "id": 1520752,
-                        "phase": {
-                            "id": 957992,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Bring It Back Ult Weekly 7.0 NVS Is (Not) Dead",
-                "tournament_id": 297365,
-                "city": "Shelbyville",
-                "url": "https://smash.gg/tournament/bring-it-back-ult-weekly-7-0-nvs-is-not",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1624752000,
-                "tournament_endAt": 1624770000,
-                "tournament_registrationClosesAt": 1624770000,
-                "images": [],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "108 Lane Pkwy, Shelbyville, TN 37160, USA",
-                "tournament_addrState": "TN"
-            },
-            {
                 "id": 589217,
                 "name": "BHOP Bi-Weekly Series Super Smash Bros. Ultimate",
                 "isOnline": false,
@@ -24403,41 +24484,6 @@
                 "tournament_venueName": null,
                 "tournament_venueAddress": "2000 S Parkway St, Corinth, MS 38834, USA",
                 "tournament_addrState": "MS"
-            },
-            {
-                "id": 577747,
-                "name": "Smash Bros Doubles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 1,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1624752000,
-                "phaseGroups": [
-                    {
-                        "id": 1499537,
-                        "phase": {
-                            "id": 943059,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Share Stock",
-                "tournament_id": 289017,
-                "city": null,
-                "url": "https://smash.gg/tournament/share-stock-64",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1624752000,
-                "tournament_endAt": 1624768200,
-                "tournament_registrationClosesAt": 1624752000,
-                "images": [],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "South Carolina, USA",
-                "tournament_addrState": "SC"
             },
             {
                 "id": 586666,
