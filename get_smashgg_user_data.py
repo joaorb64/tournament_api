@@ -172,7 +172,7 @@ def fetchPlayerDo(currKey, playerIndex):
 					},
 				}
 			)
-			time.sleep(1)
+			time.sleep(10)
 
 			if resposta != None:
 				try:
