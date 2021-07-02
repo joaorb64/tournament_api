@@ -2771,7 +2771,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 34,
+                "numEntrants": 37,
                 "videogame": {
                     "id": 1386
                 },
@@ -2812,7 +2812,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -3188,7 +3188,7 @@
                 "name": "SSBU Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 30,
+                "numEntrants": 31,
                 "videogame": {
                     "id": 1386
                 },
@@ -3602,7 +3602,7 @@
                 "name": "Super Smash Brews",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 11,
+                "numEntrants": 13,
                 "videogame": {
                     "id": 1386
                 },
@@ -3889,7 +3889,7 @@
                 "name": "Don't Get Tilted Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 5,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -4040,7 +4040,16 @@
                     "id": 1386
                 },
                 "startAt": 1625328000,
-                "phaseGroups": [],
+                "phaseGroups": [
+                    {
+                        "id": 1508734,
+                        "phase": {
+                            "id": 949614,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
                 "tournament": "Get Yer Shots!",
                 "tournament_id": 293312,
                 "city": "Fredericksburg",
@@ -4835,11 +4844,129 @@
                 "tournament_addrState": "MO"
             },
             {
+                "id": 591135,
+                "name": "Singles Bracket",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 37,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1625342400,
+                "phaseGroups": [
+                    {
+                        "id": 1524455,
+                        "phase": {
+                            "id": 960775,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": [
+                            {
+                                "id": 6653040
+                            },
+                            {
+                                "id": 6653041
+                            },
+                            {
+                                "id": 6653042
+                            },
+                            {
+                                "id": 6653043
+                            },
+                            {
+                                "id": 6653044
+                            },
+                            {
+                                "id": 6653045
+                            },
+                            {
+                                "id": 6653046
+                            },
+                            {
+                                "id": 6653047
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1524456,
+                        "phase": {
+                            "id": 960776,
+                            "name": "Top 8"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Baecation #72 - an offline Smash Ultimate weekly",
+                "tournament_id": 298647,
+                "city": "Fullerton",
+                "url": "https://smash.gg/tournament/baecation-72-an-offline-smash-ultimate-weekly",
+                "streams": [
+                    {
+                        "streamName": "nopausetournaments"
+                    }
+                ],
+                "timezone": null,
+                "tournament_startAt": 1625342400,
+                "tournament_endAt": 1625360400,
+                "tournament_registrationClosesAt": 1625340600,
+                "images": [],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "250 Lehigh Valley Mall, Whitehall, PA 18052, USA",
+                "tournament_addrState": "PA"
+            },
+            {
+                "id": 590507,
+                "name": "Ultimate Singles",
+                "isOnline": false,
+                "state": "CREATED",
+                "numEntrants": 19,
+                "videogame": {
+                    "id": 1386
+                },
+                "startAt": 1625353200,
+                "phaseGroups": [
+                    {
+                        "id": 1523518,
+                        "phase": {
+                            "id": 960005,
+                            "name": "Bracket"
+                        },
+                        "progressionsOut": null
+                    }
+                ],
+                "tournament": "Don't Jump in the Pool #3",
+                "tournament_id": 298286,
+                "city": "Simpsonville",
+                "url": "https://smash.gg/tournament/don-t-jump-in-the-pool-3",
+                "streams": null,
+                "timezone": null,
+                "tournament_startAt": 1625342400,
+                "tournament_endAt": 1625371140,
+                "tournament_registrationClosesAt": 1625371140,
+                "images": [
+                    {
+                        "id": "3637617",
+                        "url": "https://images.smash.gg/images/tournament/298286/image-6feeaa655ed3acb7c926ef7508b9a6e7.png",
+                        "type": "profile"
+                    },
+                    {
+                        "id": "3637618",
+                        "url": "https://images.smash.gg/images/tournament/298286/image-f68b5a0cabe154bd1393893fbca68eef.png",
+                        "type": "banner"
+                    }
+                ],
+                "tournament_multievent": false,
+                "tournament_venueName": null,
+                "tournament_venueAddress": "118 Circle Slope Dr, Simpsonville, SC 29681, USA",
+                "tournament_addrState": "SC"
+            },
+            {
                 "id": 589029,
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 17,
+                "numEntrants": 18,
                 "videogame": {
                     "id": 1386
                 },
@@ -4915,124 +5042,6 @@
                 "tournament_venueName": null,
                 "tournament_venueAddress": "13592 Jefferson Davis Hwy, Woodbridge, VA 22191, USA",
                 "tournament_addrState": "VA"
-            },
-            {
-                "id": 590507,
-                "name": "Ultimate Singles",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 19,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1625353200,
-                "phaseGroups": [
-                    {
-                        "id": 1523518,
-                        "phase": {
-                            "id": 960005,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Don't Jump in the Pool #3",
-                "tournament_id": 298286,
-                "city": "Simpsonville",
-                "url": "https://smash.gg/tournament/don-t-jump-in-the-pool-3",
-                "streams": null,
-                "timezone": null,
-                "tournament_startAt": 1625342400,
-                "tournament_endAt": 1625371140,
-                "tournament_registrationClosesAt": 1625371140,
-                "images": [
-                    {
-                        "id": "3637617",
-                        "url": "https://images.smash.gg/images/tournament/298286/image-6feeaa655ed3acb7c926ef7508b9a6e7.png",
-                        "type": "profile"
-                    },
-                    {
-                        "id": "3637618",
-                        "url": "https://images.smash.gg/images/tournament/298286/image-f68b5a0cabe154bd1393893fbca68eef.png",
-                        "type": "banner"
-                    }
-                ],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "118 Circle Slope Dr, Simpsonville, SC 29681, USA",
-                "tournament_addrState": "SC"
-            },
-            {
-                "id": 591135,
-                "name": "Singles Bracket",
-                "isOnline": false,
-                "state": "CREATED",
-                "numEntrants": 37,
-                "videogame": {
-                    "id": 1386
-                },
-                "startAt": 1625342400,
-                "phaseGroups": [
-                    {
-                        "id": 1524455,
-                        "phase": {
-                            "id": 960775,
-                            "name": "Bracket"
-                        },
-                        "progressionsOut": [
-                            {
-                                "id": 6653040
-                            },
-                            {
-                                "id": 6653041
-                            },
-                            {
-                                "id": 6653042
-                            },
-                            {
-                                "id": 6653043
-                            },
-                            {
-                                "id": 6653044
-                            },
-                            {
-                                "id": 6653045
-                            },
-                            {
-                                "id": 6653046
-                            },
-                            {
-                                "id": 6653047
-                            }
-                        ]
-                    },
-                    {
-                        "id": 1524456,
-                        "phase": {
-                            "id": 960776,
-                            "name": "Top 8"
-                        },
-                        "progressionsOut": null
-                    }
-                ],
-                "tournament": "Baecation #72 - an offline Smash Ultimate weekly",
-                "tournament_id": 298647,
-                "city": "Fullerton",
-                "url": "https://smash.gg/tournament/baecation-72-an-offline-smash-ultimate-weekly",
-                "streams": [
-                    {
-                        "streamName": "nopausetournaments"
-                    }
-                ],
-                "timezone": null,
-                "tournament_startAt": 1625342400,
-                "tournament_endAt": 1625360400,
-                "tournament_registrationClosesAt": 1625340600,
-                "images": [],
-                "tournament_multievent": false,
-                "tournament_venueName": null,
-                "tournament_venueAddress": "250 Lehigh Valley Mall, Whitehall, PA 18052, USA",
-                "tournament_addrState": "PA"
             },
             {
                 "id": 590614,
@@ -5249,7 +5258,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 20,
+                "numEntrants": 21,
                 "videogame": {
                     "id": 1386
                 },
@@ -6396,7 +6405,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 0,
+                "numEntrants": 1,
                 "videogame": {
                     "id": 1386
                 },
@@ -7585,7 +7594,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 4,
+                "numEntrants": 5,
                 "videogame": {
                     "id": 1386
                 },
@@ -8306,7 +8315,7 @@
                 "name": "Waitlsit",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 2,
+                "numEntrants": 3,
                 "videogame": {
                     "id": 1386
                 },
@@ -8856,7 +8865,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -9536,7 +9545,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 3,
+                "numEntrants": 4,
                 "videogame": {
                     "id": 1386
                 },
@@ -9700,7 +9709,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 1,
+                "numEntrants": 2,
                 "videogame": {
                     "id": 1386
                 },
@@ -10023,7 +10032,7 @@
                 "name": "Small Point Smash Weekly",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 13,
+                "numEntrants": 14,
                 "videogame": {
                     "id": 1386
                 },
@@ -11486,7 +11495,7 @@
                 "name": "The Warm Up",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 39,
+                "numEntrants": 40,
                 "videogame": {
                     "id": 1386
                 },
@@ -11979,7 +11988,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 6,
+                "numEntrants": 7,
                 "videogame": {
                     "id": 1386
                 },
@@ -13559,7 +13568,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 54,
+                "numEntrants": 55,
                 "videogame": {
                     "id": 1386
                 },
@@ -17496,7 +17505,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 100,
+                "numEntrants": 101,
                 "videogame": {
                     "id": 1386
                 },
@@ -19141,7 +19150,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 175,
+                "numEntrants": 176,
                 "videogame": {
                     "id": 1386
                 },
@@ -19838,7 +19847,7 @@
                 "name": "Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 74,
+                "numEntrants": 76,
                 "videogame": {
                     "id": 1386
                 },
@@ -19961,7 +19970,7 @@
                 "name": "Smash Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 72,
+                "numEntrants": 73,
                 "videogame": {
                     "id": 1386
                 },
@@ -21600,7 +21609,7 @@
                 "name": "Ultimate Singles",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 25,
+                "numEntrants": 26,
                 "videogame": {
                     "id": 1386
                 },
@@ -25696,7 +25705,7 @@
                 "name": "Singles | FOS S2 - Weekly#10",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 16,
+                "numEntrants": 17,
                 "videogame": {
                     "id": 1386
                 },
@@ -25898,7 +25907,7 @@
                 "name": "Singles Tournament",
                 "isOnline": false,
                 "state": "CREATED",
-                "numEntrants": 128,
+                "numEntrants": 130,
                 "videogame": {
                     "id": 1386
                 },
