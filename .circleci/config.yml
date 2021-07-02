@@ -21,13 +21,41 @@ jobs:
             python get_league.py
             #python ranking_br.py
             python link_gen_allfiles.py
-            python get_smashgg_user_data.py
             python append_smasgg_cache_to_players.py
             python match_states.py
             python statistics.py
             python skill.py
             #python docs_after.py
             #python players_to_link.py
+      - run:
+          name: Commit data back to Github
+          command: |
+            git config user.email "joaorbezerra@hotmail.com"
+            git config user.name "tournamentapibot"
+            DATE_TODAY=$(date +"%Y-%m-%d")
+            git pull origin multigames
+            git add .
+            git commit -am "[skip ci] Full update ${DATE_TODAY}" || true
+            git push origin multigames || true
+  
+  update_smashgg:
+    docker:
+      - image: circleci/python:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install beautifulsoup4 joblib requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein trueskill
+      - run:
+          name: Update data
+          command: |
+            . venv/bin/activate
+            echo ${GCLOUD_SERVICE_KEY} | base64 --decode --ignore-garbage > credentials.json
+            echo ${AUTH} | base64 --decode --ignore-garbage > auth.json
+            python get_smashgg_user_data.py
       - run:
           name: Commit data back to Github
           command: |
@@ -108,6 +136,17 @@ workflows:
                 - multigames
     jobs:
       - update_data
+    
+  update_smashgg:
+    triggers:
+      - schedule:
+          cron: "0 4,10,16,22 * * *"
+          filters:
+            branches:
+              only:
+                - multigames
+    jobs:
+      - update_smashgg
   
   get_next_tournaments:
     triggers:

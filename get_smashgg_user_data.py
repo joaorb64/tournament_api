@@ -141,7 +141,7 @@ def fetchPlayerDo(currKey, playerIndex):
 				query user($userId: ID!) {
 					user(id: $userId) {
 						player {
-							sets(page: '''+str(i+1)+''', perPage: 10) {
+							sets(page: '''+str(i+1)+''', perPage: 10, entrantSize: 1, hideEmpty: true) {
 								nodes {
 									id
 									event {
@@ -172,7 +172,7 @@ def fetchPlayerDo(currKey, playerIndex):
 					},
 				}
 			)
-			time.sleep(5)
+			time.sleep(10)
 
 			if resposta != None:
 				try:
