@@ -146,7 +146,7 @@ def fetchPlayerDo(currKey, playerIndex):
 				query user($userId: ID!) {
 					user(id: $userId) {
 						player {
-							sets(page: '''+str(i+1)+''', perPage: 10, entrantSize: 1, hideEmpty: true) {
+							sets(page: '''+str(i+1)+''', perPage: 10, filters: {hideEmpty: true, showByes: false}) {
 								nodes {
 									id
 									event {
@@ -263,7 +263,12 @@ def fetchPlayerDo(currKey, playerIndex):
 					resp["character_usage"][charname_to_braacket.get(found["name"], found["name"])] = selections[character[0]]
 
 			try:
-				resp["latestSetId"] = resp["player"]["sets"]["nodes"][0]["id"]
+				latestSet = next(
+					(_set["id"] for _set in resp["player"]["sets"].get("nodes", {}) if _set.get("id", None) != None),
+					None
+				)
+				if latestSet != None:
+					resp["latestSetId"] = latestSet
 			except Exception as e:
 				print(e)
 
