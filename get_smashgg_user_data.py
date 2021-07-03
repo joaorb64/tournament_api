@@ -9,7 +9,7 @@ from collections import Counter
 import sys
 from threading import Thread, Lock
 
-LIMIT_PER_KEY = 10
+LIMIT_PER_KEY = 40
 
 if os.path.exists("auth.json"):
 	f = open('auth.json')

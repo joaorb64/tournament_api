@@ -76,7 +76,7 @@ def get_next_tournaments(game):
                     },
                 }
             )
-            time.sleep(1/len(SMASHGG_KEYS))
+            time.sleep(4/len(SMASHGG_KEYS))
             currentKey = (currentKey+1)%len(SMASHGG_KEYS)
 
             resp = json.loads(r.text)
