@@ -9,6 +9,8 @@ from collections import Counter
 import sys
 from threading import Thread, Lock
 
+LIMIT_PER_KEY = 10
+
 if os.path.exists("auth.json"):
 	f = open('auth.json')
 	auth_json = json.load(f)
@@ -25,6 +27,7 @@ def fetchPlayer(currKey):
 	
 	playerIndex = -1
 	finished = False
+	count = 0
 
 	while finished is False:
 		indexes = []
@@ -37,10 +40,12 @@ def fetchPlayer(currKey):
 		indexLock.release()
 
 		for playerIndex in indexes:
-			if playerIndex >= len(players):
+			if playerIndex >= len(players) or count >= LIMIT_PER_KEY:
 				finished = True
 				break
-			fetchPlayerDo(currKey, playerIndex)
+			ran = fetchPlayerDo(currKey, playerIndex)
+			if ran == True:
+				count += 1
 
 def fetchPlayerDo(currKey, playerIndex):
 	global leagues, tournaments, players, charname_to_braacket, cache, previous_cache, currentKey, smashgg_characters, gameconfig
@@ -48,12 +53,12 @@ def fetchPlayerDo(currKey, playerIndex):
 	print("Get smashgg data: "+str(playerIndex)+"/"+str(len(players)), end="\r")
 
 	if playerIndex >= len(players):
-		return
+		return False
 
 	player = players[playerIndex]
 
 	if "smashgg_id" not in player.keys():
-		return
+		return False
 	
 	# Get profile data and latest set
 	profileRequest = requests.post('https://api.smash.gg/gql/alpha',
@@ -272,7 +277,7 @@ def fetchPlayerDo(currKey, playerIndex):
 
 	cache[player["smashgg_id"]] = resp
 
-	return
+	return newSets
 
 def get_smashgg_data(game):
 	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, gameconfig, previous_cache, currentIndex, indexLock
