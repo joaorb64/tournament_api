@@ -161,6 +161,9 @@ def get_next_tournaments(game):
 
                 smash_ultimate_tournaments = 0
 
+                if tournament_data == None or tournament_data["events"] == None:
+                    continue
+
                 for event in tournament_data["events"]:
                     if event["videogame"]["id"] == config["smashgg_videogame_id"]:
                         smash_ultimate_tournaments += 1
