@@ -9,7 +9,7 @@ from collections import Counter
 import sys
 from threading import Thread, Lock
 
-LIMIT_PER_KEY = 40
+LIMIT_PER_KEY = 30
 
 if os.path.exists("auth.json"):
 	f = open('auth.json')
@@ -289,7 +289,7 @@ def get_smashgg_data(game):
 
 	currentKey = 0
 	cache = {}
-	currentIndex = 0
+	currentIndex = LoadSavedPos(game)
 	indexLock = Lock()
 
 	f = open('./games/'+game+'/config.json')
@@ -312,6 +312,9 @@ def get_smashgg_data(game):
 	original_players = json.load(f)
 	players = [p for p in original_players["players"] if p.get("smashgg_id", None) is not None]
 
+	if currentIndex >= len(players):
+		currentIndex = 0
+
 	threads = []
 
 	f = open('./games/'+game+'/charnames_smashgg_to_braacket.json')
@@ -328,9 +331,31 @@ def get_smashgg_data(game):
 	
 	for c in cache:
 		previous_cache[str(c)] = cache[c]
+	
+	SavePos(game, currentIndex)
 
 	with open('./out/'+game+'/smashgg_cache.json', 'w') as outfile:
 		json.dump(previous_cache, outfile, indent=4, sort_keys=True)
+	
+	with open('./out/'+game+'/smashgg_cache.json', 'w') as outfile:
+		json.dump(previous_cache, outfile, indent=4, sort_keys=True)
+
+def LoadSavedPos(game):
+	if os.path.exists("smashgg_cache_pos.json"):
+		f = open('smashgg_cache_pos.json')
+		pos_data = json.load(f)
+		if game in pos_data:
+			return pos_data[game]
+		return 0
+
+def SavePos(game, index):
+	f = open('smashgg_cache_pos.json')
+	pos_data = json.load(f)
+	pos_data[game] = index
+	
+	with open('smashgg_cache_pos.json', 'w') as outfile:
+		json.dump(pos_data, outfile, indent=4, sort_keys=True)
+
 
 if __name__ == "__main__":
 	games = os.listdir("./games")
@@ -341,4 +366,5 @@ if __name__ == "__main__":
 	else:
 		for game in games:
 			get_smashgg_data(game)
+			print("")
 			time.sleep(1)
