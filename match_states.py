@@ -8,20 +8,19 @@ def remove_accents_lower(input_str):
 	nfkd_form = unicodedata.normalize('NFKD', input_str)
 	return u"".join([c for c in nfkd_form if not unicodedata.combining(c)]).lower()
 
-f = open('cities.json')
-cities = json.load(f)
-
-f = open('countries+states.json')
+f = open('countries+states+cities.json')
 countries = json.load(f)
 
 cityToState = {}
 
-for c in cities:
-	if c["country_code"] not in cityToState:
-		cityToState[c["country_code"]] = {}
-	city_name = remove_accents_lower(c["name"])
-	if city_name not in cityToState[c["country_code"]]:
-		cityToState[c["country_code"]][city_name] = c["state_code"]
+for country in countries:
+	for state in country["states"]:
+		for c in state["cities"]:
+			if country["iso2"] not in cityToState:
+				cityToState[country["iso2"]] = {}
+			city_name = remove_accents_lower(c["name"])
+			if city_name not in cityToState[country["iso2"]]:
+				cityToState[country["iso2"]][city_name] = state["state_code"]
 
 def match_player_state(i, skipsize):
 	global players
