@@ -184,7 +184,7 @@ def get_next_tournaments(game):
                     event["tournament"] = tournament_data["name"]
                     event["tournament_id"] = tournament_data["id"]
                     event["city"] = tournament_data["city"]
-                    event["url"] = "https://smash.gg"+tournament_data["url"]+"/"+event["slug"]
+                    event["url"] = "https://smash.gg"+"/"+event["slug"]
                     event["streams"] = tournament_data["streams"]
                     event["timezone"] = tournament_data["timezone"]
                     event["tournament_startAt"] = tournament_data["startAt"]
