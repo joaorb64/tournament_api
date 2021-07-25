@@ -42,6 +42,13 @@ def get_next_tournaments(game):
     except Exception as e:
         print("No previous tournaments file")
 
+    weekTournaments = {}
+    try:
+        f = open('./out/'+game+'/week_tournaments.json')
+        weekTournaments = json.load(f)
+    except Exception as e:
+        print("No previous week tournaments file")
+
     page = 1
 
     tournaments = []
@@ -123,6 +130,8 @@ def get_next_tournaments(game):
                             venueName
                             venueAddress
                             addrState
+                            lat
+                            lng
                             events {
                                 id
                                 name
@@ -259,6 +268,9 @@ def get_next_tournaments(game):
 
             if not found and time.time() <= oldTournament["tournament_endAt"]:
                 tournaments.append(oldTournament)
+    
+    for tournament in tournaments:
+        weekTournaments[tournament["id"]] = tournament
 
     with open('./out/'+game+'/nexttournaments.json', 'w') as outfile:
         json.dump(
@@ -266,6 +278,9 @@ def get_next_tournaments(game):
             outfile,
             indent=4
         )
+    
+    with open('./out/'+game+'/week_tournaments.json', 'w') as outfile:
+        json.dump(weekTournaments, outfile, indent=4)
 
 if __name__ == "__main__":
     games = os.listdir("./games")
