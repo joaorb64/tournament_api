@@ -281,8 +281,8 @@ def get_next_tournaments(game):
             indent=4
         )
     
-    with open('./out/'+game+'/week_tournaments.json', 'w') as outfile:
-        json.dump(weekTournaments, outfile, indent=4)
+    #with open('./out/'+game+'/week_tournaments.json', 'w') as outfile:
+    #    json.dump(weekTournaments, outfile, indent=4)
 
 if __name__ == "__main__":
     games = os.listdir("./games")
