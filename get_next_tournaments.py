@@ -22,6 +22,8 @@ f = open('./countries+states+cities.json')
 countries_json = json.load(f)
 
 def get_next_tournaments(game):
+    print(game)
+
     currentKey = 0
 
     f = open('./games/'+game+'/config.json')
@@ -59,7 +61,7 @@ def get_next_tournaments(game):
                         filter: {
                             videogameIds: ['''+str(config["smashgg_videogame_id"])+'''],
                             upcoming: true,
-                            computedUpdatedAt: '''+str(int(updateTime))+'''
+                            computedUpdatedAt: '''+str(int(updateTime-datetime.timedelta(hours=1).total_seconds()))+'''
                         }
                     }) {
                     nodes {
