@@ -207,6 +207,8 @@ def get_next_tournaments(game):
                     event["tournament_venueAddress"] = tournament_data["venueAddress"]
                     event["tournament_addrState"] = tournament_data["addrState"]
                     event["country_code"] = tournament_data["countryCode"]
+                    event["lat"] = tournament_data["lat"]
+                    event["lng"] = tournament_data["lng"]
 
                     r = requests.get("https://api.smash.gg"+tournament_data["url"])
                     oldApiData = json.loads(r.text)
