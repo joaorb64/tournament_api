@@ -272,7 +272,18 @@ def get_next_tournaments(game):
                 tournaments.append(oldTournament)
     
     for tournament in tournaments:
-        weekTournaments[tournament["id"]] = tournament
+        weekTournaments[str(tournament["id"])] = tournament
+
+    # timestamp for week start
+    date = datetime.datetime.now()
+    this_week_start_dt = str(date-datetime.timedelta(days=date.weekday())).split()[0]
+    timestamp = time.mktime(datetime.datetime.strptime(this_week_start_dt, "%Y-%m-%d").timetuple())
+    weekstart = timestamp - 8 * 60 * 60
+
+    # remove tournaments past last week
+    for tournament in list(weekTournaments.items()):
+        if tournament[1]["startAt"] < weekstart:
+            weekTournaments.pop(tournament[0])
 
     with open('./out/'+game+'/nexttournaments.json', 'w') as outfile:
         json.dump(
@@ -281,8 +292,8 @@ def get_next_tournaments(game):
             indent=4
         )
     
-    #with open('./out/'+game+'/week_tournaments.json', 'w') as outfile:
-    #    json.dump(weekTournaments, outfile, indent=4)
+    with open('./out/'+game+'/week_tournaments.json', 'w') as outfile:
+        json.dump(weekTournaments, outfile, indent=4)
 
 if __name__ == "__main__":
     games = os.listdir("./games")
