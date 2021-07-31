@@ -24,6 +24,8 @@ countries_json = json.load(f)
 def gen_week_results(game):
     print(game)
 
+    weekResults = []
+
     currentKey = 0
 
     f = open('./games/'+game+'/config.json')
@@ -54,37 +56,59 @@ def gen_week_results(game):
 
     smashgg_characters = json.loads(requests.get("https://api.smash.gg/characters").text)
     
+    total = len(weekTournaments)
+    i = 1
+
     for tournament in weekTournaments.values():
-        if tournament["state"] == "COMPLETED":
-            r = requests.post(
-                'https://api.smash.gg/gql/alpha',
-                headers={
-                    'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
-                },
-                json={
-                    'query': '''
-                    query PlayerSetsInEvent($eventId: ID!) {
-                        event(id: $eventId) {
-                            standings(query: {page: 1, perPage: 1}){
-                                nodes {
-                                    placement
-                                    entrant {
-                                        id
-                                    }
+        print(str(i)+"/"+str(total), end="\r")
+        i+=1
+
+        if not tournament.get("lat") and not tournament.get("lng") and not tournament.get("country_code"):
+            continue
+
+        r = requests.post(
+            'https://api.smash.gg/gql/alpha',
+            headers={
+                'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+            },
+            json={
+                'query': '''
+                query PlayerSetsInEvent($eventId: ID!) {
+                    event(id: $eventId) {
+                        state
+                        type
+                        numEntrants
+                        standings(query: {page: 1, perPage: 1}){
+                            nodes {
+                                placement
+                                entrant {
+                                    id
+                                    name
                                 }
                             }
                         }
-                    },
-                    ''',
-                    'variables': {
-                    "eventId": tournament["id"]
-                    },
-                }
-            )
-            resp = json.loads(r.text)
-            time.sleep(1/len(SMASHGG_KEYS))
-            currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+                    }
+                },
+                ''',
+                'variables': {
+                "eventId": tournament["id"]
+                },
+            }
+        )
+        resp = json.loads(r.text)
+        time.sleep(1/len(SMASHGG_KEYS))
+        currentKey = (currentKey+1)%len(SMASHGG_KEYS)
 
+        if resp == None or resp.get("data") == None or resp.get("data").get("event") == None:
+            continue
+    
+        numEntrants = resp.get("data", {}).get("event", {}).get("numEntrants")
+
+        if not numEntrants or numEntrants < 8:
+            continue
+
+        if resp.get("data", {}).get("event", {}).get("state") == "COMPLETED" \
+            and resp.get("data").get("event").get("type") == 1:
             winner = resp.get("data").get("event").get("standings").get("nodes")[0]
             entrantId = winner.get("entrant").get("id")
 
@@ -123,9 +147,7 @@ def gen_week_results(game):
                 }
             )
             resp = json.loads(r.text)
-            print(resp)
             char_data = resp.get("data")
-            print(char_data)
             time.sleep(1/len(SMASHGG_KEYS))
             currentKey = (currentKey+1)%len(SMASHGG_KEYS)
 
@@ -133,14 +155,13 @@ def gen_week_results(game):
                 char_data = char_data.get("event").get("sets").get("nodes")
             else:
                 print("Error fetching character data? -- cancel")
-                continue
 
             char_usage = {}
 
             # Char usage
-            for game in char_data:
-                if game.get("games"):
-                    for selection in game.get("games"):
+            for _game in char_data:
+                if _game.get("games"):
+                    for selection in _game.get("games"):
                         if selection.get("selections"):
                             for selection_entry in selection.get("selections"):
                                 if selection_entry["entrant"]["id"] == entrantId:
@@ -155,7 +176,7 @@ def gen_week_results(game):
             char_in_json = None
 
             for char in char_usage.items():
-                char_in_json = next((c for c in smashgg_characters["character"] if c["id"] == char[0]), None)
+                char_in_json = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == char[0]), None)
 
             if char_in_json:
                 char_usage_named[char_in_json["name"]] = {}
@@ -163,7 +184,28 @@ def gen_week_results(game):
                 char_usage_named[char_in_json["name"]]["usage"] = char[1]
                 char_usage_named[char_in_json["name"]]["icon"] = char_in_json.get("images")[1].get("url")
             
-            print(char_usage_named)
+            if tournament.get("lat") == None or tournament.get("lng") == None:
+                if tournament.get("country_code"):
+                    country = next((c for c in countries_json if c["iso2"] == tournament.get("country_code")), None)
+                    if country:
+                        tournament["lat"] = country["latitude"]
+                        tournament["lng"] = country["longitude"]
+
+            weekResults.append({
+                "winner": winner.get("entrant").get("name"),
+                "char_usage": char_usage_named,
+                "lat": tournament.get("lat"),
+                "lng": tournament.get("lng"),
+                "country_code": tournament.get("country_code"),
+                "isOnline": tournament.get("isOnline"),
+                "numEntrants": numEntrants,
+                "url": tournament.get("url")
+            })
+        
+    with open('./out/'+game+'/week_tournament_results.json', 'w') as outfile:
+        json.dump(weekResults, outfile, indent=4)
+    
+    print("OK")
 
 if __name__ == "__main__":
     games = os.listdir("./games")
