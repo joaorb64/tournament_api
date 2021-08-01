@@ -227,6 +227,7 @@ def gen_week_results(game):
     with open('./out/'+game+'/week_tournament_results.json', 'w') as outfile:
         json.dump(weekResults, outfile, indent=4)
     
+    print()
     print("OK")
 
 if __name__ == "__main__":
