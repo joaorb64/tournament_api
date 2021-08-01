@@ -33,6 +33,9 @@ def gen_week_results(game):
 
     f = open('./games/'+game+'/next_tournaments_countries.json')
     countries = json.load(f)
+
+    f = open('./out/'+game+'/smashgg_cache.json')
+    smashgg_cache = json.load(f)
     
     oldTournaments = {}
     updateTime = 0
@@ -84,6 +87,11 @@ def gen_week_results(game):
                                 entrant {
                                     id
                                     name
+                                    participants {
+                                        user {
+                                            id
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -111,6 +119,11 @@ def gen_week_results(game):
             and resp.get("data").get("event").get("type") == 1:
             winner = resp.get("data").get("event").get("standings").get("nodes")[0]
             entrantId = winner.get("entrant").get("id")
+
+            participant = winner.get("entrant", {}).get("participants", [{}])[0].get("user", {})
+
+            if participant is not None:
+                userId = participant.get("id")
 
             r = requests.post(
                 'https://api.smash.gg/gql/alpha',
@@ -178,12 +191,18 @@ def gen_week_results(game):
             for char in char_usage.items():
                 char_in_json = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == char[0]), None)
 
-            if char_in_json:
-                char_usage_named[char_in_json["name"]] = {}
-                char_usage_named[char_in_json["name"]]["name"] = char_in_json["name"]
-                char_usage_named[char_in_json["name"]]["usage"] = char[1]
-                char_usage_named[char_in_json["name"]]["icon"] = char_in_json.get("images")[1].get("url")
+                if char_in_json:
+                    char_usage_named[charname_to_braacket.get(char_in_json["name"])] = char[1]
             
+            if len(char_usage_named.keys()) == 0:
+                if userId is not None and str(userId) in smashgg_cache:
+                    char_usage_named = smashgg_cache[str(userId)].get("character_usage")
+            
+            character = None
+
+            if len(char_usage_named.keys()) > 0:
+                character = sorted(char_usage_named.items(), key = lambda t: t[1])[-1][0]
+
             if tournament.get("lat") == None or tournament.get("lng") == None:
                 if tournament.get("country_code"):
                     country = next((c for c in countries_json if c["iso2"] == tournament.get("country_code")), None)
@@ -193,13 +212,16 @@ def gen_week_results(game):
 
             weekResults.append({
                 "winner": winner.get("entrant").get("name"),
-                "char_usage": char_usage_named,
+                "character": character,
                 "lat": tournament.get("lat"),
                 "lng": tournament.get("lng"),
                 "country_code": tournament.get("country_code"),
                 "isOnline": tournament.get("isOnline"),
                 "numEntrants": numEntrants,
-                "url": tournament.get("url")
+                "url": tournament.get("url"),
+                "name": tournament.get("name"),
+                "tournament": tournament.get("tournament"),
+                "tournament_multievent": tournament.get("tournament_multievent")
             })
         
     with open('./out/'+game+'/week_tournament_results.json', 'w') as outfile:
