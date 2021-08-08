@@ -227,7 +227,7 @@ def skill(game):
                     "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
 
     with open('./out/'+game+'/allplayers.json', 'w') as outfile:
-        json.dump(allplayers, outfile, indent=4, sort_keys=True)
+        json.dump(allplayers, outfile, separators=(',', ":"), sort_keys=True)
 
     with open('./out/'+game+'/ts_env.json', 'w') as outfile:
         json.dump({

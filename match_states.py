@@ -93,7 +93,7 @@ def match_states(game):
 		t.join()
 
 	with open('./out/'+game+'/allplayers.json', 'w') as outfile:
-		json.dump(players, outfile, indent=4, sort_keys=True)
+		json.dump(players, outfile, separators=(',', ":"), sort_keys=True)
 
 if __name__ == "__main__":
 	games = os.listdir("./games")

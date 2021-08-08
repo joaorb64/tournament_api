@@ -335,10 +335,7 @@ def get_smashgg_data(game):
 	SavePos(game, currentIndex)
 
 	with open('./out/'+game+'/smashgg_cache.json', 'w') as outfile:
-		json.dump(previous_cache, outfile, indent=4, sort_keys=True)
-	
-	with open('./out/'+game+'/smashgg_cache.json', 'w') as outfile:
-		json.dump(previous_cache, outfile, indent=4, sort_keys=True)
+		json.dump(previous_cache, outfile, separators=(',', ":"), sort_keys=True)
 
 def LoadSavedPos(game):
 	if os.path.exists("smashgg_cache_pos.json"):
