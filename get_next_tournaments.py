@@ -275,10 +275,8 @@ def get_next_tournaments(game):
         weekTournaments[str(tournament["id"])] = tournament
 
     # timestamp for week start
-    date = datetime.datetime.now()
-    this_week_start_dt = str(date-datetime.timedelta(days=date.weekday())).split()[0]
-    timestamp = time.mktime(datetime.datetime.strptime(this_week_start_dt, "%Y-%m-%d").timetuple())
-    weekstart = timestamp - 8 * 60 * 60
+    today = datetime.date.today()
+    weekstart = time.mktime((today - datetime.timedelta(days=today.weekday()+1)).timetuple())
 
     # remove tournaments past last week
     for tournament in list(weekTournaments.items()):
