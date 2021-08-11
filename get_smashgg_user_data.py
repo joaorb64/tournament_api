@@ -9,7 +9,9 @@ from collections import Counter
 import sys
 from threading import Thread, Lock
 
-LIMIT_PER_KEY = 20
+timeStart = time.time()
+
+LIMIT_PER_KEY = 30
 
 if os.path.exists("auth.json"):
 	f = open('auth.json')
@@ -31,7 +33,7 @@ def fetchPlayer(currKey):
 
 	while finished is False:
 		indexes = []
-		size = 50
+		size = 1
 
 		indexLock.acquire()
 		for i in range(size):
@@ -40,7 +42,8 @@ def fetchPlayer(currKey):
 		indexLock.release()
 
 		for playerIndex in indexes:
-			if playerIndex >= len(players) or count >= LIMIT_PER_KEY:
+			elapsedTime = (time.time() - timeStart)/60/60 # stop at 1h30
+			if playerIndex >= len(players) or count >= LIMIT_PER_KEY or elapsedTime > 1.5:
 				finished = True
 				break
 			ran = fetchPlayerDo(currKey, playerIndex)
