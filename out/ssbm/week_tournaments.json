@@ -9976,7 +9976,7 @@
         "slug": "tournament/sharkadian-the-runback/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -9986,7 +9986,28 @@
                 "id": 1555150,
                 "phase": {
                     "id": 983828,
-                    "name": "Bracket"
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 6776928
+                    },
+                    {
+                        "id": 6776929
+                    },
+                    {
+                        "id": 6776930
+                    },
+                    {
+                        "id": 6776931
+                    }
+                ]
+            },
+            {
+                "id": 1557115,
+                "phase": {
+                    "id": 985184,
+                    "name": "Top 8"
                 },
                 "progressionsOut": null
             }
@@ -10025,7 +10046,7 @@
         "name": "Melee Singles",
         "slug": "tournament/tfc-locals-weekly-13/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "COMPLETED",
         "numEntrants": 4,
         "videogame": {
             "id": 1
@@ -15732,5 +15753,105 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "610376": {
+        "id": 610376,
+        "name": "Singles",
+        "slug": "tournament/queer-european-melee-tournament-5/event/singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1629651600,
+        "phaseGroups": [
+            {
+                "id": 1557118,
+                "phase": {
+                    "id": 985187,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Queer European Melee Tournament 5",
+        "tournament_id": 309988,
+        "city": null,
+        "url": "https://smash.gg/tournament/queer-european-melee-tournament-5/event/singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1629651600,
+        "tournament_endAt": 1629669540,
+        "tournament_registrationClosesAt": 1629650700,
+        "images": [
+            {
+                "id": "3790254",
+                "url": "https://images.smash.gg/images/tournament/309988/image-56306eecae757ec0e288cfd6d677cd67.png",
+                "type": "profile"
+            },
+            {
+                "id": "3790255",
+                "url": "https://images.smash.gg/images/tournament/309988/image-f82fca64a46120edafafc46614ff423d.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "610372": {
+        "id": 610372,
+        "name": "Melee Singles",
+        "slug": "tournament/nca-september-2021/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1632643200,
+        "phaseGroups": [
+            {
+                "id": 1557113,
+                "phase": {
+                    "id": 985182,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "NCA September 2021",
+        "tournament_id": 309986,
+        "city": "Sankt P\u00f6lten",
+        "url": "https://smash.gg/tournament/nca-september-2021/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1632643200,
+        "tournament_endAt": 1632682800,
+        "tournament_registrationClosesAt": 1632641400,
+        "images": [
+            {
+                "id": "3790196",
+                "url": "https://images.smash.gg/images/tournament/309986/image-8075b1b417bacc320dcd1a7215397b9c.png",
+                "type": "profile"
+            },
+            {
+                "id": "3790232",
+                "url": "https://images.smash.gg/images/tournament/309986/image-6a12e8e86264e28b67bf300fdd0b924a.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Josefstra\u00dfe 29b, 3100 St. P\u00f6lten, \u00d6sterreich",
+        "tournament_addrState": "Nieder\u00f6sterreich",
+        "country_code": "AT",
+        "lat": 48.197335,
+        "lng": 15.6225024
     }
 }
