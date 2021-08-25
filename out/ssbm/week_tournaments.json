@@ -7967,7 +7967,7 @@
         "name": "Melee Doubles - 2v2",
         "slug": "tournament/s-lt-290/event/melee-doubles-2v2",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -7989,7 +7989,7 @@
         "name": "Melee Singles - 1v1",
         "slug": "tournament/s-lt-290/event/melee-singles-1v1",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 26,
         "videogame": {
             "id": 1
@@ -13326,7 +13326,7 @@
         "name": "Melee Singles",
         "slug": "tournament/battle-city-melee-3/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 14,
         "videogame": {
             "id": 1
@@ -15483,7 +15483,7 @@
         "name": "Bowser's Battlefield Event #01",
         "slug": "tournament/bowser-s-battlefield-event-01-1/event/bowser-s-battlefield-event-01",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -15495,6 +15495,14 @@
                 "phase": {
                     "id": 987400,
                     "name": "Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 1560153,
+                "phase": {
+                    "id": 987506,
+                    "name": "top 4"
                 },
                 "progressionsOut": null
             }
@@ -15591,5 +15599,92 @@
             "CA",
             "MX"
         ]
+    },
+    "612236": {
+        "id": 612236,
+        "name": "Melee singles",
+        "slug": "tournament/spudfest-12/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1630112400,
+        "phaseGroups": [
+            {
+                "id": 1560150,
+                "phase": {
+                    "id": 987503,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 6787273
+                    },
+                    {
+                        "id": 6787274
+                    },
+                    {
+                        "id": 6787275
+                    },
+                    {
+                        "id": 6787276
+                    },
+                    {
+                        "id": 6787277
+                    },
+                    {
+                        "id": 6787278
+                    },
+                    {
+                        "id": 6787279
+                    },
+                    {
+                        "id": 6787280
+                    }
+                ]
+            },
+            {
+                "id": 1560151,
+                "phase": {
+                    "id": 987504,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Spudfest 12",
+        "tournament_id": 311041,
+        "city": null,
+        "url": "https://smash.gg/tournament/spudfest-12/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "pilotssbm"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1630112400,
+        "tournament_endAt": 1630134000,
+        "tournament_registrationClosesAt": 1630110600,
+        "images": [
+            {
+                "id": "3804142",
+                "url": "https://images.smash.gg/images/tournament/311041/image-e7e0fd970db30c1afc1329a44d7b22ba.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "3804143",
+                "url": "https://images.smash.gg/images/tournament/311041/image-31afac17f6efd4215b13deb5251804bb.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "",
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
