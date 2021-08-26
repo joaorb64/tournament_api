@@ -1,5 +1,5 @@
 {
-    "updateTime": 1629936476,
+    "updateTime": 1629940084,
     "events": [
         {
             "id": 611007,
@@ -500,6 +500,28 @@
             ]
         },
         {
+            "id": 610113,
+            "name": "Melee Singles",
+            "slug": "tournament/jrgb-fgc-night-11/event/melee-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1629936000,
+            "phaseGroups": [
+                {
+                    "id": 1556592,
+                    "phase": {
+                        "id": 984846,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 610918,
             "name": "Melee Singles",
             "slug": "tournament/the-nightclub-s1e5-os-nyc/event/melee-singles",
@@ -548,8 +570,8 @@
             "name": "Melee singles",
             "slug": "tournament/phazer-kraze-10/event/melee-singles",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 6,
+            "state": "ACTIVE",
+            "numEntrants": 7,
             "videogame": {
                 "id": 1
             },
@@ -815,41 +837,123 @@
             "name": "Melee Singles",
             "slug": "tournament/skrimish-singles-1/event/melee-singles",
             "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 5,
+            "state": "ACTIVE",
+            "numEntrants": 6,
             "videogame": {
                 "id": 1
             },
             "startAt": 1629937800,
             "phaseGroups": [
                 {
-                    "id": 1560322,
+                    "id": 1560698,
                     "phase": {
-                        "id": 987594,
+                        "id": 987898,
+                        "name": "Round Robin Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6789436
+                        },
+                        {
+                            "id": 6789437
+                        },
+                        {
+                            "id": 6789438
+                        },
+                        {
+                            "id": 6789439
+                        },
+                        {
+                            "id": 6789440
+                        },
+                        {
+                            "id": 6789441
+                        }
+                    ]
+                },
+                {
+                    "id": 1560699,
+                    "phase": {
+                        "id": 987899,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "Skrimish Singles #1",
-            "tournament_id": 311065,
-            "city": null,
-            "url": "https://smash.gg/tournament/skrimish-singles-1/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1629936000,
-            "tournament_endAt": 1630004460,
-            "tournament_registrationClosesAt": 1629937800,
-            "images": [
+            ]
+        },
+        {
+            "id": 609955,
+            "name": "Melee Singles: EC & WC Bracket",
+            "slug": "tournament/garbage-connection-free-trash-5/event/melee-singles-ec-wc-bracket",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 35,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1629940500,
+            "phaseGroups": [
                 {
-                    "id": "3804408",
-                    "url": "https://images.smash.gg/images/tournament/311065/image-a7f49538b2cbd522c6e584d8a4b33e0a.jpg",
-                    "type": "profile"
+                    "id": 1556318,
+                    "phase": {
+                        "id": 984644,
+                        "name": "Singles Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6773668
+                        },
+                        {
+                            "id": 6773669
+                        },
+                        {
+                            "id": 6773670
+                        },
+                        {
+                            "id": 6773671
+                        },
+                        {
+                            "id": 6773672
+                        },
+                        {
+                            "id": 6773673
+                        },
+                        {
+                            "id": 6773674
+                        },
+                        {
+                            "id": 6773675
+                        }
+                    ]
                 },
                 {
-                    "id": "3804409",
-                    "url": "https://images.smash.gg/images/tournament/311065/image-41ae3cb4df36a3efe780d818395aa472.png",
+                    "id": 1556319,
+                    "phase": {
+                        "id": 984645,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Garbage Connection: Free Trash #5",
+            "tournament_id": 309712,
+            "city": null,
+            "url": "https://smash.gg/tournament/garbage-connection-free-trash-5/event/melee-singles-ec-wc-bracket",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1629940500,
+            "tournament_endAt": 1629960600,
+            "tournament_registrationClosesAt": 1629940200,
+            "images": [
+                {
+                    "id": "3787378",
+                    "url": "https://images.smash.gg/images/tournament/309712/image-21cfb3b99a2bd49174640358f6673b57.png",
                     "type": "banner"
+                },
+                {
+                    "id": "3787379",
+                    "url": "https://images.smash.gg/images/tournament/309712/image-8b40cee783f50467676a0c1f55a5fa23.png",
+                    "type": "profile"
                 }
             ],
             "tournament_multievent": false,
@@ -866,7 +970,7 @@
             "slug": "tournament/hotsauce-weekly-162/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 2,
+            "numEntrants": 3,
             "videogame": {
                 "id": 1
             },
@@ -965,12 +1069,395 @@
             "lng": -85.12456600000002
         },
         {
+            "id": 612569,
+            "name": "Melee Doubles",
+            "slug": "tournament/arcade-legacy-melee-weekly-8-26-21/event/melee-doubles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1630020600,
+            "phaseGroups": [
+                {
+                    "id": 1560716,
+                    "phase": {
+                        "id": 987908,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Arcade Legacy Melee Weekly: 8/26/21",
+            "tournament_id": 311268,
+            "city": "Fairfield",
+            "url": "https://smash.gg/tournament/arcade-legacy-melee-weekly-8-26-21/event/melee-doubles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1630020600,
+            "tournament_endAt": 1630036740,
+            "tournament_registrationClosesAt": 1630036740,
+            "images": [
+                {
+                    "id": "3807814",
+                    "url": "https://images.smash.gg/images/tournament/311268/image-65f058ed8afb35791a823eda0a6321d7.png",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "662 Cincinnati Mills Dr, Fairfield, OH 45014, USA",
+            "tournament_addrState": "OH",
+            "country_code": "US",
+            "lat": 39.303738,
+            "lng": -84.5204375
+        },
+        {
+            "id": 612568,
+            "name": "Melee Singles",
+            "slug": "tournament/arcade-legacy-melee-weekly-8-26-21/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1630020600,
+            "phaseGroups": [
+                {
+                    "id": 1560715,
+                    "phase": {
+                        "id": 987907,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Arcade Legacy Melee Weekly: 8/26/21",
+            "tournament_id": 311268,
+            "city": "Fairfield",
+            "url": "https://smash.gg/tournament/arcade-legacy-melee-weekly-8-26-21/event/melee-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1630020600,
+            "tournament_endAt": 1630036740,
+            "tournament_registrationClosesAt": 1630036740,
+            "images": [
+                {
+                    "id": "3807814",
+                    "url": "https://images.smash.gg/images/tournament/311268/image-65f058ed8afb35791a823eda0a6321d7.png",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "662 Cincinnati Mills Dr, Fairfield, OH 45014, USA",
+            "tournament_addrState": "OH",
+            "country_code": "US",
+            "lat": 39.303738,
+            "lng": -84.5204375
+        },
+        {
+            "id": 606813,
+            "name": "Melee Singles Invitational",
+            "slug": "tournament/friday-night-melee-8-27-2021-sponsorship-tournament/event/melee-singles-invitational",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 40,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1630110600,
+            "phaseGroups": [
+                {
+                    "id": 1551067,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753123
+                        },
+                        {
+                            "id": 6753131
+                        },
+                        {
+                            "id": 6753139
+                        },
+                        {
+                            "id": 6753147
+                        },
+                        {
+                            "id": 6753155
+                        }
+                    ]
+                },
+                {
+                    "id": 1551068,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753124
+                        },
+                        {
+                            "id": 6753132
+                        },
+                        {
+                            "id": 6753140
+                        },
+                        {
+                            "id": 6753148
+                        },
+                        {
+                            "id": 6753156
+                        }
+                    ]
+                },
+                {
+                    "id": 1551069,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753125
+                        },
+                        {
+                            "id": 6753133
+                        },
+                        {
+                            "id": 6753141
+                        },
+                        {
+                            "id": 6753149
+                        },
+                        {
+                            "id": 6753157
+                        }
+                    ]
+                },
+                {
+                    "id": 1551070,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753126
+                        },
+                        {
+                            "id": 6753134
+                        },
+                        {
+                            "id": 6753142
+                        },
+                        {
+                            "id": 6753150
+                        },
+                        {
+                            "id": 6753158
+                        }
+                    ]
+                },
+                {
+                    "id": 1551071,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753127
+                        },
+                        {
+                            "id": 6753135
+                        },
+                        {
+                            "id": 6753143
+                        },
+                        {
+                            "id": 6753151
+                        },
+                        {
+                            "id": 6753159
+                        }
+                    ]
+                },
+                {
+                    "id": 1551072,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753128
+                        },
+                        {
+                            "id": 6753136
+                        },
+                        {
+                            "id": 6753144
+                        },
+                        {
+                            "id": 6753152
+                        },
+                        {
+                            "id": 6753160
+                        }
+                    ]
+                },
+                {
+                    "id": 1551073,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753129
+                        },
+                        {
+                            "id": 6753137
+                        },
+                        {
+                            "id": 6753145
+                        },
+                        {
+                            "id": 6753153
+                        },
+                        {
+                            "id": 6753161
+                        }
+                    ]
+                },
+                {
+                    "id": 1551074,
+                    "phase": {
+                        "id": 980620,
+                        "name": "Seeding"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753130
+                        },
+                        {
+                            "id": 6753138
+                        },
+                        {
+                            "id": 6753146
+                        },
+                        {
+                            "id": 6753154
+                        },
+                        {
+                            "id": 6753162
+                        }
+                    ]
+                },
+                {
+                    "id": 1551075,
+                    "phase": {
+                        "id": 980621,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 1551076,
+                    "phase": {
+                        "id": 980622,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753163
+                        },
+                        {
+                            "id": 6753165
+                        },
+                        {
+                            "id": 6753167
+                        },
+                        {
+                            "id": 6753169
+                        }
+                    ]
+                },
+                {
+                    "id": 1551077,
+                    "phase": {
+                        "id": 980622,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6753164
+                        },
+                        {
+                            "id": 6753166
+                        },
+                        {
+                            "id": 6753168
+                        },
+                        {
+                            "id": 6753170
+                        }
+                    ]
+                }
+            ],
+            "tournament": "Friday Night Melee 8/27/2021: Sponsorship Tournament",
+            "tournament_id": 307596,
+            "city": null,
+            "url": "https://smash.gg/tournament/friday-night-melee-8-27-2021-sponsorship-tournament/event/melee-singles-invitational",
+            "streams": [
+                {
+                    "streamName": "CreestabGaming"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1630105200,
+            "tournament_endAt": 1630134000,
+            "tournament_registrationClosesAt": 1630112400,
+            "images": [
+                {
+                    "id": "3756942",
+                    "url": "https://images.smash.gg/images/tournament/307596/image-cccce7eb91d3ad81e4e54a6ab3b7e871.jpg",
+                    "type": "banner"
+                },
+                {
+                    "id": "3756943",
+                    "url": "https://images.smash.gg/images/tournament/307596/image-78ef4cf1f9f6c8fef28b98454a35877c.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "",
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": 54.5259614,
+            "lng": -105.2551187,
+            "region_lock": [
+                "CA",
+                "US",
+                "MX"
+            ]
+        },
+        {
             "id": 612539,
             "name": "Melee Singles",
             "slug": "tournament/brewhall-brawl-2/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 4,
+            "numEntrants": 11,
             "videogame": {
                 "id": 1
             },
@@ -1343,66 +1830,6 @@
             "country_code": null,
             "lat": null,
             "lng": null
-        },
-        {
-            "id": 610113,
-            "name": "Melee Singles",
-            "slug": "tournament/jrgb-fgc-night-11/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 2,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1629936000,
-            "phaseGroups": [
-                {
-                    "id": 1556592,
-                    "phase": {
-                        "id": 984846,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "JRGB FGC Night #11",
-            "tournament_id": 309827,
-            "city": "Orlando",
-            "url": "https://smash.gg/tournament/jrgb-fgc-night-11/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "JuicyGameNight"
-                },
-                {
-                    "streamName": "JuicyGameNight2"
-                },
-                {
-                    "streamName": "kingkaifl"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1629932400,
-            "tournament_endAt": 1629946800,
-            "tournament_registrationClosesAt": 1629939600,
-            "images": [
-                {
-                    "id": "3788493",
-                    "url": "https://images.smash.gg/images/tournament/309827/image-5ac3e44943e0f9638225bb62ca30b82c.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "3790894",
-                    "url": "https://images.smash.gg/images/tournament/309827/image-b9a571adcae71e10eb69dccb0c4bb372.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "9938 Universal Blvd, Orlando, FL 32819, USA",
-            "tournament_addrState": "FL",
-            "country_code": "US",
-            "lat": 28.4262885,
-            "lng": -81.4444219
         },
         {
             "id": 612422,
@@ -4934,299 +5361,6 @@
             "lng": -84.2886545
         },
         {
-            "id": 606813,
-            "name": "Melee Singles Invitational",
-            "slug": "tournament/friday-night-melee-8-27-2021-sponsorship-tournament/event/melee-singles-invitational",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 40,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1630110600,
-            "phaseGroups": [
-                {
-                    "id": 1551067,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753123
-                        },
-                        {
-                            "id": 6753131
-                        },
-                        {
-                            "id": 6753139
-                        },
-                        {
-                            "id": 6753147
-                        },
-                        {
-                            "id": 6753155
-                        }
-                    ]
-                },
-                {
-                    "id": 1551068,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753124
-                        },
-                        {
-                            "id": 6753132
-                        },
-                        {
-                            "id": 6753140
-                        },
-                        {
-                            "id": 6753148
-                        },
-                        {
-                            "id": 6753156
-                        }
-                    ]
-                },
-                {
-                    "id": 1551069,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753125
-                        },
-                        {
-                            "id": 6753133
-                        },
-                        {
-                            "id": 6753141
-                        },
-                        {
-                            "id": 6753149
-                        },
-                        {
-                            "id": 6753157
-                        }
-                    ]
-                },
-                {
-                    "id": 1551070,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753126
-                        },
-                        {
-                            "id": 6753134
-                        },
-                        {
-                            "id": 6753142
-                        },
-                        {
-                            "id": 6753150
-                        },
-                        {
-                            "id": 6753158
-                        }
-                    ]
-                },
-                {
-                    "id": 1551071,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753127
-                        },
-                        {
-                            "id": 6753135
-                        },
-                        {
-                            "id": 6753143
-                        },
-                        {
-                            "id": 6753151
-                        },
-                        {
-                            "id": 6753159
-                        }
-                    ]
-                },
-                {
-                    "id": 1551072,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753128
-                        },
-                        {
-                            "id": 6753136
-                        },
-                        {
-                            "id": 6753144
-                        },
-                        {
-                            "id": 6753152
-                        },
-                        {
-                            "id": 6753160
-                        }
-                    ]
-                },
-                {
-                    "id": 1551073,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753129
-                        },
-                        {
-                            "id": 6753137
-                        },
-                        {
-                            "id": 6753145
-                        },
-                        {
-                            "id": 6753153
-                        },
-                        {
-                            "id": 6753161
-                        }
-                    ]
-                },
-                {
-                    "id": 1551074,
-                    "phase": {
-                        "id": 980620,
-                        "name": "Seeding"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753130
-                        },
-                        {
-                            "id": 6753138
-                        },
-                        {
-                            "id": 6753146
-                        },
-                        {
-                            "id": 6753154
-                        },
-                        {
-                            "id": 6753162
-                        }
-                    ]
-                },
-                {
-                    "id": 1551075,
-                    "phase": {
-                        "id": 980621,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                },
-                {
-                    "id": 1551076,
-                    "phase": {
-                        "id": 980622,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753163
-                        },
-                        {
-                            "id": 6753165
-                        },
-                        {
-                            "id": 6753167
-                        },
-                        {
-                            "id": 6753169
-                        }
-                    ]
-                },
-                {
-                    "id": 1551077,
-                    "phase": {
-                        "id": 980622,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6753164
-                        },
-                        {
-                            "id": 6753166
-                        },
-                        {
-                            "id": 6753168
-                        },
-                        {
-                            "id": 6753170
-                        }
-                    ]
-                }
-            ],
-            "tournament": "Friday Night Melee 8/27/2021: Sponsorship Tournament",
-            "tournament_id": 307596,
-            "city": null,
-            "url": "https://smash.gg/tournament/friday-night-melee-8-27-2021-sponsorship-tournament/event/melee-singles-invitational",
-            "streams": [
-                {
-                    "streamName": "CreestabGaming"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1630105200,
-            "tournament_endAt": 1630134000,
-            "tournament_registrationClosesAt": 1630112400,
-            "images": [
-                {
-                    "id": "3756942",
-                    "url": "https://images.smash.gg/images/tournament/307596/image-cccce7eb91d3ad81e4e54a6ab3b7e871.jpg",
-                    "type": "banner"
-                },
-                {
-                    "id": "3756943",
-                    "url": "https://images.smash.gg/images/tournament/307596/image-78ef4cf1f9f6c8fef28b98454a35877c.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "",
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": 54.5259614,
-            "lng": -105.2551187,
-            "region_lock": [
-                "CA",
-                "US",
-                "MX"
-            ]
-        },
-        {
             "id": 611472,
             "name": "Melee Singles",
             "slug": "tournament/haugasmash-28-08-21/event/melee-singles",
@@ -8509,89 +8643,6 @@
             "country_code": "US",
             "lat": 25.9715247,
             "lng": -80.1428636
-        },
-        {
-            "id": 609955,
-            "name": "Melee Singles: EC & WC Bracket",
-            "slug": "tournament/garbage-connection-free-trash-5/event/melee-singles-ec-wc-bracket",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1629939600,
-            "phaseGroups": [
-                {
-                    "id": 1556318,
-                    "phase": {
-                        "id": 984644,
-                        "name": "Singles Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6773668
-                        },
-                        {
-                            "id": 6773669
-                        },
-                        {
-                            "id": 6773670
-                        },
-                        {
-                            "id": 6773671
-                        },
-                        {
-                            "id": 6773672
-                        },
-                        {
-                            "id": 6773673
-                        },
-                        {
-                            "id": 6773674
-                        },
-                        {
-                            "id": 6773675
-                        }
-                    ]
-                },
-                {
-                    "id": 1556319,
-                    "phase": {
-                        "id": 984645,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Garbage Connection: Free Trash #5",
-            "tournament_id": 309712,
-            "city": null,
-            "url": "https://smash.gg/tournament/garbage-connection-free-trash-5/event/melee-singles-ec-wc-bracket",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1629939600,
-            "tournament_endAt": 1629960600,
-            "tournament_registrationClosesAt": 1629940500,
-            "images": [
-                {
-                    "id": "3787378",
-                    "url": "https://images.smash.gg/images/tournament/309712/image-21cfb3b99a2bd49174640358f6673b57.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "3787379",
-                    "url": "https://images.smash.gg/images/tournament/309712/image-8b40cee783f50467676a0c1f55a5fa23.png",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
         },
         {
             "id": 606255,
