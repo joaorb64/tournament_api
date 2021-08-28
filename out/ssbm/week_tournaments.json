@@ -20384,12 +20384,21 @@
         "slug": "tournament/meleemorocan-16/event/melee-single",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
         "startAt": 1630249200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1562265,
+                "phase": {
+                    "id": 988981,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "MeleeMorocan#16",
         "tournament_id": 311764,
         "city": null,
@@ -20418,5 +20427,59 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "595965": {
+        "id": 595965,
+        "name": "Melee Doubles",
+        "slug": "tournament/parks-and-tech/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 11,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1630162800,
+        "phaseGroups": []
+    },
+    "595967": {
+        "id": 595967,
+        "name": "Melee Singles",
+        "slug": "tournament/parks-and-tech/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 61,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1630173600,
+        "phaseGroups": [],
+        "tournament": "Parks and Tech",
+        "tournament_id": 301603,
+        "city": "St. Louis Park",
+        "url": "https://smash.gg/tournament/parks-and-tech/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1630155600,
+        "tournament_endAt": 1630213140,
+        "tournament_registrationClosesAt": 1629608340,
+        "images": [
+            {
+                "id": "3711402",
+                "url": "https://images.smash.gg/images/tournament/301603/image-1ed6d97700a024324bb369dfca924058.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "3711408",
+                "url": "https://images.smash.gg/images/tournament/301603/image-f747ec207f237d8076f9267a11d8dc01.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "36th St W & Beltline Blvd, St Louis Park, MN 55416, USA",
+        "tournament_addrState": "MN",
+        "country_code": "US",
+        "lat": 44.937749,
+        "lng": -93.342134
     }
 }
