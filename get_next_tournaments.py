@@ -1,5 +1,6 @@
 import time
 import datetime
+from typing import List
 import requests
 import json
 import pprint
@@ -219,7 +220,7 @@ def get_next_tournaments(game):
                         .get("attendeeRequirements", {})
                     
                     countryRequirements = None
-                    if attendeeRequirements != None:
+                    if attendeeRequirements != None and not isinstance(attendeeRequirements, list):
                         countryRequirements = attendeeRequirements.get("country", None)
 
                     if countryRequirements:
