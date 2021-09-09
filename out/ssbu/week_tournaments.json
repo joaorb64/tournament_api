@@ -57040,12 +57040,21 @@
         "slug": "tournament/big-porch-4/event/ult-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 1386
         },
         "startAt": 1633798800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1568749,
+                "phase": {
+                    "id": 992901,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Big Porch 4",
         "tournament_id": 304497,
         "city": "Portland",
@@ -57081,12 +57090,21 @@
         "slug": "tournament/big-porch-4/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
         "startAt": 1633807800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1568746,
+                "phase": {
+                    "id": 992898,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Big Porch 4",
         "tournament_id": 304497,
         "city": "Portland",
@@ -65256,7 +65274,7 @@
         "slug": "tournament/homie-stock-3/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 17,
+        "numEntrants": 19,
         "videogame": {
             "id": 1386
         },
@@ -74135,8 +74153,8 @@
         "name": "Smash Ultimate Singles",
         "slug": "tournament/gluck-gluck-weeklies-3-aus-nz-only/event/smash-ultimate-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 11,
+        "state": "ACTIVE",
+        "numEntrants": 17,
         "videogame": {
             "id": 1386
         },
@@ -74150,34 +74168,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Gluck Gluck Weeklies #3 (AUS/NZ Only)",
-        "tournament_id": 315140,
-        "city": null,
-        "url": "https://smash.gg/tournament/gluck-gluck-weeklies-3-aus-nz-only/event/smash-ultimate-singles",
-        "streams": [
-            {
-                "streamName": "meepasaurus_ssb"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1631170800,
-        "tournament_endAt": 1631181600,
-        "tournament_registrationClosesAt": 1631169000,
-        "images": [
-            {
-                "id": "3849727",
-                "url": "https://images.smash.gg/images/tournament/315140/image-7ea44acb4f9cb13ff136930be07455ca.jpg",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "618811": {
         "id": 618811,
@@ -75857,5 +75848,154 @@
         "country_code": "US",
         "lat": 37.7791642,
         "lng": -122.3928169
+    },
+    "618903": {
+        "id": 618903,
+        "name": "Thirsty Thursday",
+        "slug": "tournament/thirsty-thursday-33/event/thirsty-thursday",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1631224800,
+        "phaseGroups": [
+            {
+                "id": 1572490,
+                "phase": {
+                    "id": 995735,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 6821717
+                    },
+                    {
+                        "id": 6821719
+                    },
+                    {
+                        "id": 6821721
+                    },
+                    {
+                        "id": 6821723
+                    }
+                ]
+            },
+            {
+                "id": 1572491,
+                "phase": {
+                    "id": 995735,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 6821718
+                    },
+                    {
+                        "id": 6821720
+                    },
+                    {
+                        "id": 6821722
+                    },
+                    {
+                        "id": 6821724
+                    }
+                ]
+            },
+            {
+                "id": 1572492,
+                "phase": {
+                    "id": 995736,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Thirsty Thursday #33",
+        "tournament_id": 315194,
+        "city": null,
+        "url": "https://smash.gg/tournament/thirsty-thursday-33/event/thirsty-thursday",
+        "streams": [
+            {
+                "streamName": "fuzzytoilets"
+            },
+            {
+                "streamName": "l_g_2"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1631224800,
+        "tournament_endAt": 1631246400,
+        "tournament_registrationClosesAt": 1631224740,
+        "images": [
+            {
+                "id": "3850138",
+                "url": "https://images.smash.gg/images/tournament/315194/image-e4a759a8e4a2d9269bbb452b00860611.png",
+                "type": "profile"
+            },
+            {
+                "id": "3850139",
+                "url": "https://images.smash.gg/images/tournament/315194/image-10e5a7345ab559f6ecdbbd64b7d32ba1.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "618901": {
+        "id": 618901,
+        "name": "Mushroom Kingdom Super Slam #7",
+        "slug": "tournament/mushroom-kingdom-super-slam-7-1/event/mushroom-kingdom-super-slam-7",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1631404800,
+        "phaseGroups": [
+            {
+                "id": 1572487,
+                "phase": {
+                    "id": 995733,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Mushroom Kingdom Super Slam #7",
+        "tournament_id": 315191,
+        "city": null,
+        "url": "https://smash.gg/tournament/mushroom-kingdom-super-slam-7-1/event/mushroom-kingdom-super-slam-7",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1631404800,
+        "tournament_endAt": 1631426400,
+        "tournament_registrationClosesAt": 1631404800,
+        "images": [
+            {
+                "id": "3850112",
+                "url": "https://images.smash.gg/images/tournament/315191/image-1c3e931e4b426fbe2be12f5fbabe46e0.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "3850113",
+                "url": "https://images.smash.gg/images/tournament/315191/image-1a229c8d5bd09076edf910422f5cf954.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
