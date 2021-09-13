@@ -21291,7 +21291,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/cencal-clash-3/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 33,
         "videogame": {
             "id": 1386
@@ -21821,7 +21821,7 @@
         "name": "Singles",
         "slug": "tournament/smashcade-37/event/singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 61,
         "videogame": {
             "id": 1386
@@ -41658,7 +41658,7 @@
         "slug": "tournament/everest-evenings-3/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 7,
         "videogame": {
             "id": 1386
         },
@@ -49896,7 +49896,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/starstorm-sundays-2/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 36,
         "videogame": {
             "id": 1386
@@ -49949,7 +49949,7 @@
                 "id": 1573475,
                 "phase": {
                     "id": 996517,
-                    "name": "Top 16"
+                    "name": "Top 8"
                 },
                 "progressionsOut": null
             }
@@ -60229,12 +60229,21 @@
         "slug": "tournament/lilac-city-battleground-1/event/super-smash-bros-ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 6,
         "videogame": {
             "id": 1386
         },
         "startAt": 1632610800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1574422,
+                "phase": {
+                    "id": 997149,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Lilac City Battleground",
         "tournament_id": 311473,
         "city": "Spokane Valley",
@@ -61872,7 +61881,7 @@
         "slug": "tournament/ucsb-smash-bam-cards/event/ucsb-smash-bam-cards",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -61964,5 +61973,103 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "620197": {
+        "id": 620197,
+        "name": "Ultimate Singles",
+        "slug": "tournament/stock-confirm-6/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1631833200,
+        "phaseGroups": [
+            {
+                "id": 1574945,
+                "phase": {
+                    "id": 997513,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Stock Confirm 6",
+        "tournament_id": 316278,
+        "city": "Chicago",
+        "url": "https://smash.gg/tournament/stock-confirm-6/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "TradeWar"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1631833200,
+        "tournament_endAt": 1631847600,
+        "tournament_registrationClosesAt": 1631830500,
+        "images": [
+            {
+                "id": "3861113",
+                "url": "https://images.smash.gg/images/tournament/316278/image-39a035c58fbe81181db7907e18cda52a.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2741 N Milwaukee Ave, Chicago, IL 60647, USA",
+        "tournament_addrState": "IL",
+        "country_code": "US",
+        "lat": 41.9309818,
+        "lng": -87.7103233
+    },
+    "620198": {
+        "id": 620198,
+        "name": "Amateur Bracket",
+        "slug": "tournament/stock-confirm-6/event/amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1631833200,
+        "phaseGroups": [
+            {
+                "id": 1574946,
+                "phase": {
+                    "id": 997514,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Stock Confirm 6",
+        "tournament_id": 316278,
+        "city": "Chicago",
+        "url": "https://smash.gg/tournament/stock-confirm-6/event/amateur-bracket",
+        "streams": [
+            {
+                "streamName": "TradeWar"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1631833200,
+        "tournament_endAt": 1631847600,
+        "tournament_registrationClosesAt": 1631830500,
+        "images": [
+            {
+                "id": "3861113",
+                "url": "https://images.smash.gg/images/tournament/316278/image-39a035c58fbe81181db7907e18cda52a.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2741 N Milwaukee Ave, Chicago, IL 60647, USA",
+        "tournament_addrState": "IL",
+        "country_code": "US",
+        "lat": 41.9309818,
+        "lng": -87.7103233
     }
 }
