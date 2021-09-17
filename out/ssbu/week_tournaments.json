@@ -43307,12 +43307,21 @@
         "slug": "tournament/screwcovidtational-21/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 15,
+        "numEntrants": 16,
         "videogame": {
             "id": 1386
         },
         "startAt": 1632049200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1572592,
+                "phase": {
+                    "id": 995809,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "ScrewCovidtational-21",
         "tournament_id": 315214,
         "city": "Lisboa",
@@ -49395,7 +49404,7 @@
         "slug": "tournament/abft-league-weekly-9/event/1-tournois-solo-1v1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 9,
+        "numEntrants": 30,
         "videogame": {
             "id": 1386
         },
@@ -49422,7 +49431,7 @@
         "timezone": null,
         "tournament_startAt": 1631892600,
         "tournament_endAt": 1631908800,
-        "tournament_registrationClosesAt": 1631842500,
+        "tournament_registrationClosesAt": 1631889300,
         "images": [
             {
                 "id": "3856375",
@@ -49449,7 +49458,7 @@
         "slug": "tournament/abft-league-weekly-9/event/2-liste-d-attente-pour-le-tournois-uniquement",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -49467,7 +49476,7 @@
         "timezone": null,
         "tournament_startAt": 1631892600,
         "tournament_endAt": 1631908800,
-        "tournament_registrationClosesAt": 1631842500,
+        "tournament_registrationClosesAt": 1631889300,
         "images": [
             {
                 "id": "3856375",
@@ -59146,7 +59155,7 @@
         "slug": "tournament/allstars-smashmania-02/event/ultimate-singles-double-elimination",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 14,
         "videogame": {
             "id": 1386
         },
@@ -59165,7 +59174,11 @@
         "tournament_id": 314360,
         "city": null,
         "url": "https://smash.gg/tournament/allstars-smashmania-02/event/ultimate-singles-double-elimination",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "GamingKngdm"
+            }
+        ],
         "timezone": null,
         "tournament_startAt": 1631876400,
         "tournament_endAt": 1631912400,
@@ -92926,5 +92939,55 @@
         "country_code": "FR",
         "lat": 48.5595776,
         "lng": 7.753589300000001
+    },
+    "622405": {
+        "id": 622405,
+        "name": "New Super Forbidden Showdown",
+        "slug": "tournament/new-super-forbidden-vibe-showdown/event/new-super-forbidden-showdown",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1632096000,
+        "phaseGroups": [
+            {
+                "id": 1578885,
+                "phase": {
+                    "id": 1000267,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "New Super Forbidden Vibe Showdown",
+        "tournament_id": 317565,
+        "city": null,
+        "url": "https://smash.gg/tournament/new-super-forbidden-vibe-showdown/event/new-super-forbidden-showdown",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1632096000,
+        "tournament_endAt": 1632128400,
+        "tournament_registrationClosesAt": 1632096000,
+        "images": [
+            {
+                "id": "3873856",
+                "url": "https://images.smash.gg/images/tournament/317565/image-9ddc615a1e552b89f0bd83fccf6d2dfc.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "3873869",
+                "url": "https://images.smash.gg/images/tournament/317565/image-67aa748460b4c8f11302d7fe03ef5b0f.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
