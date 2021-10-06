@@ -1,12 +1,34 @@
 {
-    "updateTime": 1633478939,
+    "updateTime": 1633482530,
     "events": [
+        {
+            "id": 625273,
+            "name": "Melee Doubles - 2v2",
+            "slug": "tournament/s-lt-296/event/melee-doubles-2v2",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 4,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633464000,
+            "phaseGroups": [
+                {
+                    "id": 1584000,
+                    "phase": {
+                        "id": 1003969,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
         {
             "id": 625272,
             "name": "Melee Singles - 1v1",
             "slug": "tournament/s-lt-296/event/melee-singles-1v1",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 25,
             "videogame": {
                 "id": 1
@@ -24,33 +46,11 @@
             ]
         },
         {
-            "id": 625273,
-            "name": "Melee Doubles - 2v2",
-            "slug": "tournament/s-lt-296/event/melee-doubles-2v2",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 3,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633464000,
-            "phaseGroups": [
-                {
-                    "id": 1584000,
-                    "phase": {
-                        "id": 1003969,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 628645,
             "name": "Melee Singles",
             "slug": "tournament/flashback-games-remastered-t9/event/melee-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 11,
             "videogame": {
                 "id": 1
@@ -62,6 +62,28 @@
                     "phase": {
                         "id": 1008270,
                         "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 630020,
+            "name": "Ladder Melee West Coast",
+            "slug": "tournament/training-mode-tournaments-47/event/ladder-melee-west-coast",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 44,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633467600,
+            "phaseGroups": [
+                {
+                    "id": 1592137,
+                    "phase": {
+                        "id": 1010047,
+                        "name": "West Coast Ladder"
                     },
                     "progressionsOut": null
                 }
@@ -90,22 +112,22 @@
             ]
         },
         {
-            "id": 630020,
-            "name": "Ladder Melee West Coast",
-            "slug": "tournament/training-mode-tournaments-47/event/ladder-melee-west-coast",
+            "id": 630023,
+            "name": "Main Bracket: EC Melee Singles",
+            "slug": "tournament/training-mode-tournaments-47/event/main-bracket-ec-melee-singles",
             "isOnline": true,
             "state": "ACTIVE",
-            "numEntrants": 29,
+            "numEntrants": 17,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1633467600,
+            "startAt": 1633479600,
             "phaseGroups": [
                 {
-                    "id": 1592137,
+                    "id": 1592140,
                     "phase": {
-                        "id": 1010047,
-                        "name": "West Coast Ladder"
+                        "id": 1010050,
+                        "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
@@ -116,12 +138,12 @@
             "name": "Side Event: EC Melee Amateur Bracket",
             "slug": "tournament/training-mode-tournaments-47/event/side-event-ec-melee-amateur-bracket",
             "isOnline": true,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 6,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1633467600,
+            "startAt": 1633479720,
             "phaseGroups": [
                 {
                     "id": 1592139,
@@ -134,34 +156,12 @@
             ]
         },
         {
-            "id": 630021,
-            "name": "Side Event: WC Melee Amateur Bracket",
-            "slug": "tournament/training-mode-tournaments-47/event/side-event-wc-melee-amateur-bracket",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 6,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633467600,
-            "phaseGroups": [
-                {
-                    "id": 1592138,
-                    "phase": {
-                        "id": 1010048,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 630018,
             "name": "Main Bracket: WC Melee Singles",
             "slug": "tournament/training-mode-tournaments-47/event/main-bracket-wc-melee-singles",
             "isOnline": true,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 1,
             "videogame": {
                 "id": 1
             },
@@ -178,65 +178,33 @@
             ]
         },
         {
-            "id": 630023,
-            "name": "Main Bracket: EC Melee Singles",
-            "slug": "tournament/training-mode-tournaments-47/event/main-bracket-ec-melee-singles",
+            "id": 630021,
+            "name": "Side Event: WC Melee Amateur Bracket",
+            "slug": "tournament/training-mode-tournaments-47/event/side-event-wc-melee-amateur-bracket",
             "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 16,
+            "state": "COMPLETED",
+            "numEntrants": 6,
             "videogame": {
                 "id": 1
             },
             "startAt": 1633479600,
             "phaseGroups": [
                 {
-                    "id": 1592140,
+                    "id": 1592138,
                     "phase": {
-                        "id": 1010050,
+                        "id": 1010048,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "Training Mode Tournaments #47",
-            "tournament_id": 322259,
-            "city": "Fountain Valley",
-            "url": "https://smash.gg/tournament/training-mode-tournaments-47/event/main-bracket-ec-melee-singles",
-            "streams": [
-                {
-                    "streamName": "TeamOXY"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1633467600,
-            "tournament_endAt": 1633500000,
-            "tournament_registrationClosesAt": 1633490100,
-            "images": [
-                {
-                    "id": "3927973",
-                    "url": "https://images.smash.gg/images/tournament/322259/image-6aac35882d17426000f63e4a7add380e.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "3927974",
-                    "url": "https://images.smash.gg/images/tournament/322259/image-c772537337b7bc2b19cb946e8c3c2431.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "",
-            "tournament_addrState": "CA",
-            "country_code": "US",
-            "lat": 33.7048795,
-            "lng": -117.9476684
+            ]
         },
         {
             "id": 627540,
             "name": "Melee Singles",
             "slug": "tournament/the-g-code-4/event/melee-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 9,
             "videogame": {
                 "id": 1
@@ -324,7 +292,7 @@
             "name": "Melee Singles",
             "slug": "tournament/saint-rose-melee-11/event/melee-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 7,
             "videogame": {
                 "id": 1
@@ -384,6 +352,287 @@
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 629259,
+            "name": "Melee Singles",
+            "slug": "tournament/battle-city-melee-5/event/melee-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633478400,
+            "phaseGroups": [
+                {
+                    "id": 1590932,
+                    "phase": {
+                        "id": 1009109,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 630102,
+            "name": "Melee Singles",
+            "slug": "tournament/smash-mizzou-10-5/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 4,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633478400,
+            "phaseGroups": [
+                {
+                    "id": 1592279,
+                    "phase": {
+                        "id": 1010140,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 630221,
+            "name": "Melee Singles",
+            "slug": "tournament/combat-cafe-melee-7/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633478400,
+            "phaseGroups": [
+                {
+                    "id": 1592445,
+                    "phase": {
+                        "id": 1010279,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 627980,
+            "name": "Melee Singles",
+            "slug": "tournament/level-one-melee-15-a-noob-only-tournament/event/melee-singles",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 30,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633482000,
+            "phaseGroups": [
+                {
+                    "id": 1588825,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896932
+                        },
+                        {
+                            "id": 6896937
+                        },
+                        {
+                            "id": 6896942
+                        }
+                    ]
+                },
+                {
+                    "id": 1588826,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896933
+                        },
+                        {
+                            "id": 6896938
+                        },
+                        {
+                            "id": 6896943
+                        }
+                    ]
+                },
+                {
+                    "id": 1588827,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896934
+                        },
+                        {
+                            "id": 6896939
+                        },
+                        {
+                            "id": 6896944
+                        }
+                    ]
+                },
+                {
+                    "id": 1588828,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896935
+                        },
+                        {
+                            "id": 6896940
+                        },
+                        {
+                            "id": 6896945
+                        }
+                    ]
+                },
+                {
+                    "id": 1588829,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896936
+                        },
+                        {
+                            "id": 6896941
+                        },
+                        {
+                            "id": 6896946
+                        }
+                    ]
+                },
+                {
+                    "id": 1588834,
+                    "phase": {
+                        "id": 1007422,
+                        "name": "pro double elimination bracket"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 1588835,
+                    "phase": {
+                        "id": 1007423,
+                        "name": "amateur swiss ACTUAL lol"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 629963,
+            "name": "Melee Singles",
+            "slug": "tournament/tripoint-smash-115/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633734000,
+            "phaseGroups": [],
+            "tournament": "Tripoint Smash 115",
+            "tournament_id": 322223,
+            "city": "Romeoville",
+            "url": "https://smash.gg/tournament/tripoint-smash-115/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "ugsgaming2"
+                },
+                {
+                    "streamName": "ugsgaming"
+                },
+                {
+                    "streamName": "projectmnexus"
+                },
+                {
+                    "streamName": "ateozc"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1633734000,
+            "tournament_endAt": 1633755540,
+            "tournament_registrationClosesAt": 1633737660,
+            "images": [
+                {
+                    "id": "3927727",
+                    "url": "https://images.smash.gg/images/tournament/322223/image-de733f812c941b4d6f18cdb54844ce5a.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "3927728",
+                    "url": "https://images.smash.gg/images/tournament/322223/image-0538ba3727db6c79425d785f17cc9223.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": "Creative Arts Center",
+            "tournament_venueAddress": "174 Highpoint Dr, Romeoville, IL 60446, USA",
+            "tournament_addrState": "IL",
+            "country_code": "US",
+            "lat": 41.617843,
+            "lng": -88.129777
+        },
+        {
+            "id": 605856,
+            "name": "Melee - 1v1 Singles",
+            "slug": "tournament/super-smash-con-fall-fest/event/melee-1v1-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 279,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1634313600,
+            "phaseGroups": [],
+            "tournament": "Super Smash Con: Fall Fest",
+            "tournament_id": 307014,
+            "city": "Herndon",
+            "url": "https://smash.gg/tournament/super-smash-con-fall-fest/event/melee-1v1-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1634313600,
+            "tournament_endAt": 1634518800,
+            "tournament_registrationClosesAt": 1632715140,
+            "images": [
+                {
+                    "id": "3827497",
+                    "url": "https://images.smash.gg/images/tournament/307014/image-a3022f5ec20ebcb1cfc215eb8161134c.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "3827539",
+                    "url": "https://images.smash.gg/images/tournament/307014/image-7c9e2022c16c42bea3f2d636ccac8a59.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": "Dulles Expo Center",
+            "tournament_venueAddress": "13869 Park Center Rd, Herndon, VA 20171, USA",
+            "tournament_addrState": "VA",
+            "country_code": "US",
+            "lat": 38.9331752,
+            "lng": -77.4274355
         },
         {
             "id": 630296,
@@ -1062,56 +1311,6 @@
             "country_code": "CA",
             "lat": 49.2883436,
             "lng": -123.1153855
-        },
-        {
-            "id": 630221,
-            "name": "Melee Singles",
-            "slug": "tournament/combat-cafe-melee-7/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633478400,
-            "phaseGroups": [
-                {
-                    "id": 1592445,
-                    "phase": {
-                        "id": 1010279,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Combat Cafe Melee #7",
-            "tournament_id": 322381,
-            "city": "Evanston",
-            "url": "https://smash.gg/tournament/combat-cafe-melee-7/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1633478400,
-            "tournament_endAt": 1633489200,
-            "tournament_registrationClosesAt": 1633478400,
-            "images": [
-                {
-                    "id": "3929326",
-                    "url": "https://images.smash.gg/images/tournament/322381/image-e45bb581498d4fa3d4e0cedf01772742.jpg",
-                    "type": "banner"
-                },
-                {
-                    "id": "3929327",
-                    "url": "https://images.smash.gg/images/tournament/322381/image-2e0911ee55b49c08620c3a3d11245e2c.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "1610 Maple Ave, Evanston, IL 60201, USA",
-            "tournament_addrState": "IL",
-            "country_code": "US",
-            "lat": 42.0475183,
-            "lng": -87.6853671
         },
         {
             "id": 630201,
@@ -3488,51 +3687,6 @@
             "lng": null
         },
         {
-            "id": 630102,
-            "name": "Melee Singles",
-            "slug": "tournament/smash-mizzou-10-5/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633478400,
-            "phaseGroups": [
-                {
-                    "id": 1592279,
-                    "phase": {
-                        "id": 1010140,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Smash@Mizzou 10/5",
-            "tournament_id": 322319,
-            "city": "Columbia",
-            "url": "https://smash.gg/tournament/smash-mizzou-10-5/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1633478400,
-            "tournament_endAt": 1633493040,
-            "tournament_registrationClosesAt": 1633476600,
-            "images": [
-                {
-                    "id": "3928584",
-                    "url": "https://images.smash.gg/images/tournament/322319/image-c143741aaf8b5d5ea9a25f43236290fe.png",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Switzler Hall, Columbia, MO 65201, USA",
-            "tournament_addrState": "MO",
-            "country_code": "US",
-            "lat": 38.9467486,
-            "lng": -92.32955310000001
-        },
-        {
             "id": 622497,
             "name": "\ud83d\udc64 Side Event - Melee Singles",
             "slug": "tournament/against-all-odds/event/side-event-melee-singles-1",
@@ -4534,47 +4688,6 @@
             "lng": -88.22716930000001
         },
         {
-            "id": 605856,
-            "name": "Melee - 1v1 Singles",
-            "slug": "tournament/super-smash-con-fall-fest/event/melee-1v1-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 278,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1634313600,
-            "phaseGroups": [],
-            "tournament": "Super Smash Con: Fall Fest",
-            "tournament_id": 307014,
-            "city": "Herndon",
-            "url": "https://smash.gg/tournament/super-smash-con-fall-fest/event/melee-1v1-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1634313600,
-            "tournament_endAt": 1634518800,
-            "tournament_registrationClosesAt": 1632715140,
-            "images": [
-                {
-                    "id": "3827497",
-                    "url": "https://images.smash.gg/images/tournament/307014/image-a3022f5ec20ebcb1cfc215eb8161134c.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "3827539",
-                    "url": "https://images.smash.gg/images/tournament/307014/image-7c9e2022c16c42bea3f2d636ccac8a59.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": "Dulles Expo Center",
-            "tournament_venueAddress": "13869 Park Center Rd, Herndon, VA 20171, USA",
-            "tournament_addrState": "VA",
-            "country_code": "US",
-            "lat": 38.9331752,
-            "lng": -77.4274355
-        },
-        {
             "id": 628203,
             "name": "Melee Doubles",
             "slug": "tournament/revenge-of-the-6ix-october-edition-ontario-smash-ultimate-ssbm-1/event/melee-doubles",
@@ -4849,60 +4962,6 @@
             "country_code": "CA",
             "lat": 43.7825236,
             "lng": -79.4925864
-        },
-        {
-            "id": 629963,
-            "name": "Melee Singles",
-            "slug": "tournament/tripoint-smash-115/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633734000,
-            "phaseGroups": [],
-            "tournament": "Tripoint Smash 115",
-            "tournament_id": 322223,
-            "city": "Romeoville",
-            "url": "https://smash.gg/tournament/tripoint-smash-115/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "ugsgaming2"
-                },
-                {
-                    "streamName": "ugsgaming"
-                },
-                {
-                    "streamName": "projectmnexus"
-                },
-                {
-                    "streamName": "ateozc"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1633734000,
-            "tournament_endAt": 1633755540,
-            "tournament_registrationClosesAt": 1633744860,
-            "images": [
-                {
-                    "id": "3927727",
-                    "url": "https://images.smash.gg/images/tournament/322223/image-de733f812c941b4d6f18cdb54844ce5a.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "3927728",
-                    "url": "https://images.smash.gg/images/tournament/322223/image-0538ba3727db6c79425d785f17cc9223.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": "Creative Arts Center",
-            "tournament_venueAddress": "174 Highpoint Dr, Romeoville, IL 60446, USA",
-            "tournament_addrState": "IL",
-            "country_code": "US",
-            "lat": 41.617843,
-            "lng": -88.129777
         },
         {
             "id": 629606,
@@ -7275,51 +7334,6 @@
             "country_code": "AU",
             "lat": -37.8138267,
             "lng": 144.973728
-        },
-        {
-            "id": 629259,
-            "name": "Melee Singles",
-            "slug": "tournament/battle-city-melee-5/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633478400,
-            "phaseGroups": [
-                {
-                    "id": 1590932,
-                    "phase": {
-                        "id": 1009109,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Battle City Melee 5",
-            "tournament_id": 321856,
-            "city": "Sacramento",
-            "url": "https://smash.gg/tournament/battle-city-melee-5/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1633478400,
-            "tournament_endAt": 1633492800,
-            "tournament_registrationClosesAt": 1633474800,
-            "images": [
-                {
-                    "id": "3924437",
-                    "url": "https://images.smash.gg/images/tournament/321856/image-d4fcd365d71b819c7db6fb130740cc35.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "2325 J St, Sacramento, CA 95816, USA",
-            "tournament_addrState": "CA",
-            "country_code": "US",
-            "lat": 38.5755511,
-            "lng": -121.4747815
         },
         {
             "id": 629156,
@@ -11406,51 +11420,6 @@
             "country_code": "US",
             "lat": 34.009168,
             "lng": -81.1932224
-        },
-        {
-            "id": 627980,
-            "name": "Melee Singles",
-            "slug": "tournament/level-one-melee-15-a-noob-only-tournament/event/melee-singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633482000,
-            "phaseGroups": [],
-            "tournament": "Level One Melee #15 - a noob-only tournament",
-            "tournament_id": 321048,
-            "city": null,
-            "url": "https://smash.gg/tournament/level-one-melee-15-a-noob-only-tournament/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "divinesenatorkelly"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1633482000,
-            "tournament_endAt": 1633498200,
-            "tournament_registrationClosesAt": 1633480260,
-            "images": [
-                {
-                    "id": "3913303",
-                    "url": "https://images.smash.gg/images/tournament/321048/image-682a700421681db1a1910796727c69d8.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "3913304",
-                    "url": "https://images.smash.gg/images/tournament/321048/image-962bd0cadb96c0c0cf8d2e84009dce12.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
         },
         {
             "id": 625870,
