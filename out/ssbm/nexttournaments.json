@@ -1,5 +1,5 @@
 {
-    "updateTime": 1633497081,
+    "updateTime": 1633500645,
     "events": [
         {
             "id": 630020,
@@ -40,28 +40,6 @@
                     "phase": {
                         "id": 1010046,
                         "name": "East Coast Ladder"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 630018,
-            "name": "Main Bracket: WC Melee Singles",
-            "slug": "tournament/training-mode-tournaments-47/event/main-bracket-wc-melee-singles",
-            "isOnline": true,
-            "state": "ACTIVE",
-            "numEntrants": 18,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1633490400,
-            "phaseGroups": [
-                {
-                    "id": 1592135,
-                    "phase": {
-                        "id": 1010045,
-                        "name": "Main Bracket"
                     },
                     "progressionsOut": null
                 }
@@ -112,6 +90,28 @@
             ]
         },
         {
+            "id": 630018,
+            "name": "Main Bracket: WC Melee Singles",
+            "slug": "tournament/training-mode-tournaments-47/event/main-bracket-wc-melee-singles",
+            "isOnline": true,
+            "state": "COMPLETED",
+            "numEntrants": 18,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1633490400,
+            "phaseGroups": [
+                {
+                    "id": 1592135,
+                    "phase": {
+                        "id": 1010045,
+                        "name": "Main Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 630021,
             "name": "Side Event: WC Melee Amateur Bracket",
             "slug": "tournament/training-mode-tournaments-47/event/side-event-wc-melee-amateur-bracket",
@@ -156,22 +156,120 @@
             ]
         },
         {
-            "id": 630102,
+            "id": 627980,
             "name": "Melee Singles",
-            "slug": "tournament/smash-mizzou-10-5/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
+            "slug": "tournament/level-one-melee-15-a-noob-only-tournament/event/melee-singles",
+            "isOnline": true,
+            "state": "COMPLETED",
+            "numEntrants": 30,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1633478400,
+            "startAt": 1633489200,
             "phaseGroups": [
                 {
-                    "id": 1592279,
+                    "id": 1588825,
                     "phase": {
-                        "id": 1010140,
-                        "name": "Bracket"
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896932
+                        },
+                        {
+                            "id": 6896937
+                        },
+                        {
+                            "id": 6896942
+                        }
+                    ]
+                },
+                {
+                    "id": 1588826,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896933
+                        },
+                        {
+                            "id": 6896938
+                        },
+                        {
+                            "id": 6896943
+                        }
+                    ]
+                },
+                {
+                    "id": 1588827,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896934
+                        },
+                        {
+                            "id": 6896939
+                        },
+                        {
+                            "id": 6896944
+                        }
+                    ]
+                },
+                {
+                    "id": 1588828,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896935
+                        },
+                        {
+                            "id": 6896940
+                        },
+                        {
+                            "id": 6896945
+                        }
+                    ]
+                },
+                {
+                    "id": 1588829,
+                    "phase": {
+                        "id": 1007421,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6896936
+                        },
+                        {
+                            "id": 6896941
+                        },
+                        {
+                            "id": 6896946
+                        }
+                    ]
+                },
+                {
+                    "id": 1588834,
+                    "phase": {
+                        "id": 1007422,
+                        "name": "pro double elimination bracket"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 1588835,
+                    "phase": {
+                        "id": 1007423,
+                        "name": "amateur round robin"
                     },
                     "progressionsOut": null
                 }
@@ -284,6 +382,63 @@
             "lng": -75.6051794
         },
         {
+            "id": 627123,
+            "name": "Melee Singles",
+            "slug": "tournament/set-count-1/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1637420400,
+            "phaseGroups": [
+                {
+                    "id": 1587391,
+                    "phase": {
+                        "id": 1006335,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Set Count",
+            "tournament_id": 320524,
+            "city": "Leander",
+            "url": "https://smash.gg/tournament/set-count-1/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "r1atx"
+                },
+                {
+                    "streamName": "austinmelee"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1637420400,
+            "tournament_endAt": 1637463600,
+            "tournament_registrationClosesAt": 1637463600,
+            "images": [
+                {
+                    "id": "3906500",
+                    "url": "https://images.smash.gg/images/tournament/320524/image-aa4a5c126ddabcaf8329d4c50a396e83.jpeg",
+                    "type": "profile"
+                },
+                {
+                    "id": "3906501",
+                    "url": "https://images.smash.gg/images/tournament/320524/image-04b79d14d58f82251ae35bf557d13781.jpeg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "1717 Scottsdale Dr, Leander, TX 78641, USA",
+            "tournament_addrState": "TX",
+            "country_code": "US",
+            "lat": 30.5476617,
+            "lng": -97.8135185
+        },
+        {
             "id": 630442,
             "name": "(Melee Singles) Caching Out S3 E02",
             "slug": "tournament/caching-in-10-09-1/event/melee-singles-caching-out-s3-e02",
@@ -383,63 +538,6 @@
             "country_code": "US",
             "lat": 38.9331752,
             "lng": -77.4274355
-        },
-        {
-            "id": 627123,
-            "name": "Melee Singles",
-            "slug": "tournament/set-count-1/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1637420400,
-            "phaseGroups": [
-                {
-                    "id": 1587391,
-                    "phase": {
-                        "id": 1006335,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Set Count",
-            "tournament_id": 320524,
-            "city": "Leander",
-            "url": "https://smash.gg/tournament/set-count-1/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "r1atx"
-                },
-                {
-                    "streamName": "austinmelee"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637420400,
-            "tournament_endAt": 1637463600,
-            "tournament_registrationClosesAt": 1637463600,
-            "images": [
-                {
-                    "id": "3906500",
-                    "url": "https://images.smash.gg/images/tournament/320524/image-aa4a5c126ddabcaf8329d4c50a396e83.jpeg",
-                    "type": "profile"
-                },
-                {
-                    "id": "3906501",
-                    "url": "https://images.smash.gg/images/tournament/320524/image-04b79d14d58f82251ae35bf557d13781.jpeg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "1717 Scottsdale Dr, Leander, TX 78641, USA",
-            "tournament_addrState": "TX",
-            "country_code": "US",
-            "lat": 30.5476617,
-            "lng": -97.8135185
         },
         {
             "id": 630417,
