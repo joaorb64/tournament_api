@@ -69,7 +69,7 @@ def gen_week_results(game):
         if not tournament.get("lat") and not tournament.get("lng") and not tournament.get("country_code"):
             continue
 
-        if tournament.get("provider") =! "challonge":
+        if tournament.get("provider") != "challonge":
             r = requests.post(
                 'https://api.smash.gg/gql/alpha',
                 headers={
