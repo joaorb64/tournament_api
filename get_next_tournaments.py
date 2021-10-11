@@ -262,14 +262,14 @@ def get_next_tournaments(game):
                         print(regionLock)
                 
                 tournaments.append(event)
-
-        # Challonge
-        if config.get("challonge_videogame_id") and config.get("challonge_game_name"):
-            print("Challonge")
-            tournaments.extend(get_tournaments(config["challonge_videogame_id"], config["challonge_game_name"]))
-
-        print("Tournament number: "+str(len(tournaments)))
         page+=1
+    
+    # Challonge
+    if config.get("challonge_videogame_id") and config.get("challonge_game_name"):
+        print("Challonge")
+        tournaments.extend(get_tournaments(config["challonge_videogame_id"], config["challonge_game_name"]))
+
+    print("Tournament number: "+str(len(tournaments)))
     
     for oldTournament in oldTournaments.get("events", []):
         if "tournament_endAt" in oldTournament and "id" in oldTournament:
