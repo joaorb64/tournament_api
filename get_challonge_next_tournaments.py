@@ -27,7 +27,7 @@ def get_tournaments(gameId, gameName):
     result = []
 
     r = requests.get(
-        f"http://challonge.com/search/events.json?q=&&page=1&&per=200&&filters[name]=&&filters[state]=registering&&filters[game_ids]={gameId}",
+        f"http://challonge.com/search/events.json?q=&&page=1&&per=50&&filters[name]=Upcoming&&filters[game_ids]={gameId}",
         headers={
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
         }
@@ -63,6 +63,9 @@ def get_tournaments(gameId, gameName):
             countryCode = data.get("location").split(",")[-1].strip()
             stateName = data.get("location").split(",")[-2].strip()
         
+        if len(countryCode) != 2:
+            continue
+
         countryObj = next((c for c in countries_json if c.get("iso2") == countryCode), None)
         
         if not countryObj:
@@ -93,6 +96,13 @@ def get_tournaments(gameId, gameName):
             if data.get("startsAt")[-12] == " ":
                 data["startsAt"] = data.get("startsAt")[:-12]+'0'+\
                                         data.get("startsAt")[-11:]
+            
+            endAt = parser.parse(data.get("startsAt")).timestamp()
+
+            if event.get("details"):
+                times = next((d for d in event.get("details") if d.get("icon") == "fa fa-calendar"), None)
+                if times:
+                    endAt = max(parser.parse(times.get("text").split("-")[1]).timestamp(), endAt)
 
             normalized = {
                 "id": "chal"+str(data.get("id")),
@@ -102,7 +112,7 @@ def get_tournaments(gameId, gameName):
                 "tournament": data.get("title"),
                 "url": tournament.get("full_challonge_url"),
                 "tournament_startAt": parser.parse(data.get("startsAt")).timestamp(),
-                "tournament_endAt": parser.parse(data.get("startsAt")).timestamp(),
+                "tournament_endAt": endAt,
                 "tournament_registrationClosesAt": parser.parse(data.get("startsAt")).timestamp(),
                 "images": [
                     {
