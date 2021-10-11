@@ -8,6 +8,7 @@ import datetime
 import os
 from collections import Counter
 import sys
+from get_challonge_next_tournaments import get_tournaments
 
 if os.path.exists("auth.json"):
   f = open('auth.json')
@@ -261,6 +262,11 @@ def get_next_tournaments(game):
                         print(regionLock)
                 
                 tournaments.append(event)
+
+        # Challonge
+        if config.get("challonge_videogame_id") and config.get("challonge_game_name"):
+            print("Challonge")
+            tournaments.extend(get_tournaments(config["challonge_videogame_id"], config["challonge_game_name"]))
 
         print("Tournament number: "+str(len(tournaments)))
         page+=1
