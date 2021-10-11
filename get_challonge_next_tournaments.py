@@ -10,6 +10,7 @@ import requests
 import datetime
 import locale
 from dateutil import parser
+import time
 
 if os.path.exists("auth.json"):
   f = open('auth.json')
@@ -27,7 +28,7 @@ def get_tournaments(gameId, gameName):
     result = []
 
     r = requests.get(
-        f"http://challonge.com/search/events.json?q=&&page=1&&per=50&&filters[name]=Upcoming&&filters[game_ids]={gameId}",
+        f"http://challonge.com/search/events.json?q=&&page=1&&per=1000&&filters[name]=&&filters[game_ids]={gameId}",
         headers={
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
         }
@@ -36,6 +37,13 @@ def get_tournaments(gameId, gameName):
     events = json.loads(r.text)
 
     for event in events.get("collection"):
+        if event.get("details"):
+            times = next((d for d in event.get("details") if d.get("icon") == "fa fa-calendar"), None)
+            if times:
+                tournamentEndTime = parser.parse(times.get("text").split("-")[1]).timestamp()
+                if tournamentEndTime < time.mktime((datetime.date.today()+datetime.timedelta(days=1)).timetuple()):
+                    continue
+
         url = f'http://challonge.com/{event.get("link")}'
 
         r = requests.get(
