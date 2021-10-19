@@ -19,7 +19,10 @@ if os.path.exists("auth.json"):
 else:
   CHALLONGE_KEY = os.environ.get("CHALLONGE_KEY")
 
-locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
+try:
+    locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
+except:
+    print("Error setting locale")
 
 f = open('./countries+states+cities.json')
 countries_json = json.load(f)
