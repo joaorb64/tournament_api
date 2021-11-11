@@ -78,7 +78,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install beautifulsoup4 joblib requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein python-dateutil
+            pip install beautifulsoup4 lxml joblib requests google-api-python-client google-auth-httplib2 google-auth-oauthlib fuzzywuzzy python-Levenshtein python-dateutil
       - run:
           name: Update data
           command: |

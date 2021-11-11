@@ -265,9 +265,12 @@ def get_next_tournaments(game):
         page+=1
     
     # Challonge
-    if config.get("challonge_videogame_id") and config.get("challonge_game_name"):
-        print("Challonge")
-        tournaments.extend(get_tournaments(config["challonge_videogame_id"], config["challonge_game_name"]))
+    try:
+        if config.get("challonge_videogame_id") and config.get("challonge_game_name"):
+            print("Challonge")
+            tournaments.extend(get_tournaments(config["challonge_videogame_id"], config["challonge_game_name"]))
+    except Exception as e:
+        print("Challonge error: "+str(e))
 
     print("Tournament number: "+str(len(tournaments)))
     
