@@ -3043,7 +3043,7 @@
         "name": "Melee Singles",
         "slug": "tournament/ggs-not-3-close-tho/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 15,
         "videogame": {
             "id": 1
@@ -7305,7 +7305,7 @@
         "name": "Melee Singles",
         "slug": "tournament/melee-ncsu-no-johns-biweekly-5/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1
@@ -7426,7 +7426,7 @@
         "name": "Melee Singles",
         "slug": "tournament/sss-14-2-new-hampshire-s-melee-monthly-event/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 30,
         "videogame": {
             "id": 1
@@ -7493,7 +7493,7 @@
         "name": "Melee Doubles",
         "slug": "tournament/sss-14-2-new-hampshire-s-melee-monthly-event/event/melee-doubles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 12,
         "videogame": {
             "id": 1
@@ -7561,7 +7561,7 @@
         "slug": "tournament/caching-in-11-13-2/event/paid-melee-singles-caching-out-s3-e06",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 11,
         "videogame": {
             "id": 1
         },
@@ -7597,7 +7597,7 @@
                 "type": "profile"
             }
         ],
-        "tournament_multievent": true,
+        "tournament_multievent": false,
         "tournament_venueName": null,
         "tournament_venueAddress": "881 W 700 N, Logan, UT 84321, USA",
         "tournament_addrState": "UT",
@@ -7610,45 +7610,22 @@
         "name": "Melee Singles",
         "slug": "tournament/smash-alley-36-100-melee-pot-bonus/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 2,
+        "state": "ACTIVE",
+        "numEntrants": 15,
         "videogame": {
             "id": 1
         },
         "startAt": 1636849800,
-        "phaseGroups": [],
-        "tournament": "Smash Alley 36 ($100 Melee Pot Bonus!)",
-        "tournament_id": 331894,
-        "city": "Fort Myers",
-        "url": "https://smash.gg/tournament/smash-alley-36-100-melee-pot-bonus/event/melee-singles",
-        "streams": [
+        "phaseGroups": [
             {
-                "streamName": "backdashfgc"
+                "id": 1620898,
+                "phase": {
+                    "id": 1030610,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "timezone": "America/New_York",
-        "tournament_startAt": 1636849800,
-        "tournament_endAt": 1636865940,
-        "tournament_registrationClosesAt": 1636852200,
-        "images": [
-            {
-                "id": "4054151",
-                "url": "https://images.smash.gg/images/tournament/331894/image-3dce81af1980c22a06b6d8011b849af0.png",
-                "type": "profile"
-            },
-            {
-                "id": "4054155",
-                "url": "https://images.smash.gg/images/tournament/331894/image-903d6f8e083369c36c993214997907aa.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "1901 Crystal Dr, Fort Myers, FL 33907, USA",
-        "tournament_addrState": "FL",
-        "country_code": "US",
-        "lat": 26.5648481,
-        "lng": -81.873733
+        ]
     },
     "640114": {
         "id": 640114,
@@ -7656,7 +7633,7 @@
         "slug": "tournament/andrenaleague-4-1/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 15,
         "videogame": {
             "id": 1
         },
@@ -7670,35 +7647,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Andrenaleague 4",
-        "tournament_id": 328202,
-        "city": null,
-        "url": "https://smash.gg/tournament/andrenaleague-4-1/event/melee-singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1636851600,
-        "tournament_endAt": 1636883700,
-        "tournament_registrationClosesAt": 1636851300,
-        "images": [
-            {
-                "id": "4007743",
-                "url": "https://images.smash.gg/images/tournament/328202/image-2e4ec53e08735fcbc7bb4e651f9036e2.png",
-                "type": "profile"
-            },
-            {
-                "id": "4007744",
-                "url": "https://images.smash.gg/images/tournament/328202/image-2adf33bc8a58ab77c4811dad2f321325.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "644500": {
         "id": 644500,
@@ -7756,7 +7705,7 @@
         "slug": "tournament/spudfest-22/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 10,
         "videogame": {
             "id": 1
         },
@@ -7767,39 +7716,6 @@
                 "phase": {
                     "id": 1029653,
                     "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 7004543
-                    },
-                    {
-                        "id": 7004544
-                    },
-                    {
-                        "id": 7004545
-                    },
-                    {
-                        "id": 7004546
-                    },
-                    {
-                        "id": 7004547
-                    },
-                    {
-                        "id": 7004548
-                    },
-                    {
-                        "id": 7004549
-                    },
-                    {
-                        "id": 7004550
-                    }
-                ]
-            },
-            {
-                "id": 1619377,
-                "phase": {
-                    "id": 1029654,
-                    "name": "Top 8"
                 },
                 "progressionsOut": null
             }
@@ -20317,8 +20233,8 @@
         "name": "Melee Singles",
         "slug": "tournament/grizzly-gambit-3/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -20389,35 +20305,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Grizzly Gambit 3",
-        "tournament_id": 332430,
-        "city": "Andover",
-        "url": "https://smash.gg/tournament/grizzly-gambit-3/event/melee-singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1636848000,
-        "tournament_endAt": 1636869540,
-        "tournament_registrationClosesAt": 1636848000,
-        "images": [
-            {
-                "id": "4061456",
-                "url": "https://images.smash.gg/images/tournament/332430/image-4811f8adc2171324402236125debc4e6.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "4061457",
-                "url": "https://images.smash.gg/images/tournament/332430/image-7be5945b81968e00e38dc935bfe8d76e.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "5000, 715 E 13th St, Andover, KS 67002, USA",
-        "tournament_addrState": "KS",
-        "country_code": "US",
-        "lat": 37.707696,
-        "lng": -97.12769340000001
+        ]
     },
     "647290": {
         "id": 647290,
@@ -20816,7 +20704,7 @@
         "name": "Melee Singles",
         "slug": "tournament/the-zoovember/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 15,
         "videogame": {
             "id": 1
@@ -21397,7 +21285,7 @@
         "slug": "tournament/super-smash-jacks-111/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
