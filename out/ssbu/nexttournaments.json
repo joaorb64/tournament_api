@@ -1,22 +1,44 @@
 {
-    "updateTime": 1637255623,
+    "updateTime": 1637259124,
     "events": [
         {
-            "id": 649495,
-            "name": "Ultimate Singles",
-            "slug": "tournament/ordalina-4/event/ultimate-singles",
-            "isOnline": false,
+            "id": 648222,
+            "name": "Tip or No Tip (Marth/Lucina Only)",
+            "slug": "tournament/just-the-tip-is-fine-4/event/tip-or-no-tip-marth-lucina-only",
+            "isOnline": true,
             "state": "ACTIVE",
-            "numEntrants": 11,
+            "numEntrants": 3,
             "videogame": {
                 "id": 1386
             },
-            "startAt": 1637247600,
+            "startAt": 1637258400,
             "phaseGroups": [
                 {
-                    "id": 1626129,
+                    "id": 1623974,
                     "phase": {
-                        "id": 1034559,
+                        "id": 1032979,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 648221,
+            "name": "Ultimate Singles",
+            "slug": "tournament/just-the-tip-is-fine-4/event/ultimate-singles",
+            "isOnline": true,
+            "state": "COMPLETED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637244000,
+            "phaseGroups": [
+                {
+                    "id": 1623973,
+                    "phase": {
+                        "id": 1032978,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
@@ -234,7 +256,7 @@
             "name": "Ultimate singles",
             "slug": "tournament/anc-smashweekly-144/event/ultimate-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 16,
             "videogame": {
                 "id": 1386
@@ -252,22 +274,121 @@
             ]
         },
         {
-            "id": 649150,
-            "name": "Meteor Smash",
-            "slug": "tournament/meteor-smash-14-1/event/meteor-smash",
-            "isOnline": true,
+            "id": 646665,
+            "name": "Singles bracket",
+            "slug": "tournament/gaming-weekly-26/event/singles-bracket",
+            "isOnline": false,
             "state": "ACTIVE",
-            "numEntrants": 16,
+            "numEntrants": 24,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637254800,
+            "phaseGroups": [
+                {
+                    "id": 1621292,
+                    "phase": {
+                        "id": 1030954,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 646667,
+            "name": "Liste d'attente",
+            "slug": "tournament/gaming-weekly-26/event/liste-d-attente",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 4,
             "videogame": {
                 "id": 1386
             },
             "startAt": 1637251200,
             "phaseGroups": [
                 {
-                    "id": 1625452,
+                    "id": 1621294,
                     "phase": {
-                        "id": 1034127,
+                        "id": 1030956,
                         "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 646666,
+            "name": "Amateur bracket",
+            "slug": "tournament/gaming-weekly-26/event/amateur-bracket",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637251200,
+            "phaseGroups": [
+                {
+                    "id": 1621293,
+                    "phase": {
+                        "id": 1030955,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 648126,
+            "name": "Ultimate Singles",
+            "slug": "tournament/20-000-johns-sous-l-is-re-22-welcome-back/event/ultimate-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 40,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637256600,
+            "phaseGroups": [
+                {
+                    "id": 1623852,
+                    "phase": {
+                        "id": 1032868,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7020834
+                        },
+                        {
+                            "id": 7020835
+                        },
+                        {
+                            "id": 7020836
+                        },
+                        {
+                            "id": 7020837
+                        },
+                        {
+                            "id": 7020838
+                        },
+                        {
+                            "id": 7020839
+                        },
+                        {
+                            "id": 7020840
+                        },
+                        {
+                            "id": 7020841
+                        }
+                    ]
+                },
+                {
+                    "id": 1623853,
+                    "phase": {
+                        "id": 1032869,
+                        "name": "Top 8"
                     },
                     "progressionsOut": null
                 }
@@ -278,8 +399,8 @@
             "name": "Singles",
             "slug": "tournament/ib-server-weekly-40-eu-only-1/event/singles-2",
             "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 28,
+            "state": "ACTIVE",
+            "numEntrants": 29,
             "videogame": {
                 "id": 1386
             },
@@ -293,89 +414,28 @@
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "IB Server Weekly #40 EU ONLY",
-            "tournament_id": 333627,
-            "city": null,
-            "url": "https://smash.gg/tournament/ib-server-weekly-40-eu-only-1/event/singles-2",
-            "streams": [
+            ]
+        },
+        {
+            "id": 646612,
+            "name": "Double Elimination Bracket",
+            "slug": "tournament/ued-season-2-online-smash-cup-ii/event/double-elimination-bracket",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637258400,
+            "phaseGroups": [
                 {
-                    "streamName": "salmon_smash"
-                },
-                {
-                    "streamName": "tofutaku"
-                },
-                {
-                    "streamName": "ner5667"
-                },
-                {
-                    "streamName": "d3_nathan"
-                },
-                {
-                    "streamName": "pikminhaku"
-                },
-                {
-                    "streamName": "mister_smash64"
-                },
-                {
-                    "streamName": "tendor_tv"
+                    "id": 1621223,
+                    "phase": {
+                        "id": 1030894,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
                 }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637256600,
-            "tournament_endAt": 1637350800,
-            "tournament_registrationClosesAt": 1637254800,
-            "images": [
-                {
-                    "id": "4077478",
-                    "url": "https://images.smash.gg/images/tournament/333627/image-26e809d549ad97f42aaa16766d4a20fe.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "4077557",
-                    "url": "https://images.smash.gg/images/tournament/333627/image-d1395aa836b6abe9fb401373858410f0.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null,
-            "region_lock": [
-                "BE",
-                "BG",
-                "DK",
-                "FR",
-                "DE",
-                "EE",
-                "FI",
-                "GR",
-                "IE",
-                "IT",
-                "HR",
-                "LV",
-                "LT",
-                "LU",
-                "MT",
-                "NL",
-                "AT",
-                "PL",
-                "PT",
-                "RO",
-                "SK",
-                "ES",
-                "SE",
-                "SI",
-                "CZ",
-                "HU",
-                "CY",
-                "GB",
-                "CH",
-                "NO",
-                "TR"
             ]
         },
         {
@@ -383,7 +443,7 @@
             "name": "Ultimate Singles",
             "slug": "tournament/newcastlevania-ssbu-weekly-11-1/event/ultimate-singles",
             "isOnline": false,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 21,
             "videogame": {
                 "id": 1386
@@ -398,85 +458,300 @@
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "NewcastleVania - SSBU Weekly #11",
-            "tournament_id": 332993,
-            "city": "Newcastle upon Tyne",
-            "url": "https://smash.gg/tournament/newcastlevania-ssbu-weekly-11-1/event/ultimate-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637258400,
-            "tournament_endAt": 1637269200,
-            "tournament_registrationClosesAt": 1637229600,
-            "images": [
-                {
-                    "id": "4068886",
-                    "url": "https://images.smash.gg/images/tournament/332993/image-9647ed703df45e7fe4d7921bc8a7576a.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4068887",
-                    "url": "https://images.smash.gg/images/tournament/332993/image-bd9b2f7878e337bc504cb67dc6633328.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Newgate St, Newcastle upon Tyne NE1 4XQ, UK",
-            "tournament_addrState": "England",
-            "country_code": "GB",
-            "lat": 54.9725,
-            "lng": -1.6177778
+            ]
         },
         {
-            "id": 649437,
-            "name": "Smash ultimate singles",
-            "slug": "tournament/native-smash/event/smash-ultimate-singles",
+            "id": 647037,
+            "name": "Smash Ultimate Singles",
+            "slug": "tournament/gr-cl-sh-15/event/smash-ultimate-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 12,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637258400,
+            "phaseGroups": [
+                {
+                    "id": 1621965,
+                    "phase": {
+                        "id": 1031432,
+                        "name": "Round Robin Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7013738
+                        },
+                        {
+                            "id": 7013740
+                        },
+                        {
+                            "id": 7013742
+                        },
+                        {
+                            "id": 7013744
+                        }
+                    ]
+                },
+                {
+                    "id": 1621966,
+                    "phase": {
+                        "id": 1031432,
+                        "name": "Round Robin Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7013739
+                        },
+                        {
+                            "id": 7013741
+                        },
+                        {
+                            "id": 7013743
+                        },
+                        {
+                            "id": 7013745
+                        }
+                    ]
+                },
+                {
+                    "id": 1621967,
+                    "phase": {
+                        "id": 1031433,
+                        "name": "Final Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 648248,
+            "name": "Ultimate Singles",
+            "slug": "tournament/smash-at-cc-74/event/ultimate-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 14,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637258400,
+            "phaseGroups": [
+                {
+                    "id": 1624025,
+                    "phase": {
+                        "id": 1033012,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 647422,
+            "name": "Smash Bi-Monthly",
+            "slug": "tournament/at-gaming-night-s4-5/event/smash-bi-monthly",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 11,
+            "numEntrants": 43,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637258400,
+            "phaseGroups": [
+                {
+                    "id": 1622677,
+                    "phase": {
+                        "id": 1031945,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 648791,
+            "name": "Ultimate Singles",
+            "slug": "tournament/smash-respawn-82/event/ultimate-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 48,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637258400,
+            "phaseGroups": [
+                {
+                    "id": 1624853,
+                    "phase": {
+                        "id": 1033678,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 649442,
+            "name": "Ultimate Singles",
+            "slug": "tournament/bowling-with-cemet-cemet-too-busy-studying-for-his-bowling/event/ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 13,
             "videogame": {
                 "id": 1386
             },
             "startAt": 1637280000,
             "phaseGroups": [
                 {
-                    "id": 1626016,
+                    "id": 1626026,
                     "phase": {
-                        "id": 1034482,
+                        "id": 1034489,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
             ],
-            "tournament": "Native Smash",
-            "tournament_id": 333735,
-            "city": "Boynton Beach",
-            "url": "https://smash.gg/tournament/native-smash/event/smash-ultimate-singles",
+            "tournament": "Bowling with Cemet (Cemet too busy studying for his bowling 113 final to attend)",
+            "tournament_id": 333737,
+            "city": "Columbia",
+            "url": "https://smash.gg/tournament/bowling-with-cemet-cemet-too-busy-studying-for-his-bowling/event/ultimate-singles",
             "streams": null,
             "timezone": null,
             "tournament_startAt": 1637280000,
-            "tournament_endAt": 1637287200,
-            "tournament_registrationClosesAt": 1637285460,
+            "tournament_endAt": 1637297220,
+            "tournament_registrationClosesAt": 1637279940,
             "images": [
                 {
-                    "id": "4078763",
-                    "url": "https://images.smash.gg/images/tournament/333735/image-7aeff78c3c14e5455701157659a45474.png",
+                    "id": "4078696",
+                    "url": "https://images.smash.gg/images/tournament/333737/image-1b94c2ab613888a713a09fc6cf07027e.png",
                     "type": "profile"
                 },
                 {
-                    "id": "4078784",
-                    "url": "https://images.smash.gg/images/tournament/333735/image-01ab8751f682f8e6b38d07b90adc7126.png",
+                    "id": "4078850",
+                    "url": "https://images.smash.gg/images/tournament/333737/image-b662b35f56bc715bcba6be92f4228589.png",
                     "type": "banner"
                 }
             ],
             "tournament_multievent": false,
             "tournament_venueName": null,
-            "tournament_venueAddress": "100 NE 6th St, Boynton Beach, FL 33435, USA",
-            "tournament_addrState": "FL",
+            "tournament_venueAddress": "1400 Greene St, Columbia, SC 29208, USA",
+            "tournament_addrState": "SC",
             "country_code": "US",
-            "lat": 26.5281537,
-            "lng": -80.0557762
+            "lat": 33.9968665,
+            "lng": -81.02717899999999
+        },
+        {
+            "id": 649612,
+            "name": "Singles",
+            "slug": "tournament/ultimate-final-gambit-90/event/singles",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637280000,
+            "phaseGroups": [],
+            "tournament": "Ultimate Final Gambit #90",
+            "tournament_id": 333866,
+            "city": null,
+            "url": "https://smash.gg/tournament/ultimate-final-gambit-90/event/singles",
+            "streams": [
+                {
+                    "streamName": "pkmudkip"
+                },
+                {
+                    "streamName": "elijmin11"
+                },
+                {
+                    "streamName": "anti_nexus"
+                }
+            ],
+            "timezone": "America/New_York",
+            "tournament_startAt": 1637280000,
+            "tournament_endAt": 1637297107,
+            "tournament_registrationClosesAt": 1637279400,
+            "images": [
+                {
+                    "id": "4080231",
+                    "url": "https://images.smash.gg/images/tournament/333866/image-8cfc47e675ba5aeb9bf5615106d96c63.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4080232",
+                    "url": "https://images.smash.gg/images/tournament/333866/image-bee3f8a63f8993df0ee276dfd988e237.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": null,
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": null,
+            "lng": null,
+            "region_lock": [
+                "MX",
+                "US",
+                "CA"
+            ]
+        },
+        {
+            "id": 649596,
+            "name": "Singles",
+            "slug": "tournament/moonlight-tournament-series-17/event/singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637281800,
+            "phaseGroups": [
+                {
+                    "id": 1626308,
+                    "phase": {
+                        "id": 1034697,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Moonlight Tournament Series #17",
+            "tournament_id": 333853,
+            "city": "Houston",
+            "url": "https://smash.gg/tournament/moonlight-tournament-series-17/event/singles",
+            "streams": [
+                {
+                    "streamName": "CelestialMTS"
+                },
+                {
+                    "streamName": "UHSmash"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1637281800,
+            "tournament_endAt": 1637298000,
+            "tournament_registrationClosesAt": 1637281800,
+            "images": [
+                {
+                    "id": "4079818",
+                    "url": "https://images.smash.gg/images/tournament/333853/image-94396cfe0ea52acec7223b9b3043138e.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4079819",
+                    "url": "https://images.smash.gg/images/tournament/333853/image-1a94406d604af8cd321f32de742c08f8.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "3695 Cullen Blvd, Houston, TX 77004, USA",
+            "tournament_addrState": "TX",
+            "country_code": "US",
+            "lat": 29.7217876,
+            "lng": -95.3467852
         },
         {
             "id": 649597,
@@ -536,123 +811,12 @@
             "lng": -95.3467852
         },
         {
-            "id": 649596,
-            "name": "Singles",
-            "slug": "tournament/moonlight-tournament-series-17/event/singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637281800,
-            "phaseGroups": [
-                {
-                    "id": 1626308,
-                    "phase": {
-                        "id": 1034697,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Moonlight Tournament Series #17",
-            "tournament_id": 333853,
-            "city": "Houston",
-            "url": "https://smash.gg/tournament/moonlight-tournament-series-17/event/singles",
-            "streams": [
-                {
-                    "streamName": "CelestialMTS"
-                },
-                {
-                    "streamName": "UHSmash"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637281800,
-            "tournament_endAt": 1637298000,
-            "tournament_registrationClosesAt": 1637281800,
-            "images": [
-                {
-                    "id": "4079818",
-                    "url": "https://images.smash.gg/images/tournament/333853/image-94396cfe0ea52acec7223b9b3043138e.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4079819",
-                    "url": "https://images.smash.gg/images/tournament/333853/image-1a94406d604af8cd321f32de742c08f8.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "3695 Cullen Blvd, Houston, TX 77004, USA",
-            "tournament_addrState": "TX",
-            "country_code": "US",
-            "lat": 29.7217876,
-            "lng": -95.3467852
-        },
-        {
-            "id": 649555,
-            "name": "Ultimate Singles",
-            "slug": "tournament/advantage-state-25/event/ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 9,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637281800,
-            "phaseGroups": [
-                {
-                    "id": 1626244,
-                    "phase": {
-                        "id": 1034645,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Advantage State #25",
-            "tournament_id": 333820,
-            "city": "Roseville",
-            "url": "https://smash.gg/tournament/advantage-state-25/event/ultimate-singles",
-            "streams": [
-                {
-                    "streamName": "advantagestate"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637281800,
-            "tournament_endAt": 1637301600,
-            "tournament_registrationClosesAt": 1637283600,
-            "images": [
-                {
-                    "id": "4079535",
-                    "url": "https://images.smash.gg/images/tournament/333820/image-beb06a3c0e07d269f52ecf3b4574a7be.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "4079536",
-                    "url": "https://images.smash.gg/images/tournament/333820/image-6ac7907aa7c4e30798d26842383ff233.png",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "1975 County Road B2 W, Roseville, MN 55113, USA",
-            "tournament_addrState": "MN",
-            "country_code": "US",
-            "lat": 45.0159646,
-            "lng": -93.1838532
-        },
-        {
             "id": 649588,
             "name": "Singles",
             "slug": "tournament/otaku-zone-season-7-week-7/event/singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 1,
+            "numEntrants": 4,
             "videogame": {
                 "id": 1386
             },
@@ -701,100 +865,108 @@
             "lng": -98.62663839999999
         },
         {
-            "id": 647958,
-            "name": "SSBU Singles",
-            "slug": "tournament/tri-city-trihard-165/event/ssbu-singles",
+            "id": 635616,
+            "name": "Smash Ultimate Singles",
+            "slug": "tournament/smu-ultimate-34/event/smash-ultimate-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 22,
+            "numEntrants": 0,
             "videogame": {
                 "id": 1386
             },
-            "startAt": 1637364600,
+            "startAt": 1637283600,
             "phaseGroups": [
                 {
-                    "id": 1623621,
+                    "id": 1601768,
                     "phase": {
-                        "id": 1032672,
+                        "id": 1017059,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
             ],
-            "tournament": "Tri-City TriHard #165",
-            "tournament_id": 332850,
-            "city": "Midland",
-            "url": "https://smash.gg/tournament/tri-city-trihard-165/event/ssbu-singles",
-            "streams": [
+            "tournament": "SMU Ultimate 34",
+            "tournament_id": 325600,
+            "city": "Dallas",
+            "url": "https://smash.gg/tournament/smu-ultimate-34/event/smash-ultimate-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1637283600,
+            "tournament_endAt": 1637294400,
+            "tournament_registrationClosesAt": 1637283600,
+            "images": [
                 {
-                    "streamName": "bluemilkgg"
+                    "id": "3972411",
+                    "url": "https://images.smash.gg/images/tournament/325600/image-499c1418bf7186ab5c611a51fb1cdecb.jpg",
+                    "type": "banner"
                 },
                 {
-                    "streamName": "pissearth2025"
+                    "id": "3972412",
+                    "url": "https://images.smash.gg/images/tournament/325600/image-eae1aee48d835dae1b6c4970c4789606.png",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Expressway Tower, 6116 N Central Expy, Dallas, TX 75206, USA",
+            "tournament_addrState": "TX",
+            "country_code": "US",
+            "lat": 32.8415208,
+            "lng": -96.7744424
+        },
+        {
+            "id": 641842,
+            "name": "ASPTT Weeklies",
+            "slug": "tournament/asptt-rouen-weekly-offline-s2-21-1/event/asptt-weeklies",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637346600,
+            "phaseGroups": [
+                {
+                    "id": 1612768,
+                    "phase": {
+                        "id": 1024947,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "ASPTT Rouen Weekly Offline S2 #21",
+            "tournament_id": 329260,
+            "city": "Rouen",
+            "url": "https://smash.gg/tournament/asptt-rouen-weekly-offline-s2-21-1/event/asptt-weeklies",
+            "streams": [
+                {
+                    "streamName": "asptt_rouen_esport"
                 }
             ],
             "timezone": null,
-            "tournament_startAt": 1637364600,
-            "tournament_endAt": 1637380800,
-            "tournament_registrationClosesAt": 1637379000,
+            "tournament_startAt": 1637346600,
+            "tournament_endAt": 1637366400,
+            "tournament_registrationClosesAt": 1637344800,
             "images": [
                 {
-                    "id": "4067604",
-                    "url": "https://images.smash.gg/images/tournament/332850/image-fafafdde33680af3060d3e8dd8eac256.png",
+                    "id": "4021676",
+                    "url": "https://images.smash.gg/images/tournament/329260/image-c19399975e11e28119ed890c97c8581a.png",
                     "type": "profile"
                 },
                 {
-                    "id": "4067605",
-                    "url": "https://images.smash.gg/images/tournament/332850/image-5bc4fffa35e5d169ea5aab4e996b6c76.jpg",
+                    "id": "4021677",
+                    "url": "https://images.smash.gg/images/tournament/329260/image-ae7177cd38b22db0ea1180399ef051df.jpg",
                     "type": "banner"
                 }
             ],
             "tournament_multievent": false,
             "tournament_venueName": null,
-            "tournament_venueAddress": "4000 Whiting Drive, Midland, MI 48640, USA",
-            "tournament_addrState": "MI",
-            "country_code": "US",
-            "lat": 43.6301146,
-            "lng": -84.2744061
-        },
-        {
-            "id": 649547,
-            "name": "Ultimate Singles",
-            "slug": "tournament/sju-weekly-7/event/ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 8,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637364600,
-            "phaseGroups": [
-                {
-                    "id": 1626224,
-                    "phase": {
-                        "id": 1034631,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "SJU Weekly #7",
-            "tournament_id": 333814,
-            "city": "Queens",
-            "url": "https://smash.gg/tournament/sju-weekly-7/event/ultimate-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637364600,
-            "tournament_endAt": 1637384340,
-            "tournament_registrationClosesAt": 1637361000,
-            "images": [],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "80-00 Utopia Pkwy, Jamaica, NY 11432, USA",
-            "tournament_addrState": "NY",
-            "country_code": "US",
-            "lat": 40.7241294,
-            "lng": -73.7945776
+            "tournament_venueAddress": "94 Rue Beauvoisine, 76000 Rouen, France",
+            "tournament_addrState": "Normandie",
+            "country_code": "FR",
+            "lat": 49.4450286,
+            "lng": 1.0971927
         },
         {
             "id": 649573,
@@ -852,7 +1024,7 @@
             "slug": "tournament/sea-after-hours-exclusive-27/event/ultimate-singles",
             "isOnline": true,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 1,
             "videogame": {
                 "id": 1386
             },
@@ -930,12 +1102,95 @@
             "lng": null
         },
         {
-            "id": 649581,
-            "name": "Ultimate Singles",
-            "slug": "tournament/esports-game-arena-smash-academy/event/ultimate-singles",
+            "id": 646630,
+            "name": "Singles",
+            "slug": "tournament/qui-n-sos-i/event/singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 63,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637400600,
+            "phaseGroups": [
+                {
+                    "id": 1621246,
+                    "phase": {
+                        "id": 1030913,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7011132
+                        },
+                        {
+                            "id": 7011133
+                        },
+                        {
+                            "id": 7011134
+                        },
+                        {
+                            "id": 7011135
+                        },
+                        {
+                            "id": 7011136
+                        },
+                        {
+                            "id": 7011137
+                        },
+                        {
+                            "id": 7011138
+                        },
+                        {
+                            "id": 7011139
+                        }
+                    ]
+                },
+                {
+                    "id": 1621247,
+                    "phase": {
+                        "id": 1030914,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Qui\u00e9n sos I",
+            "tournament_id": 332035,
+            "city": "Madrid",
+            "url": "https://smash.gg/tournament/qui-n-sos-i/event/singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1637400600,
+            "tournament_endAt": 1637436600,
+            "tournament_registrationClosesAt": 1637323200,
+            "images": [
+                {
+                    "id": "4055446",
+                    "url": "https://images.smash.gg/images/tournament/332035/image-4092385f821ca34a05e30de2b2ee46d0.png",
+                    "type": "banner"
+                },
+                {
+                    "id": "4055447",
+                    "url": "https://images.smash.gg/images/tournament/332035/image-573b60d764d60306d80e5681fc81d010.png",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "C. del Tutor, 30, 28008 Madrid, Espa\u00f1a",
+            "tournament_addrState": "MD",
+            "country_code": "ES",
+            "lat": 40.4289475,
+            "lng": -3.716150099999999
+        },
+        {
+            "id": 649581,
+            "name": "Academy Poules",
+            "slug": "tournament/esports-game-arena-smash-academy/event/academy-poules",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 3,
             "videogame": {
                 "id": 1386
             },
@@ -977,7 +1232,7 @@
             "tournament": "Esports Game Arena: Smash Academy",
             "tournament_id": 333841,
             "city": "Alphen aan den Rijn",
-            "url": "https://smash.gg/tournament/esports-game-arena-smash-academy/event/ultimate-singles",
+            "url": "https://smash.gg/tournament/esports-game-arena-smash-academy/event/academy-poules",
             "streams": [
                 {
                     "streamName": "esportsgamearena"
@@ -1089,7 +1344,7 @@
             "slug": "tournament/localhost-denver-super-smash-monthly-3/event/ssbu-singles-monthly",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 2,
+            "numEntrants": 5,
             "videogame": {
                 "id": 1386
             },
@@ -1264,96 +1519,99 @@
             "lng": -105.0789401
         },
         {
-            "id": 649553,
-            "name": "Ultimate Singles",
-            "slug": "tournament/edge-guard-23/event/ultimate-singles",
+            "id": 649608,
+            "name": "Smash Ultimate Singles",
+            "slug": "tournament/friday-night-saturday-2/event/smash-ultimate-singles",
             "isOnline": false,
             "state": "CREATED",
             "numEntrants": 0,
             "videogame": {
                 "id": 1386
             },
-            "startAt": 1637438400,
+            "startAt": 1637451000,
             "phaseGroups": [
                 {
-                    "id": 1626239,
+                    "id": 1626321,
                     "phase": {
-                        "id": 1034641,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7028217
-                        },
-                        {
-                            "id": 7028219
-                        },
-                        {
-                            "id": 7028221
-                        },
-                        {
-                            "id": 7028223
-                        }
-                    ]
-                },
-                {
-                    "id": 1626240,
-                    "phase": {
-                        "id": 1034641,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7028218
-                        },
-                        {
-                            "id": 7028220
-                        },
-                        {
-                            "id": 7028222
-                        },
-                        {
-                            "id": 7028224
-                        }
-                    ]
-                },
-                {
-                    "id": 1626241,
-                    "phase": {
-                        "id": 1034642,
-                        "name": "Top Cut"
+                        "id": 1034710,
+                        "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
             ],
-            "tournament": "Edge Guard #23",
-            "tournament_id": 333818,
-            "city": "Green Bay",
-            "url": "https://smash.gg/tournament/edge-guard-23/event/ultimate-singles",
+            "tournament": "Friday Night Saturday 2",
+            "tournament_id": 333860,
+            "city": "Wilmington",
+            "url": "https://smash.gg/tournament/friday-night-saturday-2/event/smash-ultimate-singles",
             "streams": null,
             "timezone": null,
-            "tournament_startAt": 1637438400,
-            "tournament_endAt": 1637474340,
-            "tournament_registrationClosesAt": 1637445600,
+            "tournament_startAt": 1637451000,
+            "tournament_endAt": 1637463607,
+            "tournament_registrationClosesAt": 1637451000,
             "images": [
                 {
-                    "id": "4079525",
-                    "url": "https://images.smash.gg/images/tournament/333818/image-cb756e49f94fac34dc055cacb5778c86.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "4079526",
-                    "url": "https://images.smash.gg/images/tournament/333818/image-a707fc074d39dd9b5e49874551faf73c.jpg",
+                    "id": "4080158",
+                    "url": "https://images.smash.gg/images/tournament/333860/image-df6a3fb72d347bb5e0643cbb78c14e25.jpg",
                     "type": "profile"
                 }
             ],
             "tournament_multievent": false,
             "tournament_venueName": null,
-            "tournament_venueAddress": "2642 Packerland Dr, Green Bay, WI 54313, USA",
-            "tournament_addrState": "WI",
+            "tournament_venueAddress": "5015 Wrightsville Ave, Wilmington, NC 28403, USA",
+            "tournament_addrState": "NC",
             "country_code": "US",
-            "lat": 44.4911357,
-            "lng": -88.108072
+            "lat": 34.2132329,
+            "lng": -77.8731273
+        },
+        {
+            "id": 649611,
+            "name": "Ultimate Weekly",
+            "slug": "tournament/warp-zone-weekly-11-20-21/event/ultimate-weekly",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637454600,
+            "phaseGroups": [
+                {
+                    "id": 1626324,
+                    "phase": {
+                        "id": 1034713,
+                        "name": "Final Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Warp Zone Weekly 11/20/21",
+            "tournament_id": 333863,
+            "city": "Brandon",
+            "url": "https://smash.gg/tournament/warp-zone-weekly-11-20-21/event/ultimate-weekly",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1637454600,
+            "tournament_endAt": 1637470800,
+            "tournament_registrationClosesAt": 1637454600,
+            "images": [
+                {
+                    "id": "4080209",
+                    "url": "https://images.smash.gg/images/tournament/333863/image-3f0d86aa8bf599394141401c3900ee1a.jpg",
+                    "type": "profile"
+                },
+                {
+                    "id": "4080210",
+                    "url": "https://images.smash.gg/images/tournament/333863/image-c8599cf20c8373d029f04d0e0750349c.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "393 Crossgates Blvd, Brandon, MS 39042, USA",
+            "tournament_addrState": "MS",
+            "country_code": "US",
+            "lat": 32.2886432,
+            "lng": -90.0365544
         },
         {
             "id": 649599,
@@ -1406,7 +1664,7 @@
             "slug": "tournament/sabotage-3-and-knuckles-feat-everyone/event/ultimate-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 66,
+            "numEntrants": 68,
             "videogame": {
                 "id": 1386
             },
@@ -1540,7 +1798,7 @@
             "slug": "tournament/sabotage-3-and-knuckles-feat-everyone/event/ultimate-doubles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 6,
+            "numEntrants": 7,
             "videogame": {
                 "id": 1386
             },
@@ -1590,7 +1848,7 @@
             "slug": "tournament/llg-heaven-s-arena-8/event/ultimate-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 3,
             "videogame": {
                 "id": 1386
             },
@@ -1720,6 +1978,371 @@
             "lng": -75.1926123
         },
         {
+            "id": 649595,
+            "name": "Singles",
+            "slug": "tournament/rebirth-cup-2/event/singles",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637780400,
+            "phaseGroups": [],
+            "tournament": "Rebirth Cup #2",
+            "tournament_id": 333845,
+            "city": null,
+            "url": "https://smash.gg/tournament/rebirth-cup-2/event/singles",
+            "streams": [
+                {
+                    "streamName": "browkoo"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1637780400,
+            "tournament_endAt": 1637794740,
+            "tournament_registrationClosesAt": 1637776800,
+            "images": [
+                {
+                    "id": "4079793",
+                    "url": "https://images.smash.gg/images/tournament/333845/image-eaef6176020f5268475e0c2302d77310.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4079797",
+                    "url": "https://images.smash.gg/images/tournament/333845/image-0879cbb0b8a653a33bc82ef492f25a96.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": null,
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": null,
+            "lng": null
+        },
+        {
+            "id": "chal39936",
+            "name": "Smash Ultimate @ Scion 10",
+            "numEntrants": 8,
+            "startAt": 1643446800.0,
+            "tournament": "Scion Esports 10th Anniversary Celebration featuring Halo Infinite",
+            "url": "https://scionesports.challonge.com/scion10smash",
+            "tournament_startAt": 1643446800.0,
+            "tournament_endAt": 1643500800.0,
+            "tournament_registrationClosesAt": 1643446800.0,
+            "images": [
+                {
+                    "url": "s3.amazonaws.com/challonge_app/events/logos/000/039/936/large/challonge_logo.png?1636407784",
+                    "type": "profile"
+                },
+                {
+                    "url": "s3.amazonaws.com/challonge_app/events/banners/000/039/936/cropped/blog_post.png?1636406613",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueAddress": "Lake Charles Civic Center Exhibition Hall, Calcasieu Parish, US",
+            "tournament_addrState": null,
+            "country_code": "US",
+            "lat": null,
+            "lng": null,
+            "provider": "challonge"
+        },
+        {
+            "id": 649437,
+            "name": "Smash ultimate singles",
+            "slug": "tournament/native-smash/event/smash-ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637280000,
+            "phaseGroups": [
+                {
+                    "id": 1626016,
+                    "phase": {
+                        "id": 1034482,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Native Smash",
+            "tournament_id": 333735,
+            "city": "Boynton Beach",
+            "url": "https://smash.gg/tournament/native-smash/event/smash-ultimate-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1637280000,
+            "tournament_endAt": 1637287200,
+            "tournament_registrationClosesAt": 1637285460,
+            "images": [
+                {
+                    "id": "4078763",
+                    "url": "https://images.smash.gg/images/tournament/333735/image-7aeff78c3c14e5455701157659a45474.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4078784",
+                    "url": "https://images.smash.gg/images/tournament/333735/image-01ab8751f682f8e6b38d07b90adc7126.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "100 NE 6th St, Boynton Beach, FL 33435, USA",
+            "tournament_addrState": "FL",
+            "country_code": "US",
+            "lat": 26.5281537,
+            "lng": -80.0557762
+        },
+        {
+            "id": 649555,
+            "name": "Ultimate Singles",
+            "slug": "tournament/advantage-state-25/event/ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 9,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637281800,
+            "phaseGroups": [
+                {
+                    "id": 1626244,
+                    "phase": {
+                        "id": 1034645,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Advantage State #25",
+            "tournament_id": 333820,
+            "city": "Roseville",
+            "url": "https://smash.gg/tournament/advantage-state-25/event/ultimate-singles",
+            "streams": [
+                {
+                    "streamName": "advantagestate"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1637281800,
+            "tournament_endAt": 1637301600,
+            "tournament_registrationClosesAt": 1637283600,
+            "images": [
+                {
+                    "id": "4079535",
+                    "url": "https://images.smash.gg/images/tournament/333820/image-beb06a3c0e07d269f52ecf3b4574a7be.png",
+                    "type": "banner"
+                },
+                {
+                    "id": "4079536",
+                    "url": "https://images.smash.gg/images/tournament/333820/image-6ac7907aa7c4e30798d26842383ff233.png",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "1975 County Road B2 W, Roseville, MN 55113, USA",
+            "tournament_addrState": "MN",
+            "country_code": "US",
+            "lat": 45.0159646,
+            "lng": -93.1838532
+        },
+        {
+            "id": 647958,
+            "name": "SSBU Singles",
+            "slug": "tournament/tri-city-trihard-165/event/ssbu-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 22,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637364600,
+            "phaseGroups": [
+                {
+                    "id": 1623621,
+                    "phase": {
+                        "id": 1032672,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Tri-City TriHard #165",
+            "tournament_id": 332850,
+            "city": "Midland",
+            "url": "https://smash.gg/tournament/tri-city-trihard-165/event/ssbu-singles",
+            "streams": [
+                {
+                    "streamName": "bluemilkgg"
+                },
+                {
+                    "streamName": "pissearth2025"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1637364600,
+            "tournament_endAt": 1637380800,
+            "tournament_registrationClosesAt": 1637379000,
+            "images": [
+                {
+                    "id": "4067604",
+                    "url": "https://images.smash.gg/images/tournament/332850/image-fafafdde33680af3060d3e8dd8eac256.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4067605",
+                    "url": "https://images.smash.gg/images/tournament/332850/image-5bc4fffa35e5d169ea5aab4e996b6c76.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "4000 Whiting Drive, Midland, MI 48640, USA",
+            "tournament_addrState": "MI",
+            "country_code": "US",
+            "lat": 43.6301146,
+            "lng": -84.2744061
+        },
+        {
+            "id": 649547,
+            "name": "Ultimate Singles",
+            "slug": "tournament/sju-weekly-7/event/ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 8,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637364600,
+            "phaseGroups": [
+                {
+                    "id": 1626224,
+                    "phase": {
+                        "id": 1034631,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "SJU Weekly #7",
+            "tournament_id": 333814,
+            "city": "Queens",
+            "url": "https://smash.gg/tournament/sju-weekly-7/event/ultimate-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1637364600,
+            "tournament_endAt": 1637384340,
+            "tournament_registrationClosesAt": 1637361000,
+            "images": [],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "80-00 Utopia Pkwy, Jamaica, NY 11432, USA",
+            "tournament_addrState": "NY",
+            "country_code": "US",
+            "lat": 40.7241294,
+            "lng": -73.7945776
+        },
+        {
+            "id": 649553,
+            "name": "Ultimate Singles",
+            "slug": "tournament/edge-guard-23/event/ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1637438400,
+            "phaseGroups": [
+                {
+                    "id": 1626239,
+                    "phase": {
+                        "id": 1034641,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7028217
+                        },
+                        {
+                            "id": 7028219
+                        },
+                        {
+                            "id": 7028221
+                        },
+                        {
+                            "id": 7028223
+                        }
+                    ]
+                },
+                {
+                    "id": 1626240,
+                    "phase": {
+                        "id": 1034641,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7028218
+                        },
+                        {
+                            "id": 7028220
+                        },
+                        {
+                            "id": 7028222
+                        },
+                        {
+                            "id": 7028224
+                        }
+                    ]
+                },
+                {
+                    "id": 1626241,
+                    "phase": {
+                        "id": 1034642,
+                        "name": "Top Cut"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Edge Guard #23",
+            "tournament_id": 333818,
+            "city": "Green Bay",
+            "url": "https://smash.gg/tournament/edge-guard-23/event/ultimate-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1637438400,
+            "tournament_endAt": 1637474340,
+            "tournament_registrationClosesAt": 1637445600,
+            "images": [
+                {
+                    "id": "4079525",
+                    "url": "https://images.smash.gg/images/tournament/333818/image-cb756e49f94fac34dc055cacb5778c86.png",
+                    "type": "banner"
+                },
+                {
+                    "id": "4079526",
+                    "url": "https://images.smash.gg/images/tournament/333818/image-a707fc074d39dd9b5e49874551faf73c.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "2642 Packerland Dr, Green Bay, WI 54313, USA",
+            "tournament_addrState": "WI",
+            "country_code": "US",
+            "lat": 44.4911357,
+            "lng": -88.108072
+        },
+        {
             "id": 649516,
             "name": "1v1",
             "slug": "tournament/manava-weekly-offline-2/event/1v1",
@@ -1770,47 +2393,6 @@
             "lng": 2.415392
         },
         {
-            "id": 649595,
-            "name": "Singles",
-            "slug": "tournament/rebirth-cup-2/event/singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": null,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637780400,
-            "phaseGroups": [],
-            "tournament": "Rebirth Cup #2",
-            "tournament_id": 333845,
-            "city": null,
-            "url": "https://smash.gg/tournament/rebirth-cup-2/event/singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637780400,
-            "tournament_endAt": 1637838000,
-            "tournament_registrationClosesAt": 1637776800,
-            "images": [
-                {
-                    "id": "4079793",
-                    "url": "https://images.smash.gg/images/tournament/333845/image-eaef6176020f5268475e0c2302d77310.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4079797",
-                    "url": "https://images.smash.gg/images/tournament/333845/image-0879cbb0b8a653a33bc82ef492f25a96.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
-        },
-        {
             "id": 649559,
             "name": "Andre Ser0x All-Star Doubles Edition",
             "slug": "tournament/andre-ser0x-all-star-doubles-edition-4/event/andre-ser0x-all-star-doubles-edition",
@@ -1859,34 +2441,6 @@
             "country_code": null,
             "lat": null,
             "lng": null
-        },
-        {
-            "id": "chal39936",
-            "name": "Smash Ultimate @ Scion 10",
-            "numEntrants": 8,
-            "startAt": 1643446800.0,
-            "tournament": "Scion Esports 10th Anniversary Celebration featuring Halo Infinite",
-            "url": "https://scionesports.challonge.com/scion10smash",
-            "tournament_startAt": 1643446800.0,
-            "tournament_endAt": 1643500800.0,
-            "tournament_registrationClosesAt": 1643446800.0,
-            "images": [
-                {
-                    "url": "s3.amazonaws.com/challonge_app/events/logos/000/039/936/large/challonge_logo.png?1636407784",
-                    "type": "profile"
-                },
-                {
-                    "url": "s3.amazonaws.com/challonge_app/events/banners/000/039/936/cropped/blog_post.png?1636406613",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueAddress": "Lake Charles Civic Center Exhibition Hall, Calcasieu Parish, US",
-            "tournament_addrState": null,
-            "country_code": "US",
-            "lat": null,
-            "lng": null,
-            "provider": "challonge"
         },
         {
             "id": 647187,
@@ -2155,60 +2709,6 @@
             "tournament_endAt": 1638653400,
             "tournament_registrationClosesAt": 1638529200,
             "images": [],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
-        },
-        {
-            "id": 646612,
-            "name": "Double Elimination Bracket",
-            "slug": "tournament/ued-season-2-online-smash-cup-ii/event/double-elimination-bracket",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 11,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637258400,
-            "phaseGroups": [
-                {
-                    "id": 1621223,
-                    "phase": {
-                        "id": 1030894,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "UED Season 2: Online Smash Cup II",
-            "tournament_id": 332027,
-            "city": null,
-            "url": "https://smash.gg/tournament/ued-season-2-online-smash-cup-ii/event/double-elimination-bracket",
-            "streams": [
-                {
-                    "streamName": "esvee"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637258400,
-            "tournament_endAt": 1637272800,
-            "tournament_registrationClosesAt": 1637172000,
-            "images": [
-                {
-                    "id": "4055259",
-                    "url": "https://images.smash.gg/images/tournament/332027/image-23f91b96059d24adc4bdc3de57ef1748.jpg",
-                    "type": "banner"
-                },
-                {
-                    "id": "4055267",
-                    "url": "https://images.smash.gg/images/tournament/332027/image-73bd6265970a4f70deaffab32b721d33.png",
-                    "type": "profile"
-                }
-            ],
             "tournament_multievent": false,
             "tournament_venueName": null,
             "tournament_venueAddress": null,
@@ -5984,47 +6484,6 @@
             "country_code": "US",
             "lat": 32.22638,
             "lng": -110.971006
-        },
-        {
-            "id": 649442,
-            "name": "Ultimate Singles",
-            "slug": "tournament/bowling-with-cemet-cemet-too-busy-studying-for-his-bowling/event/ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637280000,
-            "phaseGroups": [],
-            "tournament": "Bowling with Cemet (Cemet too busy studying for his bowling 113 final to attend)",
-            "tournament_id": 333737,
-            "city": "Columbia",
-            "url": "https://smash.gg/tournament/bowling-with-cemet-cemet-too-busy-studying-for-his-bowling/event/ultimate-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637280000,
-            "tournament_endAt": 1637297220,
-            "tournament_registrationClosesAt": 1637279940,
-            "images": [
-                {
-                    "id": "4078696",
-                    "url": "https://images.smash.gg/images/tournament/333737/image-1b94c2ab613888a713a09fc6cf07027e.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4078850",
-                    "url": "https://images.smash.gg/images/tournament/333737/image-b662b35f56bc715bcba6be92f4228589.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "1400 Greene St, Columbia, SC 29208, USA",
-            "tournament_addrState": "SC",
-            "country_code": "US",
-            "lat": 33.9968665,
-            "lng": -81.02717899999999
         },
         {
             "id": 648353,
@@ -22115,51 +22574,6 @@
             "lng": 9.7017013
         },
         {
-            "id": 648791,
-            "name": "Ultimate Singles",
-            "slug": "tournament/smash-respawn-82/event/ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 45,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637258400,
-            "phaseGroups": [
-                {
-                    "id": 1624853,
-                    "phase": {
-                        "id": 1033678,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Smash @ Respawn #82",
-            "tournament_id": 333323,
-            "city": "Wien",
-            "url": "https://smash.gg/tournament/smash-respawn-82/event/ultimate-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637258400,
-            "tournament_endAt": 1637276220,
-            "tournament_registrationClosesAt": 1637247600,
-            "images": [
-                {
-                    "id": "4072329",
-                    "url": "https://images.smash.gg/images/tournament/333323/image-36649aca9e3b220594152cfc1e39bf38.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": "Respawn eSports Bar",
-            "tournament_venueAddress": "U-Bahn Bogen 185, 1190 Wien, Austria",
-            "tournament_addrState": "Wien",
-            "country_code": "AT",
-            "lat": 48.23218689999999,
-            "lng": 16.35416429999998
-        },
-        {
             "id": 648314,
             "name": "Singles",
             "slug": "tournament/fd-friday-156/event/singles",
@@ -32123,93 +32537,6 @@
             "lng": -79.9536238
         },
         {
-            "id": 648126,
-            "name": "Ultimate Singles",
-            "slug": "tournament/20-000-johns-sous-l-is-re-22-welcome-back/event/ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637256600,
-            "phaseGroups": [
-                {
-                    "id": 1623852,
-                    "phase": {
-                        "id": 1032868,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7020834
-                        },
-                        {
-                            "id": 7020835
-                        },
-                        {
-                            "id": 7020836
-                        },
-                        {
-                            "id": 7020837
-                        },
-                        {
-                            "id": 7020838
-                        },
-                        {
-                            "id": 7020839
-                        },
-                        {
-                            "id": 7020840
-                        },
-                        {
-                            "id": 7020841
-                        }
-                    ]
-                },
-                {
-                    "id": 1623853,
-                    "phase": {
-                        "id": 1032869,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "20.000 Johns sous l'Is\u00e8re #22 : Welcome back Lylat",
-            "tournament_id": 332937,
-            "city": "Grenoble",
-            "url": "https://smash.gg/tournament/20-000-johns-sous-l-is-re-22-welcome-back/event/ultimate-singles",
-            "streams": [
-                {
-                    "streamName": "smashgrenoble"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637256600,
-            "tournament_endAt": 1637269200,
-            "tournament_registrationClosesAt": 1637253900,
-            "images": [
-                {
-                    "id": "4069420",
-                    "url": "https://images.smash.gg/images/tournament/332937/image-f673245d7b913d77894c751ce0c60e21.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4069427",
-                    "url": "https://images.smash.gg/images/tournament/332937/image-9a3c683d2a0d9453b0f2fdf71059b227.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "2 Rue Pr\u00e9sident Carnot, 38000 Grenoble, France",
-            "tournament_addrState": "Auvergne-Rh\u00f4ne-Alpes",
-            "country_code": "FR",
-            "lat": 45.1920477,
-            "lng": 5.730970699999999
-        },
-        {
             "id": 648318,
             "name": "Smash Ultimate Singles",
             "slug": "tournament/wizard-s-foot-16/event/smash-ultimate-singles",
@@ -34021,45 +34348,6 @@
             "country_code": "US",
             "lat": 41.7202344,
             "lng": -83.6743604
-        },
-        {
-            "id": 648248,
-            "name": "Ultimate Singles",
-            "slug": "tournament/smash-at-cc-74/event/ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 3,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637258400,
-            "phaseGroups": [
-                {
-                    "id": 1624025,
-                    "phase": {
-                        "id": 1033012,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Smash at CC #74",
-            "tournament_id": 332990,
-            "city": "Paisley",
-            "url": "https://smash.gg/tournament/smash-at-cc-74/event/ultimate-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637258400,
-            "tournament_endAt": 1637272800,
-            "tournament_registrationClosesAt": 1637258400,
-            "images": [],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "45 Old Sneddon St, Paisley PA3 2AN, UK",
-            "tournament_addrState": "Scotland",
-            "country_code": "GB",
-            "lat": 55.84785429999999,
-            "lng": -4.423585699999999
         },
         {
             "id": 648243,
@@ -39800,89 +40088,6 @@
             ]
         },
         {
-            "id": 646630,
-            "name": "Singles",
-            "slug": "tournament/qui-n-sos-i/event/singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 38,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637400600,
-            "phaseGroups": [
-                {
-                    "id": 1621246,
-                    "phase": {
-                        "id": 1030913,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7011132
-                        },
-                        {
-                            "id": 7011133
-                        },
-                        {
-                            "id": 7011134
-                        },
-                        {
-                            "id": 7011135
-                        },
-                        {
-                            "id": 7011136
-                        },
-                        {
-                            "id": 7011137
-                        },
-                        {
-                            "id": 7011138
-                        },
-                        {
-                            "id": 7011139
-                        }
-                    ]
-                },
-                {
-                    "id": 1621247,
-                    "phase": {
-                        "id": 1030914,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Qui\u00e9n sos I",
-            "tournament_id": 332035,
-            "city": "Madrid",
-            "url": "https://smash.gg/tournament/qui-n-sos-i/event/singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637400600,
-            "tournament_endAt": 1637436600,
-            "tournament_registrationClosesAt": 1637323200,
-            "images": [
-                {
-                    "id": "4055446",
-                    "url": "https://images.smash.gg/images/tournament/332035/image-4092385f821ca34a05e30de2b2ee46d0.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "4055447",
-                    "url": "https://images.smash.gg/images/tournament/332035/image-573b60d764d60306d80e5681fc81d010.png",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "C. del Tutor, 30, 28008 Madrid, Espa\u00f1a",
-            "tournament_addrState": "MD",
-            "country_code": "ES",
-            "lat": 40.4289475,
-            "lng": -3.716150099999999
-        },
-        {
             "id": 638381,
             "name": "Ultimate Singles for Bethel University Students Fall 2021",
             "slug": "tournament/bethel-student-invitational/event/ultimate-singles-for-bethel-university-students-fall-2021",
@@ -43437,60 +43642,6 @@
             "country_code": "US",
             "lat": 29.0421361,
             "lng": -95.450549
-        },
-        {
-            "id": 647422,
-            "name": "Smash Bi-Monthly",
-            "slug": "tournament/at-gaming-night-s4-5/event/smash-bi-monthly",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 6,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637258400,
-            "phaseGroups": [
-                {
-                    "id": 1622677,
-                    "phase": {
-                        "id": 1031945,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "AT Gaming Night S4#5",
-            "tournament_id": 332531,
-            "city": "Dijon",
-            "url": "https://smash.gg/tournament/at-gaming-night-s4-5/event/smash-bi-monthly",
-            "streams": [
-                {
-                    "streamName": "pad_dijon"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637258400,
-            "tournament_endAt": 1637280000,
-            "tournament_registrationClosesAt": 1637256600,
-            "images": [
-                {
-                    "id": "4063121",
-                    "url": "https://images.smash.gg/images/tournament/332531/image-2cd32960b8387544247a86b87116b429.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4063122",
-                    "url": "https://images.smash.gg/images/tournament/332531/image-86fef4bb0eee7f31ea7085246e0676fe.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": "Ath\u00e9n\u00e9um de Dijon",
-            "tournament_venueAddress": "Espl. Erasme, 21000 Dijon, France",
-            "tournament_addrState": "Bourgogne-Franche-Comt\u00e9",
-            "country_code": "FR",
-            "lat": 47.3140929,
-            "lng": 5.066367799999966
         },
         {
             "id": 640377,
@@ -47185,168 +47336,6 @@
             "lng": 11.342280999999957
         },
         {
-            "id": 646666,
-            "name": "Amateur bracket",
-            "slug": "tournament/gaming-weekly-26/event/amateur-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637251200,
-            "phaseGroups": [
-                {
-                    "id": 1621293,
-                    "phase": {
-                        "id": 1030955,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "GAMING Weekly #26",
-            "tournament_id": 332060,
-            "city": "Lausanne",
-            "url": "https://smash.gg/tournament/gaming-weekly-26/event/amateur-bracket",
-            "streams": [
-                {
-                    "streamName": "zoneorange"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637251200,
-            "tournament_endAt": 1637272800,
-            "tournament_registrationClosesAt": 1637249400,
-            "images": [
-                {
-                    "id": "4055725",
-                    "url": "https://images.smash.gg/images/tournament/332060/image-7d3659620aeb2de6474dfd85da9e88a3.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4055726",
-                    "url": "https://images.smash.gg/images/tournament/332060/image-4a4b268f3c7aa08e1e8a2d14b0a0019b.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Rue de la Grotte 3, 1003 Lausanne, Suisse",
-            "tournament_addrState": "VD",
-            "country_code": "CH",
-            "lat": 46.5187411,
-            "lng": 6.6343101
-        },
-        {
-            "id": 646667,
-            "name": "Liste d'attente",
-            "slug": "tournament/gaming-weekly-26/event/liste-d-attente",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637251200,
-            "phaseGroups": [
-                {
-                    "id": 1621294,
-                    "phase": {
-                        "id": 1030956,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "GAMING Weekly #26",
-            "tournament_id": 332060,
-            "city": "Lausanne",
-            "url": "https://smash.gg/tournament/gaming-weekly-26/event/liste-d-attente",
-            "streams": [
-                {
-                    "streamName": "zoneorange"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637251200,
-            "tournament_endAt": 1637272800,
-            "tournament_registrationClosesAt": 1637249400,
-            "images": [
-                {
-                    "id": "4055725",
-                    "url": "https://images.smash.gg/images/tournament/332060/image-7d3659620aeb2de6474dfd85da9e88a3.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4055726",
-                    "url": "https://images.smash.gg/images/tournament/332060/image-4a4b268f3c7aa08e1e8a2d14b0a0019b.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Rue de la Grotte 3, 1003 Lausanne, Suisse",
-            "tournament_addrState": "VD",
-            "country_code": "CH",
-            "lat": 46.5187411,
-            "lng": 6.6343101
-        },
-        {
-            "id": 646665,
-            "name": "Singles bracket",
-            "slug": "tournament/gaming-weekly-26/event/singles-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637254800,
-            "phaseGroups": [
-                {
-                    "id": 1621292,
-                    "phase": {
-                        "id": 1030954,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "GAMING Weekly #26",
-            "tournament_id": 332060,
-            "city": "Lausanne",
-            "url": "https://smash.gg/tournament/gaming-weekly-26/event/singles-bracket",
-            "streams": [
-                {
-                    "streamName": "zoneorange"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637251200,
-            "tournament_endAt": 1637272800,
-            "tournament_registrationClosesAt": 1637249400,
-            "images": [
-                {
-                    "id": "4055725",
-                    "url": "https://images.smash.gg/images/tournament/332060/image-7d3659620aeb2de6474dfd85da9e88a3.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4055726",
-                    "url": "https://images.smash.gg/images/tournament/332060/image-4a4b268f3c7aa08e1e8a2d14b0a0019b.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Rue de la Grotte 3, 1003 Lausanne, Suisse",
-            "tournament_addrState": "VD",
-            "country_code": "CH",
-            "lat": 46.5187411,
-            "lng": 6.6343101
-        },
-        {
             "id": 646982,
             "name": "Ultimate Singles",
             "slug": "tournament/fair-play-series-4/event/ultimate-singles",
@@ -47560,98 +47549,6 @@
             "country_code": "GB",
             "lat": 53.9461089,
             "lng": -1.0517718
-        },
-        {
-            "id": 647037,
-            "name": "Smash Ultimate Singles",
-            "slug": "tournament/gr-cl-sh-15/event/smash-ultimate-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637258400,
-            "phaseGroups": [
-                {
-                    "id": 1621965,
-                    "phase": {
-                        "id": 1031432,
-                        "name": "Round Robin Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7013738
-                        },
-                        {
-                            "id": 7013740
-                        },
-                        {
-                            "id": 7013742
-                        },
-                        {
-                            "id": 7013744
-                        }
-                    ]
-                },
-                {
-                    "id": 1621966,
-                    "phase": {
-                        "id": 1031432,
-                        "name": "Round Robin Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7013739
-                        },
-                        {
-                            "id": 7013741
-                        },
-                        {
-                            "id": 7013743
-                        },
-                        {
-                            "id": 7013745
-                        }
-                    ]
-                },
-                {
-                    "id": 1621967,
-                    "phase": {
-                        "id": 1031433,
-                        "name": "Final Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "GR CL@SH #15",
-            "tournament_id": 332282,
-            "city": "Lincoln",
-            "url": "https://smash.gg/tournament/gr-cl-sh-15/event/smash-ultimate-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637258400,
-            "tournament_endAt": 1637272800,
-            "tournament_registrationClosesAt": 1637254800,
-            "images": [
-                {
-                    "id": "4058823",
-                    "url": "https://images.smash.gg/images/tournament/332282/image-761517e1935979e6731ddfecb02c1790.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "4058824",
-                    "url": "https://images.smash.gg/images/tournament/332282/image-3f2289f1365f984774ce1ac266cedbcc.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Stonebow Centre, Lincoln LN2 1DP, UK",
-            "tournament_addrState": "England",
-            "country_code": "GB",
-            "lat": 53.229163,
-            "lng": -0.5392908
         },
         {
             "id": 643903,
@@ -52149,60 +52046,6 @@
             "country_code": "US",
             "lat": 40.461388,
             "lng": -74.4651789
-        },
-        {
-            "id": 641842,
-            "name": "ASPTT Weeklies",
-            "slug": "tournament/asptt-rouen-weekly-offline-s2-22/event/asptt-weeklies",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1637346600,
-            "phaseGroups": [
-                {
-                    "id": 1612768,
-                    "phase": {
-                        "id": 1024947,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "ASPTT Rouen Weekly Offline S2 #22",
-            "tournament_id": 329260,
-            "city": "Rouen",
-            "url": "https://smash.gg/tournament/asptt-rouen-weekly-offline-s2-22/event/asptt-weeklies",
-            "streams": [
-                {
-                    "streamName": "asptt_rouen_esport"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1637346600,
-            "tournament_endAt": 1637366400,
-            "tournament_registrationClosesAt": 1637344800,
-            "images": [
-                {
-                    "id": "4021676",
-                    "url": "https://images.smash.gg/images/tournament/329260/image-c19399975e11e28119ed890c97c8581a.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4021677",
-                    "url": "https://images.smash.gg/images/tournament/329260/image-ae7177cd38b22db0ea1180399ef051df.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "94 Rue Beauvoisine, 76000 Rouen, France",
-            "tournament_addrState": "Normandie",
-            "country_code": "FR",
-            "lat": 49.4450286,
-            "lng": 1.0971927
         },
         {
             "id": 645054,
