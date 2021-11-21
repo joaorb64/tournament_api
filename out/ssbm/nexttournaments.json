@@ -1,12 +1,12 @@
 {
-    "updateTime": 1637525618,
+    "updateTime": 1637529226,
     "events": [
         {
             "id": 649283,
             "name": "Smash Melee singles",
             "slug": "tournament/smash-at-apex-44/event/smash-melee-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 5,
             "videogame": {
                 "id": 1
@@ -24,11 +24,88 @@
             ]
         },
         {
+            "id": 647782,
+            "name": "Melee Singles",
+            "slug": "tournament/newbie-showdown-34/event/melee-singles",
+            "isOnline": true,
+            "state": "COMPLETED",
+            "numEntrants": 41,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1637512200,
+            "phaseGroups": [
+                {
+                    "id": 1623347,
+                    "phase": {
+                        "id": 1032452,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7035501
+                        },
+                        {
+                            "id": 7035502
+                        },
+                        {
+                            "id": 7035503
+                        },
+                        {
+                            "id": 7035504
+                        },
+                        {
+                            "id": 7035505
+                        },
+                        {
+                            "id": 7035506
+                        },
+                        {
+                            "id": 7035507
+                        },
+                        {
+                            "id": 7035508
+                        }
+                    ]
+                },
+                {
+                    "id": 1623348,
+                    "phase": {
+                        "id": 1032453,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 647417,
+            "name": "Melee Singles",
+            "slug": "tournament/between-2-lakes-35-a-madison-super-smash-bros-tournament/event/melee-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 25,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1637517600,
+            "phaseGroups": [
+                {
+                    "id": 1622672,
+                    "phase": {
+                        "id": 1031940,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 647421,
             "name": "Melee Doubles",
             "slug": "tournament/between-2-lakes-35-a-madison-super-smash-bros-tournament/event/melee-doubles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 4,
             "videogame": {
                 "id": 1
@@ -46,34 +123,12 @@
             ]
         },
         {
-            "id": 647417,
-            "name": "Melee Singles",
-            "slug": "tournament/between-2-lakes-35-a-madison-super-smash-bros-tournament/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 18,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1637517600,
-            "phaseGroups": [
-                {
-                    "id": 1622672,
-                    "phase": {
-                        "id": 1031940,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 646812,
             "name": "Melee Singles",
             "slug": "tournament/cencal-clash-4-homecoming-100-250-pot-bonus/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 5,
+            "numEntrants": 7,
             "videogame": {
                 "id": 1
             },
@@ -90,22 +145,60 @@
             ]
         },
         {
-            "id": 646821,
-            "name": "Melee Singles",
-            "slug": "tournament/maul-online-november-2021/event/melee-singles",
-            "isOnline": true,
-            "state": "ACTIVE",
-            "numEntrants": 14,
+            "id": 642050,
+            "name": "Melee Singles (Individual)",
+            "slug": "tournament/smash-yard-2021/event/melee-singles-individual",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 4,
             "videogame": {
                 "id": 1
             },
             "startAt": 1637521200,
             "phaseGroups": [
                 {
-                    "id": 1621540,
+                    "id": 1613065,
                     "phase": {
-                        "id": 1031137,
-                        "name": "Bracket"
+                        "id": 1025192,
+                        "name": "Fase de Grupos (Pools)"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6984491
+                        },
+                        {
+                            "id": 6984493
+                        }
+                    ]
+                },
+                {
+                    "id": 1613072,
+                    "phase": {
+                        "id": 1025192,
+                        "name": "Fase de Grupos (Pools)"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 6984492
+                        },
+                        {
+                            "id": 6984494
+                        }
+                    ]
+                },
+                {
+                    "id": 1613070,
+                    "phase": {
+                        "id": 1025197,
+                        "name": "Pro Bracket"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 1613071,
+                    "phase": {
+                        "id": 1025198,
+                        "name": "Amateur Bracket"
                     },
                     "progressionsOut": null
                 }
@@ -10391,94 +10484,6 @@
             "country_code": "US",
             "lat": 39.7359022,
             "lng": -86.1041122
-        },
-        {
-            "id": 642050,
-            "name": "Melee Singles (Individual)",
-            "slug": "tournament/smash-yard-2021/event/melee-singles-individual",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 2,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1637521200,
-            "phaseGroups": [
-                {
-                    "id": 1613065,
-                    "phase": {
-                        "id": 1025192,
-                        "name": "Fase de Grupos (Pools)"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6984491
-                        },
-                        {
-                            "id": 6984493
-                        }
-                    ]
-                },
-                {
-                    "id": 1613072,
-                    "phase": {
-                        "id": 1025192,
-                        "name": "Fase de Grupos (Pools)"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 6984492
-                        },
-                        {
-                            "id": 6984494
-                        }
-                    ]
-                },
-                {
-                    "id": 1613070,
-                    "phase": {
-                        "id": 1025197,
-                        "name": "Pro Bracket"
-                    },
-                    "progressionsOut": null
-                },
-                {
-                    "id": 1613071,
-                    "phase": {
-                        "id": 1025198,
-                        "name": "Amateur Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Smash Yard 2021",
-            "tournament_id": 329312,
-            "city": "Heroica Matamoros",
-            "url": "https://smash.gg/tournament/smash-yard-2021/event/melee-singles-individual",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1637521200,
-            "tournament_endAt": 1637553600,
-            "tournament_registrationClosesAt": 1637553600,
-            "images": [
-                {
-                    "id": "4023450",
-                    "url": "https://images.smash.gg/images/tournament/329312/image-5983933d66cc57d13c9f9e2f7d05bcad.jpg",
-                    "type": "banner"
-                },
-                {
-                    "id": "4023460",
-                    "url": "https://images.smash.gg/images/tournament/329312/image-01114601c9732299af30cf5357465a34.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "C. Bustamante 152, Zona Centro, 87300 Heroica Matamoros, Tamps., Mexico",
-            "tournament_addrState": "Tamps.",
-            "country_code": "MX",
-            "lat": 25.8818449,
-            "lng": -97.51436240000001
         },
         {
             "id": 639805,
