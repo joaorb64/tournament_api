@@ -1760,48 +1760,10 @@
         "startAt": 1637521200,
         "phaseGroups": [
             {
-                "id": 1613065,
-                "phase": {
-                    "id": 1025192,
-                    "name": "Fase de Grupos (Pools)"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 6984491
-                    },
-                    {
-                        "id": 6984493
-                    }
-                ]
-            },
-            {
-                "id": 1613072,
-                "phase": {
-                    "id": 1025192,
-                    "name": "Fase de Grupos (Pools)"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 6984492
-                    },
-                    {
-                        "id": 6984494
-                    }
-                ]
-            },
-            {
                 "id": 1613070,
                 "phase": {
                     "id": 1025197,
                     "name": "Pro Bracket"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 1613071,
-                "phase": {
-                    "id": 1025198,
-                    "name": "Amateur Bracket"
                 },
                 "progressionsOut": null
             }
@@ -10431,7 +10393,7 @@
         "name": "SCSS West Coast Singles",
         "slug": "tournament/scss-west-coast-37/event/scss-west-coast-singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 20,
         "videogame": {
             "id": 1
@@ -10852,7 +10814,7 @@
         "name": "Melee Singles",
         "slug": "tournament/pizza-time-no-8-doubles/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 42,
         "videogame": {
             "id": 1
@@ -15528,5 +15490,55 @@
         "country_code": "PA",
         "lat": 8.9870167,
         "lng": -79.51622669999999
+    },
+    "651040": {
+        "id": 651040,
+        "name": "Melee Singles",
+        "slug": "tournament/substation-smash-2/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1638739846,
+        "phaseGroups": [
+            {
+                "id": 1629075,
+                "phase": {
+                    "id": 1036532,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Substation Smash #2",
+        "tournament_id": 334678,
+        "city": "Seattle",
+        "url": "https://smash.gg/tournament/substation-smash-2/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1638739846,
+        "tournament_endAt": 1638756055,
+        "tournament_registrationClosesAt": 1638648039,
+        "images": [
+            {
+                "id": "4089603",
+                "url": "https://images.smash.gg/images/tournament/334678/image-ea2444679228ec9d46bb411b76440575.png",
+                "type": "profile"
+            },
+            {
+                "id": "4089604",
+                "url": "https://images.smash.gg/images/tournament/334678/image-3d8e3896323b9580c87eb45ade60f21e.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "645 NW 45th St, Seattle, WA 98107, USA",
+        "tournament_addrState": "WA",
+        "country_code": "US",
+        "lat": 47.6612386,
+        "lng": -122.3654455
     }
 }
