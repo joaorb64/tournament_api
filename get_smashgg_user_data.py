@@ -11,7 +11,7 @@ from threading import Thread, Lock
 
 timeStart = time.time()
 
-LIMIT_PER_KEY = 40
+LIMIT_PER_KEY = 20
 
 if os.path.exists("auth.json"):
 	f = open('auth.json')
@@ -43,7 +43,7 @@ def fetchPlayer(currKey):
 
 		for playerIndex in indexes:
 			elapsedTime = (time.time() - timeStart)/60/60 # stop at 1h30
-			if playerIndex >= len(players) or count >= LIMIT_PER_KEY or elapsedTime > 1.5:
+			if playerIndex >= len(players) or count >= LIMIT_PER_KEY or elapsedTime > 0.8:
 				finished = True
 				break
 			ran = fetchPlayerDo(currKey, playerIndex)
