@@ -1,5 +1,5 @@
 {
-    "updateTime": 1638843133,
+    "updateTime": 1638850382,
     "events": [
         {
             "id": 656363,
@@ -46,49 +46,107 @@
             ]
         },
         {
-            "id": 656872,
-            "name": "Street Fighter",
-            "slug": "tournament/can-opener-series-vol-27/event/street-fighter",
+            "id": 654015,
+            "name": "SFV",
+            "slug": "tournament/monday-night-mixup-at-the-social-9/event/sfv",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
+            "state": "COMPLETED",
+            "numEntrants": 5,
             "videogame": {
                 "id": 33990
             },
-            "startAt": 1638921600,
+            "startAt": 1638849540,
+            "phaseGroups": []
+        },
+        {
+            "id": 656796,
+            "name": "Street Fighter V: Champion Edition",
+            "slug": "tournament/wnf2021-online-edition-episode-48/event/street-fighter-v-champion-edition",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1638932400,
             "phaseGroups": [
                 {
-                    "id": 1639631,
+                    "id": 1639501,
                     "phase": {
-                        "id": 1044089,
+                        "id": 1043988,
                         "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7075896
+                        },
+                        {
+                            "id": 7075897
+                        },
+                        {
+                            "id": 7075898
+                        },
+                        {
+                            "id": 7075899
+                        },
+                        {
+                            "id": 7075900
+                        },
+                        {
+                            "id": 7075901
+                        },
+                        {
+                            "id": 7075902
+                        },
+                        {
+                            "id": 7075903
+                        }
+                    ]
+                },
+                {
+                    "id": 1639502,
+                    "phase": {
+                        "id": 1043989,
+                        "name": "Top 8 Finals"
                     },
                     "progressionsOut": null
                 }
             ],
-            "tournament": "Can Opener Series Vol. 27",
-            "tournament_id": 338223,
-            "city": null,
-            "url": "https://smash.gg/tournament/can-opener-series-vol-27/event/street-fighter",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1638921600,
-            "tournament_endAt": 1638932400,
-            "tournament_registrationClosesAt": 1638921600,
-            "images": [
+            "tournament": "WNF2021 Online Edition Episode 48",
+            "tournament_id": 338184,
+            "city": "Santa Ana",
+            "url": "https://smash.gg/tournament/wnf2021-online-edition-episode-48/event/street-fighter-v-champion-edition",
+            "streams": [
                 {
-                    "id": "4130340",
-                    "url": "https://images.smash.gg/images/tournament/338223/image-8031263a39f54ec5d7cf72a338e99303.jpg",
-                    "type": "profile"
+                    "streamName": "leveluplive"
+                },
+                {
+                    "streamName": "litetheironman"
                 }
             ],
-            "tournament_multievent": false,
+            "timezone": null,
+            "tournament_startAt": 1638932400,
+            "tournament_endAt": 1639166400,
+            "tournament_registrationClosesAt": 1639267200,
+            "images": [
+                {
+                    "id": "4129897",
+                    "url": "https://images.smash.gg/images/tournament/338184/image-a0bcbb8cef70f62ae2ee790eb41a8b2f.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4129898",
+                    "url": "https://images.smash.gg/images/tournament/338184/image-585fc930f7163a64ae6ae92c63ff2e4c.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
             "tournament_venueName": null,
-            "tournament_venueAddress": "874 4th Ave, Brooklyn, NY 11232, USA",
-            "tournament_addrState": "NY",
+            "tournament_venueAddress": "Santa Ana, CA 92701, USA",
+            "tournament_addrState": "CA",
             "country_code": "US",
-            "lat": 40.656878,
-            "lng": -74.00218
+            "lat": 33.7463915,
+            "lng": -117.8604472
         },
         {
             "id": 656810,
@@ -148,96 +206,6 @@
             "tournament_id": 338184,
             "city": "Santa Ana",
             "url": "https://smash.gg/tournament/wnf2021-online-edition-episode-48/event/street-fighter-v-2v2",
-            "streams": [
-                {
-                    "streamName": "leveluplive"
-                },
-                {
-                    "streamName": "litetheironman"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1638932400,
-            "tournament_endAt": 1639166400,
-            "tournament_registrationClosesAt": 1639267200,
-            "images": [
-                {
-                    "id": "4129897",
-                    "url": "https://images.smash.gg/images/tournament/338184/image-a0bcbb8cef70f62ae2ee790eb41a8b2f.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4129898",
-                    "url": "https://images.smash.gg/images/tournament/338184/image-585fc930f7163a64ae6ae92c63ff2e4c.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Santa Ana, CA 92701, USA",
-            "tournament_addrState": "CA",
-            "country_code": "US",
-            "lat": 33.7463915,
-            "lng": -117.8604472
-        },
-        {
-            "id": 656796,
-            "name": "Street Fighter V: Champion Edition",
-            "slug": "tournament/wnf2021-online-edition-episode-48/event/street-fighter-v-champion-edition",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 33990
-            },
-            "startAt": 1638932400,
-            "phaseGroups": [
-                {
-                    "id": 1639501,
-                    "phase": {
-                        "id": 1043988,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7075896
-                        },
-                        {
-                            "id": 7075897
-                        },
-                        {
-                            "id": 7075898
-                        },
-                        {
-                            "id": 7075899
-                        },
-                        {
-                            "id": 7075900
-                        },
-                        {
-                            "id": 7075901
-                        },
-                        {
-                            "id": 7075902
-                        },
-                        {
-                            "id": 7075903
-                        }
-                    ]
-                },
-                {
-                    "id": 1639502,
-                    "phase": {
-                        "id": 1043989,
-                        "name": "Top 8 Finals"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "WNF2021 Online Edition Episode 48",
-            "tournament_id": 338184,
-            "city": "Santa Ana",
-            "url": "https://smash.gg/tournament/wnf2021-online-edition-episode-48/event/street-fighter-v-champion-edition",
             "streams": [
                 {
                     "streamName": "leveluplive"
@@ -347,6 +315,51 @@
             "lat": null,
             "lng": null,
             "provider": "challonge"
+        },
+        {
+            "id": 656872,
+            "name": "Street Fighter",
+            "slug": "tournament/can-opener-series-vol-27/event/street-fighter",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1638921600,
+            "phaseGroups": [
+                {
+                    "id": 1639631,
+                    "phase": {
+                        "id": 1044089,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Can Opener Series Vol. 27",
+            "tournament_id": 338223,
+            "city": null,
+            "url": "https://smash.gg/tournament/can-opener-series-vol-27/event/street-fighter",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1638921600,
+            "tournament_endAt": 1638932400,
+            "tournament_registrationClosesAt": 1638921600,
+            "images": [
+                {
+                    "id": "4130340",
+                    "url": "https://images.smash.gg/images/tournament/338223/image-8031263a39f54ec5d7cf72a338e99303.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "874 4th Ave, Brooklyn, NY 11232, USA",
+            "tournament_addrState": "NY",
+            "country_code": "US",
+            "lat": 40.656878,
+            "lng": -74.00218
         },
         {
             "id": 649076,
@@ -1434,47 +1447,6 @@
             "country_code": "BR",
             "lat": -14.235004,
             "lng": -51.92528
-        },
-        {
-            "id": 654015,
-            "name": "SFV",
-            "slug": "tournament/monday-night-mixup-at-the-social-9/event/sfv",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 33990
-            },
-            "startAt": 1638849540,
-            "phaseGroups": [],
-            "tournament": "Monday Night Mixup At The Social #9",
-            "tournament_id": 336426,
-            "city": "Houston",
-            "url": "https://smash.gg/tournament/monday-night-mixup-at-the-social-9/event/sfv",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1638849540,
-            "tournament_endAt": 1638862200,
-            "tournament_registrationClosesAt": 1638850740,
-            "images": [
-                {
-                    "id": "4108146",
-                    "url": "https://images.smash.gg/images/tournament/336426/image-26cdf7b6a4a9d29f7dee5884b38a21f0.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4108291",
-                    "url": "https://images.smash.gg/images/tournament/336426/image-f109a87b03186ab195d0a57ef2b57a04.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "3101 San Jacinto St, Houston, TX 77004, USA",
-            "tournament_addrState": "TX",
-            "country_code": "US",
-            "lat": 29.7409033,
-            "lng": -95.3746326
         },
         {
             "id": 653922,
