@@ -11946,7 +11946,7 @@
         "slug": "tournament/bridge-weeklies-2-off-season/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 12,
         "videogame": {
             "id": 1
         },
@@ -11969,7 +11969,7 @@
         "timezone": null,
         "tournament_startAt": 1639173600,
         "tournament_endAt": 1639202400,
-        "tournament_registrationClosesAt": 1639180800,
+        "tournament_registrationClosesAt": 1639173600,
         "images": [
             {
                 "id": "4124659",
@@ -20293,41 +20293,22 @@
         "name": "Melee Singles",
         "slug": "tournament/cynical-showdown-xxii/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
         "startAt": 1639173600,
-        "phaseGroups": [],
-        "tournament": "Cynical Showdown XXII",
-        "tournament_id": 339245,
-        "city": null,
-        "url": "https://smash.gg/tournament/cynical-showdown-xxii/event/melee-singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1639173600,
-        "tournament_endAt": 1639198680,
-        "tournament_registrationClosesAt": 1639180200,
-        "images": [
+        "phaseGroups": [
             {
-                "id": "4141032",
-                "url": "https://images.smash.gg/images/tournament/339245/image-e8ee257080d0eedb1d4d72772e58ca71.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "4141033",
-                "url": "https://images.smash.gg/images/tournament/339245/image-45ea90d52a0affe404d260d2153b6733.png",
-                "type": "banner"
+                "id": 1641945,
+                "phase": {
+                    "id": 1045748,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "658101": {
         "id": 658101,
@@ -22487,5 +22468,115 @@
         "country_code": "US",
         "lat": 37.3297766,
         "lng": -121.8856476
+    },
+    "658345": {
+        "id": 658345,
+        "name": "Round Robin Draft Pools into Main Bracket",
+        "slug": "tournament/the-sweatshop-15/event/round-robin-draft-pools-into-main-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 13,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1639191600,
+        "phaseGroups": [
+            {
+                "id": 1642300,
+                "phase": {
+                    "id": 1046036,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7085788
+                    },
+                    {
+                        "id": 7085792
+                    }
+                ]
+            },
+            {
+                "id": 1642302,
+                "phase": {
+                    "id": 1046036,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7085789
+                    },
+                    {
+                        "id": 7085793
+                    }
+                ]
+            },
+            {
+                "id": 1642303,
+                "phase": {
+                    "id": 1046036,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7085790
+                    },
+                    {
+                        "id": 7085794
+                    }
+                ]
+            },
+            {
+                "id": 1642316,
+                "phase": {
+                    "id": 1046036,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7085791
+                    },
+                    {
+                        "id": 7085795
+                    }
+                ]
+            },
+            {
+                "id": 1642304,
+                "phase": {
+                    "id": 1046038,
+                    "name": "Main Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Sweatshop 15",
+        "tournament_id": 339488,
+        "city": "Bozeman",
+        "url": "https://smash.gg/tournament/the-sweatshop-15/event/round-robin-draft-pools-into-main-bracket",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1639191600,
+        "tournament_endAt": 1639205940,
+        "tournament_registrationClosesAt": 1639217580,
+        "images": [
+            {
+                "id": "4142665",
+                "url": "https://images.smash.gg/images/tournament/339488/image-726cdb4188c6d3593466e0f387217757.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "4142666",
+                "url": "https://images.smash.gg/images/tournament/339488/image-6f948bf5c3e1af301e8124de4f86c040.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "117 Michael Grove Ave, Bozeman, MT 59718, USA",
+        "tournament_addrState": "MT",
+        "country_code": "US",
+        "lat": 45.6815024,
+        "lng": -111.0775014
     }
 }
