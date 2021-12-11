@@ -22090,7 +22090,7 @@
         "name": "Main Bracket",
         "slug": "tournament/the-sweatshop-15/event/main-bracket",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 18,
         "videogame": {
             "id": 1
@@ -22105,35 +22105,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "The Sweatshop 15",
-        "tournament_id": 339488,
-        "city": "Bozeman",
-        "url": "https://smash.gg/tournament/the-sweatshop-15/event/main-bracket",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1639191600,
-        "tournament_endAt": 1639205940,
-        "tournament_registrationClosesAt": 1639217580,
-        "images": [
-            {
-                "id": "4142665",
-                "url": "https://images.smash.gg/images/tournament/339488/image-726cdb4188c6d3593466e0f387217757.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "4142666",
-                "url": "https://images.smash.gg/images/tournament/339488/image-6f948bf5c3e1af301e8124de4f86c040.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "117 Michael Grove Ave, Bozeman, MT 59718, USA",
-        "tournament_addrState": "MT",
-        "country_code": "US",
-        "lat": 45.6815024,
-        "lng": -111.0775014
+        ]
     },
     "658373": {
         "id": 658373,
@@ -22679,12 +22651,67 @@
         "slug": "tournament/lgbt-s2e4/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
         "startAt": 1639357200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1642598,
+                "phase": {
+                    "id": 1046240,
+                    "name": "East Coast Ladder"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7087669
+                    },
+                    {
+                        "id": 7087670
+                    },
+                    {
+                        "id": 7087671
+                    },
+                    {
+                        "id": 7087672
+                    },
+                    {
+                        "id": 7087673
+                    },
+                    {
+                        "id": 7087674
+                    },
+                    {
+                        "id": 7087675
+                    },
+                    {
+                        "id": 7087676
+                    }
+                ]
+            },
+            {
+                "id": 1642601,
+                "phase": {
+                    "id": 1046243,
+                    "name": "West Coast Ladder"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7087664
+                    },
+                    {
+                        "id": 7087665
+                    },
+                    {
+                        "id": 7087666
+                    },
+                    {
+                        "id": 7087667
+                    }
+                ]
+            }
+        ],
         "tournament": "LGBT S2E4",
         "tournament_id": 339606,
         "city": null,
@@ -22713,5 +22740,50 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "658496": {
+        "id": 658496,
+        "name": "Melee Singles",
+        "slug": "tournament/smash-alley-39/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1639268400,
+        "phaseGroups": [],
+        "tournament": "Smash Alley 39",
+        "tournament_id": 339620,
+        "city": "Fort Myers",
+        "url": "https://smash.gg/tournament/smash-alley-39/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "backdashfgc"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1639268400,
+        "tournament_endAt": 1639285140,
+        "tournament_registrationClosesAt": 1639270800,
+        "images": [
+            {
+                "id": "4143989",
+                "url": "https://images.smash.gg/images/tournament/339620/image-6b73af9c3309f5d7d31058e7b3c58597.png",
+                "type": "profile"
+            },
+            {
+                "id": "4143990",
+                "url": "https://images.smash.gg/images/tournament/339620/image-86cea1ff751a6d24002b86ef72bb204f.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1901 Crystal Dr, Fort Myers, FL 33907, USA",
+        "tournament_addrState": "FL",
+        "country_code": "US",
+        "lat": 26.5648481,
+        "lng": -81.873733
     }
 }
