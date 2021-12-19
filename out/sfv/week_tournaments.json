@@ -790,7 +790,7 @@
         "name": "Street Fighter V",
         "slug": "tournament/the-midwest-classic/event/street-fighter-v",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 17,
         "videogame": {
             "id": 33990
@@ -1432,12 +1432,21 @@
         "slug": "tournament/urban-battles-argentina/event/street-fighter-v",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 17,
+        "numEntrants": 16,
         "videogame": {
             "id": 33990
         },
         "startAt": 1639947600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1620889,
+                "phase": {
+                    "id": 1030601,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Urban Battles - Argentina",
         "tournament_id": 328504,
         "city": "EDO",
@@ -3403,7 +3412,7 @@
         "slug": "tournament/wellington-ranbats-swissy-style-19-12-2021/event/streety",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 33990
         },
@@ -3417,35 +3426,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Wellington Ranbats Swissy Style 19/12/2021",
-        "tournament_id": 341707,
-        "city": "Wellington",
-        "url": "https://smash.gg/tournament/wellington-ranbats-swissy-style-19-12-2021/event/streety",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1639868400,
-        "tournament_endAt": 1639891800,
-        "tournament_registrationClosesAt": 1639923300,
-        "images": [
-            {
-                "id": "4148090",
-                "url": "https://images.smash.gg/images/tournament/341707/image-6cd4bd2bbb14fe43c95f35d333fb3055.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "4148091",
-                "url": "https://images.smash.gg/images/tournament/341707/image-bcc4df0b1a0ff0e9a87eee708577f1c2.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": "Skynet Manners street",
-        "tournament_venueAddress": "9 Manners Street, Te Aro, Wellington 6011, New Zealand",
-        "tournament_addrState": "Wellington",
-        "country_code": "NZ",
-        "lat": -41.289356,
-        "lng": 174.7750246
+        ]
     },
     "658195": {
         "id": 658195,
@@ -3708,7 +3689,7 @@
         "name": "STREET FIGTHER V : CHAMPION EDITION",
         "slug": "tournament/yogaflame-2021/event/street-figther-v-champion-edition",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 38,
         "videogame": {
             "id": 33990
@@ -4032,7 +4013,7 @@
         "slug": "tournament/vsb-main-stage-saturday-14-feat-kofxv-dnf-duel-beta/event/street-fighter-v",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 33990
         },
@@ -4448,5 +4429,76 @@
         "country_code": "US",
         "lat": 29.4988637,
         "lng": -98.6253452
+    },
+    "661119": {
+        "id": 661119,
+        "name": "Damager Championship Series - Street Fighter V",
+        "slug": "tournament/damager-championship-series-2021/event/damager-championship-series-street-fighter-v",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 8,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1639868400,
+        "phaseGroups": [
+            {
+                "id": 1647038,
+                "phase": {
+                    "id": 1049584,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
+    },
+    "661152": {
+        "id": 661152,
+        "name": "Rainier Rushdown - Vol. 2",
+        "slug": "tournament/rainier-rushdown-vol-2/event/rainier-rushdown-vol-2",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1640750400,
+        "phaseGroups": [
+            {
+                "id": 1647094,
+                "phase": {
+                    "id": 1049632,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Rainier Rushdown - Vol. 2",
+        "tournament_id": 352211,
+        "city": null,
+        "url": "https://smash.gg/tournament/rainier-rushdown-vol-2/event/rainier-rushdown-vol-2",
+        "streams": [
+            {
+                "streamName": "ZeroLoyaltyFGC"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1640750400,
+        "tournament_endAt": 1640761200,
+        "tournament_registrationClosesAt": 1640749500,
+        "images": [
+            {
+                "id": "4211231",
+                "url": "https://images.smash.gg/images/tournament/352211/image-28e5f792c98330eb67ac4b5d7ecf7f12.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
