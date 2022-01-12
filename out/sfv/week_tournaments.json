@@ -4836,12 +4836,21 @@
         "slug": "tournament/wednesday-night-fights-at-scrims-01-19-22/event/double-elimination-bracket-1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 33990
         },
         "startAt": 1642636800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1655377,
+                "phase": {
+                    "id": 1056070,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Wednesday Night Fights at Scrims 01/19/22",
         "tournament_id": 393100,
         "city": "Lisle",
@@ -4965,5 +4974,41 @@
         "country_code": "US",
         "lat": 36.1147037,
         "lng": -96.0091652
+    },
+    "668612": {
+        "id": 668612,
+        "name": "Street Fighter V Singles",
+        "slug": "tournament/power-surge/event/street-fighter-v-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": null,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1642878000,
+        "phaseGroups": [],
+        "tournament": "POWER SURGE",
+        "tournament_id": 408496,
+        "city": "Detroit",
+        "url": "https://smash.gg/tournament/power-surge/event/street-fighter-v-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1642878000,
+        "tournament_endAt": 1642917600,
+        "tournament_registrationClosesAt": 1642878900,
+        "images": [
+            {
+                "id": "4303081",
+                "url": "https://images.smash.gg/images/tournament/408496/image-f2f34d6c57fe6946cb85cbfdef436f73.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "6545 St Antoine, Detroit, MI 48202, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 42.3721762,
+        "lng": -83.0659196
     }
 }
