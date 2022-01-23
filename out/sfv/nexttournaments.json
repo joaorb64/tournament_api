@@ -1,6 +1,19 @@
 {
-    "updateTime": 1642889575,
+    "updateTime": 1642900352,
     "events": [
+        {
+            "id": 670162,
+            "name": "Street Fighter V",
+            "slug": "tournament/go-for-broke-9/event/street-fighter-v",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1642870800,
+            "phaseGroups": null
+        },
         {
             "id": 644952,
             "name": "Street Fighter V: Champion Edition",
@@ -28,7 +41,7 @@
             "name": "Street Fighter Singles",
             "slug": "tournament/nca-round-1/event/street-fighter-singles",
             "isOnline": false,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 6,
             "videogame": {
                 "id": 33990
@@ -50,7 +63,7 @@
             "name": "Clash in the Capital - DMGC Street Fighter V Monthly Tournament",
             "slug": "tournament/clash-in-the-capital-dmgc-monthly-fgc-tournament-1/event/clash-in-the-capital-dmgc-street-fighter-v-monthly-tournament",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 5,
             "videogame": {
                 "id": 33990
@@ -72,13 +85,22 @@
             "name": "Street Fighter V Singles",
             "slug": "tournament/power-surge/event/street-fighter-v-singles",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": null,
+            "state": "ACTIVE",
+            "numEntrants": 19,
             "videogame": {
                 "id": 33990
             },
             "startAt": 1642878000,
-            "phaseGroups": []
+            "phaseGroups": [
+                {
+                    "id": 1659813,
+                    "phase": {
+                        "id": 1058980,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
         },
         {
             "id": 622408,
@@ -195,8 +217,8 @@
             "name": "Street Fighter V",
             "slug": "tournament/warguts-speedway-x-fgc-grand-prix/event/street-fighter-v",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
+            "state": "ACTIVE",
+            "numEntrants": 5,
             "videogame": {
                 "id": 33990
             },
@@ -213,55 +235,22 @@
             ]
         },
         {
-            "id": 643367,
-            "name": "SFV Singles",
-            "slug": "tournament/bonus-round-sfv-strive/event/sfv-singles",
+            "id": 663868,
+            "name": "Street fighter V",
+            "slug": "tournament/fru-slc-presents-winter-warfare/event/street-fighter-v",
             "isOnline": false,
-            "state": "ACTIVE",
-            "numEntrants": 37,
+            "state": "CREATED",
+            "numEntrants": 6,
             "videogame": {
                 "id": 33990
             },
-            "startAt": 1642885200,
+            "startAt": 1642899600,
             "phaseGroups": [
                 {
-                    "id": 1615344,
+                    "id": 1651270,
                     "phase": {
-                        "id": 1026839,
+                        "id": 1052955,
                         "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7108449
-                        },
-                        {
-                            "id": 7108450
-                        },
-                        {
-                            "id": 7108451
-                        },
-                        {
-                            "id": 7108452
-                        },
-                        {
-                            "id": 7108453
-                        },
-                        {
-                            "id": 7108454
-                        },
-                        {
-                            "id": 7108455
-                        },
-                        {
-                            "id": 7108456
-                        }
-                    ]
-                },
-                {
-                    "id": 1648426,
-                    "phase": {
-                        "id": 1050723,
-                        "name": "Top 8"
                     },
                     "progressionsOut": null
                 }
@@ -1269,60 +1258,6 @@
             "country_code": null,
             "lat": null,
             "lng": null
-        },
-        {
-            "id": 670162,
-            "name": "Street Fighter V",
-            "slug": "tournament/go-for-broke-9/event/street-fighter-v",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 33990
-            },
-            "startAt": 1642870800,
-            "phaseGroups": [
-                {
-                    "id": 1662435,
-                    "phase": {
-                        "id": 1060972,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Go For Broke",
-            "tournament_id": 413013,
-            "city": "Cherry Hill",
-            "url": "https://smash.gg/tournament/go-for-broke-9/event/street-fighter-v",
-            "streams": [
-                {
-                    "streamName": "SectorXGaming"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1642870800,
-            "tournament_endAt": 1642906800,
-            "tournament_registrationClosesAt": 1642896000,
-            "images": [
-                {
-                    "id": "4321348",
-                    "url": "https://images.smash.gg/images/tournament/413013/image-810e5f34461be0091d871bd9e23ba8c3.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "4329584",
-                    "url": "https://images.smash.gg/images/tournament/413013/image-80a0566336fd1c4c8382ea3daf03dee6.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "2101 Rte 70 W, Cherry Hill, NJ 08002, USA",
-            "tournament_addrState": "NJ",
-            "country_code": "US",
-            "lat": 39.920057,
-            "lng": -75.0368089
         },
         {
             "id": 671035,
@@ -2436,56 +2371,6 @@
             "country_code": "US",
             "lat": 40.0272872,
             "lng": -83.1122437
-        },
-        {
-            "id": 663868,
-            "name": "Street fighter V",
-            "slug": "tournament/fru-slc-presents-winter-warfare/event/street-fighter-v",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 33990
-            },
-            "startAt": 1642899600,
-            "phaseGroups": [
-                {
-                    "id": 1651270,
-                    "phase": {
-                        "id": 1052955,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "FRU SLC Presents Winter Warfare",
-            "tournament_id": 370409,
-            "city": "South Salt Lake",
-            "url": "https://smash.gg/tournament/fru-slc-presents-winter-warfare/event/street-fighter-v",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1642892400,
-            "tournament_endAt": 1642914000,
-            "tournament_registrationClosesAt": 1642914000,
-            "images": [
-                {
-                    "id": "4241262",
-                    "url": "https://images.smash.gg/images/tournament/370409/image-411d5eac4a942a8d35fa46d754b76374.jpg",
-                    "type": "banner"
-                },
-                {
-                    "id": "4242188",
-                    "url": "https://images.smash.gg/images/tournament/370409/image-8bc2e7b3cea6f256720a56f16325c1b1.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "85 W 3300 S, South Salt Lake, UT 84115, USA",
-            "tournament_addrState": "UT",
-            "country_code": "US",
-            "lat": 40.69930799999999,
-            "lng": -111.8933854
         },
         {
             "id": 667953,
