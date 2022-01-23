@@ -1,6 +1,28 @@
 {
-    "updateTime": 1642950798,
+    "updateTime": 1642954382,
     "events": [
+        {
+            "id": 670770,
+            "name": "Melee Singles",
+            "slug": "tournament/united-cyber-spaces-weekly-28/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1642946400,
+            "phaseGroups": [
+                {
+                    "id": 1663472,
+                    "phase": {
+                        "id": 1061725,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
         {
             "id": 670643,
             "name": "Singles",
@@ -24,77 +46,39 @@
             ]
         },
         {
-            "id": 670477,
+            "id": 672111,
             "name": "Melee Singles",
-            "slug": "tournament/sunday-night-heat-4/event/melee-singles",
+            "slug": "tournament/modern-beatdown-1/event/melee-singles",
             "isOnline": true,
             "state": "CREATED",
-            "numEntrants": 28,
+            "numEntrants": 11,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1642964400,
-            "phaseGroups": [
+            "startAt": 1642969800,
+            "phaseGroups": [],
+            "tournament": "Modern Beatdown",
+            "tournament_id": 414902,
+            "city": null,
+            "url": "https://smash.gg/tournament/modern-beatdown-1/event/melee-singles",
+            "streams": [
                 {
-                    "id": 1662943,
-                    "phase": {
-                        "id": 1061363,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7182012
-                        },
-                        {
-                            "id": 7182013
-                        },
-                        {
-                            "id": 7182014
-                        },
-                        {
-                            "id": 7182015
-                        },
-                        {
-                            "id": 7182016
-                        },
-                        {
-                            "id": 7182017
-                        },
-                        {
-                            "id": 7182018
-                        },
-                        {
-                            "id": 7182019
-                        }
-                    ]
-                },
-                {
-                    "id": 1666796,
-                    "phase": {
-                        "id": 1063908,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
+                    "streamName": "retro_beatdown"
                 }
             ],
-            "tournament": "Sunday Night Heat #4",
-            "tournament_id": 413414,
-            "city": null,
-            "url": "https://smash.gg/tournament/sunday-night-heat-4/event/melee-singles",
-            "streams": null,
             "timezone": null,
-            "tournament_startAt": 1642964400,
-            "tournament_endAt": 1642982340,
-            "tournament_registrationClosesAt": 1642963800,
+            "tournament_startAt": 1642969800,
+            "tournament_endAt": 1642978800,
+            "tournament_registrationClosesAt": 1642968000,
             "images": [
                 {
-                    "id": "4323661",
-                    "url": "https://images.smash.gg/images/tournament/413414/image-1fd8d204251b79085479c13756b8b970.png",
+                    "id": "4338134",
+                    "url": "https://images.smash.gg/images/tournament/414902/image-dc76e891e6e27161c5aafbe667bc2295.jpg",
                     "type": "profile"
                 },
                 {
-                    "id": "4323662",
-                    "url": "https://images.smash.gg/images/tournament/413414/image-50bb125abc696eaf4d89514ded9f6f2a.png",
+                    "id": "4338143",
+                    "url": "https://images.smash.gg/images/tournament/414902/image-68a2ddd0d7cfc08368e1e5f2d38d93b3.jpg",
                     "type": "banner"
                 }
             ],
@@ -112,7 +96,7 @@
             "slug": "tournament/battle-for-the-east-coast-7/event/melee-singles",
             "isOnline": true,
             "state": "CREATED",
-            "numEntrants": 1,
+            "numEntrants": 2,
             "videogame": {
                 "id": 1
             },
@@ -263,6 +247,89 @@
             "country_code": "US",
             "lat": 40.176986,
             "lng": -75.1059858
+        },
+        {
+            "id": 670477,
+            "name": "Melee Singles",
+            "slug": "tournament/sunday-night-heat-4/event/melee-singles",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 28,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1642964400,
+            "phaseGroups": [
+                {
+                    "id": 1662943,
+                    "phase": {
+                        "id": 1061363,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7182012
+                        },
+                        {
+                            "id": 7182013
+                        },
+                        {
+                            "id": 7182014
+                        },
+                        {
+                            "id": 7182015
+                        },
+                        {
+                            "id": 7182016
+                        },
+                        {
+                            "id": 7182017
+                        },
+                        {
+                            "id": 7182018
+                        },
+                        {
+                            "id": 7182019
+                        }
+                    ]
+                },
+                {
+                    "id": 1666796,
+                    "phase": {
+                        "id": 1063908,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Sunday Night Heat #4",
+            "tournament_id": 413414,
+            "city": null,
+            "url": "https://smash.gg/tournament/sunday-night-heat-4/event/melee-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1642964400,
+            "tournament_endAt": 1642982340,
+            "tournament_registrationClosesAt": 1642963800,
+            "images": [
+                {
+                    "id": "4323661",
+                    "url": "https://images.smash.gg/images/tournament/413414/image-1fd8d204251b79085479c13756b8b970.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4323662",
+                    "url": "https://images.smash.gg/images/tournament/413414/image-50bb125abc696eaf4d89514ded9f6f2a.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": null,
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": null,
+            "lng": null
         },
         {
             "id": 672452,
@@ -4690,51 +4757,6 @@
             "lng": -85.7608442
         },
         {
-            "id": 672111,
-            "name": "Melee Singles",
-            "slug": "tournament/modern-beatdown-1/event/melee-singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1642969800,
-            "phaseGroups": [],
-            "tournament": "Modern Beatdown",
-            "tournament_id": 414902,
-            "city": null,
-            "url": "https://smash.gg/tournament/modern-beatdown-1/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "retro_beatdown"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1642969800,
-            "tournament_endAt": 1642978800,
-            "tournament_registrationClosesAt": 1642969560,
-            "images": [
-                {
-                    "id": "4338134",
-                    "url": "https://images.smash.gg/images/tournament/414902/image-dc76e891e6e27161c5aafbe667bc2295.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "4338143",
-                    "url": "https://images.smash.gg/images/tournament/414902/image-68a2ddd0d7cfc08368e1e5f2d38d93b3.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
-        },
-        {
             "id": 669359,
             "name": "Super Smash Bros. Melee Singles",
             "slug": "tournament/h-town-throwdown-2/event/super-smash-bros-melee-singles",
@@ -8313,66 +8335,6 @@
             "country_code": "US",
             "lat": 40.282277,
             "lng": -111.7295829
-        },
-        {
-            "id": 670770,
-            "name": "Melee Singles",
-            "slug": "tournament/united-cyber-spaces-weekly-28/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1642946400,
-            "phaseGroups": [
-                {
-                    "id": 1663472,
-                    "phase": {
-                        "id": 1061725,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "United Cyber Spaces Weekly #28",
-            "tournament_id": 413729,
-            "city": "Hamburg",
-            "url": "https://smash.gg/tournament/united-cyber-spaces-weekly-28/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "ucsgg"
-                },
-                {
-                    "streamName": "SmashHamburg"
-                },
-                {
-                    "streamName": "Niceface__"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1642946400,
-            "tournament_endAt": 1642964400,
-            "tournament_registrationClosesAt": 1642946400,
-            "images": [
-                {
-                    "id": "4325845",
-                    "url": "https://images.smash.gg/images/tournament/413729/image-ef8a78d93ded060c83a0d6a656b7577f.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4325846",
-                    "url": "https://images.smash.gg/images/tournament/413729/image-068855ebb2d1d6df95105fe20141ada2.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Nobistor 16, 22767 Hamburg, Deutschland",
-            "tournament_addrState": "HH",
-            "country_code": "DE",
-            "lat": 53.5500804,
-            "lng": 9.9562884
         },
         {
             "id": 670724,
