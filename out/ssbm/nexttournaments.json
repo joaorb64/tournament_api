@@ -1,28 +1,6 @@
 {
-    "updateTime": 1643159563,
+    "updateTime": 1643163211,
     "events": [
-        {
-            "id": 673293,
-            "name": "Melee Singles",
-            "slug": "tournament/italian-melee-weekly-45/event/melee-singles",
-            "isOnline": true,
-            "state": "COMPLETED",
-            "numEntrants": 12,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643140800,
-            "phaseGroups": [
-                {
-                    "id": 1667969,
-                    "phase": {
-                        "id": 1064897,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
         {
             "id": 658253,
             "name": "Melee Singles - 1v1",
@@ -117,7 +95,7 @@
             "slug": "tournament/training-mode-tuesdays-61-controller-giveaway-genesis-donation/event/ladder-melee-west-coast",
             "isOnline": true,
             "state": "ACTIVE",
-            "numEntrants": 40,
+            "numEntrants": 49,
             "videogame": {
                 "id": 1
             },
@@ -138,12 +116,12 @@
             "name": "Side Event: EC Melee Amateur Bracket",
             "slug": "tournament/training-mode-tuesdays-61-controller-giveaway-genesis-donation/event/side-event-ec-melee-amateur-bracket",
             "isOnline": true,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 22,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1643148000,
+            "startAt": 1643159880,
             "phaseGroups": [
                 {
                     "id": 1666997,
@@ -156,12 +134,34 @@
             ]
         },
         {
+            "id": 672601,
+            "name": "Main Bracket: EC Melee Singles",
+            "slug": "tournament/training-mode-tuesdays-61-controller-giveaway-genesis-donation/event/main-bracket-ec-melee-singles",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 15,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1643160000,
+            "phaseGroups": [
+                {
+                    "id": 1666998,
+                    "phase": {
+                        "id": 1064082,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 672599,
             "name": "Side Event: WC Melee Amateur Bracket",
             "slug": "tournament/training-mode-tuesdays-61-controller-giveaway-genesis-donation/event/side-event-wc-melee-amateur-bracket",
             "isOnline": true,
             "state": "CREATED",
-            "numEntrants": 19,
+            "numEntrants": 23,
             "videogame": {
                 "id": 1
             },
@@ -200,82 +200,6 @@
             ]
         },
         {
-            "id": 672601,
-            "name": "Main Bracket: EC Melee Singles",
-            "slug": "tournament/training-mode-tuesdays-61-controller-giveaway-genesis-donation/event/main-bracket-ec-melee-singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 14,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643160000,
-            "phaseGroups": [
-                {
-                    "id": 1666998,
-                    "phase": {
-                        "id": 1064082,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Training Mode Tuesdays #61 - Controller Giveaway + Genesis Donation",
-            "tournament_id": 415469,
-            "city": "Fountain Valley",
-            "url": "https://smash.gg/tournament/training-mode-tuesdays-61-controller-giveaway-genesis-donation/event/main-bracket-ec-melee-singles",
-            "streams": [
-                {
-                    "streamName": "TeamOXY"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1643148000,
-            "tournament_endAt": 1643180400,
-            "tournament_registrationClosesAt": 1643170500,
-            "images": [
-                {
-                    "id": "4341388",
-                    "url": "https://images.smash.gg/images/tournament/415469/image-3059fa0e844bd3044f32a8782f8844db.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4341389",
-                    "url": "https://images.smash.gg/images/tournament/415469/image-4a0cc30b11f2661d72e1adb0d46e43e6.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "",
-            "tournament_addrState": "CA",
-            "country_code": "US",
-            "lat": 33.7048795,
-            "lng": -117.9476684
-        },
-        {
-            "id": 673312,
-            "name": "Melee Singles",
-            "slug": "tournament/flashback-games-remastered-t23/event/melee-singles",
-            "isOnline": false,
-            "state": "ACTIVE",
-            "numEntrants": 12,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643149860,
-            "phaseGroups": [
-                {
-                    "id": 1667993,
-                    "phase": {
-                        "id": 1064918,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 673313,
             "name": "Melee Doubles",
             "slug": "tournament/flashback-games-remastered-t23/event/melee-doubles",
@@ -291,6 +215,28 @@
                     "id": 1667994,
                     "phase": {
                         "id": 1064919,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 673312,
+            "name": "Melee Singles",
+            "slug": "tournament/flashback-games-remastered-t23/event/melee-singles",
+            "isOnline": false,
+            "state": "COMPLETED",
+            "numEntrants": 12,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1643149860,
+            "phaseGroups": [
+                {
+                    "id": 1667993,
+                    "phase": {
+                        "id": 1064918,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
@@ -346,7 +292,7 @@
             "name": "Melee Singles",
             "slug": "tournament/the-g-code-10/event/melee-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 9,
             "videogame": {
                 "id": 1
@@ -364,21 +310,21 @@
             ]
         },
         {
-            "id": 672837,
+            "id": 672647,
             "name": "Melee Singles",
-            "slug": "tournament/turnip-tuesdays-1-2/event/melee-singles",
-            "isOnline": true,
-            "state": "ACTIVE",
-            "numEntrants": 53,
+            "slug": "tournament/greeley-weekly-77/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 5,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1643153400,
+            "startAt": 1643155200,
             "phaseGroups": [
                 {
-                    "id": 1667312,
+                    "id": 1667067,
                     "phase": {
-                        "id": 1064356,
+                        "id": 1064138,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
@@ -386,76 +332,22 @@
             ]
         },
         {
-            "id": 631256,
-            "name": "Conglomerate of Absolute Baffoonery #1",
-            "slug": "tournament/baba-bouie-bougaloo/event/conglomerate-of-absolute-baffoonery-1",
-            "isOnline": true,
-            "state": "ACTIVE",
-            "numEntrants": 10,
+            "id": 672648,
+            "name": "Melee Doubles",
+            "slug": "tournament/greeley-weekly-77/event/melee-doubles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
             "videogame": {
                 "id": 1
             },
             "startAt": 1643155200,
             "phaseGroups": [
                 {
-                    "id": 1633057,
+                    "id": 1667068,
                     "phase": {
-                        "id": 1039388,
-                        "name": "Round Robin"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7186806
-                        },
-                        {
-                            "id": 7186808
-                        },
-                        {
-                            "id": 7186810
-                        },
-                        {
-                            "id": 7186812
-                        },
-                        {
-                            "id": 7186814
-                        },
-                        {
-                            "id": 7186816
-                        }
-                    ]
-                },
-                {
-                    "id": 1668797,
-                    "phase": {
-                        "id": 1039388,
-                        "name": "Round Robin"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7186807
-                        },
-                        {
-                            "id": 7186809
-                        },
-                        {
-                            "id": 7186811
-                        },
-                        {
-                            "id": 7186813
-                        },
-                        {
-                            "id": 7186815
-                        },
-                        {
-                            "id": 7186817
-                        }
-                    ]
-                },
-                {
-                    "id": 1633058,
-                    "phase": {
-                        "id": 1039389,
-                        "name": "Elim Bracket"
+                        "id": 1064139,
+                        "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
@@ -466,7 +358,7 @@
             "name": "Melee Singles",
             "slug": "tournament/we-tech-those-62/event/melee-singles",
             "isOnline": false,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 12,
             "videogame": {
                 "id": 1
@@ -484,34 +376,12 @@
             ]
         },
         {
-            "id": 672020,
-            "name": "Mardi Fight Club Online #3",
-            "slug": "tournament/mardi-fight-club-online-3/event/mardi-fight-club-online-3",
-            "isOnline": true,
-            "state": "ACTIVE",
-            "numEntrants": 31,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643155200,
-            "phaseGroups": [
-                {
-                    "id": 1665586,
-                    "phase": {
-                        "id": 1063302,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 673486,
             "name": "Melee Singles",
             "slug": "tournament/last-hit-at-critical-hit-44/event/melee-singles",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 6,
+            "state": "ACTIVE",
+            "numEntrants": 7,
             "videogame": {
                 "id": 1
             },
@@ -554,8 +424,8 @@
             "name": "Melee Singles",
             "slug": "tournament/melee-returns-tgl-austin-34/event/melee-singles",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 18,
+            "state": "ACTIVE",
+            "numEntrants": 19,
             "videogame": {
                 "id": 1
             },
@@ -621,6 +491,9 @@
                         },
                         {
                             "id": 7186923
+                        },
+                        {
+                            "id": 7186934
                         }
                     ]
                 },
@@ -647,8 +520,8 @@
             "name": "Melee Doubles",
             "slug": "tournament/melee-returns-tgl-austin-34/event/melee-doubles",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
+            "state": "ACTIVE",
+            "numEntrants": 3,
             "videogame": {
                 "id": 1
             },
@@ -669,8 +542,8 @@
             "name": "Smash Melee Singles",
             "slug": "tournament/wavedash-weekly-26/event/smash-melee-singles",
             "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
+            "state": "ACTIVE",
+            "numEntrants": 6,
             "videogame": {
                 "id": 1
             },
@@ -684,42 +557,7 @@
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "Wavedash Weekly 26",
-            "tournament_id": 414487,
-            "city": "Lansing",
-            "url": "https://smash.gg/tournament/wavedash-weekly-26/event/smash-melee-singles",
-            "streams": [
-                {
-                    "streamName": "fybergames"
-                },
-                {
-                    "streamName": "fybergaming1"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1643157000,
-            "tournament_endAt": 1643173140,
-            "tournament_registrationClosesAt": 1643157000,
-            "images": [
-                {
-                    "id": "4332784",
-                    "url": "https://images.smash.gg/images/tournament/414487/image-bae9deda7f4944acc290102ed940d6a8.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4332785",
-                    "url": "https://images.smash.gg/images/tournament/414487/image-e2eef4f5537057a27599c4cf5624a5f3.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "731 Brookside Dr, Lansing, MI 48917, USA",
-            "tournament_addrState": "MI",
-            "country_code": "US",
-            "lat": 42.7419577,
-            "lng": -84.6478911
+            ]
         },
         {
             "id": 673280,
@@ -738,6 +576,252 @@
                     "phase": {
                         "id": 1064879,
                         "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 671216,
+            "name": "Melee Singles",
+            "slug": "tournament/level-one-melee-23-a-noob-only-tournament/event/melee-singles",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 72,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1643162400,
+            "phaseGroups": [
+                {
+                    "id": 1664254,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169806
+                        },
+                        {
+                            "id": 7169818
+                        },
+                        {
+                            "id": 7169830
+                        }
+                    ]
+                },
+                {
+                    "id": 1664255,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169807
+                        },
+                        {
+                            "id": 7169819
+                        },
+                        {
+                            "id": 7169831
+                        }
+                    ]
+                },
+                {
+                    "id": 1664256,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169808
+                        },
+                        {
+                            "id": 7169820
+                        },
+                        {
+                            "id": 7169832
+                        }
+                    ]
+                },
+                {
+                    "id": 1664257,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169809
+                        },
+                        {
+                            "id": 7169821
+                        },
+                        {
+                            "id": 7169833
+                        }
+                    ]
+                },
+                {
+                    "id": 1664258,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169810
+                        },
+                        {
+                            "id": 7169822
+                        },
+                        {
+                            "id": 7169834
+                        }
+                    ]
+                },
+                {
+                    "id": 1664259,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169811
+                        },
+                        {
+                            "id": 7169823
+                        },
+                        {
+                            "id": 7169835
+                        }
+                    ]
+                },
+                {
+                    "id": 1664260,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169812
+                        },
+                        {
+                            "id": 7169824
+                        },
+                        {
+                            "id": 7169836
+                        }
+                    ]
+                },
+                {
+                    "id": 1664261,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169813
+                        },
+                        {
+                            "id": 7169825
+                        },
+                        {
+                            "id": 7169837
+                        }
+                    ]
+                },
+                {
+                    "id": 1664262,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169814
+                        },
+                        {
+                            "id": 7169826
+                        },
+                        {
+                            "id": 7169838
+                        }
+                    ]
+                },
+                {
+                    "id": 1664263,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169815
+                        },
+                        {
+                            "id": 7169827
+                        },
+                        {
+                            "id": 7169839
+                        }
+                    ]
+                },
+                {
+                    "id": 1664264,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169816
+                        },
+                        {
+                            "id": 7169828
+                        },
+                        {
+                            "id": 7169840
+                        }
+                    ]
+                },
+                {
+                    "id": 1664265,
+                    "phase": {
+                        "id": 1062293,
+                        "name": "round robin pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7169817
+                        },
+                        {
+                            "id": 7169829
+                        },
+                        {
+                            "id": 7169841
+                        }
+                    ]
+                },
+                {
+                    "id": 1664266,
+                    "phase": {
+                        "id": 1062294,
+                        "name": "pro double elimination bracket"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 1664267,
+                    "phase": {
+                        "id": 1062295,
+                        "name": "amateur double elimination bracket"
                     },
                     "progressionsOut": null
                 }
@@ -912,6 +996,120 @@
             "country_code": "US",
             "lat": 35.8452941,
             "lng": -86.43601480000001
+        },
+        {
+            "id": 663612,
+            "name": "Melee Singles",
+            "slug": "tournament/bongenesis/event/melee-singles",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 3,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1644076800,
+            "phaseGroups": [],
+            "tournament": "Bongenesis",
+            "tournament_id": 367730,
+            "city": null,
+            "url": "https://smash.gg/tournament/bongenesis/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "ssbong"
+                },
+                {
+                    "streamName": "indiomutis"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1644620400,
+            "tournament_endAt": 1644892620,
+            "tournament_registrationClosesAt": 1644548340,
+            "images": [
+                {
+                    "id": "4233206",
+                    "url": "https://images.smash.gg/images/tournament/367730/image-ec80cc7e648464719fd1fb13e4d8b7e0.png",
+                    "type": "banner"
+                },
+                {
+                    "id": "4233209",
+                    "url": "https://images.smash.gg/images/tournament/367730/image-dd67b4827c9ff3ff58b21c65b41bfd17.png",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": null,
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": null,
+            "lng": null,
+            "region_lock": [
+                "CL",
+                "BR",
+                "AR",
+                "PY",
+                "UY",
+                "PE",
+                "BO"
+            ]
+        },
+        {
+            "id": 673841,
+            "name": "Melee Singles",
+            "slug": "tournament/cencal-clash-7-the-all-valley-tournament/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1645988400,
+            "phaseGroups": [
+                {
+                    "id": 1668773,
+                    "phase": {
+                        "id": 1065555,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "CenCal Clash #7 The All Valley Tournament",
+            "tournament_id": 416187,
+            "city": "Clovis",
+            "url": "https://smash.gg/tournament/cencal-clash-7-the-all-valley-tournament/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "CarnageFGC"
+                },
+                {
+                    "streamName": "WAVESAnotherOne"
+                }
+            ],
+            "timezone": null,
+            "tournament_startAt": 1645988400,
+            "tournament_endAt": 1646019000,
+            "tournament_registrationClosesAt": 1645992000,
+            "images": [
+                {
+                    "id": "4346964",
+                    "url": "https://images.smash.gg/images/tournament/416187/image-3cb8132a153282642fcd766915490e59.jpg",
+                    "type": "profile"
+                },
+                {
+                    "id": "4347194",
+                    "url": "https://images.smash.gg/images/tournament/416187/image-54960f447225b25e0f76d63c444fd44a.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "393 W Shaw Ave, Clovis, CA 93612, USA",
+            "tournament_addrState": "CA",
+            "country_code": "US",
+            "lat": 36.8091432,
+            "lng": -119.7178706
         },
         {
             "id": 673792,
@@ -9436,106 +9634,6 @@
             "lng": null
         },
         {
-            "id": 672648,
-            "name": "Melee Doubles",
-            "slug": "tournament/greeley-weekly-77/event/melee-doubles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643155200,
-            "phaseGroups": [
-                {
-                    "id": 1667068,
-                    "phase": {
-                        "id": 1064139,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Greeley Weekly#77",
-            "tournament_id": 415506,
-            "city": "Greeley",
-            "url": "https://smash.gg/tournament/greeley-weekly-77/event/melee-doubles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1643155200,
-            "tournament_endAt": 1643176800,
-            "tournament_registrationClosesAt": 1643368800,
-            "images": [
-                {
-                    "id": "4341630",
-                    "url": "https://images.smash.gg/images/tournament/415506/image-617c336d772df6fde663adf6655c1efd.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4341631",
-                    "url": "https://images.smash.gg/images/tournament/415506/image-feed6a001afbeb1ee511b460ffa6d57d.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "1400 22nd St, Greeley, CO 80631, USA",
-            "tournament_addrState": "CO",
-            "country_code": "US",
-            "lat": 40.4028226,
-            "lng": -104.6967947
-        },
-        {
-            "id": 672647,
-            "name": "Melee Singles",
-            "slug": "tournament/greeley-weekly-77/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643155200,
-            "phaseGroups": [
-                {
-                    "id": 1667067,
-                    "phase": {
-                        "id": 1064138,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Greeley Weekly#77",
-            "tournament_id": 415506,
-            "city": "Greeley",
-            "url": "https://smash.gg/tournament/greeley-weekly-77/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1643155200,
-            "tournament_endAt": 1643176800,
-            "tournament_registrationClosesAt": 1643368800,
-            "images": [
-                {
-                    "id": "4341630",
-                    "url": "https://images.smash.gg/images/tournament/415506/image-617c336d772df6fde663adf6655c1efd.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4341631",
-                    "url": "https://images.smash.gg/images/tournament/415506/image-feed6a001afbeb1ee511b460ffa6d57d.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "1400 22nd St, Greeley, CO 80631, USA",
-            "tournament_addrState": "CO",
-            "country_code": "US",
-            "lat": 40.4028226,
-            "lng": -104.6967947
-        },
-        {
             "id": 671255,
             "name": "Melee singles",
             "slug": "tournament/b-town-beatdown-online-15/event/melee-singles",
@@ -13139,51 +13237,6 @@
             "country_code": "US",
             "lat": 41.617843,
             "lng": -88.129777
-        },
-        {
-            "id": 671216,
-            "name": "Melee Singles",
-            "slug": "tournament/level-one-melee-23-a-noob-only-tournament/event/melee-singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1643162400,
-            "phaseGroups": [],
-            "tournament": "Level One Melee #23 - a noob-only tournament",
-            "tournament_id": 414153,
-            "city": null,
-            "url": "https://smash.gg/tournament/level-one-melee-23-a-noob-only-tournament/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "divinesenatorkelly"
-                }
-            ],
-            "timezone": null,
-            "tournament_startAt": 1643162400,
-            "tournament_endAt": 1643179500,
-            "tournament_registrationClosesAt": 1643160660,
-            "images": [
-                {
-                    "id": "4330540",
-                    "url": "https://images.smash.gg/images/tournament/414153/image-0f4884aca2abf1995af8d470fe6a558f.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4330541",
-                    "url": "https://images.smash.gg/images/tournament/414153/image-cfb85e2ea283ecd1c8bdbd673766c61d.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
         },
         {
             "id": 671185,
