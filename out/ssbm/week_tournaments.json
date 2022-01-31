@@ -2930,7 +2930,7 @@
         "slug": "tournament/low-tide-city-2022/event/melee-2v2",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -2984,7 +2984,7 @@
         "slug": "tournament/low-tide-city-2022/event/melee-low-tier-1v1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -3038,7 +3038,7 @@
         "slug": "tournament/low-tide-city-2022/event/melee-1v1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 24,
         "videogame": {
             "id": 1
         },
@@ -11773,6 +11773,11 @@
                 "id": "4356111",
                 "url": "https://images.smash.gg/images/tournament/416719/image-222d8787257b3d24c3d559b9d655abae.png",
                 "type": "profile"
+            },
+            {
+                "id": "4362348",
+                "url": "https://images.smash.gg/images/tournament/416719/image-1a70e21cd99326e074f751e3db79e1cc.jpg",
+                "type": "banner"
             }
         ],
         "tournament_multievent": false,
@@ -11810,41 +11815,22 @@
         "name": "Singles",
         "slug": "tournament/melee-mustard-playoffs-2/event/singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 17,
+        "state": "ACTIVE",
+        "numEntrants": 22,
         "videogame": {
             "id": 1
         },
         "startAt": 1643599800,
-        "phaseGroups": [],
-        "tournament": "Melee Mustard Playoffs 2",
-        "tournament_id": 416968,
-        "city": null,
-        "url": "https://smash.gg/tournament/melee-mustard-playoffs-2/event/singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1643598900,
-        "tournament_endAt": 1643603400,
-        "tournament_registrationClosesAt": 1643600340,
-        "images": [
+        "phaseGroups": [
             {
-                "id": "4356522",
-                "url": "https://images.smash.gg/images/tournament/416968/image-1b0ba7f3eb378681b6d555fe36734ebd.png",
-                "type": "profile"
-            },
-            {
-                "id": "4356523",
-                "url": "https://images.smash.gg/images/tournament/416968/image-11c64bc0f0958688c86972ef968404c3.png",
-                "type": "banner"
+                "id": 1670640,
+                "phase": {
+                    "id": 1066866,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "674867": {
         "id": 674867,
@@ -13955,50 +13941,22 @@
         "name": "Melee Singles",
         "slug": "tournament/sunday-night-strike-2-electric-boogaloo/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
         "startAt": 1643601600,
         "phaseGroups": [
             {
-                "id": 1671207,
+                "id": 1671562,
                 "phase": {
-                    "id": 1067309,
-                    "name": "Bracket"
+                    "id": 1067616,
+                    "name": "Standard Bracket"
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Sunday Night Strike 2 - Electric Boogaloo",
-        "tournament_id": 417252,
-        "city": null,
-        "url": "https://smash.gg/tournament/sunday-night-strike-2-electric-boogaloo/event/melee-singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1643601600,
-        "tournament_endAt": 1643612400,
-        "tournament_registrationClosesAt": 1643601600,
-        "images": [
-            {
-                "id": "4359809",
-                "url": "https://images.smash.gg/images/tournament/417252/image-a6b51414e2d0bc4b56d1a91f746810f5.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "4359810",
-                "url": "https://images.smash.gg/images/tournament/417252/image-bed26ee4978a7aa5d494ab0a8ac81f76.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "675398": {
         "id": 675398,
@@ -14872,5 +14830,55 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "675616": {
+        "id": 675616,
+        "name": "Melee Singles",
+        "slug": "tournament/last-hit-at-critical-hit-45/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1643760000,
+        "phaseGroups": [
+            {
+                "id": 1671785,
+                "phase": {
+                    "id": 1067811,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Last Hit at Critical Hit #45",
+        "tournament_id": 417534,
+        "city": "Iowa City",
+        "url": "https://smash.gg/tournament/last-hit-at-critical-hit-45/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1643760000,
+        "tournament_endAt": 1643778000,
+        "tournament_registrationClosesAt": 1643778000,
+        "images": [
+            {
+                "id": "4362312",
+                "url": "https://images.smash.gg/images/tournament/417534/image-38cb84608c58e504ebbb3007e89763f1.png",
+                "type": "banner"
+            },
+            {
+                "id": "4362313",
+                "url": "https://images.smash.gg/images/tournament/417534/image-92ad5262c47cbd79dea5fe463b10aaa0.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "115 S Linn St, Iowa City, IA 52240, USA",
+        "tournament_addrState": "IA",
+        "country_code": "US",
+        "lat": 41.6595734,
+        "lng": -91.5318135
     }
 }
