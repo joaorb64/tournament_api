@@ -14436,7 +14436,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/smash-jotunheimen-kt-3/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "CREATED",
         "numEntrants": 47,
         "videogame": {
             "id": 1386
@@ -46171,12 +46171,21 @@
         "slug": "tournament/press-start-10/event/ladder",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 25,
+        "numEntrants": 26,
         "videogame": {
             "id": 1386
         },
         "startAt": 1644678000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1672024,
+                "phase": {
+                    "id": 1068018,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Press Start #10",
         "tournament_id": 417647,
         "city": "Salamanca",
@@ -46216,12 +46225,54 @@
         "slug": "tournament/press-start-10/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 25,
+        "numEntrants": 26,
         "videogame": {
             "id": 1386
         },
         "startAt": 1644678000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1672022,
+                "phase": {
+                    "id": 1068016,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7197290
+                    },
+                    {
+                        "id": 7197291
+                    },
+                    {
+                        "id": 7197292
+                    },
+                    {
+                        "id": 7197293
+                    },
+                    {
+                        "id": 7197294
+                    },
+                    {
+                        "id": 7197295
+                    },
+                    {
+                        "id": 7197296
+                    },
+                    {
+                        "id": 7197297
+                    }
+                ]
+            },
+            {
+                "id": 1672023,
+                "phase": {
+                    "id": 1068017,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Press Start #10",
         "tournament_id": 417647,
         "city": "Salamanca",
@@ -51631,7 +51682,7 @@
         "name": "Setup (dock + switch)",
         "slug": "tournament/excalibur-1/event/setup-dock-switch",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 25,
         "videogame": {
             "id": 1386
@@ -76218,7 +76269,7 @@
         "slug": "tournament/2022-245/event/super-smash-bros-ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 36,
         "videogame": {
             "id": 1386
         },
@@ -76241,7 +76292,7 @@
         "timezone": "Asia/Shanghai",
         "tournament_startAt": 1644631200,
         "tournament_endAt": 1644746400,
-        "tournament_registrationClosesAt": 1644631200,
+        "tournament_registrationClosesAt": 1644550500,
         "images": [
             {
                 "id": "4382676",
@@ -76268,7 +76319,7 @@
         "slug": "tournament/2022-245/event/super-smash-bros-ultimate-singles-2",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 7,
         "videogame": {
             "id": 1386
         },
@@ -76291,7 +76342,7 @@
         "timezone": "Asia/Shanghai",
         "tournament_startAt": 1644631200,
         "tournament_endAt": 1644746400,
-        "tournament_registrationClosesAt": 1644631200,
+        "tournament_registrationClosesAt": 1644550500,
         "images": [
             {
                 "id": "4382676",
@@ -89193,8 +89244,8 @@
         "name": "Ultimate Singles",
         "slug": "tournament/slice-n-dice-series-33/event/ultimate-singles-1",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 31,
+        "state": "ACTIVE",
+        "numEntrants": 38,
         "videogame": {
             "id": 1386
         },
@@ -89208,39 +89259,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Slice n' Dice Series #33",
-        "tournament_id": 419912,
-        "city": null,
-        "url": "https://smash.gg/tournament/slice-n-dice-series-33/event/ultimate-singles-1",
-        "streams": [
-            {
-                "streamName": "Appl3manSSB"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1644595200,
-        "tournament_endAt": 1644595260,
-        "tournament_registrationClosesAt": 1644594600,
-        "images": [
-            {
-                "id": "4386546",
-                "url": "https://images.smash.gg/images/tournament/419912/image-5f45cdfb929dec4318c6832291a82065.png",
-                "type": "banner"
-            },
-            {
-                "id": "4386547",
-                "url": "https://images.smash.gg/images/tournament/419912/image-1f020deaf33a5545b51da1f79372e237.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "679198": {
         "id": 679198,
@@ -93319,12 +93338,21 @@
         "slug": "tournament/torneo-san-valent-n-tmnt/event/torneo-tmnt-san-valentin",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1386
         },
         "startAt": 1644627600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1678244,
+                "phase": {
+                    "id": 1072777,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Torneo San Valent\u00edn TMNT",
         "tournament_id": 413740,
         "city": null,
@@ -99544,7 +99572,7 @@
         "slug": "tournament/xeno229/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 10,
+        "numEntrants": 15,
         "videogame": {
             "id": 1386
         },
@@ -107928,7 +107956,7 @@
         "slug": "tournament/slugfest-30-prize-pool/event/ultimate-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
@@ -112920,7 +112948,7 @@
         "slug": "tournament/take-the-crown-17-reverse-mains/event/take-the-crown-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -113082,7 +113110,7 @@
         "slug": "tournament/don-t-get-tilted-cornerstone-esports-lounge-spring-2022-1/event/dgt-31-singles-valentine-s-day-baybee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -113404,5 +113432,596 @@
         "country_code": "NL",
         "lat": 52.3867937,
         "lng": 4.6381385
+    },
+    "680545": {
+        "id": 680545,
+        "name": "Ultimate Singles",
+        "slug": "tournament/university-of-iowa-weekly-17-spoontastic/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 5,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644629400,
+        "phaseGroups": [
+            {
+                "id": 1679874,
+                "phase": {
+                    "id": 1073973,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "University of Iowa Weekly #17: Spoontastic",
+        "tournament_id": 420599,
+        "city": "Iowa City",
+        "url": "https://smash.gg/tournament/university-of-iowa-weekly-17-spoontastic/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1644629400,
+        "tournament_endAt": 1644642000,
+        "tournament_registrationClosesAt": 1644629340,
+        "images": [
+            {
+                "id": "4399092",
+                "url": "https://images.smash.gg/images/tournament/420599/image-6d3d3f9e10046866cfd0677e3ab72d88.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "125 N Madison St, Iowa City, IA 52245, USA",
+        "tournament_addrState": "IA",
+        "country_code": "US",
+        "lat": 41.6623113,
+        "lng": -91.53934339999999
+    },
+    "680547": {
+        "id": 680547,
+        "name": "Squad Strike",
+        "slug": "tournament/smashing-saturdays-2-12-22/event/squad-strike",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644685200,
+        "phaseGroups": [
+            {
+                "id": 1679876,
+                "phase": {
+                    "id": 1073975,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smashing Saturdays 2/12/22",
+        "tournament_id": 419542,
+        "city": "Newark",
+        "url": "https://smash.gg/tournament/smashing-saturdays-2-12-22/event/squad-strike",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1644685200,
+        "tournament_endAt": 1644708600,
+        "tournament_registrationClosesAt": 1644688800,
+        "images": [
+            {
+                "id": "4399098",
+                "url": "https://images.smash.gg/images/tournament/419542/image-8cf900e63a3746b681198b7371d7be37.png",
+                "type": "banner"
+            },
+            {
+                "id": "4399099",
+                "url": "https://images.smash.gg/images/tournament/419542/image-99baa95b6a5586abc4df547f93de9340.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Perkins Student Center, 325 Academy St, Newark, DE 19716, USA",
+        "tournament_addrState": "DE",
+        "country_code": "US",
+        "lat": 39.67692270000001,
+        "lng": -75.7493393
+    },
+    "680546": {
+        "id": 680546,
+        "name": "Ultimate Singles",
+        "slug": "tournament/smashing-saturdays-2-12-22/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644688800,
+        "phaseGroups": [
+            {
+                "id": 1679875,
+                "phase": {
+                    "id": 1073974,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smashing Saturdays 2/12/22",
+        "tournament_id": 419542,
+        "city": "Newark",
+        "url": "https://smash.gg/tournament/smashing-saturdays-2-12-22/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1644685200,
+        "tournament_endAt": 1644708600,
+        "tournament_registrationClosesAt": 1644688800,
+        "images": [
+            {
+                "id": "4399098",
+                "url": "https://images.smash.gg/images/tournament/419542/image-8cf900e63a3746b681198b7371d7be37.png",
+                "type": "banner"
+            },
+            {
+                "id": "4399099",
+                "url": "https://images.smash.gg/images/tournament/419542/image-99baa95b6a5586abc4df547f93de9340.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Perkins Student Center, 325 Academy St, Newark, DE 19716, USA",
+        "tournament_addrState": "DE",
+        "country_code": "US",
+        "lat": 39.67692270000001,
+        "lng": -75.7493393
+    },
+    "680542": {
+        "id": 680542,
+        "name": "Ultimate Singles \"Spread the Wealth\" Bracket",
+        "slug": "tournament/ultimate-singles-spread-the-wealth-premierxp-tournament-14-house-of/event/ultimate-singles-spread-the-wealth-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644778800,
+        "phaseGroups": [
+            {
+                "id": 1679871,
+                "phase": {
+                    "id": 1073970,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Ultimate Singles \"Spread the Wealth\" PremierXP Tournament #14 - @House of Sports",
+        "tournament_id": 420598,
+        "city": "Ardsley",
+        "url": "https://smash.gg/tournament/ultimate-singles-spread-the-wealth-premierxp-tournament-14-house-of/event/ultimate-singles-spread-the-wealth-bracket",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1644778800,
+        "tournament_endAt": 1644789600,
+        "tournament_registrationClosesAt": 1644825600,
+        "images": [
+            {
+                "id": "4399072",
+                "url": "https://images.smash.gg/images/tournament/420598/image-ec26f8fb16283c6794b14efa631292e6.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399073",
+                "url": "https://images.smash.gg/images/tournament/420598/image-977d35b643fed291b33f000013c04f16.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1 Elm St, Ardsley, NY 10502, USA",
+        "tournament_addrState": "NY",
+        "country_code": "US",
+        "lat": 41.01035630000001,
+        "lng": -73.8510887
+    },
+    "680543": {
+        "id": 680543,
+        "name": "Redemption Single-elimination Bracket",
+        "slug": "tournament/ultimate-singles-spread-the-wealth-premierxp-tournament-14-house-of/event/redemption-single-elimination-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644778800,
+        "phaseGroups": [
+            {
+                "id": 1679872,
+                "phase": {
+                    "id": 1073971,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Ultimate Singles \"Spread the Wealth\" PremierXP Tournament #14 - @House of Sports",
+        "tournament_id": 420598,
+        "city": "Ardsley",
+        "url": "https://smash.gg/tournament/ultimate-singles-spread-the-wealth-premierxp-tournament-14-house-of/event/redemption-single-elimination-bracket",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1644778800,
+        "tournament_endAt": 1644789600,
+        "tournament_registrationClosesAt": 1644825600,
+        "images": [
+            {
+                "id": "4399072",
+                "url": "https://images.smash.gg/images/tournament/420598/image-ec26f8fb16283c6794b14efa631292e6.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399073",
+                "url": "https://images.smash.gg/images/tournament/420598/image-977d35b643fed291b33f000013c04f16.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1 Elm St, Ardsley, NY 10502, USA",
+        "tournament_addrState": "NY",
+        "country_code": "US",
+        "lat": 41.01035630000001,
+        "lng": -73.8510887
+    },
+    "680552": {
+        "id": 680552,
+        "name": "Back to the Climb 24",
+        "slug": "tournament/the-ladder-tourney-24/event/back-to-the-climb-24",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644789600,
+        "phaseGroups": [
+            {
+                "id": 1679882,
+                "phase": {
+                    "id": 1073981,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Ladder Tourney - 24",
+        "tournament_id": 420603,
+        "city": "McLean",
+        "url": "https://smash.gg/tournament/the-ladder-tourney-24/event/back-to-the-climb-24",
+        "streams": [
+            {
+                "streamName": "theladdertourney"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1644789600,
+        "tournament_endAt": 1644811200,
+        "tournament_registrationClosesAt": 1644798600,
+        "images": [
+            {
+                "id": "4399138",
+                "url": "https://images.smash.gg/images/tournament/420603/image-9604eff0336586d3304851a71c3b36ac.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399139",
+                "url": "https://images.smash.gg/images/tournament/420603/image-c7b4acec2ead43f4dfe39b1c5656c251.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1711 Kirby Rd, McLean, VA 22101, USA",
+        "tournament_addrState": "VA",
+        "country_code": "US",
+        "lat": 38.9217121,
+        "lng": -77.1519766
+    },
+    "680555": {
+        "id": 680555,
+        "name": "Dubble Trubble",
+        "slug": "tournament/the-ladder-tourney-24/event/dubble-trubble",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644789600,
+        "phaseGroups": [
+            {
+                "id": 1679885,
+                "phase": {
+                    "id": 1073984,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Ladder Tourney - 24",
+        "tournament_id": 420603,
+        "city": "McLean",
+        "url": "https://smash.gg/tournament/the-ladder-tourney-24/event/dubble-trubble",
+        "streams": [
+            {
+                "streamName": "theladdertourney"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1644789600,
+        "tournament_endAt": 1644811200,
+        "tournament_registrationClosesAt": 1644798600,
+        "images": [
+            {
+                "id": "4399138",
+                "url": "https://images.smash.gg/images/tournament/420603/image-9604eff0336586d3304851a71c3b36ac.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399139",
+                "url": "https://images.smash.gg/images/tournament/420603/image-c7b4acec2ead43f4dfe39b1c5656c251.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1711 Kirby Rd, McLean, VA 22101, USA",
+        "tournament_addrState": "VA",
+        "country_code": "US",
+        "lat": 38.9217121,
+        "lng": -77.1519766
+    },
+    "680561": {
+        "id": 680561,
+        "name": "Ultimate Amateurs",
+        "slug": "tournament/rock-chalk-jab-lock-92/event/ultimate-amateurs",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644796800,
+        "phaseGroups": [
+            {
+                "id": 1679891,
+                "phase": {
+                    "id": 1073990,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Rock Chalk Jab Lock 92",
+        "tournament_id": 420606,
+        "city": "Lawrence",
+        "url": "https://smash.gg/tournament/rock-chalk-jab-lock-92/event/ultimate-amateurs",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1644796800,
+        "tournament_endAt": 1644814800,
+        "tournament_registrationClosesAt": 1644800400,
+        "images": [
+            {
+                "id": "4399175",
+                "url": "https://images.smash.gg/images/tournament/420606/image-f17fe9bfb012984d8fccbc01cfb0914b.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399176",
+                "url": "https://images.smash.gg/images/tournament/420606/image-24877f16bd7af2dee7cbf7168af0bafe.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "University of Kansas LEEP2",
+        "tournament_venueAddress": "1536 W 15th St, Lawrence, KS 66045, USA",
+        "tournament_addrState": "KS",
+        "country_code": "US",
+        "lat": 38.9574203,
+        "lng": -95.253958
+    },
+    "680560": {
+        "id": 680560,
+        "name": "Ultimate Singles",
+        "slug": "tournament/rock-chalk-jab-lock-92/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644796800,
+        "phaseGroups": [
+            {
+                "id": 1679890,
+                "phase": {
+                    "id": 1073989,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Rock Chalk Jab Lock 92",
+        "tournament_id": 420606,
+        "city": "Lawrence",
+        "url": "https://smash.gg/tournament/rock-chalk-jab-lock-92/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1644796800,
+        "tournament_endAt": 1644814800,
+        "tournament_registrationClosesAt": 1644800400,
+        "images": [
+            {
+                "id": "4399175",
+                "url": "https://images.smash.gg/images/tournament/420606/image-f17fe9bfb012984d8fccbc01cfb0914b.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399176",
+                "url": "https://images.smash.gg/images/tournament/420606/image-24877f16bd7af2dee7cbf7168af0bafe.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "University of Kansas LEEP2",
+        "tournament_venueAddress": "1536 W 15th St, Lawrence, KS 66045, USA",
+        "tournament_addrState": "KS",
+        "country_code": "US",
+        "lat": 38.9574203,
+        "lng": -95.253958
+    },
+    "680541": {
+        "id": 680541,
+        "name": "Ultimate Singles",
+        "slug": "tournament/bring-more-lan-adapters/event/ultimate-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": null,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1644622200,
+        "phaseGroups": [],
+        "tournament": "Bring More Lan Adapters!",
+        "tournament_id": 420595,
+        "city": null,
+        "url": "https://smash.gg/tournament/bring-more-lan-adapters/event/ultimate-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1644838200,
+        "tournament_endAt": 1644897600,
+        "tournament_registrationClosesAt": 1644879600,
+        "images": [],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "680549": {
+        "id": 680549,
+        "name": "Ultimate Singles",
+        "slug": "tournament/smashlan-d-138-hosted-by-game-arena/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1645138800,
+        "phaseGroups": [
+            {
+                "id": 1679878,
+                "phase": {
+                    "id": 1073977,
+                    "name": "Pools"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "SmashLAN\u2019d #138 | Hosted by Game Arena",
+        "tournament_id": 420601,
+        "city": "Hilliard",
+        "url": "https://smash.gg/tournament/smashlan-d-138-hosted-by-game-arena/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "GameArenaCo"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1645138800,
+        "tournament_endAt": 1645156800,
+        "tournament_registrationClosesAt": 1645140600,
+        "images": [
+            {
+                "id": "4399117",
+                "url": "https://images.smash.gg/images/tournament/420601/image-45e6cee597e55f86ae72b3dd7e2b88ae.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399118",
+                "url": "https://images.smash.gg/images/tournament/420601/image-935efb37f4b897cd1443f9450933153c.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Game Arena",
+        "tournament_venueAddress": "3570 Fishinger Blvd, Hilliard, OH 43026, USA",
+        "tournament_addrState": "OH",
+        "country_code": "US",
+        "lat": 40.0272872,
+        "lng": -83.1122437
+    },
+    "680550": {
+        "id": 680550,
+        "name": "Ultimate Waitlist",
+        "slug": "tournament/smashlan-d-138-hosted-by-game-arena/event/ultimate-waitlist",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1645138800,
+        "phaseGroups": [
+            {
+                "id": 1679879,
+                "phase": {
+                    "id": 1073978,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "SmashLAN\u2019d #138 | Hosted by Game Arena",
+        "tournament_id": 420601,
+        "city": "Hilliard",
+        "url": "https://smash.gg/tournament/smashlan-d-138-hosted-by-game-arena/event/ultimate-waitlist",
+        "streams": [
+            {
+                "streamName": "GameArenaCo"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1645138800,
+        "tournament_endAt": 1645156800,
+        "tournament_registrationClosesAt": 1645140600,
+        "images": [
+            {
+                "id": "4399117",
+                "url": "https://images.smash.gg/images/tournament/420601/image-45e6cee597e55f86ae72b3dd7e2b88ae.png",
+                "type": "profile"
+            },
+            {
+                "id": "4399118",
+                "url": "https://images.smash.gg/images/tournament/420601/image-935efb37f4b897cd1443f9450933153c.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Game Arena",
+        "tournament_venueAddress": "3570 Fishinger Blvd, Hilliard, OH 43026, USA",
+        "tournament_addrState": "OH",
+        "country_code": "US",
+        "lat": 40.0272872,
+        "lng": -83.1122437
     }
 }
