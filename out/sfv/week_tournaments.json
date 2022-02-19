@@ -117,12 +117,21 @@
         "slug": "tournament/winter-showdown-8/event/street-fighter-5",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 10,
+        "numEntrants": 12,
         "videogame": {
             "id": 33990
         },
         "startAt": 1646438400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1604773,
+                "phase": {
+                    "id": 1019263,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Winter Showdown 8",
         "tournament_id": 322163,
         "city": "Westminster",
@@ -131,7 +140,7 @@
         "timezone": "America/Denver",
         "tournament_startAt": 1646438400,
         "tournament_endAt": 1646629200,
-        "tournament_registrationClosesAt": 1645858800,
+        "tournament_registrationClosesAt": 1645513140,
         "images": [
             {
                 "id": "3927340",
@@ -1789,6 +1798,11 @@
                 "id": "4000763",
                 "url": "https://images.smash.gg/images/tournament/327742/image-0ff8e9eb77ecb245f9e3a0d6d82987aa.png",
                 "type": "profile"
+            },
+            {
+                "id": "4420327",
+                "url": "https://images.smash.gg/images/tournament/327742/image-88b4c95cf48135d27169bd8fd9ac3cc3.png",
+                "type": "banner"
             }
         ],
         "tournament_multievent": false,
@@ -1997,7 +2011,7 @@
         "timezone": "Europe/Madrid",
         "tournament_startAt": 1645264860,
         "tournament_endAt": 1645297200,
-        "tournament_registrationClosesAt": 1645261200,
+        "tournament_registrationClosesAt": 1645174800,
         "images": [
             {
                 "id": "4360926",
@@ -5291,5 +5305,55 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "675189": {
+        "id": 675189,
+        "name": "Street Fighter 5 Champion Edition",
+        "slug": "tournament/tijuana-at-war-2022/event/street-fighter-5-champion-edition",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1649440800,
+        "phaseGroups": [
+            {
+                "id": 1671154,
+                "phase": {
+                    "id": 1067268,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Tijuana At War 2022",
+        "tournament_id": 417216,
+        "city": "Tijuana",
+        "url": "https://smash.gg/tournament/tijuana-at-war-2022/event/street-fighter-5-champion-edition",
+        "streams": null,
+        "timezone": "America/Tijuana",
+        "tournament_startAt": 1649440800,
+        "tournament_endAt": 1649653200,
+        "tournament_registrationClosesAt": 1648954800,
+        "images": [
+            {
+                "id": "4359478",
+                "url": "https://images.smash.gg/images/tournament/417216/image-e40dd54bd6365b5dde3804055f78b52c.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "4371400",
+                "url": "https://images.smash.gg/images/tournament/417216/image-e97c14d33de91a08b0e9ba2093e083eb.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Av de los Insurgentes s/n, Rio Tijuana 3ra Etapa, 22226 Tijuana, B.C., M\u00e9xico",
+        "tournament_addrState": "B.C.",
+        "country_code": "MX",
+        "lat": 32.4951447,
+        "lng": -116.9385114
     }
 }
