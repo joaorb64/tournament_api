@@ -1,12 +1,12 @@
 {
-    "updateTime": 1645323160,
+    "updateTime": 1645330411,
     "events": [
         {
             "id": 674428,
             "name": "SFV Double Elimination, Standard Bracket",
             "slug": "tournament/collisions-13/event/sfv-double-elimination-standard-bracket",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 8,
             "videogame": {
                 "id": 33990
@@ -28,7 +28,7 @@
             "name": "Street fighter V",
             "slug": "tournament/fru-slc-presents-the-festival-of-love-and-blood/event/street-fighter-v",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 6,
             "videogame": {
                 "id": 33990
@@ -46,12 +46,34 @@
             ]
         },
         {
+            "id": 682429,
+            "name": "Farofation Cup - SFV - Liga aberta #38",
+            "slug": "tournament/farofation-cup-sfv-liga-aberta-38/event/farofation-cup-sfv-liga-aberta-38",
+            "isOnline": true,
+            "state": "COMPLETED",
+            "numEntrants": 38,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1645313400,
+            "phaseGroups": [
+                {
+                    "id": 1683203,
+                    "phase": {
+                        "id": 1076401,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 683138,
             "name": "Street Fighter V",
             "slug": "tournament/domino-effect-20/event/street-fighter-v",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 1,
             "videogame": {
                 "id": 33990
             },
@@ -104,6 +126,60 @@
             "country_code": "US",
             "lat": 47.6582455,
             "lng": -122.3047635
+        },
+        {
+            "id": 681775,
+            "name": "STREET FIGHTER V: CHAMPIONSHIP EDITION",
+            "slug": "tournament/counter-hit-shamrock-showdown-2-replay-cafe/event/street-fighter-v-championship-edition",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1647730860,
+            "phaseGroups": [
+                {
+                    "id": 1682200,
+                    "phase": {
+                        "id": 1075607,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Counter Hit: Shamrock Showdown 2 @ Replay Cafe",
+            "tournament_id": 421399,
+            "city": "Detroit",
+            "url": "https://smash.gg/tournament/counter-hit-shamrock-showdown-2-replay-cafe/event/street-fighter-v-championship-edition",
+            "streams": [
+                {
+                    "streamName": "GrandFinalsGaming"
+                }
+            ],
+            "timezone": "America/Detroit",
+            "tournament_startAt": 1647712800,
+            "tournament_endAt": 1647741600,
+            "tournament_registrationClosesAt": 1647743400,
+            "images": [
+                {
+                    "id": "4423109",
+                    "url": "https://images.smash.gg/images/tournament/421399/image-b399e6c4fcb7564999f755749c3da48e.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "4423115",
+                    "url": "https://images.smash.gg/images/tournament/421399/image-2eace5ebbcf27c9a851b52d4686e72f8.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "6545 St Antoine, Detroit, MI 48202, USA",
+            "tournament_addrState": "MI",
+            "country_code": "US",
+            "lat": 42.3721762,
+            "lng": -83.0659196
         },
         {
             "id": "chal41661",
@@ -347,60 +423,6 @@
             "country_code": "BR",
             "lat": -14.235004,
             "lng": -51.92528
-        },
-        {
-            "id": 681775,
-            "name": "STREET FIGHTER V: CHAMPIONSHIP EDITION",
-            "slug": "tournament/counter-hit-shamrock-showdown-2-replay-cafe/event/street-fighter-v-championship-edition",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 33990
-            },
-            "startAt": 1647730860,
-            "phaseGroups": [
-                {
-                    "id": 1682200,
-                    "phase": {
-                        "id": 1075607,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Counter Hit: Shamrock Showdown 2 @ Replay Cafe",
-            "tournament_id": 421399,
-            "city": "Detroit",
-            "url": "https://smash.gg/tournament/counter-hit-shamrock-showdown-2-replay-cafe/event/street-fighter-v-championship-edition",
-            "streams": [
-                {
-                    "streamName": "GrandFinalsGaming"
-                }
-            ],
-            "timezone": "America/Detroit",
-            "tournament_startAt": 1647712800,
-            "tournament_endAt": 1647741600,
-            "tournament_registrationClosesAt": 1647743400,
-            "images": [
-                {
-                    "id": "4423109",
-                    "url": "https://images.smash.gg/images/tournament/421399/image-b399e6c4fcb7564999f755749c3da48e.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4423115",
-                    "url": "https://images.smash.gg/images/tournament/421399/image-2eace5ebbcf27c9a851b52d4686e72f8.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "6545 St Antoine, Detroit, MI 48202, USA",
-            "tournament_addrState": "MI",
-            "country_code": "US",
-            "lat": 42.3721762,
-            "lng": -83.0659196
         },
         {
             "id": 683410,
