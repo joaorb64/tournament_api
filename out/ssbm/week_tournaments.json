@@ -2602,7 +2602,7 @@
         "videogame": {
             "id": 1
         },
-        "startAt": 1645786800,
+        "startAt": 1645873200,
         "phaseGroups": [],
         "tournament": "Bunny Hood",
         "tournament_id": 345260,
@@ -2639,7 +2639,7 @@
         "slug": "tournament/bunny-hood/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 38,
+        "numEntrants": 39,
         "videogame": {
             "id": 1
         },
@@ -9030,31 +9030,77 @@
         "slug": "tournament/smash-37-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
         "startAt": 1645531200,
-        "phaseGroups": [],
-        "tournament": "Smash@37",
-        "tournament_id": 416035,
-        "city": "Horten",
-        "url": "https://smash.gg/tournament/smash-37-1/event/melee-singles",
-        "streams": null,
-        "timezone": "Europe/Oslo",
-        "tournament_startAt": 1645531200,
-        "tournament_endAt": 1645563540,
-        "tournament_registrationClosesAt": 1645563540,
-        "images": [],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Storgata 37, 3182 Horten, Norway",
-        "tournament_addrState": "Vestfold og Telemark",
-        "country_code": "NO",
-        "lat": 59.41457080000001,
-        "lng": 10.4803707,
-        "region_lock": [
-            "NO"
+        "phaseGroups": [
+            {
+                "id": 1668468,
+                "phase": {
+                    "id": 1065315,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7255763
+                    },
+                    {
+                        "id": 7255764
+                    },
+                    {
+                        "id": 7255765
+                    },
+                    {
+                        "id": 7255766
+                    },
+                    {
+                        "id": 7255767
+                    },
+                    {
+                        "id": 7255768
+                    },
+                    {
+                        "id": 7255769
+                    },
+                    {
+                        "id": 7255770
+                    },
+                    {
+                        "id": 7255771
+                    },
+                    {
+                        "id": 7255772
+                    },
+                    {
+                        "id": 7255773
+                    },
+                    {
+                        "id": 7255774
+                    },
+                    {
+                        "id": 7255775
+                    },
+                    {
+                        "id": 7255776
+                    },
+                    {
+                        "id": 7255777
+                    },
+                    {
+                        "id": 7255778
+                    }
+                ]
+            },
+            {
+                "id": 1669017,
+                "phase": {
+                    "id": 1065766,
+                    "name": "Pro Bracket"
+                },
+                "progressionsOut": null
+            }
         ]
     },
     "679889": {
@@ -10384,7 +10430,7 @@
         "slug": "tournament/cwqld-february-ranbat-2022/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 8,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -22759,5 +22805,74 @@
         "country_code": "US",
         "lat": 36.3023954,
         "lng": -82.36985299999999
+    },
+    "685229": {
+        "id": 685229,
+        "name": "Melee Singles",
+        "slug": "tournament/uri-rhody-rumble-2022-iv/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1645822860,
+        "phaseGroups": [
+            {
+                "id": 1687713,
+                "phase": {
+                    "id": 1079938,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7256151
+                    },
+                    {
+                        "id": 7256152
+                    }
+                ]
+            },
+            {
+                "id": 1687714,
+                "phase": {
+                    "id": 1079939,
+                    "name": "Top 4"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "URI Rhody Rumble 2022 IV",
+        "tournament_id": 423521,
+        "city": "South Kingstown",
+        "url": "https://smash.gg/tournament/uri-rhody-rumble-2022-iv/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "Komengy"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1645822860,
+        "tournament_endAt": 1645850940,
+        "tournament_registrationClosesAt": 1645869060,
+        "images": [
+            {
+                "id": "4429949",
+                "url": "https://images.smash.gg/images/tournament/423521/image-b36514b75514baa0ad7028d49ef0dd41.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "4429950",
+                "url": "https://images.smash.gg/images/tournament/423521/image-9ea25b3f04d1c0774fa9773f4e9e7cf0.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Memorial Union, 50 Lower College Rd, Kingston, RI 02881, USA",
+        "tournament_addrState": "RI",
+        "country_code": "US",
+        "lat": 41.4850422,
+        "lng": -71.52988169999998
     }
 }
