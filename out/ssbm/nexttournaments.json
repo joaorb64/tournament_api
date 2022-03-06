@@ -1,64 +1,6 @@
 {
-    "updateTime": 1646568790,
+    "updateTime": 1646572426,
     "events": [
-        {
-            "id": 685718,
-            "name": "East Asia Melee",
-            "slug": "tournament/seam-7/event/east-asia-melee",
-            "isOnline": true,
-            "state": "COMPLETED",
-            "numEntrants": 9,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1646553600,
-            "phaseGroups": [
-                {
-                    "id": 1688491,
-                    "phase": {
-                        "id": 1080521,
-                        "name": "Round Robin Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7292499
-                        },
-                        {
-                            "id": 7292501
-                        },
-                        {
-                            "id": 7292503
-                        }
-                    ]
-                },
-                {
-                    "id": 1688492,
-                    "phase": {
-                        "id": 1080521,
-                        "name": "Round Robin Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7292500
-                        },
-                        {
-                            "id": 7292502
-                        },
-                        {
-                            "id": 7292504
-                        }
-                    ]
-                },
-                {
-                    "id": 1688493,
-                    "phase": {
-                        "id": 1080522,
-                        "name": "Final Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
         {
             "id": 685730,
             "name": "Melee Singles",
@@ -75,6 +17,28 @@
                     "id": 1688515,
                     "phase": {
                         "id": 1080540,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 685758,
+            "name": "Smash Melee - 1v1",
+            "slug": "tournament/smashborg-2/event/smash-melee-1v1",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 17,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1646568000,
+            "phaseGroups": [
+                {
+                    "id": 1688573,
+                    "phase": {
+                        "id": 1080580,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
@@ -134,6 +98,54 @@
             "country_code": null,
             "lat": null,
             "lng": null
+        },
+        {
+            "id": 690884,
+            "name": "GEX CUP U.S.A",
+            "slug": "tournament/gex-cup-u-s-a/event/gex-cup-u-s-a",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1647228600,
+            "phaseGroups": [
+                {
+                    "id": 1697713,
+                    "phase": {
+                        "id": 1087205,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "GEX CUP U.S.A",
+            "tournament_id": 426764,
+            "city": null,
+            "url": "https://smash.gg/tournament/gex-cup-u-s-a/event/gex-cup-u-s-a",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1647185400,
+            "tournament_endAt": 1647228600,
+            "tournament_registrationClosesAt": 1647225000,
+            "images": [
+                {
+                    "id": "4465693",
+                    "url": "https://images.smash.gg/images/tournament/426764/image-74a56339323395db364aa4f870da41be.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": null,
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": null,
+            "lng": null,
+            "region_lock": [
+                "US"
+            ]
         },
         {
             "id": 690875,
@@ -271,45 +283,6 @@
             "country_code": null,
             "lat": null,
             "lng": null
-        },
-        {
-            "id": 690884,
-            "name": "GEX CUP U.S.A",
-            "slug": "tournament/gex-cup-u-s-a/event/gex-cup-u-s-a",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1647228600,
-            "phaseGroups": [],
-            "tournament": "GEX CUP U.S.A",
-            "tournament_id": 426764,
-            "city": null,
-            "url": "https://smash.gg/tournament/gex-cup-u-s-a/event/gex-cup-u-s-a",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1647185400,
-            "tournament_endAt": 1647228600,
-            "tournament_registrationClosesAt": 1647225000,
-            "images": [
-                {
-                    "id": "4465677",
-                    "url": "https://images.smash.gg/images/tournament/426764/image-f300bb249fdf3365d5bd1c95572a77aa.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null,
-            "region_lock": [
-                "US"
-            ]
         },
         {
             "id": 690831,
@@ -14929,60 +14902,6 @@
             "country_code": "US",
             "lat": 42.8781414,
             "lng": -71.48527439999998
-        },
-        {
-            "id": 685758,
-            "name": "Smash Melee - 1v1",
-            "slug": "tournament/smashborg-2/event/smash-melee-1v1",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 6,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1646568000,
-            "phaseGroups": [
-                {
-                    "id": 1688573,
-                    "phase": {
-                        "id": 1080580,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Smashborg #2",
-            "tournament_id": 423775,
-            "city": "Sarpsborg",
-            "url": "https://smash.gg/tournament/smashborg-2/event/smash-melee-1v1",
-            "streams": [
-                {
-                    "streamName": "Rotaryonesports"
-                }
-            ],
-            "timezone": "Europe/Oslo",
-            "tournament_startAt": 1646568000,
-            "tournament_endAt": 1646596800,
-            "tournament_registrationClosesAt": 1646557200,
-            "images": [
-                {
-                    "id": "4433429",
-                    "url": "https://images.smash.gg/images/tournament/423775/image-9bb6ae915607500db218c608953d03f5.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4435422",
-                    "url": "https://images.smash.gg/images/tournament/423775/image-fd72517611d52ebec7feff42a3551dd2.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "St. Marie gate 38, 1706 Sarpsborg, Norway",
-            "tournament_addrState": "Viken",
-            "country_code": "NO",
-            "lat": 59.2802705,
-            "lng": 11.1200504
         },
         {
             "id": 661036,
