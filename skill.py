@@ -3,7 +3,7 @@ import os
 import unicodedata
 import collections
 import collections.abc
-import trueskill
+import openskill
 import sys
 
 def update(d, u):
@@ -115,79 +115,47 @@ def skill(game):
 
     players = {}
 
-    mySigma = trueskill.SIGMA
-
-    ts = trueskill.TrueSkill(
-        draw_probability=0,
-        mu=mySigma*3,
-        sigma=mySigma/2,
-        beta=mySigma/1,
-        tau=mySigma/100
-    )
-    ts.make_as_global()
-
-    #mySigma = trueskill.SIGMA*4
-
-    tsHuge = trueskill.TrueSkill(
-        draw_probability=0,
-        mu=mySigma*3,
-        sigma=mySigma/2,
-        beta=mySigma/1,
-        tau=mySigma/1000
-    )
-
-    #mySigma = trueskill.SIGMA/1.2
-
-    tsOnline = trueskill.TrueSkill(
-        draw_probability=0,
-        mu=mySigma*3,
-        sigma=mySigma/2,
-        beta=mySigma/2,
-        tau=mySigma/75
-    )
-
-    #mySigma = trueskill.SIGMA/8
-
-    tsLocal = trueskill.TrueSkill(
-        draw_probability=0,
-        mu=mySigma*3,
-        sigma=mySigma/2,
-        beta=mySigma/8,
-        tau=mySigma/10
-    )
+    ts = openskill.Rating()
 
     for player in allplayers["players"]:
         if player.get("apid", None) != None:
             players[player["apid"]] = {}
             players[player["apid"]]["player"] = player
-            players[player["apid"]]["rating"] = trueskill.Rating()
+            players[player["apid"]]["rating"] = openskill.Rating(mu=25/4, sigma=8.333/4)
 
     for i, match in enumerate(allmatches):
         if players.get(match[0]) and players.get(match[1]):
-            theTs = ts
+            weight = 8
 
+            # online
             if match[2]:
-                theTs = tsOnline
+                weight = 1
 
+            # local
             if match[3]:
-                theTs = tsLocal
+                weight = 2
             
-            if match[4]:
-                theTs = tsHuge
+            # huge, not online
+            if match[4] and not match[2]:
+                weight = 8
 
-            new_p1, new_p2 = trueskill.rate_1vs1(players[match[0]]["rating"], players[match[1]]["rating"], env=theTs)
-            players[match[0]]["rating"] = new_p1
-            players[match[1]]["rating"] = new_p2
+            for j in range(weight):
+                new_p1, new_p2 = openskill.rate([
+                    [players[match[0]]["rating"]],
+                    [players[match[1]]["rating"]]
+                ])
+                players[match[0]]["rating"] = openskill.Rating(new_p1[0][0], new_p1[0][1])
+                players[match[1]]["rating"] = openskill.Rating(new_p2[0][0], new_p2[0][1])
 
             print("Matches..."+str(i)+"/"+str(len(allmatches))+"..."+str(i/len(allmatches)*100)+"%", end="\r")
 
     for p in players:
-        players[p]["player"]["ts"] = ts.expose(players[p]["rating"])
+        players[p]["player"]["ts"] = openskill.ordinal(players[p]["rating"].mu, players[p]["rating"].sigma)
         players[p]["player"]["mu"] = players[p]["rating"].mu
         players[p]["player"]["sigma"] = players[p]["rating"].sigma
 
     def mySort(p):
-        return ts.expose(p["rating"])
+        return p["player"]["ts"]
 
     leaderboard = sorted(players.values(), key=mySort, reverse=True)
 
