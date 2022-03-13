@@ -26662,8 +26662,8 @@
         "name": "DoubleBag",
         "slug": "tournament/doublebag-8/event/doublebag",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -26677,35 +26677,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "DoubleBag 8",
-        "tournament_id": 427940,
-        "city": null,
-        "url": "https://smash.gg/tournament/doublebag-8/event/doublebag",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1647190860,
-        "tournament_endAt": 1647209040,
-        "tournament_registrationClosesAt": 1647187320,
-        "images": [
-            {
-                "id": "4478709",
-                "url": "https://images.smash.gg/images/tournament/427940/image-7f606e27e2890e52b0b1e142706134a8.png",
-                "type": "profile"
-            },
-            {
-                "id": "4478710",
-                "url": "https://images.smash.gg/images/tournament/427940/image-a1ed76711dd0f06744cf52e40c612ba4.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "692995": {
         "id": 692995,
@@ -31624,13 +31596,22 @@
         "name": "Melee Singles",
         "slug": "tournament/the-monthly-checkup-march-2022/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 15,
         "videogame": {
             "id": 1
         },
         "startAt": 1647194400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1698439,
+                "phase": {
+                    "id": 1087578,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The Monthly Checkup March 2022",
         "tournament_id": 426925,
         "city": null,
@@ -31976,5 +31957,77 @@
             "US",
             "MX"
         ]
+    },
+    "690522": {
+        "id": 690522,
+        "name": "SSBM - 1v1",
+        "slug": "tournament/fgca-monthly-marts-2022/event/ssbm-1v1",
+        "isOnline": false,
+        "state": "ACTIVE",
+        "numEntrants": 15,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1647172800,
+        "phaseGroups": [
+            {
+                "id": 1697039,
+                "phase": {
+                    "id": 1086705,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
+    },
+    "694109": {
+        "id": 694109,
+        "name": "Melee Singles",
+        "slug": "tournament/the-senpai-showdown/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1654304400,
+        "phaseGroups": [
+            {
+                "id": 1703274,
+                "phase": {
+                    "id": 1091255,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Senpai Showdown",
+        "tournament_id": 428501,
+        "city": null,
+        "url": "https://smash.gg/tournament/the-senpai-showdown/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1654304400,
+        "tournament_endAt": 1654477200,
+        "tournament_registrationClosesAt": 1654232340,
+        "images": [
+            {
+                "id": "4485427",
+                "url": "https://images.smash.gg/images/tournament/428501/image-8ab9983258c97d53c2408933b55fce9d.png",
+                "type": "profile"
+            },
+            {
+                "id": "4485453",
+                "url": "https://images.smash.gg/images/tournament/428501/image-8d3910dc514ccca5b7ad778183ec50d4.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
