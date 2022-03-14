@@ -130,7 +130,7 @@
         "slug": "tournament/pr-wars-rebellion-500-pot-bonus-presented-by-texoma-esports-1/event/street-fighter-v-champion-edition",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 6,
         "videogame": {
             "id": 33990
         },
@@ -153,7 +153,7 @@
         "timezone": "America/Chicago",
         "tournament_startAt": 1647702000,
         "tournament_endAt": 1647838740,
-        "tournament_registrationClosesAt": 1647234000,
+        "tournament_registrationClosesAt": 1647320400,
         "images": [
             {
                 "id": "4064738",
@@ -297,12 +297,21 @@
         "slug": "tournament/son-cherry-blossom-festival-isekai-tournament/event/sfv-ce-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 4,
         "videogame": {
             "id": 33990
         },
         "startAt": 1647720000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1624120,
+                "phase": {
+                    "id": 1033094,
+                    "name": "Main Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "SON Cherry Blossom Festival Isekai Tournament",
         "tournament_id": 333029,
         "city": "Macon",
@@ -4725,7 +4734,7 @@
     "690061": {
         "id": 690061,
         "name": "Street Fighter V: Champion Edition",
-        "slug": "tournament/evo-2022-1/event/street-fighter-v-champion-edition",
+        "slug": "tournament/evo-2022/event/street-fighter-v-champion-edition-1",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": null,
@@ -4737,7 +4746,7 @@
         "tournament": "Evo 2022",
         "tournament_id": 426276,
         "city": "Las Vegas",
-        "url": "https://smash.gg/tournament/evo-2022-1/event/street-fighter-v-champion-edition",
+        "url": "https://smash.gg/tournament/evo-2022/event/street-fighter-v-champion-edition-1",
         "streams": null,
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1659715200,
@@ -5783,5 +5792,100 @@
         "country_code": "US",
         "lat": 41.539169,
         "lng": -90.5799802
+    },
+    "694610": {
+        "id": 694610,
+        "name": "SFV Singles (Crossplay)",
+        "slug": "tournament/next-level-battle-circuit-online-edition-105-street-fighter-v/event/sfv-singles-crossplay",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1647475200,
+        "phaseGroups": [],
+        "tournament": "Next Level Battle Circuit: Online Edition #105 - Street Fighter V",
+        "tournament_id": 428921,
+        "city": null,
+        "url": "https://smash.gg/tournament/next-level-battle-circuit-online-edition-105-street-fighter-v/event/sfv-singles-crossplay",
+        "streams": [
+            {
+                "streamName": "teamsp00ky"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1647475200,
+        "tournament_endAt": 1647487800,
+        "tournament_registrationClosesAt": 1647471600,
+        "images": [
+            {
+                "id": "4489302",
+                "url": "https://images.smash.gg/images/tournament/428921/image-dc892fc13a32f0dddc234d46789a40c2.png",
+                "type": "profile"
+            },
+            {
+                "id": "4489303",
+                "url": "https://images.smash.gg/images/tournament/428921/image-5eb50bd5500ab2159e654d58b9fd9643.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "694500": {
+        "id": 694500,
+        "name": "Thursday Throwdown Street Fighter V",
+        "slug": "tournament/thursday-throwdown-tier-1-gaming-lounge-2/event/thursday-throwdown-street-fighter-v",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1647558000,
+        "phaseGroups": [
+            {
+                "id": 1703873,
+                "phase": {
+                    "id": 1091732,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Thursday Throwdown @Tier 1 Gaming Lounge",
+        "tournament_id": 428861,
+        "city": "Milwaukee",
+        "url": "https://smash.gg/tournament/thursday-throwdown-tier-1-gaming-lounge-2/event/thursday-throwdown-street-fighter-v",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1647558000,
+        "tournament_endAt": 1647576000,
+        "tournament_registrationClosesAt": 1647558000,
+        "images": [
+            {
+                "id": "4488868",
+                "url": "https://images.smash.gg/images/tournament/428861/image-f0f0ff031705815640af1671bd28a05e.png",
+                "type": "profile"
+            },
+            {
+                "id": "4488869",
+                "url": "https://images.smash.gg/images/tournament/428861/image-750adcce3e203e8e9691728be86872ec.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "4350 S 27th St, Milwaukee, WI 53221, USA",
+        "tournament_addrState": "WI",
+        "country_code": "US",
+        "lat": 42.9656708,
+        "lng": -87.94795839999999
     }
 }
