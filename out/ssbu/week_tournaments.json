@@ -100621,13 +100621,35 @@
                     "id": 1094977,
                     "name": "Cocosuma! LTG pools"
                 },
-                "progressionsOut": null
+                "progressionsOut": [
+                    {
+                        "id": 7327029
+                    },
+                    {
+                        "id": 7327031
+                    }
+                ]
             },
             {
                 "id": 1708123,
                 "phase": {
                     "id": 1094977,
                     "name": "Cocosuma! LTG pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7327030
+                    },
+                    {
+                        "id": 7327032
+                    }
+                ]
+            },
+            {
+                "id": 1708125,
+                "phase": {
+                    "id": 1094980,
+                    "name": "Playoffs"
                 },
                 "progressionsOut": null
             }
@@ -118235,7 +118257,7 @@
         "slug": "tournament/isabelle-showdown-1/event/isabelle-showdown",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 6,
         "videogame": {
             "id": 1386
         },
@@ -118256,8 +118278,8 @@
         "url": "https://smash.gg/tournament/isabelle-showdown-1/event/isabelle-showdown",
         "streams": null,
         "timezone": null,
-        "tournament_startAt": 1647601200,
-        "tournament_endAt": 1647860400,
+        "tournament_startAt": 1647766800,
+        "tournament_endAt": 1647813600,
         "tournament_registrationClosesAt": 1647787800,
         "images": [
             {
@@ -129582,7 +129604,7 @@
         "slug": "tournament/gvp-esports-our-final-smash/event/ssbu-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 11,
+        "numEntrants": 19,
         "videogame": {
             "id": 1386
         },
@@ -129625,5 +129647,59 @@
         "country_code": "AU",
         "lat": -32.9074973,
         "lng": 151.7484742
+    },
+    "697029": {
+        "id": 697029,
+        "name": "Ultimate Singles",
+        "slug": "tournament/ultimate-pop-off-village-86/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1648018800,
+        "phaseGroups": [
+            {
+                "id": 1708128,
+                "phase": {
+                    "id": 1094983,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Ultimate Pop-Off Village #86",
+        "tournament_id": 430346,
+        "city": "Canberra",
+        "url": "https://smash.gg/tournament/ultimate-pop-off-village-86/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "TeamTrifox"
+            }
+        ],
+        "timezone": "Australia/Sydney",
+        "tournament_startAt": 1648018800,
+        "tournament_endAt": 1648036800,
+        "tournament_registrationClosesAt": 1648025100,
+        "images": [
+            {
+                "id": "4506125",
+                "url": "https://images.smash.gg/images/tournament/430346/image-affc1fb6aca8cd8c20ed85e49527893d.png",
+                "type": "banner"
+            },
+            {
+                "id": "4506126",
+                "url": "https://images.smash.gg/images/tournament/430346/image-6461c15b4629aac8f6064260619c7b48.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "The Australian National University",
+        "tournament_venueAddress": "University Ave, Canberra ACT 2601, Australia",
+        "tournament_addrState": "ACT",
+        "country_code": "AU",
+        "lat": -35.2785645,
+        "lng": 149.12316929999997
     }
 }
