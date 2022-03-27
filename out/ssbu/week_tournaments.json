@@ -34464,8 +34464,8 @@
         "name": "Ultimate singles",
         "slug": "tournament/neo-smash-3/event/ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 21,
         "videogame": {
             "id": 1386
         },
@@ -34512,35 +34512,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "NEO! Smash #3",
-        "tournament_id": 425880,
-        "city": "Mori\u00e8res-l\u00e8s-Avignon",
-        "url": "https://smash.gg/tournament/neo-smash-3/event/ultimate-singles",
-        "streams": null,
-        "timezone": "Europe/Paris",
-        "tournament_startAt": 1648364400,
-        "tournament_endAt": 1648404000,
-        "tournament_registrationClosesAt": 1648375200,
-        "images": [
-            {
-                "id": "4455419",
-                "url": "https://images.smash.gg/images/tournament/425880/image-2a5756a98cd1c37e27f532cde691d633.png",
-                "type": "profile"
-            },
-            {
-                "id": "4457949",
-                "url": "https://images.smash.gg/images/tournament/425880/image-b130e58cd9ba1a11cf30a18f17a9f0f1.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "2-134 Chem. du Clos Neuf, 84310 Mori\u00e8res-l\u00e8s-Avignon, France",
-        "tournament_addrState": "Provence-Alpes-C\u00f4te d'Azur",
-        "country_code": "FR",
-        "lat": 43.9436636,
-        "lng": 4.9073891
+        ]
     },
     "680927": {
         "id": 680927,
@@ -47671,12 +47643,21 @@
         "slug": "tournament/low-mana-monthly-3/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 25,
         "videogame": {
             "id": 1386
         },
         "startAt": 1648387800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1702834,
+                "phase": {
+                    "id": 1090880,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Low Mana Monthly#3",
         "tournament_id": 428466,
         "city": "Le Havre",
@@ -126535,7 +126516,7 @@
         "slug": "tournament/ssb-mumbai-1/event/mumbai-1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 12,
+        "numEntrants": 11,
         "videogame": {
             "id": 1386
         },
@@ -127367,5 +127348,88 @@
         "country_code": "US",
         "lat": 36.9161011,
         "lng": -84.1221561
+    },
+    "698991": {
+        "id": 698991,
+        "name": "Ultimate Singles",
+        "slug": "tournament/gon-smashing-at-geek-retreat-april-appreciation/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1650200400,
+        "phaseGroups": [
+            {
+                "id": 1711361,
+                "phase": {
+                    "id": 1097432,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7338523
+                    },
+                    {
+                        "id": 7338524
+                    },
+                    {
+                        "id": 7338525
+                    },
+                    {
+                        "id": 7338526
+                    },
+                    {
+                        "id": 7338527
+                    },
+                    {
+                        "id": 7338528
+                    },
+                    {
+                        "id": 7338529
+                    },
+                    {
+                        "id": 7338530
+                    }
+                ]
+            },
+            {
+                "id": 1711362,
+                "phase": {
+                    "id": 1097433,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Gon' Smashing at Geek Retreat: April Appreciation",
+        "tournament_id": 431531,
+        "city": "Glasgow",
+        "url": "https://smash.gg/tournament/gon-smashing-at-geek-retreat-april-appreciation/event/ultimate-singles",
+        "streams": null,
+        "timezone": "Europe/London",
+        "tournament_startAt": 1650200400,
+        "tournament_endAt": 1650214800,
+        "tournament_registrationClosesAt": 1650225540,
+        "images": [
+            {
+                "id": "4518203",
+                "url": "https://images.smash.gg/images/tournament/431531/image-66645a5fe06b3dd3feed31da26229f6d.png",
+                "type": "profile"
+            },
+            {
+                "id": "4518204",
+                "url": "https://images.smash.gg/images/tournament/431531/image-9e1a55aeb83116b0a3408179450ab3a7.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "63 Union St, Glasgow G1 3RB, UK",
+        "tournament_addrState": "Scotland",
+        "country_code": "GB",
+        "lat": 55.85944989999999,
+        "lng": -4.2571276
     }
 }
