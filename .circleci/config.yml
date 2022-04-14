@@ -1,11 +1,13 @@
 version: 2.1
+orbs: 
+  git-shallow-clone: guitarrapc/git-shallow-clone@latest
 
 jobs:
   update_data:
     docker:
       - image: circleci/python:latest
     steps:
-      - checkout
+      - git-shallow-clone/checkout
       - run:
           name: Install dependencies
           command: |
@@ -43,7 +45,7 @@ jobs:
     docker:
       - image: circleci/python:latest
     steps:
-      - checkout
+      - git-shallow-clone/checkout
       - run:
           name: Install dependencies
           command: |
@@ -72,7 +74,7 @@ jobs:
     docker:
       - image: circleci/python:latest
     steps:
-      - checkout
+      - git-shallow-clone/checkout
       - run:
           name: Install dependencies
           command: |
@@ -101,7 +103,7 @@ jobs:
     docker:
       - image: circleci/python:latest
     steps:
-      - checkout
+      - git-shallow-clone/checkout
       - run:
           name: Install dependencies
           command: |
@@ -130,7 +132,7 @@ jobs:
     docker:
       - image: circleci/python:latest
     steps:
-      - checkout
+      - git-shallow-clone/checkout
       - run:
           name: Install dependencies
           command: |
