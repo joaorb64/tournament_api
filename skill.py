@@ -163,28 +163,15 @@ def skill(game):
     for i, p in enumerate(leaderboard):
         ranking.append(p["player"])
     
-    higherScore = max(ranking[0]["ts"], 1)
-    subdivisions = 20
+    if len(ranking) > 0:
+        higherScore = max(ranking[0]["ts"], 1)
+        subdivisions = 20
 
-    with open('./out/'+game+'/leaderboard.json', 'w') as outfile:
-        json.dump(ranking, outfile, indent=4, sort_keys=True)
+        with open('./out/'+game+'/leaderboard.json', 'w') as outfile:
+            json.dump(ranking, outfile, indent=4, sort_keys=True)
 
-    with open('./out/'+game+'/leaderboardreadable.txt', 'w') as outfile:
-        for i, p in enumerate(ranking):
-            outfile.write(
-                str(i+1) + "\t\t" + 
-                chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
-                (p.get("org")+" " if p.get("org") not in [None, "null", " "] else "") +
-                str(p["name"]) +
-                " ("+p.get("country_code")+")" +
-                " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
-                "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
-    
-    for country in ["BR", "AR", "BO", "CL", "EC", "UY", "PE", "CO"]:
-        with open('./out/'+game+'/leaderboardreadable_'+country+'.txt', 'w') as outfile:
+        with open('./out/'+game+'/leaderboardreadable.txt', 'w') as outfile:
             for i, p in enumerate(ranking):
-                if p.get("country_code") != country: continue
-
                 outfile.write(
                     str(i+1) + "\t\t" + 
                     chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
@@ -193,6 +180,20 @@ def skill(game):
                     " ("+p.get("country_code")+")" +
                     " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
                     "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
+        
+        for country in ["BR", "AR", "BO", "CL", "EC", "UY", "PE", "CO"]:
+            with open('./out/'+game+'/leaderboardreadable_'+country+'.txt', 'w') as outfile:
+                for i, p in enumerate(ranking):
+                    if p.get("country_code") != country: continue
+
+                    outfile.write(
+                        str(i+1) + "\t\t" + 
+                        chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
+                        (p.get("org")+" " if p.get("org") not in [None, "null", " "] else "") +
+                        str(p["name"]) +
+                        " ("+p.get("country_code")+")" +
+                        " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
+                        "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
 
     with open('./out/'+game+'/allplayers.json', 'w') as outfile:
         json.dump(allplayers, outfile, separators=(',', ":"), sort_keys=True)
