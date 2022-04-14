@@ -201,8 +201,7 @@ def skill(game):
     with open('./out/'+game+'/ts_env.json', 'w') as outfile:
         json.dump({
             "mu": ts.mu,
-            "sigma": ts.sigma,
-            "beta": ts.beta
+            "sigma": ts.sigma
         }, outfile, indent=4)
 
 if __name__ == "__main__":
