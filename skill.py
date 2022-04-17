@@ -140,12 +140,18 @@ def skill(game):
                 weight = 8
 
             for j in range(weight):
-                new_p1, new_p2 = openskill.rate([
-                    [players[match[0]]["rating"]],
-                    [players[match[1]]["rating"]]
-                ])
-                players[match[0]]["rating"] = openskill.Rating(new_p1[0][0], new_p1[0][1])
-                players[match[1]]["rating"] = openskill.Rating(new_p2[0][0], new_p2[0][1])
+                new_p1, new_p2 = openskill.rate(
+                    [
+                        [players[match[0]]["rating"]],
+                        [players[match[1]]["rating"]]
+                    ],
+                    tau=0.3,
+                    prevent_sigma_increase=True
+                )
+                print(new_p1)
+                print(players[match[0]])
+                players[match[0]]["rating"] = new_p1[0]
+                players[match[1]]["rating"] = new_p2[0]
 
             print("Matches..."+str(i)+"/"+str(len(allmatches))+"..."+str(i/len(allmatches)*100)+"%", end="\r")
 
