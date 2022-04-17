@@ -156,7 +156,7 @@ def skill(game):
             print("Matches..."+str(i)+"/"+str(len(allmatches))+"..."+str(i/len(allmatches)*100)+"%", end="\r")
 
     for p in players:
-        players[p]["player"]["ts"] = openskill.ordinal(players[p]["rating"].mu, players[p]["rating"].sigma)
+        players[p]["player"]["ts"] = openskill.ordinal(players[p]["rating"])
         players[p]["player"]["mu"] = players[p]["rating"].mu
         players[p]["player"]["sigma"] = players[p]["rating"].sigma
 
