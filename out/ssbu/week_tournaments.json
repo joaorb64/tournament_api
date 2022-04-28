@@ -11040,7 +11040,7 @@
         "slug": "tournament/bam-battle-arena-melbourne-12-2022/event/super-smash-bros-ultimate-singles-bam-2022",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 220,
+        "numEntrants": 222,
         "videogame": {
             "id": 1386
         },
@@ -47428,8 +47428,8 @@
     },
     "709548": {
         "id": 709548,
-        "name": "Main Event 1v1 Open",
-        "slug": "tournament/msm-acs-summer-open/event/main-event-1v1-open",
+        "name": "Main Event 1 v 1",
+        "slug": "tournament/msm-acs-summer-open/event/main-event-1-v-1",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 0,
@@ -47450,7 +47450,7 @@
         "tournament": "MSM ACS Summer Open",
         "tournament_id": 437446,
         "city": "Anchorage",
-        "url": "https://smash.gg/tournament/msm-acs-summer-open/event/main-event-1v1-open",
+        "url": "https://smash.gg/tournament/msm-acs-summer-open/event/main-event-1-v-1",
         "streams": null,
         "timezone": "America/Anchorage",
         "tournament_startAt": 1656179100,
@@ -47473,8 +47473,8 @@
     },
     "709549": {
         "id": 709549,
-        "name": "Side event Doubles",
-        "slug": "tournament/msm-acs-summer-open/event/side-event-doubles",
+        "name": "Team Battle 2 v 2",
+        "slug": "tournament/msm-acs-summer-open/event/team-battle-2-v-2",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 0,
@@ -47495,7 +47495,7 @@
         "tournament": "MSM ACS Summer Open",
         "tournament_id": 437446,
         "city": "Anchorage",
-        "url": "https://smash.gg/tournament/msm-acs-summer-open/event/side-event-doubles",
+        "url": "https://smash.gg/tournament/msm-acs-summer-open/event/team-battle-2-v-2",
         "streams": null,
         "timezone": "America/Anchorage",
         "tournament_startAt": 1656179100,
@@ -47518,8 +47518,8 @@
     },
     "709551": {
         "id": 709551,
-        "name": "Squad Strike 3 stock",
-        "slug": "tournament/msm-acs-summer-open/event/squad-strike-3-stock",
+        "name": "Squad Strike 1 v 1",
+        "slug": "tournament/msm-acs-summer-open/event/squad-strike-1-v-1",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 0,
@@ -47540,7 +47540,7 @@
         "tournament": "MSM ACS Summer Open",
         "tournament_id": 437446,
         "city": "Anchorage",
-        "url": "https://smash.gg/tournament/msm-acs-summer-open/event/squad-strike-3-stock",
+        "url": "https://smash.gg/tournament/msm-acs-summer-open/event/squad-strike-1-v-1",
         "streams": null,
         "timezone": "America/Anchorage",
         "tournament_startAt": 1656179100,
@@ -91915,8 +91915,8 @@
         "name": "Ultimate Singles",
         "slug": "tournament/c-town-beatdown-2/event/ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 13,
         "videogame": {
             "id": 1386
         },
@@ -91928,32 +91928,51 @@
                     "id": 1117192,
                     "name": "Bracket"
                 },
+                "progressionsOut": [
+                    {
+                        "id": 7443360
+                    },
+                    {
+                        "id": 7443362
+                    },
+                    {
+                        "id": 7443364
+                    },
+                    {
+                        "id": 7443366
+                    }
+                ]
+            },
+            {
+                "id": 1739600,
+                "phase": {
+                    "id": 1117192,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7443361
+                    },
+                    {
+                        "id": 7443363
+                    },
+                    {
+                        "id": 7443365
+                    },
+                    {
+                        "id": 7443367
+                    }
+                ]
+            },
+            {
+                "id": 1739601,
+                "phase": {
+                    "id": 1118602,
+                    "name": "Final Bracket"
+                },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "C'Town Beatdown #2",
-        "tournament_id": 440609,
-        "city": "Campbelltown",
-        "url": "https://smash.gg/tournament/c-town-beatdown-2/event/ultimate-singles",
-        "streams": null,
-        "timezone": "Australia/Sydney",
-        "tournament_startAt": 1651134600,
-        "tournament_endAt": 1651149000,
-        "tournament_registrationClosesAt": 1651149000,
-        "images": [
-            {
-                "id": "4619302",
-                "url": "https://images.smash.gg/images/tournament/440609/image-d8912883d7bd47d1b7ae61659fdc279c.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "101 Railway St, Campbelltown NSW 2560, Australia",
-        "tournament_addrState": "NSW",
-        "country_code": "AU",
-        "lat": -34.0650885,
-        "lng": 150.8150343
+        ]
     },
     "714535": {
         "id": 714535,
@@ -96012,8 +96031,8 @@
         "name": "Smash Ultimate",
         "slug": "tournament/sunshine-smash-88/event/smash-ultimate",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 17,
         "videogame": {
             "id": 1386
         },
@@ -96027,44 +96046,6 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Sunshine Smash #88",
-        "tournament_id": 440710,
-        "city": "Braybrook",
-        "url": "https://smash.gg/tournament/sunshine-smash-88/event/smash-ultimate",
-        "streams": [
-            {
-                "streamName": "Marchofhell"
-            },
-            {
-                "streamName": "CouchwarriorsSmash"
-            }
-        ],
-        "timezone": "Australia/Melbourne",
-        "tournament_startAt": 1651134600,
-        "tournament_endAt": 1651150800,
-        "tournament_registrationClosesAt": 1651177500,
-        "images": [
-            {
-                "id": "4620159",
-                "url": "https://images.smash.gg/images/tournament/440710/image-f69ed7a1303d3f1d466dab400823c8a7.png",
-                "type": "profile"
-            },
-            {
-                "id": "4620160",
-                "url": "https://images.smash.gg/images/tournament/440710/image-c5a1e928071c3e35932290d2e9a06a59.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "2/1 Hillary St, Braybrook VIC 3019, Australia",
-        "tournament_addrState": "VIC",
-        "country_code": "AU",
-        "lat": -37.7916648,
-        "lng": 144.8609606,
-        "region_lock": [
-            "AU"
         ]
     },
     "714787": {
@@ -97034,8 +97015,8 @@
         "name": "Ultimate singles",
         "slug": "tournament/smashop-5/event/ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 3,
+        "state": "ACTIVE",
+        "numEntrants": 15,
         "videogame": {
             "id": 1386
         },
@@ -97049,24 +97030,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "SmashOP #5",
-        "tournament_id": 440704,
-        "city": "Callaghan",
-        "url": "https://smash.gg/tournament/smashop-5/event/ultimate-singles",
-        "streams": null,
-        "timezone": "Australia/Sydney",
-        "tournament_startAt": 1651136400,
-        "tournament_endAt": 1651147200,
-        "tournament_registrationClosesAt": 1651136340,
-        "images": [],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "130 University Dr, Callaghan NSW 2308, Australia",
-        "tournament_addrState": "NSW",
-        "country_code": "AU",
-        "lat": -32.8952769,
-        "lng": 151.7088315
+        ]
     },
     "714836": {
         "id": 714836,
@@ -118998,5 +118962,252 @@
         "country_code": "MX",
         "lat": 19.0088428,
         "lng": -98.19212739999999
+    },
+    "715751": {
+        "id": 715751,
+        "name": "Ladder",
+        "slug": "tournament/foo-fighters-2/event/ladder",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1651586400,
+        "phaseGroups": [
+            {
+                "id": 1739614,
+                "phase": {
+                    "id": 1118615,
+                    "name": "Ladder"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Foo Fighters #2",
+        "tournament_id": 441291,
+        "city": "Rotterdam",
+        "url": "https://smash.gg/tournament/foo-fighters-2/event/ladder",
+        "streams": null,
+        "timezone": "Europe/Amsterdam",
+        "tournament_startAt": 1651586400,
+        "tournament_endAt": 1651608000,
+        "tournament_registrationClosesAt": 1651593540,
+        "images": [
+            {
+                "id": "4627787",
+                "url": "https://images.smash.gg/images/tournament/441291/image-3745672d0cb18c5304fb78edb97dd917.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "4627788",
+                "url": "https://images.smash.gg/images/tournament/441291/image-416569b31a1b11685779dcd99b60dd40.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Worm Rotterdam",
+        "tournament_venueAddress": "Karel Doormanstraat 335, 3012 GH Rotterdam, Nederland",
+        "tournament_addrState": "ZH",
+        "country_code": "NL",
+        "lat": 51.9190147,
+        "lng": 4.4752874
+    },
+    "715750": {
+        "id": 715750,
+        "name": "SSBU Singles",
+        "slug": "tournament/foo-fighters-2/event/ssbu-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1651586400,
+        "phaseGroups": [
+            {
+                "id": 1739612,
+                "phase": {
+                    "id": 1118613,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7443337
+                    },
+                    {
+                        "id": 7443338
+                    },
+                    {
+                        "id": 7443339
+                    },
+                    {
+                        "id": 7443340
+                    },
+                    {
+                        "id": 7443341
+                    },
+                    {
+                        "id": 7443342
+                    },
+                    {
+                        "id": 7443343
+                    },
+                    {
+                        "id": 7443344
+                    },
+                    {
+                        "id": 7443345
+                    },
+                    {
+                        "id": 7443346
+                    },
+                    {
+                        "id": 7443347
+                    },
+                    {
+                        "id": 7443348
+                    }
+                ]
+            },
+            {
+                "id": 1739613,
+                "phase": {
+                    "id": 1118614,
+                    "name": "Top 12"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Foo Fighters #2",
+        "tournament_id": 441291,
+        "city": "Rotterdam",
+        "url": "https://smash.gg/tournament/foo-fighters-2/event/ssbu-singles",
+        "streams": null,
+        "timezone": "Europe/Amsterdam",
+        "tournament_startAt": 1651586400,
+        "tournament_endAt": 1651608000,
+        "tournament_registrationClosesAt": 1651593540,
+        "images": [
+            {
+                "id": "4627787",
+                "url": "https://images.smash.gg/images/tournament/441291/image-3745672d0cb18c5304fb78edb97dd917.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "4627788",
+                "url": "https://images.smash.gg/images/tournament/441291/image-416569b31a1b11685779dcd99b60dd40.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Worm Rotterdam",
+        "tournament_venueAddress": "Karel Doormanstraat 335, 3012 GH Rotterdam, Nederland",
+        "tournament_addrState": "ZH",
+        "country_code": "NL",
+        "lat": 51.9190147,
+        "lng": 4.4752874
+    },
+    "715762": {
+        "id": 715762,
+        "name": "Ultimate Singles",
+        "slug": "tournament/flashback-fightclub-47/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1651703400,
+        "phaseGroups": [],
+        "tournament": "Flashback Fightclub #47",
+        "tournament_id": 441297,
+        "city": "Marietta",
+        "url": "https://smash.gg/tournament/flashback-fightclub-47/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "Ave114"
+            },
+            {
+                "streamName": "guapo99_"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1651680000,
+        "tournament_endAt": 1651712400,
+        "tournament_registrationClosesAt": 1651702500,
+        "images": [
+            {
+                "id": "4627812",
+                "url": "https://images.smash.gg/images/tournament/441297/image-8f1f1467cb663b9233f8e49e01e7019a.png",
+                "type": "profile"
+            },
+            {
+                "id": "4627813",
+                "url": "https://images.smash.gg/images/tournament/441297/image-965cbbf05b78874409dbaad1a97f3fd6.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2800 Canton Rd, Marietta, GA 30066, USA",
+        "tournament_addrState": "GA",
+        "country_code": "US",
+        "lat": 34.0187466,
+        "lng": -84.5251679
+    },
+    "715754": {
+        "id": 715754,
+        "name": "Super Smash Bros Ultimate 1v1 Tourney 10-5",
+        "slug": "tournament/super-smash-bros-ultimate-tourney-10-5-qub3z/event/super-smash-bros-ultimate-1v1-tourney-10-5",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1652158800,
+        "phaseGroups": [
+            {
+                "id": 1739617,
+                "phase": {
+                    "id": 1118618,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Super Smash Bros Ultimate Tourney 10-5 @QUB3Z",
+        "tournament_id": 441292,
+        "city": "Breda",
+        "url": "https://smash.gg/tournament/super-smash-bros-ultimate-tourney-10-5-qub3z/event/super-smash-bros-ultimate-1v1-tourney-10-5",
+        "streams": null,
+        "timezone": "Europe/Amsterdam",
+        "tournament_startAt": 1652158800,
+        "tournament_endAt": 1652171400,
+        "tournament_registrationClosesAt": 1652160600,
+        "images": [
+            {
+                "id": "4627790",
+                "url": "https://images.smash.gg/images/tournament/441292/image-6eb5a453c84319cbf88ed30611693d7a.png",
+                "type": "profile"
+            },
+            {
+                "id": "4627791",
+                "url": "https://images.smash.gg/images/tournament/441292/image-d7297fa749fb9597357e4750c368e845.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Nassaustraat 2, 4811 DD Breda, Nederland",
+        "tournament_addrState": "NB",
+        "country_code": "NL",
+        "lat": 51.59129069999999,
+        "lng": 4.7859172,
+        "region_lock": [
+            "NL",
+            "BE"
+        ]
     }
 }
