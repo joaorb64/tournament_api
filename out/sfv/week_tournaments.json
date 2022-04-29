@@ -1650,12 +1650,21 @@
         "slug": "tournament/vsfighting-x-2/event/street-fighter-v",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 50,
         "videogame": {
             "id": 33990
         },
         "startAt": 1660899600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1671921,
+                "phase": {
+                    "id": 1067943,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "VSFighting X",
         "tournament_id": 417593,
         "city": "Birmingham",
@@ -6743,5 +6752,65 @@
         "country_code": "IE",
         "lat": 53.3842081,
         "lng": -6.375973599999952
+    },
+    "716256": {
+        "id": 716256,
+        "name": "SFV",
+        "slug": "tournament/the-vortex-40/event/sfv",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1651784400,
+        "phaseGroups": [
+            {
+                "id": 1740470,
+                "phase": {
+                    "id": 1119247,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Vortex #40",
+        "tournament_id": 441607,
+        "city": "Hatboro",
+        "url": "https://smash.gg/tournament/the-vortex-40/event/sfv",
+        "streams": [
+            {
+                "streamName": "mustyprongs"
+            },
+            {
+                "streamName": "Vermilion_Series"
+            },
+            {
+                "streamName": "Vermilion_Series2"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1651784400,
+        "tournament_endAt": 1651806000,
+        "tournament_registrationClosesAt": 1651806000,
+        "images": [
+            {
+                "id": "4631465",
+                "url": "https://images.smash.gg/images/tournament/441607/image-473a7019766dc749b7f1b0cdfb39550f.png",
+                "type": "profile"
+            },
+            {
+                "id": "4631467",
+                "url": "https://images.smash.gg/images/tournament/441607/image-06aeaa66bf1b973d445a5e78cb776dc7.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "The Laboratory",
+        "tournament_venueAddress": "3 S York Rd, Hatboro, PA 19040, USA",
+        "tournament_addrState": "PA",
+        "country_code": "US",
+        "lat": 40.176986,
+        "lng": -75.10598579999998
     }
 }
