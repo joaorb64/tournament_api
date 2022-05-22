@@ -16921,7 +16921,7 @@
         "name": "Smash Ultimate Singles",
         "slug": "tournament/smash-south-xii/event/smash-ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 20,
         "videogame": {
             "id": 1386
@@ -16943,7 +16943,7 @@
         "name": "Teams 2v2",
         "slug": "tournament/smash-south-xii/event/teams-2v2",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1386
@@ -29451,12 +29451,21 @@
         "slug": "tournament/gamer-s-guild-smash-monthly-10-with-200-pot-bonus/event/smash-ultimate-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
         "startAt": 1653246000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1737827,
+                "phase": {
+                    "id": 1117284,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Gamer's Guild Smash Monthly 10 with $200 Pot Bonus",
         "tournament_id": 440653,
         "city": "New Britain",
@@ -29497,12 +29506,21 @@
         "slug": "tournament/gamer-s-guild-smash-monthly-10-with-200-pot-bonus/event/smash-ultimate-singles-bracket",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 12,
         "videogame": {
             "id": 1386
         },
         "startAt": 1653246000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1737826,
+                "phase": {
+                    "id": 1117283,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Gamer's Guild Smash Monthly 10 with $200 Pot Bonus",
         "tournament_id": 440653,
         "city": "New Britain",
@@ -52049,8 +52067,8 @@
         "name": "Ultimate Singles",
         "slug": "tournament/ordalia-16-auguri-lonk-e-bospasquid/event/ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 31,
+        "state": "ACTIVE",
+        "numEntrants": 32,
         "videogame": {
             "id": 1386
         },
@@ -52107,6 +52125,9 @@
                     },
                     {
                         "id": 7527524
+                    },
+                    {
+                        "id": 7530231
                     }
                 ]
             },
@@ -52183,39 +52204,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Ordalia 16: AUGURI LONK E BOSPASQUID",
-        "tournament_id": 444109,
-        "city": "Padova",
-        "url": "https://smash.gg/tournament/ordalia-16-auguri-lonk-e-bospasquid/event/ultimate-singles",
-        "streams": [
-            {
-                "streamName": "serenissimasmash"
-            }
-        ],
-        "timezone": "Europe/Rome",
-        "tournament_startAt": 1653217200,
-        "tournament_endAt": 1653256740,
-        "tournament_registrationClosesAt": 1653217140,
-        "images": [
-            {
-                "id": "4659687",
-                "url": "https://images.smash.gg/images/tournament/444109/image-2228ed6f20e53733581bac281f3db261.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "4692798",
-                "url": "https://images.smash.gg/images/tournament/444109/image-47a950d4f6c4980d9c0bb6dbcd3cc0ef.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": "Exas Gaming Caf\u00e8",
-        "tournament_venueAddress": "Via della Croce Rossa, 24, 35129 Padova PD, Italia",
-        "tournament_addrState": "Veneto",
-        "country_code": "IT",
-        "lat": 45.409155,
-        "lng": 11.910210799999959
+        ]
     },
     "720705": {
         "id": 720705,
@@ -52425,42 +52414,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "FGCA Monthly - May 2022",
-        "tournament_id": 443916,
-        "city": "Aarhus",
-        "url": "https://smash.gg/tournament/fgca-monthly-may-2022/event/main-ssbu-1v1",
-        "streams": [
-            {
-                "streamName": "urban_smash"
-            },
-            {
-                "streamName": "Smashdenmark"
-            }
-        ],
-        "timezone": "Europe/Copenhagen",
-        "tournament_startAt": 1653206400,
-        "tournament_endAt": 1653249600,
-        "tournament_registrationClosesAt": 1653148800,
-        "images": [
-            {
-                "id": "4657967",
-                "url": "https://images.smash.gg/images/tournament/443916/image-665ecc65114e07091d5228476774b1ac.png",
-                "type": "profile"
-            },
-            {
-                "id": "4657968",
-                "url": "https://images.smash.gg/images/tournament/443916/image-ce3981696fa8f60718b3fd93e0eaa297.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Kirkeg\u00e5rdsvej 53, 8000 Aarhus, Denmark",
-        "tournament_addrState": null,
-        "country_code": "DK",
-        "lat": 56.1666763,
-        "lng": 10.2127498
+        ]
     },
     "720605": {
         "id": 720605,
@@ -57994,7 +57948,7 @@
         "name": "Singles",
         "slug": "tournament/bg-doriyah-6/event/singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 35,
         "videogame": {
             "id": 1386
@@ -69888,8 +69842,8 @@
         "name": "Singles Double Elimination (with amateur bracket)",
         "slug": "tournament/blackbird/event/singles-double-elimination-with-amateur-bracket",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 23,
+        "state": "ACTIVE",
+        "numEntrants": 25,
         "videogame": {
             "id": 1386
         },
@@ -70031,39 +69985,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "BLACKBIRD",
-        "tournament_id": 443892,
-        "city": "Delft",
-        "url": "https://smash.gg/tournament/blackbird/event/singles-double-elimination-with-amateur-bracket",
-        "streams": [
-            {
-                "streamName": "esportsdelft"
-            }
-        ],
-        "timezone": "Europe/Amsterdam",
-        "tournament_startAt": 1653217200,
-        "tournament_endAt": 1653238800,
-        "tournament_registrationClosesAt": 1653213540,
-        "images": [
-            {
-                "id": "4664264",
-                "url": "https://images.smash.gg/images/tournament/443892/image-ef8c23d72b4c883bd8991ed746ea1495.png",
-                "type": "profile"
-            },
-            {
-                "id": "4664321",
-                "url": "https://images.smash.gg/images/tournament/443892/image-35bece497403549101e4641764204632.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Mekelweg 8-10, 2628 CD Delft, Netherlands",
-        "tournament_addrState": "ZH",
-        "country_code": "NL",
-        "lat": 51.9951969,
-        "lng": 4.3771742
+        ]
     },
     "720256": {
         "id": 720256,
@@ -70071,7 +69993,7 @@
         "slug": "tournament/blackbird/event/crew-battle",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 5,
         "videogame": {
             "id": 1386
         },
@@ -136808,5 +136730,104 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "726483": {
+        "id": 726483,
+        "name": "1v1 lesgoooooo",
+        "slug": "tournament/sumo-20-smash-ultimate-marche-offline/event/1v1-lesgoooooo",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1653321600,
+        "phaseGroups": [],
+        "tournament": "SUMO #20 - Smash Ultimate Marche Offline",
+        "tournament_id": 447606,
+        "city": "Pesaro",
+        "url": "https://smash.gg/tournament/sumo-20-smash-ultimate-marche-offline/event/1v1-lesgoooooo",
+        "streams": [
+            {
+                "streamName": "MarchigianCrew"
+            }
+        ],
+        "timezone": "Europe/Rome",
+        "tournament_startAt": 1653321600,
+        "tournament_endAt": 1653342960,
+        "tournament_registrationClosesAt": 1716586080,
+        "images": [
+            {
+                "id": "4700931",
+                "url": "https://images.smash.gg/images/tournament/447606/image-1782d8a1ab9932492f8904bab7bed7a1.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "4700932",
+                "url": "https://images.smash.gg/images/tournament/447606/image-464bcb24110857bb7f33eeab996777ee.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Via Porta Rimini, 5, 61121 Pesaro PU, Italia",
+        "tournament_addrState": "Marche",
+        "country_code": "IT",
+        "lat": 43.9106613,
+        "lng": 12.9029201
+    },
+    "726484": {
+        "id": 726484,
+        "name": "Ultimate Singles",
+        "slug": "tournament/smashed-bros-22-1/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1653694200,
+        "phaseGroups": [
+            {
+                "id": 1760333,
+                "phase": {
+                    "id": 1132708,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smashed bros 22!",
+        "tournament_id": 447607,
+        "city": "Louisville",
+        "url": "https://smash.gg/tournament/smashed-bros-22-1/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "Mitchum07"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1653694200,
+        "tournament_endAt": 1653706800,
+        "tournament_registrationClosesAt": 1653694200,
+        "images": [
+            {
+                "id": "4700947",
+                "url": "https://images.smash.gg/images/tournament/447607/image-263f976b1d849f619f4c01682fe60f6f.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "4700948",
+                "url": "https://images.smash.gg/images/tournament/447607/image-35aaef9fd09625b846ce4c3663b744f1.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1607 Bardstown Rd, Louisville, KY 40205, USA",
+        "tournament_addrState": "KY",
+        "country_code": "US",
+        "lat": 38.230585,
+        "lng": -85.70393899999999
     }
 }
