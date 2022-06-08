@@ -113,7 +113,7 @@ def gen_week_results(game):
         
             numEntrants = resp.get("data", {}).get("event", {}).get("numEntrants")
 
-            if not numEntrants or numEntrants < 8:
+            if not numEntrants or numEntrants < 6:
                 continue
 
             if resp.get("data", {}).get("event", {}).get("state") == "COMPLETED" \
