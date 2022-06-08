@@ -284,13 +284,9 @@ def get_next_tournaments(game):
     for tournament in tournaments:
         weekTournaments[str(tournament["id"])] = tournament
 
-    # timestamp for week start
-    today = datetime.date.today()
-    weekstart = time.mktime((today - datetime.timedelta(days=today.weekday()+1)).timetuple())
-
     # remove tournaments past last week
     for tournament in list(weekTournaments.items()):
-        if tournament[1]["startAt"] < weekstart:
+        if tournament[1]["startAt"] + datetime.timedelta(days=7) > time.mktime(datetime.date.today().timetuple()):
             weekTournaments.pop(tournament[0])
 
     with open('./out/'+game+'/nexttournaments.json', 'w') as outfile:
