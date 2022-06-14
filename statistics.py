@@ -40,6 +40,9 @@ def statistics(game):
 	f = open('./games/'+game+'/charnames_smashgg_to_braacket.json')
 	characters = json.load(f)
 
+	f = open('./games/'+game+'/assetconfig.json')
+	asset_config = json.load(f)
+
 	# League statistics
 	for liga in ligas:
 		f = open('./out/'+game+'/'+liga+'/players.json')
@@ -107,18 +110,18 @@ def statistics(game):
 
 		bestWithEachChar = {}
 
-		for c in characters:
+		for c in [a["codename"] for a in asset_config["character_to_codename"].values()]:
 			for p in ordered:
 				if "mains" in p.keys() and len(p["mains"]) > 0:
-					if p["mains"][0] == characters[c]:
+					if p["mains"][0] == c:
 						bestWithEachChar[c] = p
 
 						if "bestPlayerCharacter" not in p.keys():
 							p["bestPlayerCharacter"] = {}
 							allplayers["players"][p["apid"]]["bestPlayerCharacter"] = {}
 						
-						p["bestPlayerCharacter"][liga] = [c, characters[c]]
-						allplayers["players"][p["apid"]]["bestPlayerCharacter"][liga] = [c, characters[c]]
+						p["bestPlayerCharacter"][liga] = c
+						allplayers["players"][p["apid"]]["bestPlayerCharacter"][liga] = c
 
 						break
 
@@ -127,19 +130,18 @@ def statistics(game):
 		# Character usage
 		charUsage = {}
 
-		for c in characters:
+		for c in [a["codename"] for a in asset_config["character_to_codename"].values()]:
 			charUsage[c] = {
 				"usage": 0,
-				"secondary": 0,
-				"name": characters[c]
+				"secondary": 0
 			}
 			for p in league_players["players"].values():
 				if "mains" in p.keys() and len(p["mains"]) > 0:
-					if p["mains"][0] == characters[c]:
+					if p["mains"][0] == c:
 						charUsage[c]["usage"] += 1
 				if "mains" in p.keys() and len(p["mains"]) > 1:
 					for main in p["mains"][1:]:
-						if main == characters[c]:
+						if main == c:
 							charUsage[c]["secondary"] += 1
 		
 		outInfo["char_usage"] = charUsage
@@ -155,19 +157,18 @@ def statistics(game):
 	# Character usage
 	charUsage = {}
 
-	for c in characters:
+	for c in [a["codename"] for a in asset_config["character_to_codename"].values()]:
 		charUsage[c] = {
 			"usage": 0,
-			"secondary": 0,
-			"name": characters[c]
+			"secondary": 0
 		}
 		for p in allplayers["players"]:
 			if "mains" in p.keys() and len(p["mains"]) > 0:
-				if p["mains"][0] == characters[c]:
+				if p["mains"][0] == c:
 					charUsage[c]["usage"] += 1
 			if "mains" in p.keys() and len(p["mains"]) > 1:
 				for main in p["mains"][1:]:
-					if main == characters[c]:
+					if main == c:
 						charUsage[c]["secondary"] += 1
 		
 	outInfo["char_usage"] = charUsage

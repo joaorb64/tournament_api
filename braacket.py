@@ -141,6 +141,9 @@ class Braacket:
                     player["mains"] = []
                     mains = children[0].findAll('img')
 
+                    if len(mains) > 3:
+                        mains = mains[0:2]
+
                     for main in mains:
                         player["mains"].append(main["title"])
 

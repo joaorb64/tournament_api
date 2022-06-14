@@ -25,7 +25,7 @@ smashgg_characters = json.loads(requests.get("https://api.smash.gg/characters").
 currentIndex = 0
 
 def fetchPlayer(currKey):
-	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, currentIndex, indexLock
+	global leagues, tournaments, players, charname_to_braacket, asset_config, cache, currentKey, currentIndex, indexLock
 	
 	playerIndex = -1
 	finished = False
@@ -51,7 +51,7 @@ def fetchPlayer(currKey):
 				count += 1
 
 def fetchPlayerDo(currKey, playerIndex):
-	global leagues, tournaments, players, charname_to_braacket, cache, previous_cache, currentKey, smashgg_characters, gameconfig
+	global leagues, tournaments, players, charname_to_braacket, asset_config, cache, previous_cache, currentKey, smashgg_characters, gameconfig
 
 	print("Get smashgg data: "+str(playerIndex)+"/"+str(len(players)), end="\r")
 
@@ -256,14 +256,18 @@ def fetchPlayerDo(currKey, playerIndex):
 				if(character[1] >= most_common[0][1]/3.0 or character[0] == most_common[0][0]):
 					found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
 					if found:
-						mains.append(charname_to_braacket.get(found["name"], found["name"]))
+						entity = next((c for c in asset_config.get("character_to_codename").items() if c[1].get("smashgg_name") == found["name"]), None)
+						if entity:
+							mains.append(entity[1].get("codename"))
 			
 			resp["character_usage"] = {}
 
 			for character in selections.most_common():
 				found = next((c for c in smashgg_characters["entities"]["character"] if c["id"] == character[0]), None)
 				if found:
-					resp["character_usage"][charname_to_braacket.get(found["name"], found["name"])] = selections[character[0]]
+						entity = next((c for c in asset_config.get("character_to_codename").items() if c[1].get("smashgg_name") == found["name"]), None)
+						if entity:
+							resp["character_usage"][entity[1].get("codename")] = selections[character[0]]
 
 			try:
 				latestSet = next(
@@ -288,7 +292,7 @@ def fetchPlayerDo(currKey, playerIndex):
 	return newSets
 
 def get_smashgg_data(game):
-	global leagues, tournaments, players, charname_to_braacket, cache, currentKey, gameconfig, previous_cache, currentIndex, indexLock
+	global leagues, tournaments, players, charname_to_braacket, asset_config, cache, currentKey, gameconfig, previous_cache, currentIndex, indexLock
 
 	currentKey = 0
 	cache = {}
@@ -322,6 +326,9 @@ def get_smashgg_data(game):
 
 	f = open('./games/'+game+'/charnames_smashgg_to_braacket.json')
 	charname_to_braacket = json.load(f)
+
+	f = open('./games/'+game+'/assetconfig.json')
+	asset_config = json.load(f)
 
 	for i, k in enumerate(SMASHGG_KEYS):
 		thread = Thread(target=fetchPlayer, args=[k])

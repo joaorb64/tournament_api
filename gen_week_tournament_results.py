@@ -57,6 +57,9 @@ def gen_week_results(game):
     f = open('./games/'+game+'/charnames_smashgg_to_braacket.json')
     charname_to_braacket = json.load(f)
 
+    f = open('./games/'+game+'/assetconfig.json')
+    asset_config = json.load(f)
+
     smashgg_characters = json.loads(requests.get("https://api.smash.gg/characters").text)
     
     total = len(weekTournaments)

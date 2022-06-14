@@ -34,6 +34,12 @@ def text_to_id(text):
 	return text
 
 def update_league(game, liga, smashgg_key_id):
+	f = open('./games/'+game+'/charnames_smashgg_to_braacket.json')
+	charname_to_braacket = json.load(f)
+
+	f = open('./games/'+game+'/assetconfig.json')
+	asset_config = json.load(f)
+
 	print("Updating league " + liga)
 	bracket = braacket.Braacket(liga)
 
@@ -58,6 +64,15 @@ def update_league(game, liga, smashgg_key_id):
 		
 		# get league players
 		players = bracket.get_players()
+
+		for player in players:
+			newmains = []
+			for main in players[player].get("mains"):
+				smashggname = next((c[0] for c in charname_to_braacket.items() if c[1] == main), main)
+				found = next((c[1].get("codename") for c in asset_config["character_to_codename"].items() if c[1].get("smashgg_name") == smashggname), None)
+				if found:
+					newmains.append(found)
+			players[player]["mains"] = newmains
 
 		with open('./out/'+game+'/'+liga+'/players.json', 'w') as outfile:
 			out = {
