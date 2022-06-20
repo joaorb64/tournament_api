@@ -56,10 +56,19 @@ def match_player_state_do(i):
 				split = player["city"].split(" ")
 
 				for part in split:
+					# Find by state code
 					state = next(
 						(st for st in country["states"] if remove_accents_lower(st["state_code"]) == remove_accents_lower(part)),
 						None
 					)
+
+					# Find by state name
+					if state == None:
+						state = next(
+							(st for st in country["states"] if remove_accents_lower(st["name"]) == remove_accents_lower(part)),
+							None
+						)
+
 					if state is not None:
 						player["state"] = state["state_code"]
 						break

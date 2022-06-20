@@ -148,8 +148,8 @@ def skill(game):
                     tau=0.3,
                     prevent_sigma_increase=True
                 )
-                print(new_p1)
-                print(players[match[0]])
+                #print(new_p1)
+                #print(players[match[0]])
                 players[match[0]]["rating"] = new_p1[0]
                 players[match[1]]["rating"] = new_p2[0]
 
