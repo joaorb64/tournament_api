@@ -216,7 +216,7 @@ def gen_week_results(game):
 
                 weekResults.append({
                     "winner": winner.get("entrant").get("name"),
-                    "character": character,
+                    "character": next((c[1].get("codename") for c in asset_config.get("character_to_codename").items() if c[1].get("smashgg_name") == character), None),
                     "lat": tournament.get("lat"),
                     "lng": tournament.get("lng"),
                     "country_code": tournament.get("country_code"),
