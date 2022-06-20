@@ -55,7 +55,7 @@ def match_player_state_do(i):
 				# State explicit?
 				split = player["city"].split(" ")
 
-				for part in split:
+				for part in split[::-1]:
 					# Find by state code
 					state = next(
 						(st for st in country["states"] if remove_accents_lower(st["state_code"]) == remove_accents_lower(part)),
