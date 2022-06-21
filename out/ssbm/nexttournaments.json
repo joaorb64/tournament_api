@@ -1,12 +1,12 @@
 {
-    "updateTime": 1655827597,
+    "updateTime": 1655831195,
     "events": [
         {
             "id": 740593,
             "name": "Melee Singles",
             "slug": "tournament/helsinki-smash-weekly-178/event/melee-singles",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 9,
             "videogame": {
                 "id": 1
@@ -24,11 +24,33 @@
             ]
         },
         {
+            "id": 740482,
+            "name": "Melee Singles",
+            "slug": "tournament/smash-p-su-30-21-6-22-1/event/melee-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 24,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1655827200,
+            "phaseGroups": [
+                {
+                    "id": 1785652,
+                    "phase": {
+                        "id": 1150773,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 737364,
             "name": "Melee Singles",
             "slug": "tournament/thunder-master-s-tuesday/event/melee-singles",
             "isOnline": true,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 16,
             "videogame": {
                 "id": 1
@@ -43,31 +65,53 @@
                     },
                     "progressionsOut": null
                 }
+            ]
+        },
+        {
+            "id": 740587,
+            "name": "Melee Singles",
+            "slug": "tournament/sn-l-finaleturnering/event/melee-singles",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 6,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1656003600,
+            "phaseGroups": [
+                {
+                    "id": 1785816,
+                    "phase": {
+                        "id": 1150906,
+                        "name": "Round Robin Finale"
+                    },
+                    "progressionsOut": null
+                }
             ],
-            "tournament": "Thunder Master's Tuesday",
-            "tournament_id": 453413,
+            "tournament": "SN\u00c5L Finaleturnering",
+            "tournament_id": 455713,
             "city": null,
-            "url": "https://smash.gg/tournament/thunder-master-s-tuesday/event/melee-singles",
+            "url": "https://smash.gg/tournament/sn-l-finaleturnering/event/melee-singles",
             "streams": null,
             "timezone": null,
-            "tournament_startAt": 1655827200,
-            "tournament_endAt": 1655855940,
-            "tournament_registrationClosesAt": 1655827500,
+            "tournament_startAt": 1655830800,
+            "tournament_endAt": 1656014400,
+            "tournament_registrationClosesAt": 1656559440,
             "images": [
                 {
-                    "id": "4771530",
-                    "url": "https://images.smash.gg/images/tournament/453413/image-5db6267db3a479c687e77cc42d41b6b0.jpg",
+                    "id": "4794758",
+                    "url": "https://images.smash.gg/images/tournament/455713/image-362934115fe296ff0c7c9c47ea8de83d.png",
                     "type": "profile"
                 },
                 {
-                    "id": "4772146",
-                    "url": "https://images.smash.gg/images/tournament/453413/image-6ac6d8a869f6a31c659ef523cc462a4c.png",
+                    "id": "4794801",
+                    "url": "https://images.smash.gg/images/tournament/455713/image-a022844374c9a3c8848a0144489ef7cd.png",
                     "type": "banner"
                 }
             ],
             "tournament_multievent": false,
             "tournament_venueName": null,
-            "tournament_venueAddress": "",
+            "tournament_venueAddress": null,
             "tournament_addrState": null,
             "country_code": null,
             "lat": null,
@@ -1189,56 +1233,6 @@
             "country_code": "US",
             "lat": 36.1014347,
             "lng": -115.131061
-        },
-        {
-            "id": 740587,
-            "name": "Melee Singles",
-            "slug": "tournament/sn-l-finaleturnering/event/melee-singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 6,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1656003600,
-            "phaseGroups": [
-                {
-                    "id": 1785816,
-                    "phase": {
-                        "id": 1150906,
-                        "name": "Round Robin Finale"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "SN\u00c5L Finaleturnering",
-            "tournament_id": 455713,
-            "city": null,
-            "url": "https://smash.gg/tournament/sn-l-finaleturnering/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1655830800,
-            "tournament_endAt": 1656014400,
-            "tournament_registrationClosesAt": 1656559440,
-            "images": [
-                {
-                    "id": "4794758",
-                    "url": "https://images.smash.gg/images/tournament/455713/image-362934115fe296ff0c7c9c47ea8de83d.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4794801",
-                    "url": "https://images.smash.gg/images/tournament/455713/image-a022844374c9a3c8848a0144489ef7cd.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
         },
         {
             "id": 740962,
@@ -3627,56 +3621,6 @@
             "country_code": "MX",
             "lat": 19.4878767,
             "lng": -99.1263251
-        },
-        {
-            "id": 740482,
-            "name": "Melee Singles",
-            "slug": "tournament/smash-p-su-30-21-6-22-1/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 3,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1655827200,
-            "phaseGroups": [
-                {
-                    "id": 1785652,
-                    "phase": {
-                        "id": 1150773,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Smash p\u00e5 SU #30 (21/6/22)",
-            "tournament_id": 455643,
-            "city": "Stockholm",
-            "url": "https://smash.gg/tournament/smash-p-su-30-21-6-22-1/event/melee-singles",
-            "streams": null,
-            "timezone": "Europe/Stockholm",
-            "tournament_startAt": 1655827200,
-            "tournament_endAt": 1655841600,
-            "tournament_registrationClosesAt": 1655841600,
-            "images": [
-                {
-                    "id": "4792000",
-                    "url": "https://images.smash.gg/images/tournament/455643/image-b688f8ef2a5f4b6c0e51add110e698ca.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "4792001",
-                    "url": "https://images.smash.gg/images/tournament/455643/image-a3fd9b1341bed7a76e88a7097d73501c.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Svante Arrhenius v\u00e4g 10, 114 18 Stockholm, Sweden",
-            "tournament_addrState": "Stockholms l\u00e4n",
-            "country_code": "SE",
-            "lat": 59.3654114,
-            "lng": 18.0582681
         },
         {
             "id": 740472,
