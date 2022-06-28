@@ -126,6 +126,8 @@ def gen_week_results(game):
 
                 participant = winner.get("entrant", {}).get("participants", [{}])[0].get("user", {})
 
+                userId = None
+
                 if participant is not None:
                     userId = participant.get("id")
 
