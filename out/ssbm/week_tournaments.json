@@ -7867,12 +7867,21 @@
         "slug": "tournament/gfc-2-short-notice/event/ssbm-singles-5-entry",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
         "startAt": 1656792000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1790383,
+                "phase": {
+                    "id": 1154407,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "GFC#2 Short Notice",
         "tournament_id": 457243,
         "city": "Victoria",
@@ -25745,5 +25754,55 @@
         "country_code": "US",
         "lat": 34.009168,
         "lng": -81.1932224
+    },
+    "745531": {
+        "id": 745531,
+        "name": "Melee Singles",
+        "slug": "tournament/respawn-platform-23-03-07-2022/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1656806400,
+        "phaseGroups": [
+            {
+                "id": 1794536,
+                "phase": {
+                    "id": 1157330,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Respawn Platform 23 03/07/2022",
+        "tournament_id": 458455,
+        "city": "Wellington",
+        "url": "https://smash.gg/tournament/respawn-platform-23-03-07-2022/event/melee-singles",
+        "streams": null,
+        "timezone": "Pacific/Auckland",
+        "tournament_startAt": 1656806400,
+        "tournament_endAt": 1656828000,
+        "tournament_registrationClosesAt": 1656914400,
+        "images": [
+            {
+                "id": "4824462",
+                "url": "https://images.smash.gg/images/tournament/458455/image-56a3b1adb38fe9a4f4d58d24305a5eb9.png",
+                "type": "banner"
+            },
+            {
+                "id": "4824463",
+                "url": "https://images.smash.gg/images/tournament/458455/image-d4098d4f004998d361bfefd8bdd05b3c.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Skynet Internet Cafe",
+        "tournament_venueAddress": "9 Manners Street, Te Aro, Wellington 6011, New Zealand",
+        "tournament_addrState": "Wellington",
+        "country_code": "NZ",
+        "lat": -41.289356,
+        "lng": 174.7750246
     }
 }
