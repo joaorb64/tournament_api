@@ -69,16 +69,15 @@ def gen_week_results(game):
         print(str(i)+"/"+str(total), end="\r")
         i+=1
 
-        if not tournament.get("lat") and not tournament.get("lng") and not tournament.get("country_code"):
-            continue
-
         if tournament.get("provider") != "challonge":
             r = requests.post(
-                'https://api.smash.gg/gql/alpha',
+                "https://www.start.gg/api/-/gql",
                 headers={
-                    'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+                    "client-version": "20",
+                    'Content-Type': 'application/json'
                 },
                 json={
+                    "operationName": "PlayerSetsInEvent",
                     'query': '''
                     query PlayerSetsInEvent($eventId: ID!) {
                         event(id: $eventId) {
@@ -99,6 +98,20 @@ def gen_week_results(game):
                                     }
                                 }
                             }
+                            tournament {
+                                name
+                                url
+                                city
+                                startAt
+                                endAt
+                                registrationClosesAt
+                                venueName
+                                venueAddress
+                                addrState
+                                lat
+                                lng
+                                countryCode
+                            }
                         }
                     },
                     ''',
@@ -108,7 +121,6 @@ def gen_week_results(game):
                 }
             )
             resp = json.loads(r.text)
-            time.sleep(1/len(SMASHGG_KEYS))
             currentKey = (currentKey+1)%len(SMASHGG_KEYS)
 
             if resp == None or resp.get("data") == None or resp.get("data").get("event") == None:
@@ -117,6 +129,22 @@ def gen_week_results(game):
             numEntrants = resp.get("data", {}).get("event", {}).get("numEntrants")
 
             if not numEntrants or numEntrants < 6:
+                continue
+
+            tournament_data = resp.get("data", {}).get("event", {}).get("tournament", {})
+
+            tournament["tournament"] = tournament_data["name"]
+            tournament["city"] = tournament_data["city"]
+            tournament["tournament_startAt"] = tournament_data["startAt"]
+            tournament["tournament_endAt"] = tournament_data["endAt"]
+            tournament["tournament_venueName"] = tournament_data["venueName"]
+            tournament["tournament_venueAddress"] = tournament_data["venueAddress"]
+            tournament["tournament_addrState"] = tournament_data["addrState"]
+            tournament["country_code"] = tournament_data["countryCode"]
+            tournament["lat"] = tournament_data["lat"]
+            tournament["lng"] = tournament_data["lng"]
+
+            if not tournament.get("lat") and not tournament.get("lng") and not tournament.get("country_code"):
                 continue
 
             if resp.get("data", {}).get("event", {}).get("state") == "COMPLETED" \
@@ -132,9 +160,10 @@ def gen_week_results(game):
                     userId = participant.get("id")
 
                 r = requests.post(
-                    'https://api.smash.gg/gql/alpha',
+                    "https://www.start.gg/api/-/gql",
                     headers={
-                        'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+                        "client-version": "20",
+                        'Content-Type': 'application/json'
                     },
                     json={
                         'query': '''
@@ -160,6 +189,7 @@ def gen_week_results(game):
                             }
                         },
                         ''',
+                        "operationName": "PlayerSetsInEvent",
                         'variables': {
                         "eventId": tournament["id"]
                         },
@@ -167,7 +197,6 @@ def gen_week_results(game):
                 )
                 resp = json.loads(r.text)
                 char_data = resp.get("data")
-                time.sleep(1/len(SMASHGG_KEYS))
                 currentKey = (currentKey+1)%len(SMASHGG_KEYS)
 
                 if char_data:

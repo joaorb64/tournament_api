@@ -69,7 +69,6 @@ def get_next_tournaments(game):
                         page: '''+str(page)+'''
                         filter: {
                             videogameIds: ['''+str(config["smashgg_videogame_id"])+'''],
-                            upcoming: true,
                             computedUpdatedAt: '''+str(int(updateTime-datetime.timedelta(hours=1).total_seconds()))+'''
                         }
                     }) {

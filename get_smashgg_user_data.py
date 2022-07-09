@@ -64,9 +64,11 @@ def fetchPlayerDo(currKey, playerIndex):
 		return False
 	
 	# Get profile data and latest set
-	profileRequest = requests.post('https://api.smash.gg/gql/alpha',
+	profileRequest = requests.post(
+		"https://www.start.gg/api/-/gql",
 		headers={
-			'Authorization': 'Bearer'+currKey,
+			"client-version": "20",
+			'Content-Type': 'application/json'
 		},
 		json={
 			'query': '''
@@ -99,13 +101,13 @@ def fetchPlayerDo(currKey, playerIndex):
 					}
 				}
 			}
-		''',
+			''',
 			'variables': {
 				"userId": str(player["smashgg_id"])
 			},
+			"operationName": "user",
 		}
 	)
-	time.sleep(1)
 	
 	try:
 		profileData = json.loads(profileRequest.text)
@@ -138,61 +140,53 @@ def fetchPlayerDo(currKey, playerIndex):
 	if newSets:
 		r = []
 
-		for i in range(5):
-			resposta = requests.post(
-			'https://api.smash.gg/gql/alpha',
-			headers={
-				'Authorization': 'Bearer'+currKey,
-			},
-			json={
-				'query': '''
-				query user($userId: ID!) {
-					user(id: $userId) {
-						player {
-							sets(page: '''+str(i+1)+''', perPage: 10, filters: {hideEmpty: true, showByes: false}) {
-								nodes {
-									id
-									event {
-										videogame {
-											id
-										}
+		resposta = requests.post(
+		"https://www.start.gg/api/-/gql",
+		headers={
+			"client-version": "20",
+			'Content-Type': 'application/json'
+		},
+		json={
+			'query': '''
+			query user($userId: ID!) {
+				user(id: $userId) {
+					player {
+						sets(page: 1, perPage: 50, filters: {hideEmpty: true, showByes: false, entrantSize: 1}) {
+							nodes {
+								id
+								event {
+									videogame {
+										id
 									}
-									games {
-										selections {
-											entrant {
-												participants {
-													user {
-														id
-													}
+								}
+								games {
+									selections {
+										entrant {
+											participants {
+												user {
+													id
 												}
 											}
-											selectionValue
 										}
+										selectionValue
 									}
 								}
 							}
 						}
 					}
 				}
-				''',
-					'variables': {
-						"userId": str(player["smashgg_id"])
-					},
-				}
-			)
-			time.sleep(10)
+			}''',
+			'variables': {
+				"userId": str(player["smashgg_id"])
+			},
+			"operationName": "user",
+		})
 
-			if resposta != None:
-				try:
-					r.append(json.loads(resposta.text))
-
-					gotSets = r[-1].get("data", {}).get("user", {}).get("player", {}).get("sets", {}).get("nodes", [])
-
-					if gotSets is None or len(gotSets) == 0:
-						break
-				except Exception as e:
-					print(e)
-					break
+		if resposta != None:
+			try:
+				r.append(json.loads(resposta.text))
+			except Exception as e:
+				print(e)
 
 		if "sets" not in resp["player"]:
 			resp["player"]["sets"] = {}
