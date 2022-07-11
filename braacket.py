@@ -193,6 +193,7 @@ class Braacket:
         try:
             if link:
                 if "smash.gg" in link.attrs['href'] or \
+                        "start.gg" in link.attrs['href'] or \
                         "challonge.com" in link.attrs['href'] or \
                         "braacket.com" in link.attrs['href']:
                     tournament_link = link.attrs['href']
