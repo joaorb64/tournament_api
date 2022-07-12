@@ -11,7 +11,7 @@ from threading import Thread, Lock
 
 timeStart = time.time()
 
-LIMIT_PER_KEY = 20
+LIMIT_PER_KEY = 50
 
 if os.path.exists("auth.json"):
 	f = open('auth.json')
@@ -151,7 +151,7 @@ def fetchPlayerDo(currKey, playerIndex):
 			query user($userId: ID!) {
 				user(id: $userId) {
 					player {
-						sets(page: 1, perPage: 50, filters: {hideEmpty: true, showByes: false, entrantSize: 1}) {
+						sets(page: 1, perPage: 50, filters: {hideEmpty: true, showByes: false}) {
 							nodes {
 								id
 								event {
@@ -204,6 +204,7 @@ def fetchPlayerDo(currKey, playerIndex):
 			selections = Counter()
 
 			for set_ in resp["player"]["sets"]["nodes"]:
+				print(set_)
 				if set_ is None:
 					continue
 				# Skip set if no games
