@@ -37,7 +37,7 @@ def match_player_state_do(i):
 
 	player = players["players"][i]
 
-	print("Match states: "+str(i)+"/"+str(len(players["players"])-1))
+	print("Match states: "+str(i)+"/"+str(len(players["players"])-1), end="\r")
 
 	if "country" in player.keys() and player["country"] is not None:
 		country = next(
@@ -53,9 +53,11 @@ def match_player_state_do(i):
 
 			if "city" in player.keys() and player["city"] is not None:
 				# State explicit?
-				split = player["city"].split(" ")
+				split = player["city"].replace(" - ", ",").split(",")
 
 				for part in split[::-1]:
+					part = part.strip()
+					
 					# Find by state code
 					state = next(
 						(st for st in country["states"] if remove_accents_lower(st["state_code"]) == remove_accents_lower(part)),
@@ -100,6 +102,8 @@ def match_states(game):
 
 	for t in threads:
 		t.join()
+	
+	print("")
 
 	with open('./out/'+game+'/allplayers.json', 'w') as outfile:
 		json.dump(players, outfile, separators=(',', ":"), sort_keys=True)
