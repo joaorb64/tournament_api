@@ -552,12 +552,21 @@
         "slug": "tournament/phantom-2022/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 45,
+        "numEntrants": 46,
         "videogame": {
             "id": 1
         },
         "startAt": 1657972860,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1708746,
+                "phase": {
+                    "id": 1095475,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Phantom 2022",
         "tournament_id": 429444,
         "city": "Ultimo",
@@ -583,7 +592,7 @@
                 "type": "banner"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": "LOT 2004 Thomas St, Ultimo NSW 2007, Australia",
         "tournament_addrState": "NSW",
@@ -3428,7 +3437,7 @@
         "slug": "tournament/bmw-m-series-3-feat-bones-juicebox/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -3528,7 +3537,7 @@
         "slug": "tournament/bmw-13-feat-juicebox-maelstrom/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -18615,28 +18624,6 @@
             }
         ]
     },
-    "747011": {
-        "id": 747011,
-        "name": "Melee Singles",
-        "slug": "tournament/helsinki-smash-weekly-179/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1657033200,
-        "phaseGroups": [
-            {
-                "id": 1797627,
-                "phase": {
-                    "id": 1159336,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "747014": {
         "id": 747014,
         "name": "P+ Singles",
@@ -28929,7 +28916,7 @@
     "743101": {
         "id": 743101,
         "name": "Melee doubles",
-        "slug": "tournament/the-vault-the-big-juan-scv-s-backyard-tournament-1/event/melee-doubles",
+        "slug": "tournament/the-vault-the-big-one-scv-s-backyard-tournament/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 0,
@@ -28947,10 +28934,10 @@
                 "progressionsOut": null
             }
         ],
-        "tournament": "The Vault: The Big Juan SCV's backyard tournament",
+        "tournament": "The Vault: The Big One SCV's backyard tournament",
         "tournament_id": 457135,
         "city": "Santa Clarita",
-        "url": "https://smash.gg/tournament/the-vault-the-big-juan-scv-s-backyard-tournament-1/event/melee-doubles",
+        "url": "https://smash.gg/tournament/the-vault-the-big-one-scv-s-backyard-tournament/event/melee-doubles",
         "streams": null,
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1658700000,
@@ -28974,7 +28961,7 @@
     "743100": {
         "id": 743100,
         "name": "Melee singles",
-        "slug": "tournament/the-vault-the-big-juan-scv-s-backyard-tournament-1/event/melee-singles",
+        "slug": "tournament/the-vault-the-big-one-scv-s-backyard-tournament/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 1,
@@ -28992,10 +28979,10 @@
                 "progressionsOut": null
             }
         ],
-        "tournament": "The Vault: The Big Juan SCV's backyard tournament",
+        "tournament": "The Vault: The Big One SCV's backyard tournament",
         "tournament_id": 457135,
         "city": "Santa Clarita",
-        "url": "https://smash.gg/tournament/the-vault-the-big-juan-scv-s-backyard-tournament-1/event/melee-singles",
+        "url": "https://smash.gg/tournament/the-vault-the-big-one-scv-s-backyard-tournament/event/melee-singles",
         "streams": null,
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1658700000,
@@ -31626,7 +31613,7 @@
         "slug": "tournament/helsinki-smash-weekly-180/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -31640,34 +31627,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Helsinki Smash Weekly #180",
-        "tournament_id": 461150,
-        "city": "Helsinki",
-        "url": "https://smash.gg/tournament/helsinki-smash-weekly-180/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "SmashFinland"
-            }
-        ],
-        "timezone": "Europe/Helsinki",
-        "tournament_startAt": 1657631700,
-        "tournament_endAt": 1657649700,
-        "tournament_registrationClosesAt": 1657649700,
-        "images": [
-            {
-                "id": "4858975",
-                "url": "https://images.smash.gg/images/tournament/461150/image-46b4ef1020d3c9541158afb619c6195a.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Konepajankuja 1, 00510 Helsinki, Suomi",
-        "tournament_addrState": null,
-        "country_code": "FI",
-        "lat": 60.19112500000001,
-        "lng": 24.9492359
+        ]
     },
     "750129": {
         "id": 750129,
@@ -35466,7 +35426,7 @@
         "slug": "tournament/teatime-51/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -35520,7 +35480,7 @@
         "slug": "tournament/smash-pat-s-48/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 6,
+        "numEntrants": 9,
         "videogame": {
             "id": 1
         },
@@ -35562,5 +35522,131 @@
         "country_code": "US",
         "lat": 38.9667121,
         "lng": -94.6689529
+    },
+    "750918": {
+        "id": 750918,
+        "name": "Melee Singles",
+        "slug": "tournament/liberty-smash-weekly-7-15-22-p-arcadian/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1657919700,
+        "phaseGroups": [
+            {
+                "id": 1805423,
+                "phase": {
+                    "id": 1164393,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7727373
+                    },
+                    {
+                        "id": 7727374
+                    },
+                    {
+                        "id": 7727375
+                    }
+                ]
+            },
+            {
+                "id": 1805424,
+                "phase": {
+                    "id": 1164394,
+                    "name": "Final Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Liberty Smash Weekly 7/15/22 (P+ Arcadian)",
+        "tournament_id": 461566,
+        "city": "Lynchburg",
+        "url": "https://smash.gg/tournament/liberty-smash-weekly-7-15-22-p-arcadian/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "lynchburgsmashbros"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1657919700,
+        "tournament_endAt": 1657937700,
+        "tournament_registrationClosesAt": 1657937700,
+        "images": [
+            {
+                "id": "4863329",
+                "url": "https://images.smash.gg/images/tournament/461566/image-57aa0690bf0e80b53edb227fc2b9a978.png",
+                "type": "profile"
+            },
+            {
+                "id": "4863355",
+                "url": "https://images.smash.gg/images/tournament/461566/image-f2a74b3d83e2e631fcdbdac8a9e25d5d.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Lynchburg, VA 24502, USA",
+        "tournament_addrState": "VA",
+        "country_code": "US",
+        "lat": 37.3504509,
+        "lng": -79.1793016
+    },
+    "750921": {
+        "id": 750921,
+        "name": "Melee Singles",
+        "slug": "tournament/yee-haw-showdown-27/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1657753200,
+        "phaseGroups": [
+            {
+                "id": 1805428,
+                "phase": {
+                    "id": 1164398,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Yee Haw Showdown #27",
+        "tournament_id": 461416,
+        "city": null,
+        "url": "https://smash.gg/tournament/yee-haw-showdown-27/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "kickflipTV"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1657753200,
+        "tournament_endAt": 1657771200,
+        "tournament_registrationClosesAt": 1657751400,
+        "images": [
+            {
+                "id": "4861507",
+                "url": "https://images.smash.gg/images/tournament/461416/image-107f9bd8ab8c70ec02c96e8034f99f59.png",
+                "type": "profile"
+            },
+            {
+                "id": "4861508",
+                "url": "https://images.smash.gg/images/tournament/461416/image-6bc81e35d7cb7c41a6e65f74a029372b.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
