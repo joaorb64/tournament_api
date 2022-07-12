@@ -11,7 +11,7 @@ from threading import Thread, Lock
 
 timeStart = time.time()
 
-LIMIT_PER_KEY = 50
+LIMIT_PER_KEY = 150
 
 if os.path.exists("auth.json"):
 	f = open('auth.json')
