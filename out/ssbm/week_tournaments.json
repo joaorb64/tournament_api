@@ -9693,7 +9693,7 @@
         "slug": "tournament/cbg-smash-the-bracket/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 8,
+        "numEntrants": 11,
         "videogame": {
             "id": 1
         },
@@ -34070,10 +34070,10 @@
     "760975": {
         "id": 760975,
         "name": "Melee Singles",
-        "slug": "tournament/st-rose-12/event/melee-singles",
+        "slug": "tournament/strose-12/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 11,
         "videogame": {
             "id": 1
         },
@@ -34088,11 +34088,15 @@
                 "progressionsOut": null
             }
         ],
-        "tournament": "St. Rose #12",
+        "tournament": "Strose #12",
         "tournament_id": 467163,
         "city": "Albany",
-        "url": "https://smash.gg/tournament/st-rose-12/event/melee-singles",
-        "streams": null,
+        "url": "https://smash.gg/tournament/strose-12/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "tezl1k"
+            }
+        ],
         "timezone": "America/New_York",
         "tournament_startAt": 1659652200,
         "tournament_endAt": 1659664800,
@@ -38009,5 +38013,97 @@
         "country_code": "US",
         "lat": 26.5281537,
         "lng": -80.0557762
+    },
+    "761820": {
+        "id": 761820,
+        "name": "Melee Singles",
+        "slug": "tournament/demo-26/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1659654000,
+        "phaseGroups": [
+            {
+                "id": 1824136,
+                "phase": {
+                    "id": 1178379,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7803821
+                    },
+                    {
+                        "id": 7803822
+                    },
+                    {
+                        "id": 7803823
+                    },
+                    {
+                        "id": 7803824
+                    },
+                    {
+                        "id": 7803825
+                    },
+                    {
+                        "id": 7803826
+                    }
+                ]
+            },
+            {
+                "id": 1824137,
+                "phase": {
+                    "id": 1178380,
+                    "name": "Amatuer"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 1824138,
+                "phase": {
+                    "id": 1178381,
+                    "name": "Top 6"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "DEMO 26",
+        "tournament_id": 467648,
+        "city": "Springfield",
+        "url": "https://smash.gg/tournament/demo-26/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "tv_seven"
+            },
+            {
+                "streamName": "goosefancy"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1659654000,
+        "tournament_endAt": 1659671940,
+        "tournament_registrationClosesAt": 1659657600,
+        "images": [
+            {
+                "id": "4935792",
+                "url": "https://images.smash.gg/images/tournament/467648/image-d1827dd82bb8149a9256a59933345f40.png",
+                "type": "banner"
+            },
+            {
+                "id": "4935793",
+                "url": "https://images.smash.gg/images/tournament/467648/image-60bbe1445d4fc8f54dd79a4b367e38cf.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "3010 S National Ave, Springfield, MO 65804, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 37.1592143,
+        "lng": -93.27673589999999
     }
 }
