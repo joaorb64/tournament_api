@@ -489,7 +489,7 @@
         "name": "Melee Doubles",
         "slug": "tournament/bifrost-iv-fj-rir/event/melee-doubles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 8,
         "videogame": {
             "id": 1
@@ -26277,8 +26277,8 @@
         "name": "Skirmish",
         "slug": "tournament/sandbag-skirmish-36/event/skirmish",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 16,
         "videogame": {
             "id": 1
         },
@@ -26292,42 +26292,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "SandBag Skirmish 36",
-        "tournament_id": 466538,
-        "city": null,
-        "url": "https://smash.gg/tournament/sandbag-skirmish-36/event/skirmish",
-        "streams": [
-            {
-                "streamName": "Tarothos"
-            },
-            {
-                "streamName": "Blep2blop"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1659715200,
-        "tournament_endAt": 1659718800,
-        "tournament_registrationClosesAt": 1659714600,
-        "images": [
-            {
-                "id": "4923274",
-                "url": "https://images.smash.gg/images/tournament/466538/image-e4ff154405ece8dff73f405c46388faf.png",
-                "type": "profile"
-            },
-            {
-                "id": "4923275",
-                "url": "https://images.smash.gg/images/tournament/466538/image-6fdd48d900605a906dd5c9b80d4e4864.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "759817": {
         "id": 759817,
@@ -36557,7 +36522,16 @@
             "id": 1
         },
         "startAt": 1661000400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1823212,
+                "phase": {
+                    "id": 1177685,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Melee Sunrise",
         "tournament_id": 467307,
         "city": "Six-Fours-les-Plages",
@@ -36625,6 +36599,78 @@
             }
         ],
         "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "762202": {
+        "id": 762202,
+        "name": "Melee Singles Bracket",
+        "slug": "tournament/rookie-rumble-14/event/melee-singles-bracket",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1659691800,
+        "phaseGroups": [
+            {
+                "id": 1824744,
+                "phase": {
+                    "id": 1178843,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
+    },
+    "762203": {
+        "id": 762203,
+        "name": "Melee Singles Ladder",
+        "slug": "tournament/rookie-rumble-14/event/melee-singles-ladder",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1659729600,
+        "phaseGroups": [
+            {
+                "id": 1824745,
+                "phase": {
+                    "id": 1178844,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Rookie Rumble #14",
+        "tournament_id": 467848,
+        "city": null,
+        "url": "https://smash.gg/tournament/rookie-rumble-14/event/melee-singles-ladder",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1659729600,
+        "tournament_endAt": 1659758400,
+        "tournament_registrationClosesAt": 1659735000,
+        "images": [
+            {
+                "id": "4938396",
+                "url": "https://images.smash.gg/images/tournament/467848/image-6f0aa8029da7f9f25b7119113c3eef4b.png",
+                "type": "banner"
+            },
+            {
+                "id": "4938397",
+                "url": "https://images.smash.gg/images/tournament/467848/image-50f0783c7fcc6f1ace2acd8bc4217c8e.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": null,
         "tournament_addrState": null,
