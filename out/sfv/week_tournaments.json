@@ -8042,7 +8042,7 @@
         "name": "Street Fighter V: Champion Edition",
         "slug": "tournament/blink-battleground-world-warrior-central-america-east-2-august/event/street-fighter-v-champion-edition",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 53,
         "videogame": {
             "id": 33990
@@ -8505,12 +8505,42 @@
         "slug": "tournament/the-iron-crown-xvi/event/street-fighter-v-the-iron-crown-xvi",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 10,
         "videogame": {
             "id": 33990
         },
         "startAt": 1661054400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1803528,
+                "phase": {
+                    "id": 1163120,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 7845705
+                    },
+                    {
+                        "id": 7845706
+                    },
+                    {
+                        "id": 7845707
+                    },
+                    {
+                        "id": 7845708
+                    }
+                ]
+            },
+            {
+                "id": 1831965,
+                "phase": {
+                    "id": 1183910,
+                    "name": "Top 4"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The Iron Crown XVI",
         "tournament_id": 461077,
         "city": "Cannington",
@@ -11736,5 +11766,27 @@
         "country_code": "US",
         "lat": 30.469708,
         "lng": -97.79029969999999
+    },
+    "767262": {
+        "id": 767262,
+        "name": "Street Fighter V",
+        "slug": "tournament/northend-neutral-1/event/street-fighter-v",
+        "isOnline": false,
+        "state": "ACTIVE",
+        "numEntrants": 18,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1661047200,
+        "phaseGroups": [
+            {
+                "id": 1834555,
+                "phase": {
+                    "id": 1185507,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     }
 }
