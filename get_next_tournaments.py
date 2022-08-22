@@ -38,7 +38,7 @@ def get_next_tournaments(game):
     updateTime = 0
 
     try:
-        f = open('./out/'+game+'/nexttournaments.json')
+        f = open('./out/'+game+'/nexttournaments.json', encoding="utf-8")
         oldTournaments = json.load(f)
         updateTime = oldTournaments.get("updateTime", 0)
     except Exception as e:
@@ -46,7 +46,7 @@ def get_next_tournaments(game):
 
     weekTournaments = {}
     try:
-        f = open('./out/'+game+'/week_tournaments.json')
+        f = open('./out/'+game+'/week_tournaments.json', encoding="utf-8")
         weekTournaments = json.load(f)
     except Exception as e:
         print("No previous week tournaments file")
@@ -288,14 +288,14 @@ def get_next_tournaments(game):
         if tournament[1]["startAt"] + datetime.timedelta(days=7).total_seconds() < time.time():
             weekTournaments.pop(tournament[0])
 
-    with open('./out/'+game+'/nexttournaments.json', 'w') as outfile:
+    with open('./out/'+game+'/nexttournaments.json', 'w', encoding="utf-8") as outfile:
         json.dump(
             {"updateTime": int(time.time()), "events": tournaments},
             outfile,
             indent=4
         )
     
-    with open('./out/'+game+'/week_tournaments.json', 'w') as outfile:
+    with open('./out/'+game+'/week_tournaments.json', 'w', encoding="utf-8") as outfile:
         json.dump(weekTournaments, outfile, indent=4)
 
 if __name__ == "__main__":

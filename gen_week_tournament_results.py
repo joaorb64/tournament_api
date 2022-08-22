@@ -41,7 +41,7 @@ def gen_week_results(game):
     updateTime = 0
 
     try:
-        f = open('./out/'+game+'/nexttournaments.json')
+        f = open('./out/'+game+'/nexttournaments.json', encoding="utf-8")
         oldTournaments = json.load(f)
         updateTime = oldTournaments.get("updateTime", 0)
     except Exception as e:
@@ -49,7 +49,7 @@ def gen_week_results(game):
 
     weekTournaments = {}
     try:
-        f = open('./out/'+game+'/week_tournaments.json')
+        f = open('./out/'+game+'/week_tournaments.json', encoding="utf-8")
         weekTournaments = json.load(f)
     except Exception as e:
         print("No previous week tournaments file")
