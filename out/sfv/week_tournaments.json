@@ -5159,7 +5159,14 @@
         "tournament_id": 454057,
         "city": "Bangkok",
         "url": "https://smash.gg/tournament/tgu-2022/event/tgu-2022-street-fighter-v",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "TGU_main"
+            },
+            {
+                "streamName": "TGU_1"
+            }
+        ],
         "timezone": "Asia/Bangkok",
         "tournament_startAt": 1662174000,
         "tournament_endAt": 1662303600,
@@ -11986,12 +11993,21 @@
         "slug": "tournament/bulgolgi-smackdown/event/bulgolgi-street-house",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 33990
         },
         "startAt": 1661626800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1839597,
+                "phase": {
+                    "id": 1189254,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "BULGOLGI SMACKDOWN",
         "tournament_id": 472426,
         "city": "Pyeongtaek",
@@ -13346,7 +13362,7 @@
         "slug": "tournament/c-town-beatdown-12/event/street-fighter-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 33990
         },
