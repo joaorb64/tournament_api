@@ -1,5 +1,5 @@
 {
-    "updateTime": 1663143327,
+    "updateTime": 1663146557,
     "events": [
         {
             "id": 779083,
@@ -56,65 +56,119 @@
             "lng": 7.9844499
         },
         {
-            "id": 782897,
+            "id": 782917,
             "name": "Melee Singles",
-            "slug": "tournament/sfsu-smash-thursdays-9-15-22/event/melee-singles",
+            "slug": "tournament/irregular-tournament-series-4/event/melee-singles",
+            "isOnline": true,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1663174800,
+            "phaseGroups": [
+                {
+                    "id": 1861042,
+                    "phase": {
+                        "id": 1205517,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Irregular Tournament Series #4",
+            "tournament_id": 479356,
+            "city": null,
+            "url": "https://smash.gg/tournament/irregular-tournament-series-4/event/melee-singles",
+            "streams": null,
+            "timezone": null,
+            "tournament_startAt": 1663174800,
+            "tournament_endAt": 1663189200,
+            "tournament_registrationClosesAt": 1663174200,
+            "images": [
+                {
+                    "id": "5060026",
+                    "url": "https://images.start.gg/images/tournament/479356/image-1625554b35aa16f29808824c0fbaeced.png?ehk=s6gRAalIJTw4RTggU7g%2BWkRA9AXV20Y7EDbXChLbRcA%3D&ehkOptimized=Gjn05PqUlB2%2FSuNat23JUyqiuRRlfQIkPDGiKfz%2FmKM%3D",
+                    "type": "profile"
+                },
+                {
+                    "id": "5060027",
+                    "url": "https://images.start.gg/images/tournament/479356/image-7b29a6e465b3655af39a22bb1f19adfc.png?ehk=wYrC7fZ9xJjRww83pngqQ09TcUphmzPnWKQ52OKLMnk%3D&ehkOptimized=Q%2Bkj7p1Uv9GXcj8nsgzdINha0h2MxaHK84RkklQEda0%3D",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": null,
+            "tournament_addrState": null,
+            "country_code": null,
+            "lat": null,
+            "lng": null
+        },
+        {
+            "id": 782306,
+            "name": "Melee Singles",
+            "slug": "tournament/ultimate-pop-off-village-110/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
             "numEntrants": 0,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1663291800,
+            "startAt": 1663142400,
             "phaseGroups": [
                 {
-                    "id": 1861016,
+                    "id": 1860123,
                     "phase": {
-                        "id": 1205494,
+                        "id": 1204763,
                         "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7955925
+                        },
+                        {
+                            "id": 7955927
+                        },
+                        {
+                            "id": 7955929
+                        }
+                    ]
+                },
+                {
+                    "id": 1860124,
+                    "phase": {
+                        "id": 1204763,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7955926
+                        },
+                        {
+                            "id": 7955928
+                        },
+                        {
+                            "id": 7955930
+                        }
+                    ]
+                },
+                {
+                    "id": 1860125,
+                    "phase": {
+                        "id": 1204764,
+                        "name": "top 6"
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "SFSU Smash Thursdays 9/15/22",
-            "tournament_id": 479342,
-            "city": null,
-            "url": "https://smash.gg/tournament/sfsu-smash-thursdays-9-15-22/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "A_Skrub_"
-                }
-            ],
-            "timezone": "America/Los_Angeles",
-            "tournament_startAt": 1663291800,
-            "tournament_endAt": 1663311540,
-            "tournament_registrationClosesAt": 1663290900,
-            "images": [
-                {
-                    "id": "5059827",
-                    "url": "https://images.start.gg/images/tournament/479342/image-09f6c00bec4b492d4a6f9fe0cb9234b7.png?ehk=%2FE8eR%2Fi06gj4kNH9zO6B%2Bitqm%2BY4L86Q3nSkAi8R95Y%3D&ehkOptimized=uyozQmabE%2Fr2Ayjoe2sDJYGRwB2T1k%2F8mxycPHEdytg%3D",
-                    "type": "profile"
-                },
-                {
-                    "id": "5059828",
-                    "url": "https://images.start.gg/images/tournament/479342/image-756cc6d6bbf42247319ce6c93083cdc6.jpg?ehk=1shuDueJKGggDenLvqckYUJtWk%2B9ugJ7NR0lFWgrV5g%3D&ehkOptimized=0YBlQ%2Bwv9zfLtaki%2F6TA37WKkKFtT3O4cwa4V5evPn8%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": "Towers Conference Center, 798 Font Blvd @ SFSU",
-            "tournament_venueAddress": "798 Font Blvd, San Francisco, CA 94132, USA",
-            "tournament_addrState": "CA",
-            "country_code": "US",
-            "lat": 37.7237343,
-            "lng": -122.4821
+            ]
         },
         {
             "id": 782761,
             "name": "Mini Melon Melee",
             "slug": "tournament/lan-hero-tuesday-112-quickly/event/mini-melon-melee",
             "isOnline": false,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 12,
             "videogame": {
                 "id": 1
@@ -1213,26 +1267,80 @@
             ]
         },
         {
-            "id": 778244,
+            "id": 780921,
             "name": "Melee Singles",
-            "slug": "tournament/sfsu-smash-thursdays-9-08-22/event/melee-singles",
-            "isOnline": false,
+            "slug": "tournament/irregular-tournament-series-3/event/melee-singles",
+            "isOnline": true,
             "state": "COMPLETED",
-            "numEntrants": 11,
+            "numEntrants": 7,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1662687000,
+            "startAt": 1662915600,
             "phaseGroups": [
                 {
-                    "id": 1853106,
+                    "id": 1857898,
                     "phase": {
-                        "id": 1199464,
+                        "id": 1202960,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 782897,
+            "name": "Melee Singles",
+            "slug": "tournament/sfsu-smash-thursdays-9-15-22/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1663291800,
+            "phaseGroups": [
+                {
+                    "id": 1861016,
+                    "phase": {
+                        "id": 1205494,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "SFSU Smash Thursdays 9/15/22",
+            "tournament_id": 479342,
+            "city": null,
+            "url": "https://smash.gg/tournament/sfsu-smash-thursdays-9-15-22/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "A_Skrub_"
+                }
+            ],
+            "timezone": "America/Los_Angeles",
+            "tournament_startAt": 1663291800,
+            "tournament_endAt": 1663311540,
+            "tournament_registrationClosesAt": 1663290900,
+            "images": [
+                {
+                    "id": "5059827",
+                    "url": "https://images.start.gg/images/tournament/479342/image-09f6c00bec4b492d4a6f9fe0cb9234b7.png?ehk=%2FE8eR%2Fi06gj4kNH9zO6B%2Bitqm%2BY4L86Q3nSkAi8R95Y%3D&ehkOptimized=uyozQmabE%2Fr2Ayjoe2sDJYGRwB2T1k%2F8mxycPHEdytg%3D",
+                    "type": "profile"
+                },
+                {
+                    "id": "5059828",
+                    "url": "https://images.start.gg/images/tournament/479342/image-756cc6d6bbf42247319ce6c93083cdc6.jpg?ehk=1shuDueJKGggDenLvqckYUJtWk%2B9ugJ7NR0lFWgrV5g%3D&ehkOptimized=0YBlQ%2Bwv9zfLtaki%2F6TA37WKkKFtT3O4cwa4V5evPn8%3D",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": "Towers Conference Center, 798 Font Blvd @ SFSU",
+            "tournament_venueAddress": "798 Font Blvd, San Francisco, CA 94132, USA",
+            "tournament_addrState": "CA",
+            "country_code": "US",
+            "lat": 37.7237343,
+            "lng": -122.4821
         },
         {
             "id": 782875,
@@ -5625,99 +5733,6 @@
             "country_code": "SE",
             "lat": 56.06291770000001,
             "lng": 12.7138211
-        },
-        {
-            "id": 782306,
-            "name": "Melee Singles",
-            "slug": "tournament/ultimate-pop-off-village-110/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1663142400,
-            "phaseGroups": [
-                {
-                    "id": 1860123,
-                    "phase": {
-                        "id": 1204763,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7955925
-                        },
-                        {
-                            "id": 7955927
-                        },
-                        {
-                            "id": 7955929
-                        }
-                    ]
-                },
-                {
-                    "id": 1860124,
-                    "phase": {
-                        "id": 1204763,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7955926
-                        },
-                        {
-                            "id": 7955928
-                        },
-                        {
-                            "id": 7955930
-                        }
-                    ]
-                },
-                {
-                    "id": 1860125,
-                    "phase": {
-                        "id": 1204764,
-                        "name": "top 6"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Ultimate Pop-Off Village #110",
-            "tournament_id": 479023,
-            "city": "Canberra",
-            "url": "https://smash.gg/tournament/ultimate-pop-off-village-110/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "TeamTrifox"
-                },
-                {
-                    "streamName": "evaderssbm"
-                }
-            ],
-            "timezone": "Australia/Sydney",
-            "tournament_startAt": 1663142400,
-            "tournament_endAt": 1663160400,
-            "tournament_registrationClosesAt": 1663148700,
-            "images": [
-                {
-                    "id": "5056660",
-                    "url": "https://images.start.gg/images/tournament/479023/image-99e1e4a0a4d772aae2a167ad41b5898a.png?ehk=nj9%2B0a8%2BTt2G0NyeOD6WBvDkwUTW5yO0vWtu7ixxv7M%3D&ehkOptimized=j5779wNWLHdxNYOVxpGXR%2BEd3i9t0g9TLwZzu40eas0%3D",
-                    "type": "banner"
-                },
-                {
-                    "id": "5056661",
-                    "url": "https://images.start.gg/images/tournament/479023/image-fd569c563c17f5b67f1112c7b2ba5bdc.png?ehk=jOJpPU1YPOzSVYn6S1%2BgFyRuFRkPtwS9nprefoYCYSo%3D&ehkOptimized=ios37LU6SoCn%2BB7mDeoDoaNCkAuuce4RcZyICgLGZtM%3D",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": "The Australian National University",
-            "tournament_venueAddress": "University Ave, Canberra ACT 2601, Australia",
-            "tournament_addrState": "ACT",
-            "country_code": "AU",
-            "lat": -35.2785645,
-            "lng": 149.12316929999997
         },
         {
             "id": 780784,
