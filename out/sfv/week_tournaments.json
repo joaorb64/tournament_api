@@ -6063,7 +6063,7 @@
         "timezone": "America/Chicago",
         "tournament_startAt": 1664557200,
         "tournament_endAt": 1664773140,
-        "tournament_registrationClosesAt": 1664168340,
+        "tournament_registrationClosesAt": 1663995540,
         "images": [
             {
                 "id": "4691449",
@@ -12052,7 +12052,7 @@
         "name": "Street Fighter Bracket",
         "slug": "tournament/esg-fight-night-62/event/street-fighter-bracket",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 33990
@@ -12075,12 +12075,21 @@
         "slug": "tournament/the-october-storm/event/street-fighter-v",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 33990
         },
         "startAt": 1667080800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1862363,
+                "phase": {
+                    "id": 1206552,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The October Storm",
         "tournament_id": 479823,
         "city": "Buffalo",
@@ -12109,5 +12118,62 @@
         "country_code": "US",
         "lat": 42.9347222,
         "lng": -78.8419444
+    },
+    "785975": {
+        "id": 785975,
+        "name": "Street Fighter V: Champion Edition 8:30PM Tournament",
+        "slug": "tournament/fgc-xanadu-474/event/street-fighter-v-champion-edition-8-30pm-tournament",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1663884000,
+        "phaseGroups": [
+            {
+                "id": 1866751,
+                "phase": {
+                    "id": 1209435,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "FGC @ Xanadu 474",
+        "tournament_id": 480973,
+        "city": "Laurel",
+        "url": "https://smash.gg/tournament/fgc-xanadu-474/event/street-fighter-v-champion-edition-8-30pm-tournament",
+        "streams": [
+            {
+                "streamName": "vgbootcamp2"
+            },
+            {
+                "streamName": "Cambosa"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1663884000,
+        "tournament_endAt": 1663905540,
+        "tournament_registrationClosesAt": 1663899300,
+        "images": [
+            {
+                "id": "5076226",
+                "url": "https://images.start.gg/images/tournament/480973/image-d85843daaa5c24a997b9aef631538473.png?ehk=Z1N64sbMZaUtP2ddUVH11AjQJZa8z%2Bc5CFjjCSj6z%2Bo%3D&ehkOptimized=z9m9fqpKrEDzJPhTi9L7IOrGjoF99x4kFwzAJwUqerI%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5076227",
+                "url": "https://images.start.gg/images/tournament/480973/image-e261d826d0bdf1d747e9ca76a2cd3a69.png?ehk=HgHizsKvmAc4w85vv7kiPWNyJGfmvRmBEAJQuX3%2FOsI%3D&ehkOptimized=lAn7eJ8Yrp4awv511MpEENM5WbMvzlSRcWO0%2BfyTnoI%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Xanadu Games At Laurel Park (Grand Stand Entrance)",
+        "tournament_venueAddress": "198 Laurel Race Track Road, Laurel, MD 20725, USA",
+        "tournament_addrState": "MD",
+        "country_code": "US",
+        "lat": 39.103527,
+        "lng": -76.8312829
     }
 }
