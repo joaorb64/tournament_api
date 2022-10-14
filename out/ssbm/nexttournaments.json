@@ -1,102 +1,6 @@
 {
-    "updateTime": 1665763611,
+    "updateTime": 1665767207,
     "events": [
-        {
-            "id": 751746,
-            "name": "Melee 1v1",
-            "slug": "tournament/dreamhack-atlanta-2022-fgc/event/melee-1v1",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": null,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1668790800,
-            "phaseGroups": [],
-            "tournament": "DreamHack Atlanta 2022 FGC",
-            "tournament_id": 462034,
-            "city": "Atlanta",
-            "url": "https://smash.gg/tournament/dreamhack-atlanta-2022-fgc/event/melee-1v1",
-            "streams": [
-                {
-                    "streamName": "dreamhackfighters"
-                },
-                {
-                    "streamName": "dreamhacksmash"
-                }
-            ],
-            "timezone": "America/New_York",
-            "tournament_startAt": 1668790800,
-            "tournament_endAt": 1668988800,
-            "tournament_registrationClosesAt": 1668790740,
-            "images": [
-                {
-                    "id": "4869567",
-                    "url": "https://images.start.gg/images/tournament/462034/image-71c7fa459d011b3a44ec75180d74d662.png?ehk=eSXb5HScUMi6ZAHW94eAcXdFmLP5TR6zhGBw2QhgmAY%3D&ehkOptimized=c%2FFasFL0Qej%2Fi5gLjyy1P2q2oMutVy%2BaqGSYy%2B9Hdhc%3D",
-                    "type": "profile"
-                },
-                {
-                    "id": "5014527",
-                    "url": "https://images.start.gg/images/tournament/462034/image-375d6d4c216ef42a82a2890195f17cf1.png?ehk=TO7mGxW%2BBlZPwgPVKlRJXBXCXr7eLw4BWvghpzLbFTY%3D&ehkOptimized=GMUPcnS9wZxmW7VpMnue%2BJz5YZtoUzoawGdBq1MCKno%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": "Atlanta Venue",
-            "tournament_venueAddress": "285 Andrew Young International Blvd NW, Atlanta, GA 30313, USA",
-            "tournament_addrState": "GA",
-            "country_code": "US",
-            "lat": 33.7582437,
-            "lng": -84.3982346
-        },
-        {
-            "id": 751747,
-            "name": "Melee Doubles",
-            "slug": "tournament/dreamhack-atlanta-2022-fgc/event/melee-doubles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": null,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1668790800,
-            "phaseGroups": [],
-            "tournament": "DreamHack Atlanta 2022 FGC",
-            "tournament_id": 462034,
-            "city": "Atlanta",
-            "url": "https://smash.gg/tournament/dreamhack-atlanta-2022-fgc/event/melee-doubles",
-            "streams": [
-                {
-                    "streamName": "dreamhackfighters"
-                },
-                {
-                    "streamName": "dreamhacksmash"
-                }
-            ],
-            "timezone": "America/New_York",
-            "tournament_startAt": 1668790800,
-            "tournament_endAt": 1668988800,
-            "tournament_registrationClosesAt": 1668790740,
-            "images": [
-                {
-                    "id": "4869567",
-                    "url": "https://images.start.gg/images/tournament/462034/image-71c7fa459d011b3a44ec75180d74d662.png?ehk=eSXb5HScUMi6ZAHW94eAcXdFmLP5TR6zhGBw2QhgmAY%3D&ehkOptimized=c%2FFasFL0Qej%2Fi5gLjyy1P2q2oMutVy%2BaqGSYy%2B9Hdhc%3D",
-                    "type": "profile"
-                },
-                {
-                    "id": "5014527",
-                    "url": "https://images.start.gg/images/tournament/462034/image-375d6d4c216ef42a82a2890195f17cf1.png?ehk=TO7mGxW%2BBlZPwgPVKlRJXBXCXr7eLw4BWvghpzLbFTY%3D&ehkOptimized=GMUPcnS9wZxmW7VpMnue%2BJz5YZtoUzoawGdBq1MCKno%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": "Atlanta Venue",
-            "tournament_venueAddress": "285 Andrew Young International Blvd NW, Atlanta, GA 30313, USA",
-            "tournament_addrState": "GA",
-            "country_code": "US",
-            "lat": 33.7582437,
-            "lng": -84.3982346
-        },
         {
             "id": 786317,
             "name": "Melee Doubles",
@@ -436,12 +340,21 @@
             "slug": "tournament/rrc-weekly-3/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": null,
+            "numEntrants": 3,
             "videogame": {
                 "id": 1
             },
             "startAt": 1665790200,
-            "phaseGroups": [],
+            "phaseGroups": [
+                {
+                    "id": 1890289,
+                    "phase": {
+                        "id": 1227442,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
             "tournament": "RRC Weekly #3",
             "tournament_id": 488486,
             "city": "Winnipeg",
@@ -500,11 +413,77 @@
             "lng": -79.85790159999999
         },
         {
+            "id": 799645,
+            "name": "Smash Melee | Singles",
+            "slug": "tournament/isaac-s-weekly-smash-chill-8/event/smash-melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665766800,
+            "phaseGroups": [
+                {
+                    "id": 1889375,
+                    "phase": {
+                        "id": 1226757,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 789651,
+            "name": "An Breizh termofis (1v1 singles)",
+            "slug": "tournament/panique-celtique-an-breizh-termofis-1/event/an-breizh-termofis-1v1-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 18,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665763500,
+            "phaseGroups": [
+                {
+                    "id": 1873053,
+                    "phase": {
+                        "id": 1214108,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 799267,
+            "name": "Melee Singles",
+            "slug": "tournament/rogasmash-232/event/melee-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 6,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665763200,
+            "phaseGroups": [
+                {
+                    "id": 1888784,
+                    "phase": {
+                        "id": 1226296,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 796863,
             "name": "Melee Singles",
             "slug": "tournament/caf-43/event/melee-singles",
             "isOnline": true,
-            "state": "ACTIVE",
+            "state": "COMPLETED",
             "numEntrants": 4,
             "videogame": {
                 "id": 1
@@ -522,21 +501,202 @@
             ]
         },
         {
-            "id": 763130,
-            "name": "Melee Side Event: 3v3 City Crews",
-            "slug": "tournament/dreamhack-rotterdam-smash-championship-2022/event/melee-side-event-3v3-city-crews",
+            "id": 782427,
+            "name": "Melee Doubles",
+            "slug": "tournament/tr-ndelan-2022/event/melee-doubles",
             "isOnline": false,
             "state": "ACTIVE",
-            "numEntrants": 26,
+            "numEntrants": 8,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1665745200,
+            "startAt": 1665763200,
             "phaseGroups": [
                 {
-                    "id": 1826567,
+                    "id": 1860291,
                     "phase": {
-                        "id": 1180085,
+                        "id": 1204907,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 782426,
+            "name": "Melee Singles",
+            "slug": "tournament/tr-ndelan-2022/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 27,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665828000,
+            "phaseGroups": [
+                {
+                    "id": 1860286,
+                    "phase": {
+                        "id": 1204905,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8050540
+                        },
+                        {
+                            "id": 8050544
+                        },
+                        {
+                            "id": 8050548
+                        },
+                        {
+                            "id": 8050552
+                        }
+                    ]
+                },
+                {
+                    "id": 1867292,
+                    "phase": {
+                        "id": 1204905,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8050541
+                        },
+                        {
+                            "id": 8050545
+                        },
+                        {
+                            "id": 8050549
+                        },
+                        {
+                            "id": 8050553
+                        }
+                    ]
+                },
+                {
+                    "id": 1867293,
+                    "phase": {
+                        "id": 1204905,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8050542
+                        },
+                        {
+                            "id": 8050546
+                        },
+                        {
+                            "id": 8050550
+                        },
+                        {
+                            "id": 8050554
+                        }
+                    ]
+                },
+                {
+                    "id": 1867294,
+                    "phase": {
+                        "id": 1204905,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8050543
+                        },
+                        {
+                            "id": 8050547
+                        },
+                        {
+                            "id": 8050551
+                        },
+                        {
+                            "id": 8050555
+                        }
+                    ]
+                },
+                {
+                    "id": 1867262,
+                    "phase": {
+                        "id": 1209858,
+                        "name": "Pro Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 7988691
+                        },
+                        {
+                            "id": 7988692
+                        },
+                        {
+                            "id": 7988693
+                        },
+                        {
+                            "id": 7988694
+                        }
+                    ]
+                },
+                {
+                    "id": 1868738,
+                    "phase": {
+                        "id": 1210881,
+                        "name": "Final Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Tr\u00f8ndeLAN 2022",
+            "tournament_id": 479089,
+            "city": "Trondheim",
+            "url": "https://smash.gg/tournament/tr-ndelan-2022/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "smashtrondheim"
+                }
+            ],
+            "timezone": "Europe/Oslo",
+            "tournament_startAt": 1665759600,
+            "tournament_endAt": 1665864000,
+            "tournament_registrationClosesAt": 1665864000,
+            "images": [
+                {
+                    "id": "5057314",
+                    "url": "https://images.start.gg/images/tournament/479089/image-b97350d37dda439badaab66ce2076f30.jpg?ehk=p1uKrIlNghGPb5ubsmJBSE3KzgQoLRAhMqQn%2BO8vyAc%3D&ehkOptimized=rDn07DyQl6JDD6rLZOePx3q4qC15cgGskIEEWmWGoJA%3D",
+                    "type": "banner"
+                },
+                {
+                    "id": "5057319",
+                    "url": "https://images.start.gg/images/tournament/479089/image-5aa3f286e625381d57419bfd75576bf3.png?ehk=qPp8CK62mr3mfOjWJ%2BIrhOBz1hYJNbQhn%2BbHJ8STzCE%3D&ehkOptimized=JBr7IdKlg2NeEVLKsjxQoeKhKC8WWGYNaY9FGx8zuG4%3D",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Utleirvegen 99, 7036 Trondheim, Norge",
+            "tournament_addrState": "Tr\u00f8ndelag",
+            "country_code": "NO",
+            "lat": 63.38712930000001,
+            "lng": 10.4333276
+        },
+        {
+            "id": 751019,
+            "name": "Melee Side Event: Old School Ruleset Tournament",
+            "slug": "tournament/dreamhack-rotterdam-smash-championship-2022/event/melee-side-event-old-school-ruleset-tournament",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 79,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665766800,
+            "phaseGroups": [
+                {
+                    "id": 1805555,
+                    "phase": {
+                        "id": 1164513,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
@@ -564,63 +724,6 @@
                     "progressionsOut": null
                 }
             ]
-        },
-        {
-            "id": 751019,
-            "name": "Melee Side Event: Old School Ruleset Tournament",
-            "slug": "tournament/dreamhack-rotterdam-smash-championship-2022/event/melee-side-event-old-school-ruleset-tournament",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 79,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1665766800,
-            "phaseGroups": [
-                {
-                    "id": 1805555,
-                    "phase": {
-                        "id": 1164513,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Dreamhack Rotterdam Smash Championship 2022",
-            "tournament_id": 450671,
-            "city": "Rotterdam",
-            "url": "https://smash.gg/tournament/dreamhack-rotterdam-smash-championship-2022/event/melee-side-event-old-school-ruleset-tournament",
-            "streams": [
-                {
-                    "streamName": "btssmash"
-                },
-                {
-                    "streamName": "btssmash2"
-                }
-            ],
-            "timezone": "Europe/Amsterdam",
-            "tournament_startAt": 1665730800,
-            "tournament_endAt": 1665954000,
-            "tournament_registrationClosesAt": 1665439140,
-            "images": [
-                {
-                    "id": "4863844",
-                    "url": "https://images.start.gg/images/tournament/450671/image-6edf624d7a8757956957640b55df136e.png?ehk=8hPbh%2BMb6TZ8Ktwu%2F%2Bo2eoZvOYsyU7U%2BiAoS1AfOvAo%3D&ehkOptimized=HYS4es2dqZH%2FSkQCUOi0SZ55XQS1SvSgTgbBDmPfLY4%3D",
-                    "type": "banner"
-                },
-                {
-                    "id": "4863850",
-                    "url": "https://images.start.gg/images/tournament/450671/image-b86f070eee4be622e3eaf97888e50827.png?ehk=asOqWMwwP6oaTSfz0otM7ZbWtnktP59ovY3xfV%2B%2FB7E%3D&ehkOptimized=yLbXhgt6faHtjapDxUJHpHQsizlhqLFtZUZy6%2BU206g%3D",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": "Ahoy Rotterdam",
-            "tournament_venueAddress": "Ahoyweg 10, 3084 BA Rotterdam, Nederland",
-            "tournament_addrState": "ZH",
-            "country_code": "NL",
-            "lat": 51.8827599,
-            "lng": 4.488208699999973
         },
         {
             "id": 737219,
@@ -1905,6 +2008,28 @@
             "lng": 4.488208699999973
         },
         {
+            "id": 763130,
+            "name": "Melee Side Event: 3v3 City Crews",
+            "slug": "tournament/dreamhack-rotterdam-smash-championship-2022/event/melee-side-event-3v3-city-crews",
+            "isOnline": false,
+            "state": "COMPLETED",
+            "numEntrants": 26,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665745200,
+            "phaseGroups": [
+                {
+                    "id": 1826567,
+                    "phase": {
+                        "id": 1180085,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 751020,
             "name": "Melee Side Event: One Stock Tournament",
             "slug": "tournament/dreamhack-rotterdam-smash-championship-2022/event/melee-side-event-one-stock-tournament",
@@ -1920,6 +2045,50 @@
                     "id": 1805558,
                     "phase": {
                         "id": 1164516,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 798521,
+            "name": "Waveshine Amateur Round Robin",
+            "slug": "tournament/waveshine-11-10-13-22/event/waveshine-amateur-round-robin",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 10,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665699300,
+            "phaseGroups": [
+                {
+                    "id": 1887583,
+                    "phase": {
+                        "id": 1225352,
+                        "name": "Ammy Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 798520,
+            "name": "Waveshine Main Bracket",
+            "slug": "tournament/waveshine-11-10-13-22/event/waveshine-main-bracket",
+            "isOnline": false,
+            "state": "COMPLETED",
+            "numEntrants": 21,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1665699300,
+            "phaseGroups": [
+                {
+                    "id": 1887582,
+                    "phase": {
+                        "id": 1225351,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
@@ -2004,209 +2173,100 @@
             ]
         },
         {
-            "id": 782427,
-            "name": "Melee Doubles",
-            "slug": "tournament/tr-ndelan-2022/event/melee-doubles",
+            "id": 751746,
+            "name": "Melee 1v1",
+            "slug": "tournament/dreamhack-atlanta-2022-fgc/event/melee-1v1",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 8,
+            "numEntrants": null,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1665763200,
-            "phaseGroups": [
+            "startAt": 1668790800,
+            "phaseGroups": [],
+            "tournament": "DreamHack Atlanta 2022 FGC",
+            "tournament_id": 462034,
+            "city": "Atlanta",
+            "url": "https://smash.gg/tournament/dreamhack-atlanta-2022-fgc/event/melee-1v1",
+            "streams": [
                 {
-                    "id": 1860291,
-                    "phase": {
-                        "id": 1204907,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Tr\u00f8ndeLAN 2022",
-            "tournament_id": 479089,
-            "city": "Trondheim",
-            "url": "https://smash.gg/tournament/tr-ndelan-2022/event/melee-doubles",
-            "streams": null,
-            "timezone": "Europe/Oslo",
-            "tournament_startAt": 1665759600,
-            "tournament_endAt": 1665864000,
-            "tournament_registrationClosesAt": 1665864000,
-            "images": [
-                {
-                    "id": "5057314",
-                    "url": "https://images.start.gg/images/tournament/479089/image-b97350d37dda439badaab66ce2076f30.jpg?ehk=p1uKrIlNghGPb5ubsmJBSE3KzgQoLRAhMqQn%2BO8vyAc%3D&ehkOptimized=rDn07DyQl6JDD6rLZOePx3q4qC15cgGskIEEWmWGoJA%3D",
-                    "type": "banner"
+                    "streamName": "dreamhackfighters"
                 },
                 {
-                    "id": "5057319",
-                    "url": "https://images.start.gg/images/tournament/479089/image-5aa3f286e625381d57419bfd75576bf3.png?ehk=qPp8CK62mr3mfOjWJ%2BIrhOBz1hYJNbQhn%2BbHJ8STzCE%3D&ehkOptimized=JBr7IdKlg2NeEVLKsjxQoeKhKC8WWGYNaY9FGx8zuG4%3D",
+                    "streamName": "dreamhacksmash"
+                }
+            ],
+            "timezone": "America/New_York",
+            "tournament_startAt": 1668790800,
+            "tournament_endAt": 1668988800,
+            "tournament_registrationClosesAt": 1668790740,
+            "images": [
+                {
+                    "id": "4869567",
+                    "url": "https://images.start.gg/images/tournament/462034/image-71c7fa459d011b3a44ec75180d74d662.png?ehk=eSXb5HScUMi6ZAHW94eAcXdFmLP5TR6zhGBw2QhgmAY%3D&ehkOptimized=c%2FFasFL0Qej%2Fi5gLjyy1P2q2oMutVy%2BaqGSYy%2B9Hdhc%3D",
                     "type": "profile"
+                },
+                {
+                    "id": "5014527",
+                    "url": "https://images.start.gg/images/tournament/462034/image-375d6d4c216ef42a82a2890195f17cf1.png?ehk=TO7mGxW%2BBlZPwgPVKlRJXBXCXr7eLw4BWvghpzLbFTY%3D&ehkOptimized=GMUPcnS9wZxmW7VpMnue%2BJz5YZtoUzoawGdBq1MCKno%3D",
+                    "type": "banner"
                 }
             ],
             "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Utleirvegen 99, 7036 Trondheim, Norge",
-            "tournament_addrState": "Tr\u00f8ndelag",
-            "country_code": "NO",
-            "lat": 63.38712930000001,
-            "lng": 10.4333276
+            "tournament_venueName": "Atlanta Venue",
+            "tournament_venueAddress": "285 Andrew Young International Blvd NW, Atlanta, GA 30313, USA",
+            "tournament_addrState": "GA",
+            "country_code": "US",
+            "lat": 33.7582437,
+            "lng": -84.3982346
         },
         {
-            "id": 782426,
-            "name": "Melee Singles",
-            "slug": "tournament/tr-ndelan-2022/event/melee-singles",
+            "id": 751747,
+            "name": "Melee Doubles",
+            "slug": "tournament/dreamhack-atlanta-2022-fgc/event/melee-doubles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 26,
+            "numEntrants": null,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1665828000,
-            "phaseGroups": [
+            "startAt": 1668790800,
+            "phaseGroups": [],
+            "tournament": "DreamHack Atlanta 2022 FGC",
+            "tournament_id": 462034,
+            "city": "Atlanta",
+            "url": "https://smash.gg/tournament/dreamhack-atlanta-2022-fgc/event/melee-doubles",
+            "streams": [
                 {
-                    "id": 1860286,
-                    "phase": {
-                        "id": 1204905,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 8050540
-                        },
-                        {
-                            "id": 8050544
-                        },
-                        {
-                            "id": 8050548
-                        },
-                        {
-                            "id": 8050552
-                        }
-                    ]
+                    "streamName": "dreamhackfighters"
                 },
                 {
-                    "id": 1867292,
-                    "phase": {
-                        "id": 1204905,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 8050541
-                        },
-                        {
-                            "id": 8050545
-                        },
-                        {
-                            "id": 8050549
-                        },
-                        {
-                            "id": 8050553
-                        }
-                    ]
-                },
-                {
-                    "id": 1867293,
-                    "phase": {
-                        "id": 1204905,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 8050542
-                        },
-                        {
-                            "id": 8050546
-                        },
-                        {
-                            "id": 8050550
-                        },
-                        {
-                            "id": 8050554
-                        }
-                    ]
-                },
-                {
-                    "id": 1867294,
-                    "phase": {
-                        "id": 1204905,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 8050543
-                        },
-                        {
-                            "id": 8050547
-                        },
-                        {
-                            "id": 8050551
-                        },
-                        {
-                            "id": 8050555
-                        }
-                    ]
-                },
-                {
-                    "id": 1867262,
-                    "phase": {
-                        "id": 1209858,
-                        "name": "Pro Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 7988691
-                        },
-                        {
-                            "id": 7988692
-                        },
-                        {
-                            "id": 7988693
-                        },
-                        {
-                            "id": 7988694
-                        }
-                    ]
-                },
-                {
-                    "id": 1868738,
-                    "phase": {
-                        "id": 1210881,
-                        "name": "Final Bracket"
-                    },
-                    "progressionsOut": null
+                    "streamName": "dreamhacksmash"
                 }
             ],
-            "tournament": "Tr\u00f8ndeLAN 2022",
-            "tournament_id": 479089,
-            "city": "Trondheim",
-            "url": "https://smash.gg/tournament/tr-ndelan-2022/event/melee-singles",
-            "streams": null,
-            "timezone": "Europe/Oslo",
-            "tournament_startAt": 1665759600,
-            "tournament_endAt": 1665864000,
-            "tournament_registrationClosesAt": 1665864000,
+            "timezone": "America/New_York",
+            "tournament_startAt": 1668790800,
+            "tournament_endAt": 1668988800,
+            "tournament_registrationClosesAt": 1668790740,
             "images": [
                 {
-                    "id": "5057314",
-                    "url": "https://images.start.gg/images/tournament/479089/image-b97350d37dda439badaab66ce2076f30.jpg?ehk=p1uKrIlNghGPb5ubsmJBSE3KzgQoLRAhMqQn%2BO8vyAc%3D&ehkOptimized=rDn07DyQl6JDD6rLZOePx3q4qC15cgGskIEEWmWGoJA%3D",
-                    "type": "banner"
+                    "id": "4869567",
+                    "url": "https://images.start.gg/images/tournament/462034/image-71c7fa459d011b3a44ec75180d74d662.png?ehk=eSXb5HScUMi6ZAHW94eAcXdFmLP5TR6zhGBw2QhgmAY%3D&ehkOptimized=c%2FFasFL0Qej%2Fi5gLjyy1P2q2oMutVy%2BaqGSYy%2B9Hdhc%3D",
+                    "type": "profile"
                 },
                 {
-                    "id": "5057319",
-                    "url": "https://images.start.gg/images/tournament/479089/image-5aa3f286e625381d57419bfd75576bf3.png?ehk=qPp8CK62mr3mfOjWJ%2BIrhOBz1hYJNbQhn%2BbHJ8STzCE%3D&ehkOptimized=JBr7IdKlg2NeEVLKsjxQoeKhKC8WWGYNaY9FGx8zuG4%3D",
-                    "type": "profile"
+                    "id": "5014527",
+                    "url": "https://images.start.gg/images/tournament/462034/image-375d6d4c216ef42a82a2890195f17cf1.png?ehk=TO7mGxW%2BBlZPwgPVKlRJXBXCXr7eLw4BWvghpzLbFTY%3D&ehkOptimized=GMUPcnS9wZxmW7VpMnue%2BJz5YZtoUzoawGdBq1MCKno%3D",
+                    "type": "banner"
                 }
             ],
             "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Utleirvegen 99, 7036 Trondheim, Norge",
-            "tournament_addrState": "Tr\u00f8ndelag",
-            "country_code": "NO",
-            "lat": 63.38712930000001,
-            "lng": 10.4333276
+            "tournament_venueName": "Atlanta Venue",
+            "tournament_venueAddress": "285 Andrew Young International Blvd NW, Atlanta, GA 30313, USA",
+            "tournament_addrState": "GA",
+            "country_code": "US",
+            "lat": 33.7582437,
+            "lng": -84.3982346
         },
         {
             "id": 709769,
@@ -7005,60 +7065,6 @@
             "lng": 12.5433878
         },
         {
-            "id": 799645,
-            "name": "Smash Melee | Singles",
-            "slug": "tournament/isaac-s-weekly-smash-chill-8/event/smash-melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1665766800,
-            "phaseGroups": [
-                {
-                    "id": 1889375,
-                    "phase": {
-                        "id": 1226757,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Isaac's Weekly Smash & Chill #8",
-            "tournament_id": 488177,
-            "city": "Liezen",
-            "url": "https://smash.gg/tournament/isaac-s-weekly-smash-chill-8/event/smash-melee-singles",
-            "streams": [
-                {
-                    "streamName": "IsaacAtlas"
-                }
-            ],
-            "timezone": "Europe/Vienna",
-            "tournament_startAt": 1665766800,
-            "tournament_endAt": 1665781200,
-            "tournament_registrationClosesAt": 1665756000,
-            "images": [
-                {
-                    "id": "5151150",
-                    "url": "https://images.start.gg/images/tournament/488177/image-ecc3832176dbd6eb654d4bd25e368000.png?ehk=Yhp%2FQfVdqJ1TKmq7fEXzTwJFyC%2F%2FYnzJZbk8oEGprTw%3D&ehkOptimized=W3C6D1Ea4a%2BuAG5yGcAm6nq0wN9J4GPWH%2FoA0ZKnJQU%3D",
-                    "type": "profile"
-                },
-                {
-                    "id": "5151151",
-                    "url": "https://images.start.gg/images/tournament/488177/image-9ebe4e48ba5328c64be1796282b9f56f.png?ehk=YR26u%2BS5ADT6DF4kz1ZwRdfdgJMy%2BS61CVZ4hifZvoc%3D&ehkOptimized=9%2BunS%2FFzX%2FvRE8%2FpawiRyccG%2BdJQsSLkp893FKoCriU%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Bahnhofweg 7, 8940 Liezen, \u00d6sterreich",
-            "tournament_addrState": "Steiermark",
-            "country_code": "AT",
-            "lat": 47.56389799999999,
-            "lng": 14.2429362
-        },
-        {
             "id": 791947,
             "name": "Melee Singles",
             "slug": "tournament/melee-at-epic-200-special-bonanza/event/melee-singles",
@@ -10634,60 +10640,6 @@
             "country_code": "US",
             "lat": 43.6301146,
             "lng": -84.2744061
-        },
-        {
-            "id": 799267,
-            "name": "Melee Singles",
-            "slug": "tournament/rogasmash-232/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 2,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1665763200,
-            "phaseGroups": [
-                {
-                    "id": 1888784,
-                    "phase": {
-                        "id": 1226296,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "RogaSmash #232",
-            "tournament_id": 487983,
-            "city": "Stavanger",
-            "url": "https://smash.gg/tournament/rogasmash-232/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "smashrogaland"
-                }
-            ],
-            "timezone": "Europe/Oslo",
-            "tournament_startAt": 1665763200,
-            "tournament_endAt": 1665781200,
-            "tournament_registrationClosesAt": 1665779400,
-            "images": [
-                {
-                    "id": "5149271",
-                    "url": "https://images.start.gg/images/tournament/487983/image-b0e82d822511f61a612b0527b9b95ff5.png?ehk=FNh%2BKLaYuWy0wzJ4xmH%2FqEfrYjN135d%2FIsEktMj%2F1ss%3D&ehkOptimized=9J%2FOJtMlKv0aCXKx2%2BKkgk4k9%2BJg8FcJKOr0X7Fd8kA%3D",
-                    "type": "banner"
-                },
-                {
-                    "id": "5149275",
-                    "url": "https://images.start.gg/images/tournament/487983/image-362f90f548f41dabd0bef98ea421fbb6.png?ehk=L%2Bqz%2F9Bhi5RAlkW%2BrW7M%2BVZtNdvs65ylU66LT6KToxE%3D&ehkOptimized=0DvQnPqm4eb6r9tR2oTPASZNwf%2Fe0AoVshviS%2BPtF0E%3D",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Nytorget 1, 4012 Stavanger, Norway",
-            "tournament_addrState": "Rogaland",
-            "country_code": "NO",
-            "lat": 58.96996530000001,
-            "lng": 5.7373864
         },
         {
             "id": 799238,
@@ -15400,56 +15352,6 @@
             "country_code": "AT",
             "lat": 48.1446795,
             "lng": 16.31829909999999
-        },
-        {
-            "id": 789651,
-            "name": "An Breizh termofis (1v1 singles)",
-            "slug": "tournament/panique-celtique-an-breizh-termofis-1/event/an-breizh-termofis-1v1-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 14,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1665763500,
-            "phaseGroups": [
-                {
-                    "id": 1873053,
-                    "phase": {
-                        "id": 1214108,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Panique Celtique : An Breizh Termofis",
-            "tournament_id": 479990,
-            "city": "Rennes",
-            "url": "https://smash.gg/tournament/panique-celtique-an-breizh-termofis-1/event/an-breizh-termofis-1v1-singles",
-            "streams": null,
-            "timezone": "Europe/Paris",
-            "tournament_startAt": 1665763500,
-            "tournament_endAt": 1665777600,
-            "tournament_registrationClosesAt": 1665741300,
-            "images": [
-                {
-                    "id": "5141946",
-                    "url": "https://images.start.gg/images/tournament/479990/image-da4502eb4445c60ad10f72e82c3a91fa.png?ehk=yC%2F8oX%2B7hO0OpwjBzjPuDuJe3RBHzSesoH8NGkIr1%2Bo%3D&ehkOptimized=CUoZHMw4w2PyBNKF%2F01N%2Bzh1UQ2cVp84LPoVW6%2Bk6YI%3D",
-                    "type": "profile"
-                },
-                {
-                    "id": "5145049",
-                    "url": "https://images.start.gg/images/tournament/479990/image-232fe67236891813c410075ee352b949.jpg?ehk=%2Bvjg4d%2BS4GKnwBhwu%2B4kYFztcxUFmH2%2FcOz1b1ML%2F0o%3D&ehkOptimized=cmlUDE6EubLiB4hsdiLGimATzdOWKWcYb0wAzV3YIfQ%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "UFR Sciences Sociales, Pl. Recteur Henri le Moal, 35000 Rennes, France",
-            "tournament_addrState": "Bretagne",
-            "country_code": "FR",
-            "lat": 48.1179154,
-            "lng": -1.7028658
         },
         {
             "id": 798363,
