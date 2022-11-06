@@ -12339,28 +12339,6 @@
         "lat": 47.6583067,
         "lng": -122.3048412
     },
-    "802346": {
-        "id": 802346,
-        "name": "Melee Singles",
-        "slug": "tournament/finnish-melee-league-2022-5/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 12,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1667125800,
-        "phaseGroups": [
-            {
-                "id": 1904742,
-                "phase": {
-                    "id": 1238517,
-                    "name": "League Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "802450": {
         "id": 802450,
         "name": "Melee Side Event",
@@ -12394,7 +12372,16 @@
             "id": 1
         },
         "startAt": 1667602800,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 1894349,
+                "phase": {
+                    "id": 1230607,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "802689": {
         "id": 802689,
@@ -12407,7 +12394,16 @@
             "id": 1
         },
         "startAt": 1667602800,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 1894357,
+                "phase": {
+                    "id": 1230612,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "802740": {
         "id": 802740,
@@ -24129,7 +24125,7 @@
         "slug": "tournament/rentr-e-des-gamers-2022/event/dimanche-super-smash-bros-melee-tct",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 21,
+        "numEntrants": 20,
         "videogame": {
             "id": 1
         },
@@ -24139,43 +24135,95 @@
                 "id": 1903354,
                 "phase": {
                     "id": 1237460,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8142569
+                    },
+                    {
+                        "id": 8142573
+                    },
+                    {
+                        "id": 8142577
+                    },
+                    {
+                        "id": 8142581
+                    }
+                ]
+            },
+            {
+                "id": 1911290,
+                "phase": {
+                    "id": 1237460,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8142570
+                    },
+                    {
+                        "id": 8142574
+                    },
+                    {
+                        "id": 8142578
+                    },
+                    {
+                        "id": 8142582
+                    }
+                ]
+            },
+            {
+                "id": 1911291,
+                "phase": {
+                    "id": 1237460,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8142571
+                    },
+                    {
+                        "id": 8142575
+                    },
+                    {
+                        "id": 8142579
+                    },
+                    {
+                        "id": 8142583
+                    }
+                ]
+            },
+            {
+                "id": 1911292,
+                "phase": {
+                    "id": 1237460,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8142572
+                    },
+                    {
+                        "id": 8142576
+                    },
+                    {
+                        "id": 8142580
+                    },
+                    {
+                        "id": 8142584
+                    }
+                ]
+            },
+            {
+                "id": 1911289,
+                "phase": {
+                    "id": 1243406,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Rentr\u00e9e des Gamers 2022",
-        "tournament_id": 492760,
-        "city": "B\u00e8gles",
-        "url": "https://smash.gg/tournament/rentr-e-des-gamers-2022/event/dimanche-super-smash-bros-melee-tct",
-        "streams": [
-            {
-                "streamName": "asso_TCT"
-            }
-        ],
-        "timezone": "Europe/Paris",
-        "tournament_startAt": 1667631600,
-        "tournament_endAt": 1667772000,
-        "tournament_registrationClosesAt": 1667646000,
-        "images": [
-            {
-                "id": "5193682",
-                "url": "https://images.start.gg/images/tournament/492760/image-f2c3abdee4d45394b2ed3254a46701c3.jpg?ehk=ssvyY0xB4c9uXmkzTTTzLIDP400vrtPW798l40CMcig%3D&ehkOptimized=K%2FHwfmtIZTae8IsfMkYEGxJgZ05%2FLi8NpsLl77ayhlM%3D",
-                "type": "banner"
-            },
-            {
-                "id": "5193686",
-                "url": "https://images.start.gg/images/tournament/492760/image-e2b7a88c98dfa1030eda151e850aae57.png?ehk=YTyGQ2omP%2FjJ7Z7oOtpdENIaX%2Fx%2Fc3ztLClteWkBihc%3D&ehkOptimized=IW%2F100IMlyNeWwTKxk6rRh2pMr8pv9bOxsbyXbkgvXE%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Rue du 11 Novembre, 33130 B\u00e8gles, France",
-        "tournament_addrState": "Nouvelle-Aquitaine",
-        "country_code": "FR",
-        "lat": 44.8066694,
-        "lng": -0.5504325
+        ]
     },
     "809507": {
         "id": 809507,
