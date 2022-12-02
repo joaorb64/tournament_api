@@ -1468,7 +1468,23 @@
         "tournament_id": 471013,
         "city": "Cherry Hill",
         "url": "https://smash.gg/tournament/northeast-championship-22/event/super-smash-bros-melee",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "bifuteki"
+            },
+            {
+                "streamName": "funkyp"
+            },
+            {
+                "streamName": "mikeross"
+            },
+            {
+                "streamName": "shadowroyaltylive"
+            },
+            {
+                "streamName": "bifuteki2"
+            }
+        ],
         "timezone": "America/New_York",
         "tournament_startAt": 1670619600,
         "tournament_endAt": 1670821080,
@@ -8841,7 +8857,7 @@
         "slug": "tournament/unrivaled-xii-the-return/event/melee-singles-1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 14,
+        "numEntrants": 18,
         "videogame": {
             "id": 1
         },
@@ -9267,12 +9283,54 @@
         "slug": "tournament/le-hub-des-f-tes-holiday-bash-2022/event/melee-singles-15h-3-pm",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 19,
+        "numEntrants": 22,
         "videogame": {
             "id": 1
         },
         "startAt": 1670077800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1908026,
+                "phase": {
+                    "id": 1241076,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8128251
+                    },
+                    {
+                        "id": 8128252
+                    },
+                    {
+                        "id": 8128253
+                    },
+                    {
+                        "id": 8128254
+                    },
+                    {
+                        "id": 8128255
+                    },
+                    {
+                        "id": 8128256
+                    },
+                    {
+                        "id": 8128257
+                    },
+                    {
+                        "id": 8128258
+                    }
+                ]
+            },
+            {
+                "id": 1908027,
+                "phase": {
+                    "id": 1241077,
+                    "name": "Top 8 (Bo5)"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Le Hub des f\u00eates/Holiday Bash 2022",
         "tournament_id": 494309,
         "city": "Moncton",
@@ -18168,28 +18226,6 @@
                 "id": 1925731,
                 "phase": {
                     "id": 1254345,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "821208": {
-        "id": 821208,
-        "name": "Side-B Rebate Melee 1",
-        "slug": "tournament/side-b-rebate-1/event/side-b-rebate-melee-1",
-        "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1669410000,
-        "phaseGroups": [
-            {
-                "id": 1925747,
-                "phase": {
-                    "id": 1254361,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -28027,7 +28063,7 @@
         "slug": "tournament/the-frostfire-2022-cram-session/event/melee-singles",
         "isOnline": false,
         "state": "ACTIVE",
-        "numEntrants": 22,
+        "numEntrants": 23,
         "videogame": {
             "id": 1
         },
@@ -36016,8 +36052,8 @@
         "name": "Singles",
         "slug": "tournament/troppo-italiano-76/event/singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -36031,39 +36067,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Troppo Italiano #76",
-        "tournament_id": 502003,
-        "city": null,
-        "url": "https://smash.gg/tournament/troppo-italiano-76/event/singles",
-        "streams": [
-            {
-                "streamName": "MeleeIta"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1670011200,
-        "tournament_endAt": 1670018400,
-        "tournament_registrationClosesAt": 1670011140,
-        "images": [
-            {
-                "id": "5278554",
-                "url": "https://images.start.gg/images/tournament/502003/image-180e500ae5ea95699a036b1da80f50b0.jpg?ehk=3TvcbKxvk8ZjCof3K4NSDWDqL4iCTFHmW%2FBvsUlg%2F%2Bg%3D&ehkOptimized=BeAXaw2okk2Z3kZEV%2Fg%2FKGRuRGXj%2FusBzSmFT30sGUg%3D",
-                "type": "banner"
-            },
-            {
-                "id": "5278555",
-                "url": "https://images.start.gg/images/tournament/502003/image-36be5f4751b389724d18d52560246c86.jpg?ehk=WjEM4WhyHAKIycsVWgQCk0ghQLYekcPJXmziBHA0zrI%3D&ehkOptimized=qV%2FkkZD%2FDo%2BBCBmXq%2BI9oEcpcxmtQR2ATqOvTo20OFI%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "",
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "824673": {
         "id": 824673,
@@ -38475,7 +38479,7 @@
         "name": "Melee Singles",
         "slug": "tournament/springtown-slam-36/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 12,
         "videogame": {
             "id": 1
@@ -42203,10 +42207,10 @@
     "825760": {
         "id": 825760,
         "name": "Melee Singles",
-        "slug": "tournament/lipscombo-11-12-7-22/event/melee-singles",
+        "slug": "tournament/lipscombo-11-12-7-22-50-pot-bonus-for-melee/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 4,
         "videogame": {
             "id": 1
         },
@@ -42221,10 +42225,10 @@
                 "progressionsOut": null
             }
         ],
-        "tournament": "Lipscombo #11: 12/7/22",
+        "tournament": "Lipscombo #11: 12/7/22 $50 pot bonus for Melee, $25 for PM!",
         "tournament_id": 502630,
         "city": "Nashville",
-        "url": "https://smash.gg/tournament/lipscombo-11-12-7-22/event/melee-singles",
+        "url": "https://smash.gg/tournament/lipscombo-11-12-7-22-50-pot-bonus-for-melee/event/melee-singles",
         "streams": null,
         "timezone": "America/Chicago",
         "tournament_startAt": 1670461200,
@@ -43597,7 +43601,7 @@
         "slug": "tournament/cerebrawl-5-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -43910,5 +43914,113 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "825979": {
+        "id": 825979,
+        "name": "Melee Singles",
+        "slug": "tournament/take-the-l-13/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1670457600,
+        "phaseGroups": [
+            {
+                "id": 1934241,
+                "phase": {
+                    "id": 1260539,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Take The L #13",
+        "tournament_id": 502759,
+        "city": "Lynnwood",
+        "url": "https://smash.gg/tournament/take-the-l-13/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "takethelsmash"
+            }
+        ],
+        "timezone": "America/Los_Angeles",
+        "tournament_startAt": 1670457600,
+        "tournament_endAt": 1670482800,
+        "tournament_registrationClosesAt": 1670468400,
+        "images": [
+            {
+                "id": "5285135",
+                "url": "https://images.start.gg/images/tournament/502759/image-68a818042bd2f249eaa6ce60d6639579.png?ehk=6fh7OBhB6LWtGxp3lJ5WIMvbI43dT1Fmd7FFwyCpzS4%3D&ehkOptimized=70Jz72jwLa72SoXd3ApySKf5VcVJtrWi1P%2Ft1btUlbA%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5285145",
+                "url": "https://images.start.gg/images/tournament/502759/image-9f4c430ca16601eab5f17aa7e02078a6.jpg?ehk=yBCUZKPd6Z%2BlBOTF4ZcDkYi3Ax%2BT4u9Tg3tNMDKnAtM%3D&ehkOptimized=eX7XItdBR9azuwawPlU%2BoZLUpOX%2Fu%2FARU6PGWpMbsY8%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "5116 196th St SW Suite 203, Lynnwood, WA 98036, USA",
+        "tournament_addrState": "WA",
+        "country_code": "US",
+        "lat": 47.820714,
+        "lng": -122.3025619
+    },
+    "825956": {
+        "id": 825956,
+        "name": "Melee Singles (64 Cap)",
+        "slug": "tournament/melee-xanadu-484/event/melee-singles-64-cap",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1670443200,
+        "phaseGroups": [
+            {
+                "id": 1934209,
+                "phase": {
+                    "id": 1260510,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Melee @ Xanadu 484",
+        "tournament_id": 502753,
+        "city": "Laurel",
+        "url": "https://smash.gg/tournament/melee-xanadu-484/event/melee-singles-64-cap",
+        "streams": [
+            {
+                "streamName": "vgbootcamp2"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1670443200,
+        "tournament_endAt": 1670475300,
+        "tournament_registrationClosesAt": 1670464800,
+        "images": [
+            {
+                "id": "5285084",
+                "url": "https://images.start.gg/images/tournament/502753/image-b2e2ea71a80672aedefa9dbf873c5eda.png?ehk=Gz5QfGk%2FoAleQz53ICHBYuXAdEtLR529i%2FzxuiK33qU%3D&ehkOptimized=NRXwJvzdH%2ByBSc%2FUYmuLdou1kJiIkYmbKAziqDJEuqY%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5285085",
+                "url": "https://images.start.gg/images/tournament/502753/image-c07c0fc36167f4388b42ed1cad3172bb.png?ehk=I3WZIoxfJXNZ2ln2PAc4tQJNRoElh3i4CUVhrEkzzyQ%3D&ehkOptimized=rBhxXL6fxcp%2Be2%2FJobVfOpXsvaQbkZ%2F%2B3zelYbCH02o%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Xanadu Games At Laurel Park (Grand Stand Entrance)",
+        "tournament_venueAddress": "198 Laurel Race Track Road, Laurel, MD 20725, USA",
+        "tournament_addrState": "MD",
+        "country_code": "US",
+        "lat": 39.103527,
+        "lng": -76.8312829
     }
 }
