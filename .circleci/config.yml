@@ -1,5 +1,5 @@
 version: 2.1
-orbs: 
+orbs:
   git-shallow-clone: guitarrapc/git-shallow-clone@2.4.0
 jobs:
   update_data:
@@ -25,7 +25,7 @@ jobs:
             python append_smasgg_cache_to_players.py
             python update_json_files.py
             python match_states.py
-            python statistics.py
+            python calc_statistics.py
             python skill.py
             #python docs_after.py
             #python players_to_link.py
@@ -39,7 +39,7 @@ jobs:
             git add .
             git commit -am "[skip ci] Full update ${DATE_TODAY}" || true
             git push origin multigames || true
-  
+
   update_smashgg:
     docker:
       - image: circleci/python:latest
@@ -68,7 +68,7 @@ jobs:
             git add .
             git commit -am "[skip ci] Full update ${DATE_TODAY}" || true
             git push origin multigames || true
-  
+
   get_next_tournaments:
     docker:
       - image: circleci/python:latest
@@ -97,7 +97,7 @@ jobs:
             git add .
             git commit -am "[skip ci] Update next tournaments ${DATE_TODAY}" || true
             git push origin multigames || true
-  
+
   get_top_clips:
     docker:
       - image: circleci/python:latest
@@ -126,7 +126,7 @@ jobs:
             git add .
             git commit -am "[skip ci] Update twitch clips ${DATE_TODAY}" || true
             git push origin multigames || true
-  
+
   week_tournament_results:
     docker:
       - image: circleci/python:latest
@@ -167,7 +167,7 @@ workflows:
                 - multigames
     jobs:
       - update_data
-    
+
   update_smashgg:
     triggers:
       - schedule:
@@ -178,7 +178,7 @@ workflows:
                 - multigames
     jobs:
       - update_smashgg
-  
+
   get_next_tournaments:
     triggers:
       - schedule:
@@ -189,7 +189,7 @@ workflows:
                 - multigames
     jobs:
       - get_next_tournaments
-    
+
   get_top_clips:
     triggers:
       - schedule:
