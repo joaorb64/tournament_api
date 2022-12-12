@@ -35075,12 +35075,21 @@
         "slug": "tournament/test-doubles-1/event/melee-doubles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 1
         },
         "startAt": 1670842800,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 1942030,
+                "phase": {
+                    "id": 1266120,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "796582": {
         "id": 796582,
@@ -35152,5 +35161,55 @@
             "UA",
             "UZ"
         ]
+    },
+    "830265": {
+        "id": 830265,
+        "name": "Melee Bracket",
+        "slug": "tournament/mgc-monday-night-melee-18/event/melee-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1670891400,
+        "phaseGroups": [
+            {
+                "id": 1942050,
+                "phase": {
+                    "id": 1266137,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "MGC: Monday Night Melee #18",
+        "tournament_id": 505195,
+        "city": "Montr\u00e9al",
+        "url": "https://smash.gg/tournament/mgc-monday-night-melee-18/event/melee-bracket",
+        "streams": null,
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1670891400,
+        "tournament_endAt": 1670907000,
+        "tournament_registrationClosesAt": 1670891400,
+        "images": [
+            {
+                "id": "5306556",
+                "url": "https://images.start.gg/images/tournament/505195/image-06c2b18a6a8bf65d1fba1c0adf63df76.png?ehk=rdSJr832UISSy2vEBRxi8gUFr5y%2F106oIR%2B7KbbS%2FFA%3D&ehkOptimized=0OYfKUxK%2B68n2kTYTyPqYSW%2F%2F0K%2F9xNYQmWgFcKEEM4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5306557",
+                "url": "https://images.start.gg/images/tournament/505195/image-14587e901307ae4d2b7e02886ce5b234.png?ehk=z5VLTn4U7s08Rx7krrSEYmUZ1PThRXYHjkerLqur19I%3D&ehkOptimized=PQzPyE8HMU1EffKgwKDvjlxIJv1%2BZI6yYhojEg5SSP8%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "7080 Rue Alexandra, Montr\u00e9al, QC H2S 3J5, Canada",
+        "tournament_addrState": "QC",
+        "country_code": "CA",
+        "lat": 45.5315103,
+        "lng": -73.6189203
     }
 }
