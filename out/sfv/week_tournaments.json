@@ -3699,7 +3699,7 @@
         "name": "Street Fighter V: Champion Edition",
         "slug": "tournament/saltmine-league-world-warrior-nordic-baltic-final/event/street-fighter-v-champion-edition",
         "isOnline": true,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 8,
         "videogame": {
             "id": 33990
@@ -3719,7 +3719,11 @@
         "tournament_id": 456271,
         "city": null,
         "url": "https://smash.gg/tournament/saltmine-league-world-warrior-nordic-baltic-final/event/street-fighter-v-champion-edition",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "SaltmineLeague"
+            }
+        ],
         "timezone": null,
         "tournament_startAt": 1671213600,
         "tournament_endAt": 1671228000,
@@ -5017,5 +5021,62 @@
         "country_code": "CA",
         "lat": 49.1830794,
         "lng": -123.1374265
+    },
+    "830774": {
+        "id": 830774,
+        "name": "SFV!",
+        "slug": "tournament/kaiju-tournaments-presents-the-lockdown-1/event/sfv",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1671400800,
+        "phaseGroups": [
+            {
+                "id": 1942947,
+                "phase": {
+                    "id": 1266799,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Kaiju Tournaments Presents: THE LOCKDOWN #1",
+        "tournament_id": 504986,
+        "city": "Stroudsburg",
+        "url": "https://smash.gg/tournament/kaiju-tournaments-presents-the-lockdown-1/event/sfv",
+        "streams": [
+            {
+                "streamName": "GameQLounge"
+            },
+            {
+                "streamName": "KaijuVGC"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1671400800,
+        "tournament_endAt": 1671420600,
+        "tournament_registrationClosesAt": 1671422340,
+        "images": [
+            {
+                "id": "5304808",
+                "url": "https://images.start.gg/images/tournament/504986/image-2433f544dba41a0657d370954083c696.png?ehk=%2FjpPlxtQGmoVCDqaUMcCc%2Fb7pJEeRrt%2F79ffxQNuLCA%3D&ehkOptimized=rpHmECYT9oAz7hPV2vOM8AYygABlFfy1K%2FzYNu9GVqs%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5304809",
+                "url": "https://images.start.gg/images/tournament/504986/image-4f7781734eef275d3e2670ab8872f84a.png?ehk=holXHWiTOv1TbVSUDdRu1vDHDL6A9VZJ12HbNtAvHCc%3D&ehkOptimized=EDK05SWdPw7BTM%2FADRKvOOnpMg1xvUhJ3JS%2B9p6V1PI%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "564 Main St, Stroudsburg, PA 18360, USA",
+        "tournament_addrState": "PA",
+        "country_code": "US",
+        "lat": 40.9863591,
+        "lng": -75.1926123
     }
 }
