@@ -4728,7 +4728,7 @@
         "name": "FML2022 Top 8 Final Bracket",
         "slug": "tournament/finnish-melee-league-2022-finals/event/fml2022-top-8-final-bracket",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 8,
         "videogame": {
             "id": 1
@@ -9781,50 +9781,6 @@
         "country_code": null,
         "lat": null,
         "lng": null
-    },
-    "820692": {
-        "id": 820692,
-        "name": "Melee Doubles",
-        "slug": "tournament/smashkatoon-65-egg-nog-wars-ft-qwexe/event/melee-doubles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1670774400,
-        "phaseGroups": [
-            {
-                "id": 1925029,
-                "phase": {
-                    "id": 1253758,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "820691": {
-        "id": 820691,
-        "name": "Melee Singles",
-        "slug": "tournament/smashkatoon-65-egg-nog-wars-ft-qwexe/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1670774400,
-        "phaseGroups": [
-            {
-                "id": 1925028,
-                "phase": {
-                    "id": 1253757,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "823104": {
         "id": 823104,
@@ -18653,7 +18609,14 @@
                     "id": 1253977,
                     "name": "melee pools"
                 },
-                "progressionsOut": null
+                "progressionsOut": [
+                    {
+                        "id": 8295791
+                    },
+                    {
+                        "id": 8295793
+                    }
+                ]
             },
             {
                 "id": 1946194,
@@ -18661,7 +18624,14 @@
                     "id": 1253977,
                     "name": "melee pools"
                 },
-                "progressionsOut": null
+                "progressionsOut": [
+                    {
+                        "id": 8295792
+                    },
+                    {
+                        "id": 8295794
+                    }
+                ]
             },
             {
                 "id": 1946195,
@@ -30061,5 +30031,62 @@
         "country_code": "US",
         "lat": 39.683052,
         "lng": -105.0789401
+    },
+    "832603": {
+        "id": 832603,
+        "name": "Melee singles",
+        "slug": "tournament/anc-smashweekly-174-secret-santa-edition/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1671548400,
+        "phaseGroups": [
+            {
+                "id": 1946270,
+                "phase": {
+                    "id": 1269163,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "ANC Smashweekly #174 (Secret Santa edition!)",
+        "tournament_id": 506540,
+        "city": "Turku",
+        "url": "https://smash.gg/tournament/anc-smashweekly-174-secret-santa-edition/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "smashfinland2"
+            },
+            {
+                "streamName": "academicnintendoclub"
+            }
+        ],
+        "timezone": "Europe/Helsinki",
+        "tournament_startAt": 1671548400,
+        "tournament_endAt": 1671566400,
+        "tournament_registrationClosesAt": 1671549600,
+        "images": [
+            {
+                "id": "5319650",
+                "url": "https://images.start.gg/images/tournament/506540/image-416ee49a976180e8fe80d035a4267119.jpg?ehk=UPy2WSrGaa1CryeF3OiXB1bC9aAuC%2FrDCh7hVkrB4P0%3D&ehkOptimized=juCCtaG5QkxT86BtLL2EsMaEXl3gnfXDIxfqVlCnzZs%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5319651",
+                "url": "https://images.start.gg/images/tournament/506540/image-17c3edec1ff0a7cd1341554e3547b41d.jpg?ehk=xUtRNXKM3zRBu0mikbD2szm%2F5t81PFhwHWhrfJ%2FYilY%3D&ehkOptimized=HwZlmo%2FvLrLpN6V9WAGT6GuhAyw1D19eVxCQGm3AnKk%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Kampuskappeli",
+        "tournament_venueAddress": "Rehtorinpellonkatu 4, 20500 Turku, Suomi",
+        "tournament_addrState": null,
+        "country_code": "FI",
+        "lat": 60.45492589999999,
+        "lng": 22.2885745
     }
 }
