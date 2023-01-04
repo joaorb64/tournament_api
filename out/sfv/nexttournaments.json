@@ -1,5 +1,5 @@
 {
-    "updateTime": 1672870028,
+    "updateTime": 1672873625,
     "events": [
         {
             "id": 830375,
@@ -37,14 +37,14 @@
             "tournament_registrationClosesAt": 1674928800,
             "images": [
                 {
-                    "id": "5347136",
-                    "url": "https://images.start.gg/images/tournament/505267/image-edb6a52a653fad30becc7d7e23028558.png?ehk=gf3AYG2d7gtczoNq5Yu7%2BvnLjMcF4uNb5%2FYFEQNtar8%3D&ehkOptimized=dB%2BK53EMqvb3411Yr9Vua0Akc6KWxAk1dIRWJXf7gYo%3D",
-                    "type": "banner"
-                },
-                {
                     "id": "5349218",
                     "url": "https://images.start.gg/images/tournament/505267/image-dbad5b7a06cca7173721de659103392f.png?ehk=LIOJgAmcd3NTiAjKB%2F%2B6OJFTNA%2BhgbxBuce%2BFK%2F3vno%3D&ehkOptimized=jl3yBHb1uDoxutOO9xx65hjqhpwfpbUag%2BJ1D2OKMHg%3D",
                     "type": "profile"
+                },
+                {
+                    "id": "5349432",
+                    "url": "https://images.start.gg/images/tournament/505267/image-b9015f5feb74aa032d871b433dc7f4ca.png?ehk=DFMfYUaQZr%2Bl0WRIe%2B%2B0KoGoOiQpUrHAGKjwrJa%2BjjM%3D&ehkOptimized=%2BnZki8gwTLn3w9JUNgvirHdmWS8eAst%2BbRjJ7rPuk2o%3D",
+                    "type": "banner"
                 }
             ],
             "tournament_multievent": false,
@@ -54,51 +54,6 @@
             "country_code": "US",
             "lat": 41.8773691,
             "lng": -71.3856382
-        },
-        {
-            "id": 829941,
-            "name": "Street Fighter V Singles",
-            "slug": "tournament/nca-vs-zonebreakers-rivals-round-1/event/street-fighter-v-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 33990
-            },
-            "startAt": 1674331200,
-            "phaseGroups": [
-                {
-                    "id": 1941504,
-                    "phase": {
-                        "id": 1265738,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "NCA vs. Zonebreakers : Rivals Round 1",
-            "tournament_id": 505011,
-            "city": "Opelika",
-            "url": "https://smash.gg/tournament/nca-vs-zonebreakers-rivals-round-1/event/street-fighter-v-singles",
-            "streams": null,
-            "timezone": "America/Chicago",
-            "tournament_startAt": 1674320400,
-            "tournament_endAt": 1674352800,
-            "tournament_registrationClosesAt": 1674338400,
-            "images": [
-                {
-                    "id": "5349100",
-                    "url": "https://images.start.gg/images/tournament/505011/image-6d2b12b604f4728cf0748bdecff1570f.png?ehk=2YIkEZThpz6nAWNnLgFaiJp8fGKBfezuv4xATr3BAdI%3D&ehkOptimized=sgCVWMxWocK5U1hY0nTWg%2BtD9z13RNs28CTc3Cai47Y%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "3151 Capps Way, Opelika, AL 36804, USA",
-            "tournament_addrState": "AL",
-            "country_code": "US",
-            "lat": 32.612577,
-            "lng": -85.3997854
         },
         {
             "id": 838617,
@@ -299,6 +254,61 @@
             "lng": -117.8604472
         },
         {
+            "id": 836539,
+            "name": "Street Fighter V: Champion Edition",
+            "slug": "tournament/87-br-kumite/event/street-fighter-v-champion-edition",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 41,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1672873200,
+            "phaseGroups": [
+                {
+                    "id": 1953191,
+                    "phase": {
+                        "id": 1274226,
+                        "name": "POOLS"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8334228
+                        },
+                        {
+                            "id": 8334229
+                        },
+                        {
+                            "id": 8334230
+                        },
+                        {
+                            "id": 8334231
+                        },
+                        {
+                            "id": 8334232
+                        },
+                        {
+                            "id": 8334233
+                        },
+                        {
+                            "id": 8334234
+                        },
+                        {
+                            "id": 8334235
+                        }
+                    ]
+                },
+                {
+                    "id": 1953192,
+                    "phase": {
+                        "id": 1274227,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 830905,
             "name": "Street Fighter V: 2v2",
             "slug": "tournament/wnf2022-online-edition-episode-48/event/street-fighter-v-2v2",
@@ -407,6 +417,51 @@
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 829941,
+            "name": "Street Fighter V Singles",
+            "slug": "tournament/nca-vs-zonebreakers-rivals-round-1/event/street-fighter-v-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 33990
+            },
+            "startAt": 1674331200,
+            "phaseGroups": [
+                {
+                    "id": 1941504,
+                    "phase": {
+                        "id": 1265738,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "NCA vs. Zonebreakers : Rivals Round 1",
+            "tournament_id": 505011,
+            "city": "Opelika",
+            "url": "https://smash.gg/tournament/nca-vs-zonebreakers-rivals-round-1/event/street-fighter-v-singles",
+            "streams": null,
+            "timezone": "America/Chicago",
+            "tournament_startAt": 1674320400,
+            "tournament_endAt": 1674352800,
+            "tournament_registrationClosesAt": 1674338400,
+            "images": [
+                {
+                    "id": "5349100",
+                    "url": "https://images.start.gg/images/tournament/505011/image-6d2b12b604f4728cf0748bdecff1570f.png?ehk=2YIkEZThpz6nAWNnLgFaiJp8fGKBfezuv4xATr3BAdI%3D&ehkOptimized=sgCVWMxWocK5U1hY0nTWg%2BtD9z13RNs28CTc3Cai47Y%3D",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "3151 Capps Way, Opelika, AL 36804, USA",
+            "tournament_addrState": "AL",
+            "country_code": "US",
+            "lat": 32.612577,
+            "lng": -85.3997854
         },
         {
             "id": 838560,
