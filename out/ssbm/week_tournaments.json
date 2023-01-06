@@ -10892,112 +10892,6 @@
         "lat": 39.103527,
         "lng": -76.8312829
     },
-    "833109": {
-        "id": 833109,
-        "name": "Main Event",
-        "slug": "tournament/redemption-rumble/event/main-event",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 16,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1672423200,
-        "phaseGroups": [
-            {
-                "id": 1947010,
-                "phase": {
-                    "id": 1269779,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 8310977
-                    },
-                    {
-                        "id": 8310981
-                    },
-                    {
-                        "id": 8310985
-                    },
-                    {
-                        "id": 8310989
-                    }
-                ]
-            },
-            {
-                "id": 1947011,
-                "phase": {
-                    "id": 1269779,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 8310978
-                    },
-                    {
-                        "id": 8310982
-                    },
-                    {
-                        "id": 8310986
-                    },
-                    {
-                        "id": 8310990
-                    }
-                ]
-            },
-            {
-                "id": 1947012,
-                "phase": {
-                    "id": 1269779,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 8310979
-                    },
-                    {
-                        "id": 8310983
-                    },
-                    {
-                        "id": 8310987
-                    },
-                    {
-                        "id": 8310991
-                    }
-                ]
-            },
-            {
-                "id": 1947013,
-                "phase": {
-                    "id": 1269779,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 8310980
-                    },
-                    {
-                        "id": 8310984
-                    },
-                    {
-                        "id": 8310988
-                    },
-                    {
-                        "id": 8310992
-                    }
-                ]
-            },
-            {
-                "id": 1947014,
-                "phase": {
-                    "id": 1269780,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "832684": {
         "id": 832684,
         "name": "Melee Singles",
@@ -26353,7 +26247,7 @@
         "name": "Merle Melee",
         "slug": "tournament/the-adventure-pwn/event/merle-melee",
         "isOnline": true,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 15,
         "videogame": {
             "id": 1
@@ -26368,10 +26262,16 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 8302438
+                        "id": 8339642
                     },
                     {
-                        "id": 8302439
+                        "id": 8339643
+                    },
+                    {
+                        "id": 8339644
+                    },
+                    {
+                        "id": 8339645
                     }
                 ]
             },
@@ -26418,44 +26318,21 @@
         "slug": "tournament/rogasmash-240/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 10,
         "videogame": {
             "id": 1
         },
         "startAt": 1673024400,
-        "phaseGroups": [],
-        "tournament": "RogaSmash #240",
-        "tournament_id": 509794,
-        "city": "Stavanger",
-        "url": "https://smash.gg/tournament/rogasmash-240/event/melee-singles",
-        "streams": [
+        "phaseGroups": [
             {
-                "streamName": "smashrogaland"
+                "id": 1956494,
+                "phase": {
+                    "id": 1276653,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "timezone": "Europe/Oslo",
-        "tournament_startAt": 1673024400,
-        "tournament_endAt": 1673042400,
-        "tournament_registrationClosesAt": 1673040600,
-        "images": [
-            {
-                "id": "5348406",
-                "url": "https://images.start.gg/images/tournament/509794/image-0ae6d597b55bec71d589ef32f821dc5e.png?ehk=hxDT9m%2BqkcOkS5ph6%2FiT8WeQAkPsLDFq0XeR0WKh8uQ%3D&ehkOptimized=UoEmU1q52uEKTC04ouZl9yeO4PS5%2Fn1ttlIGVw8pIh8%3D",
-                "type": "profile"
-            },
-            {
-                "id": "5348407",
-                "url": "https://images.start.gg/images/tournament/509794/image-ec49ff5b1712fee860d793aaa14515b1.png?ehk=UMh4gs2dM4a5vk4BnNKuXwo%2Bo1mdJTxSePmsPWSePqs%3D&ehkOptimized=dzFRS%2FONkoFu%2FBvslktJv3%2BEx9Xlgg10pDQT01vTHCk%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Nytorget 1, 4012 Stavanger, Norway",
-        "tournament_addrState": "Rogaland",
-        "country_code": "NO",
-        "lat": 58.96996530000001,
-        "lng": 5.7373864
+        ]
     },
     "835037": {
         "id": 835037,
@@ -32359,5 +32236,27 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "839426": {
+        "id": 839426,
+        "name": "Extra Life Contest : 1V1 Super Smash Bros Melee",
+        "slug": "tournament/extralife-contest-melee-31/event/extra-life-contest-1v1-super-smash-bros-melee",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1673026200,
+        "phaseGroups": [
+            {
+                "id": 1957970,
+                "phase": {
+                    "id": 1277840,
+                    "name": "Bracketto"
+                },
+                "progressionsOut": null
+            }
+        ]
     }
 }
