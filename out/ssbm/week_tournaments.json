@@ -1380,7 +1380,7 @@
         "name": "Melee Singles",
         "slug": "tournament/the-action/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "CREATED",
         "numEntrants": 50,
         "videogame": {
             "id": 1
@@ -1609,12 +1609,21 @@
         "slug": "tournament/the-action/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 12,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
         "startAt": 1674198000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1903775,
+                "phase": {
+                    "id": 1237802,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The Action",
         "tournament_id": 446966,
         "city": "Canberra",
