@@ -39663,12 +39663,21 @@
         "slug": "tournament/the-scraphouse-colosseum/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 1
         },
         "startAt": 1676149200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1985218,
+                "phase": {
+                    "id": 1298039,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The ScrapHouse Colosseum",
         "tournament_id": 519105,
         "city": "Austin",
@@ -39677,7 +39686,7 @@
         "timezone": "America/Chicago",
         "tournament_startAt": 1676145600,
         "tournament_endAt": 1676181540,
-        "tournament_registrationClosesAt": 1676181540,
+        "tournament_registrationClosesAt": 1676181600,
         "images": [
             {
                 "id": "5444934",
@@ -39699,12 +39708,21 @@
         "slug": "tournament/the-scraphouse-colosseum/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 1
         },
         "startAt": 1676154600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 1985217,
+                "phase": {
+                    "id": 1298038,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The ScrapHouse Colosseum",
         "tournament_id": 519105,
         "city": "Austin",
@@ -39713,7 +39731,7 @@
         "timezone": "America/Chicago",
         "tournament_startAt": 1676145600,
         "tournament_endAt": 1676181540,
-        "tournament_registrationClosesAt": 1676181540,
+        "tournament_registrationClosesAt": 1676181600,
         "images": [
             {
                 "id": "5444934",
@@ -44789,5 +44807,59 @@
         "country_code": "US",
         "lat": 41.1257521,
         "lng": -85.15044809999999
+    },
+    "856126": {
+        "id": 856126,
+        "name": "Melee Singles",
+        "slug": "tournament/jeden-donnerstag-reloaded-143/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1675965600,
+        "phaseGroups": [
+            {
+                "id": 1986241,
+                "phase": {
+                    "id": 1298884,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Jeden Donnerstag Reloaded #143",
+        "tournament_id": 519460,
+        "city": "Berlin",
+        "url": "https://smash.gg/tournament/jeden-donnerstag-reloaded-143/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "berlinsmash"
+            }
+        ],
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1675965600,
+        "tournament_endAt": 1675982700,
+        "tournament_registrationClosesAt": 1675967400,
+        "images": [
+            {
+                "id": "5445885",
+                "url": "https://images.start.gg/images/tournament/519460/image-b5781f80c324cffdb9fa451845a6234b.png?ehk=c%2B8pSWN7jUyvde2v4lSIS3%2B7m2DvS2zui7VmnQ15fio%3D&ehkOptimized=wJyU36vnZpgPwadY6w%2F9rpSAjBU93ok0E0gZZ1k0yWI%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5445886",
+                "url": "https://images.start.gg/images/tournament/519460/image-f42126fef61728873ff088577a88569a.png?ehk=1IHWaRzA9PglqyBEF%2FBrufVa6%2FgP4bD%2FmThUzrqC0QM%3D&ehkOptimized=fUW%2BHA3G11A8w%2FNmDveSB6dKHFsuSTCfPJbR5hY8lrA%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Divan e.V. Interkulturelles Nachbarschaftszentrum",
+        "tournament_venueAddress": "Nehringstra\u00dfe 26, 14059 Berlin, Deutschland",
+        "tournament_addrState": "Berlin",
+        "country_code": "DE",
+        "lat": 52.5158759,
+        "lng": 13.2943035
     }
 }
