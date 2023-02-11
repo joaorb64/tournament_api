@@ -1,5 +1,5 @@
 {
-    "updateTime": 1676117255,
+    "updateTime": 1676120864,
     "events": [
         {
             "id": 852758,
@@ -209,7 +209,7 @@
             "slug": "tournament/weekly-weekend-melee-25/event/melee-singles",
             "isOnline": true,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 3,
             "videogame": {
                 "id": 1
             },
@@ -235,7 +235,7 @@
             ],
             "timezone": null,
             "tournament_startAt": 1676133000,
-            "tournament_endAt": 1676145900,
+            "tournament_endAt": 1676140200,
             "tournament_registrationClosesAt": 1676225700,
             "images": [
                 {
@@ -295,6 +295,28 @@
                 "HU",
                 "CZ",
                 "DK"
+            ]
+        },
+        {
+            "id": 856341,
+            "name": "Melee Singles Side Bracket",
+            "slug": "tournament/mashing-mayhem-48/event/melee-singles-side-bracket",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 6,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1676116800,
+            "phaseGroups": [
+                {
+                    "id": 1986540,
+                    "phase": {
+                        "id": 1299140,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
             ]
         },
         {
@@ -474,6 +496,146 @@
             ]
         },
         {
+            "id": 844942,
+            "name": "Melee Doubles",
+            "slug": "tournament/byens-pne-turnering-i-smash-8/event/melee-doubles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 3,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1676116800,
+            "phaseGroups": [
+                {
+                    "id": 1967644,
+                    "phase": {
+                        "id": 1284849,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 844936,
+            "name": "Melee Singles",
+            "slug": "tournament/byens-pne-turnering-i-smash-8/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 14,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1676127600,
+            "phaseGroups": [
+                {
+                    "id": 1967632,
+                    "phase": {
+                        "id": 1284841,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8382970
+                        },
+                        {
+                            "id": 8382972
+                        },
+                        {
+                            "id": 8382974
+                        },
+                        {
+                            "id": 8382976
+                        }
+                    ]
+                },
+                {
+                    "id": 1967633,
+                    "phase": {
+                        "id": 1284841,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 8382971
+                        },
+                        {
+                            "id": 8382973
+                        },
+                        {
+                            "id": 8382975
+                        },
+                        {
+                            "id": 8382977
+                        }
+                    ]
+                },
+                {
+                    "id": 1967634,
+                    "phase": {
+                        "id": 1284842,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Byens \u00e5pne Turnering i Smash #8",
+            "tournament_id": 513358,
+            "city": "Troms\u00f8",
+            "url": "https://smash.gg/tournament/byens-pne-turnering-i-smash-8/event/melee-singles",
+            "streams": [
+                {
+                    "streamName": "spiritofsmash"
+                }
+            ],
+            "timezone": "Europe/Oslo",
+            "tournament_startAt": 1676044800,
+            "tournament_endAt": 1676235600,
+            "tournament_registrationClosesAt": 1676210400,
+            "images": [
+                {
+                    "id": "5385701",
+                    "url": "https://images.start.gg/images/tournament/513358/image-c99e5ef89cf8e416ffce1711b0afc008.jpg?ehk=QRMUsYDQkoGHcTrzzlba8hBXqSENXn7GVEQj%2B40CEGs%3D&ehkOptimized=rL968D4N72KbiSDZYqVKYaf5n%2FRoOAKBuuOVYjScm%2Fg%3D",
+                    "type": "banner"
+                },
+                {
+                    "id": "5385702",
+                    "url": "https://images.start.gg/images/tournament/513358/image-31cac01e94e73dd692c486e0235904d0.png?ehk=Ge1Eljd7Zh4Xi3GA0Lfcih%2BbtNHSdeLF9%2Fd%2BkXs6dJg%3D&ehkOptimized=qlmQ5Svgb4%2FUwdq8%2FyZIOqwjJq5KKAe975FWaaDPJy4%3D",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Parkgata 27, 9008 Troms\u00f8, Norge",
+            "tournament_addrState": "Troms og Finnmark",
+            "country_code": "NO",
+            "lat": 69.6513143,
+            "lng": 18.9531334
+        },
+        {
+            "id": 846565,
+            "name": "Melee Singles",
+            "slug": "tournament/asl-s-weekly-weekend-melee-22/event/melee-singles",
+            "isOnline": true,
+            "state": "COMPLETED",
+            "numEntrants": 8,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1674235800,
+            "phaseGroups": [
+                {
+                    "id": 1970394,
+                    "phase": {
+                        "id": 1286890,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 851396,
             "name": "DIMANCHE Super Smash Bros Melee (TCT)",
             "slug": "tournament/hiver-des-gamers-2023/event/dimanche-super-smash-bros-melee-tct",
@@ -610,124 +772,6 @@
             "country_code": "FR",
             "lat": 44.8066694,
             "lng": -0.5504325
-        },
-        {
-            "id": 844942,
-            "name": "Melee Doubles",
-            "slug": "tournament/byens-pne-turnering-i-smash-8/event/melee-doubles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 2,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1676116800,
-            "phaseGroups": [
-                {
-                    "id": 1967644,
-                    "phase": {
-                        "id": 1284849,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 844936,
-            "name": "Melee Singles",
-            "slug": "tournament/byens-pne-turnering-i-smash-8/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 14,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1676127600,
-            "phaseGroups": [
-                {
-                    "id": 1967632,
-                    "phase": {
-                        "id": 1284841,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 8382970
-                        },
-                        {
-                            "id": 8382972
-                        },
-                        {
-                            "id": 8382974
-                        },
-                        {
-                            "id": 8382976
-                        }
-                    ]
-                },
-                {
-                    "id": 1967633,
-                    "phase": {
-                        "id": 1284841,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 8382971
-                        },
-                        {
-                            "id": 8382973
-                        },
-                        {
-                            "id": 8382975
-                        },
-                        {
-                            "id": 8382977
-                        }
-                    ]
-                },
-                {
-                    "id": 1967634,
-                    "phase": {
-                        "id": 1284842,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Byens \u00e5pne Turnering i Smash #8",
-            "tournament_id": 513358,
-            "city": "Troms\u00f8",
-            "url": "https://smash.gg/tournament/byens-pne-turnering-i-smash-8/event/melee-singles",
-            "streams": [
-                {
-                    "streamName": "spiritofsmash"
-                }
-            ],
-            "timezone": "Europe/Oslo",
-            "tournament_startAt": 1676044800,
-            "tournament_endAt": 1676235600,
-            "tournament_registrationClosesAt": 1676210400,
-            "images": [
-                {
-                    "id": "5385701",
-                    "url": "https://images.start.gg/images/tournament/513358/image-c99e5ef89cf8e416ffce1711b0afc008.jpg?ehk=QRMUsYDQkoGHcTrzzlba8hBXqSENXn7GVEQj%2B40CEGs%3D&ehkOptimized=rL968D4N72KbiSDZYqVKYaf5n%2FRoOAKBuuOVYjScm%2Fg%3D",
-                    "type": "banner"
-                },
-                {
-                    "id": "5385702",
-                    "url": "https://images.start.gg/images/tournament/513358/image-31cac01e94e73dd692c486e0235904d0.png?ehk=Ge1Eljd7Zh4Xi3GA0Lfcih%2BbtNHSdeLF9%2Fd%2BkXs6dJg%3D&ehkOptimized=qlmQ5Svgb4%2FUwdq8%2FyZIOqwjJq5KKAe975FWaaDPJy4%3D",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Parkgata 27, 9008 Troms\u00f8, Norge",
-            "tournament_addrState": "Troms og Finnmark",
-            "country_code": "NO",
-            "lat": 69.6513143,
-            "lng": 18.9531334
         },
         {
             "id": 854009,
@@ -17345,60 +17389,6 @@
             "country_code": "US",
             "lat": 41.1054751,
             "lng": -104.7768894
-        },
-        {
-            "id": 856341,
-            "name": "Melee Singles Side Bracket",
-            "slug": "tournament/mashing-mayhem-48/event/melee-singles-side-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1676116800,
-            "phaseGroups": [
-                {
-                    "id": 1986540,
-                    "phase": {
-                        "id": 1299140,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Mashing Mayhem #48",
-            "tournament_id": 519570,
-            "city": "Bexhill-on-Sea",
-            "url": "https://smash.gg/tournament/mashing-mayhem-48/event/melee-singles-side-bracket",
-            "streams": [
-                {
-                    "streamName": "teammayhemssb"
-                }
-            ],
-            "timezone": "Europe/London",
-            "tournament_startAt": 1676113200,
-            "tournament_endAt": 1676134800,
-            "tournament_registrationClosesAt": 1676142000,
-            "images": [
-                {
-                    "id": "5446809",
-                    "url": "https://images.start.gg/images/tournament/519570/image-1d4ae76eee2ea2d805b057cae0f03a3b.png?ehk=Awfl5jH7Y9iANIxyZiB56%2FMmmmW6%2Fhz4witrofRac8g%3D&ehkOptimized=id2EB5vQcp8PKAmgUlXgJK8ObkhKr5LBDqSOTVLk7kc%3D",
-                    "type": "banner"
-                },
-                {
-                    "id": "5446810",
-                    "url": "https://images.start.gg/images/tournament/519570/image-7adf5ebf52ab5fdfbe5b2b94996d5118.png?ehk=gvpd0mfNd6mE39Wa1OUF3UzVqw7IJfZjr6JOuHfeWHg%3D&ehkOptimized=SCgpnh%2BAYDDLZfZvPyXRvqKOaMhIkCHlMsoryKuxcmE%3D",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "49 - 51 St Leonards Rd, Bexhill-on-Sea TN40 1JA, UK",
-            "tournament_addrState": "England",
-            "country_code": "GB",
-            "lat": 50.83982109999999,
-            "lng": 0.4766263
         },
         {
             "id": 856269,
