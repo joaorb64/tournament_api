@@ -43433,8 +43433,8 @@
         "name": "1v1",
         "slug": "tournament/asura-tournament-2/event/1v1",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 77,
+        "state": "ACTIVE",
+        "numEntrants": 70,
         "videogame": {
             "id": 1386
         },
@@ -43483,7 +43483,7 @@
         "slug": "tournament/asura-tournament-2/event/liste-d-attente",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 3,
         "videogame": {
             "id": 1386
         },
@@ -79758,28 +79758,6 @@
         "lat": 34.710927,
         "lng": 135.624854
     },
-    "866125": {
-        "id": 866125,
-        "name": "Amateur bracket",
-        "slug": "tournament/gaming-weekly-77/event/amateur-bracket",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1677772800,
-        "phaseGroups": [
-            {
-                "id": 2003409,
-                "phase": {
-                    "id": 1311625,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "866126": {
         "id": 866126,
         "name": "Liste d'attente",
@@ -79796,28 +79774,6 @@
                 "id": 2003410,
                 "phase": {
                     "id": 1311626,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "866124": {
-        "id": 866124,
-        "name": "Singles bracket",
-        "slug": "tournament/gaming-weekly-77/event/singles-bracket",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 27,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1677772800,
-        "phaseGroups": [
-            {
-                "id": 2003408,
-                "phase": {
-                    "id": 1311624,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -81370,28 +81326,6 @@
         "country_code": "US",
         "lat": 37.7237343,
         "lng": -122.4821
-    },
-    "866772": {
-        "id": 866772,
-        "name": "Ultimate Singles",
-        "slug": "tournament/d-u-s-weekly-71/event/ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 12,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1677772800,
-        "phaseGroups": [
-            {
-                "id": 2004551,
-                "phase": {
-                    "id": 1312460,
-                    "name": "Double Elimination"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "866468": {
         "id": 866468,
@@ -90029,12 +89963,21 @@
         "slug": "tournament/c-stick-master-18/event/ultimate-dobles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 12,
+        "numEntrants": 19,
         "videogame": {
             "id": 1386
         },
         "startAt": 1678464000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2006598,
+                "phase": {
+                    "id": 1314055,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "C-Stick Master #18",
         "tournament_id": 524318,
         "city": "Oviedo",
@@ -90070,12 +90013,87 @@
         "slug": "tournament/c-stick-master-18/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 48,
+        "numEntrants": 56,
         "videogame": {
             "id": 1386
         },
         "startAt": 1678534200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2002212,
+                "phase": {
+                    "id": 1310639,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8530180
+                    },
+                    {
+                        "id": 8530182
+                    },
+                    {
+                        "id": 8530184
+                    },
+                    {
+                        "id": 8530186
+                    },
+                    {
+                        "id": 8530188
+                    },
+                    {
+                        "id": 8530190
+                    },
+                    {
+                        "id": 8530192
+                    },
+                    {
+                        "id": 8530194
+                    }
+                ]
+            },
+            {
+                "id": 2002213,
+                "phase": {
+                    "id": 1310639,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8530181
+                    },
+                    {
+                        "id": 8530183
+                    },
+                    {
+                        "id": 8530185
+                    },
+                    {
+                        "id": 8530187
+                    },
+                    {
+                        "id": 8530189
+                    },
+                    {
+                        "id": 8530191
+                    },
+                    {
+                        "id": 8530193
+                    },
+                    {
+                        "id": 8530195
+                    }
+                ]
+            },
+            {
+                "id": 2002217,
+                "phase": {
+                    "id": 1310643,
+                    "name": "Top 16"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "C-Stick Master #18",
         "tournament_id": 524318,
         "city": "Oviedo",
@@ -93123,18 +93141,18 @@
                 "type": "profile"
             },
             {
-                "id": "5513982",
-                "url": "https://images.start.gg/images/tournament/526005/image-ae773992ab885da9bc0ecf6f94cd3dae.png?ehk=Oydrg1F8XOnk0pWGvdJoEORB%2BFNMjrpD%2FZXdrcqsPo4%3D&ehkOptimized=Q2wO2CPVdP60qhJpUzRz5EFktWxxQSznlEtF8Edvjvo%3D",
+                "id": "5546627",
+                "url": "https://images.start.gg/images/tournament/526005/image-6162036147abe9d3484f6aa034afd997.png?ehk=YEngjUk%2FSR2l9MF5dJBHpzAzB%2B0R1O537Dyz2T0GILA%3D&ehkOptimized=IRPjmhDdDfkPOFdjxF%2FsqMvB4m%2BBvq%2BHtmsn36WGM3k%3D",
                 "type": "banner"
             }
         ],
         "tournament_multievent": true,
         "tournament_venueName": null,
-        "tournament_venueAddress": "141 E Center St, Marion, OH 43302, USA",
+        "tournament_venueAddress": "143 E Center St, Marion, OH 43302, USA",
         "tournament_addrState": "OH",
         "country_code": "US",
-        "lat": 40.588398,
-        "lng": -83.127753
+        "lat": 40.5884,
+        "lng": -83.12768299999999
     },
     "868457": {
         "id": 868457,
@@ -93142,7 +93160,7 @@
         "slug": "tournament/ready-up-presents-4-the-clip-21-season-3/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 14,
         "videogame": {
             "id": 1386
         },
@@ -93173,18 +93191,18 @@
                 "type": "profile"
             },
             {
-                "id": "5513982",
-                "url": "https://images.start.gg/images/tournament/526005/image-ae773992ab885da9bc0ecf6f94cd3dae.png?ehk=Oydrg1F8XOnk0pWGvdJoEORB%2BFNMjrpD%2FZXdrcqsPo4%3D&ehkOptimized=Q2wO2CPVdP60qhJpUzRz5EFktWxxQSznlEtF8Edvjvo%3D",
+                "id": "5546627",
+                "url": "https://images.start.gg/images/tournament/526005/image-6162036147abe9d3484f6aa034afd997.png?ehk=YEngjUk%2FSR2l9MF5dJBHpzAzB%2B0R1O537Dyz2T0GILA%3D&ehkOptimized=IRPjmhDdDfkPOFdjxF%2FsqMvB4m%2BBvq%2BHtmsn36WGM3k%3D",
                 "type": "banner"
             }
         ],
         "tournament_multievent": true,
         "tournament_venueName": null,
-        "tournament_venueAddress": "141 E Center St, Marion, OH 43302, USA",
+        "tournament_venueAddress": "143 E Center St, Marion, OH 43302, USA",
         "tournament_addrState": "OH",
         "country_code": "US",
-        "lat": 40.588398,
-        "lng": -83.127753
+        "lat": 40.5884,
+        "lng": -83.12768299999999
     },
     "868486": {
         "id": 868486,
@@ -96563,21 +96581,12 @@
         "slug": "tournament/c-stick-master-18/event/lista-de-espera",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 10,
+        "numEntrants": 0,
         "videogame": {
             "id": 1386
         },
         "startAt": 1678464000,
-        "phaseGroups": [
-            {
-                "id": 2007642,
-                "phase": {
-                    "id": 1314891,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
+        "phaseGroups": [],
         "tournament": "C-Stick Master #18",
         "tournament_id": 524318,
         "city": "Oviedo",
@@ -113820,7 +113829,7 @@
         "slug": "tournament/14-kamisuma-14/event/singles-tournament",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 7,
+        "numEntrants": 32,
         "videogame": {
             "id": 1386
         },
@@ -113848,33 +113857,33 @@
                 ]
             },
             {
-                "id": 2009767,
-                "phase": {
-                    "id": 1316468,
-                    "name": "WAVE B"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 8540602
-                    },
-                    {
-                        "id": 8540603
-                    },
-                    {
-                        "id": 8540604
-                    },
-                    {
-                        "id": 8540605
-                    }
-                ]
-            },
-            {
                 "id": 2009768,
                 "phase": {
                     "id": 1316469,
                     "name": "TOP8"
                 },
                 "progressionsOut": null
+            },
+            {
+                "id": 2018747,
+                "phase": {
+                    "id": 1322978,
+                    "name": "WAVE B"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8588157
+                    },
+                    {
+                        "id": 8588158
+                    },
+                    {
+                        "id": 8588159
+                    },
+                    {
+                        "id": 8588160
+                    }
+                ]
             }
         ],
         "tournament": "\u30ab\u30df\u30b9\u30de#14/ Kamisuma#14",
@@ -125325,11 +125334,11 @@
         "slug": "tournament/smash-the-cave-etsu-47/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 14,
+        "numEntrants": 0,
         "videogame": {
             "id": 1386
         },
-        "startAt": 1677884400,
+        "startAt": 1678489200,
         "phaseGroups": [
             {
                 "id": 2011928,
@@ -125339,7 +125348,45 @@
                 },
                 "progressionsOut": null
             }
-        ]
+        ],
+        "tournament": "Smash the Cave @ETSU #47",
+        "tournament_id": 527400,
+        "city": "Johnson City",
+        "url": "https://smash.gg/tournament/smash-the-cave-etsu-47/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "tricotsmash"
+            },
+            {
+                "streamName": "ishtariaAM"
+            },
+            {
+                "streamName": "eternalpunishment"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1678489200,
+        "tournament_endAt": 1678507200,
+        "tournament_registrationClosesAt": 1677888000,
+        "images": [
+            {
+                "id": "5527190",
+                "url": "https://images.start.gg/images/tournament/527400/image-53ad6329f0f83010bacad9b8248f47a2.png?ehk=mvmxyOM9Ho8CWznyuLU%2FUawdh3VtP3GsLdkTi4JmkeA%3D&ehkOptimized=h6Li2AM09yCbKAyQsmtA9%2B9DRLUKkmnoYVULqcfD0PQ%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5527191",
+                "url": "https://images.start.gg/images/tournament/527400/image-050d4a3ac38e25ab44eb708163a2cad2.png?ehk=30%2F05bpbUBpW37JZPPAmhuQf%2BpGAY44pFuIjZglMtUo%3D&ehkOptimized=bSV6H6wzJ51VRnigRdNZOvPHd0ZPoScmBdxvnbSVJ%2BY%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "D.P.Culp University Center, Johnson City, TN 37604, USA",
+        "tournament_addrState": "TN",
+        "country_code": "US",
+        "lat": 36.301774,
+        "lng": -82.3667175
     },
     "871012": {
         "id": 871012,
@@ -134814,7 +134861,7 @@
         "slug": "tournament/the-try-hard-series-7/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 13,
         "videogame": {
             "id": 1386
         },
@@ -134851,11 +134898,11 @@
         ],
         "tournament_multievent": true,
         "tournament_venueName": null,
-        "tournament_venueAddress": "1491-1615 Evans Ave, Reno, NV 89512, USA",
+        "tournament_venueAddress": "5400 Meadowood Mall Cir, Reno, NV 89502, USA",
         "tournament_addrState": "NV",
         "country_code": "US",
-        "lat": 39.54211840000001,
-        "lng": -119.8149378
+        "lat": 39.4744841,
+        "lng": -119.7805696
     },
     "871588": {
         "id": 871588,
@@ -134863,7 +134910,7 @@
         "slug": "tournament/the-try-hard-series-7/event/smash-64-char-lock",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 9,
         "videogame": {
             "id": 1386
         },
@@ -134900,11 +134947,11 @@
         ],
         "tournament_multievent": true,
         "tournament_venueName": null,
-        "tournament_venueAddress": "1491-1615 Evans Ave, Reno, NV 89512, USA",
+        "tournament_venueAddress": "5400 Meadowood Mall Cir, Reno, NV 89502, USA",
         "tournament_addrState": "NV",
         "country_code": "US",
-        "lat": 39.54211840000001,
-        "lng": -119.8149378
+        "lat": 39.4744841,
+        "lng": -119.7805696
     },
     "871584": {
         "id": 871584,
@@ -158603,7 +158650,7 @@
         "slug": "tournament/ace-smash-fridays-20/event/steve-only-bracket",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 8,
         "videogame": {
             "id": 1386
         },
@@ -158657,7 +158704,7 @@
         "slug": "tournament/ace-smash-fridays-20/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 15,
         "videogame": {
             "id": 1386
         },
@@ -166657,7 +166704,7 @@
         "slug": "tournament/em-s-smash-brawl-49/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 9,
+        "numEntrants": 14,
         "videogame": {
             "id": 1386
         },
@@ -177806,7 +177853,7 @@
         "slug": "tournament/happel-s05-10/event/happel-s05-10",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 30,
+        "numEntrants": 32,
         "videogame": {
             "id": 1386
         },
@@ -191102,7 +191149,7 @@
         "slug": "tournament/happel-s05-10/event/file-d-attente",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 0,
         "videogame": {
             "id": 1386
         },
@@ -196191,7 +196238,7 @@
         "slug": "tournament/lca-sheik-saga/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1386
         },
@@ -196527,7 +196574,7 @@
         "slug": "tournament/thirsty-thursday-34-eu-only/event/1v1-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 26,
         "videogame": {
             "id": 1386
         },
@@ -198640,7 +198687,7 @@
         "slug": "tournament/gaminghotel-2023/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 6,
         "videogame": {
             "id": 1386
         },
@@ -198794,7 +198841,7 @@
         "videogame": {
             "id": 1386
         },
-        "startAt": 1678834800,
+        "startAt": 1678921200,
         "phaseGroups": [
             {
                 "id": 2018692,
@@ -198815,9 +198862,9 @@
             }
         ],
         "timezone": "America/New_York",
-        "tournament_startAt": 1678834800,
-        "tournament_endAt": 1678849200,
-        "tournament_registrationClosesAt": 1678831200,
+        "tournament_startAt": 1678921200,
+        "tournament_endAt": 1678935600,
+        "tournament_registrationClosesAt": 1678917600,
         "images": [
             {
                 "id": "5546516",
@@ -198844,7 +198891,7 @@
         "slug": "tournament/fake-fiesta-2/event/1v1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 7,
         "videogame": {
             "id": 1386
         },
@@ -199030,7 +199077,7 @@
         "slug": "tournament/mid-maine-mashup-17/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 5,
         "videogame": {
             "id": 1386
         },
@@ -199162,8 +199209,8 @@
         "name": "SSQM",
         "slug": "tournament/2-72/event/ssqm",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 4,
+        "state": "ACTIVE",
+        "numEntrants": 40,
         "videogame": {
             "id": 1386
         },
@@ -199178,5 +199225,1122 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "872890": {
+        "id": 872890,
+        "name": "Doubles",
+        "slug": "tournament/secret-wars-issue-4/event/doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1680973200,
+        "phaseGroups": [
+            {
+                "id": 2015114,
+                "phase": {
+                    "id": 1320356,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Secret Wars! Issue #4",
+        "tournament_id": 527874,
+        "city": "Mesa",
+        "url": "https://smash.gg/tournament/secret-wars-issue-4/event/doubles",
+        "streams": null,
+        "timezone": "America/Phoenix",
+        "tournament_startAt": 1680973200,
+        "tournament_endAt": 1681023540,
+        "tournament_registrationClosesAt": 1680904800,
+        "images": [
+            {
+                "id": "5531074",
+                "url": "https://images.start.gg/images/tournament/527874/image-b74a6a774f1e48d4b9a6fc28978bde5e.jpg?ehk=qMcGSbmNmd64xFfly1t187U0fnwgKQ2KDP9RWyTm4lU%3D&ehkOptimized=cQerrMzOuXw9fgviRJtDfw1uSUGISZIYBhmuwmN%2BDZI%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5531080",
+                "url": "https://images.start.gg/images/tournament/527874/image-ee6158d5a98fe9a36a76829eee4c3cf5.png?ehk=B48iQInheCrnxpn%2F29Md3CORml4hCIWhkWLLFvRpq4g%3D&ehkOptimized=FXo0WW4mYgB78XVmmoLVI8ThJm5ag%2BD%2F7e6Kc9i1qiI%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1350 S Gilbert Rd suite C1, Mesa, AZ 85204, USA",
+        "tournament_addrState": "AZ",
+        "country_code": "US",
+        "lat": 33.3905382,
+        "lng": -111.7901802
+    },
+    "871908": {
+        "id": 871908,
+        "name": "Ultimate Singles",
+        "slug": "tournament/secret-wars-issue-4/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1680973200,
+        "phaseGroups": [
+            {
+                "id": 2013466,
+                "phase": {
+                    "id": 1319073,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Secret Wars! Issue #4",
+        "tournament_id": 527874,
+        "city": "Mesa",
+        "url": "https://smash.gg/tournament/secret-wars-issue-4/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Phoenix",
+        "tournament_startAt": 1680973200,
+        "tournament_endAt": 1681023540,
+        "tournament_registrationClosesAt": 1680904800,
+        "images": [
+            {
+                "id": "5531074",
+                "url": "https://images.start.gg/images/tournament/527874/image-b74a6a774f1e48d4b9a6fc28978bde5e.jpg?ehk=qMcGSbmNmd64xFfly1t187U0fnwgKQ2KDP9RWyTm4lU%3D&ehkOptimized=cQerrMzOuXw9fgviRJtDfw1uSUGISZIYBhmuwmN%2BDZI%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5531080",
+                "url": "https://images.start.gg/images/tournament/527874/image-ee6158d5a98fe9a36a76829eee4c3cf5.png?ehk=B48iQInheCrnxpn%2F29Md3CORml4hCIWhkWLLFvRpq4g%3D&ehkOptimized=FXo0WW4mYgB78XVmmoLVI8ThJm5ag%2BD%2F7e6Kc9i1qiI%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1350 S Gilbert Rd suite C1, Mesa, AZ 85204, USA",
+        "tournament_addrState": "AZ",
+        "country_code": "US",
+        "lat": 33.3905382,
+        "lng": -111.7901802
+    },
+    "874921": {
+        "id": 874921,
+        "name": "Doubles (2v2)",
+        "slug": "tournament/frame-6/event/doubles-2v2",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1679760000,
+        "phaseGroups": [
+            {
+                "id": 2018739,
+                "phase": {
+                    "id": 1322973,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Frame 6",
+        "tournament_id": 529623,
+        "city": "Abilene",
+        "url": "https://smash.gg/tournament/frame-6/event/doubles-2v2",
+        "streams": [
+            {
+                "streamName": "ACUesports"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1679760000,
+        "tournament_endAt": 1679799600,
+        "tournament_registrationClosesAt": 1679774340,
+        "images": [
+            {
+                "id": "5546645",
+                "url": "https://images.start.gg/images/tournament/529623/image-f776f251fe6f14b842cfbf4a7194f44d.png?ehk=mG%2Fl5lC2QCrKz1dI2wiZTzEH9HGqA7xOXUi1V3hRxLo%3D&ehkOptimized=a%2BK74zfSA%2FT6xkyeMR%2Bpg1VImGJFxRwpusW8ovcEqnQ%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5546647",
+                "url": "https://images.start.gg/images/tournament/529623/image-cc0962951d10a9495675e54a3464f39a.png?ehk=hhEQ%2FLgIX4nlOfCtXTZ7gOTltDcd%2Bs4VAoxmHEpepOE%3D&ehkOptimized=cWS2tpN%2FjyNmtpDtkm1cef%2BjvfXXlPHr4hzzN4%2Bsr2s%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "ACU Student Center - Esports Clubroom",
+        "tournament_venueAddress": "Abilene Christian University, Abilene, TX 79601, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 32.469291,
+        "lng": -99.71155999999999
+    },
+    "874920": {
+        "id": 874920,
+        "name": "Singles (1v1)",
+        "slug": "tournament/frame-6/event/singles-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1679760000,
+        "phaseGroups": [
+            {
+                "id": 2018738,
+                "phase": {
+                    "id": 1322972,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Frame 6",
+        "tournament_id": 529623,
+        "city": "Abilene",
+        "url": "https://smash.gg/tournament/frame-6/event/singles-1v1",
+        "streams": [
+            {
+                "streamName": "ACUesports"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1679760000,
+        "tournament_endAt": 1679799600,
+        "tournament_registrationClosesAt": 1679774340,
+        "images": [
+            {
+                "id": "5546645",
+                "url": "https://images.start.gg/images/tournament/529623/image-f776f251fe6f14b842cfbf4a7194f44d.png?ehk=mG%2Fl5lC2QCrKz1dI2wiZTzEH9HGqA7xOXUi1V3hRxLo%3D&ehkOptimized=a%2BK74zfSA%2FT6xkyeMR%2Bpg1VImGJFxRwpusW8ovcEqnQ%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5546647",
+                "url": "https://images.start.gg/images/tournament/529623/image-cc0962951d10a9495675e54a3464f39a.png?ehk=hhEQ%2FLgIX4nlOfCtXTZ7gOTltDcd%2Bs4VAoxmHEpepOE%3D&ehkOptimized=cWS2tpN%2FjyNmtpDtkm1cef%2BjvfXXlPHr4hzzN4%2Bsr2s%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "ACU Student Center - Esports Clubroom",
+        "tournament_venueAddress": "Abilene Christian University, Abilene, TX 79601, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 32.469291,
+        "lng": -99.71155999999999
+    },
+    "874922": {
+        "id": 874922,
+        "name": "Squad Strike",
+        "slug": "tournament/frame-6/event/squad-strike",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1679760000,
+        "phaseGroups": [
+            {
+                "id": 2018740,
+                "phase": {
+                    "id": 1322974,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Frame 6",
+        "tournament_id": 529623,
+        "city": "Abilene",
+        "url": "https://smash.gg/tournament/frame-6/event/squad-strike",
+        "streams": [
+            {
+                "streamName": "ACUesports"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1679760000,
+        "tournament_endAt": 1679799600,
+        "tournament_registrationClosesAt": 1679774340,
+        "images": [
+            {
+                "id": "5546645",
+                "url": "https://images.start.gg/images/tournament/529623/image-f776f251fe6f14b842cfbf4a7194f44d.png?ehk=mG%2Fl5lC2QCrKz1dI2wiZTzEH9HGqA7xOXUi1V3hRxLo%3D&ehkOptimized=a%2BK74zfSA%2FT6xkyeMR%2Bpg1VImGJFxRwpusW8ovcEqnQ%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5546647",
+                "url": "https://images.start.gg/images/tournament/529623/image-cc0962951d10a9495675e54a3464f39a.png?ehk=hhEQ%2FLgIX4nlOfCtXTZ7gOTltDcd%2Bs4VAoxmHEpepOE%3D&ehkOptimized=cWS2tpN%2FjyNmtpDtkm1cef%2BjvfXXlPHr4hzzN4%2Bsr2s%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "ACU Student Center - Esports Clubroom",
+        "tournament_venueAddress": "Abilene Christian University, Abilene, TX 79601, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 32.469291,
+        "lng": -99.71155999999999
+    },
+    "874913": {
+        "id": 874913,
+        "name": "Singles",
+        "slug": "tournament/desert-smash-liv/event/singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1679176800,
+        "phaseGroups": [
+            {
+                "id": 2018730,
+                "phase": {
+                    "id": 1322964,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8588098
+                    },
+                    {
+                        "id": 8588099
+                    },
+                    {
+                        "id": 8588100
+                    },
+                    {
+                        "id": 8588101
+                    },
+                    {
+                        "id": 8588102
+                    },
+                    {
+                        "id": 8588103
+                    },
+                    {
+                        "id": 8588104
+                    },
+                    {
+                        "id": 8588105
+                    }
+                ]
+            },
+            {
+                "id": 2018731,
+                "phase": {
+                    "id": 1322965,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Desert Smash LIV",
+        "tournament_id": 529619,
+        "city": "Delicias",
+        "url": "https://smash.gg/tournament/desert-smash-liv/event/singles",
+        "streams": [
+            {
+                "streamName": "focussmash"
+            }
+        ],
+        "timezone": "America/Chihuahua",
+        "tournament_startAt": 1679176800,
+        "tournament_endAt": 1679198400,
+        "tournament_registrationClosesAt": 1679173200,
+        "images": [
+            {
+                "id": "5546630",
+                "url": "https://images.start.gg/images/tournament/529619/image-7221c03b0441124939cb575c54252b1c.png?ehk=GOGjBMUaTbRzV9gMTMlGu4OGGYoXjTFPmjH0twMSwrc%3D&ehkOptimized=%2BE0Cxt8%2FrR2O1RbKHcX8Ppe6f2lI8WBQXwA2koOu1hM%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5546689",
+                "url": "https://images.start.gg/images/tournament/529619/image-4c9b594e7268e23f884b492162943ada.png?ehk=rbt89shxTPBa74Bctqtd8dpVz0ohgvNl4lZehOv0LVQ%3D&ehkOptimized=73GCmeqTetLpdHGbdk7o0EmRu2hgIOOytm%2B4mKqA9NI%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Gamer World",
+        "tournament_venueAddress": "Av. 4 Sur 216, Sur 1, 33000 Delicias, Chih., Mexico",
+        "tournament_addrState": "Chih.",
+        "country_code": "MX",
+        "lat": 28.1885457,
+        "lng": -105.4725364
+    },
+    "874914": {
+        "id": 874914,
+        "name": "Va de nuez",
+        "slug": "tournament/desert-smash-liv/event/va-de-nuez",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1679176800,
+        "phaseGroups": [
+            {
+                "id": 2018732,
+                "phase": {
+                    "id": 1322966,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Desert Smash LIV",
+        "tournament_id": 529619,
+        "city": "Delicias",
+        "url": "https://smash.gg/tournament/desert-smash-liv/event/va-de-nuez",
+        "streams": [
+            {
+                "streamName": "focussmash"
+            }
+        ],
+        "timezone": "America/Chihuahua",
+        "tournament_startAt": 1679176800,
+        "tournament_endAt": 1679198400,
+        "tournament_registrationClosesAt": 1679173200,
+        "images": [
+            {
+                "id": "5546630",
+                "url": "https://images.start.gg/images/tournament/529619/image-7221c03b0441124939cb575c54252b1c.png?ehk=GOGjBMUaTbRzV9gMTMlGu4OGGYoXjTFPmjH0twMSwrc%3D&ehkOptimized=%2BE0Cxt8%2FrR2O1RbKHcX8Ppe6f2lI8WBQXwA2koOu1hM%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5546689",
+                "url": "https://images.start.gg/images/tournament/529619/image-4c9b594e7268e23f884b492162943ada.png?ehk=rbt89shxTPBa74Bctqtd8dpVz0ohgvNl4lZehOv0LVQ%3D&ehkOptimized=73GCmeqTetLpdHGbdk7o0EmRu2hgIOOytm%2B4mKqA9NI%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Gamer World",
+        "tournament_venueAddress": "Av. 4 Sur 216, Sur 1, 33000 Delicias, Chih., Mexico",
+        "tournament_addrState": "Chih.",
+        "country_code": "MX",
+        "lat": 28.1885457,
+        "lng": -105.4725364
+    },
+    "874918": {
+        "id": 874918,
+        "name": "Ultimate Singles",
+        "slug": "tournament/up-b-out-of-shield-2-1/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678656600,
+        "phaseGroups": [
+            {
+                "id": 2018736,
+                "phase": {
+                    "id": 1322970,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Up B Out of Shield #2",
+        "tournament_id": 529622,
+        "city": "Graniteville",
+        "url": "https://smash.gg/tournament/up-b-out-of-shield-2-1/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1678656600,
+        "tournament_endAt": 1678665600,
+        "tournament_registrationClosesAt": 1678656600,
+        "images": [],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "300 Main St, Graniteville, SC 29829, USA",
+        "tournament_addrState": "SC",
+        "country_code": "US",
+        "lat": 33.5584064,
+        "lng": -81.8098203
+    },
+    "873812": {
+        "id": 873812,
+        "name": "Ultimate Singles",
+        "slug": "tournament/sonntagsplausch-6/event/ultimate-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678629600,
+        "phaseGroups": [
+            {
+                "id": 2016761,
+                "phase": {
+                    "id": 1321558,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8575146
+                    },
+                    {
+                        "id": 8575148
+                    },
+                    {
+                        "id": 8575150
+                    },
+                    {
+                        "id": 8575152
+                    },
+                    {
+                        "id": 8575154
+                    },
+                    {
+                        "id": 8575156
+                    },
+                    {
+                        "id": 8575158
+                    },
+                    {
+                        "id": 8575160
+                    }
+                ]
+            },
+            {
+                "id": 2016762,
+                "phase": {
+                    "id": 1321558,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8575147
+                    },
+                    {
+                        "id": 8575149
+                    },
+                    {
+                        "id": 8575151
+                    },
+                    {
+                        "id": 8575153
+                    },
+                    {
+                        "id": 8575155
+                    },
+                    {
+                        "id": 8575157
+                    },
+                    {
+                        "id": 8575159
+                    },
+                    {
+                        "id": 8575161
+                    }
+                ]
+            },
+            {
+                "id": 2016763,
+                "phase": {
+                    "id": 1321559,
+                    "name": "Top16"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Sonntagsplausch #6",
+        "tournament_id": 528991,
+        "city": null,
+        "url": "https://smash.gg/tournament/sonntagsplausch-6/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "MillhiB"
+            },
+            {
+                "streamName": "MrMayonnaise91"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1678629600,
+        "tournament_endAt": 1678644000,
+        "tournament_registrationClosesAt": 1678627800,
+        "images": [
+            {
+                "id": "5540249",
+                "url": "https://images.start.gg/images/tournament/528991/image-144de9ce6f36e6dcc6e787075053f061.png?ehk=8MqUWFa9HuW2ygM1KNtgIEjqbzJKTx8kRKt7CmdF1co%3D&ehkOptimized=k0F7wxojT%2FZxaQpTFqv%2FEdi%2Bt2IhouRXMTqSAwxQSvs%3D",
+                "type": "banner"
+            },
+            {
+                "id": "5540250",
+                "url": "https://images.start.gg/images/tournament/528991/image-4108822eb456af6335c3c5842497d665.png?ehk=SKzHdZVMSUBzVb4uzCPTe2asKqJ1BjEZGeI8eDEqW4k%3D&ehkOptimized=XbunTYjphddaktlnRTyp23EcPj6CF5mwfa2Dt%2Fkvjzc%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null,
+        "region_lock": [
+            "DE",
+            "AT",
+            "CH",
+            "LU"
+        ]
+    },
+    "874393": {
+        "id": 874393,
+        "name": "Ultimate Singles Bracket (1v1)",
+        "slug": "tournament/the-cheese-bowl-15-steve-is-banned/event/ultimate-singles-bracket-1v1",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678564800,
+        "phaseGroups": [
+            {
+                "id": 2017811,
+                "phase": {
+                    "id": 1322307,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Cheese Bowl #15: STEVE IS BANNED!",
+        "tournament_id": 529301,
+        "city": null,
+        "url": "https://smash.gg/tournament/the-cheese-bowl-15-steve-is-banned/event/ultimate-singles-bracket-1v1",
+        "streams": [
+            {
+                "streamName": "RisterMice"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1678564800,
+        "tournament_endAt": 1678573800,
+        "tournament_registrationClosesAt": 1678563000,
+        "images": [
+            {
+                "id": "5543552",
+                "url": "https://images.start.gg/images/tournament/529301/image-092bed2bc0969a349bf48b89c9c18d95.png?ehk=Gi3p68gQLKm8Q55m3JtStUDLhdnGny%2Byx8%2Fgg1UsSZg%3D&ehkOptimized=SziZzMJhbK47kcu%2FwBV%2F%2FkwSmQWh18gF3BflCawYXgU%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5543553",
+                "url": "https://images.start.gg/images/tournament/529301/image-16294d776807b1a7643d65bb0d2a8731.png?ehk=eC7x5em%2BgB0lNrbEcH9W9mj76jDF5iOmf9IJwYKinZM%3D&ehkOptimized=2EklHrmCZNQIK%2FuoeiYzvUGg3Jltflr%2FWcb6ogEsIRM%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "874917": {
+        "id": 874917,
+        "name": "Ultimate Singles",
+        "slug": "tournament/sdsu-biweekly-3-into-the-night/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678498200,
+        "phaseGroups": [
+            {
+                "id": 2018735,
+                "phase": {
+                    "id": 1322969,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "SDSU Biweekly #3 \"Into The Night\"",
+        "tournament_id": 529621,
+        "city": "San Diego",
+        "url": "https://smash.gg/tournament/sdsu-biweekly-3-into-the-night/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "shoujoSumi"
+            }
+        ],
+        "timezone": "America/Los_Angeles",
+        "tournament_startAt": 1678498200,
+        "tournament_endAt": 1678514400,
+        "tournament_registrationClosesAt": 1678514400,
+        "images": [
+            {
+                "id": "5546639",
+                "url": "https://images.start.gg/images/tournament/529621/image-11e590262c57cfe7ae6983fc739cdca0.jpg?ehk=EMvctqAZHCkVw9L6tNhAzbcGFff8ldWnMBRiqHre434%3D&ehkOptimized=mlsJpVej46CvbQPtFlnYGJTmM5CpjFapOqp51EbNtYU%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5546640",
+                "url": "https://images.start.gg/images/tournament/529621/image-3ae90d3d2da7d447a599be4b3a572669.jpg?ehk=dzSOM7pBbyTh%2BG6s3T6qlCioyY%2BqCnHSYx3DXU1bTOs%3D&ehkOptimized=1H1LBzPzoYCUMWrYNGNB3sFebs0OUFTt5k79kKjTMdc%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Peterson Gym, San Diego, CA 92182, USA",
+        "tournament_addrState": "CA",
+        "country_code": "US",
+        "lat": 32.7739498,
+        "lng": -117.0764462
+    },
+    "874927": {
+        "id": 874927,
+        "name": "Ultimate Doubles",
+        "slug": "tournament/smash-the-cave-etsu-47/event/ultimate-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678489200,
+        "phaseGroups": [
+            {
+                "id": 2018759,
+                "phase": {
+                    "id": 1322983,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash the Cave @ETSU #47",
+        "tournament_id": 527400,
+        "city": "Johnson City",
+        "url": "https://smash.gg/tournament/smash-the-cave-etsu-47/event/ultimate-doubles",
+        "streams": [
+            {
+                "streamName": "tricotsmash"
+            },
+            {
+                "streamName": "ishtariaAM"
+            },
+            {
+                "streamName": "eternalpunishment"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1678489200,
+        "tournament_endAt": 1678507200,
+        "tournament_registrationClosesAt": 1677888000,
+        "images": [
+            {
+                "id": "5527190",
+                "url": "https://images.start.gg/images/tournament/527400/image-53ad6329f0f83010bacad9b8248f47a2.png?ehk=mvmxyOM9Ho8CWznyuLU%2FUawdh3VtP3GsLdkTi4JmkeA%3D&ehkOptimized=h6Li2AM09yCbKAyQsmtA9%2B9DRLUKkmnoYVULqcfD0PQ%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5527191",
+                "url": "https://images.start.gg/images/tournament/527400/image-050d4a3ac38e25ab44eb708163a2cad2.png?ehk=30%2F05bpbUBpW37JZPPAmhuQf%2BpGAY44pFuIjZglMtUo%3D&ehkOptimized=bSV6H6wzJ51VRnigRdNZOvPHd0ZPoScmBdxvnbSVJ%2BY%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "D.P.Culp University Center, Johnson City, TN 37604, USA",
+        "tournament_addrState": "TN",
+        "country_code": "US",
+        "lat": 36.301774,
+        "lng": -82.3667175
+    },
+    "874903": {
+        "id": 874903,
+        "name": "Singles",
+        "slug": "tournament/pcg-week-85/event/singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678413600,
+        "phaseGroups": [
+            {
+                "id": 2018703,
+                "phase": {
+                    "id": 1322950,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8587848
+                    },
+                    {
+                        "id": 8587850
+                    },
+                    {
+                        "id": 8587852
+                    },
+                    {
+                        "id": 8587854
+                    }
+                ]
+            },
+            {
+                "id": 2018704,
+                "phase": {
+                    "id": 1322950,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8587849
+                    },
+                    {
+                        "id": 8587851
+                    },
+                    {
+                        "id": 8587853
+                    },
+                    {
+                        "id": 8587855
+                    }
+                ]
+            },
+            {
+                "id": 2018705,
+                "phase": {
+                    "id": 1322951,
+                    "name": "Top Cut"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "PCG Week 85",
+        "tournament_id": 529613,
+        "city": "Sandy",
+        "url": "https://smash.gg/tournament/pcg-week-85/event/singles",
+        "streams": [
+            {
+                "streamName": "Lock__TV"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1678413600,
+        "tournament_endAt": 1678431600,
+        "tournament_registrationClosesAt": 1678412700,
+        "images": [
+            {
+                "id": "5546561",
+                "url": "https://images.start.gg/images/tournament/529613/image-2741be369ca065662d025247768b6605.png?ehk=bCKt4sO%2B1YxuF7GaWWaTr67dwYGKSGus%2FNcX5Lm7Rrc%3D&ehkOptimized=yOt6%2FEDuv1Ta812cu2TP67ag39Zgw1eTLwWMEAMQtGw%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5546562",
+                "url": "https://images.start.gg/images/tournament/529613/image-af9e6504e3226cb569913ae50d9691c6.png?ehk=i36LQsFEY8Uszd63ycH2LhaKDu1YnU1%2BP8WafDjdWOg%3D&ehkOptimized=TTQlEx9AOI5p9h8uGDIDxFTJOINGwm734rykV%2FF8t%2F4%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "8558 S 1300 E, Sandy, UT 84094, USA",
+        "tournament_addrState": "UT",
+        "country_code": "US",
+        "lat": 40.5958682,
+        "lng": -111.8552084
+    },
+    "874901": {
+        "id": 874901,
+        "name": "0-2 Redemption",
+        "slug": "tournament/pcg-week-85/event/0-2-redemption",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678413600,
+        "phaseGroups": [
+            {
+                "id": 2018701,
+                "phase": {
+                    "id": 1322948,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "PCG Week 85",
+        "tournament_id": 529613,
+        "city": "Sandy",
+        "url": "https://smash.gg/tournament/pcg-week-85/event/0-2-redemption",
+        "streams": [
+            {
+                "streamName": "Lock__TV"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1678413600,
+        "tournament_endAt": 1678431600,
+        "tournament_registrationClosesAt": 1678412700,
+        "images": [
+            {
+                "id": "5546561",
+                "url": "https://images.start.gg/images/tournament/529613/image-2741be369ca065662d025247768b6605.png?ehk=bCKt4sO%2B1YxuF7GaWWaTr67dwYGKSGus%2FNcX5Lm7Rrc%3D&ehkOptimized=yOt6%2FEDuv1Ta812cu2TP67ag39Zgw1eTLwWMEAMQtGw%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5546562",
+                "url": "https://images.start.gg/images/tournament/529613/image-af9e6504e3226cb569913ae50d9691c6.png?ehk=i36LQsFEY8Uszd63ycH2LhaKDu1YnU1%2BP8WafDjdWOg%3D&ehkOptimized=TTQlEx9AOI5p9h8uGDIDxFTJOINGwm734rykV%2FF8t%2F4%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "8558 S 1300 E, Sandy, UT 84094, USA",
+        "tournament_addrState": "UT",
+        "country_code": "US",
+        "lat": 40.5958682,
+        "lng": -111.8552084
+    },
+    "874902": {
+        "id": 874902,
+        "name": "1-2 & 2-2+",
+        "slug": "tournament/pcg-week-85/event/1-2-2-2",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678413600,
+        "phaseGroups": [
+            {
+                "id": 2018702,
+                "phase": {
+                    "id": 1322949,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "PCG Week 85",
+        "tournament_id": 529613,
+        "city": "Sandy",
+        "url": "https://smash.gg/tournament/pcg-week-85/event/1-2-2-2",
+        "streams": [
+            {
+                "streamName": "Lock__TV"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1678413600,
+        "tournament_endAt": 1678431600,
+        "tournament_registrationClosesAt": 1678412700,
+        "images": [
+            {
+                "id": "5546561",
+                "url": "https://images.start.gg/images/tournament/529613/image-2741be369ca065662d025247768b6605.png?ehk=bCKt4sO%2B1YxuF7GaWWaTr67dwYGKSGus%2FNcX5Lm7Rrc%3D&ehkOptimized=yOt6%2FEDuv1Ta812cu2TP67ag39Zgw1eTLwWMEAMQtGw%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5546562",
+                "url": "https://images.start.gg/images/tournament/529613/image-af9e6504e3226cb569913ae50d9691c6.png?ehk=i36LQsFEY8Uszd63ycH2LhaKDu1YnU1%2BP8WafDjdWOg%3D&ehkOptimized=TTQlEx9AOI5p9h8uGDIDxFTJOINGwm734rykV%2FF8t%2F4%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "8558 S 1300 E, Sandy, UT 84094, USA",
+        "tournament_addrState": "UT",
+        "country_code": "US",
+        "lat": 40.5958682,
+        "lng": -111.8552084
+    },
+    "874908": {
+        "id": 874908,
+        "name": "Ultimate Singles",
+        "slug": "tournament/salt-water-smash-236/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678397400,
+        "phaseGroups": [
+            {
+                "id": 2018712,
+                "phase": {
+                    "id": 1322957,
+                    "name": "Ultimate Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8587933
+                    },
+                    {
+                        "id": 8587937
+                    },
+                    {
+                        "id": 8587941
+                    }
+                ]
+            },
+            {
+                "id": 2018713,
+                "phase": {
+                    "id": 1322957,
+                    "name": "Ultimate Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8587934
+                    },
+                    {
+                        "id": 8587938
+                    },
+                    {
+                        "id": 8587942
+                    }
+                ]
+            },
+            {
+                "id": 2018714,
+                "phase": {
+                    "id": 1322957,
+                    "name": "Ultimate Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8587935
+                    },
+                    {
+                        "id": 8587939
+                    },
+                    {
+                        "id": 8587943
+                    }
+                ]
+            },
+            {
+                "id": 2018715,
+                "phase": {
+                    "id": 1322957,
+                    "name": "Ultimate Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 8587936
+                    },
+                    {
+                        "id": 8587940
+                    },
+                    {
+                        "id": 8587944
+                    }
+                ]
+            },
+            {
+                "id": 2018716,
+                "phase": {
+                    "id": 1322958,
+                    "name": "Main Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Salt Water Smash 236",
+        "tournament_id": 529615,
+        "city": "St. John's",
+        "url": "https://smash.gg/tournament/salt-water-smash-236/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "SmashNL"
+            },
+            {
+                "streamName": "whsktv"
+            }
+        ],
+        "timezone": "America/St_Johns",
+        "tournament_startAt": 1678397400,
+        "tournament_endAt": 1678415400,
+        "tournament_registrationClosesAt": 1678415400,
+        "images": [
+            {
+                "id": "5546588",
+                "url": "https://images.start.gg/images/tournament/529615/image-461a123a22a7cb76df30793cb5430953.png?ehk=AoTUxL1Wmm7vWmxjrYChk%2FVSKnAcEYKW9nlBdE4dwd4%3D&ehkOptimized=v5XntwLMgiAWphhZEiXmFVG5BkU8RSUHuNOu6u7TYvc%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5546589",
+                "url": "https://images.start.gg/images/tournament/529615/image-bbb72c86131ea45f90516574aeac1c94.png?ehk=eW6XlKRHf4wu5RWGFd4fCiI%2B9beJusE59CLHB%2F2zeX0%3D&ehkOptimized=T4V%2Fm1oFCP7Neyrq%2FCKzXA5mczir3NBcRcCn1W%2BjBSA%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Engineering Building",
+        "tournament_venueAddress": "1 Arctic Ave, St. John's, NL A1B, Canada",
+        "tournament_addrState": "NL",
+        "country_code": "CA",
+        "lat": 47.5734032,
+        "lng": -52.73510419999999
+    },
+    "874912": {
+        "id": 874912,
+        "name": "ULT Singles",
+        "slug": "tournament/wilson-esports-5/event/ult-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1678392000,
+        "phaseGroups": [
+            {
+                "id": 2018729,
+                "phase": {
+                    "id": 1322963,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Wilson Esports #5",
+        "tournament_id": 529617,
+        "city": "Reading",
+        "url": "https://smash.gg/tournament/wilson-esports-5/event/ult-singles",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1678392000,
+        "tournament_endAt": 1678399200,
+        "tournament_registrationClosesAt": 1678532400,
+        "images": [
+            {
+                "id": "5546612",
+                "url": "https://images.start.gg/images/tournament/529617/image-5ed94a2b7290c351ffff9e6bcd82f40b.png?ehk=72a%2FNpNO5VvrF3i7nb6uKFPch%2FflXjv%2BVjyLmv5XbF8%3D&ehkOptimized=Ys2iIZ68q%2BpUGSGtWPB4OKKn2IfM8RY1ae1m7m3vOFk%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2601 Grandview Blvd, Reading, PA 19609, USA",
+        "tournament_addrState": "PA",
+        "country_code": "US",
+        "lat": 40.3307623,
+        "lng": -76.00024599999999
     }
 }
