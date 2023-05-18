@@ -1145,7 +1145,7 @@
         "slug": "tournament/sntkdd/event/sntkdd-torneo-sfv",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 43,
+        "numEntrants": 42,
         "videogame": {
             "id": 33990
         },
@@ -1159,7 +1159,7 @@
         "timezone": "Europe/Madrid",
         "tournament_startAt": 1684573200,
         "tournament_endAt": 1684605600,
-        "tournament_registrationClosesAt": 1684508400,
+        "tournament_registrationClosesAt": 1684515600,
         "images": [
             {
                 "id": "5653919",
@@ -5481,12 +5481,21 @@
         "slug": "tournament/odyssey-games-weekly-1/event/sf-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 33990
         },
         "startAt": 1685052900,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2087666,
+                "phase": {
+                    "id": 1372875,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Odyssey Games Weekly",
         "tournament_id": 550275,
         "city": "Kalamazoo",
@@ -5767,5 +5776,55 @@
         "country_code": "AU",
         "lat": -34.0650885,
         "lng": 150.8150343
+    },
+    "915308": {
+        "id": 915308,
+        "name": "Street Fighter V : CE",
+        "slug": "tournament/waistman-weeklies-412-1/event/street-fighter-v-ce",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 33990
+        },
+        "startAt": 1685275200,
+        "phaseGroups": [
+            {
+                "id": 2089465,
+                "phase": {
+                    "id": 1374269,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Waistman Weeklies #412",
+        "tournament_id": 551685,
+        "city": "Bristol",
+        "url": "https://smash.gg/tournament/waistman-weeklies-412-1/event/street-fighter-v-ce",
+        "streams": null,
+        "timezone": "Europe/London",
+        "tournament_startAt": 1685271600,
+        "tournament_endAt": 1685293200,
+        "tournament_registrationClosesAt": 1685293200,
+        "images": [
+            {
+                "id": "5760024",
+                "url": "https://images.start.gg/images/tournament/551685/image-1c730225e20623c2c611b47b750c84f7.png?ehk=OHWWEBvYX15DXg6hAAH0mmDblHkEqRjtHS7JNTZcJ%2FY%3D&ehkOptimized=o5iLxff1KeDv%2BxJ5RaNz5UDYKTXgt%2FqqBfWjX9dt054%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5760026",
+                "url": "https://images.start.gg/images/tournament/551685/image-003000a28b5602f7f1e5bca7e2455327.jpg?ehk=IbHOuxXQHC5SjCEewKJNiGgsVck9OpSnv4wPlId%2FFdI%3D&ehkOptimized=NhOw3%2FOqlohhwxkgHfLT6aVcO%2BFu9263xB2H03RqLQs%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Nelson St, Bristol BS1 2LE, UK",
+        "tournament_addrState": "England",
+        "country_code": "GB",
+        "lat": 51.4566191,
+        "lng": -2.5929577
     }
 }
