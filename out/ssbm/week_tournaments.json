@@ -15859,7 +15859,7 @@
         "name": "Melee Singles",
         "slug": "tournament/cinematic-revival-3/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 5,
         "videogame": {
             "id": 1
@@ -38491,7 +38491,7 @@
         "name": "Melee Singles",
         "slug": "tournament/kame-house-weekly-44/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 25,
         "videogame": {
             "id": 1
@@ -41640,21 +41640,54 @@
     },
     "939683": {
         "id": 939683,
-        "name": "Melee",
-        "slug": "tournament/super-smash-bro-melee-at-game-guys/event/melee",
+        "name": "Melee Ladder Into Double Elim Top Cut",
+        "slug": "tournament/super-smash-bro-melee-at-game-guys/event/melee-ladder-into-double-elim-top-cut",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 0,
         "videogame": {
             "id": 1
         },
-        "startAt": 1689120000,
+        "startAt": 1689116400,
         "phaseGroups": [
             {
                 "id": 2132166,
                 "phase": {
                     "id": 1406077,
-                    "name": "Bracket"
+                    "name": "Open Ladder"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 9069394
+                    },
+                    {
+                        "id": 9069395
+                    },
+                    {
+                        "id": 9069396
+                    },
+                    {
+                        "id": 9069397
+                    },
+                    {
+                        "id": 9069398
+                    },
+                    {
+                        "id": 9069399
+                    },
+                    {
+                        "id": 9069400
+                    },
+                    {
+                        "id": 9069401
+                    }
+                ]
+            },
+            {
+                "id": 2132688,
+                "phase": {
+                    "id": 1406487,
+                    "name": "Top Cut"
                 },
                 "progressionsOut": null
             }
@@ -41662,7 +41695,7 @@
         "tournament": "Super Smash bro. Melee at Game Guys",
         "tournament_id": 565569,
         "city": "Houston",
-        "url": "https://smash.gg/tournament/super-smash-bro-melee-at-game-guys/event/melee",
+        "url": "https://smash.gg/tournament/super-smash-bro-melee-at-game-guys/event/melee-ladder-into-double-elim-top-cut",
         "streams": [
             {
                 "streamName": "spawnpointtx"
@@ -43144,7 +43177,7 @@
         "slug": "tournament/melee-da-greenhouse-24/event/dgh-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -43316,6 +43349,28 @@
                 "id": 2132635,
                 "phase": {
                     "id": 1406436,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
+    },
+    "939952": {
+        "id": 939952,
+        "name": "melee but you are single you nerd",
+        "slug": "tournament/flacid-plakes-3-0-last-one-maybe/event/melee-but-you-are-single-you-nerd",
+        "isOnline": true,
+        "state": "ACTIVE",
+        "numEntrants": 4,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1688442900,
+        "phaseGroups": [
+            {
+                "id": 2132644,
+                "phase": {
+                    "id": 1406443,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
