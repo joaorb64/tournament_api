@@ -52827,28 +52827,6 @@
             }
         ]
     },
-    "946918": {
-        "id": 946918,
-        "name": "SP 1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
-        "slug": "tournament/29-kurobraweeknight/event/sp-1on1",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 13,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1690452000,
-        "phaseGroups": [
-            {
-                "id": 2145674,
-                "phase": {
-                    "id": 1415562,
-                    "name": "\u30b9\u30de\u30d6\u30e9SP\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "938887": {
         "id": 938887,
         "name": "YSM 43 Ultimate Singles",
@@ -89464,28 +89442,6 @@
             }
         ]
     },
-    "952454": {
-        "id": 952454,
-        "name": "Smash Singles",
-        "slug": "tournament/odyssey-weekly-10/event/smash-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1690452000,
-        "phaseGroups": [
-            {
-                "id": 2156146,
-                "phase": {
-                    "id": 1422726,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "952488": {
         "id": 952488,
         "name": "SSBU Singles #108",
@@ -91659,45 +91615,22 @@
         "name": "singles",
         "slug": "tournament/shin-toryumon-7-1/event/singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 38,
         "videogame": {
             "id": 1386
         },
         "startAt": 1691051400,
-        "phaseGroups": [],
-        "tournament": "Shin Toryumon #7",
-        "tournament_id": 572692,
-        "city": "\u8c4a\u5cf6\u533a",
-        "url": "https://smash.gg/tournament/shin-toryumon-7-1/event/singles",
-        "streams": [
+        "phaseGroups": [
             {
-                "streamName": "takera"
+                "id": 2156497,
+                "phase": {
+                    "id": 1422978,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "timezone": "Asia/Tokyo",
-        "tournament_startAt": 1691051400,
-        "tournament_endAt": 1691071200,
-        "tournament_registrationClosesAt": 1691049600,
-        "images": [
-            {
-                "id": "5962581",
-                "url": "https://images.start.gg/images/tournament/572692/image-b3a9dbc66d89fce39f24a8e31eeb97a5.jpg?ehk=JHMXICrty4BGdY199TOa9pc%2B9n0SZaLxOlzJVfsnPws%3D&ehkOptimized=mTwMs%2BHbXCLtn0sA2D7YBGjfD%2F62K13x8Pco%2Fio9Vvc%3D",
-                "type": "profile"
-            },
-            {
-                "id": "5962582",
-                "url": "https://images.start.gg/images/tournament/572692/image-bf435671b32d54a2d6e64a07bb6b8fb9.jpg?ehk=492iaSEGj4zM0A2tsWhxCD3%2BVLnsPq3JNCkXXTFcJ%2Bo%3D&ehkOptimized=1vjoTlJTifqsEgaPok4YgI%2BXBxwbgliSwuUm8XLQktY%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012170-0005 \u6771\u4eac\u90fd\u8c4a\u5cf6\u533a\u5357\u5927\u585a\uff13\u4e01\u76ee\uff14\uff18\u2212\uff12 \uff2e\uff23\u30d3\u30eb 4\u968e",
-        "tournament_addrState": "\u6771\u4eac\u90fd",
-        "country_code": "JP",
-        "lat": 35.7301997,
-        "lng": 139.7274627
+        ]
     },
     "952627": {
         "id": 952627,
@@ -91946,7 +91879,7 @@
         "name": "Super Smash Wednesday - August 2 2023",
         "slug": "tournament/super-smash-wednesday/event/super-smash-wednesday-august-2-2023",
         "isOnline": false,
-        "state": "COMPLETED",
+        "state": "ACTIVE",
         "numEntrants": 5,
         "videogame": {
             "id": 1386
@@ -91959,7 +91892,11 @@
                     "id": 1422981,
                     "name": "Round 1 : Round Robin"
                 },
-                "progressionsOut": null
+                "progressionsOut": [
+                    {
+                        "id": 9213537
+                    }
+                ]
             },
             {
                 "id": 2165202,
@@ -91967,20 +91904,24 @@
                     "id": 1428126,
                     "name": "Round 2 : Round Robin"
                 },
-                "progressionsOut": null
-            },
-            {
-                "id": 2166547,
-                "phase": {
-                    "id": 1428558,
-                    "name": "TB for 1st"
-                },
-                "progressionsOut": null
+                "progressionsOut": [
+                    {
+                        "id": 9213538
+                    }
+                ]
             },
             {
                 "id": 2166548,
                 "phase": {
                     "id": 1428559,
+                    "name": "TB for 1st"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 2166979,
+                "phase": {
+                    "id": 1428876,
                     "name": "TB for 4th"
                 },
                 "progressionsOut": null
@@ -110058,8 +109999,8 @@
         "name": "Ultimate Redemption Singles",
         "slug": "tournament/roadside-rumble-157/event/ultimate-redemption-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 6,
+        "state": "ACTIVE",
+        "numEntrants": 7,
         "videogame": {
             "id": 1386
         },
@@ -125377,7 +125318,7 @@
         "slug": "tournament/ib-games-7-road-to-tera/event/ultimate-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 262,
+        "numEntrants": 511,
         "videogame": {
             "id": 1386
         },
@@ -185903,5 +185844,95 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "956609": {
+        "id": 956609,
+        "name": "Crocomonthly #3",
+        "slug": "tournament/crocomonthly-3/event/crocomonthly-3",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": null,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1693036740,
+        "phaseGroups": [],
+        "tournament": "CrocoMonthly #3",
+        "tournament_id": 574824,
+        "city": "Saint-Herblain",
+        "url": "https://smash.gg/tournament/crocomonthly-3/event/crocomonthly-3",
+        "streams": null,
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1693036740,
+        "tournament_endAt": 1693069200,
+        "tournament_registrationClosesAt": 1693069200,
+        "images": [
+            {
+                "id": "5983620",
+                "url": "https://images.start.gg/images/tournament/574824/image-83fdd48d15b9b8f62d96ec40f60e877f.jpg?ehk=IDrfRdnzuiVscUhhAQHuWGHXuxCqvVlrxmeud626BnI%3D&ehkOptimized=q1itoKKfp16j6ByaZDA8xvBWvOAl288YHHh%2FMtj9gkU%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "15 Rue d'Arras, 44800 Saint-Herblain, France",
+        "tournament_addrState": "Pays de la Loire",
+        "country_code": "FR",
+        "lat": 47.21262429999999,
+        "lng": -1.6090827
+    },
+    "956613": {
+        "id": 956613,
+        "name": "Main Event - Smash Ultimate 1v1",
+        "slug": "tournament/hebdomadeh-49-1/event/main-event-smash-ultimate-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1691596800,
+        "phaseGroups": [
+            {
+                "id": 2166972,
+                "phase": {
+                    "id": 1428870,
+                    "name": "Fight for the DEH"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "HEBDOMADEH #49",
+        "tournament_id": 574827,
+        "city": "Saint-\u00c9tienne",
+        "url": "https://smash.gg/tournament/hebdomadeh-49-1/event/main-event-smash-ultimate-1v1",
+        "streams": [
+            {
+                "streamName": "dehesport"
+            }
+        ],
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1691596800,
+        "tournament_endAt": 1691618100,
+        "tournament_registrationClosesAt": 1691665200,
+        "images": [
+            {
+                "id": "5983629",
+                "url": "https://images.start.gg/images/tournament/574827/image-99dc5a593a1b5cf9361a3fb56344089d.png?ehk=9duwGJRELaH9MR87mZAD4KAgEuZgs4XJH3lGfZdnGqk%3D&ehkOptimized=zlf3%2FibY31rYyZFKMjIwo5KI2rIsbxFdVJCPewpiNLE%3D",
+                "type": "profile"
+            },
+            {
+                "id": "5983630",
+                "url": "https://images.start.gg/images/tournament/574827/image-bfa46950f142b3dee264f9ef31793cb3.png?ehk=nZBh53UKrDI0F0HOGYUFAn3vL%2Fxl8bA8a1g0UBwUAOo%3D&ehkOptimized=x2K5yXlxej224Y6l9gc4Uz2Rs%2BBpPS41VeMR1X0Fb6o%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "4 Rue Richelandi\u00e8re, 42100 Saint-\u00c9tienne, France",
+        "tournament_addrState": "Auvergne-Rh\u00f4ne-Alpes",
+        "country_code": "FR",
+        "lat": 45.4388746,
+        "lng": 4.3980122
     }
 }
