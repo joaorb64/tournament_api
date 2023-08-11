@@ -4,15 +4,19 @@ import unicodedata
 import collections
 import collections.abc
 import openskill
+import openskill
+from openskill.models import ThurstoneMostellerPart
 import sys
 
+
 def update(d, u):
-  for k, v in u.items():
-    if isinstance(v, collections.abc.Mapping):
-        d[k] = update(d.get(k, {}), v)
-    else:
-        d[k] = v
-  return d
+    for k, v in u.items():
+        if isinstance(v, collections.abc.Mapping):
+            d[k] = update(d.get(k, {}), v)
+        else:
+            d[k] = v
+    return d
+
 
 def skill(game):
     f = open('./out/'+game+'/alltournaments.json')
@@ -35,20 +39,20 @@ def skill(game):
     )
 
     for league in leaguesRegionalToNational:
-        #if allleagues[league].get("region") != "SA":
+        # if allleagues[league].get("region") != "SA":
         #    continue
 
         for tournament in alltournaments[league].values():
             if "link" in tournament:
                 if tournament["link"] in alreadyAddedTournaments and tournament["link"] is not None:
                     continue
-            
+
             tournament["league"] = league
 
             regional = True if allleagues[league].get("state") else False
             wifi = True if allleagues[league].get("wifi") else False
             huge = True if tournament.get("player_number") >= 64 else False
-            
+
             if tournament.get("player_number") < 8:
                 continue
 
@@ -57,10 +61,10 @@ def skill(game):
             tournament["huge"] = huge
 
             allAllTournaments.append(tournament)
-            
+
             if "link" in tournament:
                 alreadyAddedTournaments.append(tournament["link"])
-    
+
     print("Tournaments: "+str(len(allAllTournaments)))
 
     allAllTournaments = sorted(allAllTournaments, key=lambda t: t["time"])
@@ -74,8 +78,10 @@ def skill(game):
             if -1 in match["participants"].values():
                 continue
 
-            p1 = next((p for p in linkage if linkage[p] == list(match["participants"].keys())[0]), None)
-            p2 = next((p for p in linkage if linkage[p] == list(match["participants"].keys())[1]), None)
+            p1 = next((p for p in linkage if linkage[p] == list(
+                match["participants"].keys())[0]), None)
+            p2 = next((p for p in linkage if linkage[p] == list(
+                match["participants"].keys())[1]), None)
 
             if p1 == None or p2 == None:
                 continue
@@ -85,21 +91,21 @@ def skill(game):
 
             if p1apid == None or p2apid == None:
                 continue
-        
+
             wifi = False
             if tournament["wifi"]:
                 wifi = True
-            
+
             local = False
             if tournament["regional"]:
                 local = True
-            
+
             huge = False
             if tournament["huge"]:
                 huge = True
 
             results = list(match["participants"].values())
-            
+
             # p1 wins
             if results[0] > results[1]:
                 myMatch = [p1apid, p2apid, wifi, local, huge]
@@ -108,20 +114,20 @@ def skill(game):
             else:
                 myMatch = [p2apid, p1apid, wifi, local, huge]
                 allmatches.append(myMatch)
-                
-    
+
     print("Matches: "+str(len(allmatches)))
     print("Players: "+str(len(allplayers["players"])))
 
     players = {}
 
-    ts = openskill.Rating()
+    ts = openskill.models.ThurstoneMostellerPart()
 
     for player in allplayers["players"]:
         if player.get("apid", None) != None:
             players[player["apid"]] = {}
             players[player["apid"]]["player"] = player
-            players[player["apid"]]["rating"] = openskill.Rating(mu=25/4, sigma=8.333/4)
+            players[player["apid"]]["rating"] = ts.rating(
+                mu=25/4, sigma=8.333/4)
 
     for i, match in enumerate(allmatches):
         if players.get(match[0]) and players.get(match[1]):
@@ -134,29 +140,29 @@ def skill(game):
             # local
             if match[3]:
                 weight = 2
-            
+
             # huge, not online
             if match[4] and not match[2]:
                 weight = 8
 
             for j in range(weight):
-                new_p1, new_p2 = openskill.rate(
+                new_p1, new_p2 = ts.rate(
                     [
                         [players[match[0]]["rating"]],
                         [players[match[1]]["rating"]]
                     ],
-                    tau=0.3,
-                    prevent_sigma_increase=True
+                    tau=0.3
                 )
-                #print(new_p1)
-                #print(players[match[0]])
+                # print(new_p1)
+                # print(players[match[0]])
                 players[match[0]]["rating"] = new_p1[0]
                 players[match[1]]["rating"] = new_p2[0]
 
-            print("Matches..."+str(i)+"/"+str(len(allmatches))+"..."+str(i/len(allmatches)*100)+"%", end="\r")
+            print("Matches..."+str(i)+"/"+str(len(allmatches)) +
+                  "..."+str(i/len(allmatches)*100)+"%", end="\r")
 
     for p in players:
-        players[p]["player"]["ts"] = openskill.ordinal(players[p]["rating"])
+        players[p]["player"]["ts"] = players[p]["rating"].ordinal()
         players[p]["player"]["mu"] = players[p]["rating"].mu
         players[p]["player"]["sigma"] = players[p]["rating"].sigma
 
@@ -168,7 +174,7 @@ def skill(game):
     ranking = []
     for i, p in enumerate(leaderboard):
         ranking.append(p["player"])
-    
+
     if len(ranking) > 0:
         higherScore = max(ranking[0]["ts"], 1)
         subdivisions = 20
@@ -179,26 +185,27 @@ def skill(game):
         with open('./out/'+game+'/leaderboardreadable.txt', 'w') as outfile:
             for i, p in enumerate(ranking):
                 outfile.write(
-                    str(i+1) + "\t\t" + 
+                    str(i+1) + "\t\t" +
                     chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
-                    (p.get("org")+" " if p.get("org") not in [None, "null", " "] else "") +
+                    (p.get("org")+" " if p.get("org") not in [None, "null", ""] else "") +
                     str(p["name"]) +
                     " ("+p.get("country_code")+")" +
-                    " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
+                    " ("+(p.get("mains")[0] if len(p.get("mains")) > 0 else "?")+")" +
                     "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
-        
+
         for country in ["BR", "AR", "BO", "CL", "EC", "UY", "PE", "CO"]:
             with open('./out/'+game+'/leaderboardreadable_'+country+'.txt', 'w') as outfile:
                 for i, p in enumerate(ranking):
-                    if p.get("country_code") != country: continue
+                    if p.get("country_code") != country:
+                        continue
 
                     outfile.write(
-                        str(i+1) + "\t\t" + 
+                        str(i+1) + "\t\t" +
                         chr(ord('A')+int((1-(p["ts"]/higherScore))*subdivisions)) + "\t" +
-                        (p.get("org")+" " if p.get("org") not in [None, "null", " "] else "") +
+                        (p.get("org")+" " if p.get("org") not in [None, "null", ""] else "") +
                         str(p["name"]) +
                         " ("+p.get("country_code")+")" +
-                        " ("+(p.get("mains")[0] if len(p.get("mains"))>0 else "?")+")" +
+                        " ("+(p.get("mains")[0] if len(p.get("mains")) > 0 else "?")+")" +
                         "\t\t\t\t\t\t" + str(p["ts"]) + "\n")
 
     with open('./out/'+game+'/allplayers.json', 'w') as outfile:
@@ -210,12 +217,13 @@ def skill(game):
             "sigma": ts.sigma
         }, outfile, indent=4)
 
-if __name__ == "__main__":
-	games = os.listdir("./games")
 
-	if len(sys.argv) >= 2:
-		game = sys.argv[1]
-		skill(game)
-	else:
-		for game in games:
-			skill(game)
+if __name__ == "__main__":
+    games = os.listdir("./games")
+
+    if len(sys.argv) >= 2:
+        game = sys.argv[1]
+        skill(game)
+    else:
+        for game in games:
+            skill(game)
