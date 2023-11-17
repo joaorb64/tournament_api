@@ -11,17 +11,18 @@ import sys
 from get_challonge_next_tournaments import get_tournaments
 
 if os.path.exists("auth.json"):
-  f = open('auth.json')
-  auth_json = json.load(f)
-  SMASHGG_KEYS = auth_json["SMASHGG_KEYS"]
+    f = open('auth.json')
+    auth_json = json.load(f)
+    SMASHGG_KEYS = auth_json["SMASHGG_KEYS"]
 else:
-  SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
+    SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
 
 f = open('./smashgg_countrycodes.json')
 smashgg_countrycodes = json.load(f)
 
 f = open('./countries+states+cities.json')
 countries_json = json.load(f)
+
 
 def get_next_tournaments(game):
     print(game)
@@ -33,7 +34,7 @@ def get_next_tournaments(game):
 
     f = open('./games/'+game+'/next_tournaments_countries.json')
     countries = json.load(f)
-    
+
     oldTournaments = {}
     updateTime = 0
 
@@ -57,9 +58,11 @@ def get_next_tournaments(game):
 
     while True:
         r = requests.post(
-            'https://api.smash.gg/gql/alpha',
+            'https://www.start.gg/api/-/gql',
             headers={
-                'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+                "client-version": "20",
+                'Content-Type': 'application/json',
+                "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
             },
             json={
                 'query': '''
@@ -89,20 +92,21 @@ def get_next_tournaments(game):
                 'variables': {
                     "perPage": 20
                 },
+                "operationName": "Tournaments",
             }
         )
         time.sleep(4/len(SMASHGG_KEYS))
-        currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+        currentKey = (currentKey+1) % len(SMASHGG_KEYS)
 
         resp = json.loads(r.text)
 
         if resp is None or \
-        resp.get("data") is None or \
-        resp["data"].get("tournaments") is None or \
-        resp["data"]["tournaments"].get("nodes") is None:
+                resp.get("data") is None or \
+                resp["data"].get("tournaments") is None or \
+                resp["data"]["tournaments"].get("nodes") is None:
             print(str(resp))
             break
-    
+
         data = resp["data"]["tournaments"]["nodes"]
 
         if data == None or len(data) == 0:
@@ -112,12 +116,14 @@ def get_next_tournaments(game):
 
         for tournament in data:
             r = requests.post(
-                'https://api.smash.gg/gql/alpha',
+                "https://www.start.gg/api/-/gql",
                 headers={
-                'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
+                    "client-version": "20",
+                    'Content-Type': 'application/json',
+                    "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
                 },
                 json={
-                'query': '''
+                    'query': '''
                     query Tournament($tournamentId: ID!) {
                         tournament(id: $tournamentId) {
                             id
@@ -167,13 +173,14 @@ def get_next_tournaments(game):
                         }
                     },
                 ''',
-                'variables': {
-                    "tournamentId": tournament["id"]
-                },
+                    'variables': {
+                        "tournamentId": tournament["id"]
+                    },
+                    "operationName": "Tournament",
                 }
             )
             time.sleep(1/len(SMASHGG_KEYS))
-            currentKey = (currentKey+1)%len(SMASHGG_KEYS)
+            currentKey = (currentKey+1) % len(SMASHGG_KEYS)
 
             resp = json.loads(r.text)
             tournament_data = resp.get("data", {}).get("tournament")
@@ -211,24 +218,28 @@ def get_next_tournaments(game):
                     event["lat"] = tournament_data["lat"]
                     event["lng"] = tournament_data["lng"]
 
-                    r = requests.get("https://api.smash.gg"+tournament_data["url"])
+                    r = requests.get("https://api.smash.gg" +
+                                     tournament_data["url"])
                     oldApiData = json.loads(r.text)
 
                     attendeeRequirements = \
                         oldApiData.get("entities", {})\
                         .get("tournament", {})\
                         .get("attendeeRequirements", {})
-                    
+
                     countryRequirements = None
                     if attendeeRequirements != None and not isinstance(attendeeRequirements, list):
-                        countryRequirements = attendeeRequirements.get("country", None)
+                        countryRequirements = attendeeRequirements.get(
+                            "country", None)
 
                     if countryRequirements:
                         regionLock = []
                         for country in countryRequirements:
-                            name = next((c["country"] for c in smashgg_countrycodes if c["id"] == country), None)
+                            name = next(
+                                (c["country"] for c in smashgg_countrycodes if c["id"] == country), None)
                             if name:
-                                ccode = next((c["iso2"] for c in countries_json if c["name"]==name or c["native"]==name), None)
+                                ccode = next(
+                                    (c["iso2"] for c in countries_json if c["name"] == name or c["native"] == name), None)
                                 if ccode:
                                     name = ccode
                                 codemap = {
@@ -255,31 +266,33 @@ def get_next_tournaments(game):
                                 }
                                 if name in codemap:
                                     name = codemap[name]
-                                
+
                                 regionLock.append(name)
                         event["region_lock"] = regionLock
                         print(regionLock)
-                
+
                 tournaments.append(event)
-        page+=1
-    
+        page += 1
+
     # Challonge
     try:
         if config.get("challonge_videogame_id") and config.get("challonge_game_name"):
             print("Challonge")
-            tournaments.extend(get_tournaments(config["challonge_videogame_id"], config["challonge_game_name"]))
+            tournaments.extend(get_tournaments(
+                config["challonge_videogame_id"], config["challonge_game_name"]))
     except Exception as e:
         print("Challonge error: "+str(e))
 
     print("Tournament number: "+str(len(tournaments)))
-    
+
     for oldTournament in oldTournaments.get("events", []):
         if "tournament_endAt" in oldTournament and "id" in oldTournament:
-            found = next((t for t in tournaments if t.get("id", None) == oldTournament["id"]), None)
+            found = next((t for t in tournaments if t.get(
+                "id", None) == oldTournament["id"]), None)
 
             if not found and time.time() <= oldTournament["tournament_endAt"]:
                 tournaments.append(oldTournament)
-    
+
     for tournament in tournaments:
         weekTournaments[str(tournament["id"])] = tournament
 
@@ -294,9 +307,10 @@ def get_next_tournaments(game):
             outfile,
             indent=4
         )
-    
+
     with open('./out/'+game+'/week_tournaments.json', 'w', encoding="utf-8") as outfile:
         json.dump(weekTournaments, outfile, indent=4)
+
 
 if __name__ == "__main__":
     games = os.listdir("./games")

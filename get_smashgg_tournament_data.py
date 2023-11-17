@@ -9,36 +9,39 @@ from collections import Counter
 import sys
 
 if os.path.exists("auth.json"):
-  f = open('auth.json')
-  auth_json = json.load(f)
-  SMASHGG_KEYS = auth_json["SMASHGG_KEYS"]
+    f = open('auth.json')
+    auth_json = json.load(f)
+    SMASHGG_KEYS = auth_json["SMASHGG_KEYS"]
 else:
-  SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
+    SMASHGG_KEYS = os.environ.get("SMASHGG_KEYS")
+
 
 def get_smashgg_tournament_info(tournament, currentKey):
-	global SMASHGG_KEYS
+    global SMASHGG_KEYS
 
-	# not on smashgg, skip
-	if not tournament["link"] or ("smash.gg" not in tournament.get("link", "") and "start.gg" not in tournament.get("link", "")):
-		print("Not on smashgg, skipping")
-		return
-	
-	tournament_slug_start = tournament["link"].index("tournament/")
-	slug = tournament["link"][tournament_slug_start:]
+    # not on smashgg, skip
+    if not tournament["link"] or ("smash.gg" not in tournament.get("link", "") and "start.gg" not in tournament.get("link", "")):
+        print("Not on smashgg, skipping")
+        return
 
-	if tournament["ranking"] is None:
-		return
+    tournament_slug_start = tournament["link"].index("tournament/")
+    slug = tournament["link"][tournament_slug_start:]
 
-	page = 1
+    if tournament["ranking"] is None:
+        return
 
-	# Get metadata
-	r = requests.post(
-		'https://api.smash.gg/gql/alpha',
-		headers={
-			'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
-		},
-		json={
-			'query': '''
+    page = 1
+
+    # Get metadata
+    r = requests.post(
+        "https://www.start.gg/api/-/gql",
+        headers={
+            "client-version": "20",
+            'Content-Type': 'application/json',
+            "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+        },
+        json={
+            'query': '''
 			query evento($eventSlug: String!) {
 				event(slug: $eventSlug) {
 					tournament {
@@ -49,34 +52,38 @@ def get_smashgg_tournament_info(tournament, currentKey):
 				}
 			},
 		''',
-			'variables': {
-				"eventSlug": slug
-			},
-		}
-	)
-	time.sleep(1)
+            'variables': {
+                "eventSlug": slug
+            },
+            "operationName": "evento",
+        }
+    )
+    time.sleep(1)
 
-	resp = json.loads(r.text)
+    resp = json.loads(r.text)
 
-	if resp is not None and \
-		resp.get("data", {}) is not None and \
-		resp.get("data", {}).get("event", {}) is not None and \
-		resp.get("data", {}).get("event", {}).get("tournament", {}) is not None and \
-		resp.get("data", {}).get("event", {}).get("tournament", {}).get("owner", {}) is not None:
-		to = resp.get("data", {}).get("event", {}).get("tournament", {}).get("owner", {}).get("id", None)
+    if resp is not None and \
+            resp.get("data", {}) is not None and \
+            resp.get("data", {}).get("event", {}) is not None and \
+            resp.get("data", {}).get("event", {}).get("tournament", {}) is not None and \
+            resp.get("data", {}).get("event", {}).get("tournament", {}).get("owner", {}) is not None:
+        to = resp.get("data", {}).get("event", {}).get(
+            "tournament", {}).get("owner", {}).get("id", None)
 
-		if to is not None:
-			tournament["to"] = to
+        if to is not None:
+            tournament["to"] = to
 
-	# Get entrants
-	while True:
-		r = requests.post(
-			'https://api.smash.gg/gql/alpha',
-			headers={
-				'Authorization': 'Bearer'+SMASHGG_KEYS[currentKey],
-			},
-			json={
-				'query': '''
+    # Get entrants
+    while True:
+        r = requests.post(
+            "https://www.start.gg/api/-/gql",
+            headers={
+                "client-version": "20",
+                'Content-Type': 'application/json',
+                "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36"
+            },
+            json={
+                'query': '''
 				query evento($eventSlug: String!) {
 					event(slug: $eventSlug) {
 						entrants(query: {page: '''+str(page)+''', perPage: 120}) {
@@ -95,44 +102,45 @@ def get_smashgg_tournament_info(tournament, currentKey):
 					}
 				},
 			''',
-				'variables': {
-					"eventSlug": slug
-				},
-			}
-		)
-		time.sleep(1)
+                'variables': {
+                    "eventSlug": slug
+                },
+                "operationName": "evento",
+            }
+        )
+        time.sleep(1)
 
-		resp = json.loads(r.text)
+        resp = json.loads(r.text)
 
-		if resp is None or \
-		resp.get("data") is None or \
-		resp["data"].get("event") is None or \
-		resp["data"]["event"].get("entrants") is None:
-			print(resp)
-			break
+        if resp is None or \
+                resp.get("data") is None or \
+                resp["data"].get("event") is None or \
+                resp["data"]["event"].get("entrants") is None:
+            print(resp)
+            break
 
-		data_entrants = resp["data"]["event"]["entrants"]["nodes"]
+        data_entrants = resp["data"]["event"]["entrants"]["nodes"]
 
-		if data_entrants is None or len(data_entrants) == 0:
-			break
-	
-		num_pages = resp["data"]["event"]["entrants"]["pageInfo"]["totalPages"]
+        if data_entrants is None or len(data_entrants) == 0:
+            break
 
-		print("Page: "+str(page)+"/"+str(num_pages)+
-			"\tEntries: "+str(len(data_entrants)))
+        num_pages = resp["data"]["event"]["entrants"]["pageInfo"]["totalPages"]
 
-		for gg_entrant in data_entrants:
-			for braacket_entrant in tournament["ranking"].items():
-				if braacket_entrant[1]["tournament_name"] is None:
-					continue
-				if gg_entrant["name"] == braacket_entrant[1]["tournament_name"]:
-					if gg_entrant["participants"][0]["user"] is None:
-						# no smashgg data, nothing to do here
-						continue
-				
-					braacket_entrant[1]["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
+        print("Page: "+str(page)+"/"+str(num_pages) +
+              "\tEntries: "+str(len(data_entrants)))
 
-		if page >= num_pages:
-			break
+        for gg_entrant in data_entrants:
+            for braacket_entrant in tournament["ranking"].items():
+                if braacket_entrant[1]["tournament_name"] is None:
+                    continue
+                if gg_entrant["name"] == braacket_entrant[1]["tournament_name"]:
+                    if gg_entrant["participants"][0]["user"] is None:
+                        # no smashgg data, nothing to do here
+                        continue
 
-		page += 1
+                    braacket_entrant[1]["smashgg_id"] = gg_entrant["participants"][0]["user"]["id"]
+
+        if page >= num_pages:
+            break
+
+        page += 1
