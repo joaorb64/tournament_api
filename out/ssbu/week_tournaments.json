@@ -30193,7 +30193,7 @@
         "timezone": "Europe/London",
         "tournament_startAt": 1705501800,
         "tournament_endAt": 1705509000,
-        "tournament_registrationClosesAt": 1705458600,
+        "tournament_registrationClosesAt": 1705501800,
         "images": [
             {
                 "id": "6427955",
@@ -78176,7 +78176,7 @@
         "name": "Singles Tournament",
         "slug": "tournament/impact-arena-29/event/singles-tournament",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 16,
         "videogame": {
             "id": 1386
@@ -109523,12 +109523,21 @@
         "slug": "tournament/kargo-season-5-18/event/smash-ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 8,
         "videogame": {
             "id": 1386
         },
         "startAt": 1705514400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2333778,
+                "phase": {
+                    "id": 1554231,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Kargo Season 5 #18",
         "tournament_id": 626818,
         "city": "Portsmouth",
@@ -140013,7 +140022,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/the-temple-smash-inbetween/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 14,
         "videogame": {
             "id": 1386
@@ -140649,7 +140658,7 @@
         "slug": "tournament/super-barista-bros-canadian-jays-whimsical-adventures/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 5,
         "videogame": {
             "id": 1386
         },
@@ -140705,7 +140714,7 @@
                 "progressionsOut": null
             }
         ],
-        "tournament": "Super Barista Bros, Canadian Jays Whimsical Adventures",
+        "tournament": "Super Barista Bros, Canadian Jays Whimsical Adventures!",
         "tournament_id": 627766,
         "city": "Ultimo",
         "url": "https://smash.gg/tournament/super-barista-bros-canadian-jays-whimsical-adventures/event/ultimate-singles",
@@ -140725,8 +140734,8 @@
                 "type": "profile"
             },
             {
-                "id": "6482218",
-                "url": "https://images.start.gg/images/tournament/627766/image-3e93e47b0825cda990cd0840555383d8.jpg?ehk=4%2F5pcCWHgE39MnLjwl%2BiKn2kiloSW5ZFe2n%2F6bK2FcI%3D&ehkOptimized=hAQ84EUnLRkndnlCYheA4zh%2BBiewGzTKGEFl%2F9k8KwQ%3D",
+                "id": "6486698",
+                "url": "https://images.start.gg/images/tournament/627766/image-bd22515f97f072d3d6b11029190870e9.png?ehk=Bb06Gt1g5Z8tDNNYRmcohduO7niM53Z3c%2FUKLyZNaEc%3D&ehkOptimized=Gy90Xv%2B5%2B0oFFUmdOqv9ydPjDMOMZ76ZT%2FAK8DJPbaA%3D",
                 "type": "banner"
             }
         ],
@@ -154375,7 +154384,7 @@
                 "id": 2338698,
                 "phase": {
                     "id": 1557840,
-                    "name": "Bracket"
+                    "name": "Main Scenario"
                 },
                 "progressionsOut": [
                     {
@@ -154455,7 +154464,7 @@
         "slug": "tournament/lets-make-big-caccas/event/ultimate-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 13,
         "videogame": {
             "id": 1386
         },
@@ -154520,5 +154529,44 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1057828": {
+        "id": 1057828,
+        "name": "1vs1",
+        "slug": "tournament/nimora/event/1vs1",
+        "isOnline": true,
+        "state": "ACTIVE",
+        "numEntrants": 32,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1705532400,
+        "phaseGroups": [
+            {
+                "id": 2338700,
+                "phase": {
+                    "id": 1557842,
+                    "name": "Backet final"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "nimora",
+        "tournament_id": 628149,
+        "city": null,
+        "url": "https://smash.gg/tournament/nimora/event/1vs1",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1705532400,
+        "tournament_endAt": 1705575600,
+        "tournament_registrationClosesAt": 1704319260,
+        "images": [],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
