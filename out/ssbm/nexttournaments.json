@@ -1,5 +1,5 @@
 {
-    "updateTime": 1709366824,
+    "updateTime": 1709370408,
     "events": [
         {
             "id": 1088329,
@@ -107,7 +107,7 @@
             "slug": "tournament/hidden-craft-x/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 1,
             "videogame": {
                 "id": 1
             },
@@ -157,7 +157,7 @@
             "slug": "tournament/hidden-craft-x/event/ruleset-chaos",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 1,
             "videogame": {
                 "id": 1
             },
@@ -202,54 +202,56 @@
             "lng": -117.1686273
         },
         {
-            "id": 1084531,
+            "id": 1087020,
             "name": "Melee Singles",
-            "slug": "tournament/beyond-elite-reborn/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 11,
+            "slug": "tournament/revolution-6/event/melee-singles",
+            "isOnline": true,
+            "state": "ACTIVE",
+            "numEntrants": 10,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1709488800,
+            "startAt": 1709370000,
             "phaseGroups": [
                 {
-                    "id": 2383293,
+                    "id": 2387238,
                     "phase": {
-                        "id": 1591918,
-                        "name": "Bracket"
+                        "id": 1595009,
+                        "name": "Round Robin"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 10084923
+                        },
+                        {
+                            "id": 10084925
+                        }
+                    ]
+                },
+                {
+                    "id": 2390571,
+                    "phase": {
+                        "id": 1595009,
+                        "name": "Round Robin"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 10084924
+                        },
+                        {
+                            "id": 10084926
+                        }
+                    ]
+                },
+                {
+                    "id": 2390572,
+                    "phase": {
+                        "id": 1597568,
+                        "name": "Top 4"
                     },
                     "progressionsOut": null
                 }
-            ],
-            "tournament": "Beyond Elite: Reborn",
-            "tournament_id": 641554,
-            "city": "Heroica Puebla de Zaragoza",
-            "url": "https://smash.gg/tournament/beyond-elite-reborn/event/melee-singles",
-            "streams": null,
-            "timezone": "America/Mexico_City",
-            "tournament_startAt": 1709488800,
-            "tournament_endAt": 1709524800,
-            "tournament_registrationClosesAt": 1709445540,
-            "images": [
-                {
-                    "id": "6639590",
-                    "url": "https://images.start.gg/images/tournament/641554/image-a19fda0f1d99eec5499f6c4c881e1f05.jpg?ehk=6pdCPJhdZJ2%2BcmgO42VC6GIPRW50u59XOklmy3wElCU%3D&ehkOptimized=B8Zc%2FPmgbCdIFz7BewJ9Nsx4pR7X4Cr68oL%2BHBc3%2BYY%3D",
-                    "type": "banner"
-                },
-                {
-                    "id": "6639591",
-                    "url": "https://images.start.gg/images/tournament/641554/image-ae074b2d320f8dee60c8bcdc1b89d178.png?ehk=j5Eiuaw0yRAyw9jzg2w1cO%2BYtnt2XCE3u58NyDh8Xj8%3D&ehkOptimized=8n1bTRKG%2FvBEVwEeOEhT9%2FYNg6kX%2F87jHiMS0CBbwFw%3D",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "R\u00edo Tuxpan 5936, Jardines de San Manuel, 72570 Heroica Puebla de Zaragoza, Pue., M\u00e9xico",
-            "tournament_addrState": "Pue.",
-            "country_code": "MX",
-            "lat": 19.0067582,
-            "lng": -98.19969449999999
+            ]
         },
         {
             "id": 1084557,
@@ -290,28 +292,6 @@
                     "phase": {
                         "id": 1596952,
                         "name": "bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1084469,
-            "name": "Melee Singles",
-            "slug": "tournament/the-garage-17/event/melee-singles",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 11,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709348400,
-            "phaseGroups": [
-                {
-                    "id": 2383206,
-                    "phase": {
-                        "id": 1591840,
-                        "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
@@ -389,50 +369,6 @@
             ]
         },
         {
-            "id": 1084299,
-            "name": "Melee Singles",
-            "slug": "tournament/return-of-fourside-2/event/melee-singles",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 6,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709341200,
-            "phaseGroups": [
-                {
-                    "id": 2382938,
-                    "phase": {
-                        "id": 1591618,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1086644,
-            "name": "Melee singles",
-            "slug": "tournament/fight-night-fridays-162/event/melee-singles",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 12,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709341200,
-            "phaseGroups": [
-                {
-                    "id": 2386603,
-                    "phase": {
-                        "id": 1594517,
-                        "name": "Singles"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 1063203,
             "name": "Melee Singles",
             "slug": "tournament/40-kurobra40/event/melee-singles",
@@ -455,155 +391,197 @@
             ]
         },
         {
-            "id": 1086487,
-            "name": "Melee Singles",
-            "slug": "tournament/wwu-winter-8-1/event/melee-singles",
+            "id": 1056329,
+            "name": "Melee Teams",
+            "slug": "tournament/lantrek-2024/event/melee-teams",
             "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 24,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709349300,
-            "phaseGroups": [
-                {
-                    "id": 2386410,
-                    "phase": {
-                        "id": 1594345,
-                        "name": "Melee Singles"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 10068079
-                        },
-                        {
-                            "id": 10068080
-                        },
-                        {
-                            "id": 10068081
-                        },
-                        {
-                            "id": 10068082
-                        },
-                        {
-                            "id": 10068083
-                        },
-                        {
-                            "id": 10068084
-                        },
-                        {
-                            "id": 10068085
-                        },
-                        {
-                            "id": 10068086
-                        }
-                    ]
-                },
-                {
-                    "id": 2386411,
-                    "phase": {
-                        "id": 1594346,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1087808,
-            "name": "Melee Singles",
-            "slug": "tournament/code-red-sweet-spot-8-prelocal/event/melee-singles",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 17,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709337600,
-            "phaseGroups": [
-                {
-                    "id": 2388427,
-                    "phase": {
-                        "id": 1595962,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1087809,
-            "name": "Melee Redemption",
-            "slug": "tournament/code-red-sweet-spot-8-prelocal/event/melee-redemption",
-            "isOnline": false,
-            "state": "COMPLETED",
+            "state": "ACTIVE",
             "numEntrants": 7,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1709337600,
+            "startAt": 1709222400,
             "phaseGroups": [
                 {
-                    "id": 2388428,
+                    "id": 2336161,
                     "phase": {
-                        "id": 1595963,
+                        "id": 1555957,
                         "name": "Bracket"
                     },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1086445,
-            "name": "Melee Singles",
-            "slug": "tournament/tripoint-smash-225/event/melee-singles",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 26,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709337600,
-            "phaseGroups": [
-                {
-                    "id": 2386347,
-                    "phase": {
-                        "id": 1594296,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
+                    "progressionsOut": [
+                        {
+                            "id": 10079216
+                        },
+                        {
+                            "id": 10079217
+                        }
+                    ]
                 },
                 {
-                    "id": 2390383,
+                    "id": 2389535,
                     "phase": {
-                        "id": 1597428,
-                        "name": "Amateur Bracket"
+                        "id": 1596792,
+                        "name": "Finals"
                     },
                     "progressionsOut": null
                 }
             ]
         },
         {
-            "id": 1083776,
-            "name": "Melee Singles",
-            "slug": "tournament/brock-smash-meet-168-feat-rivals-of-aether/event/melee-singles",
+            "id": 1056327,
+            "name": "Melee singles",
+            "slug": "tournament/lantrek-2024/event/melee-singles",
             "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 15,
+            "state": "CREATED",
+            "numEntrants": 23,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1709334000,
+            "startAt": 1709222400,
             "phaseGroups": [
                 {
-                    "id": 2381976,
+                    "id": 2336155,
                     "phase": {
-                        "id": 1590907,
-                        "name": "Bracket"
+                        "id": 1555954,
+                        "name": "pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 10075015
+                        },
+                        {
+                            "id": 10075019
+                        },
+                        {
+                            "id": 10075023
+                        },
+                        {
+                            "id": 10075027
+                        }
+                    ]
+                },
+                {
+                    "id": 2336156,
+                    "phase": {
+                        "id": 1555954,
+                        "name": "pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 10075016
+                        },
+                        {
+                            "id": 10075020
+                        },
+                        {
+                            "id": 10075024
+                        },
+                        {
+                            "id": 10075028
+                        }
+                    ]
+                },
+                {
+                    "id": 2336157,
+                    "phase": {
+                        "id": 1555954,
+                        "name": "pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 10075017
+                        },
+                        {
+                            "id": 10075021
+                        },
+                        {
+                            "id": 10075025
+                        },
+                        {
+                            "id": 10075029
+                        }
+                    ]
+                },
+                {
+                    "id": 2336158,
+                    "phase": {
+                        "id": 1555954,
+                        "name": "pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 10075018
+                        },
+                        {
+                            "id": 10075022
+                        },
+                        {
+                            "id": 10075026
+                        },
+                        {
+                            "id": 10075030
+                        }
+                    ]
+                },
+                {
+                    "id": 2336159,
+                    "phase": {
+                        "id": 1555955,
+                        "name": "Top 16"
                     },
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 1084531,
+            "name": "Melee Singles",
+            "slug": "tournament/beyond-elite-reborn/event/melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1709488800,
+            "phaseGroups": [
+                {
+                    "id": 2383293,
+                    "phase": {
+                        "id": 1591918,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Beyond Elite: Reborn",
+            "tournament_id": 641554,
+            "city": "Heroica Puebla de Zaragoza",
+            "url": "https://smash.gg/tournament/beyond-elite-reborn/event/melee-singles",
+            "streams": null,
+            "timezone": "America/Mexico_City",
+            "tournament_startAt": 1709488800,
+            "tournament_endAt": 1709524800,
+            "tournament_registrationClosesAt": 1709445540,
+            "images": [
+                {
+                    "id": "6639590",
+                    "url": "https://images.start.gg/images/tournament/641554/image-a19fda0f1d99eec5499f6c4c881e1f05.jpg?ehk=6pdCPJhdZJ2%2BcmgO42VC6GIPRW50u59XOklmy3wElCU%3D&ehkOptimized=B8Zc%2FPmgbCdIFz7BewJ9Nsx4pR7X4Cr68oL%2BHBc3%2BYY%3D",
+                    "type": "banner"
+                },
+                {
+                    "id": "6639591",
+                    "url": "https://images.start.gg/images/tournament/641554/image-ae074b2d320f8dee60c8bcdc1b89d178.png?ehk=j5Eiuaw0yRAyw9jzg2w1cO%2BYtnt2XCE3u58NyDh8Xj8%3D&ehkOptimized=8n1bTRKG%2FvBEVwEeOEhT9%2FYNg6kX%2F87jHiMS0CBbwFw%3D",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "R\u00edo Tuxpan 5936, Jardines de San Manuel, 72570 Heroica Puebla de Zaragoza, Pue., M\u00e9xico",
+            "tournament_addrState": "Pue.",
+            "country_code": "MX",
+            "lat": 19.0067582,
+            "lng": -98.19969449999999
         },
         {
             "id": 1054104,
@@ -12235,47 +12213,6 @@
             "country_code": "FR",
             "lat": 49.4390896,
             "lng": 1.0923016
-        },
-        {
-            "id": 1087020,
-            "name": "Melee Singles",
-            "slug": "tournament/revolution-6/event/melee-singles",
-            "isOnline": true,
-            "state": "CREATED",
-            "numEntrants": 2,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1709370000,
-            "phaseGroups": [],
-            "tournament": "REVOLUTION.",
-            "tournament_id": 641012,
-            "city": null,
-            "url": "https://smash.gg/tournament/revolution-6/event/melee-singles",
-            "streams": null,
-            "timezone": null,
-            "tournament_startAt": 1709370000,
-            "tournament_endAt": 1709380800,
-            "tournament_registrationClosesAt": 1709369700,
-            "images": [
-                {
-                    "id": "6649309",
-                    "url": "https://images.start.gg/images/tournament/641012/image-c1d703920d476681b2b405cb9ad182f8.png?ehk=dE1IvZxWMehKfR7HgBM7qHxZ2jRIm2aHDoidv6mL7xA%3D&ehkOptimized=rVaEDoFipmjd8PNo682RFDJcoPBgz0O6UbgNUm%2B4ftc%3D",
-                    "type": "profile"
-                },
-                {
-                    "id": "6649349",
-                    "url": "https://images.start.gg/images/tournament/641012/image-e478227afa9f7873af1e27ccbf0509a2.png?ehk=lihqXPSdwT8xyw2ruofVPS5DZWlPiMfJwGBcq%2FYb5no%3D&ehkOptimized=alUyOIGILMkupZJ%2FBuA1R7jUEf%2FZXZlTXGfP4LoJSxE%3D",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": null,
-            "tournament_addrState": null,
-            "country_code": null,
-            "lat": null,
-            "lng": null
         },
         {
             "id": 1087676,
