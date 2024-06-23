@@ -21820,52 +21820,6 @@
             }
         ]
     },
-    "1157339": {
-        "id": 1157339,
-        "name": "Melee singles",
-        "slug": "tournament/smashology-54/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1718539200,
-        "phaseGroups": [
-            {
-                "id": 2509503,
-                "phase": {
-                    "id": 1686337,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10558336
-                    },
-                    {
-                        "id": 10558337
-                    },
-                    {
-                        "id": 10558338
-                    },
-                    {
-                        "id": 10558339
-                    },
-                    {
-                        "id": 10558340
-                    }
-                ]
-            },
-            {
-                "id": 2509504,
-                "phase": {
-                    "id": 1686338,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1157437": {
         "id": 1157437,
         "name": "Melee Amateur bracket",
@@ -42397,7 +42351,7 @@
         "name": "Melee singles",
         "slug": "tournament/labsesh-18/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 4,
         "videogame": {
             "id": 1
@@ -42408,7 +42362,28 @@
                 "id": 2519755,
                 "phase": {
                     "id": 1693956,
-                    "name": "Bracket"
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10603665
+                    },
+                    {
+                        "id": 10603666
+                    },
+                    {
+                        "id": 10603667
+                    },
+                    {
+                        "id": 10603668
+                    }
+                ]
+            },
+            {
+                "id": 2521027,
+                "phase": {
+                    "id": 1694717,
+                    "name": "top 4bracket"
                 },
                 "progressionsOut": null
             }
@@ -43874,5 +43849,59 @@
         "country_code": "AU",
         "lat": -34.4260737,
         "lng": 150.894604
+    },
+    "1163618": {
+        "id": 1163618,
+        "name": "Melee Singles",
+        "slug": "tournament/small-town-showdown-2024-week-19-smash-ultimate-melee/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1719271800,
+        "phaseGroups": [
+            {
+                "id": 2521008,
+                "phase": {
+                    "id": 1694704,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Small Town Showdown 2024 Week 19 - Smash Ultimate/Melee",
+        "tournament_id": 682596,
+        "city": "Seaford",
+        "url": "https://smash.gg/tournament/small-town-showdown-2024-week-19-smash-ultimate-melee/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "smalltowngamingtv"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1719271800,
+        "tournament_endAt": 1719287940,
+        "tournament_registrationClosesAt": 1719271500,
+        "images": [
+            {
+                "id": "7079278",
+                "url": "https://images.start.gg/images/tournament/682596/image-c6a40aba20cf382437fb5d3c1a4f0207.jpg?ehk=kQHvP2lj53E%2FGrByOZ8%2BiCjTn%2B19HjhPbYcMvGqqv70%3D&ehkOptimized=Wcexw1vxatUst%2B01mgK3XblJrb4CxZ7CSyBwbGnC%2FJg%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7079279",
+                "url": "https://images.start.gg/images/tournament/682596/image-13ed0e34f7c3d098939c30ec5828fd61.jpg?ehk=FnbIQbb%2Bj0O0TjIOJS8KRf%2B3ErOhhEtWaMkSigyaMC0%3D&ehkOptimized=A9a1xjWw0MXPtLUBTHMvnQaumZ8vF%2FtZuZZ2CzkrnUg%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "600 N. Market Street Extended, Seaford, DE 19973, USA",
+        "tournament_addrState": "DE",
+        "country_code": "US",
+        "lat": 38.6560715,
+        "lng": -75.61991859999999
     }
 }
