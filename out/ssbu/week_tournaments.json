@@ -9283,7 +9283,7 @@
                 "type": "profile"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": "9 Manners Street, Te Aro, Wellington 6011, New Zealand",
         "tournament_addrState": "Wellington",
@@ -30678,7 +30678,7 @@
         "slug": "tournament/oslow-smash-league-spring-by-soci-t-g-n-rale/event/oslow-smash-league-spring-by-societe-generale-courtois",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 69,
+        "numEntrants": 70,
         "videogame": {
             "id": 1386
         },
@@ -61606,8 +61606,8 @@
         "name": "Singles",
         "slug": "tournament/libera-me-from-smash/event/singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 10,
+        "state": "ACTIVE",
+        "numEntrants": 11,
         "videogame": {
             "id": 1386
         },
@@ -61665,6 +61665,9 @@
             },
             {
                 "streamName": "lupiae_smash"
+            },
+            {
+                "streamName": "extrick_"
             }
         ],
         "timezone": "Europe/Rome",
@@ -66414,12 +66417,21 @@
         "slug": "tournament/tecnocon/event/super-smash-bros-ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 40,
         "videogame": {
             "id": 1386
         },
         "startAt": 1720220400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2516033,
+                "phase": {
+                    "id": 1691456,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "tecnoCON",
         "tournament_id": 681383,
         "city": "Santa Cruz de Tenerife",
@@ -74670,28 +74682,6 @@
             }
         ]
     },
-    "1164295": {
-        "id": 1164295,
-        "name": "Singles Tournament",
-        "slug": "tournament/249-act/event/singles-tournament",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 12,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1719572400,
-        "phaseGroups": [
-            {
-                "id": 2522062,
-                "phase": {
-                    "id": 1695584,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1164309": {
         "id": 1164309,
         "name": "Asnieres gaming 2024 SSBU",
@@ -75643,69 +75633,6 @@
                 "phase": {
                     "id": 1695662,
                     "name": "Bracket (BO5)"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1164360": {
-        "id": 1164360,
-        "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
-        "slug": "tournament/smash-43-2/event/1on1",
-        "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 14,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1719568800,
-        "phaseGroups": [
-            {
-                "id": 2522313,
-                "phase": {
-                    "id": 1695670,
-                    "name": "TOP16"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10626072
-                    },
-                    {
-                        "id": 10626073
-                    },
-                    {
-                        "id": 10626074
-                    },
-                    {
-                        "id": 10626075
-                    },
-                    {
-                        "id": 10626076
-                    },
-                    {
-                        "id": 10626077
-                    },
-                    {
-                        "id": 10626078
-                    },
-                    {
-                        "id": 10626079
-                    }
-                ]
-            },
-            {
-                "id": 2522315,
-                "phase": {
-                    "id": 1695671,
-                    "name": "B\u30af\u30e9\u30b9"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2522316,
-                "phase": {
-                    "id": 1695672,
-                    "name": "TOP8"
                 },
                 "progressionsOut": null
             }
@@ -82556,28 +82483,6 @@
         "country_code": "ES",
         "lat": 37.1856095,
         "lng": -3.6110488
-    },
-    "1165105": {
-        "id": 1165105,
-        "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
-        "slug": "tournament/in-oita-7/event/1on1",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 4,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1719570600,
-        "phaseGroups": [
-            {
-                "id": 2523406,
-                "phase": {
-                    "id": 1696629,
-                    "name": "TOP4"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1151537": {
         "id": 1151537,
@@ -93300,28 +93205,6 @@
         "lat": 40.9079142,
         "lng": -73.7827764
     },
-    "1166197": {
-        "id": 1166197,
-        "name": "Ultimate Singles",
-        "slug": "tournament/bridge-weeklies-season-12-week-6/event/ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1719570600,
-        "phaseGroups": [
-            {
-                "id": 2525122,
-                "phase": {
-                    "id": 1698006,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1166303": {
         "id": 1166303,
         "name": "Squad Strike - BONUS Side Bracket!",
@@ -97282,61 +97165,6 @@
             }
         ]
     },
-    "1166658": {
-        "id": 1166658,
-        "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
-        "slug": "tournament/double-g-27/event/1on1",
-        "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 24,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1719570600,
-        "phaseGroups": [
-            {
-                "id": 2525898,
-                "phase": {
-                    "id": 1698607,
-                    "name": "TOP24"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10623344
-                    },
-                    {
-                        "id": 10623345
-                    },
-                    {
-                        "id": 10623346
-                    },
-                    {
-                        "id": 10623347
-                    },
-                    {
-                        "id": 10623348
-                    },
-                    {
-                        "id": 10623349
-                    },
-                    {
-                        "id": 10623350
-                    },
-                    {
-                        "id": 10623351
-                    }
-                ]
-            },
-            {
-                "id": 2525899,
-                "phase": {
-                    "id": 1698608,
-                    "name": "TOP8"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1162354": {
         "id": 1162354,
         "name": "Singles",
@@ -99309,8 +99137,8 @@
         "name": "singles",
         "slug": "tournament/216-5/event/singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 17,
         "videogame": {
             "id": 1386
         },
@@ -99324,39 +99152,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "\u3010\u91d1\u66dc\u3011\u5e73\u65e5\u3057\u306e\u30b9\u30de#216.5",
-        "tournament_id": 684322,
-        "city": "\u53f0\u6771\u533a",
-        "url": "https://smash.gg/tournament/216-5/event/singles",
-        "streams": [
-            {
-                "streamName": "\u3057\u306e\u30b9\u30de"
-            }
-        ],
-        "timezone": "Asia/Tokyo",
-        "tournament_startAt": 1720166400,
-        "tournament_endAt": 1720188000,
-        "tournament_registrationClosesAt": 1720188000,
-        "images": [
-            {
-                "id": "7097491",
-                "url": "https://images.start.gg/images/tournament/684322/image-90b6310e9d213eb2c69ccc41efae3500.jpg?ehk=DqPlFOKWs9ZR3Izcf2BSeE9zl74HmPi7NLkBQBMViAs%3D&ehkOptimized=WbyA3JkDWMXoocAlY97DV9oPml1gXKe8B0kDBv%2FeY38%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7097492",
-                "url": "https://images.start.gg/images/tournament/684322/image-32dbb73fae1bea9fb4ccd3e91f282255.png?ehk=SM%2FHaCh5cIrEOxKp45Ex9KX9qxHFv2H7%2BmtAFlMMDBA%3D&ehkOptimized=XqN3P9dWYxWd2ZwT7o%2FYyhOtLrlNF6F84liV81cAmC4%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012110-0014 \u6771\u4eac\u90fd\u53f0\u6771\u533a\u5317\u4e0a\u91ce\uff11\u4e01\u76ee\uff18\u2212\uff13",
-        "tournament_addrState": "\u6771\u4eac\u90fd",
-        "country_code": "JP",
-        "lat": 35.7170766,
-        "lng": 139.7819864
+        ]
     },
     "1166955": {
         "id": 1166955,
@@ -99645,7 +99441,7 @@
         "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
         "slug": "tournament/smash-44-1/event/1on1",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 34,
         "videogame": {
             "id": 1386
@@ -99733,39 +99529,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Smash\u85ac\u9662#44",
-        "tournament_id": 684336,
-        "city": "\u798f\u5ca1\u5e02",
-        "url": "https://smash.gg/tournament/smash-44-1/event/1on1",
-        "streams": [
-            {
-                "streamName": "\u30b9\u30de\u30a4\u30f3-Smash \u85ac\u9662-"
-            }
-        ],
-        "timezone": "Asia/Tokyo",
-        "tournament_startAt": 1720173600,
-        "tournament_endAt": 1720188000,
-        "tournament_registrationClosesAt": 1720166400,
-        "images": [
-            {
-                "id": "7097724",
-                "url": "https://images.start.gg/images/tournament/684336/image-4c56da1ddaae933314791110c7bb3ce7.png?ehk=ss%2F6EC8Ag2UUJaZgGU1bLB2hX7eayljXpS13huBfQLU%3D&ehkOptimized=yt%2BDCfUvmbirfRPJMjqw2y8NfeIFJR42oxGnADk4q%2BQ%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7097725",
-                "url": "https://images.start.gg/images/tournament/684336/image-4b1ebf28b8bd0593bc34a4dc7fbf9dc5.png?ehk=zHjus3AcBZssd2cbzH2OrnxGk9xeITXXIX1D2T942N8%3D&ehkOptimized=Og6KK9EFMXnNTW26U1OG8AizpGjRK7wqPTSJvHojQoU%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012810-0022 \u798f\u5ca1\u770c\u798f\u5ca1\u5e02\u4e2d\u592e\u533a\u85ac\u9662\uff14\u4e01\u76ee\uff12\u2212\uff11\uff13 \u30b3\u30a2\u30ad\u30e9\u30bc\u30d3\u30eb",
-        "tournament_addrState": "\u798f\u5ca1\u770c",
-        "country_code": "JP",
-        "lat": 33.5788746,
-        "lng": 130.3984333
+        ]
     },
     "1166978": {
         "id": 1166978,
@@ -106880,7 +106644,7 @@
         "slug": "tournament/bremen-weekly-ultimate-119/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 16,
         "videogame": {
             "id": 1386
         },
@@ -106894,16 +106658,10 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 10631296
+                        "id": 10651197
                     },
                     {
-                        "id": 10631298
-                    },
-                    {
-                        "id": 10631300
-                    },
-                    {
-                        "id": 10631302
+                        "id": 10651201
                     }
                 ]
             },
@@ -106915,16 +106673,40 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 10631297
+                        "id": 10651198
                     },
                     {
-                        "id": 10631299
+                        "id": 10651202
+                    }
+                ]
+            },
+            {
+                "id": 2533342,
+                "phase": {
+                    "id": 1699639,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10651199
                     },
                     {
-                        "id": 10631301
+                        "id": 10651203
+                    }
+                ]
+            },
+            {
+                "id": 2533343,
+                "phase": {
+                    "id": 1699639,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10651200
                     },
                     {
-                        "id": 10631303
+                        "id": 10651204
                     }
                 ]
             },
@@ -106933,6 +106715,14 @@
                 "phase": {
                     "id": 1699640,
                     "name": "Top 8"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 2533329,
+                "phase": {
+                    "id": 1704192,
+                    "name": "Amateur Bracket"
                 },
                 "progressionsOut": null
             }
@@ -139454,7 +139244,7 @@
         "name": "Single Bracket",
         "slug": "tournament/game-changer-6/event/single-bracket",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 7,
         "videogame": {
             "id": 1386
@@ -160618,5 +160408,970 @@
         "country_code": "NZ",
         "lat": -41.289356,
         "lng": 174.7750246
+    },
+    "1171007": {
+        "id": 1171007,
+        "name": "SSBU Doubles",
+        "slug": "tournament/uni-rostock-tryouts-18/event/ssbu-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1722673800,
+        "phaseGroups": [
+            {
+                "id": 2533340,
+                "phase": {
+                    "id": 1704200,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Uni Rostock Tryouts #18",
+        "tournament_id": 686416,
+        "city": "Rostock",
+        "url": "https://smash.gg/tournament/uni-rostock-tryouts-18/event/ssbu-doubles",
+        "streams": [
+            {
+                "streamName": "mvsmash"
+            }
+        ],
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1722673800,
+        "tournament_endAt": 1722711600,
+        "tournament_registrationClosesAt": 1722528000,
+        "images": [
+            {
+                "id": "7118429",
+                "url": "https://images.start.gg/images/tournament/686416/image-c80ac974f518239520f620c812103baa.png?ehk=jcK%2B1W%2FxqMjx0XhKkK58wAtLET%2FzdJ25T4HDnWXbHIg%3D&ehkOptimized=7Jmts3RvuqZJmNQRYGRlEgqZe2IHAPnR2yYu3T5ccuE%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7118430",
+                "url": "https://images.start.gg/images/tournament/686416/image-436b41db42bf48c7de63da365df16bce.png?ehk=fY5%2B6pjT5wvW9OGYCK3k5MUhxDQFZY9y5BtshrtTRmQ%3D&ehkOptimized=oYzU1%2F4C6LLZ7uBmlLp4pyW7XPsQjLy7Ec%2BNqHrE0wE%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Konrad Zuse Haus, Albert-Einstein-Stra\u00dfe 22, 18059 Rostock, Deutschland",
+        "tournament_addrState": "MV",
+        "country_code": "DE",
+        "lat": 54.0774407,
+        "lng": 12.1068112
+    },
+    "1171006": {
+        "id": 1171006,
+        "name": "Ultimate Singles",
+        "slug": "tournament/uni-rostock-tryouts-18/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1722673800,
+        "phaseGroups": [
+            {
+                "id": 2533334,
+                "phase": {
+                    "id": 1704197,
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10651173
+                    },
+                    {
+                        "id": 10651177
+                    }
+                ]
+            },
+            {
+                "id": 2533335,
+                "phase": {
+                    "id": 1704197,
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10651174
+                    },
+                    {
+                        "id": 10651178
+                    }
+                ]
+            },
+            {
+                "id": 2533336,
+                "phase": {
+                    "id": 1704197,
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10651175
+                    },
+                    {
+                        "id": 10651179
+                    }
+                ]
+            },
+            {
+                "id": 2533337,
+                "phase": {
+                    "id": 1704197,
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10651176
+                    },
+                    {
+                        "id": 10651180
+                    }
+                ]
+            },
+            {
+                "id": 2533338,
+                "phase": {
+                    "id": 1704198,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 2533339,
+                "phase": {
+                    "id": 1704199,
+                    "name": "Amateur Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Uni Rostock Tryouts #18",
+        "tournament_id": 686416,
+        "city": "Rostock",
+        "url": "https://smash.gg/tournament/uni-rostock-tryouts-18/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "mvsmash"
+            }
+        ],
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1722673800,
+        "tournament_endAt": 1722711600,
+        "tournament_registrationClosesAt": 1722528000,
+        "images": [
+            {
+                "id": "7118429",
+                "url": "https://images.start.gg/images/tournament/686416/image-c80ac974f518239520f620c812103baa.png?ehk=jcK%2B1W%2FxqMjx0XhKkK58wAtLET%2FzdJ25T4HDnWXbHIg%3D&ehkOptimized=7Jmts3RvuqZJmNQRYGRlEgqZe2IHAPnR2yYu3T5ccuE%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7118430",
+                "url": "https://images.start.gg/images/tournament/686416/image-436b41db42bf48c7de63da365df16bce.png?ehk=fY5%2B6pjT5wvW9OGYCK3k5MUhxDQFZY9y5BtshrtTRmQ%3D&ehkOptimized=oYzU1%2F4C6LLZ7uBmlLp4pyW7XPsQjLy7Ec%2BNqHrE0wE%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Konrad Zuse Haus, Albert-Einstein-Stra\u00dfe 22, 18059 Rostock, Deutschland",
+        "tournament_addrState": "MV",
+        "country_code": "DE",
+        "lat": 54.0774407,
+        "lng": 12.1068112
+    },
+    "1171008": {
+        "id": 1171008,
+        "name": "singles",
+        "slug": "tournament/178-1/event/singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720925940,
+        "phaseGroups": [
+            {
+                "id": 2533341,
+                "phase": {
+                    "id": 1704201,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "\u3057\u306e\u30b9\u30de#178",
+        "tournament_id": 686417,
+        "city": "\u53f0\u6771\u533a",
+        "url": "https://smash.gg/tournament/178-1/event/singles",
+        "streams": [
+            {
+                "streamName": "\u3057\u306e\u30b9\u30de"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1720925940,
+        "tournament_endAt": 1720951200,
+        "tournament_registrationClosesAt": 1720951200,
+        "images": [
+            {
+                "id": "7118438",
+                "url": "https://images.start.gg/images/tournament/686417/image-c0391b4c82cc7c8b6f6c9cce017630a2.jpg?ehk=DrOWLCsSc1uzAoDql8TphWExP8BSVLRstGudFZhovPU%3D&ehkOptimized=2sNnEm6gcfQElz9hx56iKNakAH%2BjF4CR%2FTBpzi36%2Bac%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7118439",
+                "url": "https://images.start.gg/images/tournament/686417/image-82169bcb491b3395a74533bbccd313e0.png?ehk=XNJKH24Ou53P74x3dYFrAgsgKIJSIef3aug92%2BilcGY%3D&ehkOptimized=A1n5oYzFg36wrj2efpCfGwOyphtF8OSwV0xFK5vCfOk%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012110-0014 \u6771\u4eac\u90fd\u53f0\u6771\u533a\u5317\u4e0a\u91ce\uff11\u4e01\u76ee\uff18\u2212\uff13",
+        "tournament_addrState": "\u6771\u4eac\u90fd",
+        "country_code": "JP",
+        "lat": 35.7170766,
+        "lng": 139.7819864
+    },
+    "1169956": {
+        "id": 1169956,
+        "name": "Ultimate Singles",
+        "slug": "tournament/south-town-smash-15/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720803600,
+        "phaseGroups": [
+            {
+                "id": 2531532,
+                "phase": {
+                    "id": 1702846,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "South Town Smash #15",
+        "tournament_id": 685855,
+        "city": "Rotterdam",
+        "url": "https://smash.gg/tournament/south-town-smash-15/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "oom_dagobert"
+            }
+        ],
+        "timezone": "Europe/Amsterdam",
+        "tournament_startAt": 1720803600,
+        "tournament_endAt": 1720818000,
+        "tournament_registrationClosesAt": 1720803600,
+        "images": [
+            {
+                "id": "7113123",
+                "url": "https://images.start.gg/images/tournament/685855/image-a435f8873cb1066ef6ef8866e1de4277.png?ehk=iJkfC6PyMMnAGCxXoAseEmdDmxCW6uh0gv0oIbx%2BDI4%3D&ehkOptimized=koqVjnLM8UjczYtdCwllG1zOvDi2S7o%2FrXE71VzS0xw%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7113124",
+                "url": "https://images.start.gg/images/tournament/685855/image-ff1cd8e9666186c4914fdbe7c876a961.png?ehk=vYvT8tt3jzm9pyIHOf6FMITjjDvvbhJElCM6tYTmWuY%3D&ehkOptimized=VcnfnTB16h8k5g9LOZ4TuG8GGHHUqLnfbaxI8RzWJtQ%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Persoonsdam 139, 3071 EE Rotterdam, Nederland",
+        "tournament_addrState": "ZH",
+        "country_code": "NL",
+        "lat": 51.9101562,
+        "lng": 4.508909
+    },
+    "1171005": {
+        "id": 1171005,
+        "name": "singles",
+        "slug": "tournament/217-5/event/singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720771200,
+        "phaseGroups": [
+            {
+                "id": 2533333,
+                "phase": {
+                    "id": 1704196,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "\u3010\u91d1\u66dc\u3011\u5e73\u65e5\u3057\u306e\u30b9\u30de#217.5",
+        "tournament_id": 686415,
+        "city": "\u53f0\u6771\u533a",
+        "url": "https://smash.gg/tournament/217-5/event/singles",
+        "streams": [
+            {
+                "streamName": "\u3057\u306e\u30b9\u30de"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1720771200,
+        "tournament_endAt": 1720792800,
+        "tournament_registrationClosesAt": 1720792800,
+        "images": [
+            {
+                "id": "7118425",
+                "url": "https://images.start.gg/images/tournament/686415/image-897039762c24a7df0a314397f5792c55.jpg?ehk=1ONa8gL8Lc0joJv%2BCAO%2FsCvxr1VOpbeyxeBj3bMWFY4%3D&ehkOptimized=aRTtCu5RR7te%2FOv%2Bfjff8dcbmyC%2BMDAg01VM3uG9%2BKM%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7118426",
+                "url": "https://images.start.gg/images/tournament/686415/image-3ec81dfd1d0958dcd11800cdb0128b72.png?ehk=tzNQKo572m38yTtZMFmxGV5EAc97vutaKm8Kfvavljw%3D&ehkOptimized=U0MnP7CeVLd66qGTwE3pkWQiInKmwck1kNPq6EZRLu8%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012110-0014 \u6771\u4eac\u90fd\u53f0\u6771\u533a\u5317\u4e0a\u91ce\uff11\u4e01\u76ee\uff18\u2212\uff13",
+        "tournament_addrState": "\u6771\u4eac\u90fd",
+        "country_code": "JP",
+        "lat": 35.7170766,
+        "lng": 139.7819864
+    },
+    "1169962": {
+        "id": 1169962,
+        "name": "Smash Ultimate Doubles: Side Event",
+        "slug": "tournament/second-wind-2024/event/smash-ultimate-doubles-side-event",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720764000,
+        "phaseGroups": [
+            {
+                "id": 2531538,
+                "phase": {
+                    "id": 1702852,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Second Wind 2024",
+        "tournament_id": 641214,
+        "city": "Wellington",
+        "url": "https://smash.gg/tournament/second-wind-2024/event/smash-ultimate-doubles-side-event",
+        "streams": [
+            {
+                "streamName": "respawnesportscentre"
+            },
+            {
+                "streamName": "alastairbl"
+            },
+            {
+                "streamName": "nzsmash"
+            }
+        ],
+        "timezone": "Pacific/Auckland",
+        "tournament_startAt": 1720735200,
+        "tournament_endAt": 1720944000,
+        "tournament_registrationClosesAt": 1719748800,
+        "images": [
+            {
+                "id": "6689167",
+                "url": "https://images.start.gg/images/tournament/641214/image-39fa883c884c15bb94fcf6270d56eb30.png?ehk=svi9gC3Xc1OuWPfG%2FbbJ40wdLaUiObHmvYZjMVsXneQ%3D&ehkOptimized=2tLrLwuwKr5xSNJLs4240jAOKKvgq0DX%2BHM259nci3g%3D",
+                "type": "banner"
+            },
+            {
+                "id": "6689169",
+                "url": "https://images.start.gg/images/tournament/641214/image-ac112a8818f1bfe82a7f87514e35d8da.png?ehk=aRBL3cuZdGBTbFIiCuMmZ3PPBeZ1pvQBqHiXRwRseu0%3D&ehkOptimized=TBp%2BTSmUZyTN51jX4UWV7cqT%2Fu4l1FI6ZFp%2F30PIFxw%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "9 Manners Street, Te Aro, Wellington 6011, New Zealand",
+        "tournament_addrState": "Wellington",
+        "country_code": "NZ",
+        "lat": -41.289356,
+        "lng": 174.7750246
+    },
+    "1171002": {
+        "id": 1171002,
+        "name": "Three Frontiers",
+        "slug": "tournament/three-frontiers-l-av-nement-de-melee/event/three-frontiers",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720715400,
+        "phaseGroups": [
+            {
+                "id": 2533330,
+                "phase": {
+                    "id": 1704193,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Three Frontiers : l'av\u00e9nement de Melee",
+        "tournament_id": 686413,
+        "city": "Mulhouse",
+        "url": "https://smash.gg/tournament/three-frontiers-l-av-nement-de-melee/event/three-frontiers",
+        "streams": [
+            {
+                "streamName": "Arthoriaxe"
+            }
+        ],
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1720715400,
+        "tournament_endAt": 1720731600,
+        "tournament_registrationClosesAt": 1720713600,
+        "images": [
+            {
+                "id": "7118403",
+                "url": "https://images.start.gg/images/tournament/686413/image-460d6e45cce90fa15bd4e2a935840712.jpg?ehk=CaSpxYCbZarAmKsQxdiuaBVVXOQsjUpR7%2FCRw0HCF3c%3D&ehkOptimized=7GfvDVloMZYtsYBn%2FrQPFLneeh8EyE9hyy1%2BOYywS4Y%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7118404",
+                "url": "https://images.start.gg/images/tournament/686413/image-689e00933cb7db05a252717c65b67a49.jpg?ehk=3TBCrNZx%2Fead1MjSPAbPmTxEXDp1nmjUPhm1RHEwhys%3D&ehkOptimized=Hrkk7HVpTKZp%2Fb1NVt8%2FgkDVjbmRbsGGP96ZqCXJkGM%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "24 Rue Fran\u00e7ois Spoerry, 68100 Mulhouse, France",
+        "tournament_addrState": "Grand Est",
+        "country_code": "FR",
+        "lat": 47.7391449,
+        "lng": 7.3287359
+    },
+    "1171004": {
+        "id": 1171004,
+        "name": "singles",
+        "slug": "tournament/217/event/singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720598400,
+        "phaseGroups": [
+            {
+                "id": 2533332,
+                "phase": {
+                    "id": 1704195,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "\u5e73\u65e5\u3057\u306e\u30b9\u30de#217",
+        "tournament_id": 686414,
+        "city": "\u53f0\u6771\u533a",
+        "url": "https://smash.gg/tournament/217/event/singles",
+        "streams": [
+            {
+                "streamName": "\u3057\u306e\u30b9\u30de"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1720598400,
+        "tournament_endAt": 1720620000,
+        "tournament_registrationClosesAt": 1720620000,
+        "images": [
+            {
+                "id": "7118420",
+                "url": "https://images.start.gg/images/tournament/686414/image-181abb8d76b09b70a241c82d7b0fc7ad.jpg?ehk=4jQvEKeRDGmdYhR%2B63RUZ8ecuzkbDaWX06DMOYN1WYk%3D&ehkOptimized=%2BwanKc5b4aiWmv6lRPhTdtkQHodPWG6O4ddXrfb41Js%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7118421",
+                "url": "https://images.start.gg/images/tournament/686414/image-9ee15d2b59914b3723e90665e2617879.png?ehk=6EXYGe8QzXbQ1Mbb%2BeEcwdTTDp%2B%2Fmb7D4oaZ6WrKXn4%3D&ehkOptimized=RG7U7Lsvh7LTMdVedFWDIzW%2BSLxR9Xq63r0NfxP8uWw%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012110-0014 \u6771\u4eac\u90fd\u53f0\u6771\u533a\u5317\u4e0a\u91ce\uff11\u4e01\u76ee\uff18\u2212\uff13",
+        "tournament_addrState": "\u6771\u4eac\u90fd",
+        "country_code": "JP",
+        "lat": 35.7170766,
+        "lng": 139.7819864
+    },
+    "1171019": {
+        "id": 1171019,
+        "name": "Smash Ultimate Singles",
+        "slug": "tournament/waypoint-warriors-191/event/smash-ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720564200,
+        "phaseGroups": [
+            {
+                "id": 2533365,
+                "phase": {
+                    "id": 1704216,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Waypoint Warriors 191",
+        "tournament_id": 686425,
+        "city": "New York",
+        "url": "https://smash.gg/tournament/waypoint-warriors-191/event/smash-ultimate-singles",
+        "streams": [
+            {
+                "streamName": "WaypointcafeNYC"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1720564200,
+        "tournament_endAt": 1720580400,
+        "tournament_registrationClosesAt": 1720573200,
+        "images": [
+            {
+                "id": "7118528",
+                "url": "https://images.start.gg/images/tournament/686425/image-934773cbea25c8fb93ab88f1c22fabee.png?ehk=EZJhFnItESFkVgpAm4QrOBQSFX91IK5WmUmfoJvmdEE%3D&ehkOptimized=64fVGxxyt3Yl%2FKhqqBSgsCZS8rcb7PsZEGo%2F0SjnpYs%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7118529",
+                "url": "https://images.start.gg/images/tournament/686425/image-698b1cdca937400d7c27056077951200.png?ehk=F7ADcXJesuid7lVQw4PhS1PmhVoHnJHLDRn0%2Bsvmn00%3D&ehkOptimized=ruZdzS9clLOM7Uh3uDd7Vu6c%2F%2F0S%2FZv98BOi5HikDJs%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "65 Ludlow St, New York, NY 10002, USA",
+        "tournament_addrState": "NY",
+        "country_code": "US",
+        "lat": 40.717311,
+        "lng": -73.99000459999999
+    },
+    "1171013": {
+        "id": 1171013,
+        "name": "Ultimate Singles",
+        "slug": "tournament/sonntagsplausch-62/event/ultimate-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720357200,
+        "phaseGroups": [
+            {
+                "id": 2533358,
+                "phase": {
+                    "id": 1704209,
+                    "name": "Ultimate Singles"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Sonntagsplausch #62",
+        "tournament_id": 686420,
+        "city": null,
+        "url": "https://smash.gg/tournament/sonntagsplausch-62/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "MillhiB"
+            },
+            {
+                "streamName": "MrMayonnaise91"
+            },
+            {
+                "streamName": "kur0dayoo"
+            },
+            {
+                "streamName": "Real_Faillord"
+            },
+            {
+                "streamName": "niksname02"
+            },
+            {
+                "streamName": "MelikaSG"
+            },
+            {
+                "streamName": "EniTheKid"
+            },
+            {
+                "streamName": "Vanikura2"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1720357200,
+        "tournament_endAt": 1720371600,
+        "tournament_registrationClosesAt": 1720355400,
+        "images": [
+            {
+                "id": "7118480",
+                "url": "https://images.start.gg/images/tournament/686420/image-c3ad343654381c4e56e35097bffacca8.png?ehk=HHaKgL4HYYmwQwkCvWWPUjCymViR4TKtcBI5ycQmO9k%3D&ehkOptimized=3R6VaRm8zlqAkuPEQhpzDKsNJlZbrSAZnrrHzUMf%2Fpg%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7118481",
+                "url": "https://images.start.gg/images/tournament/686420/image-7004f87955ae922e0685f457544574b6.png?ehk=mO9zSxQHP10osuiNwgk6ddcNwEoqNtKxuFwJ8h%2BUvdc%3D&ehkOptimized=haMetZ9DPXpJXWyF2Y0hT%2FK%2BXsRWR2gCkGXZeU6qhns%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null,
+        "region_lock": [
+            "DE",
+            "AT",
+            "CH",
+            "LU"
+        ]
+    },
+    "1171001": {
+        "id": 1171001,
+        "name": "Squad Strike",
+        "slug": "tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/squad-strike",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720350000,
+        "phaseGroups": [
+            {
+                "id": 2533328,
+                "phase": {
+                    "id": 1704191,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "House of Smash @ Vulkan #111: Ultimate + Squad Strike",
+        "tournament_id": 686411,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/squad-strike",
+        "streams": [
+            {
+                "streamName": "SmashOslo"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1720350000,
+        "tournament_endAt": 1720387800,
+        "tournament_registrationClosesAt": 1720360800,
+        "images": [
+            {
+                "id": "7118385",
+                "url": "https://images.start.gg/images/tournament/686411/image-b8a2e6410edcc65b27064cba1bf6b911.png?ehk=6RJJ2qw7gxx4nvqn9BbpSH%2FkX8YZNyr0hvcuHst6lxI%3D&ehkOptimized=0gn7LTGgFfy3KCGi%2FWjYJ6Sb3xTyVkgDxsaByf7uSW4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7118386",
+                "url": "https://images.start.gg/images/tournament/686411/image-af44458d2b884419b7ed8bd691afde5b.png?ehk=KXg8%2BtUhHuZIoJhPRWuEE3XkwUTuiTMIISB8JxRdzaY%3D&ehkOptimized=5XgHAgnaUjJvNwt1XYLBeHa6XYicOIWDidihR24N6pI%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1170998": {
+        "id": 1170998,
+        "name": "Ultimate Singles",
+        "slug": "tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720350000,
+        "phaseGroups": [
+            {
+                "id": 2533325,
+                "phase": {
+                    "id": 1704188,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "House of Smash @ Vulkan #111: Ultimate + Squad Strike",
+        "tournament_id": 686411,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "SmashOslo"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1720350000,
+        "tournament_endAt": 1720387800,
+        "tournament_registrationClosesAt": 1720360800,
+        "images": [
+            {
+                "id": "7118385",
+                "url": "https://images.start.gg/images/tournament/686411/image-b8a2e6410edcc65b27064cba1bf6b911.png?ehk=6RJJ2qw7gxx4nvqn9BbpSH%2FkX8YZNyr0hvcuHst6lxI%3D&ehkOptimized=0gn7LTGgFfy3KCGi%2FWjYJ6Sb3xTyVkgDxsaByf7uSW4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7118386",
+                "url": "https://images.start.gg/images/tournament/686411/image-af44458d2b884419b7ed8bd691afde5b.png?ehk=KXg8%2BtUhHuZIoJhPRWuEE3XkwUTuiTMIISB8JxRdzaY%3D&ehkOptimized=5XgHAgnaUjJvNwt1XYLBeHa6XYicOIWDidihR24N6pI%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1170999": {
+        "id": 1170999,
+        "name": "Amateur Bracket",
+        "slug": "tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720350000,
+        "phaseGroups": [
+            {
+                "id": 2533326,
+                "phase": {
+                    "id": 1704189,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "House of Smash @ Vulkan #111: Ultimate + Squad Strike",
+        "tournament_id": 686411,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/amateur-bracket",
+        "streams": [
+            {
+                "streamName": "SmashOslo"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1720350000,
+        "tournament_endAt": 1720387800,
+        "tournament_registrationClosesAt": 1720360800,
+        "images": [
+            {
+                "id": "7118385",
+                "url": "https://images.start.gg/images/tournament/686411/image-b8a2e6410edcc65b27064cba1bf6b911.png?ehk=6RJJ2qw7gxx4nvqn9BbpSH%2FkX8YZNyr0hvcuHst6lxI%3D&ehkOptimized=0gn7LTGgFfy3KCGi%2FWjYJ6Sb3xTyVkgDxsaByf7uSW4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7118386",
+                "url": "https://images.start.gg/images/tournament/686411/image-af44458d2b884419b7ed8bd691afde5b.png?ehk=KXg8%2BtUhHuZIoJhPRWuEE3XkwUTuiTMIISB8JxRdzaY%3D&ehkOptimized=5XgHAgnaUjJvNwt1XYLBeHa6XYicOIWDidihR24N6pI%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1171000": {
+        "id": 1171000,
+        "name": "Ultimate Doubles",
+        "slug": "tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/ultimate-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720350000,
+        "phaseGroups": [
+            {
+                "id": 2533327,
+                "phase": {
+                    "id": 1704190,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "House of Smash @ Vulkan #111: Ultimate + Squad Strike",
+        "tournament_id": 686411,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-vulkan-111-ultimate-squad-strike/event/ultimate-doubles",
+        "streams": [
+            {
+                "streamName": "SmashOslo"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1720350000,
+        "tournament_endAt": 1720387800,
+        "tournament_registrationClosesAt": 1720360800,
+        "images": [
+            {
+                "id": "7118385",
+                "url": "https://images.start.gg/images/tournament/686411/image-b8a2e6410edcc65b27064cba1bf6b911.png?ehk=6RJJ2qw7gxx4nvqn9BbpSH%2FkX8YZNyr0hvcuHst6lxI%3D&ehkOptimized=0gn7LTGgFfy3KCGi%2FWjYJ6Sb3xTyVkgDxsaByf7uSW4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7118386",
+                "url": "https://images.start.gg/images/tournament/686411/image-af44458d2b884419b7ed8bd691afde5b.png?ehk=KXg8%2BtUhHuZIoJhPRWuEE3XkwUTuiTMIISB8JxRdzaY%3D&ehkOptimized=5XgHAgnaUjJvNwt1XYLBeHa6XYicOIWDidihR24N6pI%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1171009": {
+        "id": 1171009,
+        "name": "Primera RFEF",
+        "slug": "tournament/bg-magma-storm-3/event/primera-rfef",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 18,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720339200,
+        "phaseGroups": [
+            {
+                "id": 2533352,
+                "phase": {
+                    "id": 1704204,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "BG Magma Storm 3",
+        "tournament_id": 674357,
+        "city": "C\u00f3rdoba",
+        "url": "https://smash.gg/tournament/bg-magma-storm-3/event/primera-rfef",
+        "streams": [
+            {
+                "streamName": "BattleGamersBar"
+            }
+        ],
+        "timezone": "Europe/Madrid",
+        "tournament_startAt": 1720339200,
+        "tournament_endAt": 1720389360,
+        "tournament_registrationClosesAt": 1720063800,
+        "images": [
+            {
+                "id": "6990868",
+                "url": "https://images.start.gg/images/tournament/674357/image-53e7fb87cf7baa1c0b95b3eeed44bcdf.png?ehk=tpbbXfaJ2rntgHgCyBm8jx7RibbnxQwX5pkFMNTqHFA%3D&ehkOptimized=zIhJE9gfS6QI24ymGnFx9h6uviKJQr%2FFAcpyFAaCFq8%3D",
+                "type": "profile"
+            },
+            {
+                "id": "6990869",
+                "url": "https://images.start.gg/images/tournament/674357/image-5870aecfb197c28e8d8f347feab664c5.png?ehk=FGYgroAB%2FVb8JWNUcn3Z%2FZTQDbUPZyxSRkgLSix2O0g%3D&ehkOptimized=sMOHb%2FxARTzsXq9ujGXqA2PG52P2ThL%2BhAw%2BUjP1f7Y%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Calle Marruecos, 14004 C\u00f3rdoba, Espa\u00f1a",
+        "tournament_addrState": "AL",
+        "country_code": "ES",
+        "lat": 37.881957,
+        "lng": -4.788567400000034
+    },
+    "1171010": {
+        "id": 1171010,
+        "name": "Segunda RFEF",
+        "slug": "tournament/bg-magma-storm-3/event/segunda-rfef",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 17,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1720339200,
+        "phaseGroups": [
+            {
+                "id": 2533353,
+                "phase": {
+                    "id": 1704205,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "BG Magma Storm 3",
+        "tournament_id": 674357,
+        "city": "C\u00f3rdoba",
+        "url": "https://smash.gg/tournament/bg-magma-storm-3/event/segunda-rfef",
+        "streams": [
+            {
+                "streamName": "BattleGamersBar"
+            }
+        ],
+        "timezone": "Europe/Madrid",
+        "tournament_startAt": 1720339200,
+        "tournament_endAt": 1720389360,
+        "tournament_registrationClosesAt": 1720063800,
+        "images": [
+            {
+                "id": "6990868",
+                "url": "https://images.start.gg/images/tournament/674357/image-53e7fb87cf7baa1c0b95b3eeed44bcdf.png?ehk=tpbbXfaJ2rntgHgCyBm8jx7RibbnxQwX5pkFMNTqHFA%3D&ehkOptimized=zIhJE9gfS6QI24ymGnFx9h6uviKJQr%2FFAcpyFAaCFq8%3D",
+                "type": "profile"
+            },
+            {
+                "id": "6990869",
+                "url": "https://images.start.gg/images/tournament/674357/image-5870aecfb197c28e8d8f347feab664c5.png?ehk=FGYgroAB%2FVb8JWNUcn3Z%2FZTQDbUPZyxSRkgLSix2O0g%3D&ehkOptimized=sMOHb%2FxARTzsXq9ujGXqA2PG52P2ThL%2BhAw%2BUjP1f7Y%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Calle Marruecos, 14004 C\u00f3rdoba, Espa\u00f1a",
+        "tournament_addrState": "AL",
+        "country_code": "ES",
+        "lat": 37.881957,
+        "lng": -4.788567400000034
     }
 }
