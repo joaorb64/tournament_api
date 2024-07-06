@@ -10315,7 +10315,7 @@
                 "type": "profile"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": "49 Rue des Antonins, 69100 Villeurbanne, France",
         "tournament_addrState": "Auvergne-Rh\u00f4ne-Alpes",
@@ -10329,12 +10329,21 @@
         "slug": "tournament/arcamini-15/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 11,
+        "numEntrants": 16,
         "videogame": {
             "id": 1
         },
         "startAt": 1720252800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2472935,
+                "phase": {
+                    "id": 1659493,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Arcamini 15",
         "tournament_id": 668399,
         "city": "Villeurbanne",
@@ -17063,106 +17072,6 @@
         "lat": 30.633128,
         "lng": -96.327382
     },
-    "1145386": {
-        "id": 1145386,
-        "name": "Doubles",
-        "slug": "tournament/come-vibe-with-me/event/doubles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 2,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719622800,
-        "phaseGroups": [
-            {
-                "id": 2488623,
-                "phase": {
-                    "id": 1670608,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "Come Vibe With Me",
-        "tournament_id": 672915,
-        "city": "Arlington",
-        "url": "https://smash.gg/tournament/come-vibe-with-me/event/doubles",
-        "streams": null,
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1719622800,
-        "tournament_endAt": 1719636900,
-        "tournament_registrationClosesAt": 1719622800,
-        "images": [
-            {
-                "id": "6972983",
-                "url": "https://images.start.gg/images/tournament/672915/image-fa1a5e1d02a1567240d6c5a2a40eb58f.png?ehk=Ip6XUzpTnyd2xDa7jbpyQ2ha79w8Qy00bQtuWjPovEI%3D&ehkOptimized=RJv6uk55VsykK%2BJkLJ23zSmIy5R5v7MA8P8RVcOTcls%3D",
-                "type": "profile"
-            },
-            {
-                "id": "6973065",
-                "url": "https://images.start.gg/images/tournament/672915/image-7fe2a3e55e706f4887dc045aaf89ae3b.png?ehk=YRFYXwq7MlE0GDAbzBK2viqAGFNAb6kxrNsH00qxIYY%3D&ehkOptimized=d242fdKBVgloSKNlsNUjEIWSwEemazznW7BIqkLLIKs%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Arlington, TX, USA",
-        "tournament_addrState": "TX",
-        "country_code": "US",
-        "lat": 32.735687,
-        "lng": -97.10806559999999
-    },
-    "1145388": {
-        "id": 1145388,
-        "name": "Random Singles",
-        "slug": "tournament/come-vibe-with-me/event/random-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 5,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719622800,
-        "phaseGroups": [
-            {
-                "id": 2488625,
-                "phase": {
-                    "id": 1670610,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "Come Vibe With Me",
-        "tournament_id": 672915,
-        "city": "Arlington",
-        "url": "https://smash.gg/tournament/come-vibe-with-me/event/random-singles",
-        "streams": null,
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1719622800,
-        "tournament_endAt": 1719636900,
-        "tournament_registrationClosesAt": 1719622800,
-        "images": [
-            {
-                "id": "6972983",
-                "url": "https://images.start.gg/images/tournament/672915/image-fa1a5e1d02a1567240d6c5a2a40eb58f.png?ehk=Ip6XUzpTnyd2xDa7jbpyQ2ha79w8Qy00bQtuWjPovEI%3D&ehkOptimized=RJv6uk55VsykK%2BJkLJ23zSmIy5R5v7MA8P8RVcOTcls%3D",
-                "type": "profile"
-            },
-            {
-                "id": "6973065",
-                "url": "https://images.start.gg/images/tournament/672915/image-7fe2a3e55e706f4887dc045aaf89ae3b.png?ehk=YRFYXwq7MlE0GDAbzBK2viqAGFNAb6kxrNsH00qxIYY%3D&ehkOptimized=d242fdKBVgloSKNlsNUjEIWSwEemazznW7BIqkLLIKs%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Arlington, TX, USA",
-        "tournament_addrState": "TX",
-        "country_code": "US",
-        "lat": 32.735687,
-        "lng": -97.10806559999999
-    },
     "1159056": {
         "id": 1159056,
         "name": "Melee Doubles",
@@ -20142,7 +20051,7 @@
         "name": "Melee Singles DE",
         "slug": "tournament/n69-melee-tourney-winchester-7-5-24-6pm/event/melee-singles-de",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 18,
         "videogame": {
             "id": 1
@@ -20603,7 +20512,7 @@
         "slug": "tournament/riverside-confrontation-renaissance/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -21797,52 +21706,6 @@
         "lat": 29.5238874,
         "lng": -95.1294794
     },
-    "1163383": {
-        "id": 1163383,
-        "name": "Melee Singles",
-        "slug": "tournament/the-shallow-end-redux-a-wc-newbie-bracket/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719621900,
-        "phaseGroups": [
-            {
-                "id": 2520264,
-                "phase": {
-                    "id": 1694334,
-                    "name": "Pools"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2520265,
-                "phase": {
-                    "id": 1694334,
-                    "name": "Pools"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2526912,
-                "phase": {
-                    "id": 1694334,
-                    "name": "Pools"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2520266,
-                "phase": {
-                    "id": 1694335,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1161713": {
         "id": 1161713,
         "name": "Crazy Single",
@@ -22059,28 +21922,6 @@
         "country_code": null,
         "lat": null,
         "lng": null
-    },
-    "1163535": {
-        "id": 1163535,
-        "name": "Smash Melee",
-        "slug": "tournament/fighting-monthlies-christchurch-2024-matariki-edition/event/smash-melee",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 6,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719626400,
-        "phaseGroups": [
-            {
-                "id": 2520848,
-                "phase": {
-                    "id": 1694595,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1163664": {
         "id": 1163664,
@@ -23081,7 +22922,7 @@
         "name": "Melee Singles",
         "slug": "tournament/stitches-the-patchwork-2024-pre-local/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 29,
         "videogame": {
             "id": 1
@@ -23383,28 +23224,6 @@
         "lat": 30.45448,
         "lng": -91.11494139999999
     },
-    "1164501": {
-        "id": 1164501,
-        "name": "Melee Singles",
-        "slug": "tournament/hold-the-fort-22/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 4,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719622800,
-        "phaseGroups": [
-            {
-                "id": 2522525,
-                "phase": {
-                    "id": 1695857,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1158403": {
         "id": 1158403,
         "name": "Melee Doubles",
@@ -23564,28 +23383,6 @@
                 "id": 2522972,
                 "phase": {
                     "id": 1696250,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1164836": {
-        "id": 1164836,
-        "name": "GLS Melee",
-        "slug": "tournament/game-lab-smash-139-geo-go-home-edition/event/gls-melee",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719624600,
-        "phaseGroups": [
-            {
-                "id": 2523018,
-                "phase": {
-                    "id": 1696292,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -24242,28 +24039,6 @@
             }
         ]
     },
-    "1165520": {
-        "id": 1165520,
-        "name": "Melee Singles",
-        "slug": "tournament/legacy-fighter-54-we-have-a-lot-of-side-brackets/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 5,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719622800,
-        "phaseGroups": [
-            {
-                "id": 2524042,
-                "phase": {
-                    "id": 1697137,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1165563": {
         "id": 1165563,
         "name": "Melee Singles",
@@ -24562,133 +24337,6 @@
                 "id": 2524075,
                 "phase": {
                     "id": 1697162,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1165592": {
-        "id": 1165592,
-        "name": "Melee Singles",
-        "slug": "tournament/the-c-stick-5/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 20,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719622800,
-        "phaseGroups": [
-            {
-                "id": 2524158,
-                "phase": {
-                    "id": 1697237,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10618262
-                    },
-                    {
-                        "id": 10618267
-                    },
-                    {
-                        "id": 10618272
-                    },
-                    {
-                        "id": 10618277
-                    }
-                ]
-            },
-            {
-                "id": 2524159,
-                "phase": {
-                    "id": 1697237,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10618263
-                    },
-                    {
-                        "id": 10618268
-                    },
-                    {
-                        "id": 10618273
-                    },
-                    {
-                        "id": 10618278
-                    }
-                ]
-            },
-            {
-                "id": 2524160,
-                "phase": {
-                    "id": 1697237,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10618264
-                    },
-                    {
-                        "id": 10618269
-                    },
-                    {
-                        "id": 10618274
-                    },
-                    {
-                        "id": 10618279
-                    }
-                ]
-            },
-            {
-                "id": 2524161,
-                "phase": {
-                    "id": 1697237,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10618265
-                    },
-                    {
-                        "id": 10618270
-                    },
-                    {
-                        "id": 10618275
-                    },
-                    {
-                        "id": 10618280
-                    }
-                ]
-            },
-            {
-                "id": 2524162,
-                "phase": {
-                    "id": 1697237,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10618266
-                    },
-                    {
-                        "id": 10618271
-                    },
-                    {
-                        "id": 10618276
-                    },
-                    {
-                        "id": 10618281
-                    }
-                ]
-            },
-            {
-                "id": 2524163,
-                "phase": {
-                    "id": 1697238,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -25665,28 +25313,6 @@
                 "id": 2524890,
                 "phase": {
                     "id": 1697819,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1166124": {
-        "id": 1166124,
-        "name": "MELEE SINGLES",
-        "slug": "tournament/for-the-love-fridays-1-50-cad-winner-takes-all/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 30,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719624600,
-        "phaseGroups": [
-            {
-                "id": 2525016,
-                "phase": {
-                    "id": 1697915,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -26892,60 +26518,6 @@
                 "progressionsOut": null
             }
         ]
-    },
-    "1166696": {
-        "id": 1166696,
-        "name": "Melee singles",
-        "slug": "tournament/sfu-melee-biweekly-26/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1719622800,
-        "phaseGroups": [
-            {
-                "id": 2525981,
-                "phase": {
-                    "id": 1698662,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "SFU MELEE BIWEEKLY #26",
-        "tournament_id": 684213,
-        "city": "Burnaby",
-        "url": "https://smash.gg/tournament/sfu-melee-biweekly-26/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "SFUSmash"
-            }
-        ],
-        "timezone": "America/Vancouver",
-        "tournament_startAt": 1719622800,
-        "tournament_endAt": 1719640800,
-        "tournament_registrationClosesAt": 1719628200,
-        "images": [
-            {
-                "id": "7096018",
-                "url": "https://images.start.gg/images/tournament/684213/image-b3228d5af16ce428596d74a5ac5d482d.png?ehk=kdLDyEiMT%2Bi%2Bg0GiBd7aWy0rZhHRF9OVsBSux%2FCSps8%3D&ehkOptimized=v%2FhB6WgwSbVogRoc9Zh1whEHAG8HrtXbmhFt2djaw8o%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7096019",
-                "url": "https://images.start.gg/images/tournament/684213/image-13cf92c703ca7a75a3471db5ef382be2.jpg?ehk=mYteDFYiS%2BOPRVXUgKHxg1JQTRf21iKg4PRJurddslc%3D&ehkOptimized=c%2B3f0HUtYovYeMgLqI%2FepvKJ0eqmOESsYd%2BO8gZJZR0%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Transportation Centre, 8888 University Dr W, Burnaby, BC V5A 1S6, Canada",
-        "tournament_addrState": "BC",
-        "country_code": "CA",
-        "lat": 49.279503,
-        "lng": -122.9202752
     },
     "1166738": {
         "id": 1166738,
@@ -32532,8 +32104,8 @@
         "name": "Melee Singles",
         "slug": "tournament/game-quest-weekly-20/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 4,
+        "state": "ACTIVE",
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -32555,56 +32127,12 @@
         "slug": "tournament/rexburg-free-friday-46-alpine-chalet/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
         "startAt": 1720224000,
-        "phaseGroups": [
-            {
-                "id": 2529119,
-                "phase": {
-                    "id": 1700936,
-                    "name": "Melee Singles"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "Rexburg Free Friday #46 - Alpine Chalet",
-        "tournament_id": 685140,
-        "city": "Rexburg",
-        "url": "https://smash.gg/tournament/rexburg-free-friday-46-alpine-chalet/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "easternidahosmash"
-            },
-            {
-                "streamName": "easternidahosmash2"
-            }
-        ],
-        "timezone": "America/Boise",
-        "tournament_startAt": 1720224000,
-        "tournament_endAt": 1720245540,
-        "tournament_registrationClosesAt": 1720310220,
-        "images": [
-            {
-                "id": "7105731",
-                "url": "https://images.start.gg/images/tournament/685140/image-1f2c1c83ce79f1f0561013168ad801c7.png?ehk=M3yNsQ2AS5pezbmZWerEJ5TjWqORFAETJNcgGyvRFL8%3D&ehkOptimized=vwoCm6pCJLJBi9w79u8ypJe8AGtlAkINavC2CSwVRpE%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7105732",
-                "url": "https://images.start.gg/images/tournament/685140/image-a06b0df3cdf4675cb258043ec0f759de.png?ehk=irKB3DIKoXNf0F%2F5%2FQWNkIyrYQIX2Alk5Z%2BluzEBd7w%3D&ehkOptimized=CTosbMoppakqSu1yBv5v2ydG%2BOg8OGD6X107PLBSRwU%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "460 S 2nd W, Rexburg, ID 83440, USA",
-        "tournament_addrState": "ID",
-        "country_code": "US",
-        "lat": 43.81608809999999,
-        "lng": -111.7902755
+        "phaseGroups": null
     },
     "1168430": {
         "id": 1168430,
@@ -33947,7 +33475,7 @@
         "name": "Melee Singles",
         "slug": "tournament/bendix-smash-76/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 13,
         "videogame": {
             "id": 1
@@ -34902,7 +34430,7 @@
         "name": "Melee Doubles",
         "slug": "tournament/man-on-a-ledge-527/event/melee-doubles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -34924,7 +34452,7 @@
         "name": "Melee Singles",
         "slug": "tournament/man-on-a-ledge-527/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 17,
         "videogame": {
             "id": 1
@@ -36179,8 +35707,8 @@
         "name": "Super Smash Bros. Melee Singles",
         "slug": "tournament/newsflash-61/event/super-smash-bros-melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -37852,8 +37380,8 @@
         "name": "Melee Singles",
         "slug": "tournament/tienda-s-tournament-series-4/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 9,
         "videogame": {
             "id": 1
         },
@@ -37867,35 +37395,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Tienda's Tournament Series #4",
-        "tournament_id": 685742,
-        "city": "North Liberty",
-        "url": "https://smash.gg/tournament/tienda-s-tournament-series-4/event/melee-singles",
-        "streams": null,
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1720224000,
-        "tournament_endAt": 1720238400,
-        "tournament_registrationClosesAt": 1720238400,
-        "images": [
-            {
-                "id": "7110909",
-                "url": "https://images.start.gg/images/tournament/685742/image-c98c2fafaf6bbadb93861c4b1f6fa4e9.png?ehk=9H0bSRbS3gUFTzUba2l9XVOhonzh4SDdKMV2d3kVGiU%3D&ehkOptimized=1abblhXB14gOCUYZgU1HJBqImKdAWRekJpSpFHkz%2ByU%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7110910",
-                "url": "https://images.start.gg/images/tournament/685742/image-d9ca0ae05340e6ec636e7b0ca3de222f.png?ehk=gCykacvHbIwEiWJvne8q%2BkDtiY8OR1gLc%2FPs8gjKb28%3D&ehkOptimized=YKJ%2Bxe%2BrChImDI8YHumZ9wPfQ54UKIxpFbVWL56BJN0%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "North Liberty, IA 52317, USA",
-        "tournament_addrState": "IA",
-        "country_code": "US",
-        "lat": 41.7521876,
-        "lng": -91.6075791
+        ]
     },
     "1169798": {
         "id": 1169798,
@@ -38233,8 +37733,8 @@
         "name": "Melee Singles",
         "slug": "tournament/the-c-stick-6/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 16,
         "videogame": {
             "id": 1
         },
@@ -38248,16 +37748,16 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 10644232
+                        "id": 10655378
                     },
                     {
-                        "id": 10644237
+                        "id": 10655382
                     },
                     {
-                        "id": 10644242
+                        "id": 10655386
                     },
                     {
-                        "id": 10644247
+                        "id": 10655390
                     }
                 ]
             },
@@ -38269,16 +37769,16 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 10644233
+                        "id": 10655379
                     },
                     {
-                        "id": 10644238
+                        "id": 10655383
                     },
                     {
-                        "id": 10644243
+                        "id": 10655387
                     },
                     {
-                        "id": 10644248
+                        "id": 10655391
                     }
                 ]
             },
@@ -38290,16 +37790,16 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 10644234
+                        "id": 10655380
                     },
                     {
-                        "id": 10644239
+                        "id": 10655384
                     },
                     {
-                        "id": 10644244
+                        "id": 10655388
                     },
                     {
-                        "id": 10644249
+                        "id": 10655392
                     }
                 ]
             },
@@ -38311,37 +37811,16 @@
                 },
                 "progressionsOut": [
                     {
-                        "id": 10644235
+                        "id": 10655381
                     },
                     {
-                        "id": 10644240
+                        "id": 10655385
                     },
                     {
-                        "id": 10644245
+                        "id": 10655389
                     },
                     {
-                        "id": 10644250
-                    }
-                ]
-            },
-            {
-                "id": 2531396,
-                "phase": {
-                    "id": 1702742,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10644236
-                    },
-                    {
-                        "id": 10644241
-                    },
-                    {
-                        "id": 10644246
-                    },
-                    {
-                        "id": 10644251
+                        "id": 10655393
                     }
                 ]
             },
@@ -38353,39 +37832,6 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "The C-Stick #6",
-        "tournament_id": 685803,
-        "city": null,
-        "url": "https://smash.gg/tournament/the-c-stick-6/event/melee-singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1720227600,
-        "tournament_endAt": 1720242000,
-        "tournament_registrationClosesAt": 1720226640,
-        "images": [
-            {
-                "id": "7111367",
-                "url": "https://images.start.gg/images/tournament/685803/image-cc6195e0d542723877a98b906b88fb5e.png?ehk=JNDo0KltxhihfuVO%2FEqw0MwYT1%2BPvLrtxYPmJ25CXr8%3D&ehkOptimized=vUF9iFDcVc0QZjYVjej1WeETvRZ2Ud2%2BeHE3Zikg5Bg%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7111368",
-                "url": "https://images.start.gg/images/tournament/685803/image-ecb77cc9f309036e24b34765c364a01c.png?ehk=7Ziuvd6KJiTeNeGp6Q70IflSILnNAs4EFm1A5Gu6jhw%3D&ehkOptimized=uqH7nRgb%2FbPFS8HimC3lDoz%2Bbmiw%2BKCpHxH3X7w1hdw%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null,
-        "region_lock": [
-            "US",
-            "CA",
-            "MX"
         ]
     },
     "1169891": {
@@ -40310,8 +39756,8 @@
         "name": "MELEE SINGLES",
         "slug": "tournament/for-the-love-fridays-2-90-cad-winner-takes-all/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 9,
+        "state": "ACTIVE",
+        "numEntrants": 26,
         "videogame": {
             "id": 1
         },
@@ -40325,35 +39771,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "FOR THE LOVE FRIDAYS #2 $90 CAD WINNER TAKES ALL",
-        "tournament_id": 686091,
-        "city": null,
-        "url": "https://smash.gg/tournament/for-the-love-fridays-2-90-cad-winner-takes-all/event/melee-singles",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1720229400,
-        "tournament_endAt": 1720240140,
-        "tournament_registrationClosesAt": 1720227600,
-        "images": [
-            {
-                "id": "7115206",
-                "url": "https://images.start.gg/images/tournament/686091/image-50c3aaf24f11f21fa6847066ca0ae679.jpg?ehk=aGImgo%2FoNo09oBB%2Fjc4rmQ2daeVmK68DVUDPh0omV0A%3D&ehkOptimized=IFpNeis7FRmmwrQPzAHkoXrc4EfS9c4XOJMHdw%2BmqXE%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7115207",
-                "url": "https://images.start.gg/images/tournament/686091/image-e2e551fbb3a0514490dcb2b538c8d1c4.png?ehk=SLCUgCOCDrwpqIeyfFu4peI5WumzibTNqoVlQftQR3U%3D&ehkOptimized=Dx7ZPjkc6Xpzwzp7d7uPDD0OapVISokhiLVHNRu8g6I%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "1170371": {
         "id": 1170371,
@@ -41150,7 +40568,7 @@
         "name": "Melee Singles",
         "slug": "tournament/prodigy-smash-weekly-140/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 7,
         "videogame": {
             "id": 1
@@ -41904,50 +41322,15 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Code Red 142",
-        "tournament_id": 686230,
-        "city": "Kansas City",
-        "url": "https://smash.gg/tournament/code-red-142/event/melee-redemption",
-        "streams": [
-            {
-                "streamName": "SpotlightKC"
-            },
-            {
-                "streamName": "Spotlight KC"
-            }
-        ],
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1720220400,
-        "tournament_endAt": 1720241940,
-        "tournament_registrationClosesAt": 1720224000,
-        "images": [
-            {
-                "id": "7116667",
-                "url": "https://images.start.gg/images/tournament/686230/image-5f3033b488e9f3731c3525bc90b74971.png?ehk=Y%2F0%2BKI31AafcBvwONKQUFjy4qgYCdSbj1p5w6yzixwM%3D&ehkOptimized=WbHuK3b6v6Ltd2ITWOKw1imp09UvF7xMc1IZRmvaok8%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7116668",
-                "url": "https://images.start.gg/images/tournament/686230/image-813307e780a021751307219d8fbbc8b6.png?ehk=euXIJIPqlBhYiRC04zKA96lmIYCCFAqQnlYnge09%2B3k%3D&ehkOptimized=KBXUpr%2BY8wv8oDzeRXpSYWw%2BM5kb1mODWWPDVtJ4bvc%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "300 E 39th St, Kansas City, MO 64110, USA",
-        "tournament_addrState": "MO",
-        "country_code": "US",
-        "lat": 39.056169,
-        "lng": -94.580378
+        ]
     },
     "1170635": {
         "id": 1170635,
         "name": "Melee Singles",
         "slug": "tournament/code-red-142/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 2,
+        "state": "ACTIVE",
+        "numEntrants": 16,
         "videogame": {
             "id": 1
         },
@@ -41961,42 +41344,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Code Red 142",
-        "tournament_id": 686230,
-        "city": "Kansas City",
-        "url": "https://smash.gg/tournament/code-red-142/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "SpotlightKC"
-            },
-            {
-                "streamName": "Spotlight KC"
-            }
-        ],
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1720220400,
-        "tournament_endAt": 1720241940,
-        "tournament_registrationClosesAt": 1720224000,
-        "images": [
-            {
-                "id": "7116667",
-                "url": "https://images.start.gg/images/tournament/686230/image-5f3033b488e9f3731c3525bc90b74971.png?ehk=Y%2F0%2BKI31AafcBvwONKQUFjy4qgYCdSbj1p5w6yzixwM%3D&ehkOptimized=WbHuK3b6v6Ltd2ITWOKw1imp09UvF7xMc1IZRmvaok8%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7116668",
-                "url": "https://images.start.gg/images/tournament/686230/image-813307e780a021751307219d8fbbc8b6.png?ehk=euXIJIPqlBhYiRC04zKA96lmIYCCFAqQnlYnge09%2B3k%3D&ehkOptimized=KBXUpr%2BY8wv8oDzeRXpSYWw%2BM5kb1mODWWPDVtJ4bvc%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "300 E 39th St, Kansas City, MO 64110, USA",
-        "tournament_addrState": "MO",
-        "country_code": "US",
-        "lat": 39.056169,
-        "lng": -94.580378
+        ]
     },
     "1170676": {
         "id": 1170676,
@@ -42789,8 +42137,8 @@
         "name": "Melee Singles",
         "slug": "tournament/turn-me-up-tucson-37/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 10,
         "videogame": {
             "id": 1
         },
@@ -42804,42 +42152,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Turn Me Up Tucson 37",
-        "tournament_id": 686269,
-        "city": "Tucson",
-        "url": "https://smash.gg/tournament/turn-me-up-tucson-37/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "box20xx"
-            },
-            {
-                "streamName": "pimpinspicy"
-            }
-        ],
-        "timezone": "America/Phoenix",
-        "tournament_startAt": 1720224000,
-        "tournament_endAt": 1720245600,
-        "tournament_registrationClosesAt": 1720249200,
-        "images": [
-            {
-                "id": "7117022",
-                "url": "https://images.start.gg/images/tournament/686269/image-1aaeb9a445f8e461110b5730879471ec.png?ehk=qtXmlp8HmhaVmdeYx8s0W3Mi9odz1f0F42NB%2BNHOooU%3D&ehkOptimized=p4Cns0DeM9%2FlJFntPdgTWDs8qrnCxjqx2UUmPtml9mM%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7117061",
-                "url": "https://images.start.gg/images/tournament/686269/image-ca7a303a912edc3e8736b6ce82e8dc52.jpg?ehk=QoJqKtj%2F9GdVV%2BV%2B8Ad7csRBRoNBOxsgPzrppziXt4o%3D&ehkOptimized=X2HB9hHR4vQvR0Yxz3qGs0lBuy4Ot5GQukYmWaclP94%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Tucson, AZ, USA",
-        "tournament_addrState": "AZ",
-        "country_code": "US",
-        "lat": 32.2539787,
-        "lng": -110.9741769
+        ]
     },
     "1170741": {
         "id": 1170741,
@@ -45801,7 +45114,7 @@
         "slug": "tournament/reads-by-the-river-23-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -45850,7 +45163,7 @@
         "name": "Melee Singles",
         "slug": "tournament/up-in-clouds-3/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -45866,5 +45179,521 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1171411": {
+        "id": 1171411,
+        "name": "Melee Singles",
+        "slug": "tournament/smash-at-the-commune-8/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720481400,
+        "phaseGroups": [
+            {
+                "id": 2534032,
+                "phase": {
+                    "id": 1704710,
+                    "name": "Melee Singles"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash at the Commune #8",
+        "tournament_id": 686607,
+        "city": "Austin",
+        "url": "https://smash.gg/tournament/smash-at-the-commune-8/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "austinmelee"
+            },
+            {
+                "streamName": "AustinPM"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1720481400,
+        "tournament_endAt": 1720501140,
+        "tournament_registrationClosesAt": 1720486800,
+        "images": [
+            {
+                "id": "7120910",
+                "url": "https://images.start.gg/images/tournament/686607/image-9004cf0a829f226cc9c1861c1a300987.jpg?ehk=zGWRFAhW52HRTz947WFCLrTi2FRvAHqTqTe8wvUo%2BjY%3D&ehkOptimized=uV2t1%2Fh9xx%2B26Lv2CQuUAKo24JSrZ6659nGnTcKcTPA%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7120911",
+                "url": "https://images.start.gg/images/tournament/686607/image-22afe0003b14e2f0877a770d36b7936d.jpg?ehk=Y7%2BaTtHKuz4jUfi%2BMcNQAG6PbGy4XaBysOqDb3LBM3g%3D&ehkOptimized=RgECRhL%2BMb%2BLVZiiLPpl3uW9Pp%2FqNjKv%2B27R0V7Jz2k%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "101 N Loop Blvd E, Austin, TX 78751, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 30.3174587,
+        "lng": -97.7223424
+    },
+    "1171413": {
+        "id": 1171413,
+        "name": "Redemption Bracket",
+        "slug": "tournament/smash-at-the-commune-8/event/redemption-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720481400,
+        "phaseGroups": [
+            {
+                "id": 2534034,
+                "phase": {
+                    "id": 1704712,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash at the Commune #8",
+        "tournament_id": 686607,
+        "city": "Austin",
+        "url": "https://smash.gg/tournament/smash-at-the-commune-8/event/redemption-bracket",
+        "streams": [
+            {
+                "streamName": "austinmelee"
+            },
+            {
+                "streamName": "AustinPM"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1720481400,
+        "tournament_endAt": 1720501140,
+        "tournament_registrationClosesAt": 1720486800,
+        "images": [
+            {
+                "id": "7120910",
+                "url": "https://images.start.gg/images/tournament/686607/image-9004cf0a829f226cc9c1861c1a300987.jpg?ehk=zGWRFAhW52HRTz947WFCLrTi2FRvAHqTqTe8wvUo%2BjY%3D&ehkOptimized=uV2t1%2Fh9xx%2B26Lv2CQuUAKo24JSrZ6659nGnTcKcTPA%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7120911",
+                "url": "https://images.start.gg/images/tournament/686607/image-22afe0003b14e2f0877a770d36b7936d.jpg?ehk=Y7%2BaTtHKuz4jUfi%2BMcNQAG6PbGy4XaBysOqDb3LBM3g%3D&ehkOptimized=RgECRhL%2BMb%2BLVZiiLPpl3uW9Pp%2FqNjKv%2B27R0V7Jz2k%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "101 N Loop Blvd E, Austin, TX 78751, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 30.3174587,
+        "lng": -97.7223424
+    },
+    "1171409": {
+        "id": 1171409,
+        "name": "Melee Singles",
+        "slug": "tournament/smash-clock-52/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 4,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720479600,
+        "phaseGroups": [
+            {
+                "id": 2534029,
+                "phase": {
+                    "id": 1704707,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash Clock #52",
+        "tournament_id": 686606,
+        "city": "Minneapolis",
+        "url": "https://smash.gg/tournament/smash-clock-52/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "topshelfesports"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1720479600,
+        "tournament_endAt": 1720494000,
+        "tournament_registrationClosesAt": 1720481400,
+        "images": [
+            {
+                "id": "7120902",
+                "url": "https://images.start.gg/images/tournament/686606/image-8757874327cea8e06f4663356826793e.png?ehk=VJ6RP%2F8%2F9kyYSvlekNpaGkhSKPdBLiE2AVLAodeY0Dg%3D&ehkOptimized=%2Bw6rBLeD0hHnU8N71j5EHkCXkpCqsiDuKbDsuhwLhd0%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Trustworthy Brewing Co.",
+        "tournament_venueAddress": "1712 Marshall St NE Suite 100, Minneapolis, MN 55413, USA",
+        "tournament_addrState": "MN",
+        "country_code": "US",
+        "lat": 45.0050927,
+        "lng": -93.2719
+    },
+    "1171410": {
+        "id": 1171410,
+        "name": "Amateur Bracket",
+        "slug": "tournament/smash-clock-52/event/amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720479600,
+        "phaseGroups": [
+            {
+                "id": 2534030,
+                "phase": {
+                    "id": 1704708,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash Clock #52",
+        "tournament_id": 686606,
+        "city": "Minneapolis",
+        "url": "https://smash.gg/tournament/smash-clock-52/event/amateur-bracket",
+        "streams": [
+            {
+                "streamName": "topshelfesports"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1720479600,
+        "tournament_endAt": 1720494000,
+        "tournament_registrationClosesAt": 1720481400,
+        "images": [
+            {
+                "id": "7120902",
+                "url": "https://images.start.gg/images/tournament/686606/image-8757874327cea8e06f4663356826793e.png?ehk=VJ6RP%2F8%2F9kyYSvlekNpaGkhSKPdBLiE2AVLAodeY0Dg%3D&ehkOptimized=%2Bw6rBLeD0hHnU8N71j5EHkCXkpCqsiDuKbDsuhwLhd0%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Trustworthy Brewing Co.",
+        "tournament_venueAddress": "1712 Marshall St NE Suite 100, Minneapolis, MN 55413, USA",
+        "tournament_addrState": "MN",
+        "country_code": "US",
+        "lat": 45.0050927,
+        "lng": -93.2719
+    },
+    "1171442": {
+        "id": 1171442,
+        "name": "Melee Doubles 6pm",
+        "slug": "tournament/kame-house-weekly-68-patchworkday3-1/event/melee-doubles-6pm",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720468800,
+        "phaseGroups": [
+            {
+                "id": 2534081,
+                "phase": {
+                    "id": 1704755,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Kame House Weekly #68 #patchworkday3",
+        "tournament_id": 686620,
+        "city": "Atlanta",
+        "url": "https://smash.gg/tournament/kame-house-weekly-68-patchworkday3-1/event/melee-doubles-6pm",
+        "streams": [
+            {
+                "streamName": "4o4esports"
+            },
+            {
+                "streamName": "nimbusroshi"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1720468800,
+        "tournament_endAt": 1720497540,
+        "tournament_registrationClosesAt": 1720479300,
+        "images": [
+            {
+                "id": "7121023",
+                "url": "https://images.start.gg/images/tournament/686620/image-aeefbcebd6694844284298baaf8b2204.png?ehk=moV0lhmMXFLTh4FxEqoYGsMMf6rBnwFrlulHaN0LaXk%3D&ehkOptimized=sKtC3E5sepYgTz5BktdGdQF92tNg4JkGeR38jHKHp24%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7121024",
+                "url": "https://images.start.gg/images/tournament/686620/image-1e9bf1f718edeeee2d1def998d7e7a51.png?ehk=la9zpUvAcpIA06hkoJHMRwAlHibHuCwGOTNZ8qpbZpw%3D&ehkOptimized=PKpMD32Uj0938zSa1yfJ4e%2FHXWOZH%2BTUtYpnx71DeVg%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "6035 Peachtree Rd Suite C-220, Atlanta, GA 30360, USA",
+        "tournament_addrState": "GA",
+        "country_code": "US",
+        "lat": 33.9084464,
+        "lng": -84.2886486
+    },
+    "1171440": {
+        "id": 1171440,
+        "name": "Melee Singles 8pm",
+        "slug": "tournament/kame-house-weekly-68-patchworkday3-1/event/melee-singles-8pm",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720468800,
+        "phaseGroups": [
+            {
+                "id": 2534079,
+                "phase": {
+                    "id": 1704753,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Kame House Weekly #68 #patchworkday3",
+        "tournament_id": 686620,
+        "city": "Atlanta",
+        "url": "https://smash.gg/tournament/kame-house-weekly-68-patchworkday3-1/event/melee-singles-8pm",
+        "streams": [
+            {
+                "streamName": "4o4esports"
+            },
+            {
+                "streamName": "nimbusroshi"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1720468800,
+        "tournament_endAt": 1720497540,
+        "tournament_registrationClosesAt": 1720479300,
+        "images": [
+            {
+                "id": "7121023",
+                "url": "https://images.start.gg/images/tournament/686620/image-aeefbcebd6694844284298baaf8b2204.png?ehk=moV0lhmMXFLTh4FxEqoYGsMMf6rBnwFrlulHaN0LaXk%3D&ehkOptimized=sKtC3E5sepYgTz5BktdGdQF92tNg4JkGeR38jHKHp24%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7121024",
+                "url": "https://images.start.gg/images/tournament/686620/image-1e9bf1f718edeeee2d1def998d7e7a51.png?ehk=la9zpUvAcpIA06hkoJHMRwAlHibHuCwGOTNZ8qpbZpw%3D&ehkOptimized=PKpMD32Uj0938zSa1yfJ4e%2FHXWOZH%2BTUtYpnx71DeVg%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "6035 Peachtree Rd Suite C-220, Atlanta, GA 30360, USA",
+        "tournament_addrState": "GA",
+        "country_code": "US",
+        "lat": 33.9084464,
+        "lng": -84.2886486
+    },
+    "1171390": {
+        "id": 1171390,
+        "name": "Melee Singles",
+        "slug": "tournament/skull-bash-5/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720396800,
+        "phaseGroups": [
+            {
+                "id": 2533990,
+                "phase": {
+                    "id": 1704681,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10655027
+                    },
+                    {
+                        "id": 10655028
+                    },
+                    {
+                        "id": 10655029
+                    },
+                    {
+                        "id": 10655030
+                    },
+                    {
+                        "id": 10655031
+                    },
+                    {
+                        "id": 10655032
+                    },
+                    {
+                        "id": 10655033
+                    },
+                    {
+                        "id": 10655034
+                    }
+                ]
+            },
+            {
+                "id": 2533991,
+                "phase": {
+                    "id": 1704682,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Skull Bash #5",
+        "tournament_id": 686601,
+        "city": "Garland",
+        "url": "https://smash.gg/tournament/skull-bash-5/event/melee-singles",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1720396800,
+        "tournament_endAt": 1720411200,
+        "tournament_registrationClosesAt": 1720396200,
+        "images": [
+            {
+                "id": "7120843",
+                "url": "https://images.start.gg/images/tournament/686601/image-914f42d2cfd44e6bafffa0efbe47f8a9.png?ehk=jYffbd13wBte0xiAr6K3EEXziOwulQPS%2BSW3TJpWRW4%3D&ehkOptimized=jGKTvznuIUmQrPruVi%2BAEuaTVMT422r6jPSF5qN6aOI%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7120844",
+                "url": "https://images.start.gg/images/tournament/686601/image-c39a9b2b22f5b36a91e0c78d7513c7e4.jpg?ehk=1zMtOJlhRFAQGog5%2B1T114bXvXPi835INor49jNKcL8%3D&ehkOptimized=AP9KboCHrsOWYVP9UEwBbGHMI8DG3pePcHahEbh5vjE%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "465 Cedar Sage Dr, Garland, TX 75040, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 32.952705,
+        "lng": -96.61026880000001
+    },
+    "1171389": {
+        "id": 1171389,
+        "name": "Redemption Bracket",
+        "slug": "tournament/skull-bash-5/event/redemption-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720396800,
+        "phaseGroups": [
+            {
+                "id": 2533989,
+                "phase": {
+                    "id": 1704680,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Skull Bash #5",
+        "tournament_id": 686601,
+        "city": "Garland",
+        "url": "https://smash.gg/tournament/skull-bash-5/event/redemption-bracket",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1720396800,
+        "tournament_endAt": 1720411200,
+        "tournament_registrationClosesAt": 1720396200,
+        "images": [
+            {
+                "id": "7120843",
+                "url": "https://images.start.gg/images/tournament/686601/image-914f42d2cfd44e6bafffa0efbe47f8a9.png?ehk=jYffbd13wBte0xiAr6K3EEXziOwulQPS%2BSW3TJpWRW4%3D&ehkOptimized=jGKTvznuIUmQrPruVi%2BAEuaTVMT422r6jPSF5qN6aOI%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7120844",
+                "url": "https://images.start.gg/images/tournament/686601/image-c39a9b2b22f5b36a91e0c78d7513c7e4.jpg?ehk=1zMtOJlhRFAQGog5%2B1T114bXvXPi835INor49jNKcL8%3D&ehkOptimized=AP9KboCHrsOWYVP9UEwBbGHMI8DG3pePcHahEbh5vjE%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "465 Cedar Sage Dr, Garland, TX 75040, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 32.952705,
+        "lng": -96.61026880000001
+    },
+    "1171437": {
+        "id": 1171437,
+        "name": "MELEE SINGLES",
+        "slug": "tournament/da-arab_munny-classic-37-we-up-now/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720236600,
+        "phaseGroups": [
+            {
+                "id": 2534074,
+                "phase": {
+                    "id": 1704750,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "DA ARAB_MUNNY CLASSIC #37 WE UP NOW",
+        "tournament_id": 686617,
+        "city": null,
+        "url": "https://smash.gg/tournament/da-arab_munny-classic-37-we-up-now/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "arab_MUNNY"
+            },
+            {
+                "streamName": "bitty_pitty"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1720236600,
+        "tournament_endAt": 1720245600,
+        "tournament_registrationClosesAt": 1720236900,
+        "images": [
+            {
+                "id": "7121009",
+                "url": "https://images.start.gg/images/tournament/686617/image-aeb5434554eb8afe3e1a7dd81a6bb505.jpg?ehk=sjIxTRaVnnbmgPhu27ZdzfFjCebkv9DAjNe7ArTF%2BFw%3D&ehkOptimized=8CzbjYrMR8abo82NmQtxKECb7%2FJTcx4lUhDWF6FJWxc%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7121010",
+                "url": "https://images.start.gg/images/tournament/686617/image-6981713f8047a84207ad543391c219dd.jpg?ehk=LVE72tjjCYUJCfg8xeMirufOAZ%2BP4%2ByPxcxAQLSNdiA%3D&ehkOptimized=c%2BaVznApw9b1jLydBVZLhHI1FomspFm6%2Bho38YMztn0%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
