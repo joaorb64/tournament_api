@@ -2206,7 +2206,7 @@
         "name": "Main Game: Super Smash Bros. Melee",
         "slug": "tournament/second-wind-2024/event/main-game-super-smash-bros-melee",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 24,
         "videogame": {
             "id": 1
@@ -6092,12 +6092,21 @@
         "slug": "tournament/go-touch-grass-1/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
         "startAt": 1720897200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2422988,
+                "phase": {
+                    "id": 1622020,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Go Touch Grass",
         "tournament_id": 653372,
         "city": "New Haven",
@@ -6133,12 +6142,21 @@
         "slug": "tournament/go-touch-grass-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 29,
+        "numEntrants": 30,
         "videogame": {
             "id": 1
         },
         "startAt": 1720904400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2422942,
+                "phase": {
+                    "id": 1621990,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Go Touch Grass",
         "tournament_id": 653372,
         "city": "New Haven",
@@ -22427,80 +22445,6 @@
         "lat": 43.0929434,
         "lng": -89.3514088
     },
-    "1168697": {
-        "id": 1168697,
-        "name": "Melee Singles",
-        "slug": "tournament/ualr-iliad-smash-35/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 9,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2529530,
-                "phase": {
-                    "id": 1701247,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1168674": {
-        "id": 1168674,
-        "name": "Melee Singles",
-        "slug": "tournament/tripoint-smash-241/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 15,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2529505,
-                "phase": {
-                    "id": 1701222,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10638461
-                    },
-                    {
-                        "id": 10638462
-                    },
-                    {
-                        "id": 10638463
-                    },
-                    {
-                        "id": 10638464
-                    },
-                    {
-                        "id": 10654670
-                    },
-                    {
-                        "id": 10654680
-                    },
-                    {
-                        "id": 10654969
-                    }
-                ]
-            },
-            {
-                "id": 2529506,
-                "phase": {
-                    "id": 1701223,
-                    "name": "Amateur Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1168828": {
         "id": 1168828,
         "name": "Melee Singles",
@@ -22539,28 +22483,6 @@
                 "id": 2529803,
                 "phase": {
                     "id": 1701461,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1168833": {
-        "id": 1168833,
-        "name": "1 Stock Singles",
-        "slug": "tournament/last-life-2/event/1-stock-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 16,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2529758,
-                "phase": {
-                    "id": 1701419,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -24222,88 +24144,6 @@
                 "progressionsOut": null
             }
         ]
-    },
-    "1169433": {
-        "id": 1169433,
-        "name": "Melee Singles",
-        "slug": "tournament/city-of-mash-50-christmas-in-july/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 12,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720218600,
-        "phaseGroups": [
-            {
-                "id": 2530700,
-                "phase": {
-                    "id": 1702197,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1169434": {
-        "id": 1169434,
-        "name": "Melee Doubles",
-        "slug": "tournament/city-of-mash-50-christmas-in-july/event/melee-doubles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720218600,
-        "phaseGroups": [
-            {
-                "id": 2530701,
-                "phase": {
-                    "id": 1702198,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "City of Mash 50: Christmas in July",
-        "tournament_id": 685617,
-        "city": "Horseheads",
-        "url": "https://smash.gg/tournament/city-of-mash-50-christmas-in-july/event/melee-doubles",
-        "streams": [
-            {
-                "streamName": "Southerntiersmash"
-            },
-            {
-                "streamName": "revelstny"
-            },
-            {
-                "streamName": "bloooki"
-            }
-        ],
-        "timezone": "America/New_York",
-        "tournament_startAt": 1720218600,
-        "tournament_endAt": 1720242000,
-        "tournament_registrationClosesAt": 1720884540,
-        "images": [
-            {
-                "id": "7109796",
-                "url": "https://images.start.gg/images/tournament/685617/image-2e894acfac173ae09b721e3c895c4733.png?ehk=DONUwPDK6g5L8ZN4WchByAf9rTNrB8FhbSJnokAgwvs%3D&ehkOptimized=Qg5o8t9BtbN7YoRPyNAXMhJIFQvsi%2Bmg6oUn%2FbDPInw%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7109797",
-                "url": "https://images.start.gg/images/tournament/685617/image-af14553b7a6333c97d7e4ba0d3d81aa6.png?ehk=ueXPaC3OZ0WD9cHq7AqV9%2Budtlw6Ur25%2FaDvGJmwUhc%3D&ehkOptimized=kQUL5rehPkjtVrRkw6Tmi9ZDA82adlVggpbsOEZdFtU%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "3300 Chambers Rd, Horseheads, NY 14845, USA",
-        "tournament_addrState": "NY",
-        "country_code": "US",
-        "lat": 42.1601212,
-        "lng": -76.8728144
     },
     "1151664": {
         "id": 1151664,
@@ -26548,28 +26388,6 @@
             }
         ]
     },
-    "1170502": {
-        "id": 1170502,
-        "name": "1. Melee",
-        "slug": "tournament/friday-fest-25-the-peak/event/1-melee",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720218600,
-        "phaseGroups": [
-            {
-                "id": 2532439,
-                "phase": {
-                    "id": 1703528,
-                    "name": "MELEE BRACKET"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1170532": {
         "id": 1170532,
         "name": "Melee Singles",
@@ -26587,50 +26405,6 @@
                 "phase": {
                     "id": 1703560,
                     "name": "Main Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1170527": {
-        "id": 1170527,
-        "name": "Melee Side Event",
-        "slug": "tournament/prodigy-smash-weekly-140/event/melee-side-event",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720218600,
-        "phaseGroups": [
-            {
-                "id": 2532465,
-                "phase": {
-                    "id": 1703554,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1170525": {
-        "id": 1170525,
-        "name": "Melee Singles",
-        "slug": "tournament/prodigy-smash-weekly-140/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 7,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720218600,
-        "phaseGroups": [
-            {
-                "id": 2532463,
-                "phase": {
-                    "id": 1703552,
-                    "name": "Bracket"
                 },
                 "progressionsOut": null
             }
@@ -27236,50 +27010,6 @@
         "lng": 10.7623841,
         "region_lock": [
             "NO"
-        ]
-    },
-    "1170636": {
-        "id": 1170636,
-        "name": "Melee Redemption",
-        "slug": "tournament/code-red-142/event/melee-redemption",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2532683,
-                "phase": {
-                    "id": 1703706,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1170635": {
-        "id": 1170635,
-        "name": "Melee Singles",
-        "slug": "tournament/code-red-142/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 16,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2532682,
-                "phase": {
-                    "id": 1703705,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
         ]
     },
     "1170676": {
@@ -28461,28 +28191,6 @@
         "lat": 26.0896932,
         "lng": -98.282872
     },
-    "1170918": {
-        "id": 1170918,
-        "name": "Melee Singles",
-        "slug": "tournament/pho-tai-melee-56-freedom-edition-raaaaaaaaah/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 21,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2533160,
-                "phase": {
-                    "id": 1704071,
-                    "name": "gaming"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1170943": {
         "id": 1170943,
         "name": "Melee Doubles",
@@ -28538,8 +28246,8 @@
         "name": "Melee Singles",
         "slug": "tournament/cryptonic-melee-friday-3-featuring-p/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 18,
+        "state": "ACTIVE",
+        "numEntrants": 19,
         "videogame": {
             "id": 1
         },
@@ -28553,39 +28261,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Cryptonic Melee Friday #3 FEATURING P+",
-        "tournament_id": 686309,
-        "city": null,
-        "url": "https://smash.gg/tournament/cryptonic-melee-friday-3-featuring-p/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "Cryptonic"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1720821600,
-        "tournament_endAt": 1720842900,
-        "tournament_registrationClosesAt": 1720823400,
-        "images": [
-            {
-                "id": "7117366",
-                "url": "https://images.start.gg/images/tournament/686309/image-e8ecb1c0ac60b2f2d26ea34873841d98.jpg?ehk=%2FV2vs132zGyqsYU%2F6XN7V12E3hfDJ0ZaQCaUA%2FpH6Og%3D&ehkOptimized=mbL9NNDakAizI0jKKImhNjtfVymgW3JNk2fcsYjDIME%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7117368",
-                "url": "https://images.start.gg/images/tournament/686309/image-8d426894234b1a6ce0c2cbab852e92b3.png?ehk=BmI7G4SELnq4OKupByrre4leuPP%2BC4IcK0MS6nLOMjc%3D&ehkOptimized=ceCj3gueaFRYxX8yCI1PybxcMBJR6pkxl0lLsiLhx78%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "1171003": {
         "id": 1171003,
@@ -29970,28 +29646,6 @@
             }
         ]
     },
-    "1163859": {
-        "id": 1163859,
-        "name": "Melee Singles",
-        "slug": "tournament/up-in-clouds-3/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 6,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2521384,
-                "phase": {
-                    "id": 1695008,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1171411": {
         "id": 1171411,
         "name": "Melee Singles",
@@ -30650,7 +30304,7 @@
         "slug": "tournament/prodigy-smash-weekly-141-reaching-critical-mass/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 12,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -30664,45 +30318,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Prodigy Smash Weekly #141: Reaching Critical Mass!",
-        "tournament_id": 683717,
-        "city": "Easthampton",
-        "url": "https://smash.gg/tournament/prodigy-smash-weekly-141-reaching-critical-mass/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "jacqinora"
-            },
-            {
-                "streamName": "22Kteam"
-            },
-            {
-                "streamName": "cg_conduitgaming"
-            }
-        ],
-        "timezone": "America/New_York",
-        "tournament_startAt": 1720818000,
-        "tournament_endAt": 1720843140,
-        "tournament_registrationClosesAt": 1720823400,
-        "images": [
-            {
-                "id": "7091319",
-                "url": "https://images.start.gg/images/tournament/683717/image-15d0affb9ed9dc0da459b5bb2cfddb41.png?ehk=C%2BOnuOw1OYqvKnKeUJPPqCh%2F362IRpx%2BclXujQeMhi8%3D&ehkOptimized=y81K3R5cVSjEzLi649ns1RAwsbZ4X2upEydL1XqdzYY%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7091320",
-                "url": "https://images.start.gg/images/tournament/683717/image-cd8d1ba0712a39c494ef07e1b8449aa1.png?ehk=zKo0SWT8PuitAVx1smrOwj2L6vu7bh8B4Ftru9QHGa0%3D&ehkOptimized=dP49TcmHPLS8L50DTYHttvTpHParuyOe%2BPZ0R%2BtDaJ4%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "116 Pleasant St, Easthampton, MA 01027, USA",
-        "tournament_addrState": "MA",
-        "country_code": "US",
-        "lat": 42.27234079999999,
-        "lng": -72.6639929
+        ]
     },
     "1171597": {
         "id": 1171597,
@@ -36313,50 +35929,6 @@
             }
         ]
     },
-    "1167599": {
-        "id": 1167599,
-        "name": "Melee Singles",
-        "slug": "tournament/mom-s-basement/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 17,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2527438,
-                "phase": {
-                    "id": 1699827,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1171423": {
-        "id": 1171423,
-        "name": "Melee Amateurs",
-        "slug": "tournament/mom-s-basement/event/melee-amateurs",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720220400,
-        "phaseGroups": [
-            {
-                "id": 2534058,
-                "phase": {
-                    "id": 1704735,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1172963": {
         "id": 1172963,
         "name": "Melee Singles (Sunday)",
@@ -36419,8 +35991,8 @@
         "name": "Melee Singles",
         "slug": "tournament/nes-legends/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -36434,42 +36006,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "NES Legends",
-        "tournament_id": 687455,
-        "city": null,
-        "url": "https://smash.gg/tournament/nes-legends/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "devdoggxx"
-            },
-            {
-                "streamName": "waitingforgame"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1720825200,
-        "tournament_endAt": 1720836060,
-        "tournament_registrationClosesAt": 1720824060,
-        "images": [
-            {
-                "id": "7130782",
-                "url": "https://images.start.gg/images/tournament/687455/image-ab71acd859d39a0e27efa29cd2c74ffe.png?ehk=J9On1NNSksG4wGQVOTGKelqFbQHAh7CJUv5JRmt%2B5ec%3D&ehkOptimized=nPkIjgx0Uy1TUi1D%2FZ5O9XxWUbDMJpKDt5myKZcA%2BnA%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7130792",
-                "url": "https://images.start.gg/images/tournament/687455/image-be8d94492d08c7b9dc3e3b832a2e48db.png?ehk=ytKtxm3yMBGK7DsvueUjNIZJpwoWOKPdLm2XmBQt6PQ%3D&ehkOptimized=uhihhNiKNwzVV7i%2F9q7iyISv3CmC%2FVE52uVuo43ypDs%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "1172972": {
         "id": 1172972,
@@ -42261,7 +41798,7 @@
         "slug": "tournament/liberty-smash-weekly-284-7-12-24/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -42275,48 +41812,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Liberty Smash Weekly #284 (7/12/24)",
-        "tournament_id": 688313,
-        "city": "Lynchburg",
-        "url": "https://smash.gg/tournament/liberty-smash-weekly-284-7-12-24/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "lynchburgsmashbros"
-            },
-            {
-                "streamName": "averageboiiii"
-            },
-            {
-                "streamName": "thefiggypudding"
-            },
-            {
-                "streamName": "getgrogged"
-            }
-        ],
-        "timezone": "America/New_York",
-        "tournament_startAt": 1720821600,
-        "tournament_endAt": 1720836000,
-        "tournament_registrationClosesAt": 1720836000,
-        "images": [
-            {
-                "id": "7141724",
-                "url": "https://images.start.gg/images/tournament/688313/image-cbb67d13eae9f80ead30f79e207f2b31.png?ehk=XRkwJkcVCva2hl2bnkRMtNX02CcPx90RG0zH%2BLI0BOg%3D&ehkOptimized=uUeDkZFvRg7a8lYlf00lCs4hSbTFUWOrbiXlYqsDrIE%3D",
-                "type": "banner"
-            },
-            {
-                "id": "7141725",
-                "url": "https://images.start.gg/images/tournament/688313/image-5fdd1ea2f7e42df1562c25cab16578bc.png?ehk=zTlB1Vey5Uo8zuBk59w5uO5kXo1MO%2BLtYgnTkw66h7c%3D&ehkOptimized=XGeQMJNZyX2B%2BtnCEMk6%2BgZo5Yuv4PzgEUNf8FJ%2FSWo%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Lynchburg, VA 24502, USA",
-        "tournament_addrState": "VA",
-        "country_code": "US",
-        "lat": 37.3504509,
-        "lng": -79.1793016
+        ]
     },
     "1174590": {
         "id": 1174590,
@@ -43364,7 +42860,7 @@
         "slug": "tournament/alameda-biweekly-1/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -43403,7 +42899,7 @@
         "slug": "tournament/alameda-biweekly-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -44925,7 +44421,7 @@
         "slug": "tournament/smash-at-the-commune-9/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 4,
         "videogame": {
             "id": 1
         },
@@ -45708,7 +45204,16 @@
             "id": 1
         },
         "startAt": 1721487600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2537006,
+                "phase": {
+                    "id": 1707144,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Melee Underground #1 @ Chinatown Centre Underground Market",
         "tournament_id": 687579,
         "city": "Toronto",
@@ -46577,7 +46082,7 @@
         "name": "Melee Singles",
         "slug": "tournament/alarach-57/event/melee-singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 12,
         "videogame": {
             "id": 1
@@ -47116,5 +46621,98 @@
         "country_code": "US",
         "lat": 39.9542164,
         "lng": -75.189201
+    },
+    "1175543": {
+        "id": 1175543,
+        "name": "Melee Singles FD starter!",
+        "slug": "tournament/hamilton-high-grounds-58/event/melee-singles-fd-starter",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720980000,
+        "phaseGroups": [
+            {
+                "id": 2541800,
+                "phase": {
+                    "id": 1710106,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Hamilton High Grounds 58",
+        "tournament_id": 688796,
+        "city": "Hamilton",
+        "url": "https://smash.gg/tournament/hamilton-high-grounds-58/event/melee-singles-fd-starter",
+        "streams": [
+            {
+                "streamName": "catch_thom"
+            }
+        ],
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1720980000,
+        "tournament_endAt": 1720996140,
+        "tournament_registrationClosesAt": 1720983540,
+        "images": [
+            {
+                "id": "7146144",
+                "url": "https://images.start.gg/images/tournament/688796/image-6863241bc529919f7c9ce222a693e7a1.jpg?ehk=pZ0ybIz%2BEkxa4ISyCBHboFUSlntcf6WZkpHA1VdJvt0%3D&ehkOptimized=%2FzhW4z1qNgZGT%2B8dsaQBJygwABfCoxmBmzUrECxd1%2Bc%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "873 King St E, Hamilton, ON L8M 1B5, Canada",
+        "tournament_addrState": "ON",
+        "country_code": "CA",
+        "lat": 43.2515862,
+        "lng": -79.8400407
+    },
+    "1172657": {
+        "id": 1172657,
+        "name": "Melee Singles",
+        "slug": "tournament/qwack-s-untitled-garage-weekly-7/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 16,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720825200,
+        "phaseGroups": [
+            {
+                "id": 2536086,
+                "phase": {
+                    "id": 1706390,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
+    },
+    "1172658": {
+        "id": 1172658,
+        "name": "Melee Amateurs",
+        "slug": "tournament/qwack-s-untitled-garage-weekly-7/event/melee-amateurs",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 7,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1720825200,
+        "phaseGroups": [
+            {
+                "id": 2536087,
+                "phase": {
+                    "id": 1706391,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     }
 }
