@@ -21376,49 +21376,6 @@
             }
         ]
     },
-    "1169972": {
-        "id": 1169972,
-        "name": "Melee singles",
-        "slug": "tournament/smashology-57/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1720353600,
-        "phaseGroups": [
-            {
-                "id": 2531554,
-                "phase": {
-                    "id": 1702865,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10644778
-                    },
-                    {
-                        "id": 10644779
-                    },
-                    {
-                        "id": 10644780
-                    },
-                    {
-                        "id": 10644781
-                    }
-                ]
-            },
-            {
-                "id": 2531555,
-                "phase": {
-                    "id": 1702866,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1170021": {
         "id": 1170021,
         "name": "Melee Singles",
@@ -30289,8 +30246,8 @@
         "name": "Melee Singles",
         "slug": "tournament/labsesh-19/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 4,
         "videogame": {
             "id": 1
         },
@@ -30300,28 +30257,32 @@
                 "id": 2536652,
                 "phase": {
                     "id": 1706837,
-                    "name": "Bracket"
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10703781
+                    },
+                    {
+                        "id": 10703782
+                    },
+                    {
+                        "id": 10703783
+                    },
+                    {
+                        "id": 10703784
+                    }
+                ]
+            },
+            {
+                "id": 2543107,
+                "phase": {
+                    "id": 1710807,
+                    "name": "Top Bracket"
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "LabSesh 19",
-        "tournament_id": 687487,
-        "city": "Horten",
-        "url": "https://smash.gg/tournament/labsesh-19/event/melee-singles",
-        "streams": null,
-        "timezone": "Europe/Oslo",
-        "tournament_startAt": 1720951200,
-        "tournament_endAt": 1720980000,
-        "tournament_registrationClosesAt": 1720980000,
-        "images": [],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Torget 5, 3181 Horten, Norway",
-        "tournament_addrState": "Vestfold",
-        "country_code": "NO",
-        "lat": 59.4172197,
-        "lng": 10.4831154
+        ]
     },
     "1173039": {
         "id": 1173039,
@@ -42010,5 +41971,59 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "1176067": {
+        "id": 1176067,
+        "name": "Melee Singles",
+        "slug": "tournament/swg-39/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1721228400,
+        "phaseGroups": [
+            {
+                "id": 2543122,
+                "phase": {
+                    "id": 1710822,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "SWG #39",
+        "tournament_id": 689117,
+        "city": "Graz",
+        "url": "https://smash.gg/tournament/swg-39/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "JoniPK"
+            }
+        ],
+        "timezone": "Europe/Vienna",
+        "tournament_startAt": 1721228400,
+        "tournament_endAt": 1721250000,
+        "tournament_registrationClosesAt": 1721253600,
+        "images": [
+            {
+                "id": "7149603",
+                "url": "https://images.start.gg/images/tournament/689117/image-1305e92420e57aa23bba5a3ebebe2d4b.jpg?ehk=tfkcTgK%2F%2F%2BO%2FvlUKSBzWz6o8EhOEOurOytZARVsSRhI%3D&ehkOptimized=Ad%2FLV2eWQaTEH8DDnEgD29S2GN0LLbIYVxT3rnxxDx4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7149604",
+                "url": "https://images.start.gg/images/tournament/689117/image-3387e5b5bae808028c5539e47f9c33be.png?ehk=0W84rUDnRs2vRz%2FHnnSIgpSEqkn4LIIOozw%2FGk5dyj4%3D&ehkOptimized=h1zz0B02MGhsu0KNHjOaHzNMXkkg%2BI40LS%2BFOBXRg3A%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Bahnhofg\u00fcrtel 63, 8020 Graz, \u00d6sterreich",
+        "tournament_addrState": "Steiermark",
+        "country_code": "AT",
+        "lat": 47.0755697,
+        "lng": 15.4178452
     }
 }
