@@ -7129,7 +7129,7 @@
         "slug": "tournament/the-summoning-2024/event/the-summoning-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 13,
+        "numEntrants": 18,
         "videogame": {
             "id": 1
         },
@@ -9513,7 +9513,7 @@
         "slug": "tournament/herbstpause/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -9532,7 +9532,11 @@
         "tournament_id": 677842,
         "city": "Berlin",
         "url": "https://smash.gg/tournament/herbstpause/event/melee-doubles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "German_Melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1728122400,
         "tournament_endAt": 1728172800,
@@ -9563,7 +9567,7 @@
         "slug": "tournament/herbstpause/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 11,
+        "numEntrants": 41,
         "videogame": {
             "id": 1
         },
@@ -9611,7 +9615,11 @@
         "tournament_id": 677842,
         "city": "Berlin",
         "url": "https://smash.gg/tournament/herbstpause/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "German_Melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1728122400,
         "tournament_endAt": 1728172800,
@@ -29544,8 +29552,8 @@
         "name": "Melee Singles",
         "slug": "tournament/the-vault-xviii-melee/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 13,
+        "state": "ACTIVE",
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -29555,43 +29563,29 @@
                 "id": 2539486,
                 "phase": {
                     "id": 1708248,
-                    "name": "Bracket"
+                    "name": "rr"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10712435
+                    },
+                    {
+                        "id": 10712436
+                    },
+                    {
+                        "id": 10712437
+                    }
+                ]
+            },
+            {
+                "id": 2545611,
+                "phase": {
+                    "id": 1712604,
+                    "name": "Playoffs"
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "The Vault XVIII: Melee",
-        "tournament_id": 688036,
-        "city": "London",
-        "url": "https://smash.gg/tournament/the-vault-xviii-melee/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "valhallanchiswick"
-            }
-        ],
-        "timezone": "Europe/London",
-        "tournament_startAt": 1721154900,
-        "tournament_endAt": 1721170740,
-        "tournament_registrationClosesAt": 1721170800,
-        "images": [
-            {
-                "id": "7138727",
-                "url": "https://images.start.gg/images/tournament/688036/image-11bcdc8bc3f2d8b90cda27bc165570e0.png?ehk=3mPGvUV5qZIXuEMdOsRDk0c8IEljM2MbBoGdjUbCmB4%3D&ehkOptimized=3PS7oS0nxmlh5AF9Rsf3O2K%2FMMhxU7AHrNOrCjmKNbI%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7138728",
-                "url": "https://images.start.gg/images/tournament/688036/image-6a0a01d4d5a46853b4c32142d0e8baab.png?ehk=D7HkYIZqek%2FQhXkI3BNhsuRufxKYyx9EHNncUyw4LnU%3D&ehkOptimized=yqmaqzJ3XcY3YdI3ElB9yGPuwgG%2FtIY0ITJqembypoU%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "12 Park Parade, London W3 9BD, UK",
-        "tournament_addrState": "England",
-        "country_code": "GB",
-        "lat": 51.5015353,
-        "lng": -0.2855111
+        ]
     },
     "1174104": {
         "id": 1174104,
@@ -30097,7 +30091,7 @@
         "slug": "tournament/le-hub-143/event/melee-singles-19h-7pm",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -44421,7 +44415,7 @@
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1721401260,
         "tournament_endAt": 1721415600,
-        "tournament_registrationClosesAt": 1719586800,
+        "tournament_registrationClosesAt": 1721487600,
         "images": [
             {
                 "id": "6929314",
@@ -45602,5 +45596,109 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1177480": {
+        "id": 1177480,
+        "name": "Melee Singles",
+        "slug": "tournament/hold-the-fort-25/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1721437200,
+        "phaseGroups": [
+            {
+                "id": 2545613,
+                "phase": {
+                    "id": 1712606,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Hold The Fort #25",
+        "tournament_id": 689897,
+        "city": "Fort McMurray",
+        "url": "https://smash.gg/tournament/hold-the-fort-25/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "fortmacsmashbros"
+            }
+        ],
+        "timezone": "America/Edmonton",
+        "tournament_startAt": 1721437200,
+        "tournament_endAt": 1721451600,
+        "tournament_registrationClosesAt": 1721441700,
+        "images": [
+            {
+                "id": "7156220",
+                "url": "https://images.start.gg/images/tournament/689897/image-90831b46812daffa4a22c7926b77a091.png?ehk=Oh1MQA0w98ZyXalTOpg7gzYNhhrwuCRUCUsKjqYhD%2BI%3D&ehkOptimized=O6lpr0p%2FfuHCftseY75hLWvEZ8M8g6f3KJegAidp3uE%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7156221",
+                "url": "https://images.start.gg/images/tournament/689897/image-b0eae6a593312a0a64dc9942af5e30c8.png?ehk=kAi2lYvWdher6ryJwyS78e2L%2B8lkjKWViGVF28I5CTM%3D&ehkOptimized=x%2BlpgZicilBRK3jOb%2B%2FGZCeBdhJBsHutgnzL%2BQmOuiU%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "8115 Franklin Ave, Fort McMurray, AB T9H 2H7, Canada",
+        "tournament_addrState": "AB",
+        "country_code": "CA",
+        "lat": 56.7121194,
+        "lng": -111.3517961
+    },
+    "1177452": {
+        "id": 1177452,
+        "name": "Melee Singles",
+        "slug": "tournament/zony-smash-xvii/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1721428200,
+        "phaseGroups": [
+            {
+                "id": 2545570,
+                "phase": {
+                    "id": 1712563,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Zony Smash XVII",
+        "tournament_id": 689893,
+        "city": "New Orleans",
+        "url": "https://smash.gg/tournament/zony-smash-xvii/event/melee-singles",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1721428200,
+        "tournament_endAt": 1721444400,
+        "tournament_registrationClosesAt": 1721439960,
+        "images": [
+            {
+                "id": "7156176",
+                "url": "https://images.start.gg/images/tournament/689893/image-7cd9ff84eda1acba422d8c55b77d7f30.png?ehk=oNN9DM%2FQl7W4LKfaspEjvclSqhyCdbL66NcNMI7J4KY%3D&ehkOptimized=lCRqFSgh5wdAjnWMDy3O3CkSExrxzsIvBKVkRubD42c%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7156242",
+                "url": "https://images.start.gg/images/tournament/689893/image-6f394d6e9c579d825f19c96f1cd8f4d1.jpg?ehk=oC8sjtfhIMFEY3uXEjRbuq%2F2BZ4FnpruYd5WeF433VU%3D&ehkOptimized=Ao4XuUgq7rVqcOMlPJ00TmDp38jhccZIMUnXm8bhJPs%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "3940 Thalia St, New Orleans, LA 70125, USA",
+        "tournament_addrState": "LA",
+        "country_code": "US",
+        "lat": 29.9521144,
+        "lng": -90.09757630000001
     }
 }
