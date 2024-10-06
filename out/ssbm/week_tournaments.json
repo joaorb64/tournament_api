@@ -777,12 +777,42 @@
         "slug": "tournament/braveheart-brawl-2024/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 7,
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
         "startAt": 1728723600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2407090,
+                "phase": {
+                    "id": 1609997,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 10142535
+                    },
+                    {
+                        "id": 10142536
+                    },
+                    {
+                        "id": 10142537
+                    },
+                    {
+                        "id": 10142538
+                    }
+                ]
+            },
+            {
+                "id": 2407091,
+                "phase": {
+                    "id": 1609998,
+                    "name": "Top 4"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Braveheart Brawl 2024",
         "tournament_id": 648314,
         "city": "Dundee",
@@ -1024,10 +1054,26 @@
                 ]
             },
             {
+                "id": 2407135,
+                "phase": {
+                    "id": 1610030,
+                    "name": "Amateur Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
                 "id": 2438217,
                 "phase": {
                     "id": 1633559,
                     "name": "Top 12"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 2438218,
+                "phase": {
+                    "id": 1633560,
+                    "name": "Intermediate Bracket"
                 },
                 "progressionsOut": null
             }
@@ -8726,58 +8772,6 @@
         "lat": null,
         "lng": null
     },
-    "1205876": {
-        "id": 1205876,
-        "name": "Melee Singles",
-        "slug": "tournament/see-me-in-grands-3/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727645400,
-        "phaseGroups": [
-            {
-                "id": 2595727,
-                "phase": {
-                    "id": 1749602,
-                    "name": "Round Robin"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11078521
-                    },
-                    {
-                        "id": 11078523
-                    }
-                ]
-            },
-            {
-                "id": 2631487,
-                "phase": {
-                    "id": 1749602,
-                    "name": "Round Robin"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11078522
-                    },
-                    {
-                        "id": 11078524
-                    }
-                ]
-            },
-            {
-                "id": 2631488,
-                "phase": {
-                    "id": 1776747,
-                    "name": "Top $ Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1205894": {
         "id": 1205894,
         "name": "Melee Doubles",
@@ -10128,50 +10122,15 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Smash At The Commune Monthly #2",
-        "tournament_id": 707766,
-        "city": "Austin",
-        "url": "https://smash.gg/tournament/smash-at-the-commune-monthly-2/event/melee-crews",
-        "streams": [
-            {
-                "streamName": "austinmelee"
-            },
-            {
-                "streamName": "AustinPM"
-            }
-        ],
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1728248400,
-        "tournament_endAt": 1728277140,
-        "tournament_registrationClosesAt": 1728253800,
-        "images": [
-            {
-                "id": "7352063",
-                "url": "https://images.start.gg/images/tournament/707766/image-e2068f2ddc78ba0f803bb2802073624f.jpg?ehk=SdfoH0kxGetMiYHt6hvHVBilPRTftNXz03xvHHzecY4%3D&ehkOptimized=9PjOWKhzx548i4fpzGbOyABibh8pJ574Jb9NhpmhE3k%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7352110",
-                "url": "https://images.start.gg/images/tournament/707766/image-9d92c768f4287f6578aa14b898834fe0.jpg?ehk=heaGmNlHkPb5LPj282aHihsxGEEhtTuTnW36JxQt6EA%3D&ehkOptimized=QKebWkjBfFro5vzei7PVJSZqr%2FJvGi8wWbQNWxIgoNw%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "101 N Loop Blvd E, Austin, TX 78751, USA",
-        "tournament_addrState": "TX",
-        "country_code": "US",
-        "lat": 30.3174587,
-        "lng": -97.7223424
+        ]
     },
     "1212734": {
         "id": 1212734,
         "name": "Melee Doubles",
         "slug": "tournament/smash-at-the-commune-monthly-2/event/melee-doubles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
@@ -10185,42 +10144,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Smash At The Commune Monthly #2",
-        "tournament_id": 707766,
-        "city": "Austin",
-        "url": "https://smash.gg/tournament/smash-at-the-commune-monthly-2/event/melee-doubles",
-        "streams": [
-            {
-                "streamName": "austinmelee"
-            },
-            {
-                "streamName": "AustinPM"
-            }
-        ],
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1728248400,
-        "tournament_endAt": 1728277140,
-        "tournament_registrationClosesAt": 1728253800,
-        "images": [
-            {
-                "id": "7352063",
-                "url": "https://images.start.gg/images/tournament/707766/image-e2068f2ddc78ba0f803bb2802073624f.jpg?ehk=SdfoH0kxGetMiYHt6hvHVBilPRTftNXz03xvHHzecY4%3D&ehkOptimized=9PjOWKhzx548i4fpzGbOyABibh8pJ574Jb9NhpmhE3k%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7352110",
-                "url": "https://images.start.gg/images/tournament/707766/image-9d92c768f4287f6578aa14b898834fe0.jpg?ehk=heaGmNlHkPb5LPj282aHihsxGEEhtTuTnW36JxQt6EA%3D&ehkOptimized=QKebWkjBfFro5vzei7PVJSZqr%2FJvGi8wWbQNWxIgoNw%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "101 N Loop Blvd E, Austin, TX 78751, USA",
-        "tournament_addrState": "TX",
-        "country_code": "US",
-        "lat": 30.3174587,
-        "lng": -97.7223424
+        ]
     },
     "1212730": {
         "id": 1212730,
@@ -10228,7 +10152,7 @@
         "slug": "tournament/smash-at-the-commune-monthly-2/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 28,
         "videogame": {
             "id": 1
         },
@@ -10239,39 +10163,6 @@
                 "phase": {
                     "id": 1758873,
                     "name": "Melee Singles"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 10986481
-                    },
-                    {
-                        "id": 10986482
-                    },
-                    {
-                        "id": 10986483
-                    },
-                    {
-                        "id": 10986484
-                    },
-                    {
-                        "id": 10986485
-                    },
-                    {
-                        "id": 10986486
-                    },
-                    {
-                        "id": 10986487
-                    },
-                    {
-                        "id": 10986488
-                    }
-                ]
-            },
-            {
-                "id": 2608297,
-                "phase": {
-                    "id": 1758874,
-                    "name": "Top Cut"
                 },
                 "progressionsOut": null
             }
@@ -11770,28 +11661,6 @@
         "country_code": "US",
         "lat": 42.9906127,
         "lng": -71.46526899999999
-    },
-    "1216434": {
-        "id": 1216434,
-        "name": "Low Tier Singles",
-        "slug": "tournament/srg-sss-episode-1-low-tiers/event/low-tier-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 15,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727647200,
-        "phaseGroups": [
-            {
-                "id": 2614818,
-                "phase": {
-                    "id": 1763751,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1216541": {
         "id": 1216541,
@@ -13740,186 +13609,6 @@
             }
         ]
     },
-    "1219384": {
-        "id": 1219384,
-        "name": "Melee Singles",
-        "slug": "tournament/deyve-s-smash-bash-the-monthly-8/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 55,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727647200,
-        "phaseGroups": [
-            {
-                "id": 2619605,
-                "phase": {
-                    "id": 1767436,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11027497
-                    },
-                    {
-                        "id": 11027499
-                    },
-                    {
-                        "id": 11027501
-                    },
-                    {
-                        "id": 11027503
-                    },
-                    {
-                        "id": 11027505
-                    },
-                    {
-                        "id": 11027507
-                    },
-                    {
-                        "id": 11027509
-                    },
-                    {
-                        "id": 11027511
-                    },
-                    {
-                        "id": 11027513
-                    },
-                    {
-                        "id": 11027515
-                    },
-                    {
-                        "id": 11027517
-                    },
-                    {
-                        "id": 11027519
-                    },
-                    {
-                        "id": 11027521
-                    },
-                    {
-                        "id": 11027523
-                    },
-                    {
-                        "id": 11027525
-                    },
-                    {
-                        "id": 11027527
-                    }
-                ]
-            },
-            {
-                "id": 2619606,
-                "phase": {
-                    "id": 1767436,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11027498
-                    },
-                    {
-                        "id": 11027500
-                    },
-                    {
-                        "id": 11027502
-                    },
-                    {
-                        "id": 11027504
-                    },
-                    {
-                        "id": 11027506
-                    },
-                    {
-                        "id": 11027508
-                    },
-                    {
-                        "id": 11027510
-                    },
-                    {
-                        "id": 11027512
-                    },
-                    {
-                        "id": 11027514
-                    },
-                    {
-                        "id": 11027516
-                    },
-                    {
-                        "id": 11027518
-                    },
-                    {
-                        "id": 11027520
-                    },
-                    {
-                        "id": 11027522
-                    },
-                    {
-                        "id": 11027524
-                    },
-                    {
-                        "id": 11027526
-                    },
-                    {
-                        "id": 11027528
-                    }
-                ]
-            },
-            {
-                "id": 2619607,
-                "phase": {
-                    "id": 1767437,
-                    "name": "Top 32"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1219386": {
-        "id": 1219386,
-        "name": "Melee Doubles",
-        "slug": "tournament/deyve-s-smash-bash-the-monthly-8/event/melee-doubles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 9,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727647200,
-        "phaseGroups": [
-            {
-                "id": 2619609,
-                "phase": {
-                    "id": 1767439,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1219385": {
-        "id": 1219385,
-        "name": "Open Ladder! (open to anyone after bracket)",
-        "slug": "tournament/deyve-s-smash-bash-the-monthly-8/event/open-ladder-open-to-anyone-after-bracket",
-        "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 30,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727647200,
-        "phaseGroups": [
-            {
-                "id": 2619608,
-                "phase": {
-                    "id": 1767438,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1219568": {
         "id": 1219568,
         "name": "Melee Doubles",
@@ -14932,7 +14621,7 @@
         "name": "Melee Singles",
         "slug": "tournament/smash-the-cave-remix-etsu-12/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -18617,76 +18306,6 @@
         "country_code": "US",
         "lat": 32.8403003,
         "lng": -79.82351539999999
-    },
-    "1224518": {
-        "id": 1224518,
-        "name": "Melee Singles",
-        "slug": "tournament/you-ve-got-melee-14/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727647200,
-        "phaseGroups": [
-            {
-                "id": 2628107,
-                "phase": {
-                    "id": 1774053,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11078555
-                    },
-                    {
-                        "id": 11078557
-                    },
-                    {
-                        "id": 11078559
-                    },
-                    {
-                        "id": 11078561
-                    },
-                    {
-                        "id": 11078563
-                    }
-                ]
-            },
-            {
-                "id": 2631498,
-                "phase": {
-                    "id": 1774053,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11078556
-                    },
-                    {
-                        "id": 11078558
-                    },
-                    {
-                        "id": 11078560
-                    },
-                    {
-                        "id": 11078562
-                    },
-                    {
-                        "id": 11078564
-                    }
-                ]
-            },
-            {
-                "id": 2631497,
-                "phase": {
-                    "id": 1776756,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1224588": {
         "id": 1224588,
@@ -29475,28 +29094,6 @@
             }
         ]
     },
-    "1223521": {
-        "id": 1223521,
-        "name": "Roycord Rumble Singles",
-        "slug": "tournament/roycord-rumble/event/roycord-rumble-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1727647200,
-        "phaseGroups": [
-            {
-                "id": 2626521,
-                "phase": {
-                    "id": 1772775,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1228108": {
         "id": 1228108,
         "name": "Melee Singles",
@@ -30972,8 +30569,8 @@
         "name": "Melee Singles",
         "slug": "tournament/melee-on-the-hi-wire-4/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 5,
+        "state": "ACTIVE",
+        "numEntrants": 14,
         "videogame": {
             "id": 1
         },
@@ -30987,35 +30584,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Melee On the Hi-Wire 4",
-        "tournament_id": 715748,
-        "city": "Durham",
-        "url": "https://smash.gg/tournament/melee-on-the-hi-wire-4/event/melee-singles",
-        "streams": null,
-        "timezone": "America/New_York",
-        "tournament_startAt": 1728248400,
-        "tournament_endAt": 1728273540,
-        "tournament_registrationClosesAt": 1728291600,
-        "images": [
-            {
-                "id": "7433513",
-                "url": "https://images.start.gg/images/tournament/715748/image-a5203d91cad1523e3b820eb9df90237f.png?ehk=aB0zgVbcCJuUISWppatIZnEunVxvuRfzum7cbZmS0PY%3D&ehkOptimized=oU5ERuGxW7hvZT%2B7xubRO6jKgtYt2wHhwq6Rnu%2FnCFY%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7433514",
-                "url": "https://images.start.gg/images/tournament/715748/image-71c92c931504220312059a8923270a68.jpg?ehk=YNfp4WyRc5k%2BeH6cLkGiqIJA6e1%2BCRC1v23f%2BCw4X%2Bw%3D&ehkOptimized=ox%2FSMcV2tklvRtGjshWISIH6ZqoW55iFupWEWEbC7yY%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "800 Taylor St 9 150, Durham, NC 27701, USA",
-        "tournament_addrState": "NC",
-        "country_code": "US",
-        "lat": 35.99116,
-        "lng": -78.889691
+        ]
     },
     "1228487": {
         "id": 1228487,
@@ -32383,7 +31952,7 @@
         "name": "Melee Singles FD starter!",
         "slug": "tournament/hamilton-high-grounds-68-5/event/melee-singles-fd-starter",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -44358,7 +43927,7 @@
         "name": "Divisi\u00f3n 1",
         "slug": "tournament/liga-slippi-dominicana-2024-semana-7/event/divisi-n-1",
         "isOnline": true,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 16,
         "videogame": {
             "id": 1
@@ -45536,7 +45105,7 @@
         "slug": "tournament/raccoon-rumble-14/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -45655,5 +45224,59 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1231925": {
+        "id": 1231925,
+        "name": "Melee Singles",
+        "slug": "tournament/throwdown-thursday-245/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1728599400,
+        "phaseGroups": [
+            {
+                "id": 2640152,
+                "phase": {
+                    "id": 1783616,
+                    "name": "Singles"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Throwdown Thursday #245",
+        "tournament_id": 717430,
+        "city": "Virginia Beach",
+        "url": "https://smash.gg/tournament/throwdown-thursday-245/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "GameOnGC"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1728599400,
+        "tournament_endAt": 1728617400,
+        "tournament_registrationClosesAt": 1728648000,
+        "images": [
+            {
+                "id": "7451237",
+                "url": "https://images.start.gg/images/tournament/717430/image-24217ae3cabb3b87441378539453f7bf.png?ehk=S2Rl0jYtoh05kEccbC0%2Fy0ltSaKLF%2BQa38IGoScu%2FI8%3D&ehkOptimized=syF9C7KB5n3YMVZWbUa1PaLJvsKKVhLOLT4MPN6dlOE%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7451238",
+                "url": "https://images.start.gg/images/tournament/717430/image-5f41f50f6e3e4a4e0b687df6fdf25bc2.png?ehk=BMI0mg8YiNrlolVkT8owyTgaSV30VuRk0OQdM91dbfs%3D&ehkOptimized=VEzshDCPPiu8OZc7BF62D6CEdfY9XzbC7Hz6%2FvX1u0Q%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "GameOn Gaming Center",
+        "tournament_venueAddress": "5386 Kemps River Dr #105, Virginia Beach, VA 23464, USA",
+        "tournament_addrState": "VA",
+        "country_code": "US",
+        "lat": 36.8014747,
+        "lng": -76.17849009999998
     }
 }
