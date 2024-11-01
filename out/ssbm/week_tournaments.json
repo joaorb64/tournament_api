@@ -1161,7 +1161,14 @@
         "tournament_id": 613673,
         "city": "Hannover",
         "url": "https://smash.gg/tournament/sapf/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "phoenixsmash"
+            },
+            {
+                "streamName": "german_melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1730469600,
         "tournament_endAt": 1730660400,
@@ -1391,7 +1398,14 @@
         "tournament_id": 613673,
         "city": "Hannover",
         "url": "https://smash.gg/tournament/sapf/event/melee-doubles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "phoenixsmash"
+            },
+            {
+                "streamName": "german_melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1730469600,
         "tournament_endAt": 1730660400,
@@ -1421,8 +1435,8 @@
         "name": "Melee Crews (3v3)",
         "slug": "tournament/sapf/event/melee-crews-3v3",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 50,
+        "state": "ACTIVE",
+        "numEntrants": 51,
         "videogame": {
             "id": 1
         },
@@ -1436,35 +1450,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "SAPF",
-        "tournament_id": 613673,
-        "city": "Hannover",
-        "url": "https://smash.gg/tournament/sapf/event/melee-crews-3v3",
-        "streams": null,
-        "timezone": "Europe/Berlin",
-        "tournament_startAt": 1730469600,
-        "tournament_endAt": 1730660400,
-        "tournament_registrationClosesAt": 1730415540,
-        "images": [
-            {
-                "id": "6548950",
-                "url": "https://images.start.gg/images/tournament/613673/image-b0203b7bc2e1b9a416a56631d85219fa.png?ehk=ErjZXLvo07MfNwvMzcJcR6BfPo4k%2Bo9WyQGQIREXrLU%3D&ehkOptimized=SR%2F8kNCzcLdOqvnOq2pcXG0gEO%2FMkrwqLunDn%2Bau1KQ%3D",
-                "type": "banner"
-            },
-            {
-                "id": "6595361",
-                "url": "https://images.start.gg/images/tournament/613673/image-7596cecef6814d31e63bba923d48a94c.png?ehk=%2BWzJMvcAEn%2Br4CUygO2sY6Ane%2BKJ%2BbkmFySkyHMAWOI%3D&ehkOptimized=F%2BtBrUQA0sG8hYm8mkaWTQjuRmZm482iYBW5CkmYEK4%3D",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Anne-Stache-Allee 7, 30459 Hannover, Deutschland",
-        "tournament_addrState": "NDS",
-        "country_code": "DE",
-        "lat": 52.34204020000001,
-        "lng": 9.7243286
+        ]
     },
     "1103262": {
         "id": 1103262,
@@ -18562,7 +18548,7 @@
         "slug": "tournament/frag-fest-fall-2024/event/frag-fest-fall-2024-super-smash-bros-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 33,
+        "numEntrants": 46,
         "videogame": {
             "id": 1
         },
@@ -18573,6 +18559,48 @@
                 "phase": {
                     "id": 1791069,
                     "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11227583
+                    },
+                    {
+                        "id": 11227585
+                    },
+                    {
+                        "id": 11227587
+                    },
+                    {
+                        "id": 11227589
+                    }
+                ]
+            },
+            {
+                "id": 2671665,
+                "phase": {
+                    "id": 1791069,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11227584
+                    },
+                    {
+                        "id": 11227586
+                    },
+                    {
+                        "id": 11227588
+                    },
+                    {
+                        "id": 11227590
+                    }
+                ]
+            },
+            {
+                "id": 2671667,
+                "phase": {
+                    "id": 1807480,
+                    "name": "Top 8"
                 },
                 "progressionsOut": null
             }
@@ -18611,7 +18639,7 @@
         "slug": "tournament/frag-fest-fall-2024/event/frag-fest-fall-2024-super-smash-bros-melee-4v4-university",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -21613,28 +21641,6 @@
             }
         ]
     },
-    "1241094": {
-        "id": 1241094,
-        "name": "Melee Singles",
-        "slug": "tournament/the-roastery-den-of-dragons-prelocal-no-10/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 20,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1729873800,
-        "phaseGroups": [
-            {
-                "id": 2656471,
-                "phase": {
-                    "id": 1795217,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1241295": {
         "id": 1241295,
         "name": "Melee Singles",
@@ -23120,61 +23126,6 @@
         "country_code": "AU",
         "lat": -31.9856021,
         "lng": 115.8667889
-    },
-    "1242387": {
-        "id": 1242387,
-        "name": "Melee Singles",
-        "slug": "tournament/giz-en-melee-01x4-the-gallery/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 30,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1729875600,
-        "phaseGroups": [
-            {
-                "id": 2658477,
-                "phase": {
-                    "id": 1796902,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 11183449
-                    },
-                    {
-                        "id": 11183450
-                    },
-                    {
-                        "id": 11183451
-                    },
-                    {
-                        "id": 11183452
-                    },
-                    {
-                        "id": 11183453
-                    },
-                    {
-                        "id": 11183454
-                    },
-                    {
-                        "id": 11183455
-                    },
-                    {
-                        "id": 11183456
-                    }
-                ]
-            },
-            {
-                "id": 2658478,
-                "phase": {
-                    "id": 1796903,
-                    "name": "Top 8"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1238152": {
         "id": 1238152,
@@ -31218,7 +31169,7 @@
         "slug": "tournament/kraken-fgc-10/event/super-smash-bros-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -31232,35 +31183,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Kraken FGC 10",
-        "tournament_id": 724604,
-        "city": "Grimstad",
-        "url": "https://smash.gg/tournament/kraken-fgc-10/event/super-smash-bros-melee-singles",
-        "streams": null,
-        "timezone": "Europe/Oslo",
-        "tournament_startAt": 1730476800,
-        "tournament_endAt": 1730501940,
-        "tournament_registrationClosesAt": 1730505600,
-        "images": [
-            {
-                "id": "7518568",
-                "url": "https://images.start.gg/images/tournament/724604/image-879bc44badf624b1ea5fcb3392d03f0c.png?ehk=85t6oot%2FY8UwniDjp1IwaMc8D%2B7ISTs%2FBOC7Hs6oCA4%3D&ehkOptimized=bRUUVJl%2BaXWKkYOAe39HPBocmDkA%2ByqpDzTRgNtlgRI%3D",
-                "type": "profile"
-            },
-            {
-                "id": "7518569",
-                "url": "https://images.start.gg/images/tournament/724604/image-1db0669c5d38db7695aef9490ff6b3dd.png?ehk=1%2BU4b4xvuxl1zeWfnugAvy9U4zzfPSMAc21hQx5wQ%2BQ%3D&ehkOptimized=4ngNfnMktSSNImkZ7DmlX4gtFOZ5HF1CD6d8M8defkc%3D",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Jon Lilletuns vei 9, 4879 Grimstad, Norway",
-        "tournament_addrState": "Agder",
-        "country_code": "NO",
-        "lat": 58.33416669999999,
-        "lng": 8.5771455
+        ]
     },
     "1246404": {
         "id": 1246404,
@@ -38099,7 +38022,7 @@
         "slug": "tournament/fight-night-fridays-174/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -47844,7 +47767,7 @@
         "slug": "tournament/the-solution/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -47889,7 +47812,7 @@
         "slug": "tournament/battle-for-the-beehive-97/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -47989,5 +47912,369 @@
         "country_code": "US",
         "lat": 39.7324311,
         "lng": -90.24700209999999
+    },
+    "1250810": {
+        "id": 1250810,
+        "name": "Melee Singles",
+        "slug": "tournament/spin-to-win-44/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1730930400,
+        "phaseGroups": [
+            {
+                "id": 2671695,
+                "phase": {
+                    "id": 1807503,
+                    "name": "Pools (BO3)"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11227657
+                    },
+                    {
+                        "id": 11227658
+                    },
+                    {
+                        "id": 11227659
+                    },
+                    {
+                        "id": 11227660
+                    },
+                    {
+                        "id": 11227661
+                    },
+                    {
+                        "id": 11227662
+                    },
+                    {
+                        "id": 11227663
+                    },
+                    {
+                        "id": 11227664
+                    }
+                ]
+            },
+            {
+                "id": 2671696,
+                "phase": {
+                    "id": 1807504,
+                    "name": "Top 8 (BO5)"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Spin To Win! 44",
+        "tournament_id": 726768,
+        "city": "Halifax",
+        "url": "https://smash.gg/tournament/spin-to-win-44/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "petracide"
+            }
+        ],
+        "timezone": "America/Halifax",
+        "tournament_startAt": 1730930400,
+        "tournament_endAt": 1730946600,
+        "tournament_registrationClosesAt": 1730933700,
+        "images": [
+            {
+                "id": "7538472",
+                "url": "https://images.start.gg/images/tournament/726768/image-e0c278361f21cd31c85c65c756921e65.png?ehk=IyR03w1Ys9pWHVXs%2FzlmJFqRJOMxgMuUr5vWML8SsAM%3D&ehkOptimized=9yhVbaZkNhxgZ14IKRvIQr5KWWJ9%2F2qqiW1WqJQOFDg%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7538473",
+                "url": "https://images.start.gg/images/tournament/726768/image-e5235154b5e5ad56c21bddc6c65f7ea8.png?ehk=klminRLOqA%2FLwhbNIP6BGSeD77ksEWPHrURMxXZRi78%3D&ehkOptimized=6nt3brUt6YelJbfPS6Tt7UaZ10XjGrDDJiLFCsvw2AA%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2605 Agricola St, Halifax, NS B3K 4C7, Canada",
+        "tournament_addrState": "NS",
+        "country_code": "CA",
+        "lat": 44.65567129999999,
+        "lng": -63.59379399999999
+    },
+    "1250828": {
+        "id": 1250828,
+        "name": "Melee Singles @ 6:30 PM",
+        "slug": "tournament/em-s-smash-mix-n-mash-15-1/event/melee-singles-6-30-pm",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1730757600,
+        "phaseGroups": [
+            {
+                "id": 2671733,
+                "phase": {
+                    "id": 1807527,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "EM's Smash Mix N' Mash #15",
+        "tournament_id": 726777,
+        "city": "Charlottetown",
+        "url": "https://smash.gg/tournament/em-s-smash-mix-n-mash-15-1/event/melee-singles-6-30-pm",
+        "streams": null,
+        "timezone": "America/Halifax",
+        "tournament_startAt": 1730757600,
+        "tournament_endAt": 1730772000,
+        "tournament_registrationClosesAt": 1730759400,
+        "images": [
+            {
+                "id": "7538545",
+                "url": "https://images.start.gg/images/tournament/726777/image-f52b2a3d47ff89ada891992153cfc8c8.png?ehk=eDx1kdobocPyq6fwxqWik%2B6gnyWgBwd8yAE5R6yRPUY%3D&ehkOptimized=rm38epeH8QWXuURoqfnHqMvPTPRAHxkRuSUM0G1sXGU%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "95 Capital Dr, Charlottetown, PE C1E 1R4, Canada",
+        "tournament_addrState": "PE",
+        "country_code": "CA",
+        "lat": 46.2657017,
+        "lng": -63.155476
+    },
+    "1250811": {
+        "id": 1250811,
+        "name": "Melee Singles",
+        "slug": "tournament/southside-sundays-107/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1730655000,
+        "phaseGroups": [
+            {
+                "id": 2671697,
+                "phase": {
+                    "id": 1807505,
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11227665
+                    },
+                    {
+                        "id": 11227667
+                    },
+                    {
+                        "id": 11227669
+                    },
+                    {
+                        "id": 11227671
+                    },
+                    {
+                        "id": 11227673
+                    }
+                ]
+            },
+            {
+                "id": 2671698,
+                "phase": {
+                    "id": 1807505,
+                    "name": "Round Robin Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11227666
+                    },
+                    {
+                        "id": 11227668
+                    },
+                    {
+                        "id": 11227670
+                    },
+                    {
+                        "id": 11227672
+                    },
+                    {
+                        "id": 11227674
+                    }
+                ]
+            },
+            {
+                "id": 2671699,
+                "phase": {
+                    "id": 1807506,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Southside Sundays #107",
+        "tournament_id": 726769,
+        "city": "Indianapolis",
+        "url": "https://smash.gg/tournament/southside-sundays-107/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "etp87"
+            }
+        ],
+        "timezone": "America/Indiana/Indianapolis",
+        "tournament_startAt": 1730655000,
+        "tournament_endAt": 1730678400,
+        "tournament_registrationClosesAt": 1730659500,
+        "images": [
+            {
+                "id": "7538482",
+                "url": "https://images.start.gg/images/tournament/726769/image-5bad1ba8658cc83277307b16ff981f2b.png?ehk=Fc0zayOM9LWzJ9fA8pH16m3Yecx6Okxjj53VNiBMq7g%3D&ehkOptimized=Ts8EYzQNBvQb6mKuc9lJSU3Aj01%2FfA7J%2FZ42Y4zbrG0%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7538483",
+                "url": "https://images.start.gg/images/tournament/726769/image-4731a88adf50929f70ed667efcd62084.png?ehk=R6yWU0Ccnio%2FZVB71D8NWq0xX23XApHpc71TkCUVpI8%3D&ehkOptimized=VcAjuBN4%2Bx5Ts9kPVVcrC9m%2Bkb9JbPd0GnMsRqcNAjM%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "7307 US-31 a, Indianapolis, IN 46227, USA",
+        "tournament_addrState": "IN",
+        "country_code": "US",
+        "lat": 39.6597757,
+        "lng": -86.1403675
+    },
+    "1250812": {
+        "id": 1250812,
+        "name": "Melee Amateurs",
+        "slug": "tournament/southside-sundays-107/event/melee-amateurs",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1730655000,
+        "phaseGroups": [
+            {
+                "id": 2671700,
+                "phase": {
+                    "id": 1807507,
+                    "name": "ammies"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Southside Sundays #107",
+        "tournament_id": 726769,
+        "city": "Indianapolis",
+        "url": "https://smash.gg/tournament/southside-sundays-107/event/melee-amateurs",
+        "streams": [
+            {
+                "streamName": "etp87"
+            }
+        ],
+        "timezone": "America/Indiana/Indianapolis",
+        "tournament_startAt": 1730655000,
+        "tournament_endAt": 1730678400,
+        "tournament_registrationClosesAt": 1730659500,
+        "images": [
+            {
+                "id": "7538482",
+                "url": "https://images.start.gg/images/tournament/726769/image-5bad1ba8658cc83277307b16ff981f2b.png?ehk=Fc0zayOM9LWzJ9fA8pH16m3Yecx6Okxjj53VNiBMq7g%3D&ehkOptimized=Ts8EYzQNBvQb6mKuc9lJSU3Aj01%2FfA7J%2FZ42Y4zbrG0%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7538483",
+                "url": "https://images.start.gg/images/tournament/726769/image-4731a88adf50929f70ed667efcd62084.png?ehk=R6yWU0Ccnio%2FZVB71D8NWq0xX23XApHpc71TkCUVpI8%3D&ehkOptimized=VcAjuBN4%2Bx5Ts9kPVVcrC9m%2Bkb9JbPd0GnMsRqcNAjM%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "7307 US-31 a, Indianapolis, IN 46227, USA",
+        "tournament_addrState": "IN",
+        "country_code": "US",
+        "lat": 39.6597757,
+        "lng": -86.1403675
+    },
+    "1250813": {
+        "id": 1250813,
+        "name": "Melee Doubles",
+        "slug": "tournament/southside-sundays-107/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1730655000,
+        "phaseGroups": [
+            {
+                "id": 2671701,
+                "phase": {
+                    "id": 1807508,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Southside Sundays #107",
+        "tournament_id": 726769,
+        "city": "Indianapolis",
+        "url": "https://smash.gg/tournament/southside-sundays-107/event/melee-doubles",
+        "streams": [
+            {
+                "streamName": "etp87"
+            }
+        ],
+        "timezone": "America/Indiana/Indianapolis",
+        "tournament_startAt": 1730655000,
+        "tournament_endAt": 1730678400,
+        "tournament_registrationClosesAt": 1730659500,
+        "images": [
+            {
+                "id": "7538482",
+                "url": "https://images.start.gg/images/tournament/726769/image-5bad1ba8658cc83277307b16ff981f2b.png?ehk=Fc0zayOM9LWzJ9fA8pH16m3Yecx6Okxjj53VNiBMq7g%3D&ehkOptimized=Ts8EYzQNBvQb6mKuc9lJSU3Aj01%2FfA7J%2FZ42Y4zbrG0%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7538483",
+                "url": "https://images.start.gg/images/tournament/726769/image-4731a88adf50929f70ed667efcd62084.png?ehk=R6yWU0Ccnio%2FZVB71D8NWq0xX23XApHpc71TkCUVpI8%3D&ehkOptimized=VcAjuBN4%2Bx5Ts9kPVVcrC9m%2Bkb9JbPd0GnMsRqcNAjM%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "7307 US-31 a, Indianapolis, IN 46227, USA",
+        "tournament_addrState": "IN",
+        "country_code": "US",
+        "lat": 39.6597757,
+        "lng": -86.1403675
+    },
+    "1250823": {
+        "id": 1250823,
+        "name": "Melee Ladder",
+        "slug": "tournament/sapf/event/melee-ladder",
+        "isOnline": false,
+        "state": "ACTIVE",
+        "numEntrants": 5,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1730469600,
+        "phaseGroups": [
+            {
+                "id": 2671724,
+                "phase": {
+                    "id": 1807521,
+                    "name": "Ladder"
+                },
+                "progressionsOut": null
+            }
+        ]
     }
 }
