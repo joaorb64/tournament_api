@@ -36298,28 +36298,6 @@
         "lat": 41.81901999999999,
         "lng": -71.894179
     },
-    "1234834": {
-        "id": 1234834,
-        "name": "Ultimate Singles",
-        "slug": "tournament/eternal-2/event/ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 22,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1730374200,
-        "phaseGroups": [
-            {
-                "id": 2644871,
-                "phase": {
-                    "id": 1787175,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1234080": {
         "id": 1234080,
         "name": "singles",
@@ -45602,12 +45580,75 @@
         "slug": "tournament/w-zone-smash/event/1on1-tournament",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 9,
+        "numEntrants": 64,
         "videogame": {
             "id": 1386
         },
         "startAt": 1731117600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2645946,
+                "phase": {
+                    "id": 1788026,
+                    "name": "Round1"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11254660
+                    },
+                    {
+                        "id": 11254662
+                    },
+                    {
+                        "id": 11254664
+                    },
+                    {
+                        "id": 11254666
+                    },
+                    {
+                        "id": 11254668
+                    },
+                    {
+                        "id": 11254670
+                    }
+                ]
+            },
+            {
+                "id": 2679654,
+                "phase": {
+                    "id": 1788026,
+                    "name": "Round1"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11254661
+                    },
+                    {
+                        "id": 11254663
+                    },
+                    {
+                        "id": 11254665
+                    },
+                    {
+                        "id": 11254667
+                    },
+                    {
+                        "id": 11254669
+                    },
+                    {
+                        "id": 11254671
+                    }
+                ]
+            },
+            {
+                "id": 2646055,
+                "phase": {
+                    "id": 1788123,
+                    "name": "TOP 12"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "W-Zone smash",
         "tournament_id": 716009,
         "city": "\u53f0\u6771\u533a",
@@ -177224,5 +177265,44 @@
             "PT",
             "NL"
         ]
+    },
+    "1255085": {
+        "id": 1255085,
+        "name": "Weekly 4B #3",
+        "slug": "tournament/weekly-4b-3/event/weekly-4b-3",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1731130200,
+        "phaseGroups": [
+            {
+                "id": 2679792,
+                "phase": {
+                    "id": 1812925,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Weekly 4B #3",
+        "tournament_id": 728307,
+        "city": null,
+        "url": "https://smash.gg/tournament/weekly-4b-3/event/weekly-4b-3",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1731130200,
+        "tournament_endAt": 1731177000,
+        "tournament_registrationClosesAt": 1731172500,
+        "images": [],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
