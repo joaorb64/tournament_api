@@ -19050,7 +19050,7 @@
         "name": "Melee Ladder",
         "slug": "tournament/frederick-melee-fest-3/event/melee-ladder",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 20,
         "videogame": {
             "id": 1
@@ -24198,41 +24198,55 @@
         "name": "Melee Singles Bracket",
         "slug": "tournament/funday-sunday-ep-5/event/melee-singles-bracket",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 4,
+        "state": "ACTIVE",
+        "numEntrants": 12,
         "videogame": {
             "id": 1
         },
         "startAt": 1731855900,
-        "phaseGroups": [],
-        "tournament": "Funday Sunday Ep.5",
-        "tournament_id": 729868,
-        "city": null,
-        "url": "https://smash.gg/tournament/funday-sunday-ep-5/event/melee-singles-bracket",
-        "streams": null,
-        "timezone": null,
-        "tournament_startAt": 1731855900,
-        "tournament_endAt": 1731864600,
-        "tournament_registrationClosesAt": 1731853800,
-        "images": [
+        "phaseGroups": [
             {
-                "id": "7568155",
-                "url": "https://images.start.gg/images/tournament/729868/image-874c15f0e49d15086be8f02aa9fb9d8f.jpg?ehk=iIp6v8Q00DAiD8G%2FMK7IBE6Zfc5rTGRCbtnNun9VJzA%3D&ehkOptimized=vB%2FIq4DSkYI0HtlXcNN%2FJEtQMswA5L6ojS4F0jfE3BQ%3D",
-                "type": "profile"
+                "id": 2683323,
+                "phase": {
+                    "id": 1815581,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11267918
+                    },
+                    {
+                        "id": 11267919
+                    },
+                    {
+                        "id": 11267920
+                    },
+                    {
+                        "id": 11267921
+                    },
+                    {
+                        "id": 11267922
+                    },
+                    {
+                        "id": 11267923
+                    },
+                    {
+                        "id": 11267924
+                    },
+                    {
+                        "id": 11267925
+                    }
+                ]
             },
             {
-                "id": "7568156",
-                "url": "https://images.start.gg/images/tournament/729868/image-56175ebd54d73b131d7ad8ee6b317a21.jpg?ehk=fofsfNGSucGz9cSAg3fPfQPrecojYmwCLh9eeyCUMYc%3D&ehkOptimized=%2BSGwMYMzIqEaX1WPYb9OAX0PnIwSh234THLFoRAPOMU%3D",
-                "type": "banner"
+                "id": 2683333,
+                "phase": {
+                    "id": 1815587,
+                    "name": "Top8"
+                },
+                "progressionsOut": null
             }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "1255239": {
         "id": 1255239,
@@ -41262,5 +41276,50 @@
         "country_code": "JP",
         "lat": 34.6810133,
         "lng": 135.4997294
+    },
+    "1261754": {
+        "id": 1261754,
+        "name": "Melee Singles",
+        "slug": "tournament/augsburg-smash-stueble-kuseu-28/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1732293060,
+        "phaseGroups": [
+            {
+                "id": 2690876,
+                "phase": {
+                    "id": 1821587,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Augsburg Smash Stueble Kuseu #28",
+        "tournament_id": 732202,
+        "city": "Augsburg",
+        "url": "https://smash.gg/tournament/augsburg-smash-stueble-kuseu-28/event/melee-singles",
+        "streams": null,
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1732293060,
+        "tournament_endAt": 1732307460,
+        "tournament_registrationClosesAt": 1732295400,
+        "images": [
+            {
+                "id": "7590217",
+                "url": "https://images.start.gg/images/tournament/732202/image-da2e82ed70f70032bdfe476309c258e2.png?ehk=DKU65COPDx5nHLbteAVn%2Fi3Ta7fflDXyjQM8789eP54%3D&ehkOptimized=QQKw%2FqkVbuVRCzep5bqCTJPBwjxhD45G5WMVK5vJ85I%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Jakoberstra\u00dfe 29, 86152 Augsburg, Deutschland",
+        "tournament_addrState": "BY",
+        "country_code": "DE",
+        "lat": 48.36997,
+        "lng": 10.90357
     }
 }
