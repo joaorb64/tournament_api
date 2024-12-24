@@ -65260,8 +65260,8 @@
     },
     "1278134": {
         "id": 1278134,
-        "name": "DK10 Finals",
-        "slug": "tournament/desert-knights-10/event/dk10-finals",
+        "name": "DK10 Singles",
+        "slug": "tournament/desert-knights-10/event/dk10-singles",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": null,
@@ -65273,7 +65273,7 @@
         "tournament": "Desert Knights 10",
         "tournament_id": 740401,
         "city": "Riyadh",
-        "url": "https://smash.gg/tournament/desert-knights-10/event/dk10-finals",
+        "url": "https://smash.gg/tournament/desert-knights-10/event/dk10-singles",
         "streams": [
             {
                 "streamName": "esporttent"
@@ -98446,12 +98446,21 @@
         "slug": "tournament/smash-bros-at-jyppub/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": null,
+        "numEntrants": 0,
         "videogame": {
             "id": 1386
         },
         "startAt": 1736053200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2723481,
+                "phase": {
+                    "id": 1847155,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Smash Bros. at JYPPUB",
         "tournament_id": 741877,
         "city": "\ubbf8\ucd94\ud640\uad6c",
@@ -99017,7 +99026,7 @@
         "slug": "tournament/castle-smashers-97/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -99077,5 +99086,59 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1282867": {
+        "id": 1282867,
+        "name": "Smash Ultimate",
+        "slug": "tournament/monday-night-mix-the-new-yorker-hotel-16/event/smash-ultimate",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1735599600,
+        "phaseGroups": [
+            {
+                "id": 2725588,
+                "phase": {
+                    "id": 1848817,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Monday Night Mix @ The New Yorker Hotel",
+        "tournament_id": 742802,
+        "city": "New York",
+        "url": "https://smash.gg/tournament/monday-night-mix-the-new-yorker-hotel-16/event/smash-ultimate",
+        "streams": [
+            {
+                "streamName": "paglive"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1735599600,
+        "tournament_endAt": 1735620600,
+        "tournament_registrationClosesAt": 1735605900,
+        "images": [
+            {
+                "id": "7698618",
+                "url": "https://images.start.gg/images/tournament/742802/image-50ac64d990935427df871d53220fd361.png?ehk=GhQ0Kzb3CS25lZ0D%2BsHLvNwI43w2jBMDdtdczmZH3%2FY%3D&ehkOptimized=q211YnOSTAOZ9NigNMxyMR0zHmwPrtOuF81BqjLxtGc%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7698619",
+                "url": "https://images.start.gg/images/tournament/742802/image-e097de5134ef75c21097fbf189b0ba45.png?ehk=hkHjtM7vl3ikhoe1GmeujCwU7Ov78gDmC%2Fn2eSAzIsM%3D&ehkOptimized=ZOFIoamLSWqc4q%2FBIN0ceBoeHo9YFgU1h7RBcJaHZGo%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "481 8th Ave, New York, NY 10001, USA",
+        "tournament_addrState": "NY",
+        "country_code": "US",
+        "lat": 40.7526594,
+        "lng": -73.9935627
     }
 }
