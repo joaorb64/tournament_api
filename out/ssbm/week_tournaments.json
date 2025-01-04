@@ -8228,7 +8228,7 @@
         "name": "Mang0 LAN",
         "slug": "tournament/launders-lan-2/event/mang0-lan",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 102,
         "videogame": {
             "id": 1
@@ -12521,17 +12521,30 @@
         "slug": "tournament/eggscellent/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 16,
         "videogame": {
             "id": 1
         },
         "startAt": 1736017200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2719760,
+                "phase": {
+                    "id": 1844142,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "EGGSCELLENT",
         "tournament_id": 740957,
         "city": "Lafayette",
         "url": "https://smash.gg/tournament/eggscellent/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "egggggyyyyy"
+            }
+        ],
         "timezone": "America/Chicago",
         "tournament_startAt": 1736017200,
         "tournament_endAt": 1736031600,
@@ -27041,7 +27054,7 @@
         "name": "Melee Singles",
         "slug": "tournament/turn-me-up-tucson-56/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 12,
         "videogame": {
             "id": 1
@@ -30588,5 +30601,55 @@
         "country_code": "CA",
         "lat": 43.6554205,
         "lng": -79.417498
+    },
+    "1287559": {
+        "id": 1287559,
+        "name": "Melee Singles",
+        "slug": "tournament/cinco/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1737198000,
+        "phaseGroups": [
+            {
+                "id": 2734201,
+                "phase": {
+                    "id": 1854899,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Cinco",
+        "tournament_id": 745003,
+        "city": "Madrid",
+        "url": "https://smash.gg/tournament/cinco/event/melee-singles",
+        "streams": null,
+        "timezone": "Europe/Madrid",
+        "tournament_startAt": 1737198000,
+        "tournament_endAt": 1737226800,
+        "tournament_registrationClosesAt": 1737198000,
+        "images": [
+            {
+                "id": "7726650",
+                "url": "https://images.start.gg/images/tournament/745003/image-fc953b4359dd531c80f823555affff33.jpg?ehk=fMYv7zmRty7%2FxGdIoCuzvS99hLPfJrzid9yHSaDBLrI%3D&ehkOptimized=4DQYydO%2Bi8I%2BiifxRAcmF04ztWwrbHUKkVi3TqEO0mc%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7726671",
+                "url": "https://images.start.gg/images/tournament/745003/image-00ca87e13252918321343c07d6e496ed.jpg?ehk=0T1j8YJRlVjZA83SAwqwIJakhr4PoY2lNkUmHGOvTcY%3D&ehkOptimized=pTk62NhCOtII%2ByHMacDF0EUhzsIfhCXAZKY8p1ZzgZ8%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Calle de Raimundo Fern\u00e1ndez Villaverde, 2, 28003 Madrid, Espa\u00f1a",
+        "tournament_addrState": "Comunidad de Madrid",
+        "country_code": "ES",
+        "lat": 40.4466328,
+        "lng": -3.703480500000069
     }
 }
