@@ -3398,7 +3398,7 @@
         "slug": "tournament/afterburner-2025/event/ultimate-doubles-100-pot-bonus",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 44,
+        "numEntrants": 45,
         "videogame": {
             "id": 1386
         },
@@ -8307,7 +8307,7 @@
         "slug": "tournament/genesis-x2/event/ultimate-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 36,
+        "numEntrants": 61,
         "videogame": {
             "id": 1386
         },
@@ -8317,7 +8317,11 @@
         "tournament_id": 716237,
         "city": "San Jose",
         "url": "https://smash.gg/tournament/genesis-x2/event/ultimate-doubles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "genesisgg"
+            }
+        ],
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1739556000,
         "tournament_endAt": 1739772000,
@@ -8348,7 +8352,7 @@
         "slug": "tournament/genesis-x2/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 463,
+        "numEntrants": 628,
         "videogame": {
             "id": 1386
         },
@@ -8358,7 +8362,11 @@
         "tournament_id": 716237,
         "city": "San Jose",
         "url": "https://smash.gg/tournament/genesis-x2/event/ultimate-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "genesisgg"
+            }
+        ],
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1739556000,
         "tournament_endAt": 1739772000,
@@ -47667,26 +47675,104 @@
         "name": "SPECIAL 1on1/ Ultimate Singles",
         "slug": "tournament/weekly-smash-party-169/event/special-1on1-ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 41,
+        "state": "ACTIVE",
+        "numEntrants": 44,
         "videogame": {
             "id": 1386
         },
         "startAt": 1736326800,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 2725960,
+                "phase": {
+                    "id": 1849134,
+                    "name": "Main"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1283127": {
         "id": 1283127,
         "name": "\u30ab\u30b8\u30e5\u30a2\u30eb\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8 / Casual Tournament",
         "slug": "tournament/weekly-smash-party-169/event/casual-tournament",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 18,
+        "state": "ACTIVE",
+        "numEntrants": 16,
         "videogame": {
             "id": 1386
         },
         "startAt": 1736326800,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 2725963,
+                "phase": {
+                    "id": 1849136,
+                    "name": "Casual"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11490046
+                    },
+                    {
+                        "id": 11490050
+                    }
+                ]
+            },
+            {
+                "id": 2738541,
+                "phase": {
+                    "id": 1849136,
+                    "name": "Casual"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11490047
+                    },
+                    {
+                        "id": 11490051
+                    }
+                ]
+            },
+            {
+                "id": 2738542,
+                "phase": {
+                    "id": 1849136,
+                    "name": "Casual"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11490048
+                    },
+                    {
+                        "id": 11490052
+                    }
+                ]
+            },
+            {
+                "id": 2738543,
+                "phase": {
+                    "id": 1849136,
+                    "name": "Casual"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11490049
+                    },
+                    {
+                        "id": 11490053
+                    }
+                ]
+            },
+            {
+                "id": 2738539,
+                "phase": {
+                    "id": 1858158,
+                    "name": "Casual TOP8"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1283131": {
         "id": 1283131,
@@ -66575,28 +66661,6 @@
                 "id": 2731266,
                 "phase": {
                     "id": 1852674,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1285854": {
-        "id": 1285854,
-        "name": "Ultimate Singles",
-        "slug": "tournament/ho-ho-ho-happy-new-year/event/ultimate-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1735723800,
-        "phaseGroups": [
-            {
-                "id": 2731319,
-                "phase": {
-                    "id": 1852724,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -97819,11 +97883,11 @@
     },
     "1287656": {
         "id": 1287656,
-        "name": "Become the King",
-        "slug": "tournament/checkmate-1-1/event/become-the-king",
+        "name": "Checkmate Bracket",
+        "slug": "tournament/checkmate-1-1/event/checkmate-bracket",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -97832,7 +97896,7 @@
         "tournament": "Checkmate #1",
         "tournament_id": 745096,
         "city": "Colmar",
-        "url": "https://smash.gg/tournament/checkmate-1-1/event/become-the-king",
+        "url": "https://smash.gg/tournament/checkmate-1-1/event/checkmate-bracket",
         "streams": [
             {
                 "streamName": "Crabyi"
@@ -97841,7 +97905,7 @@
         "timezone": "Europe/Paris",
         "tournament_startAt": 1736528400,
         "tournament_endAt": 1736550000,
-        "tournament_registrationClosesAt": 1736506800,
+        "tournament_registrationClosesAt": 1736524800,
         "images": [
             {
                 "id": "7728878",
@@ -105310,7 +105374,7 @@
         "slug": "tournament/smash-epoch-29/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -105364,14 +105428,14 @@
         "tournament_registrationClosesAt": 1737833400,
         "images": [
             {
-                "id": "7734405",
-                "url": "https://images.start.gg/images/tournament/745637/image-44ca8321f363330ff4b5c96c94dfd553.png?ehk=UaNFtBAeXAZGxzh9RUs1U83RPRmrEUPK2uQ8HnN67WA%3D&ehkOptimized=fV%2FQmX75JwON7cnMaX4N6Fgdhojthce%2BKG%2FN9qowk0c%3D",
-                "type": "banner"
-            },
-            {
                 "id": "7734406",
                 "url": "https://images.start.gg/images/tournament/745637/image-fdca0c82063e440f3b29f0b309f6f270.png?ehk=vvk%2FgdfUelFRSw%2FPdwYtm18XuFvqqzE%2FenKRXJpre6E%3D&ehkOptimized=oTA7Z8OSuiE6KCNkwsBLQFPIHbLuUlwn%2FlaqCjoZoTg%3D",
                 "type": "profile"
+            },
+            {
+                "id": "7740928",
+                "url": "https://images.start.gg/images/tournament/745637/image-cc1d2f6376fad297a21348ccc7dafa30.png?ehk=gjADSXmU0GYfjMHoWm34jWU7Nevn5feZau4w%2Bvrx5Ss%3D&ehkOptimized=Nxo5d1YFjhjgSQK9%2BeB0esvSzgVJMD7DxUr4ruqfjMc%3D",
+                "type": "banner"
             }
         ],
         "tournament_multievent": true,
@@ -106819,14 +106883,14 @@
         "tournament_registrationClosesAt": 1737833400,
         "images": [
             {
-                "id": "7734405",
-                "url": "https://images.start.gg/images/tournament/745637/image-44ca8321f363330ff4b5c96c94dfd553.png?ehk=UaNFtBAeXAZGxzh9RUs1U83RPRmrEUPK2uQ8HnN67WA%3D&ehkOptimized=fV%2FQmX75JwON7cnMaX4N6Fgdhojthce%2BKG%2FN9qowk0c%3D",
-                "type": "banner"
-            },
-            {
                 "id": "7734406",
                 "url": "https://images.start.gg/images/tournament/745637/image-fdca0c82063e440f3b29f0b309f6f270.png?ehk=vvk%2FgdfUelFRSw%2FPdwYtm18XuFvqqzE%2FenKRXJpre6E%3D&ehkOptimized=oTA7Z8OSuiE6KCNkwsBLQFPIHbLuUlwn%2FlaqCjoZoTg%3D",
                 "type": "profile"
+            },
+            {
+                "id": "7740928",
+                "url": "https://images.start.gg/images/tournament/745637/image-cc1d2f6376fad297a21348ccc7dafa30.png?ehk=gjADSXmU0GYfjMHoWm34jWU7Nevn5feZau4w%2Bvrx5Ss%3D&ehkOptimized=Nxo5d1YFjhjgSQK9%2BeB0esvSzgVJMD7DxUr4ruqfjMc%3D",
+                "type": "banner"
             }
         ],
         "tournament_multievent": true,
@@ -125921,7 +125985,7 @@
         "slug": "tournament/solyanka-2025/event/super-smash-bros-ultimate",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
@@ -126062,7 +126126,7 @@
         "slug": "tournament/duck-hunt-83-back-to-tonyschool42/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -126109,5 +126173,214 @@
         "country_code": "US",
         "lat": 44.0456711,
         "lng": -123.0773803
+    },
+    "1290080": {
+        "id": 1290080,
+        "name": "Smash Ultimate Singles",
+        "slug": "tournament/smash-at-the-made-53/event/smash-ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1737810000,
+        "phaseGroups": [
+            {
+                "id": 2738643,
+                "phase": {
+                    "id": 1858180,
+                    "name": "Main Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash at The MADE #53",
+        "tournament_id": 746276,
+        "city": "Oakland",
+        "url": "https://smash.gg/tournament/smash-at-the-made-53/event/smash-ultimate-singles",
+        "streams": null,
+        "timezone": "America/Los_Angeles",
+        "tournament_startAt": 1737810000,
+        "tournament_endAt": 1737824400,
+        "tournament_registrationClosesAt": 1737831600,
+        "images": [
+            {
+                "id": "7740953",
+                "url": "https://images.start.gg/images/tournament/746276/image-a89017df6d659edbb0d32b4f72e6fd1e.jpg?ehk=%2B6xwEQRU8ZRHaNT%2BDK9bMtf6pYVmsvcAxD63sTCFPss%3D&ehkOptimized=ktW0Wv69IIdrTUecjUFb7rqUgbNpaj6yB9LOTQLEex4%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7740954",
+                "url": "https://images.start.gg/images/tournament/746276/image-f241e78a66abdbb58b22f87d5c1d2b41.jpg?ehk=6ZJ76XfHn7gOZXCHlwTa8JEkZsKPUImebNHaEhaFK6E%3D&ehkOptimized=rJWUobwQcnVm2Ek4L%2B0hfsR9DVBJeGTfZQktBLjXl0Y%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "921 Washington St, Oakland, CA 94607, USA",
+        "tournament_addrState": "CA",
+        "country_code": "US",
+        "lat": 37.8019902,
+        "lng": -122.2743559
+    },
+    "1290077": {
+        "id": 1290077,
+        "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
+        "slug": "tournament/smash-70-2/event/1on1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1736505000,
+        "phaseGroups": [],
+        "tournament": "Smash\u85ac\u9662#70",
+        "tournament_id": 746275,
+        "city": "\u798f\u5ca1\u5e02",
+        "url": "https://smash.gg/tournament/smash-70-2/event/1on1",
+        "streams": [
+            {
+                "streamName": "\u30b9\u30de\u30a4\u30f3-Smash \u85ac\u9662-"
+            },
+            {
+                "streamName": "Smash_Yakuin"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1736505000,
+        "tournament_endAt": 1736517600,
+        "tournament_registrationClosesAt": 1736503200,
+        "images": [
+            {
+                "id": "7740941",
+                "url": "https://images.start.gg/images/tournament/746275/image-1ee91e51f755405194a5668d0bb3410d.png?ehk=vYtM9MTfR5eix5htG9VcKR2o1D4S2a5Q5fAJ5li3NKg%3D&ehkOptimized=JIAAHJNndKfVtuelULs4S9B2GpQgkkPMNoDO3lrGJp4%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7740942",
+                "url": "https://images.start.gg/images/tournament/746275/image-cf91782fcda39dda782c93deb1d46979.png?ehk=vFHY793a6WaqgDeguOXtcvGCbUZd%2BzLu2fApsX89foM%3D&ehkOptimized=ue3UDC%2FRXEAFbS8atdMY2OM89w8s2KvlIL1%2B9JqvhCM%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012810-0022 \u798f\u5ca1\u770c\u798f\u5ca1\u5e02\u4e2d\u592e\u533a\u85ac\u9662\uff14\u4e01\u76ee\uff12\u2212\uff11\uff13 \u30b3\u30a2\u30ad\u30e9\u30bc\u30d3\u30eb",
+        "tournament_addrState": "\u798f\u5ca1\u770c",
+        "country_code": "JP",
+        "lat": 33.5788746,
+        "lng": 130.3984333
+    },
+    "1290075": {
+        "id": 1290075,
+        "name": "Ultimate Singles",
+        "slug": "tournament/midweek-mashing-41/event/ultimate-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 5,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1736362800,
+        "phaseGroups": [
+            {
+                "id": 2738487,
+                "phase": {
+                    "id": 1858150,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Midweek Mashing #41",
+        "tournament_id": 746273,
+        "city": null,
+        "url": "https://smash.gg/tournament/midweek-mashing-41/event/ultimate-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1736362800,
+        "tournament_endAt": 1736380800,
+        "tournament_registrationClosesAt": 1736364600,
+        "images": [
+            {
+                "id": "7740922",
+                "url": "https://images.start.gg/images/tournament/746273/image-169e47f732022460d002d74bad4c3591.png?ehk=AaaRm3lO%2Fm4OcBAwUYQZ8TUO3woOabjX%2B3TtUFbpKh4%3D&ehkOptimized=3LALlVBQaLylhNpVdXhUTFijsEpdZtHDrBKZzABKo%2Fw%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7740923",
+                "url": "https://images.start.gg/images/tournament/746273/image-c2b497fde80297e75830a7b8b39829b1.png?ehk=hxtj6qY5PHgzdlsTIImJlFFxhQ7NlmWfwwX2Q9nOlHk%3D&ehkOptimized=4d8gf%2Boq%2FqxzQNsvGAU%2BR5a3Yyl5Q3Ss0plEWqjejFg%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null,
+        "region_lock": [
+            "AL",
+            "AD",
+            "AM",
+            "AT",
+            "AZ",
+            "BY",
+            "BE",
+            "BA",
+            "BG",
+            "HR",
+            "CY",
+            "CZ",
+            "DK",
+            "EE",
+            "FI",
+            "FR",
+            "GE",
+            "DE",
+            "GR",
+            "HU",
+            "IS",
+            "IE",
+            "IT",
+            "KZ",
+            "LV",
+            "LI",
+            "LT",
+            "LU",
+            "MT",
+            "MD",
+            "MC",
+            "ME",
+            "NL",
+            "Macedonia",
+            "NO",
+            "PL",
+            "PT",
+            "RO",
+            "RU",
+            "SM",
+            "RS",
+            "SK",
+            "SI",
+            "ES",
+            "SE",
+            "CH",
+            "TR",
+            "UA",
+            "GB",
+            "VA",
+            "XK",
+            "FO",
+            "GI",
+            "GG",
+            "IM",
+            "JE",
+            "GB",
+            "GB",
+            "GB"
+        ]
     }
 }
