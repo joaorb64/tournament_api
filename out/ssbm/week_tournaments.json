@@ -8499,7 +8499,17 @@
         "tournament_id": 735085,
         "city": "Vancouver",
         "url": "https://smash.gg/tournament/y-to-jump/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "RivalsBC"
+            },
+            {
+                "streamName": "UBCEsports"
+            },
+            {
+                "streamName": "shun_awawa"
+            }
+        ],
         "timezone": "America/Vancouver",
         "tournament_startAt": 1737828000,
         "tournament_endAt": 1737871200,
@@ -8549,7 +8559,17 @@
         "tournament_id": 735085,
         "city": "Vancouver",
         "url": "https://smash.gg/tournament/y-to-jump/event/melee-doubles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "RivalsBC"
+            },
+            {
+                "streamName": "UBCEsports"
+            },
+            {
+                "streamName": "shun_awawa"
+            }
+        ],
         "timezone": "America/Vancouver",
         "tournament_startAt": 1737828000,
         "tournament_endAt": 1737871200,
@@ -12080,28 +12100,6 @@
         "country_code": "US",
         "lat": 33.2110229,
         "lng": -87.5438166
-    },
-    "1287559": {
-        "id": 1287559,
-        "name": "Melee Singles",
-        "slug": "tournament/cinco/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 13,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1737198000,
-        "phaseGroups": [
-            {
-                "id": 2734201,
-                "phase": {
-                    "id": 1854899,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1287058": {
         "id": 1287058,
@@ -22404,28 +22402,6 @@
                 "phase": {
                     "id": 1864315,
                     "name": "Final Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1294928": {
-        "id": 1294928,
-        "name": "Melee Singles",
-        "slug": "tournament/smash-ntnu-gl-shaugen-201-1/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 17,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1737198000,
-        "phaseGroups": [
-            {
-                "id": 2746466,
-                "phase": {
-                    "id": 1864284,
-                    "name": "Bracket"
                 },
                 "progressionsOut": null
             }
@@ -45420,5 +45396,71 @@
         "country_code": "MX",
         "lat": 32.5171334,
         "lng": -116.9013402
+    },
+    "1301213": {
+        "id": 1301213,
+        "name": "Melee Single",
+        "slug": "tournament/knockout-zone-53/event/melee-single",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1738000800,
+        "phaseGroups": [
+            {
+                "id": 2758202,
+                "phase": {
+                    "id": 1872459,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "KnockOut Zone #53",
+        "tournament_id": 751777,
+        "city": "Paris",
+        "url": "https://smash.gg/tournament/knockout-zone-53/event/melee-single",
+        "streams": [
+            {
+                "streamName": "orbitalsheep"
+            },
+            {
+                "streamName": "solaryevent"
+            },
+            {
+                "streamName": "Zirveden"
+            },
+            {
+                "streamName": "tv_dex"
+            },
+            {
+                "streamName": "Marcaufeu"
+            }
+        ],
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1738000800,
+        "tournament_endAt": 1738018500,
+        "tournament_registrationClosesAt": 1738000860,
+        "images": [
+            {
+                "id": "7800134",
+                "url": "https://images.start.gg/images/tournament/751777/image-165f3b3c5c1101ad007a7b74c46ac0bd.png?ehk=SXbjQm2Jh97qflR%2FCFo7BgQHWcU%2BfND61CvyZLTjwRM%3D&ehkOptimized=31Fgfy6YV96W9CHM2%2FuZsaLJf1BA64YN99BkTvB7sow%3D",
+                "type": "banner"
+            },
+            {
+                "id": "7800136",
+                "url": "https://images.start.gg/images/tournament/751777/image-815a0517dfbc40cdb8ed4deb97fad195.png?ehk=byTPrC9oTl4NI2jR00dOZquzSOWtovhyjcC6%2BReLA%2FM%3D&ehkOptimized=svcN6bePREIV69695we%2FuIWlIhhztVA%2BmbEEllA2SOs%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "20 Rue Soleillet, 75020 Paris, France",
+        "tournament_addrState": "IDF",
+        "country_code": "FR",
+        "lat": 48.865443,
+        "lng": 2.392189
     }
 }
