@@ -53852,7 +53852,7 @@
         "slug": "tournament/dystril-12/event/main-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -53902,21 +53902,45 @@
     },
     "1315300": {
         "id": 1315300,
-        "name": "Amateur - Melee Singles",
-        "slug": "tournament/dystril-12/event/amateur-melee-singles",
+        "name": "Amateur Bronze - Melee Singles (ADMIN ONLY)",
+        "slug": "tournament/dystril-12/event/amateur-bronze-melee-singles-admin-only",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 0,
         "videogame": {
             "id": 1
         },
-        "startAt": 1740686400,
+        "startAt": 1740685500,
         "phaseGroups": [
             {
                 "id": 2780481,
                 "phase": {
                     "id": 1890268,
-                    "name": "Amateur Bracket"
+                    "name": "Amateur Bronze Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11646603
+                    }
+                ]
+            },
+            {
+                "id": 2780507,
+                "phase": {
+                    "id": 1890268,
+                    "name": "Amateur Bronze Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11646604
+                    }
+                ]
+            },
+            {
+                "id": 2780508,
+                "phase": {
+                    "id": 1890292,
+                    "name": "Amateur Bronze Final"
                 },
                 "progressionsOut": null
             }
@@ -53924,7 +53948,7 @@
         "tournament": "DYSTRIL #12",
         "tournament_id": 758629,
         "city": "Leeds",
-        "url": "https://smash.gg/tournament/dystril-12/event/amateur-melee-singles",
+        "url": "https://smash.gg/tournament/dystril-12/event/amateur-bronze-melee-singles-admin-only",
         "streams": [
             {
                 "streamName": "leedsmelee"
@@ -53953,5 +53977,109 @@
         "country_code": "GB",
         "lat": 53.7961642,
         "lng": -1.5377194
+    },
+    "1315319": {
+        "id": 1315319,
+        "name": "Amateur Silver - Melee Singles (ADMIN ONLY)",
+        "slug": "tournament/dystril-12/event/amateur-silver-melee-singles-admin-only",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1740686400,
+        "phaseGroups": [
+            {
+                "id": 2780506,
+                "phase": {
+                    "id": 1890291,
+                    "name": "Amateur Silver Round Robin"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "DYSTRIL #12",
+        "tournament_id": 758629,
+        "city": "Leeds",
+        "url": "https://smash.gg/tournament/dystril-12/event/amateur-silver-melee-singles-admin-only",
+        "streams": [
+            {
+                "streamName": "leedsmelee"
+            }
+        ],
+        "timezone": "Europe/London",
+        "tournament_startAt": 1740679200,
+        "tournament_endAt": 1740697200,
+        "tournament_registrationClosesAt": 1740681900,
+        "images": [
+            {
+                "id": "7878375",
+                "url": "https://images.start.gg/images/tournament/758629/image-8ffccc0e25a01c65d2edb150e94ea191.png?ehk=%2B6wgfqKh5HOwzGaEnFMQFlb02ibgUBUyg%2BQTIDWw1i0%3D&ehkOptimized=RSNpsptea2mIOLqB83oBqicnRcVs%2FPIMEtQFStrrv78%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7878376",
+                "url": "https://images.start.gg/images/tournament/758629/image-bc243099562aafbc2e9cb96beac7cccf.jpg?ehk=f%2FI5%2FNMWgIjhSwb5vd04VDrwBKlihiaxmkukfU6sqnk%3D&ehkOptimized=8JiYR6pOpLNoKcRuoihxTdT4%2BbVJYq6aosRFne%2FEmRQ%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "4-12 Harper St, Leeds LS2 7EA, UK",
+        "tournament_addrState": "England",
+        "country_code": "GB",
+        "lat": 53.7961642,
+        "lng": -1.5377194
+    },
+    "1315314": {
+        "id": 1315314,
+        "name": "Melee Singles",
+        "slug": "tournament/naonline-37/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1739714400,
+        "phaseGroups": [
+            {
+                "id": 2780500,
+                "phase": {
+                    "id": 1890285,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Naonline #37",
+        "tournament_id": 758637,
+        "city": null,
+        "url": "https://smash.gg/tournament/naonline-37/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1739714400,
+        "tournament_endAt": 1739743200,
+        "tournament_registrationClosesAt": 1739713500,
+        "images": [
+            {
+                "id": "7878533",
+                "url": "https://images.start.gg/images/tournament/758637/image-fe7340d582bcf7ed464a5ec3fd2d05ca.png?ehk=pNvMl%2FxTkYCkCIr33jJR7i9rLkIvmoAhvzS3sFaSsmU%3D&ehkOptimized=cWQgK3KI%2FHyZ0B3i4b5fV5u5iU%2F4nUpUzaVZb332Gzg%3D",
+                "type": "profile"
+            },
+            {
+                "id": "7878537",
+                "url": "https://images.start.gg/images/tournament/758637/image-410e66e6e1f31bfb3955c8403586a53c.png?ehk=FebEFGtIKxG0XByjXZ1u5GL6id%2F3Vj2wUreT%2B8dY69o%3D&ehkOptimized=n1EqHq0n%2B6nHZQZPC8vB9fmR%2Bf87v4W0z6CAyIrCU00%3D",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
