@@ -2723,7 +2723,7 @@
         "slug": "tournament/get-louder/event/ssbm-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 13,
+        "numEntrants": 15,
         "videogame": {
             "id": 1
         },
@@ -2742,7 +2742,11 @@
         "tournament_id": 743412,
         "city": "North Bay",
         "url": "https://smash.gg/tournament/get-louder/event/ssbm-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "NorthBayFGC"
+            }
+        ],
         "timezone": "America/Toronto",
         "tournament_startAt": 1742049000,
         "tournament_endAt": 1742088600,
@@ -55509,7 +55513,7 @@
         "slug": "tournament/stomping-ground/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -55550,7 +55554,7 @@
         "slug": "tournament/big-fish-101/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -55600,7 +55604,7 @@
         "slug": "tournament/melee-friends-activate-104/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -55643,5 +55647,65 @@
         "country_code": "US",
         "lat": 33.7884257,
         "lng": -117.8559113
+    },
+    "1335689": {
+        "id": 1335689,
+        "name": "Melee Single",
+        "slug": "tournament/knockout-zone-60/event/melee-single",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1742234400,
+        "phaseGroups": [
+            {
+                "id": 2817369,
+                "phase": {
+                    "id": 1916108,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "KnockOut Zone #60",
+        "tournament_id": 768451,
+        "city": "Paris",
+        "url": "https://smash.gg/tournament/knockout-zone-60/event/melee-single",
+        "streams": [
+            {
+                "streamName": "orbitalsheep"
+            },
+            {
+                "streamName": "Marcaufeu"
+            },
+            {
+                "streamName": "Kat_insomnia"
+            }
+        ],
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1742234400,
+        "tournament_endAt": 1742252100,
+        "tournament_registrationClosesAt": 1742234460,
+        "images": [
+            {
+                "id": "7987104",
+                "url": "https://images.start.gg/images/tournament/768451/image-c05361c4cee81ebf463e26fe3c08051a.png",
+                "type": "banner"
+            },
+            {
+                "id": "7987106",
+                "url": "https://images.start.gg/images/tournament/768451/image-b5c903cfeaf484e0622afc545016d7bc.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "20 Rue Soleillet, 75020 Paris, France",
+        "tournament_addrState": "IDF",
+        "country_code": "FR",
+        "lat": 48.865443,
+        "lng": 2.392189
     }
 }
