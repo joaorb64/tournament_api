@@ -19607,12 +19607,36 @@
         "slug": "tournament/slam-2-be-continued/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
         "startAt": 1744448400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2813023,
+                "phase": {
+                    "id": 1912456,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11815478
+                    },
+                    {
+                        "id": 11815479
+                    }
+                ]
+            },
+            {
+                "id": 2813029,
+                "phase": {
+                    "id": 1912460,
+                    "name": "FINAL SHOWDOWN"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "SLAM 2 be Continued...",
         "tournament_id": 767036,
         "city": "Stirling",
@@ -19652,12 +19676,75 @@
         "slug": "tournament/slam-2-be-continued/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 18,
         "videogame": {
             "id": 1
         },
         "startAt": 1744459200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2813020,
+                "phase": {
+                    "id": 1912453,
+                    "name": "POOLS"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11815469
+                    },
+                    {
+                        "id": 11815472
+                    },
+                    {
+                        "id": 11815475
+                    }
+                ]
+            },
+            {
+                "id": 2813024,
+                "phase": {
+                    "id": 1912453,
+                    "name": "POOLS"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11815470
+                    },
+                    {
+                        "id": 11815473
+                    },
+                    {
+                        "id": 11815476
+                    }
+                ]
+            },
+            {
+                "id": 2813025,
+                "phase": {
+                    "id": 1912453,
+                    "name": "POOLS"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 11815471
+                    },
+                    {
+                        "id": 11815474
+                    },
+                    {
+                        "id": 11815477
+                    }
+                ]
+            },
+            {
+                "id": 2813026,
+                "phase": {
+                    "id": 1912457,
+                    "name": "Pro Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "SLAM 2 be Continued...",
         "tournament_id": 767036,
         "city": "Stirling",
@@ -20901,7 +20988,7 @@
         "slug": "tournament/stomping-ground/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 17,
+        "numEntrants": 18,
         "videogame": {
             "id": 1
         },
@@ -57440,5 +57527,65 @@
         "country_code": "DE",
         "lat": 52.34204020000001,
         "lng": 9.7243286
+    },
+    "1351320": {
+        "id": 1351320,
+        "name": "1v1 Melee (SAMEDI)",
+        "slug": "tournament/smashdown-war-of-kings/event/1v1-melee-samedi",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1747476000,
+        "phaseGroups": [
+            {
+                "id": 2843734,
+                "phase": {
+                    "id": 1936301,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "SmashDown : War of Kings",
+        "tournament_id": 760270,
+        "city": "Rennes",
+        "url": "https://smash.gg/tournament/smashdown-war-of-kings/event/1v1-melee-samedi",
+        "streams": [
+            {
+                "streamName": "TeamAskalonn"
+            },
+            {
+                "streamName": "rennes2esportclub"
+            },
+            {
+                "streamName": "TeamAskalonn2"
+            }
+        ],
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1747411200,
+        "tournament_endAt": 1747504800,
+        "tournament_registrationClosesAt": 1747497600,
+        "images": [
+            {
+                "id": "7936859",
+                "url": "https://images.start.gg/images/tournament/760270/image-da72bc877b91bc09eaf7549e2ae7108e.png",
+                "type": "profile"
+            },
+            {
+                "id": "8074315",
+                "url": "https://images.start.gg/images/tournament/760270/image-36c36930bfbe5aef728a37bb83ca60fb.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "B\u00e2timent L, 35000 Rennes, France",
+        "tournament_addrState": "Bretagne",
+        "country_code": "FR",
+        "lat": 48.1196817,
+        "lng": -1.7014931
     }
 }
