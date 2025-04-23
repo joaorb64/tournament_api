@@ -5373,12 +5373,21 @@
         "slug": "tournament/floating-point-2025/event/melee-3v3-crews",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 8,
+        "numEntrants": 9,
         "videogame": {
             "id": 1
         },
         "startAt": 1745546400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2757283,
+                "phase": {
+                    "id": 1871743,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Floating Point 2025",
         "tournament_id": 751162,
         "city": "Chippendale",
@@ -5438,7 +5447,16 @@
             "id": 1
         },
         "startAt": 1745546400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2754980,
+                "phase": {
+                    "id": 1870804,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Floating Point 2025",
         "tournament_id": 751162,
         "city": "Chippendale",
@@ -5498,7 +5516,100 @@
             "id": 1
         },
         "startAt": 1745546400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2754975,
+                "phase": {
+                    "id": 1870802,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 2754976,
+                "phase": {
+                    "id": 1870803,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12037827
+                    },
+                    {
+                        "id": 12037831
+                    },
+                    {
+                        "id": 12037835
+                    },
+                    {
+                        "id": 12037839
+                    }
+                ]
+            },
+            {
+                "id": 2754977,
+                "phase": {
+                    "id": 1870803,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12037828
+                    },
+                    {
+                        "id": 12037832
+                    },
+                    {
+                        "id": 12037836
+                    },
+                    {
+                        "id": 12037840
+                    }
+                ]
+            },
+            {
+                "id": 2754978,
+                "phase": {
+                    "id": 1870803,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12037829
+                    },
+                    {
+                        "id": 12037833
+                    },
+                    {
+                        "id": 12037837
+                    },
+                    {
+                        "id": 12037841
+                    }
+                ]
+            },
+            {
+                "id": 2754979,
+                "phase": {
+                    "id": 1870803,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12037830
+                    },
+                    {
+                        "id": 12037834
+                    },
+                    {
+                        "id": 12037838
+                    },
+                    {
+                        "id": 12037842
+                    }
+                ]
+            }
+        ],
         "tournament": "Floating Point 2025",
         "tournament_id": 751162,
         "city": "Chippendale",
@@ -34745,7 +34856,7 @@
         "name": "Melee Singles",
         "slug": "tournament/midnight-melee-9/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1
@@ -53462,5 +53573,59 @@
         "region_lock": [
             "PH"
         ]
+    },
+    "1364770": {
+        "id": 1364770,
+        "name": "Melee Singles",
+        "slug": "tournament/midnight-melee-10/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1745978400,
+        "phaseGroups": [
+            {
+                "id": 2868021,
+                "phase": {
+                    "id": 1953503,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Midnight Melee 10",
+        "tournament_id": 782741,
+        "city": "San Fernando",
+        "url": "https://smash.gg/tournament/midnight-melee-10/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "arrozconAria"
+            }
+        ],
+        "timezone": "America/Los_Angeles",
+        "tournament_startAt": 1745978400,
+        "tournament_endAt": 1745989200,
+        "tournament_registrationClosesAt": 1745979300,
+        "images": [
+            {
+                "id": "8158431",
+                "url": "https://images.start.gg/images/tournament/782741/image-0f56976fd3c3f09c3be0cbe3b13b7c58.png",
+                "type": "profile"
+            },
+            {
+                "id": "8158432",
+                "url": "https://images.start.gg/images/tournament/782741/image-6f16aaa220ab43526a12db629f696dbf.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1101 San Fernando Rd, San Fernando, CA 91340, USA",
+        "tournament_addrState": "CA",
+        "country_code": "US",
+        "lat": 34.2833006,
+        "lng": -118.4416822
     }
 }
