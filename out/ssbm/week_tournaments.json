@@ -4999,7 +4999,7 @@
         "slug": "tournament/super-bit-wars-2025/event/super-smash-bros-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 22,
+        "numEntrants": 24,
         "videogame": {
             "id": 1
         },
@@ -16487,12 +16487,21 @@
         "slug": "tournament/crazyhand2025/event/dx-melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
         "startAt": 1746320400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2847494,
+                "phase": {
+                    "id": 1938934,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "CrazyHand2025",
         "tournament_id": 777030,
         "city": "\u5927\u962a\u5e02",
@@ -16532,12 +16541,111 @@
         "slug": "tournament/crazyhand2025/event/dx-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 17,
         "videogame": {
             "id": 1
         },
         "startAt": 1746320400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2847488,
+                "phase": {
+                    "id": 1938930,
+                    "name": "Final Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 2847489,
+                "phase": {
+                    "id": 1938931,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12104901
+                    },
+                    {
+                        "id": 12104904
+                    },
+                    {
+                        "id": 12104907
+                    },
+                    {
+                        "id": 12104910
+                    },
+                    {
+                        "id": 12104913
+                    },
+                    {
+                        "id": 12104916
+                    },
+                    {
+                        "id": 12104919
+                    }
+                ]
+            },
+            {
+                "id": 2847490,
+                "phase": {
+                    "id": 1938931,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12104902
+                    },
+                    {
+                        "id": 12104905
+                    },
+                    {
+                        "id": 12104908
+                    },
+                    {
+                        "id": 12104911
+                    },
+                    {
+                        "id": 12104914
+                    },
+                    {
+                        "id": 12104917
+                    },
+                    {
+                        "id": 12104920
+                    }
+                ]
+            },
+            {
+                "id": 2881888,
+                "phase": {
+                    "id": 1938931,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12104903
+                    },
+                    {
+                        "id": 12104906
+                    },
+                    {
+                        "id": 12104909
+                    },
+                    {
+                        "id": 12104912
+                    },
+                    {
+                        "id": 12104915
+                    },
+                    {
+                        "id": 12104918
+                    },
+                    {
+                        "id": 12104921
+                    }
+                ]
+            }
+        ],
         "tournament": "CrazyHand2025",
         "tournament_id": 777030,
         "city": "\u5927\u962a\u5e02",
@@ -23208,60 +23316,6 @@
         "lat": 36.31809399999999,
         "lng": -82.3405477
     },
-    "1355846": {
-        "id": 1355846,
-        "name": "Melee Singles",
-        "slug": "tournament/melee-kombat/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 19,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1745668800,
-        "phaseGroups": [
-            {
-                "id": 2852286,
-                "phase": {
-                    "id": 1942136,
-                    "name": "Round Robin"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2852310,
-                "phase": {
-                    "id": 1942136,
-                    "name": "Round Robin"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2872508,
-                "phase": {
-                    "id": 1942136,
-                    "name": "Round Robin"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2872509,
-                "phase": {
-                    "id": 1942136,
-                    "name": "Round Robin"
-                },
-                "progressionsOut": null
-            },
-            {
-                "id": 2872544,
-                "phase": {
-                    "id": 1956415,
-                    "name": "Double Elimination"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1363212": {
         "id": 1363212,
         "name": "Super Smash Bros. Melee : Singles",
@@ -26740,7 +26794,7 @@
         "slug": "tournament/cage-fight-21/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
@@ -26750,63 +26804,6 @@
                 "id": 2868443,
                 "phase": {
                     "id": 1953826,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "Cage Fight 21",
-        "tournament_id": 782859,
-        "city": "Thessaloniki",
-        "url": "https://smash.gg/tournament/cage-fight-21/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "SPGGreece"
-            },
-            {
-                "streamName": "GreekSSBM"
-            }
-        ],
-        "timezone": "Europe/Athens",
-        "tournament_startAt": 1746262860,
-        "tournament_endAt": 1746284400,
-        "tournament_registrationClosesAt": 1746295260,
-        "images": [
-            {
-                "id": "8169595",
-                "url": "https://images.start.gg/images/tournament/782859/image-657150a919c9f7c5d042eebb7526883e.png",
-                "type": "profile"
-            },
-            {
-                "id": "8169596",
-                "url": "https://images.start.gg/images/tournament/782859/image-5e594c8f6083ac2301b80efd7cdbbc66.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Kon/nou Melenikou 32, Thessaloniki 546 35, Greece",
-        "tournament_addrState": null,
-        "country_code": "GR",
-        "lat": 40.6343757,
-        "lng": 22.9544173
-    },
-    "1365580": {
-        "id": 1365580,
-        "name": "Melee Singles",
-        "slug": "tournament/tr-ll-april-2025/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 2,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1745667000,
-        "phaseGroups": [
-            {
-                "id": 2869270,
-                "phase": {
-                    "id": 1954483,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -45502,7 +45499,7 @@
         "slug": "tournament/pope-s-sunday-mass-conclave/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 8,
+        "numEntrants": 11,
         "videogame": {
             "id": 1
         },
@@ -46191,7 +46188,7 @@
         "name": "Melee Singles",
         "slug": "tournament/smash-ntnu-gl-shaugen-210/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 8,
         "videogame": {
             "id": 1
