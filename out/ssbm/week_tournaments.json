@@ -4015,20 +4015,20 @@
     },
     "1310561": {
         "id": 1310561,
-        "name": "Melee Singles",
-        "slug": "tournament/full-house-2025/event/melee-singles",
+        "name": "Main Bracket",
+        "slug": "tournament/full-house-2025/event/main-bracket",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 16,
         "videogame": {
             "id": 1
         },
-        "startAt": 1747317600,
+        "startAt": 1747404000,
         "phaseGroups": [],
         "tournament": "Full House 2025",
         "tournament_id": 753316,
         "city": null,
-        "url": "https://smash.gg/tournament/full-house-2025/event/melee-singles",
+        "url": "https://smash.gg/tournament/full-house-2025/event/main-bracket",
         "streams": null,
         "timezone": "America/New_York",
         "tournament_startAt": 1747404000,
@@ -4041,7 +4041,7 @@
                 "type": "profile"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": "Pocono Mountains, Pennsylvania, USA",
         "tournament_addrState": "PA",
@@ -46456,16 +46456,7 @@
             "id": 1
         },
         "startAt": 1747580400,
-        "phaseGroups": [
-            {
-                "id": 2885314,
-                "phase": {
-                    "id": 1965366,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
+        "phaseGroups": [],
         "tournament": "Abyss Colosseum 4",
         "tournament_id": 787126,
         "city": "Coro",
@@ -49528,7 +49519,7 @@
         "videogame": {
             "id": 1
         },
-        "startAt": 1748041200,
+        "startAt": 1748102400,
         "phaseGroups": [
             {
                 "id": 2883558,
@@ -50551,5 +50542,50 @@
         "country_code": "NO",
         "lat": 59.1797656,
         "lng": 10.2084496
+    },
+    "1375359": {
+        "id": 1375359,
+        "name": "VIP Bracket",
+        "slug": "tournament/full-house-2025/event/vip-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 17,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1747404000,
+        "phaseGroups": [
+            {
+                "id": 2887716,
+                "phase": {
+                    "id": 1967190,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Full House 2025",
+        "tournament_id": 753316,
+        "city": null,
+        "url": "https://smash.gg/tournament/full-house-2025/event/vip-bracket",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1747404000,
+        "tournament_endAt": 1747627140,
+        "tournament_registrationClosesAt": 1747627140,
+        "images": [
+            {
+                "id": "7837837",
+                "url": "https://images.start.gg/images/tournament/753316/image-fea619c95232db59212683d3eaa947c0.jpg?ehk=svIq8%2FEaM4FW56mq%2BXfy%2FMunCo7u9rL%2BWHXUJUWtynM%3D&ehkOptimized=7UaKiq0%2Fb1h3w9W3I6QoOspxUvV8xXaipcUpc3ADkFE%3D",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Pocono Mountains, Pennsylvania, USA",
+        "tournament_addrState": "PA",
+        "country_code": "US",
+        "lat": 41.0700078,
+        "lng": -75.4344727
     }
 }
