@@ -69287,7 +69287,7 @@
         "slug": "tournament/smashveria-1/event/ladder",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 17,
+        "numEntrants": 18,
         "videogame": {
             "id": 1386
         },
@@ -69328,12 +69328,54 @@
         "slug": "tournament/smashveria-1/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 19,
+        "numEntrants": 20,
         "videogame": {
             "id": 1386
         },
         "startAt": 1749852000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2908714,
+                "phase": {
+                    "id": 1982804,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12306847
+                    },
+                    {
+                        "id": 12306848
+                    },
+                    {
+                        "id": 12306849
+                    },
+                    {
+                        "id": 12306850
+                    },
+                    {
+                        "id": 12306851
+                    },
+                    {
+                        "id": 12306852
+                    },
+                    {
+                        "id": 12306853
+                    },
+                    {
+                        "id": 12306854
+                    }
+                ]
+            },
+            {
+                "id": 2928343,
+                "phase": {
+                    "id": 1997492,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Smashveria #1",
         "tournament_id": 793576,
         "city": "Salamanca",
@@ -156530,7 +156572,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/dee-stocked-the-practice-run-seeding-did-not-save/event/ultimate-singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 22,
         "videogame": {
             "id": 1386
@@ -162598,5 +162640,113 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "1399101": {
+        "id": 1399101,
+        "name": "AzErLeague",
+        "slug": "tournament/azerleague-s6-11/event/azerleague",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1749839400,
+        "phaseGroups": [
+            {
+                "id": 2928951,
+                "phase": {
+                    "id": 1998006,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12308685
+                    },
+                    {
+                        "id": 12308686
+                    },
+                    {
+                        "id": 12308687
+                    },
+                    {
+                        "id": 12308688
+                    },
+                    {
+                        "id": 12308689
+                    },
+                    {
+                        "id": 12308690
+                    },
+                    {
+                        "id": 12308691
+                    },
+                    {
+                        "id": 12308692
+                    }
+                ]
+            },
+            {
+                "id": 2928952,
+                "phase": {
+                    "id": 1998007,
+                    "name": "AzErLeague Top8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "AzErLeague S6-11\ud83c\udfc6",
+        "tournament_id": 799269,
+        "city": null,
+        "url": "https://smash.gg/tournament/azerleague-s6-11/event/azerleague",
+        "streams": [
+            {
+                "streamName": "azernate"
+            },
+            {
+                "streamName": "evanglion"
+            },
+            {
+                "streamName": "RedAkaX"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1749839400,
+        "tournament_endAt": 1749851940,
+        "tournament_registrationClosesAt": 1749838500,
+        "images": [
+            {
+                "id": "8363759",
+                "url": "https://images.start.gg/images/tournament/799269/image-265315f526ddfce82115d463d702dd98.png",
+                "type": "profile"
+            },
+            {
+                "id": "8363760",
+                "url": "https://images.start.gg/images/tournament/799269/image-e02a31ec4ab12570464fc41ca4dcbb02.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null,
+        "region_lock": [
+            "FR",
+            "BE",
+            "CH",
+            "DE",
+            "GB",
+            "ES",
+            "IT",
+            "LI",
+            "LU",
+            "MC",
+            "PL",
+            "NL",
+            "FI"
+        ]
     }
 }
