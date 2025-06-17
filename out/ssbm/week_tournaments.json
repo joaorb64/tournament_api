@@ -45473,7 +45473,7 @@
         "slug": "tournament/the-weekly-fry-up/event/into-the-frying-pan-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 7,
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
@@ -45483,7 +45483,37 @@
                 "id": 2931718,
                 "phase": {
                     "id": 2000122,
-                    "name": "Bracket"
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12328052
+                    },
+                    {
+                        "id": 12328054
+                    }
+                ]
+            },
+            {
+                "id": 2933148,
+                "phase": {
+                    "id": 2000122,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12328053
+                    },
+                    {
+                        "id": 12328055
+                    }
+                ]
+            },
+            {
+                "id": 2933146,
+                "phase": {
+                    "id": 2001232,
+                    "name": "Main Bracket"
                 },
                 "progressionsOut": null
             }
@@ -49040,5 +49070,55 @@
         "country_code": "US",
         "lat": 34.009168,
         "lng": -81.1932224
+    },
+    "1401520": {
+        "id": 1401520,
+        "name": "Melee Singles",
+        "slug": "tournament/frame-60/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 5,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1750503600,
+        "phaseGroups": [
+            {
+                "id": 2933074,
+                "phase": {
+                    "id": 2001209,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "FRAME 60",
+        "tournament_id": 800509,
+        "city": "Skien",
+        "url": "https://smash.gg/tournament/frame-60/event/melee-singles",
+        "streams": null,
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1750503600,
+        "tournament_endAt": 1750539600,
+        "tournament_registrationClosesAt": 1750521600,
+        "images": [
+            {
+                "id": "8375423",
+                "url": "https://images.start.gg/images/tournament/800509/image-928fe7c6c71eb0decf0464dbd4b4c553.png",
+                "type": "profile"
+            },
+            {
+                "id": "8375424",
+                "url": "https://images.start.gg/images/tournament/800509/image-6fff85247f665e32c815be0cc69ef6bc.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Gims\u00f8y Plass 5, 3730 Skien, Norge",
+        "tournament_addrState": "Telemark",
+        "country_code": "NO",
+        "lat": 59.19537879999999,
+        "lng": 9.6115927
     }
 }
