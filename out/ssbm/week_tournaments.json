@@ -42699,7 +42699,7 @@
         "name": "Singles",
         "slug": "tournament/melee-at-night-723/event/singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 17,
         "videogame": {
             "id": 1
@@ -44129,7 +44129,7 @@
         "slug": "tournament/tuesday-gaming-night-rituals-july-2025/event/smash-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -44143,34 +44143,291 @@
                 },
                 "progressionsOut": null
             }
+        ]
+    },
+    "1411047": {
+        "id": 1411047,
+        "name": "Melee Amateur Bracket",
+        "slug": "tournament/house-of-smash-155-melee-hos-liga-3/event/melee-amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1751799600,
+        "phaseGroups": [
+            {
+                "id": 2949191,
+                "phase": {
+                    "id": 2013650,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
         ],
-        "tournament": "TUESDAY GAMING NIGHT RITUALS JULY 2025",
-        "tournament_id": 805065,
-        "city": "Cathedral City",
-        "url": "https://smash.gg/tournament/tuesday-gaming-night-rituals-july-2025/event/smash-melee",
-        "streams": null,
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1751425200,
-        "tournament_endAt": 1753866000,
-        "tournament_registrationClosesAt": 1753866000,
+        "tournament": "House of Smash #155: Melee (HoS-Liga 3)",
+        "tournament_id": 805130,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-155-melee-hos-liga-3/event/melee-amateur-bracket",
+        "streams": [
+            {
+                "streamName": "SmashNorge"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1751799600,
+        "tournament_endAt": 1751832000,
+        "tournament_registrationClosesAt": 1751857200,
         "images": [
             {
-                "id": "8426777",
-                "url": "https://images.start.gg/images/tournament/805065/image-01fc354835072c0eeb27a2eaf1253a84.png",
+                "id": "8427437",
+                "url": "https://images.start.gg/images/tournament/805130/image-24a81e17d15586d88f94ef0959fb3d68.png",
                 "type": "profile"
             },
             {
-                "id": "8426779",
-                "url": "https://images.start.gg/images/tournament/805065/image-bb56d65bd9d39b798300b00609ad4d51.png",
+                "id": "8427439",
+                "url": "https://images.start.gg/images/tournament/805130/image-65a992a739a53b92f8c4c6bdb278e3fa.png",
                 "type": "banner"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
         "tournament_venueName": null,
-        "tournament_venueAddress": "67555 E Palm Canyon Dr, Cathedral City, CA 92234, USA",
-        "tournament_addrState": "CA",
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1411045": {
+        "id": 1411045,
+        "name": "Melee Doubles",
+        "slug": "tournament/house-of-smash-155-melee-hos-liga-3/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1751799600,
+        "phaseGroups": [
+            {
+                "id": 2949188,
+                "phase": {
+                    "id": 2013647,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12390224
+                    },
+                    {
+                        "id": 12390225
+                    }
+                ]
+            },
+            {
+                "id": 2949189,
+                "phase": {
+                    "id": 2013648,
+                    "name": "final bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "House of Smash #155: Melee (HoS-Liga 3)",
+        "tournament_id": 805130,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-155-melee-hos-liga-3/event/melee-doubles",
+        "streams": [
+            {
+                "streamName": "SmashNorge"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1751799600,
+        "tournament_endAt": 1751832000,
+        "tournament_registrationClosesAt": 1751857200,
+        "images": [
+            {
+                "id": "8427437",
+                "url": "https://images.start.gg/images/tournament/805130/image-24a81e17d15586d88f94ef0959fb3d68.png",
+                "type": "profile"
+            },
+            {
+                "id": "8427439",
+                "url": "https://images.start.gg/images/tournament/805130/image-65a992a739a53b92f8c4c6bdb278e3fa.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1411044": {
+        "id": 1411044,
+        "name": "Melee Singles",
+        "slug": "tournament/house-of-smash-155-melee-hos-liga-3/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1751799600,
+        "phaseGroups": [
+            {
+                "id": 2949187,
+                "phase": {
+                    "id": 2013646,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "House of Smash #155: Melee (HoS-Liga 3)",
+        "tournament_id": 805130,
+        "city": "Oslo",
+        "url": "https://smash.gg/tournament/house-of-smash-155-melee-hos-liga-3/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "SmashNorge"
+            }
+        ],
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1751799600,
+        "tournament_endAt": 1751832000,
+        "tournament_registrationClosesAt": 1751857200,
+        "images": [
+            {
+                "id": "8427437",
+                "url": "https://images.start.gg/images/tournament/805130/image-24a81e17d15586d88f94ef0959fb3d68.png",
+                "type": "profile"
+            },
+            {
+                "id": "8427439",
+                "url": "https://images.start.gg/images/tournament/805130/image-65a992a739a53b92f8c4c6bdb278e3fa.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Vulkan 18, 0178 Oslo, Norway",
+        "tournament_addrState": "Oslo",
+        "country_code": "NO",
+        "lat": 59.9217514,
+        "lng": 10.7516198
+    },
+    "1410986": {
+        "id": 1410986,
+        "name": "Melee Singles",
+        "slug": "tournament/foco-weekly-wednesday-390/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1751500800,
+        "phaseGroups": [
+            {
+                "id": 2949079,
+                "phase": {
+                    "id": 2013551,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Foco Weekly Wednesday #390",
+        "tournament_id": 805119,
+        "city": "Fort Collins",
+        "url": "https://smash.gg/tournament/foco-weekly-wednesday-390/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "giden120"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1751500800,
+        "tournament_endAt": 1751518800,
+        "tournament_registrationClosesAt": 1751925660,
+        "images": [
+            {
+                "id": "8427301",
+                "url": "https://images.start.gg/images/tournament/805119/image-9c5abaca3cb4896d7832915778196d38.png",
+                "type": "banner"
+            },
+            {
+                "id": "8427302",
+                "url": "https://images.start.gg/images/tournament/805119/image-57c9a7b4cd780322a2519919b934bdae.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2721 S College Ave, Fort Collins, CO 80525, USA",
+        "tournament_addrState": "CO",
         "country_code": "US",
-        "lat": 33.7867193,
-        "lng": -116.4824367
+        "lat": 40.5497963,
+        "lng": -105.0776719
+    },
+    "1410987": {
+        "id": 1410987,
+        "name": "Melee Doubles",
+        "slug": "tournament/foco-weekly-wednesday-390/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1751500800,
+        "phaseGroups": [
+            {
+                "id": 2949080,
+                "phase": {
+                    "id": 2013552,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Foco Weekly Wednesday #390",
+        "tournament_id": 805119,
+        "city": "Fort Collins",
+        "url": "https://smash.gg/tournament/foco-weekly-wednesday-390/event/melee-doubles",
+        "streams": [
+            {
+                "streamName": "giden120"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1751500800,
+        "tournament_endAt": 1751518800,
+        "tournament_registrationClosesAt": 1751925660,
+        "images": [
+            {
+                "id": "8427301",
+                "url": "https://images.start.gg/images/tournament/805119/image-9c5abaca3cb4896d7832915778196d38.png",
+                "type": "banner"
+            },
+            {
+                "id": "8427302",
+                "url": "https://images.start.gg/images/tournament/805119/image-57c9a7b4cd780322a2519919b934bdae.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2721 S College Ave, Fort Collins, CO 80525, USA",
+        "tournament_addrState": "CO",
+        "country_code": "US",
+        "lat": 40.5497963,
+        "lng": -105.0776719
     }
 }
