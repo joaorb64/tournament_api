@@ -40474,28 +40474,6 @@
         "lat": 39.4682681,
         "lng": -6.376693200000001
     },
-    "1392089": {
-        "id": 1392089,
-        "name": "1v1 online",
-        "slug": "tournament/salaise-en-online-1/event/1v1-online",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1751004000,
-        "phaseGroups": [
-            {
-                "id": 2917332,
-                "phase": {
-                    "id": 1988972,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1392395": {
         "id": 1392395,
         "name": "Ultimate Singles",
@@ -49685,11 +49663,11 @@
         "slug": "tournament/edmonton-esports-exhibition-2025/event/ultimate-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
-        "startAt": 1753466400,
+        "startAt": 1753552800,
         "phaseGroups": [],
         "tournament": "Edmonton Esports Exhibition 2025",
         "tournament_id": 791380,
@@ -49726,7 +49704,7 @@
         "slug": "tournament/edmonton-esports-exhibition-2025/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 7,
         "videogame": {
             "id": 1386
         },
@@ -68124,7 +68102,7 @@
         "name": "SolD #5",
         "slug": "tournament/sold-5/event/sold-5",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 128,
         "videogame": {
             "id": 1386
@@ -68526,39 +68504,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "SolD #5",
-        "tournament_id": 706204,
-        "city": null,
-        "url": "https://smash.gg/tournament/sold-5/event/sold-5",
-        "streams": [
-            {
-                "streamName": "Amiibo Electric"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1746162000,
-        "tournament_endAt": 1778993940,
-        "tournament_registrationClosesAt": 1733272380,
-        "images": [
-            {
-                "id": "8328491",
-                "url": "https://images.start.gg/images/tournament/706204/image-49ba842a9d21daa692fc636ba4893f1e.png",
-                "type": "banner"
-            },
-            {
-                "id": "8419101",
-                "url": "https://images.start.gg/images/tournament/706204/image-acaa816c0db135b404c2a11681c949d5.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "1401405": {
         "id": 1401405,
@@ -75884,7 +75830,16 @@
             "id": 1386
         },
         "startAt": 1751742000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2939748,
+                "phase": {
+                    "id": 2006049,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Los Finos Remastered. Torneo de Aniversario.",
         "tournament_id": 802206,
         "city": "Santiago de Quer\u00e9taro",
@@ -75892,6 +75847,9 @@
         "streams": [
             {
                 "streamName": "losfinosqro"
+            },
+            {
+                "streamName": "cosmichive_gaming"
             }
         ],
         "timezone": "America/Mexico_City",
@@ -75946,12 +75904,81 @@
         "slug": "tournament/los-finos-remastered-torneo-de-aniversario/event/super-smash-bros-ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 72,
+        "numEntrants": 75,
         "videogame": {
             "id": 1386
         },
         "startAt": 1751752740,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2939740,
+                "phase": {
+                    "id": 2006042,
+                    "name": "Los Finos Singles"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12389993
+                    },
+                    {
+                        "id": 12389997
+                    }
+                ]
+            },
+            {
+                "id": 2939741,
+                "phase": {
+                    "id": 2006042,
+                    "name": "Los Finos Singles"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12389994
+                    },
+                    {
+                        "id": 12389998
+                    }
+                ]
+            },
+            {
+                "id": 2949085,
+                "phase": {
+                    "id": 2006042,
+                    "name": "Los Finos Singles"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12389995
+                    },
+                    {
+                        "id": 12389999
+                    }
+                ]
+            },
+            {
+                "id": 2949086,
+                "phase": {
+                    "id": 2006042,
+                    "name": "Los Finos Singles"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12389996
+                    },
+                    {
+                        "id": 12390000
+                    }
+                ]
+            },
+            {
+                "id": 2939742,
+                "phase": {
+                    "id": 2006043,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Los Finos Remastered. Torneo de Aniversario.",
         "tournament_id": 802206,
         "city": "Santiago de Quer\u00e9taro",
@@ -75959,6 +75986,9 @@
         "streams": [
             {
                 "streamName": "losfinosqro"
+            },
+            {
+                "streamName": "cosmichive_gaming"
             }
         ],
         "timezone": "America/Mexico_City",
@@ -89966,28 +89996,6 @@
                 "id": 2942986,
                 "phase": {
                     "id": 2008784,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1407309": {
-        "id": 1407309,
-        "name": "Singles",
-        "slug": "tournament/cuchitril-royal-rumble-3/event/singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 5,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1751004000,
-        "phaseGroups": [
-            {
-                "id": 2942975,
-                "phase": {
-                    "id": 2008773,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -116599,7 +116607,7 @@
         "name": "SSBU Singles",
         "slug": "tournament/drexel-weekly-grill-fishue-1/event/ssbu-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 12,
         "videogame": {
             "id": 1386
@@ -119388,7 +119396,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/tgz-throwdown-thursdays-206/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 30,
         "videogame": {
             "id": 1386
@@ -120215,7 +120223,7 @@
         "name": "Local Super Smash Bros Cash Tournament | BrawlaPalooza West Palm Beach",
         "slug": "tournament/july-s-premier-league-tournament-series-by-brawlapalooza/event/local-super-smash-bros-cash-tournament-brawlapalooza-west-palm-beach",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1386
@@ -129037,7 +129045,7 @@
         "name": "GutterBall/Redemption #14",
         "slug": "tournament/the-super-smashbowl-16/event/gutterball-redemption-14",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 4,
         "videogame": {
             "id": 1386
@@ -134656,7 +134664,7 @@
         "name": "Singles",
         "slug": "tournament/missed-dunk-2/event/singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 15,
         "videogame": {
             "id": 1386
@@ -136300,7 +136308,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/teamsaltillo-c-psula-rivals-9/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 49,
         "videogame": {
             "id": 1386
@@ -137806,7 +137814,7 @@
         "name": "Singles Starts8:30pm",
         "slug": "tournament/runback-thursday-s-19/event/singles-starts8-30pm",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 15,
         "videogame": {
             "id": 1386
@@ -149322,7 +149330,7 @@
         "name": "Doubles",
         "slug": "tournament/howling-at-the-moon-871-doubles/event/doubles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 18,
         "videogame": {
             "id": 1386
@@ -152212,7 +152220,7 @@
         "slug": "tournament/15-prizepool-baeverse-8-torta-pounders-only/event/ultimate-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -152266,7 +152274,7 @@
         "slug": "tournament/uvic-smash-ultimate-67/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -152367,5 +152375,230 @@
         "country_code": "US",
         "lat": 25.6281388,
         "lng": -80.3406116
+    },
+    "1412242": {
+        "id": 1412242,
+        "name": "Ultimate Singles",
+        "slug": "tournament/clown-contest-4-we-re-so-back-not-really/event/ultimate-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1752271200,
+        "phaseGroups": [
+            {
+                "id": 2951228,
+                "phase": {
+                    "id": 2015198,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Clown Contest 4 - We're So Back (not really)",
+        "tournament_id": 805723,
+        "city": null,
+        "url": "https://smash.gg/tournament/clown-contest-4-we-re-so-back-not-really/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "enriquethepigeon"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1752271200,
+        "tournament_endAt": 1752289200,
+        "tournament_registrationClosesAt": 1752267600,
+        "images": [
+            {
+                "id": "8435705",
+                "url": "https://images.start.gg/images/tournament/805723/image-0eac87cf071031d407958238e4760ac7.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8435706",
+                "url": "https://images.start.gg/images/tournament/805723/image-bac3e356dab5ccac41a7bba33b65db8f.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1412265": {
+        "id": 1412265,
+        "name": "Ultimate Singles",
+        "slug": "tournament/showdown-in-the-shoals-155-renaissance-edition/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1751931900,
+        "phaseGroups": [
+            {
+                "id": 2951257,
+                "phase": {
+                    "id": 2015223,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Showdown in the Shoals 155 (Renaissance Edition)",
+        "tournament_id": 805738,
+        "city": "Florence",
+        "url": "https://smash.gg/tournament/showdown-in-the-shoals-155-renaissance-edition/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "ShoalsSmashSeries"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1751931900,
+        "tournament_endAt": 1751947200,
+        "tournament_registrationClosesAt": 1752035400,
+        "images": [
+            {
+                "id": "8435733",
+                "url": "https://images.start.gg/images/tournament/805738/image-dddb0ee5619c86c656ee92ccd0b97e83.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "8435734",
+                "url": "https://images.start.gg/images/tournament/805738/image-d3a23955777b1c2607c5944f1c832bfb.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "205 S Seminary St, Florence, AL 35630, USA",
+        "tournament_addrState": "AL",
+        "country_code": "US",
+        "lat": 34.7996178,
+        "lng": -87.673591
+    },
+    "1412252": {
+        "id": 1412252,
+        "name": "Ultimate Singles",
+        "slug": "tournament/spike-60/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1751835600,
+        "phaseGroups": [
+            {
+                "id": 2951238,
+                "phase": {
+                    "id": 2015208,
+                    "name": "Pools"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Spike #60",
+        "tournament_id": 805733,
+        "city": "Veracruz",
+        "url": "https://smash.gg/tournament/spike-60/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Mexico_City",
+        "tournament_startAt": 1751835600,
+        "tournament_endAt": 1751857200,
+        "tournament_registrationClosesAt": 1751839200,
+        "images": [
+            {
+                "id": "8435709",
+                "url": "https://images.start.gg/images/tournament/805733/image-a3ce3f81a56ce5081d68806d9aa3ee99.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8435710",
+                "url": "https://images.start.gg/images/tournament/805733/image-d95173562af1df7c3a2f5021ebd4fc6a.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Sierra de Apucarama 319, Las Brisas, 91809 Veracruz, Ver., M\u00e9xico",
+        "tournament_addrState": "Ver.",
+        "country_code": "MX",
+        "lat": 19.2024769,
+        "lng": -96.1886243
+    },
+    "1412256": {
+        "id": 1412256,
+        "name": "TORNEO SOLO RANDOMS",
+        "slug": "tournament/torneo-tematico-solo-random/event/torneo-solo-randoms",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 5,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1751662800,
+        "phaseGroups": [
+            {
+                "id": 2951242,
+                "phase": {
+                    "id": 2015212,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "TORNEO TEMATICO SOLO RANDOM",
+        "tournament_id": 805727,
+        "city": null,
+        "url": "https://smash.gg/tournament/torneo-tematico-solo-random/event/torneo-solo-randoms",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1751612400,
+        "tournament_endAt": 1751698560,
+        "tournament_registrationClosesAt": 1751660520,
+        "images": [
+            {
+                "id": "8435714",
+                "url": "https://images.start.gg/images/tournament/805727/image-27b76b6f0141ddc2926d295b4ccc2771.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1412255": {
+        "id": 1412255,
+        "name": "Ultimate Singles #43",
+        "slug": "tournament/missed-registration-chapter-3/event/ultimate-singles-43",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 13,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1751608800,
+        "phaseGroups": [
+            {
+                "id": 2951241,
+                "phase": {
+                    "id": 2015211,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     }
 }
