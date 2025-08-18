@@ -70556,7 +70556,7 @@
         "slug": "tournament/comics-y-mazmorras-monthly-6/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 8,
         "videogame": {
             "id": 1386
         },
@@ -98381,7 +98381,7 @@
         "name": "Singles Tournament",
         "slug": "tournament/hit-121-in-maesuma-hit-121-in-hirakata/event/singles-tournament",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 32,
         "videogame": {
             "id": 1386
@@ -107382,8 +107382,8 @@
         "name": "Ultimate Singles",
         "slug": "tournament/la-bi-weekly-aux3d-8/event/ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 18,
         "videogame": {
             "id": 1386
         },
@@ -120250,12 +120250,54 @@
         "slug": "tournament/tls-mad-ness-60/event/1v1-ultimate",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 11,
+        "numEntrants": 53,
         "videogame": {
             "id": 1386
         },
         "startAt": 1755532800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3000064,
+                "phase": {
+                    "id": 2049628,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12623618
+                    },
+                    {
+                        "id": 12623619
+                    },
+                    {
+                        "id": 12623620
+                    },
+                    {
+                        "id": 12623621
+                    },
+                    {
+                        "id": 12623622
+                    },
+                    {
+                        "id": 12623623
+                    },
+                    {
+                        "id": 12623624
+                    },
+                    {
+                        "id": 12623625
+                    }
+                ]
+            },
+            {
+                "id": 3000065,
+                "phase": {
+                    "id": 2049629,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "TLS MAD'Ness #60",
         "tournament_id": 818804,
         "city": "Toulouse",
@@ -122131,34 +122173,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Lavatorium #3",
-        "tournament_id": 817277,
-        "city": "Dijon",
-        "url": "https://smash.gg/tournament/lavatorium-3/event/ultimate-singles",
-        "streams": [
-            {
-                "streamName": "lotsofblood"
-            }
-        ],
-        "timezone": "Europe/Paris",
-        "tournament_startAt": 1755475200,
-        "tournament_endAt": 1755496800,
-        "tournament_registrationClosesAt": 1755496800,
-        "images": [
-            {
-                "id": "8565874",
-                "url": "https://images.start.gg/images/tournament/817277/image-948783972509288eebd8358c68f44dab.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Pl. de la R\u00e9publique, 21000 Dijon, France",
-        "tournament_addrState": "Bourgogne-Franche-Comt\u00e9",
-        "country_code": "FR",
-        "lat": 47.3263515,
-        "lng": 5.0447809
+        ]
     },
     "1438899": {
         "id": 1438899,
@@ -136218,7 +136233,7 @@
         "name": "Pixel SMASH",
         "slug": "tournament/pixel-smash-289/event/pixel-smash",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 29,
         "videogame": {
             "id": 1386
@@ -146018,12 +146033,21 @@
         "slug": "tournament/new-frismash-weekly-32/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
         "startAt": 1755491400,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 3003423,
+                "phase": {
+                    "id": 2051795,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1440366": {
         "id": 1440366,
@@ -146036,7 +146060,16 @@
             "id": 1386
         },
         "startAt": 1755498600,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 3003425,
+                "phase": {
+                    "id": 2051797,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1440365": {
         "id": 1440365,
@@ -146049,7 +146082,16 @@
             "id": 1386
         },
         "startAt": 1755498600,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 3003424,
+                "phase": {
+                    "id": 2051796,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1440339": {
         "id": 1440339,
@@ -147411,5 +147453,110 @@
         "country_code": "IE",
         "lat": 53.2664148,
         "lng": -9.0713096
+    },
+    "1440438": {
+        "id": 1440438,
+        "name": "1v1 SSBU",
+        "slug": "tournament/tenkaichi-budokai-3-1/event/1v1-ssbu",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1755700200,
+        "phaseGroups": [
+            {
+                "id": 3003588,
+                "phase": {
+                    "id": 2051896,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Tenkaichi Budokai #3",
+        "tournament_id": 819663,
+        "city": null,
+        "url": "https://smash.gg/tournament/tenkaichi-budokai-3-1/event/1v1-ssbu",
+        "streams": [
+            {
+                "streamName": "redakax"
+            },
+            {
+                "streamName": "thebestpluck"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1755691200,
+        "tournament_endAt": 1755727140,
+        "tournament_registrationClosesAt": 1755699300,
+        "images": [
+            {
+                "id": "8580945",
+                "url": "https://images.start.gg/images/tournament/819663/image-b701a1dffaab835ca9de9d4bc1c0b93b.png",
+                "type": "banner"
+            },
+            {
+                "id": "8580946",
+                "url": "https://images.start.gg/images/tournament/819663/image-be2458cfbf6a0506c11d04264b173197.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null,
+        "region_lock": [
+            "AL",
+            "DE",
+            "AD",
+            "AT",
+            "BE",
+            "BY",
+            "BA",
+            "BG",
+            "CY",
+            "HR",
+            "DK",
+            "ES",
+            "EE",
+            "FI",
+            "FR",
+            "GR",
+            "HU",
+            "IE",
+            "IS",
+            "IT",
+            "KZ",
+            "LV",
+            "LI",
+            "LT",
+            "LU",
+            "MT",
+            "MD",
+            "MC",
+            "ME",
+            "Macedonia",
+            "NO",
+            "NL",
+            "PL",
+            "PT",
+            "GB",
+            "RU",
+            "SM",
+            "RS",
+            "SK",
+            "SI",
+            "SE",
+            "CH",
+            "CZ",
+            "TR",
+            "UA",
+            "VA"
+        ]
     }
 }
