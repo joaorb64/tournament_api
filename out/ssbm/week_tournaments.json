@@ -10436,12 +10436,21 @@
         "slug": "tournament/back-to-pools/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 22,
+        "numEntrants": 23,
         "videogame": {
             "id": 1
         },
         "startAt": 1758387600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2992888,
+                "phase": {
+                    "id": 2044598,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Back To Pools",
         "tournament_id": 816849,
         "city": "Vancouver",
@@ -10492,7 +10501,16 @@
             "id": 1
         },
         "startAt": 1758387600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 2992890,
+                "phase": {
+                    "id": 2044600,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Back To Pools",
         "tournament_id": 816849,
         "city": "Vancouver",
@@ -43234,7 +43252,7 @@
         "name": "Melee Singles",
         "slug": "tournament/ice-and-shine-on-wednesday-6/event/melee-singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 7,
         "videogame": {
             "id": 1
@@ -43831,7 +43849,7 @@
         "slug": "tournament/melee-ain-t-dead-yet-11-taylor-s-version/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 14,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -43841,47 +43859,14 @@
                 "id": 2867908,
                 "phase": {
                     "id": 1953464,
-                    "name": "Round Robin (Bo3)"
+                    "name": "Pools"
                 },
                 "progressionsOut": [
                     {
-                        "id": 12771670
-                    }
-                ]
-            },
-            {
-                "id": 3038837,
-                "phase": {
-                    "id": 1953464,
-                    "name": "Round Robin (Bo3)"
-                },
-                "progressionsOut": [
+                        "id": 12775258
+                    },
                     {
-                        "id": 12771671
-                    }
-                ]
-            },
-            {
-                "id": 3038838,
-                "phase": {
-                    "id": 1953464,
-                    "name": "Round Robin (Bo3)"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 12771672
-                    }
-                ]
-            },
-            {
-                "id": 3038839,
-                "phase": {
-                    "id": 1953464,
-                    "name": "Round Robin (Bo3)"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 12771673
+                        "id": 12775259
                     }
                 ]
             },
@@ -43889,9 +43874,33 @@
                 "id": 2867909,
                 "phase": {
                     "id": 1953465,
-                    "name": "8-Player Gauntlet (Bo5)"
+                    "name": "Gauntlet"
                 },
                 "progressionsOut": null
+            },
+            {
+                "id": 3039881,
+                "phase": {
+                    "id": 2079961,
+                    "name": "Buy In Bracket A"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12775257
+                    }
+                ]
+            },
+            {
+                "id": 3040004,
+                "phase": {
+                    "id": 2080043,
+                    "name": "Buy In Bracket B"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12775260
+                    }
+                ]
             }
         ],
         "tournament": "Melee Ain't Dead Yet 11 (Taylor's Version)",
@@ -51706,5 +51715,113 @@
         "country_code": "US",
         "lat": 30.7284349,
         "lng": -88.17354739999999
+    },
+    "1462698": {
+        "id": 1462698,
+        "name": "Melee Singles",
+        "slug": "tournament/d20-melee-26-the-1-year-anniversary/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1758668400,
+        "phaseGroups": [
+            {
+                "id": 3040026,
+                "phase": {
+                    "id": 2080057,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "D20 Melee 26: The 1 Year Anniversary",
+        "tournament_id": 830752,
+        "city": "Ballwin",
+        "url": "https://smash.gg/tournament/d20-melee-26-the-1-year-anniversary/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "dinksterlive"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1758668400,
+        "tournament_endAt": 1758679200,
+        "tournament_registrationClosesAt": 1758672000,
+        "images": [
+            {
+                "id": "8685850",
+                "url": "https://images.start.gg/images/tournament/830752/image-4af782c08b2dca106d585b24eb8c4b1e.png",
+                "type": "profile"
+            },
+            {
+                "id": "8685851",
+                "url": "https://images.start.gg/images/tournament/830752/image-1f71163cbb66d58a6fa8cadeef42e855.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "14051 Manchester Rd, Ballwin, MO 63011, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 38.5960824,
+        "lng": -90.49467489999999
+    },
+    "1462690": {
+        "id": 1462690,
+        "name": "Melee Singles",
+        "slug": "tournament/launceston-smash-club-35/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1758182400,
+        "phaseGroups": [
+            {
+                "id": 3040009,
+                "phase": {
+                    "id": 2080047,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Launceston Smash Club #35",
+        "tournament_id": 830746,
+        "city": "Launceston",
+        "url": "https://smash.gg/tournament/launceston-smash-club-35/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "LtonSmashClub"
+            }
+        ],
+        "timezone": "Australia/Hobart",
+        "tournament_startAt": 1758182400,
+        "tournament_endAt": 1758193200,
+        "tournament_registrationClosesAt": 1756976400,
+        "images": [
+            {
+                "id": "8685792",
+                "url": "https://images.start.gg/images/tournament/830746/image-9ef90d03f6a3e9e136db74455a721167.png",
+                "type": "profile"
+            },
+            {
+                "id": "8685793",
+                "url": "https://images.start.gg/images/tournament/830746/image-83835da32fbd64bb3b6521b48cf33c26.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "111 Elizabeth St, Launceston TAS 7250, Australia",
+        "tournament_addrState": "TAS",
+        "country_code": "AU",
+        "lat": -41.4423625,
+        "lng": 147.1352527
     }
 }
