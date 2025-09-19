@@ -15853,7 +15853,7 @@
         "slug": "tournament/the-met-iv/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 11,
+        "numEntrants": 39,
         "videogame": {
             "id": 1
         },
@@ -16090,7 +16090,7 @@
         "slug": "tournament/the-met-iv/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 9,
         "videogame": {
             "id": 1
         },
@@ -16155,7 +16155,16 @@
             "id": 1
         },
         "startAt": 1758369600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3006159,
+                "phase": {
+                    "id": 2053872,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "The Met IV",
         "tournament_id": 820434,
         "city": "Oslo",
@@ -23860,7 +23869,7 @@
         "slug": "tournament/smash-srbija-monthly-6/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -23878,7 +23887,7 @@
         "timezone": "Europe/Belgrade",
         "tournament_startAt": 1758407400,
         "tournament_endAt": 1758475800,
-        "tournament_registrationClosesAt": 1758402000,
+        "tournament_registrationClosesAt": 1758319140,
         "images": [
             {
                 "id": "8648524",
@@ -48361,7 +48370,7 @@
         "slug": "tournament/anc-smashweekly-261/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -48375,42 +48384,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "ANC Smashweekly #261",
-        "tournament_id": 830785,
-        "city": "Turku",
-        "url": "https://smash.gg/tournament/anc-smashweekly-261/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "smashfinland2"
-            },
-            {
-                "streamName": "academicnintendoclub"
-            }
-        ],
-        "timezone": "Europe/Helsinki",
-        "tournament_startAt": 1758290400,
-        "tournament_endAt": 1758308400,
-        "tournament_registrationClosesAt": 1758308400,
-        "images": [
-            {
-                "id": "8686203",
-                "url": "https://images.start.gg/images/tournament/830785/image-d000f51dc6fda4e56ddaea3dc132c716.jpg",
-                "type": "banner"
-            },
-            {
-                "id": "8686204",
-                "url": "https://images.start.gg/images/tournament/830785/image-dbaae8194194ee828f45e45057584a29.jpg",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": "Kampuskappeli",
-        "tournament_venueAddress": "Rehtorinpellonkatu 4c, 20500 Turku, Suomi",
-        "tournament_addrState": "Varsinais-Suomi",
-        "country_code": "FI",
-        "lat": 60.45489809999999,
-        "lng": 22.2877364
+        ]
     },
     "1462807": {
         "id": 1462807,
@@ -52233,5 +52207,62 @@
         "country_code": "US",
         "lat": 40.1094131,
         "lng": -88.2271693
+    },
+    "1463469": {
+        "id": 1463469,
+        "name": "Melee Singles",
+        "slug": "tournament/fries-on-a-salad-204-be-water-my-friend/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1758754800,
+        "phaseGroups": [
+            {
+                "id": 3041134,
+                "phase": {
+                    "id": 2080998,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Fries on a Salad #204: Be Water, My Friend",
+        "tournament_id": 831162,
+        "city": "Pittsburgh",
+        "url": "https://smash.gg/tournament/fries-on-a-salad-204-be-water-my-friend/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "snowflame_47"
+            },
+            {
+                "streamName": "pghrivals"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1758753000,
+        "tournament_endAt": 1758772740,
+        "tournament_registrationClosesAt": 1758753000,
+        "images": [
+            {
+                "id": "8689640",
+                "url": "https://images.start.gg/images/tournament/831162/image-86153e7366f88c2d2a19320d687c9528.png",
+                "type": "profile"
+            },
+            {
+                "id": "8689641",
+                "url": "https://images.start.gg/images/tournament/831162/image-718f5fba4513ab0771b4d56637cfc126.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1913 McCague St, Pittsburgh, PA 15218, USA",
+        "tournament_addrState": "PA",
+        "country_code": "US",
+        "lat": 40.422568,
+        "lng": -79.88735799999999
     }
 }
