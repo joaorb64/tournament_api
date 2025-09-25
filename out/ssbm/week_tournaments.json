@@ -24268,7 +24268,7 @@
         "name": "Melee Singles",
         "slug": "tournament/super-smash-jacks-197/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 12,
         "videogame": {
             "id": 1
@@ -42198,7 +42198,7 @@
         "name": "Melee Singles",
         "slug": "tournament/adam-s-smash-series-161-yalli-detained-by-us-customs/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 49,
         "videogame": {
             "id": 1
@@ -48284,7 +48284,7 @@
         "name": "Singles",
         "slug": "tournament/melee-at-night-808/event/singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 8,
         "videogame": {
             "id": 1
@@ -49231,21 +49231,30 @@
         "slug": "tournament/not-your-normal-netplay-1/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
-        "startAt": 1759375800,
-        "phaseGroups": [],
+        "startAt": 1759374000,
+        "phaseGroups": [
+            {
+                "id": 3048230,
+                "phase": {
+                    "id": 2086508,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "not your Normal netplay #1",
         "tournament_id": 833291,
         "city": null,
         "url": "https://smash.gg/tournament/not-your-normal-netplay-1/event/melee-singles",
         "streams": null,
         "timezone": null,
-        "tournament_startAt": 1759375800,
+        "tournament_startAt": 1759374000,
         "tournament_endAt": 1759381140,
-        "tournament_registrationClosesAt": 1759374000,
+        "tournament_registrationClosesAt": 1759370400,
         "images": [
             {
                 "id": "8708443",
@@ -49386,5 +49395,62 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1467926": {
+        "id": 1467926,
+        "name": "Melee Singles",
+        "slug": "tournament/homie-stock-115/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1758933000,
+        "phaseGroups": [
+            {
+                "id": 3048258,
+                "phase": {
+                    "id": 2086532,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Homie Stock #115",
+        "tournament_id": 833311,
+        "city": "Pullman",
+        "url": "https://smash.gg/tournament/homie-stock-115/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "PalouseGaming"
+            },
+            {
+                "streamName": "Palousemelee"
+            }
+        ],
+        "timezone": "America/Los_Angeles",
+        "tournament_startAt": 1758933000,
+        "tournament_endAt": 1758948600,
+        "tournament_registrationClosesAt": 1758947400,
+        "images": [
+            {
+                "id": "8708656",
+                "url": "https://images.start.gg/images/tournament/833311/image-ab2cbc2682e0a9bdd63227f714849927.png",
+                "type": "profile"
+            },
+            {
+                "id": "8708658",
+                "url": "https://images.start.gg/images/tournament/833311/image-65d7a94e71024215467baa7ba50f56e5.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1270 NE Washington St, Pullman, WA 99164, USA",
+        "tournament_addrState": "WA",
+        "country_code": "US",
+        "lat": 46.7281512,
+        "lng": -117.1655342
     }
 }
