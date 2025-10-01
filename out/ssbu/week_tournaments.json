@@ -13013,7 +13013,7 @@
         "slug": "tournament/luminosity-makes-moves-miami-2025-1/event/ultimate-collegiate-crews",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -13061,7 +13061,7 @@
         "slug": "tournament/luminosity-makes-moves-miami-2025-1/event/ultimate-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 20,
+        "numEntrants": 27,
         "videogame": {
             "id": 1386
         },
@@ -13109,7 +13109,7 @@
         "slug": "tournament/luminosity-makes-moves-miami-2025-1/event/ultimate-national-arcadian",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 97,
+        "numEntrants": 112,
         "videogame": {
             "id": 1386
         },
@@ -13157,7 +13157,7 @@
         "slug": "tournament/luminosity-makes-moves-miami-2025-1/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 198,
+        "numEntrants": 235,
         "videogame": {
             "id": 1386
         },
@@ -49748,8 +49748,8 @@
         "name": "Singles",
         "slug": "tournament/2-smash-in-shanghai-2/event/singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 63,
+        "state": "ACTIVE",
+        "numEntrants": 66,
         "videogame": {
             "id": 1386
         },
@@ -55287,7 +55287,7 @@
                 "type": "banner"
             }
         ],
-        "tournament_multievent": true,
+        "tournament_multievent": false,
         "tournament_venueName": null,
         "tournament_venueAddress": "113-251 Shenks Ln, Millersville, PA 17551, USA",
         "tournament_addrState": "PA",
@@ -73539,12 +73539,21 @@
         "slug": "tournament/homeyhavoc-4/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 25,
+        "numEntrants": 45,
         "videogame": {
             "id": 1386
         },
         "startAt": 1759464000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3040960,
+                "phase": {
+                    "id": 2080865,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "HomeyHavoc #4",
         "tournament_id": 831096,
         "city": "Gwangjin District",
@@ -78420,28 +78429,6 @@
             }
         ]
     },
-    "1464830": {
-        "id": 1464830,
-        "name": "Singles",
-        "slug": "tournament/quincenal-primavera-2025-3/event/singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 23,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1758726000,
-        "phaseGroups": [
-            {
-                "id": 3043687,
-                "phase": {
-                    "id": 2082684,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1460463": {
         "id": 1460463,
         "name": "Ultimate Side Bracket: Amateurs",
@@ -80850,50 +80837,6 @@
             }
         ]
     },
-    "1465175": {
-        "id": 1465175,
-        "name": "Encore Smash Ultimate Singles",
-        "slug": "tournament/encore-smash-315/event/encore-smash-ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 25,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1758726000,
-        "phaseGroups": [
-            {
-                "id": 3044190,
-                "phase": {
-                    "id": 2083128,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1465176": {
-        "id": 1465176,
-        "name": "Ultimate Redemption Bracket",
-        "slug": "tournament/encore-smash-315/event/ultimate-redemption-bracket",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1758726000,
-        "phaseGroups": [
-            {
-                "id": 3044191,
-                "phase": {
-                    "id": 2083129,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1465187": {
         "id": 1465187,
         "name": "Singles",
@@ -81175,28 +81118,6 @@
                 "id": 3044309,
                 "phase": {
                     "id": 2083234,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1465262": {
-        "id": 1465262,
-        "name": "Singles",
-        "slug": "tournament/wasteland-weekly-4/event/singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 15,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1758726000,
-        "phaseGroups": [
-            {
-                "id": 3044320,
-                "phase": {
-                    "id": 2083245,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -84645,71 +84566,6 @@
                 "id": 3044917,
                 "phase": {
                     "id": 2083760,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1465634": {
-        "id": 1465634,
-        "name": "Ultimate Singles",
-        "slug": "tournament/egw-96/event/ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 7,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1758726000,
-        "phaseGroups": [
-            {
-                "id": 3044839,
-                "phase": {
-                    "id": 2083690,
-                    "name": "Round Robin (Bo3)"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 12805103
-                    },
-                    {
-                        "id": 12805104
-                    },
-                    {
-                        "id": 12805105
-                    },
-                    {
-                        "id": 12805106
-                    }
-                ]
-            },
-            {
-                "id": 3044841,
-                "phase": {
-                    "id": 2083691,
-                    "name": "Bracket (Bo5)"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1465664": {
-        "id": 1465664,
-        "name": "Ultimate Singles",
-        "slug": "tournament/arkade-smash-weekly-251/event/ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 11,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1758726000,
-        "phaseGroups": [
-            {
-                "id": 3044883,
-                "phase": {
-                    "id": 2083728,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -125131,8 +124987,8 @@
         "name": "Singles",
         "slug": "tournament/wasteland-weekly-five-red-five-1/event/singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 5,
+        "state": "ACTIVE",
+        "numEntrants": 20,
         "videogame": {
             "id": 1386
         },
@@ -125146,35 +125002,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Wasteland Weekly #Five, Red Five",
-        "tournament_id": 834049,
-        "city": "Val\u00e8ncia",
-        "url": "https://smash.gg/tournament/wasteland-weekly-five-red-five-1/event/singles",
-        "streams": null,
-        "timezone": "Europe/Madrid",
-        "tournament_startAt": 1759330800,
-        "tournament_endAt": 1759348800,
-        "tournament_registrationClosesAt": 1759323600,
-        "images": [
-            {
-                "id": "8715738",
-                "url": "https://images.start.gg/images/tournament/834049/image-150c9117947fbdb7d598760ad1714aa0.png",
-                "type": "profile"
-            },
-            {
-                "id": "8715739",
-                "url": "https://images.start.gg/images/tournament/834049/image-6d7074ac016baefb20568bc43e08bbbf.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "C/ de Jer\u00f3nima Gal\u00e9s, 45, Jes\u00fas, 46017 Val\u00e8ncia, Valencia, Espa\u00f1a",
-        "tournament_addrState": "VC",
-        "country_code": "ES",
-        "lat": 39.4519381,
-        "lng": -0.3910596
+        ]
     },
     "1469303": {
         "id": 1469303,
@@ -162180,7 +162008,7 @@
         "slug": "tournament/63-sp-1/event/1on1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 19,
+        "numEntrants": 26,
         "videogame": {
             "id": 1386
         },
@@ -167279,7 +167107,7 @@
         "slug": "tournament/genesis-black-at-guildhouse-2025/event/ultimate-singles-sat",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -178909,7 +178737,7 @@
         "slug": "tournament/stomping-ground-2/event/ult-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -178996,7 +178824,7 @@
         "slug": "tournament/for-glory-2-1/event/fg2-low-ranking",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
@@ -179046,7 +178874,7 @@
         "slug": "tournament/for-glory-2-1/event/fg2-novatos",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
@@ -179314,7 +179142,7 @@
         "slug": "tournament/big-fish-123/event/ult-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1386
         },
@@ -179567,7 +179395,7 @@
         "slug": "tournament/that-ain-t-charlie-195/event/super-sudden-death",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 3,
         "videogame": {
             "id": 1386
         },
@@ -179627,7 +179455,7 @@
         "slug": "tournament/gator-stock-exchange-88/event/smash-ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1386
         },
@@ -179869,7 +179697,7 @@
         "slug": "tournament/premiere-smash-tournament-66/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -179919,7 +179747,7 @@
         "slug": "tournament/the-roost-48/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -179966,5 +179794,482 @@
         "country_code": "US",
         "lat": 38.0445578,
         "lng": -84.5063883
+    },
+    "1472472": {
+        "id": 1472472,
+        "name": "Ultimate Doubles",
+        "slug": "tournament/csi-gaming-october-ssbu-tournament/event/ultimate-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1760205600,
+        "phaseGroups": [
+            {
+                "id": 3055258,
+                "phase": {
+                    "id": 2092285,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "CSI Gaming -- October SSBU tournament",
+        "tournament_id": 835682,
+        "city": "Twin Falls",
+        "url": "https://smash.gg/tournament/csi-gaming-october-ssbu-tournament/event/ultimate-doubles",
+        "streams": null,
+        "timezone": "America/Boise",
+        "tournament_startAt": 1760205600,
+        "tournament_endAt": 1760227200,
+        "tournament_registrationClosesAt": 1760218200,
+        "images": [],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "315 Falls Ave, Twin Falls, ID 83301, USA",
+        "tournament_addrState": "ID",
+        "country_code": "US",
+        "lat": 42.57892469999999,
+        "lng": -114.4717005
+    },
+    "1472471": {
+        "id": 1472471,
+        "name": "Ultimate Singles",
+        "slug": "tournament/csi-gaming-october-ssbu-tournament/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1760205600,
+        "phaseGroups": [
+            {
+                "id": 3055257,
+                "phase": {
+                    "id": 2092284,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "CSI Gaming -- October SSBU tournament",
+        "tournament_id": 835682,
+        "city": "Twin Falls",
+        "url": "https://smash.gg/tournament/csi-gaming-october-ssbu-tournament/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Boise",
+        "tournament_startAt": 1760205600,
+        "tournament_endAt": 1760227200,
+        "tournament_registrationClosesAt": 1760218200,
+        "images": [],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "315 Falls Ave, Twin Falls, ID 83301, USA",
+        "tournament_addrState": "ID",
+        "country_code": "US",
+        "lat": 42.57892469999999,
+        "lng": -114.4717005
+    },
+    "1472579": {
+        "id": 1472579,
+        "name": "Amateur Bracket",
+        "slug": "tournament/we-tech-those-smash-club-mtu-10-4-25/event/amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1759597200,
+        "phaseGroups": [
+            {
+                "id": 3055459,
+                "phase": {
+                    "id": 2092415,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "We Tech Those! Smash Club @ MTU 10/4/25",
+        "tournament_id": 835733,
+        "city": "Houghton",
+        "url": "https://smash.gg/tournament/we-tech-those-smash-club-mtu-10-4-25/event/amateur-bracket",
+        "streams": [
+            {
+                "streamName": "Smash Club at Michigan Tech"
+            }
+        ],
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1759597200,
+        "tournament_endAt": 1759618800,
+        "tournament_registrationClosesAt": 1759604400,
+        "images": [
+            {
+                "id": "8729177",
+                "url": "https://images.start.gg/images/tournament/835733/image-955f8f9868571187ebb39c554d2020d5.png",
+                "type": "profile"
+            },
+            {
+                "id": "8729178",
+                "url": "https://images.start.gg/images/tournament/835733/image-23a1ec59f52c3a6ad81e461e3fdaa217.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Minerals and Materials Engineering Bldg, Cliff Dr, Houghton, MI 49931, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 47.11900540000001,
+        "lng": -88.5450082
+    },
+    "1472582": {
+        "id": 1472582,
+        "name": "Squad Strike Side Event",
+        "slug": "tournament/we-tech-those-smash-club-mtu-10-4-25/event/squad-strike-side-event",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1759597200,
+        "phaseGroups": [
+            {
+                "id": 3055462,
+                "phase": {
+                    "id": 2092418,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "We Tech Those! Smash Club @ MTU 10/4/25",
+        "tournament_id": 835733,
+        "city": "Houghton",
+        "url": "https://smash.gg/tournament/we-tech-those-smash-club-mtu-10-4-25/event/squad-strike-side-event",
+        "streams": [
+            {
+                "streamName": "Smash Club at Michigan Tech"
+            }
+        ],
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1759597200,
+        "tournament_endAt": 1759618800,
+        "tournament_registrationClosesAt": 1759604400,
+        "images": [
+            {
+                "id": "8729177",
+                "url": "https://images.start.gg/images/tournament/835733/image-955f8f9868571187ebb39c554d2020d5.png",
+                "type": "profile"
+            },
+            {
+                "id": "8729178",
+                "url": "https://images.start.gg/images/tournament/835733/image-23a1ec59f52c3a6ad81e461e3fdaa217.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Minerals and Materials Engineering Bldg, Cliff Dr, Houghton, MI 49931, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 47.11900540000001,
+        "lng": -88.5450082
+    },
+    "1472578": {
+        "id": 1472578,
+        "name": "Ultimate Singles",
+        "slug": "tournament/we-tech-those-smash-club-mtu-10-4-25/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1759604400,
+        "phaseGroups": [
+            {
+                "id": 3055457,
+                "phase": {
+                    "id": 2092413,
+                    "name": "Bracket (Best of 3)"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12831611
+                    },
+                    {
+                        "id": 12831612
+                    },
+                    {
+                        "id": 12831613
+                    },
+                    {
+                        "id": 12831614
+                    },
+                    {
+                        "id": 12831615
+                    },
+                    {
+                        "id": 12831616
+                    },
+                    {
+                        "id": 12831617
+                    },
+                    {
+                        "id": 12831618
+                    }
+                ]
+            },
+            {
+                "id": 3055458,
+                "phase": {
+                    "id": 2092414,
+                    "name": "Top 8 (Best of 5)"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "We Tech Those! Smash Club @ MTU 10/4/25",
+        "tournament_id": 835733,
+        "city": "Houghton",
+        "url": "https://smash.gg/tournament/we-tech-those-smash-club-mtu-10-4-25/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "Smash Club at Michigan Tech"
+            }
+        ],
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1759597200,
+        "tournament_endAt": 1759618800,
+        "tournament_registrationClosesAt": 1759604400,
+        "images": [
+            {
+                "id": "8729177",
+                "url": "https://images.start.gg/images/tournament/835733/image-955f8f9868571187ebb39c554d2020d5.png",
+                "type": "profile"
+            },
+            {
+                "id": "8729178",
+                "url": "https://images.start.gg/images/tournament/835733/image-23a1ec59f52c3a6ad81e461e3fdaa217.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Minerals and Materials Engineering Bldg, Cliff Dr, Houghton, MI 49931, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 47.11900540000001,
+        "lng": -88.5450082
+    },
+    "1472587": {
+        "id": 1472587,
+        "name": "Smash Ultimate Singles",
+        "slug": "tournament/short-hop-163-1/event/smash-ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1759453200,
+        "phaseGroups": [
+            {
+                "id": 3055472,
+                "phase": {
+                    "id": 2092425,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12831741
+                    },
+                    {
+                        "id": 12831743
+                    },
+                    {
+                        "id": 12831745
+                    },
+                    {
+                        "id": 12831747
+                    }
+                ]
+            },
+            {
+                "id": 3055473,
+                "phase": {
+                    "id": 2092425,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12831742
+                    },
+                    {
+                        "id": 12831744
+                    },
+                    {
+                        "id": 12831746
+                    },
+                    {
+                        "id": 12831748
+                    }
+                ]
+            },
+            {
+                "id": 3055474,
+                "phase": {
+                    "id": 2092426,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Short Hop 163",
+        "tournament_id": 835737,
+        "city": "Missoula",
+        "url": "https://smash.gg/tournament/short-hop-163-1/event/smash-ultimate-singles",
+        "streams": [
+            {
+                "streamName": "montana_smash"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1759453200,
+        "tournament_endAt": 1759464000,
+        "tournament_registrationClosesAt": 1759521600,
+        "images": [
+            {
+                "id": "8729210",
+                "url": "https://images.start.gg/images/tournament/835737/image-68ee1dd340353c74faf2db32468c7de5.png",
+                "type": "profile"
+            },
+            {
+                "id": "8729211",
+                "url": "https://images.start.gg/images/tournament/835737/image-6d588b92eb37db2cdeef7e75faba4173.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "32 Campus Dr, Missoula, MT 59812, USA",
+        "tournament_addrState": "MT",
+        "country_code": "US",
+        "lat": 46.8610063,
+        "lng": -113.9825957
+    },
+    "1472588": {
+        "id": 1472588,
+        "name": "Smash Double Dash",
+        "slug": "tournament/short-hop-163-1/event/smash-double-dash",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1759453200,
+        "phaseGroups": [
+            {
+                "id": 3055475,
+                "phase": {
+                    "id": 2092427,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Short Hop 163",
+        "tournament_id": 835737,
+        "city": "Missoula",
+        "url": "https://smash.gg/tournament/short-hop-163-1/event/smash-double-dash",
+        "streams": [
+            {
+                "streamName": "montana_smash"
+            }
+        ],
+        "timezone": "America/Denver",
+        "tournament_startAt": 1759453200,
+        "tournament_endAt": 1759464000,
+        "tournament_registrationClosesAt": 1759521600,
+        "images": [
+            {
+                "id": "8729210",
+                "url": "https://images.start.gg/images/tournament/835737/image-68ee1dd340353c74faf2db32468c7de5.png",
+                "type": "profile"
+            },
+            {
+                "id": "8729211",
+                "url": "https://images.start.gg/images/tournament/835737/image-6d588b92eb37db2cdeef7e75faba4173.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "32 Campus Dr, Missoula, MT 59812, USA",
+        "tournament_addrState": "MT",
+        "country_code": "US",
+        "lat": 46.8610063,
+        "lng": -113.9825957
+    },
+    "1472592": {
+        "id": 1472592,
+        "name": "Ultimate Doubles",
+        "slug": "tournament/salt-water-smash-352-doubles/event/ultimate-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1759437000,
+        "phaseGroups": [
+            {
+                "id": 3055484,
+                "phase": {
+                    "id": 2092434,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Salt Water Smash 352: Doubles",
+        "tournament_id": 835741,
+        "city": "St. John's",
+        "url": "https://smash.gg/tournament/salt-water-smash-352-doubles/event/ultimate-doubles",
+        "streams": [
+            {
+                "streamName": "SmashNL"
+            }
+        ],
+        "timezone": "America/St_Johns",
+        "tournament_startAt": 1759437000,
+        "tournament_endAt": 1759451400,
+        "tournament_registrationClosesAt": 1759447800,
+        "images": [
+            {
+                "id": "8729237",
+                "url": "https://images.start.gg/images/tournament/835741/image-50c4c4fd8f1fc883a3ffc9deef0f52d8.png",
+                "type": "profile"
+            },
+            {
+                "id": "8729238",
+                "url": "https://images.start.gg/images/tournament/835741/image-8b5616a03b43d67e7543c762c60d4acd.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": "Engineering Building",
+        "tournament_venueAddress": "1 Arctic Ave, St. John's, NL A1B, Canada",
+        "tournament_addrState": "NL",
+        "country_code": "CA",
+        "lat": 47.5734032,
+        "lng": -52.73510419999999
     }
 }
