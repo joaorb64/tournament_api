@@ -8836,7 +8836,7 @@
         "slug": "tournament/gatorlan-fall-2025/event/super-smash-bros-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 29,
+        "numEntrants": 30,
         "videogame": {
             "id": 1
         },
@@ -11058,12 +11058,21 @@
         "slug": "tournament/lost-level-melee-40/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 12,
         "videogame": {
             "id": 1
         },
         "startAt": 1761066000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3040131,
+                "phase": {
+                    "id": 2080147,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Lost Level Melee #40",
         "tournament_id": 830782,
         "city": "K\u00f6ln",
@@ -11104,7 +11113,16 @@
             "id": 1
         },
         "startAt": 1761076800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3040132,
+                "phase": {
+                    "id": 2080148,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Lost Level Melee #40",
         "tournament_id": 830782,
         "city": "K\u00f6ln",
@@ -46695,7 +46713,7 @@
         "slug": "tournament/fighting-monthlies-christchurch-2025-october-edition/event/smash-melee-wii",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -46823,5 +46841,63 @@
         "country_code": "US",
         "lat": 41.617843,
         "lng": -88.129777
+    },
+    "1486140": {
+        "id": 1486140,
+        "name": "Melee singles",
+        "slug": "tournament/shivr-weekly-1/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1761519540,
+        "phaseGroups": [
+            {
+                "id": 3076263,
+                "phase": {
+                    "id": 2109223,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 3076277,
+                "phase": {
+                    "id": 2109226,
+                    "name": "top 4/8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "SHIVR weekly #1",
+        "tournament_id": 842633,
+        "city": null,
+        "url": "https://smash.gg/tournament/shivr-weekly-1/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1761516000,
+        "tournament_endAt": 1761519600,
+        "tournament_registrationClosesAt": 1761515700,
+        "images": [
+            {
+                "id": "8788117",
+                "url": "https://images.start.gg/images/tournament/842633/image-2031374617f383f1f17fa0568240bacd.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "8788122",
+                "url": "https://images.start.gg/images/tournament/842633/image-28c475e54069a7b6e62188a15eb05d0b.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
