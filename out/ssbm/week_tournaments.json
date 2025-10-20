@@ -12277,7 +12277,7 @@
         "name": "Melee Singles",
         "slug": "tournament/the-rut-deluxe/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 16,
         "videogame": {
             "id": 1
@@ -14308,13 +14308,22 @@
         "name": "Bonus Bracket",
         "slug": "tournament/melee-at-recess-2/event/bonus-bracket",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
         },
         "startAt": 1760914800,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 3051501,
+                "phase": {
+                    "id": 2089108,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1469927": {
         "id": 1469927,
@@ -20343,7 +20352,7 @@
         "name": "Melee Singles",
         "slug": "tournament/brick-box-brawl-rivals-monthly-2/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 17,
         "videogame": {
             "id": 1
@@ -20659,50 +20668,6 @@
         "country_code": "US",
         "lat": 47.9130169,
         "lng": -122.0867335
-    },
-    "1477502": {
-        "id": 1477502,
-        "name": "Melee Singles (EC)",
-        "slug": "tournament/lgbt-s6e6-daisy-and-peach-go-to-the-bathroom-together/event/melee-singles-ec",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 17,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1760311800,
-        "phaseGroups": [
-            {
-                "id": 3063158,
-                "phase": {
-                    "id": 2098561,
-                    "name": "East Coast Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1477503": {
-        "id": 1477503,
-        "name": "Melee Singles (WC)",
-        "slug": "tournament/lgbt-s6e6-daisy-and-peach-go-to-the-bathroom-together/event/melee-singles-wc",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 9,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1760311800,
-        "phaseGroups": [
-            {
-                "id": 3063159,
-                "phase": {
-                    "id": 2098562,
-                    "name": "West Coast Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1475217": {
         "id": 1475217,
@@ -45591,7 +45556,7 @@
         "slug": "tournament/study-hall-6/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -45738,5 +45703,668 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "1485042": {
+        "id": 1485042,
+        "name": "Arcadian Doubles",
+        "slug": "tournament/new-england-melee-arcadian-2025/event/arcadian-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": null,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1765040400,
+        "phaseGroups": [],
+        "tournament": "New England Melee Arcadian 2025",
+        "tournament_id": 842010,
+        "city": "Waltham",
+        "url": "https://smash.gg/tournament/new-england-melee-arcadian-2025/event/arcadian-doubles",
+        "streams": [
+            {
+                "streamName": "gameunderground"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1765040400,
+        "tournament_endAt": 1765080000,
+        "tournament_registrationClosesAt": 1764982800,
+        "images": [
+            {
+                "id": "8787233",
+                "url": "https://images.start.gg/images/tournament/842010/image-0cb1f98f77a00b23c294c884c3da9213.png",
+                "type": "banner"
+            },
+            {
+                "id": "8787339",
+                "url": "https://images.start.gg/images/tournament/842010/image-c56c7bad06afa3ab55f365a5256bde76.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Game Underground",
+        "tournament_venueAddress": "349 Moody St, Waltham, MA 02453, USA",
+        "tournament_addrState": "MA",
+        "country_code": "US",
+        "lat": 42.3702831,
+        "lng": -71.2374623
+    },
+    "1485041": {
+        "id": 1485041,
+        "name": "Arcadian Singles",
+        "slug": "tournament/new-england-melee-arcadian-2025/event/arcadian-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": null,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1765040400,
+        "phaseGroups": [],
+        "tournament": "New England Melee Arcadian 2025",
+        "tournament_id": 842010,
+        "city": "Waltham",
+        "url": "https://smash.gg/tournament/new-england-melee-arcadian-2025/event/arcadian-singles",
+        "streams": [
+            {
+                "streamName": "gameunderground"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1765040400,
+        "tournament_endAt": 1765080000,
+        "tournament_registrationClosesAt": 1764982800,
+        "images": [
+            {
+                "id": "8787233",
+                "url": "https://images.start.gg/images/tournament/842010/image-0cb1f98f77a00b23c294c884c3da9213.png",
+                "type": "banner"
+            },
+            {
+                "id": "8787339",
+                "url": "https://images.start.gg/images/tournament/842010/image-c56c7bad06afa3ab55f365a5256bde76.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "Game Underground",
+        "tournament_venueAddress": "349 Moody St, Waltham, MA 02453, USA",
+        "tournament_addrState": "MA",
+        "country_code": "US",
+        "lat": 42.3702831,
+        "lng": -71.2374623
+    },
+    "1484723": {
+        "id": 1484723,
+        "name": "Side Event - Melee Doubles",
+        "slug": "tournament/tidal-waves-drawdown-a-tidal-waves-5-pre-event/event/side-event-melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1762009200,
+        "phaseGroups": [
+            {
+                "id": 3073924,
+                "phase": {
+                    "id": 2107350,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Tidal Waves: Drawdown - A Tidal Waves #5 Pre-Event",
+        "tournament_id": 841844,
+        "city": "Ottawa",
+        "url": "https://smash.gg/tournament/tidal-waves-drawdown-a-tidal-waves-5-pre-event/event/side-event-melee-doubles",
+        "streams": [
+            {
+                "streamName": "TeamBeyondProd"
+            },
+            {
+                "streamName": "diamondboiz1"
+            },
+            {
+                "streamName": "whiskerpng"
+            }
+        ],
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1762005600,
+        "tournament_endAt": 1762055940,
+        "tournament_registrationClosesAt": 1761965940,
+        "images": [
+            {
+                "id": "8787380",
+                "url": "https://images.start.gg/images/tournament/841844/image-e153995a45490f737248f06db3be7326.png",
+                "type": "banner"
+            },
+            {
+                "id": "8787403",
+                "url": "https://images.start.gg/images/tournament/841844/image-b66728c6ba32d2ea9fd56f180535b050.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2420 Navaho Dr, Ottawa, ON K2G 1V8, Canada",
+        "tournament_addrState": "ON",
+        "country_code": "CA",
+        "lat": 45.34918709999999,
+        "lng": -75.7594341
+    },
+    "1484720": {
+        "id": 1484720,
+        "name": "Melee Singles",
+        "slug": "tournament/tidal-waves-drawdown-a-tidal-waves-5-pre-event/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1762016400,
+        "phaseGroups": [
+            {
+                "id": 3073915,
+                "phase": {
+                    "id": 2107346,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12892068
+                    },
+                    {
+                        "id": 12892074
+                    },
+                    {
+                        "id": 12892080
+                    }
+                ]
+            },
+            {
+                "id": 3073916,
+                "phase": {
+                    "id": 2107346,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12892069
+                    },
+                    {
+                        "id": 12892075
+                    },
+                    {
+                        "id": 12892081
+                    }
+                ]
+            },
+            {
+                "id": 3073917,
+                "phase": {
+                    "id": 2107346,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12892070
+                    },
+                    {
+                        "id": 12892076
+                    },
+                    {
+                        "id": 12892082
+                    }
+                ]
+            },
+            {
+                "id": 3073918,
+                "phase": {
+                    "id": 2107346,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12892071
+                    },
+                    {
+                        "id": 12892077
+                    },
+                    {
+                        "id": 12892083
+                    }
+                ]
+            },
+            {
+                "id": 3073919,
+                "phase": {
+                    "id": 2107346,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12892072
+                    },
+                    {
+                        "id": 12892078
+                    },
+                    {
+                        "id": 12892084
+                    }
+                ]
+            },
+            {
+                "id": 3073920,
+                "phase": {
+                    "id": 2107346,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12892073
+                    },
+                    {
+                        "id": 12892079
+                    },
+                    {
+                        "id": 12892085
+                    }
+                ]
+            },
+            {
+                "id": 3073921,
+                "phase": {
+                    "id": 2107347,
+                    "name": "Pro Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Tidal Waves: Drawdown - A Tidal Waves #5 Pre-Event",
+        "tournament_id": 841844,
+        "city": "Ottawa",
+        "url": "https://smash.gg/tournament/tidal-waves-drawdown-a-tidal-waves-5-pre-event/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "TeamBeyondProd"
+            },
+            {
+                "streamName": "diamondboiz1"
+            },
+            {
+                "streamName": "whiskerpng"
+            }
+        ],
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1762005600,
+        "tournament_endAt": 1762055940,
+        "tournament_registrationClosesAt": 1761965940,
+        "images": [
+            {
+                "id": "8787380",
+                "url": "https://images.start.gg/images/tournament/841844/image-e153995a45490f737248f06db3be7326.png",
+                "type": "banner"
+            },
+            {
+                "id": "8787403",
+                "url": "https://images.start.gg/images/tournament/841844/image-b66728c6ba32d2ea9fd56f180535b050.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2420 Navaho Dr, Ottawa, ON K2G 1V8, Canada",
+        "tournament_addrState": "ON",
+        "country_code": "CA",
+        "lat": 45.34918709999999,
+        "lng": -75.7594341
+    },
+    "1484722": {
+        "id": 1484722,
+        "name": "Melee Amateur Bracket",
+        "slug": "tournament/tidal-waves-drawdown-a-tidal-waves-5-pre-event/event/melee-amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1762032600,
+        "phaseGroups": [
+            {
+                "id": 3073923,
+                "phase": {
+                    "id": 2107349,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Tidal Waves: Drawdown - A Tidal Waves #5 Pre-Event",
+        "tournament_id": 841844,
+        "city": "Ottawa",
+        "url": "https://smash.gg/tournament/tidal-waves-drawdown-a-tidal-waves-5-pre-event/event/melee-amateur-bracket",
+        "streams": [
+            {
+                "streamName": "TeamBeyondProd"
+            },
+            {
+                "streamName": "diamondboiz1"
+            },
+            {
+                "streamName": "whiskerpng"
+            }
+        ],
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1762005600,
+        "tournament_endAt": 1762055940,
+        "tournament_registrationClosesAt": 1761965940,
+        "images": [
+            {
+                "id": "8787380",
+                "url": "https://images.start.gg/images/tournament/841844/image-e153995a45490f737248f06db3be7326.png",
+                "type": "banner"
+            },
+            {
+                "id": "8787403",
+                "url": "https://images.start.gg/images/tournament/841844/image-b66728c6ba32d2ea9fd56f180535b050.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2420 Navaho Dr, Ottawa, ON K2G 1V8, Canada",
+        "tournament_addrState": "ON",
+        "country_code": "CA",
+        "lat": 45.34918709999999,
+        "lng": -75.7594341
+    },
+    "1485927": {
+        "id": 1485927,
+        "name": "Melee Singles",
+        "slug": "tournament/yeti-weekly-453-1/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1761260400,
+        "phaseGroups": [
+            {
+                "id": 3075977,
+                "phase": {
+                    "id": 2108980,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Yeti Weekly 453",
+        "tournament_id": 842540,
+        "city": "Affton",
+        "url": "https://smash.gg/tournament/yeti-weekly-453-1/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "dinksterlive"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1761260400,
+        "tournament_endAt": 1761274800,
+        "tournament_registrationClosesAt": 1761264000,
+        "images": [
+            {
+                "id": "8787427",
+                "url": "https://images.start.gg/images/tournament/842540/image-f72fa2de30a9bd5a150e0dd13917182f.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8787428",
+                "url": "https://images.start.gg/images/tournament/842540/image-eb3a967f8c4960021f01306cf20efe4f.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "84 Grasso Plaza, Affton, MO 63123, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 38.5513092,
+        "lng": -90.3358523
+    },
+    "1485929": {
+        "id": 1485929,
+        "name": "Amateur Bracket",
+        "slug": "tournament/yeti-weekly-453-1/event/amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1761260400,
+        "phaseGroups": [
+            {
+                "id": 3075979,
+                "phase": {
+                    "id": 2108982,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Yeti Weekly 453",
+        "tournament_id": 842540,
+        "city": "Affton",
+        "url": "https://smash.gg/tournament/yeti-weekly-453-1/event/amateur-bracket",
+        "streams": [
+            {
+                "streamName": "dinksterlive"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1761260400,
+        "tournament_endAt": 1761274800,
+        "tournament_registrationClosesAt": 1761264000,
+        "images": [
+            {
+                "id": "8787427",
+                "url": "https://images.start.gg/images/tournament/842540/image-f72fa2de30a9bd5a150e0dd13917182f.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8787428",
+                "url": "https://images.start.gg/images/tournament/842540/image-eb3a967f8c4960021f01306cf20efe4f.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "84 Grasso Plaza, Affton, MO 63123, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 38.5513092,
+        "lng": -90.3358523
+    },
+    "1485928": {
+        "id": 1485928,
+        "name": "Melee Doubles",
+        "slug": "tournament/yeti-weekly-453-1/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1761260400,
+        "phaseGroups": [
+            {
+                "id": 3075978,
+                "phase": {
+                    "id": 2108981,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Yeti Weekly 453",
+        "tournament_id": 842540,
+        "city": "Affton",
+        "url": "https://smash.gg/tournament/yeti-weekly-453-1/event/melee-doubles",
+        "streams": [
+            {
+                "streamName": "dinksterlive"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1761260400,
+        "tournament_endAt": 1761274800,
+        "tournament_registrationClosesAt": 1761264000,
+        "images": [
+            {
+                "id": "8787427",
+                "url": "https://images.start.gg/images/tournament/842540/image-f72fa2de30a9bd5a150e0dd13917182f.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8787428",
+                "url": "https://images.start.gg/images/tournament/842540/image-eb3a967f8c4960021f01306cf20efe4f.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "84 Grasso Plaza, Affton, MO 63123, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 38.5513092,
+        "lng": -90.3358523
+    },
+    "1485916": {
+        "id": 1485916,
+        "name": "Melee Singles",
+        "slug": "tournament/recovery-tdhor-109/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1761001200,
+        "phaseGroups": [
+            {
+                "id": 3075965,
+                "phase": {
+                    "id": 2108968,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12900793
+                    },
+                    {
+                        "id": 12900794
+                    }
+                ]
+            },
+            {
+                "id": 3075966,
+                "phase": {
+                    "id": 2108969,
+                    "name": "Top Cut"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Recovery @ TDHOR #109",
+        "tournament_id": 842534,
+        "city": "Fraser",
+        "url": "https://smash.gg/tournament/recovery-tdhor-109/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "raviannn"
+            }
+        ],
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1761001200,
+        "tournament_endAt": 1761012000,
+        "tournament_registrationClosesAt": 1761004200,
+        "images": [
+            {
+                "id": "8787396",
+                "url": "https://images.start.gg/images/tournament/842534/image-8310ef1e03753700786fe77c7f462288.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8787397",
+                "url": "https://images.start.gg/images/tournament/842534/image-88d1573dcece8b51f5c8635d2f718668.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "32048 Utica Rd, Fraser, MI 48026, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 42.5322825,
+        "lng": -82.94878779999999
+    },
+    "1485917": {
+        "id": 1485917,
+        "name": "AM Bracket",
+        "slug": "tournament/recovery-tdhor-109/event/am-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1761001200,
+        "phaseGroups": [
+            {
+                "id": 3075967,
+                "phase": {
+                    "id": 2108970,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Recovery @ TDHOR #109",
+        "tournament_id": 842534,
+        "city": "Fraser",
+        "url": "https://smash.gg/tournament/recovery-tdhor-109/event/am-bracket",
+        "streams": [
+            {
+                "streamName": "raviannn"
+            }
+        ],
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1761001200,
+        "tournament_endAt": 1761012000,
+        "tournament_registrationClosesAt": 1761004200,
+        "images": [
+            {
+                "id": "8787396",
+                "url": "https://images.start.gg/images/tournament/842534/image-8310ef1e03753700786fe77c7f462288.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "8787397",
+                "url": "https://images.start.gg/images/tournament/842534/image-88d1573dcece8b51f5c8635d2f718668.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "32048 Utica Rd, Fraser, MI 48026, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 42.5322825,
+        "lng": -82.94878779999999
     }
 }
