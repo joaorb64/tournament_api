@@ -5735,7 +5735,7 @@
         "slug": "tournament/socal-sweep/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 118,
+        "numEntrants": 125,
         "videogame": {
             "id": 1
         },
@@ -5756,7 +5756,7 @@
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1763233200,
         "tournament_endAt": 1763272800,
-        "tournament_registrationClosesAt": 1763020740,
+        "tournament_registrationClosesAt": 1763064000,
         "images": [
             {
                 "id": "8677990",
@@ -5783,7 +5783,7 @@
         "slug": "tournament/socal-sweep/event/ladder",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 67,
+        "numEntrants": 74,
         "videogame": {
             "id": 1
         },
@@ -5813,7 +5813,7 @@
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1763233200,
         "tournament_endAt": 1763272800,
-        "tournament_registrationClosesAt": 1763020740,
+        "tournament_registrationClosesAt": 1763064000,
         "images": [
             {
                 "id": "8677990",
@@ -5840,7 +5840,7 @@
         "slug": "tournament/socal-sweep/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 24,
+        "numEntrants": 25,
         "videogame": {
             "id": 1
         },
@@ -5861,7 +5861,7 @@
         "timezone": "America/Los_Angeles",
         "tournament_startAt": 1763233200,
         "tournament_endAt": 1763272800,
-        "tournament_registrationClosesAt": 1763020740,
+        "tournament_registrationClosesAt": 1763064000,
         "images": [
             {
                 "id": "8677990",
@@ -31521,45 +31521,22 @@
         "name": "Melee Singles",
         "slug": "tournament/launceston-smash-club-43/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
         "startAt": 1763015400,
-        "phaseGroups": [],
-        "tournament": "Launceston Smash Club #43",
-        "tournament_id": 849341,
-        "city": "Launceston",
-        "url": "https://smash.gg/tournament/launceston-smash-club-43/event/melee-singles",
-        "streams": [
+        "phaseGroups": [
             {
-                "streamName": "LtonSmashClub"
+                "id": 3100191,
+                "phase": {
+                    "id": 2126732,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "timezone": "Australia/Hobart",
-        "tournament_startAt": 1763015400,
-        "tournament_endAt": 1763028000,
-        "tournament_registrationClosesAt": 1763013600,
-        "images": [
-            {
-                "id": "8849342",
-                "url": "https://images.start.gg/images/tournament/849341/image-764e3ef7376837bf172d993684477fe4.png",
-                "type": "profile"
-            },
-            {
-                "id": "8849343",
-                "url": "https://images.start.gg/images/tournament/849341/image-b26c124b18431db04cc618a67dd37af4.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "111 Elizabeth St, Launceston TAS 7250, Australia",
-        "tournament_addrState": "TAS",
-        "country_code": "AU",
-        "lat": -41.4423625,
-        "lng": 147.1352527
+        ]
     },
     "1499726": {
         "id": 1499726,
@@ -48956,7 +48933,7 @@
         "slug": "tournament/hold-the-fort-82/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -49058,5 +49035,59 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1503825": {
+        "id": 1503825,
+        "name": "Singles Netplay Weeklies",
+        "slug": "tournament/lfg-netplay-weeklies-18/event/singles-netplay-weeklies",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1763175600,
+        "phaseGroups": [
+            {
+                "id": 3107207,
+                "phase": {
+                    "id": 2132214,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LFG Netplay Weeklies 18",
+        "tournament_id": 851645,
+        "city": null,
+        "url": "https://smash.gg/tournament/lfg-netplay-weeklies-18/event/singles-netplay-weeklies",
+        "streams": [
+            {
+                "streamName": "LFGamingMX"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1763175600,
+        "tournament_endAt": 1763186400,
+        "tournament_registrationClosesAt": 1763174700,
+        "images": [
+            {
+                "id": "8873380",
+                "url": "https://images.start.gg/images/tournament/851645/image-47cee3b28d0490f578fd373585066074.png",
+                "type": "profile"
+            },
+            {
+                "id": "8873399",
+                "url": "https://images.start.gg/images/tournament/851645/image-24131fede87108a834291f18b6ec411e.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
