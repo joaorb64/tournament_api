@@ -54,7 +54,7 @@
         "slug": "tournament/sapf-2/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 202,
+        "numEntrants": 208,
         "videogame": {
             "id": 1
         },
@@ -95,7 +95,7 @@
         "slug": "tournament/sapf-2/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 12,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -6696,7 +6696,7 @@
         "slug": "tournament/mayday-anniversary/event/melee-ladder",
         "isOnline": true,
         "state": "ACTIVE",
-        "numEntrants": 25,
+        "numEntrants": 27,
         "videogame": {
             "id": 1
         },
@@ -6718,7 +6718,7 @@
         "slug": "tournament/mayday-anniversary/event/super-smash-bros-mayday",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 39,
+        "numEntrants": 41,
         "videogame": {
             "id": 1
         },
@@ -6998,7 +6998,7 @@
         "slug": "tournament/mayday-anniversary/event/dittos-only",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 22,
+        "numEntrants": 23,
         "videogame": {
             "id": 1
         },
@@ -7110,7 +7110,7 @@
         "slug": "tournament/mayday-anniversary/event/mini-iron-man",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 24,
+        "numEntrants": 25,
         "videogame": {
             "id": 1
         },
@@ -25174,7 +25174,7 @@
         "slug": "tournament/pepite-stadium-s05e03-avant-luigi/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -26212,35 +26212,157 @@
         "name": "Melee Singles Bracket",
         "slug": "tournament/twin-peaks-tangerine-thursday/event/melee-singles-bracket",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 19,
+        "state": "ACTIVE",
+        "numEntrants": 31,
         "videogame": {
             "id": 1
         },
         "startAt": 1767290400,
-        "phaseGroups": [],
-        "tournament": "Twin Peaks Tangerine Thursday",
-        "tournament_id": 865618,
+        "phaseGroups": [
+            {
+                "id": 3152271,
+                "phase": {
+                    "id": 2166011,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
+    },
+    "1530077": {
+        "id": 1530077,
+        "name": "Toblerone Singles",
+        "slug": "tournament/toblerone-tangerine-thursdays-195-eu-event-1/event/toblerone-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1767895200,
+        "phaseGroups": [
+            {
+                "id": 3152243,
+                "phase": {
+                    "id": 2165983,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13217761
+                    },
+                    {
+                        "id": 13217762
+                    },
+                    {
+                        "id": 13217763
+                    },
+                    {
+                        "id": 13217764
+                    },
+                    {
+                        "id": 13217765
+                    },
+                    {
+                        "id": 13217766
+                    },
+                    {
+                        "id": 13217767
+                    },
+                    {
+                        "id": 13217768
+                    }
+                ]
+            },
+            {
+                "id": 3152244,
+                "phase": {
+                    "id": 2165984,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Toblerone Tangerine Thursdays #195 (EU Event)",
+        "tournament_id": 865607,
         "city": null,
-        "url": "https://smash.gg/tournament/twin-peaks-tangerine-thursday/event/melee-singles-bracket",
-        "streams": null,
+        "url": "https://smash.gg/tournament/toblerone-tangerine-thursdays-195-eu-event-1/event/toblerone-singles",
+        "streams": [
+            {
+                "streamName": "CharaICs"
+            }
+        ],
         "timezone": null,
-        "tournament_startAt": 1767290400,
-        "tournament_endAt": 1767295860,
-        "tournament_registrationClosesAt": 1767289560,
+        "tournament_startAt": 1767895200,
+        "tournament_endAt": 1767906000,
+        "tournament_registrationClosesAt": 1767895200,
         "images": [
             {
-                "id": "8997872",
-                "url": "https://images.start.gg/images/tournament/865618/image-d1ed581b31caf3261abf06a7cf7ade2b.jpg",
+                "id": "8997762",
+                "url": "https://images.start.gg/images/tournament/865607/image-35f2485a2a219846b847b7616b4d7423.png",
                 "type": "profile"
             },
             {
-                "id": "8997873",
-                "url": "https://images.start.gg/images/tournament/865618/image-b5688a7850379dd96b051e58e9f88313.jpg",
+                "id": "8997763",
+                "url": "https://images.start.gg/images/tournament/865607/image-958fb76feed5f024db3466e2e2885f1f.png",
                 "type": "banner"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1530076": {
+        "id": 1530076,
+        "name": "Toblerone waitlist",
+        "slug": "tournament/toblerone-tangerine-thursdays-195-eu-event-1/event/toblerone-waitlist",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1767895200,
+        "phaseGroups": [
+            {
+                "id": 3152242,
+                "phase": {
+                    "id": 2165982,
+                    "name": "Waitlist"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Toblerone Tangerine Thursdays #195 (EU Event)",
+        "tournament_id": 865607,
+        "city": null,
+        "url": "https://smash.gg/tournament/toblerone-tangerine-thursdays-195-eu-event-1/event/toblerone-waitlist",
+        "streams": [
+            {
+                "streamName": "CharaICs"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1767895200,
+        "tournament_endAt": 1767906000,
+        "tournament_registrationClosesAt": 1767895200,
+        "images": [
+            {
+                "id": "8997762",
+                "url": "https://images.start.gg/images/tournament/865607/image-35f2485a2a219846b847b7616b4d7423.png",
+                "type": "profile"
+            },
+            {
+                "id": "8997763",
+                "url": "https://images.start.gg/images/tournament/865607/image-958fb76feed5f024db3466e2e2885f1f.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": null,
         "tournament_addrState": null,
