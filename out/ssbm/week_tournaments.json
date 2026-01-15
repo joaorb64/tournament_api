@@ -32879,9 +32879,9 @@
             }
         ],
         "timezone": "America/Toronto",
-        "tournament_startAt": 1768514400,
-        "tournament_endAt": 1768536000,
-        "tournament_registrationClosesAt": 1768521540,
+        "tournament_startAt": 1769119200,
+        "tournament_endAt": 1769140800,
+        "tournament_registrationClosesAt": 1769126340,
         "images": [
             {
                 "id": "9030051",
@@ -32908,7 +32908,7 @@
         "slug": "tournament/gourmet-clash-78/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -32936,9 +32936,9 @@
             }
         ],
         "timezone": "America/Toronto",
-        "tournament_startAt": 1768514400,
-        "tournament_endAt": 1768536000,
-        "tournament_registrationClosesAt": 1768521540,
+        "tournament_startAt": 1769119200,
+        "tournament_endAt": 1769140800,
+        "tournament_registrationClosesAt": 1769126340,
         "images": [
             {
                 "id": "9030051",
@@ -32993,9 +32993,9 @@
             }
         ],
         "timezone": "America/Toronto",
-        "tournament_startAt": 1768514400,
-        "tournament_endAt": 1768536000,
-        "tournament_registrationClosesAt": 1768521540,
+        "tournament_startAt": 1769119200,
+        "tournament_endAt": 1769140800,
+        "tournament_registrationClosesAt": 1769126340,
         "images": [
             {
                 "id": "9030051",
@@ -37164,7 +37164,7 @@
         "slug": "tournament/anc-smashweekly-276-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -37178,42 +37178,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "ANC Smashweekly #276",
-        "tournament_id": 869595,
-        "city": "Turku",
-        "url": "https://smash.gg/tournament/anc-smashweekly-276-1/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "smashfinland2"
-            },
-            {
-                "streamName": "academicnintendoclub"
-            }
-        ],
-        "timezone": "Europe/Helsinki",
-        "tournament_startAt": 1768489200,
-        "tournament_endAt": 1768507200,
-        "tournament_registrationClosesAt": 1768507200,
-        "images": [
-            {
-                "id": "9034646",
-                "url": "https://images.start.gg/images/tournament/869595/image-10bd323d2a9ecbff474f8ef8891f99e4.jpg",
-                "type": "banner"
-            },
-            {
-                "id": "9034647",
-                "url": "https://images.start.gg/images/tournament/869595/image-4a5ddaa15ce8802a0896f4fab33e0c1a.jpg",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": "Kampuskappeli",
-        "tournament_venueAddress": "Rehtorinpellonkatu 4c, 20500 Turku, Suomi",
-        "tournament_addrState": "Varsinais-Suomi",
-        "country_code": "FI",
-        "lat": 60.45489809999999,
-        "lng": 22.2877364
+        ]
     },
     "1538330": {
         "id": 1538330,
@@ -41264,8 +41229,8 @@
     },
     "1539074": {
         "id": 1539074,
-        "name": "Melee - Singles",
-        "slug": "tournament/2-manikas-melee/event/melee-singles",
+        "name": "Normal - Bracket",
+        "slug": "tournament/2-manikas-melee/event/normal-bracket",
         "isOnline": false,
         "state": "CREATED",
         "numEntrants": 2,
@@ -41278,19 +41243,7 @@
                 "id": 3167691,
                 "phase": {
                     "id": 2177289,
-                    "name": "Normal Bracket (BO5)"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 13287659
-                    }
-                ]
-            },
-            {
-                "id": 3168538,
-                "phase": {
-                    "id": 2177955,
-                    "name": "Amateur Bracket (BO5)"
+                    "name": "Bracket (BO5)"
                 },
                 "progressionsOut": null
             }
@@ -41298,7 +41251,7 @@
         "tournament": "2# Manikas Melee",
         "tournament_id": 870000,
         "city": "M\u00f6nchengladbach",
-        "url": "https://smash.gg/tournament/2-manikas-melee/event/melee-singles",
+        "url": "https://smash.gg/tournament/2-manikas-melee/event/normal-bracket",
         "streams": null,
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1770468600,
@@ -41316,7 +41269,7 @@
                 "type": "banner"
             }
         ],
-        "tournament_multievent": false,
+        "tournament_multievent": true,
         "tournament_venueName": null,
         "tournament_venueAddress": "Roermonder Str. 9, 41068 M\u00f6nchengladbach, Deutschland",
         "tournament_addrState": "NRW",
@@ -44619,5 +44572,265 @@
         "country_code": "IE",
         "lat": 53.2605011,
         "lng": -9.0752808
+    },
+    "1539815": {
+        "id": 1539815,
+        "name": "Amateur Bracket",
+        "slug": "tournament/2-manikas-melee/event/amateur-bracket",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1770468600,
+        "phaseGroups": [
+            {
+                "id": 3168657,
+                "phase": {
+                    "id": 2178042,
+                    "name": "Bracket (BO5)"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "2# Manikas Melee",
+        "tournament_id": 870000,
+        "city": "M\u00f6nchengladbach",
+        "url": "https://smash.gg/tournament/2-manikas-melee/event/amateur-bracket",
+        "streams": null,
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1770468600,
+        "tournament_endAt": 1770501600,
+        "tournament_registrationClosesAt": 1770501600,
+        "images": [
+            {
+                "id": "9038074",
+                "url": "https://images.start.gg/images/tournament/870000/image-17855056b5ef6cdf50ac7bbc9f4b3e52.png",
+                "type": "profile"
+            },
+            {
+                "id": "9038084",
+                "url": "https://images.start.gg/images/tournament/870000/image-722a58e2bb3d8b45fc9af9e1d6f44946.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Roermonder Str. 9, 41068 M\u00f6nchengladbach, Deutschland",
+        "tournament_addrState": "NRW",
+        "country_code": "DE",
+        "lat": 51.1974633,
+        "lng": 6.417544899999999
+    },
+    "1539817": {
+        "id": 1539817,
+        "name": "Melee Singles",
+        "slug": "tournament/protocol-17-4/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1768867200,
+        "phaseGroups": [
+            {
+                "id": 3168661,
+                "phase": {
+                    "id": 2178046,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "PROTOCOL #17",
+        "tournament_id": 870381,
+        "city": "Norfolk",
+        "url": "https://smash.gg/tournament/protocol-17-4/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "the_jokeofalltrades"
+            },
+            {
+                "streamName": "benleolee"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1768867200,
+        "tournament_endAt": 1768885140,
+        "tournament_registrationClosesAt": 1768866600,
+        "images": [
+            {
+                "id": "9041600",
+                "url": "https://images.start.gg/images/tournament/870381/image-a83c318ffa3e81d9484510fb3d3c005d.png",
+                "type": "banner"
+            },
+            {
+                "id": "9041601",
+                "url": "https://images.start.gg/images/tournament/870381/image-9c586e3161e44fce23675898b96bc38c.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "2117 Colonial Ave, Norfolk, VA 23517, USA",
+        "tournament_addrState": "VA",
+        "country_code": "US",
+        "lat": 36.8696261,
+        "lng": -76.2919205
+    },
+    "1539778": {
+        "id": 1539778,
+        "name": "The Symbol of Melee #1 (EU EVENT)",
+        "slug": "tournament/the-symbol-of-melee/event/the-symbol-of-melee-1-eu-event",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1768663800,
+        "phaseGroups": [
+            {
+                "id": 3168581,
+                "phase": {
+                    "id": 2177986,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Symbol of Melee",
+        "tournament_id": 870349,
+        "city": null,
+        "url": "https://smash.gg/tournament/the-symbol-of-melee/event/the-symbol-of-melee-1-eu-event",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1768663800,
+        "tournament_endAt": 1768668900,
+        "tournament_registrationClosesAt": 1768670700,
+        "images": [
+            {
+                "id": "9041353",
+                "url": "https://images.start.gg/images/tournament/870349/image-ce18295711c165852d8e40c704c5fb56.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1539820": {
+        "id": 1539820,
+        "name": "Melee Singles",
+        "slug": "tournament/secret-power-91-revival-of-pm/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1768521600,
+        "phaseGroups": [
+            {
+                "id": 3168664,
+                "phase": {
+                    "id": 2178049,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Secret Power #91 (Revival of PM)",
+        "tournament_id": 870383,
+        "city": "Mobile",
+        "url": "https://smash.gg/tournament/secret-power-91-revival-of-pm/event/melee-singles",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1768521600,
+        "tournament_endAt": 1768534200,
+        "tournament_registrationClosesAt": 1768525260,
+        "images": [
+            {
+                "id": "9041622",
+                "url": "https://images.start.gg/images/tournament/870383/image-9e5f6f772ff38653a98488912855a07e.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "5701 Moffett Rd, Mobile, AL 36618, USA",
+        "tournament_addrState": "AL",
+        "country_code": "US",
+        "lat": 30.7284349,
+        "lng": -88.17354739999999
+    },
+    "1539812": {
+        "id": 1539812,
+        "name": "Melee Singles",
+        "slug": "tournament/jaxsmash-weekly-leaderboard-1-15-26/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1768518000,
+        "phaseGroups": [
+            {
+                "id": 3168654,
+                "phase": {
+                    "id": 2178039,
+                    "name": "Qualifers"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "JaxSmash Weekly @ Leaderboard 1/15/26",
+        "tournament_id": 870380,
+        "city": "Jacksonville",
+        "url": "https://smash.gg/tournament/jaxsmash-weekly-leaderboard-1-15-26/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "FilTheTurtle"
+            },
+            {
+                "streamName": "MorningTurtles"
+            },
+            {
+                "streamName": "collisionseriestv2"
+            },
+            {
+                "streamName": "Narwhal3769"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1768518000,
+        "tournament_endAt": 1768536000,
+        "tournament_registrationClosesAt": 1768520700,
+        "images": [
+            {
+                "id": "9041587",
+                "url": "https://images.start.gg/images/tournament/870380/image-0a14954fa92cfa0525eb0d81d17382ee.png",
+                "type": "profile"
+            },
+            {
+                "id": "9041588",
+                "url": "https://images.start.gg/images/tournament/870380/image-91b0cac7e5250016c5a9f383f4797d4a.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "5285 Shad Rd Suite 316, Jacksonville, FL 32257, USA",
+        "tournament_addrState": "FL",
+        "country_code": "US",
+        "lat": 30.1939974,
+        "lng": -81.5773676
     }
 }
