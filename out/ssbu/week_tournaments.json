@@ -32185,7 +32185,7 @@
         "slug": "tournament/smash-d-arc-x-ldlc/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 15,
+        "numEntrants": 16,
         "videogame": {
             "id": 1386
         },
@@ -49681,7 +49681,7 @@
         "name": "\u30b7\u30f3\u30b0\u30eb\u30b9\uff08\uff11on\uff11\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8\uff09",
         "slug": "tournament/16-365/event/on",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 44,
         "videogame": {
             "id": 1386
@@ -61221,12 +61221,21 @@
         "slug": "tournament/26-12/event/sp-1on1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 16,
         "videogame": {
             "id": 1386
         },
         "startAt": 1768615200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3169532,
+                "phase": {
+                    "id": 2178699,
+                    "name": "\u672c\u6226\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "\u7b2c26\u56de\u30d9\u30eb\u30b9\u30de\u30c8\u30ca\u30e1",
         "tournament_id": 866761,
         "city": "\u677e\u962a\u5e02",
@@ -84450,8 +84459,8 @@
         "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
         "slug": "tournament/smash-120-1/event/1on1",
         "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 15,
+        "state": "COMPLETED",
+        "numEntrants": 16,
         "videogame": {
             "id": 1386
         },
@@ -84817,7 +84826,7 @@
         "name": "\u30b7\u30f3\u30b0\u30eb\u30b9",
         "slug": "tournament/173-1/event/super-smash-bros-ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 15,
         "videogame": {
             "id": 1386
@@ -103604,7 +103613,7 @@
         "slug": "tournament/omnistrike-2-saison-3/event/smash-ultimate-1v1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 6,
+        "numEntrants": 7,
         "videogame": {
             "id": 1386
         },
@@ -106688,7 +106697,7 @@
         "name": "Ultimate singles",
         "slug": "tournament/319-act/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 13,
         "videogame": {
             "id": 1386
@@ -108463,21 +108472,12 @@
         "slug": "tournament/ajierro-weekly-series-13/event/ultimate-doubles",
         "isOnline": false,
         "state": "ACTIVE",
-        "numEntrants": 9,
+        "numEntrants": 10,
         "videogame": {
             "id": 1386
         },
         "startAt": 1768581000,
-        "phaseGroups": [
-            {
-                "id": 3164283,
-                "phase": {
-                    "id": 2174707,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
+        "phaseGroups": [],
         "tournament": "Ajierro Weekly Series 13",
         "tournament_id": 869088,
         "city": "Sevilla",
@@ -141064,7 +141064,7 @@
         "slug": "tournament/ggcon-beyblade-x-super-smash-bros-ultimate-retro-turnuvalar/event/smash-ultimate",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 6,
         "videogame": {
             "id": 1386
         },
@@ -141075,6 +141075,66 @@
                 "phase": {
                     "id": 2173139,
                     "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13290951
+                    },
+                    {
+                        "id": 13290955
+                    }
+                ]
+            },
+            {
+                "id": 3169513,
+                "phase": {
+                    "id": 2173139,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13290952
+                    },
+                    {
+                        "id": 13290956
+                    }
+                ]
+            },
+            {
+                "id": 3169514,
+                "phase": {
+                    "id": 2173139,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13290953
+                    },
+                    {
+                        "id": 13290957
+                    }
+                ]
+            },
+            {
+                "id": 3169515,
+                "phase": {
+                    "id": 2173139,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13290954
+                    },
+                    {
+                        "id": 13290958
+                    }
+                ]
+            },
+            {
+                "id": 3169516,
+                "phase": {
+                    "id": 2178698,
+                    "name": "Final - Ult"
                 },
                 "progressionsOut": null
             }
@@ -159679,7 +159739,7 @@
         "slug": "tournament/blue-cat-series-3/event/ultimate-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -159813,5 +159873,218 @@
         "country_code": "US",
         "lat": 33.6106244,
         "lng": -112.1486855
+    },
+    "1540323": {
+        "id": 1540323,
+        "name": "\u96f7\u5f71\u676f",
+        "slug": "tournament/6-86/event/super-smash-bros-ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1769590800,
+        "phaseGroups": [
+            {
+                "id": 3169537,
+                "phase": {
+                    "id": 2178703,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "\u96f7\u5f71\u676f#6",
+        "tournament_id": 870650,
+        "city": "\u5ddd\u5d0e\u5e02",
+        "url": "https://smash.gg/tournament/6-86/event/super-smash-bros-ultimate-singles",
+        "streams": null,
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1769590800,
+        "tournament_endAt": 1769607000,
+        "tournament_registrationClosesAt": 1769599800,
+        "images": [
+            {
+                "id": "9044317",
+                "url": "https://images.start.gg/images/tournament/870650/image-42ac77d156680ad28a9e21ade9b9e34c.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012212-0011 \u795e\u5948\u5ddd\u770c\u5ddd\u5d0e\u5e02\u5e78\u533a\u5e78\u753a\uff11\u4e01\u76ee\uff17\uff18\uff18",
+        "tournament_addrState": "\u795e\u5948\u5ddd\u770c",
+        "country_code": "JP",
+        "lat": 35.5349683,
+        "lng": 139.6979253
+    },
+    "1540318": {
+        "id": 1540318,
+        "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
+        "slug": "tournament/smash-121-1/event/1on1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1769164200,
+        "phaseGroups": [],
+        "tournament": "Smash\u85ac\u9662#121",
+        "tournament_id": 870648,
+        "city": "\u798f\u5ca1\u5e02",
+        "url": "https://smash.gg/tournament/smash-121-1/event/1on1",
+        "streams": [
+            {
+                "streamName": "\u30b9\u30de\u30a4\u30f3-Smash \u85ac\u9662-"
+            },
+            {
+                "streamName": "Smash_Yakuin"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1769164200,
+        "tournament_endAt": 1769176800,
+        "tournament_registrationClosesAt": 1769162400,
+        "images": [
+            {
+                "id": "9044297",
+                "url": "https://images.start.gg/images/tournament/870648/image-9b81164520dd8d3736aaef4fbd200405.png",
+                "type": "profile"
+            },
+            {
+                "id": "9044298",
+                "url": "https://images.start.gg/images/tournament/870648/image-89c464c0fbd10f6dd4592c90818b7adb.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012810-0022 \u798f\u5ca1\u770c\u798f\u5ca1\u5e02\u4e2d\u592e\u533a\u85ac\u9662\uff14\u4e01\u76ee\uff12\u2212\uff11\uff13 \u30b3\u30a2\u30ad\u30e9\u30bc\u30d3\u30eb",
+        "tournament_addrState": "\u798f\u5ca1\u770c",
+        "country_code": "JP",
+        "lat": 33.5788746,
+        "lng": 130.3984333
+    },
+    "1540310": {
+        "id": 1540310,
+        "name": "Champi 1-UP",
+        "slug": "tournament/champi-s-rie-116/event/champi-1-up",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1768593600,
+        "phaseGroups": [
+            {
+                "id": 3169497,
+                "phase": {
+                    "id": 2178685,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Champi S\u00e9rie #116",
+        "tournament_id": 870641,
+        "city": null,
+        "url": "https://smash.gg/tournament/champi-s-rie-116/event/champi-1-up",
+        "streams": [
+            {
+                "streamName": "Toadstoolkry"
+            },
+            {
+                "streamName": "hachiii_"
+            },
+            {
+                "streamName": "evanglion__"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1768546800,
+        "tournament_endAt": 1768777200,
+        "tournament_registrationClosesAt": 1848697260,
+        "images": [
+            {
+                "id": "9044240",
+                "url": "https://images.start.gg/images/tournament/870641/image-a4020818fb52066d85acc5a33055d5dc.png",
+                "type": "profile"
+            },
+            {
+                "id": "9044241",
+                "url": "https://images.start.gg/images/tournament/870641/image-c3edc835b1fefe4eaa5036a0710a9a36.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1540311": {
+        "id": 1540311,
+        "name": "Champi \u00c9toile",
+        "slug": "tournament/champi-s-rie-116/event/champi-toile",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1768680000,
+        "phaseGroups": [
+            {
+                "id": 3169498,
+                "phase": {
+                    "id": 2178686,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Champi S\u00e9rie #116",
+        "tournament_id": 870641,
+        "city": null,
+        "url": "https://smash.gg/tournament/champi-s-rie-116/event/champi-toile",
+        "streams": [
+            {
+                "streamName": "Toadstoolkry"
+            },
+            {
+                "streamName": "hachiii_"
+            },
+            {
+                "streamName": "evanglion__"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1768546800,
+        "tournament_endAt": 1768777200,
+        "tournament_registrationClosesAt": 1848697260,
+        "images": [
+            {
+                "id": "9044240",
+                "url": "https://images.start.gg/images/tournament/870641/image-a4020818fb52066d85acc5a33055d5dc.png",
+                "type": "profile"
+            },
+            {
+                "id": "9044241",
+                "url": "https://images.start.gg/images/tournament/870641/image-c3edc835b1fefe4eaa5036a0710a9a36.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
