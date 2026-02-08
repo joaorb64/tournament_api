@@ -1367,7 +1367,7 @@
         "slug": "tournament/docked-and-loaded-4/event/melee-1v1",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 18,
+        "numEntrants": 21,
         "videogame": {
             "id": 1
         },
@@ -1432,7 +1432,7 @@
         "timezone": "Pacific/Auckland",
         "tournament_startAt": 1771558200,
         "tournament_endAt": 1771754400,
-        "tournament_registrationClosesAt": 1770546600,
+        "tournament_registrationClosesAt": 1770634740,
         "images": [
             {
                 "id": "8746427",
@@ -3660,7 +3660,7 @@
         "timezone": "Pacific/Auckland",
         "tournament_startAt": 1771558200,
         "tournament_endAt": 1771754400,
-        "tournament_registrationClosesAt": 1770546600,
+        "tournament_registrationClosesAt": 1770634740,
         "images": [
             {
                 "id": "8746427",
@@ -6424,12 +6424,21 @@
         "slug": "tournament/overhead-smash-2-a-melee-tournament-at-pickleball-city/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 5,
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
         "startAt": 1770575400,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3158897,
+                "phase": {
+                    "id": 2170588,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Overhead Smash 2 - A Melee Tournament at Pickleball City",
         "tournament_id": 867492,
         "city": "Fremont",
@@ -6469,12 +6478,54 @@
         "slug": "tournament/overhead-smash-2-a-melee-tournament-at-pickleball-city/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 40,
+        "numEntrants": 43,
         "videogame": {
             "id": 1
         },
         "startAt": 1770582600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3158894,
+                "phase": {
+                    "id": 2170586,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13398097
+                    },
+                    {
+                        "id": 13398098
+                    },
+                    {
+                        "id": 13398099
+                    },
+                    {
+                        "id": 13398100
+                    },
+                    {
+                        "id": 13398101
+                    },
+                    {
+                        "id": 13398102
+                    },
+                    {
+                        "id": 13398103
+                    },
+                    {
+                        "id": 13398104
+                    }
+                ]
+            },
+            {
+                "id": 3158896,
+                "phase": {
+                    "id": 2170587,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Overhead Smash 2 - A Melee Tournament at Pickleball City",
         "tournament_id": 867492,
         "city": "Fremont",
@@ -18834,7 +18885,7 @@
         "name": "Melee Singles",
         "slug": "tournament/study-hall-7/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 7,
         "videogame": {
             "id": 1
@@ -41204,7 +41255,7 @@
         "name": "Round Robin",
         "slug": "tournament/maia-1/event/round-robin",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 4,
         "videogame": {
             "id": 1
@@ -41248,7 +41299,7 @@
         "name": "Singles",
         "slug": "tournament/melee-at-night-944/event/singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 24,
         "videogame": {
             "id": 1
@@ -42494,5 +42545,59 @@
             "AU",
             "NZ"
         ]
+    },
+    "1555173": {
+        "id": 1555173,
+        "name": "Smash Melee (Wii)",
+        "slug": "tournament/blastzone-2-christchurch-plat-fighter-local-freeplay/event/smash-melee-wii",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1771021800,
+        "phaseGroups": [
+            {
+                "id": 3194403,
+                "phase": {
+                    "id": 2197437,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "BlastZone #2 - Christchurch Plat-fighter Local + Freeplay",
+        "tournament_id": 878327,
+        "city": "Christchurch",
+        "url": "https://smash.gg/tournament/blastzone-2-christchurch-plat-fighter-local-freeplay/event/smash-melee-wii",
+        "streams": [
+            {
+                "streamName": "aftershockfgc"
+            }
+        ],
+        "timezone": "Pacific/Auckland",
+        "tournament_startAt": 1771020000,
+        "tournament_endAt": 1771063200,
+        "tournament_registrationClosesAt": 1771054200,
+        "images": [
+            {
+                "id": "9118320",
+                "url": "https://images.start.gg/images/tournament/878327/image-00eed146fdae0bc6e16e02868c5ee769.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "9118326",
+                "url": "https://images.start.gg/images/tournament/878327/image-4eec42d697a6321ccd26c3b8eba78ef1.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "199 Clarence Street, Riccarton, Christchurch 8011, New Zealand",
+        "tournament_addrState": "Canterbury Region",
+        "country_code": "NZ",
+        "lat": -43.5309728,
+        "lng": 172.60164
     }
 }
