@@ -6974,8 +6974,8 @@
         "name": "Bonus Bracket",
         "slug": "tournament/melee-at-recess-4/event/bonus-bracket",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 7,
+        "state": "COMPLETED",
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -30695,7 +30695,7 @@
         "name": "Singles de Melee",
         "slug": "tournament/finde-de-melee/event/singles-de-melee",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 13,
         "videogame": {
             "id": 1
@@ -32054,7 +32054,7 @@
         "name": "Melee Singles",
         "slug": "tournament/wilkes-gold-mine-48-ft-p/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 5,
         "videogame": {
             "id": 1
@@ -32067,7 +32067,14 @@
                     "id": 2200616,
                     "name": "Bracket"
                 },
-                "progressionsOut": null
+                "progressionsOut": [
+                    {
+                        "id": 13430779
+                    },
+                    {
+                        "id": 13430780
+                    }
+                ]
             },
             {
                 "id": 3198446,
@@ -40476,7 +40483,7 @@
         "name": "Singles",
         "slug": "tournament/shining-silver-048/event/singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 11,
         "videogame": {
             "id": 1
@@ -43808,7 +43815,7 @@
         "name": "Melee Singles",
         "slug": "tournament/icezs-awesome-invitational/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -43823,30 +43830,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "icezs' awesome invitational",
-        "tournament_id": 881250,
-        "city": "Washington",
-        "url": "https://smash.gg/tournament/icezs-awesome-invitational/event/melee-singles",
-        "streams": null,
-        "timezone": "America/New_York",
-        "tournament_startAt": 1771200000,
-        "tournament_endAt": 1771210800,
-        "tournament_registrationClosesAt": 1771210800,
-        "images": [
-            {
-                "id": "9146933",
-                "url": "https://images.start.gg/images/tournament/881250/image-43371769324b548e17c741405ec75d4f.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "1600 Pennsylvania Ave NW, Washington, DC 20500, USA",
-        "tournament_addrState": "DC",
-        "country_code": "US",
-        "lat": 38.8976763,
-        "lng": -77.0365298
+        ]
     },
     "1561350": {
         "id": 1561350,
@@ -45651,5 +45635,55 @@
         "country_code": "GB",
         "lat": 56.4572368,
         "lng": -2.9816824
+    },
+    "1561665": {
+        "id": 1561665,
+        "name": "Casual Melee Tournament",
+        "slug": "tournament/tekken-takeover-27-bohnte-vs-floaties-arc-continues/event/casual-melee-tournament",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1772203500,
+        "phaseGroups": [
+            {
+                "id": 3205358,
+                "phase": {
+                    "id": 2205856,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Tekken Takeover #27 Bohnte vs. Floaties Arc Continues",
+        "tournament_id": 881510,
+        "city": "Winter Garden",
+        "url": "https://smash.gg/tournament/tekken-takeover-27-bohnte-vs-floaties-arc-continues/event/casual-melee-tournament",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1772222400,
+        "tournament_endAt": 1772233200,
+        "tournament_registrationClosesAt": 1772233200,
+        "images": [
+            {
+                "id": "9149344",
+                "url": "https://images.start.gg/images/tournament/881510/image-4b3d18ade01b4367ffab3339cde5336a.png",
+                "type": "profile"
+            },
+            {
+                "id": "9149345",
+                "url": "https://images.start.gg/images/tournament/881510/image-297aeb9cc9b37344c2a46ab1f4ba6321.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "13750 W Colonial Dr Suite 260, Winter Garden, FL 34787, USA",
+        "tournament_addrState": "FL",
+        "country_code": "US",
+        "lat": 28.5491443,
+        "lng": -81.5890084
     }
 }
