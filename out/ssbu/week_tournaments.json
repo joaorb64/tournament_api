@@ -36230,7 +36230,7 @@
         "slug": "tournament/peverell-pivot-1-founders-edition/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 5,
         "videogame": {
             "id": 1386
         },
@@ -125556,51 +125556,22 @@
         "name": "SPECIAL 1on1/ Ultimate Singles",
         "slug": "tournament/weekly-smash-party-221/event/special-1on1-ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 59,
         "videogame": {
             "id": 1386
         },
         "startAt": 1771405200,
-        "phaseGroups": [],
-        "tournament": "Weekly Smash Party \uff5e\u30b9\u30de\u30d1\uff5e #221",
-        "tournament_id": 880735,
-        "city": "\u4e2d\u91ce\u533a",
-        "url": "https://smash.gg/tournament/weekly-smash-party-221/event/special-1on1-ultimate-singles",
-        "streams": [
+        "phaseGroups": [
             {
-                "streamName": "East Geek Smash"
-            },
-            {
-                "streamName": "VGBootCamp"
-            },
-            {
-                "streamName": "chez_ib"
+                "id": 3202326,
+                "phase": {
+                    "id": 2203796,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "timezone": "Asia/Tokyo",
-        "tournament_startAt": 1771405200,
-        "tournament_endAt": 1771421400,
-        "tournament_registrationClosesAt": 1771405200,
-        "images": [
-            {
-                "id": "9141303",
-                "url": "https://images.start.gg/images/tournament/880735/image-80746dda86d4947bfb16516128b1544f.jpg",
-                "type": "banner"
-            },
-            {
-                "id": "9141304",
-                "url": "https://images.start.gg/images/tournament/880735/image-05c0fc252263f8184cd19cedab94206d.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": "Red Bull Gaming Sphere Tokyo",
-        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012164-0001 \u6771\u4eac\u90fd\u4e2d\u91ce\u533a\u4e2d\u91ce\uff13\u4e01\u76ee\uff13\uff13\u2212\uff11\uff18",
-        "tournament_addrState": "\u6771\u4eac\u90fd",
-        "country_code": "JP",
-        "lat": 35.7029407,
-        "lng": 139.66528270000003
+        ]
     },
     "1560122": {
         "id": 1560122,
@@ -167961,7 +167932,7 @@
         "name": "Mashers Singles",
         "slug": "tournament/midnight-mashers-295/event/mashers-singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 102,
         "videogame": {
             "id": 1386
@@ -188283,5 +188254,62 @@
         "country_code": "US",
         "lat": 40.124481,
         "lng": -87.6300207
+    },
+    "1563646": {
+        "id": 1563646,
+        "name": "1V1 Ultimate",
+        "slug": "tournament/weekly-online-2/event/1v1-ultimate",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1771441200,
+        "phaseGroups": [
+            {
+                "id": 3208412,
+                "phase": {
+                    "id": 2208377,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Weekly Online",
+        "tournament_id": 882498,
+        "city": "Caen",
+        "url": "https://smash.gg/tournament/weekly-online-2/event/1v1-ultimate",
+        "streams": [
+            {
+                "streamName": "kangdae"
+            },
+            {
+                "streamName": "lsllune"
+            }
+        ],
+        "timezone": "Europe/Paris",
+        "tournament_startAt": 1771441200,
+        "tournament_endAt": 1771459200,
+        "tournament_registrationClosesAt": 1771801200,
+        "images": [
+            {
+                "id": "9157778",
+                "url": "https://images.start.gg/images/tournament/882498/image-e7a57a092a81f133cea70b1df86acc72.png",
+                "type": "profile"
+            },
+            {
+                "id": "9157779",
+                "url": "https://images.start.gg/images/tournament/882498/image-ab9c7763b3409b7217513e84be47770a.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "14000 Caen, France",
+        "tournament_addrState": "Normandie",
+        "country_code": "FR",
+        "lat": 49.1820662,
+        "lng": -0.3708324
     }
 }
