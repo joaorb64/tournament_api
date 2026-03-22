@@ -16461,8 +16461,8 @@
         "name": "Melee Singles",
         "slug": "tournament/hyperfocus-march-2026/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 6,
+        "state": "ACTIVE",
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
@@ -16472,7 +16472,37 @@
                 "id": 3222888,
                 "phase": {
                     "id": 2219927,
-                    "name": "Melee singles"
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13610221
+                    },
+                    {
+                        "id": 13610223
+                    }
+                ]
+            },
+            {
+                "id": 3246874,
+                "phase": {
+                    "id": 2219927,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13610222
+                    },
+                    {
+                        "id": 13610224
+                    }
+                ]
+            },
+            {
+                "id": 3246875,
+                "phase": {
+                    "id": 2238905,
+                    "name": "brackyu"
                 },
                 "progressionsOut": null
             }
@@ -28051,28 +28081,6 @@
         "country_code": "US",
         "lat": 38.4248163,
         "lng": -82.4294852
-    },
-    "1581964": {
-        "id": 1581964,
-        "name": "Melee!",
-        "slug": "tournament/mario-con-2026-1/event/melee",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 11,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1773583200,
-        "phaseGroups": [
-            {
-                "id": 3237805,
-                "phase": {
-                    "id": 2231745,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1582007": {
         "id": 1582007,
@@ -48592,5 +48600,55 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "1587477": {
+        "id": 1587477,
+        "name": "Melee singles",
+        "slug": "tournament/slagloftet-29/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1774710000,
+        "phaseGroups": [
+            {
+                "id": 3246869,
+                "phase": {
+                    "id": 2238900,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Slagloftet #29",
+        "tournament_id": 893854,
+        "city": "Haugesund",
+        "url": "https://smash.gg/tournament/slagloftet-29/event/melee-singles",
+        "streams": null,
+        "timezone": "Europe/Oslo",
+        "tournament_startAt": 1774699200,
+        "tournament_endAt": 1774731600,
+        "tournament_registrationClosesAt": 1774738800,
+        "images": [
+            {
+                "id": "9270062",
+                "url": "https://images.start.gg/images/tournament/893854/image-26ba92cee4315dbfe45aaa7bf02d03dc.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "9270063",
+                "url": "https://images.start.gg/images/tournament/893854/image-f49ec95960f35b826309719bc8d91802.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Strandgata 70, 5528 Haugesund, Norway",
+        "tournament_addrState": "Rogaland",
+        "country_code": "NO",
+        "lat": 59.4094388,
+        "lng": 5.2727319
     }
 }
