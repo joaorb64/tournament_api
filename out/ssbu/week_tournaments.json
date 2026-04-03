@@ -23937,7 +23937,7 @@
         "slug": "tournament/rite-of-the-rose-ix/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 60,
+        "numEntrants": 61,
         "videogame": {
             "id": 1386
         },
@@ -24156,6 +24156,9 @@
                     },
                     {
                         "id": 13664921
+                    },
+                    {
+                        "id": 13665284
                     }
                 ]
             },
@@ -27303,7 +27306,7 @@
         "name": "SUPER SMASH BROS. ULTIMATE",
         "slug": "tournament/dark-winter-2026/event/super-smash-bros-ultimate",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 41,
         "videogame": {
             "id": 1386
@@ -27383,7 +27386,11 @@
         "tournament_id": 872897,
         "city": "C\u00f3rdoba",
         "url": "https://smash.gg/tournament/dark-winter-2026/event/super-smash-bros-ultimate",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "smashbros_cba"
+            }
+        ],
         "timezone": "America/Cordoba",
         "tournament_startAt": 1775185200,
         "tournament_endAt": 1775358000,
@@ -57462,7 +57469,31 @@
             "id": 1386
         },
         "startAt": 1775230200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3233698,
+                "phase": {
+                    "id": 2228481,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13662248
+                    },
+                    {
+                        "id": 13662249
+                    }
+                ]
+            },
+            {
+                "id": 3262845,
+                "phase": {
+                    "id": 2250887,
+                    "name": "Fase Final"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Ajierro Weekly Series 20",
         "tournament_id": 890032,
         "city": "Sevilla",
@@ -60870,7 +60901,7 @@
         "slug": "tournament/rive2geek-2026/event/dimanche-ultimate",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 14,
+        "numEntrants": 23,
         "videogame": {
             "id": 1386
         },
@@ -60897,7 +60928,7 @@
         "timezone": "Europe/Paris",
         "tournament_startAt": 1775289600,
         "tournament_endAt": 1775412000,
-        "tournament_registrationClosesAt": 1775145600,
+        "tournament_registrationClosesAt": 1775404800,
         "images": [
             {
                 "id": "9240032",
@@ -90119,7 +90150,7 @@
         "slug": "tournament/vend-e-smash-27-samedi-11-avril/event/tournoi-1v1-ssbu-samedi-11-avril",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 11,
+        "numEntrants": 10,
         "videogame": {
             "id": 1386
         },
@@ -100500,7 +100531,7 @@
         "name": "\u30b7\u30f3\u30b0\u30eb\u30b9\uff08\uff11on\uff11\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8\uff09",
         "slug": "tournament/3-424/event/on",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 31,
         "videogame": {
             "id": 1386
@@ -120154,94 +120185,6 @@
             }
         ]
     },
-    "1549489": {
-        "id": 1549489,
-        "name": "Road to State: Smash",
-        "slug": "tournament/road-to-state-unt-dallas-x-nths/event/road-to-state-smash",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 55,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1774620000,
-        "phaseGroups": [
-            {
-                "id": 3185321,
-                "phase": {
-                    "id": 2190230,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 13623602
-                    },
-                    {
-                        "id": 13623604
-                    },
-                    {
-                        "id": 13623606
-                    },
-                    {
-                        "id": 13623608
-                    },
-                    {
-                        "id": 13623610
-                    },
-                    {
-                        "id": 13623612
-                    },
-                    {
-                        "id": 13623614
-                    },
-                    {
-                        "id": 13623616
-                    }
-                ]
-            },
-            {
-                "id": 3252291,
-                "phase": {
-                    "id": 2190230,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 13623603
-                    },
-                    {
-                        "id": 13623605
-                    },
-                    {
-                        "id": 13623607
-                    },
-                    {
-                        "id": 13623609
-                    },
-                    {
-                        "id": 13623611
-                    },
-                    {
-                        "id": 13623613
-                    },
-                    {
-                        "id": 13623615
-                    },
-                    {
-                        "id": 13623617
-                    }
-                ]
-            },
-            {
-                "id": 3252290,
-                "phase": {
-                    "id": 2243483,
-                    "name": "Top 16"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1588751": {
         "id": 1588751,
         "name": "Three's A Crowd '26",
@@ -129104,7 +129047,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/smalab-39/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 13,
         "videogame": {
             "id": 1386
@@ -149846,7 +149789,7 @@
         "slug": "tournament/okay-this-is-epping-47/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 54,
+        "numEntrants": 53,
         "videogame": {
             "id": 1386
         },
@@ -154543,7 +154486,7 @@
         "name": "Ultimate singles",
         "slug": "tournament/327-act-2/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1386
@@ -189941,7 +189884,7 @@
         "slug": "tournament/nika-pon-sal-n-del-manga-avil-s-abril-2026/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 13,
+        "numEntrants": 21,
         "videogame": {
             "id": 1386
         },
@@ -190073,7 +190016,7 @@
         "slug": "tournament/weekly-by-vegacy-s9-6/event/simple",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 4,
         "videogame": {
             "id": 1386
         },
@@ -190315,39 +190258,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Finde de locos #8",
-        "tournament_id": 898255,
-        "city": "Lora del R\u00edo",
-        "url": "https://smash.gg/tournament/finde-de-locos-8/event/super-smash-bros-ultimate",
-        "streams": [
-            {
-                "streamName": "joklo_rl"
-            }
-        ],
-        "timezone": "Europe/Madrid",
-        "tournament_startAt": 1775223000,
-        "tournament_endAt": 1775235600,
-        "tournament_registrationClosesAt": 1775235600,
-        "images": [
-            {
-                "id": "9311866",
-                "url": "https://images.start.gg/images/tournament/898255/image-9ca7671edaf41419d6a4c0110bab3cdf.png",
-                "type": "profile"
-            },
-            {
-                "id": "9311867",
-                "url": "https://images.start.gg/images/tournament/898255/image-70075e4ff4b8c8ef683a525d250617d7.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "41440 Lora del R\u00edo, Sevilla, Espa\u00f1a",
-        "tournament_addrState": "AN",
-        "country_code": "ES",
-        "lat": 37.6556349,
-        "lng": -5.52761
+        ]
     },
     "1597219": {
         "id": 1597219,
@@ -190355,7 +190266,7 @@
         "slug": "tournament/friday-night-fights-5-spring-2026/event/ultimate-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1386
         },
@@ -190370,5 +190281,1434 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1440883": {
+        "id": 1440883,
+        "name": "Ultimate Singles",
+        "slug": "tournament/undiscovered-realm-comic-con-2026/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1781355600,
+        "phaseGroups": [
+            {
+                "id": 3004362,
+                "phase": {
+                    "id": 2052450,
+                    "name": "Phase 1 Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12637682
+                    },
+                    {
+                        "id": 12637686
+                    },
+                    {
+                        "id": 12637690
+                    },
+                    {
+                        "id": 12637694
+                    }
+                ]
+            },
+            {
+                "id": 3004363,
+                "phase": {
+                    "id": 2052450,
+                    "name": "Phase 1 Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12637683
+                    },
+                    {
+                        "id": 12637687
+                    },
+                    {
+                        "id": 12637691
+                    },
+                    {
+                        "id": 12637695
+                    }
+                ]
+            },
+            {
+                "id": 3004364,
+                "phase": {
+                    "id": 2052450,
+                    "name": "Phase 1 Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12637684
+                    },
+                    {
+                        "id": 12637688
+                    },
+                    {
+                        "id": 12637692
+                    },
+                    {
+                        "id": 12637696
+                    }
+                ]
+            },
+            {
+                "id": 3004365,
+                "phase": {
+                    "id": 2052450,
+                    "name": "Phase 1 Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12637685
+                    },
+                    {
+                        "id": 12637689
+                    },
+                    {
+                        "id": 12637693
+                    },
+                    {
+                        "id": 12637697
+                    }
+                ]
+            },
+            {
+                "id": 3004366,
+                "phase": {
+                    "id": 2052451,
+                    "name": "Top 16"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 12637698
+                    },
+                    {
+                        "id": 12637699
+                    },
+                    {
+                        "id": 12637700
+                    },
+                    {
+                        "id": 12637701
+                    },
+                    {
+                        "id": 12637702
+                    },
+                    {
+                        "id": 12637703
+                    },
+                    {
+                        "id": 12637704
+                    },
+                    {
+                        "id": 12637705
+                    }
+                ]
+            },
+            {
+                "id": 3004367,
+                "phase": {
+                    "id": 2052452,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Undiscovered Realm Comic Con 2026",
+        "tournament_id": 819889,
+        "city": "White Plains",
+        "url": "https://smash.gg/tournament/undiscovered-realm-comic-con-2026/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "smashchester"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1781355600,
+        "tournament_endAt": 1781488800,
+        "tournament_registrationClosesAt": 1781233140,
+        "images": [
+            {
+                "id": "8582683",
+                "url": "https://images.start.gg/images/tournament/819889/image-b6c7add29976d9f3dc6051ec77f0db88.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313837",
+                "url": "https://images.start.gg/images/tournament/819889/image-ea1afb226a6a0bb7c45faef2c58f7bef.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "198 Central Ave, White Plains, NY 10607, USA",
+        "tournament_addrState": "NY",
+        "country_code": "US",
+        "lat": 41.03703489999999,
+        "lng": -73.77884929999999
+    },
+    "1597261": {
+        "id": 1597261,
+        "name": "Amateurs",
+        "slug": "tournament/lucy-80-weekly/event/amateurs",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1779296400,
+        "phaseGroups": [
+            {
+                "id": 3263516,
+                "phase": {
+                    "id": 2251355,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #80 (Weekly)",
+        "tournament_id": 898463,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-80-weekly/event/amateurs",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1779296400,
+        "tournament_endAt": 1779310800,
+        "tournament_registrationClosesAt": 1779296400,
+        "images": [
+            {
+                "id": "9313865",
+                "url": "https://images.start.gg/images/tournament/898463/image-6c2cbb007a5d0ed64cf9e481a1e2cdee.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313866",
+                "url": "https://images.start.gg/images/tournament/898463/image-5587755a3226f198ff7411d3957c9ec2.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597260": {
+        "id": 1597260,
+        "name": "Super Smash Bros. Ultimate 1v1",
+        "slug": "tournament/lucy-80-weekly/event/super-smash-bros-ultimate-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1779296400,
+        "phaseGroups": [
+            {
+                "id": 3263515,
+                "phase": {
+                    "id": 2251354,
+                    "name": "Pools"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #80 (Weekly)",
+        "tournament_id": 898463,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-80-weekly/event/super-smash-bros-ultimate-1v1",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1779296400,
+        "tournament_endAt": 1779310800,
+        "tournament_registrationClosesAt": 1779296400,
+        "images": [
+            {
+                "id": "9313865",
+                "url": "https://images.start.gg/images/tournament/898463/image-6c2cbb007a5d0ed64cf9e481a1e2cdee.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313866",
+                "url": "https://images.start.gg/images/tournament/898463/image-5587755a3226f198ff7411d3957c9ec2.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597259": {
+        "id": 1597259,
+        "name": "Amateurs",
+        "slug": "tournament/lucy-79-weekly/event/amateurs",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1778691600,
+        "phaseGroups": [
+            {
+                "id": 3263514,
+                "phase": {
+                    "id": 2251353,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #79 (Weekly)",
+        "tournament_id": 898462,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-79-weekly/event/amateurs",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1778691600,
+        "tournament_endAt": 1778706000,
+        "tournament_registrationClosesAt": 1778691600,
+        "images": [
+            {
+                "id": "9313860",
+                "url": "https://images.start.gg/images/tournament/898462/image-869a26add05344e9a889dceddbe58c87.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313861",
+                "url": "https://images.start.gg/images/tournament/898462/image-de26ed9e2a09c3f2e57097a170a731d6.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597258": {
+        "id": 1597258,
+        "name": "Super Smash Bros. Ultimate 1v1",
+        "slug": "tournament/lucy-79-weekly/event/super-smash-bros-ultimate-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1778691600,
+        "phaseGroups": [
+            {
+                "id": 3263513,
+                "phase": {
+                    "id": 2251352,
+                    "name": "Pools"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #79 (Weekly)",
+        "tournament_id": 898462,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-79-weekly/event/super-smash-bros-ultimate-1v1",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1778691600,
+        "tournament_endAt": 1778706000,
+        "tournament_registrationClosesAt": 1778691600,
+        "images": [
+            {
+                "id": "9313860",
+                "url": "https://images.start.gg/images/tournament/898462/image-869a26add05344e9a889dceddbe58c87.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313861",
+                "url": "https://images.start.gg/images/tournament/898462/image-de26ed9e2a09c3f2e57097a170a731d6.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597256": {
+        "id": 1597256,
+        "name": "Amateurs",
+        "slug": "tournament/lucy-78-weekly/event/amateurs",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1778086800,
+        "phaseGroups": [
+            {
+                "id": 3263503,
+                "phase": {
+                    "id": 2251346,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #78 (Weekly)",
+        "tournament_id": 898461,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-78-weekly/event/amateurs",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1778086800,
+        "tournament_endAt": 1778101200,
+        "tournament_registrationClosesAt": 1778086800,
+        "images": [
+            {
+                "id": "9313855",
+                "url": "https://images.start.gg/images/tournament/898461/image-a294c260607f5e9381786b2679649ae8.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313856",
+                "url": "https://images.start.gg/images/tournament/898461/image-34bf8eb6b39179baa1c081a9be040f81.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597255": {
+        "id": 1597255,
+        "name": "Super Smash Bros. Ultimate 1v1",
+        "slug": "tournament/lucy-78-weekly/event/super-smash-bros-ultimate-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1778086800,
+        "phaseGroups": [
+            {
+                "id": 3263502,
+                "phase": {
+                    "id": 2251345,
+                    "name": "Pools"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #78 (Weekly)",
+        "tournament_id": 898461,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-78-weekly/event/super-smash-bros-ultimate-1v1",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1778086800,
+        "tournament_endAt": 1778101200,
+        "tournament_registrationClosesAt": 1778086800,
+        "images": [
+            {
+                "id": "9313855",
+                "url": "https://images.start.gg/images/tournament/898461/image-a294c260607f5e9381786b2679649ae8.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313856",
+                "url": "https://images.start.gg/images/tournament/898461/image-34bf8eb6b39179baa1c081a9be040f81.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597265": {
+        "id": 1597265,
+        "name": "Amateur / Handicap",
+        "slug": "tournament/lucy-20-monthly/event/amateur-handicap",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1777811400,
+        "phaseGroups": [
+            {
+                "id": 3263522,
+                "phase": {
+                    "id": 2251361,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #20 (Monthly)",
+        "tournament_id": 898466,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-20-monthly/event/amateur-handicap",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1777811400,
+        "tournament_endAt": 1777831200,
+        "tournament_registrationClosesAt": 1777806000,
+        "images": [
+            {
+                "id": "9313880",
+                "url": "https://images.start.gg/images/tournament/898466/image-ac9701498ce718cd6968320f4be803cd.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313881",
+                "url": "https://images.start.gg/images/tournament/898466/image-847dcae1f0e9b77483ab6181b41303da.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597264": {
+        "id": 1597264,
+        "name": "Super Smash Bros. Ultimate 1v1",
+        "slug": "tournament/lucy-20-monthly/event/super-smash-bros-ultimate-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1777812600,
+        "phaseGroups": [
+            {
+                "id": 3263519,
+                "phase": {
+                    "id": 2251358,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665470
+                    },
+                    {
+                        "id": 13665471
+                    },
+                    {
+                        "id": 13665472
+                    },
+                    {
+                        "id": 13665473
+                    },
+                    {
+                        "id": 13665474
+                    },
+                    {
+                        "id": 13665475
+                    },
+                    {
+                        "id": 13665476
+                    },
+                    {
+                        "id": 13665477
+                    },
+                    {
+                        "id": 13665478
+                    },
+                    {
+                        "id": 13665479
+                    },
+                    {
+                        "id": 13665480
+                    },
+                    {
+                        "id": 13665481
+                    },
+                    {
+                        "id": 13665482
+                    },
+                    {
+                        "id": 13665483
+                    },
+                    {
+                        "id": 13665484
+                    },
+                    {
+                        "id": 13665485
+                    }
+                ]
+            },
+            {
+                "id": 3263520,
+                "phase": {
+                    "id": 2251359,
+                    "name": "Top 16 BO5"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665486
+                    },
+                    {
+                        "id": 13665487
+                    },
+                    {
+                        "id": 13665488
+                    },
+                    {
+                        "id": 13665489
+                    },
+                    {
+                        "id": 13665490
+                    },
+                    {
+                        "id": 13665491
+                    },
+                    {
+                        "id": 13665492
+                    },
+                    {
+                        "id": 13665493
+                    }
+                ]
+            },
+            {
+                "id": 3263521,
+                "phase": {
+                    "id": 2251360,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LuCy #20 (Monthly)",
+        "tournament_id": 898466,
+        "city": "Luzern",
+        "url": "https://smash.gg/tournament/lucy-20-monthly/event/super-smash-bros-ultimate-1v1",
+        "streams": [
+            {
+                "streamName": "LucyEsports"
+            }
+        ],
+        "timezone": "Europe/Zurich",
+        "tournament_startAt": 1777811400,
+        "tournament_endAt": 1777831200,
+        "tournament_registrationClosesAt": 1777806000,
+        "images": [
+            {
+                "id": "9313880",
+                "url": "https://images.start.gg/images/tournament/898466/image-ac9701498ce718cd6968320f4be803cd.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313881",
+                "url": "https://images.start.gg/images/tournament/898466/image-847dcae1f0e9b77483ab6181b41303da.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Treibhaus, Spelteriniweg 4, 6005 Luzern, Schweiz",
+        "tournament_addrState": "LU",
+        "country_code": "CH",
+        "lat": 47.0425298,
+        "lng": 8.3192639
+    },
+    "1597238": {
+        "id": 1597238,
+        "name": "Mr. & Mrs. Vibe's Monthly Smash #24 (Lagless Edition)",
+        "slug": "tournament/mr-mrs-vibe-s-monthly-smash-24-lagless-edition/event/mr-mrs-vibe-s-monthly-smash-24-lagless-edition",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1776528000,
+        "phaseGroups": [
+            {
+                "id": 3263467,
+                "phase": {
+                    "id": 2251323,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665260
+                    },
+                    {
+                        "id": 13665261
+                    },
+                    {
+                        "id": 13665262
+                    },
+                    {
+                        "id": 13665263
+                    },
+                    {
+                        "id": 13665264
+                    },
+                    {
+                        "id": 13665265
+                    },
+                    {
+                        "id": 13665266
+                    },
+                    {
+                        "id": 13665267
+                    }
+                ]
+            },
+            {
+                "id": 3263468,
+                "phase": {
+                    "id": 2251324,
+                    "name": "Top 8 (BO5)"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Mr. & Mrs. Vibe's Monthly Smash #24 (Lagless Edition)",
+        "tournament_id": 898452,
+        "city": "Arouca",
+        "url": "https://smash.gg/tournament/mr-mrs-vibe-s-monthly-smash-24-lagless-edition/event/mr-mrs-vibe-s-monthly-smash-24-lagless-edition",
+        "streams": [
+            {
+                "streamName": "kouy__"
+            }
+        ],
+        "timezone": "America/Port_of_Spain",
+        "tournament_startAt": 1776528000,
+        "tournament_endAt": 1776546000,
+        "tournament_registrationClosesAt": 1776520800,
+        "images": [
+            {
+                "id": "9313788",
+                "url": "https://images.start.gg/images/tournament/898452/image-675df70097df3bd2f931b3868bd23bc6.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "9313789",
+                "url": "https://images.start.gg/images/tournament/898452/image-ec5669495904a1a36b214ecaa876004a.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "",
+        "tournament_addrState": "Tunapuna/Piarco Regional Corporation",
+        "country_code": "TT",
+        "lat": 10.6386422,
+        "lng": -61.34886030000001
+    },
+    "1597243": {
+        "id": 1597243,
+        "name": "Ultimate Singles",
+        "slug": "tournament/boreal-3/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1776531600,
+        "phaseGroups": [
+            {
+                "id": 3263480,
+                "phase": {
+                    "id": 2251331,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Boreal 3",
+        "tournament_id": 898458,
+        "city": "Greater Sudbury",
+        "url": "https://smash.gg/tournament/boreal-3/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1776524400,
+        "tournament_endAt": 1776564000,
+        "tournament_registrationClosesAt": 1776546000,
+        "images": [
+            {
+                "id": "9313817",
+                "url": "https://images.start.gg/images/tournament/898458/image-afd3eea8e3d8938aa66fa3e5bc0033da.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "9313818",
+                "url": "https://images.start.gg/images/tournament/898458/image-98b017b5f26986164398bcf7ffe60666.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "21 Lasalle Blvd, Greater Sudbury, ON P3A 6B1, Canada",
+        "tournament_addrState": "ON",
+        "country_code": "CA",
+        "lat": 46.5176534,
+        "lng": -80.9933118
+    },
+    "1597266": {
+        "id": 1597266,
+        "name": "Ultimate Singles",
+        "slug": "tournament/st-george-scramble-81-1/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775858400,
+        "phaseGroups": [
+            {
+                "id": 3263523,
+                "phase": {
+                    "id": 2251362,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "St. George Scramble #81",
+        "tournament_id": 898467,
+        "city": "Toronto",
+        "url": "https://smash.gg/tournament/st-george-scramble-81-1/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Toronto",
+        "tournament_startAt": 1775858400,
+        "tournament_endAt": 1775876400,
+        "tournament_registrationClosesAt": 1775898000,
+        "images": [
+            {
+                "id": "9313889",
+                "url": "https://images.start.gg/images/tournament/898467/image-97bbcf8dbef0184fa0e1e249f2bda018.png",
+                "type": "banner"
+            },
+            {
+                "id": "9313890",
+                "url": "https://images.start.gg/images/tournament/898467/image-6d65b0b1e06a0b1c5a10d849de67b5dc.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Bahen Centre for Information Technology, 40 St George St, Toronto, ON M5S 2E4, Canada",
+        "tournament_addrState": "ON",
+        "country_code": "CA",
+        "lat": 43.6595745,
+        "lng": -79.3973729
+    },
+    "1586271": {
+        "id": 1586271,
+        "name": "1on1\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
+        "slug": "tournament/smash-132-1/event/1on1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775815200,
+        "phaseGroups": [],
+        "tournament": "Smash\u85ac\u9662#132",
+        "tournament_id": 893261,
+        "city": "\u798f\u5ca1\u5e02",
+        "url": "https://smash.gg/tournament/smash-132-1/event/1on1",
+        "streams": [
+            {
+                "streamName": "\u30b9\u30de\u30a4\u30f3-Smash \u85ac\u9662-"
+            },
+            {
+                "streamName": "Smash_Yakuin"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1775815200,
+        "tournament_endAt": 1775829600,
+        "tournament_registrationClosesAt": 1775813400,
+        "images": [
+            {
+                "id": "9264151",
+                "url": "https://images.start.gg/images/tournament/893261/image-721eb563842c3b597d5b506a0b2dc7be.png",
+                "type": "profile"
+            },
+            {
+                "id": "9264152",
+                "url": "https://images.start.gg/images/tournament/893261/image-660fcf8da055e278fcbd755cc6f8b87b.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012810-0022 \u798f\u5ca1\u770c\u798f\u5ca1\u5e02\u4e2d\u592e\u533a\u85ac\u9662\uff14\u4e01\u76ee\uff12\u2212\uff11\uff13 \u30b3\u30a2\u30ad\u30e9\u30bc\u30d3\u30eb",
+        "tournament_addrState": "\u798f\u5ca1\u770c",
+        "country_code": "JP",
+        "lat": 33.5788746,
+        "lng": 130.3984333
+    },
+    "1597231": {
+        "id": 1597231,
+        "name": "Ultimate Singles",
+        "slug": "tournament/smash-mizzou-183/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775610000,
+        "phaseGroups": [
+            {
+                "id": 3263458,
+                "phase": {
+                    "id": 2251315,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash @ Mizzou 183",
+        "tournament_id": 898450,
+        "city": "Columbia",
+        "url": "https://smash.gg/tournament/smash-mizzou-183/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "zafrottv"
+            },
+            {
+                "streamName": "speir_"
+            },
+            {
+                "streamName": "comosmash"
+            },
+            {
+                "streamName": "iR3mmy"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1775610000,
+        "tournament_endAt": 1775628000,
+        "tournament_registrationClosesAt": 1775613600,
+        "images": [
+            {
+                "id": "9313772",
+                "url": "https://images.start.gg/images/tournament/898450/image-352d963b11bda5c9fd7a952c46eca7ab.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313773",
+                "url": "https://images.start.gg/images/tournament/898450/image-e597753d03e22a76fedce6742b671a0d.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "805 Rollins St, Columbia, MO 65201, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 38.9425157,
+        "lng": -92.32799670000001
+    },
+    "1597232": {
+        "id": 1597232,
+        "name": "Ultimate Redemption",
+        "slug": "tournament/smash-mizzou-183/event/ultimate-redemption",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775610000,
+        "phaseGroups": [
+            {
+                "id": 3263459,
+                "phase": {
+                    "id": 2251316,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smash @ Mizzou 183",
+        "tournament_id": 898450,
+        "city": "Columbia",
+        "url": "https://smash.gg/tournament/smash-mizzou-183/event/ultimate-redemption",
+        "streams": [
+            {
+                "streamName": "zafrottv"
+            },
+            {
+                "streamName": "speir_"
+            },
+            {
+                "streamName": "comosmash"
+            },
+            {
+                "streamName": "iR3mmy"
+            }
+        ],
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1775610000,
+        "tournament_endAt": 1775628000,
+        "tournament_registrationClosesAt": 1775613600,
+        "images": [
+            {
+                "id": "9313772",
+                "url": "https://images.start.gg/images/tournament/898450/image-352d963b11bda5c9fd7a952c46eca7ab.png",
+                "type": "profile"
+            },
+            {
+                "id": "9313773",
+                "url": "https://images.start.gg/images/tournament/898450/image-e597753d03e22a76fedce6742b671a0d.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "805 Rollins St, Columbia, MO 65201, USA",
+        "tournament_addrState": "MO",
+        "country_code": "US",
+        "lat": 38.9425157,
+        "lng": -92.32799670000001
+    },
+    "1597226": {
+        "id": 1597226,
+        "name": "Ultimate Singles",
+        "slug": "tournament/clash-at-the-crossroads-13-3-1/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775347200,
+        "phaseGroups": [
+            {
+                "id": 3263410,
+                "phase": {
+                    "id": 2251306,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Clash at the Crossroads #13/3",
+        "tournament_id": 898441,
+        "city": "Victoria",
+        "url": "https://smash.gg/tournament/clash-at-the-crossroads-13-3-1/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1775347200,
+        "tournament_endAt": 1775365200,
+        "tournament_registrationClosesAt": 1775365200,
+        "images": [],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "3610 N Laurent St, Victoria, TX 77901, USA",
+        "tournament_addrState": "TX",
+        "country_code": "US",
+        "lat": 28.8267679,
+        "lng": -96.99234729999999
+    },
+    "1597253": {
+        "id": 1597253,
+        "name": "Ultimate singles",
+        "slug": "tournament/bardo-house-series-21/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775329260,
+        "phaseGroups": [
+            {
+                "id": 3263492,
+                "phase": {
+                    "id": 2251341,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Bardo House Series #21",
+        "tournament_id": 898460,
+        "city": "Iquique",
+        "url": "https://smash.gg/tournament/bardo-house-series-21/event/ultimate-singles",
+        "streams": null,
+        "timezone": "America/Santiago",
+        "tournament_startAt": 1775332860,
+        "tournament_endAt": 1775352540,
+        "tournament_registrationClosesAt": 1775278860,
+        "images": [
+            {
+                "id": "9313872",
+                "url": "https://images.start.gg/images/tournament/898460/image-7a79a40cb11458b40cab1b078ec89f60.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Edmundo Wallis, Iquique, Tarapac\u00e1, Chile",
+        "tournament_addrState": "Tarapac\u00e1",
+        "country_code": "CL",
+        "lat": -20.2402283,
+        "lng": -70.1398193
+    },
+    "1597228": {
+        "id": 1597228,
+        "name": "Ultimate Tiger Singles (First Floor University Center)",
+        "slug": "tournament/ecu-tiger-smash-day-23-paid/event/ultimate-tiger-singles-first-floor-university-center",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775330100,
+        "phaseGroups": [
+            {
+                "id": 3263445,
+                "phase": {
+                    "id": 2251310,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "ECU Tiger Smash Day #23 (PAID)",
+        "tournament_id": 898447,
+        "city": "Ada",
+        "url": "https://smash.gg/tournament/ecu-tiger-smash-day-23-paid/event/ultimate-tiger-singles-first-floor-university-center",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1775329200,
+        "tournament_endAt": 1775343600,
+        "tournament_registrationClosesAt": 1775329200,
+        "images": [
+            {
+                "id": "9313758",
+                "url": "https://images.start.gg/images/tournament/898447/image-093e8865baa30f5f946cdc091e1ebc89.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1100 E 14th St, Ada, OK 74820, USA",
+        "tournament_addrState": "OK",
+        "country_code": "US",
+        "lat": 34.7720283,
+        "lng": -96.6637904
+    },
+    "1597257": {
+        "id": 1597257,
+        "name": "Tidebreaker #112",
+        "slug": "tournament/atlantis-series/event/tidebreaker-112",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775268000,
+        "phaseGroups": [
+            {
+                "id": 3263505,
+                "phase": {
+                    "id": 2251347,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Atlantis Series",
+        "tournament_id": 709678,
+        "city": null,
+        "url": "https://smash.gg/tournament/atlantis-series/event/tidebreaker-112",
+        "streams": [
+            {
+                "streamName": "Umbra_the_shark"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1775268000,
+        "tournament_endAt": 1775268060,
+        "tournament_registrationClosesAt": 1859761800,
+        "images": [
+            {
+                "id": "9002661",
+                "url": "https://images.start.gg/images/tournament/709678/image-59299ca173174d9bbb6600358c0a00b9.png",
+                "type": "profile"
+            },
+            {
+                "id": "9002665",
+                "url": "https://images.start.gg/images/tournament/709678/image-6a0fd147335ff930fcdc52c060f3d36f.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1597240": {
+        "id": 1597240,
+        "name": "Summit 5",
+        "slug": "tournament/william-and-mary-smash-summit-6/event/summit-5",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 16,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775255400,
+        "phaseGroups": [
+            {
+                "id": 3263471,
+                "phase": {
+                    "id": 2251326,
+                    "name": "Group Stage"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665268
+                    },
+                    {
+                        "id": 13665272
+                    },
+                    {
+                        "id": 13665276
+                    },
+                    {
+                        "id": 13665280
+                    }
+                ]
+            },
+            {
+                "id": 3263472,
+                "phase": {
+                    "id": 2251326,
+                    "name": "Group Stage"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665269
+                    },
+                    {
+                        "id": 13665273
+                    },
+                    {
+                        "id": 13665277
+                    },
+                    {
+                        "id": 13665281
+                    }
+                ]
+            },
+            {
+                "id": 3263473,
+                "phase": {
+                    "id": 2251326,
+                    "name": "Group Stage"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665270
+                    },
+                    {
+                        "id": 13665274
+                    },
+                    {
+                        "id": 13665278
+                    },
+                    {
+                        "id": 13665282
+                    }
+                ]
+            },
+            {
+                "id": 3263474,
+                "phase": {
+                    "id": 2251326,
+                    "name": "Group Stage"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13665271
+                    },
+                    {
+                        "id": 13665275
+                    },
+                    {
+                        "id": 13665279
+                    },
+                    {
+                        "id": 13665283
+                    }
+                ]
+            },
+            {
+                "id": 3263475,
+                "phase": {
+                    "id": 2251327,
+                    "name": "Final Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "William and Mary Smash Summit 6",
+        "tournament_id": 898455,
+        "city": "Williamsburg",
+        "url": "https://smash.gg/tournament/william-and-mary-smash-summit-6/event/summit-5",
+        "streams": [
+            {
+                "streamName": "williamandmarysmash"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1775255400,
+        "tournament_endAt": 1775279100,
+        "tournament_registrationClosesAt": 1775257200,
+        "images": [
+            {
+                "id": "9313805",
+                "url": "https://images.start.gg/images/tournament/898455/image-b99721f9864f5f5f8906a21ce47ec479.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9313806",
+                "url": "https://images.start.gg/images/tournament/898455/image-83b8e95eb929e5024e526570209dce41.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Tyler Hall, 300 James Blair Dr, Williamsburg, VA 23185, USA",
+        "tournament_addrState": "VA",
+        "country_code": "US",
+        "lat": 37.2714632,
+        "lng": -76.71075979999999
+    },
+    "1597230": {
+        "id": 1597230,
+        "name": "Empyrean Clash #6",
+        "slug": "tournament/empyrean-clash/event/empyrean-clash-6",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1775257200,
+        "phaseGroups": [
+            {
+                "id": 3263457,
+                "phase": {
+                    "id": 2251314,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Empyrean Clash",
+        "tournament_id": 884111,
+        "city": null,
+        "url": "https://smash.gg/tournament/empyrean-clash/event/empyrean-clash-6",
+        "streams": [
+            {
+                "streamName": "greentalons"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1775255400,
+        "tournament_endAt": 1775361540,
+        "tournament_registrationClosesAt": 1898638200,
+        "images": [
+            {
+                "id": "9172715",
+                "url": "https://images.start.gg/images/tournament/884111/image-a7b583312af7a5d1be3060cab8b2cbdf.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9172717",
+                "url": "https://images.start.gg/images/tournament/884111/image-b118ee59b876534b8cf792d4b26e349f.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
     }
 }
