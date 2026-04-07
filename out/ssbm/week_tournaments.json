@@ -53,7 +53,7 @@
         "name": "Melee Singles",
         "slug": "tournament/sapf-2/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 245,
         "videogame": {
             "id": 1
@@ -1145,7 +1145,14 @@
         "tournament_id": 775093,
         "city": "Hannover",
         "url": "https://smash.gg/tournament/sapf-2/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "phoenixsmash"
+            },
+            {
+                "streamName": "german_melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1775826000,
         "tournament_endAt": 1776024000,
@@ -1411,7 +1418,14 @@
         "tournament_id": 775093,
         "city": "Hannover",
         "url": "https://smash.gg/tournament/sapf-2/event/melee-doubles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "phoenixsmash"
+            },
+            {
+                "streamName": "german_melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1775826000,
         "tournament_endAt": 1776024000,
@@ -1452,7 +1466,14 @@
         "tournament_id": 775093,
         "city": "Hannover",
         "url": "https://smash.gg/tournament/sapf-2/event/melee-crews-3v3",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "phoenixsmash"
+            },
+            {
+                "streamName": "german_melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1775826000,
         "tournament_endAt": 1776024000,
@@ -1493,7 +1514,14 @@
         "tournament_id": 775093,
         "city": "Hannover",
         "url": "https://smash.gg/tournament/sapf-2/event/melee-ladder",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "phoenixsmash"
+            },
+            {
+                "streamName": "german_melee"
+            }
+        ],
         "timezone": "Europe/Berlin",
         "tournament_startAt": 1775826000,
         "tournament_endAt": 1776024000,
@@ -40097,44 +40125,21 @@
         "slug": "tournament/ledgetrompe-9/event/1v1-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
         "startAt": 1775500200,
-        "phaseGroups": [],
-        "tournament": "Ledgetrompe #9",
-        "tournament_id": 898002,
-        "city": "Toulouse",
-        "url": "https://smash.gg/tournament/ledgetrompe-9/event/1v1-melee",
-        "streams": [
+        "phaseGroups": [
             {
-                "streamName": "toulouselaststock"
+                "id": 3261568,
+                "phase": {
+                    "id": 2249973,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
             }
-        ],
-        "timezone": "Europe/Paris",
-        "tournament_startAt": 1775577600,
-        "tournament_endAt": 1775599140,
-        "tournament_registrationClosesAt": 1775563200,
-        "images": [
-            {
-                "id": "9309543",
-                "url": "https://images.start.gg/images/tournament/898002/image-1de7ce198251e7ef7c393acbda202458.png",
-                "type": "profile"
-            },
-            {
-                "id": "9309544",
-                "url": "https://images.start.gg/images/tournament/898002/image-76f32a0c3f3ee39564865da71d97ef47.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "54 All. Jean Jaur\u00e8s, 31000 Toulouse, France",
-        "tournament_addrState": "Occitanie",
-        "country_code": "FR",
-        "lat": 43.6070342,
-        "lng": 1.4513299
+        ]
     },
     "1542430": {
         "id": 1542430,
@@ -43936,7 +43941,7 @@
         "slug": "tournament/smash-ntnu-gl-shaugen-245/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -52365,5 +52370,62 @@
         "country_code": "IE",
         "lat": 51.8967849,
         "lng": -8.4701677
+    },
+    "1600246": {
+        "id": 1600246,
+        "name": "Melee Singles",
+        "slug": "tournament/seacoast-smackdown-s3e9/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776020400,
+        "phaseGroups": [
+            {
+                "id": 3268328,
+                "phase": {
+                    "id": 2255062,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Seacoast Smackdown S3E9",
+        "tournament_id": 899779,
+        "city": "Durham",
+        "url": "https://smash.gg/tournament/seacoast-smackdown-s3e9/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "tedkittenski"
+            },
+            {
+                "streamName": "Avery_Luigi"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1776020400,
+        "tournament_endAt": 1776038400,
+        "tournament_registrationClosesAt": 1776038400,
+        "images": [
+            {
+                "id": "9327126",
+                "url": "https://images.start.gg/images/tournament/899779/image-aa4d3937ff582556a14dd4f99e689a52.png",
+                "type": "banner"
+            },
+            {
+                "id": "9327127",
+                "url": "https://images.start.gg/images/tournament/899779/image-ef5bf3579797b22a3caaa1a523fa88c7.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Memorial Union Building, 83 Main St, Durham, NH 03824, USA",
+        "tournament_addrState": "NH",
+        "country_code": "US",
+        "lat": 43.1343861,
+        "lng": -70.93010819999999
     }
 }
