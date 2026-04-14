@@ -4589,7 +4589,7 @@
         "name": "Melee Singles",
         "slug": "tournament/melee-p-kville-biljard-42/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 13,
         "videogame": {
             "id": 1
@@ -26680,50 +26680,6 @@
             }
         ]
     },
-    "1597904": {
-        "id": 1597904,
-        "name": "Melee Singles",
-        "slug": "tournament/taking-back-tampa-92/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 27,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1775592000,
-        "phaseGroups": [
-            {
-                "id": 3264582,
-                "phase": {
-                    "id": 2252207,
-                    "name": "Pools"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1597905": {
-        "id": 1597905,
-        "name": "Redemption Bracket",
-        "slug": "tournament/taking-back-tampa-92/event/redemption-bracket",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 15,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1775592000,
-        "phaseGroups": [
-            {
-                "id": 3264583,
-                "phase": {
-                    "id": 2252208,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1597926": {
         "id": 1597926,
         "name": "Amateur Bracket",
@@ -32539,10 +32495,10 @@
     "1596469": {
         "id": 1596469,
         "name": "La Melee",
-        "slug": "tournament/la-melee-mancelle/event/la-melee",
+        "slug": "tournament/le-guet-poing/event/la-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -32554,13 +32510,37 @@
                     "id": 2250272,
                     "name": "Bracket"
                 },
+                "progressionsOut": [
+                    {
+                        "id": 13709934
+                    },
+                    {
+                        "id": 13709935
+                    },
+                    {
+                        "id": 13709936
+                    },
+                    {
+                        "id": 13709937
+                    },
+                    {
+                        "id": 13709938
+                    }
+                ]
+            },
+            {
+                "id": 3275994,
+                "phase": {
+                    "id": 2261035,
+                    "name": "bracket"
+                },
                 "progressionsOut": null
             }
         ],
-        "tournament": "La Melee Mancelle",
+        "tournament": "Le Guet \u00e0 Poing !",
         "tournament_id": 898099,
         "city": "Le Mans",
-        "url": "https://smash.gg/tournament/la-melee-mancelle/event/la-melee",
+        "url": "https://smash.gg/tournament/le-guet-poing/event/la-melee",
         "streams": null,
         "timezone": "Europe/Paris",
         "tournament_startAt": 1776956400,
@@ -51876,7 +51856,7 @@
         "streams": null,
         "timezone": "America/New_York",
         "tournament_startAt": 1777753800,
-        "tournament_endAt": 1777780800,
+        "tournament_endAt": 1777780680,
         "tournament_registrationClosesAt": 1777761000,
         "images": [],
         "tournament_multievent": true,
@@ -51915,7 +51895,7 @@
         "streams": null,
         "timezone": "America/New_York",
         "tournament_startAt": 1777753800,
-        "tournament_endAt": 1777780800,
+        "tournament_endAt": 1777780680,
         "tournament_registrationClosesAt": 1777761000,
         "images": [],
         "tournament_multievent": true,
@@ -51992,7 +51972,7 @@
         "slug": "tournament/red-deer-smash-276/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 2,
         "videogame": {
             "id": 1
         },
@@ -52134,5 +52114,429 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "1605870": {
+        "id": 1605870,
+        "name": "Melee Singles",
+        "slug": "tournament/good-tournament-15/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 2,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1777118400,
+        "phaseGroups": [
+            {
+                "id": 3277497,
+                "phase": {
+                    "id": 2262256,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13715878
+                    },
+                    {
+                        "id": 13715880
+                    }
+                ]
+            },
+            {
+                "id": 3277498,
+                "phase": {
+                    "id": 2262256,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13715879
+                    },
+                    {
+                        "id": 13715881
+                    }
+                ]
+            },
+            {
+                "id": 3277499,
+                "phase": {
+                    "id": 2262257,
+                    "name": "Pro Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 3277500,
+                "phase": {
+                    "id": 2262258,
+                    "name": "Amateur Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Good Tournament #15",
+        "tournament_id": 902458,
+        "city": "M\u00fcnchen",
+        "url": "https://smash.gg/tournament/good-tournament-15/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "german_melee"
+            }
+        ],
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1777118400,
+        "tournament_endAt": 1777147200,
+        "tournament_registrationClosesAt": 1777118400,
+        "images": [
+            {
+                "id": "9353044",
+                "url": "https://images.start.gg/images/tournament/902458/image-6c4115b90a68322ade01edf76398e901.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "JUZ Zorneding",
+        "tournament_venueAddress": "Schertlinstra\u00dfe 4, 81379 M\u00fcnchen, Deutschland",
+        "tournament_addrState": "BY",
+        "country_code": "DE",
+        "lat": 48.0967955,
+        "lng": 11.5159523
+    },
+    "1605871": {
+        "id": 1605871,
+        "name": "Melee Doubles",
+        "slug": "tournament/good-tournament-15/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1777118400,
+        "phaseGroups": [
+            {
+                "id": 3277501,
+                "phase": {
+                    "id": 2262259,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Good Tournament #15",
+        "tournament_id": 902458,
+        "city": "M\u00fcnchen",
+        "url": "https://smash.gg/tournament/good-tournament-15/event/melee-doubles",
+        "streams": [
+            {
+                "streamName": "german_melee"
+            }
+        ],
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1777118400,
+        "tournament_endAt": 1777147200,
+        "tournament_registrationClosesAt": 1777118400,
+        "images": [
+            {
+                "id": "9353044",
+                "url": "https://images.start.gg/images/tournament/902458/image-6c4115b90a68322ade01edf76398e901.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": "JUZ Zorneding",
+        "tournament_venueAddress": "Schertlinstra\u00dfe 4, 81379 M\u00fcnchen, Deutschland",
+        "tournament_addrState": "BY",
+        "country_code": "DE",
+        "lat": 48.0967955,
+        "lng": 11.5159523
+    },
+    "1605906": {
+        "id": 1605906,
+        "name": "Melee Singles (EC)",
+        "slug": "tournament/lgbt-s6e16-legalize-gay-weed/event/melee-singles-ec",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776641400,
+        "phaseGroups": [
+            {
+                "id": 3277543,
+                "phase": {
+                    "id": 2262301,
+                    "name": "East Coast Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LGBT S6E16: Legalize Gay Weed",
+        "tournament_id": 902480,
+        "city": null,
+        "url": "https://smash.gg/tournament/lgbt-s6e16-legalize-gay-weed/event/melee-singles-ec",
+        "streams": [
+            {
+                "streamName": "devdoggxx"
+            },
+            {
+                "streamName": "waitingforgame"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1776641400,
+        "tournament_endAt": 1776650400,
+        "tournament_registrationClosesAt": 1776640560,
+        "images": [
+            {
+                "id": "9353245",
+                "url": "https://images.start.gg/images/tournament/902480/image-988c662d4d2bc3da252861fdab003fba.png",
+                "type": "banner"
+            },
+            {
+                "id": "9353252",
+                "url": "https://images.start.gg/images/tournament/902480/image-7ca2698fc53f5bf7d9fd2f96925c095e.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1605907": {
+        "id": 1605907,
+        "name": "Melee Singles (WC)",
+        "slug": "tournament/lgbt-s6e16-legalize-gay-weed/event/melee-singles-wc",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776641400,
+        "phaseGroups": [
+            {
+                "id": 3277544,
+                "phase": {
+                    "id": 2262302,
+                    "name": "West Coast Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "LGBT S6E16: Legalize Gay Weed",
+        "tournament_id": 902480,
+        "city": null,
+        "url": "https://smash.gg/tournament/lgbt-s6e16-legalize-gay-weed/event/melee-singles-wc",
+        "streams": [
+            {
+                "streamName": "devdoggxx"
+            },
+            {
+                "streamName": "waitingforgame"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1776641400,
+        "tournament_endAt": 1776650400,
+        "tournament_registrationClosesAt": 1776640560,
+        "images": [
+            {
+                "id": "9353245",
+                "url": "https://images.start.gg/images/tournament/902480/image-988c662d4d2bc3da252861fdab003fba.png",
+                "type": "banner"
+            },
+            {
+                "id": "9353252",
+                "url": "https://images.start.gg/images/tournament/902480/image-7ca2698fc53f5bf7d9fd2f96925c095e.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1605898": {
+        "id": 1605898,
+        "name": "Melee Singles",
+        "slug": "tournament/uci-weeklies-184-oh-tengo-suerte/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776477600,
+        "phaseGroups": [
+            {
+                "id": 3277533,
+                "phase": {
+                    "id": 2262291,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13715943
+                    },
+                    {
+                        "id": 13715944
+                    },
+                    {
+                        "id": 13715945
+                    },
+                    {
+                        "id": 13715946
+                    },
+                    {
+                        "id": 13715947
+                    }
+                ]
+            },
+            {
+                "id": 3277534,
+                "phase": {
+                    "id": 2262292,
+                    "name": "Final"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "UCI Weeklies #184: Oh! Tengo Suerte",
+        "tournament_id": 902476,
+        "city": "Irvine",
+        "url": "https://smash.gg/tournament/uci-weeklies-184-oh-tengo-suerte/event/melee-singles",
+        "streams": null,
+        "timezone": "America/Los_Angeles",
+        "tournament_startAt": 1776477600,
+        "tournament_endAt": 1776488400,
+        "tournament_registrationClosesAt": 1776483000,
+        "images": [
+            {
+                "id": "9353213",
+                "url": "https://images.start.gg/images/tournament/902476/image-73d17cdec0c614ed0905070ff888e54d.png",
+                "type": "profile"
+            },
+            {
+                "id": "9353214",
+                "url": "https://images.start.gg/images/tournament/902476/image-140c6c147c1964c35ded932ec1dbfe82.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Student Center, 311 W Peltason Dr, Irvine, CA 92697, USA",
+        "tournament_addrState": "CA",
+        "country_code": "US",
+        "lat": 33.6488747,
+        "lng": -117.8420964
+    },
+    "1605881": {
+        "id": 1605881,
+        "name": "Melee Singles",
+        "slug": "tournament/mercredi-marmelade-35/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776276000,
+        "phaseGroups": [
+            {
+                "id": 3277513,
+                "phase": {
+                    "id": 2262271,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Mercredi Marmelade 35",
+        "tournament_id": 902465,
+        "city": null,
+        "url": "https://smash.gg/tournament/mercredi-marmelade-35/event/melee-singles",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1776276000,
+        "tournament_endAt": 1776285000,
+        "tournament_registrationClosesAt": 1776279240,
+        "images": [
+            {
+                "id": "9353111",
+                "url": "https://images.start.gg/images/tournament/902465/image-a0a2e542b855074680c6825a610312ab.png",
+                "type": "profile"
+            },
+            {
+                "id": "9353112",
+                "url": "https://images.start.gg/images/tournament/902465/image-629e4e2881ad85f074bfe6374d3412c5.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1605889": {
+        "id": 1605889,
+        "name": "Smash Melee!!!!!!!!!",
+        "slug": "tournament/charity-tournament-04-14-2026/event/smash-melee",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776212100,
+        "phaseGroups": [
+            {
+                "id": 3277521,
+                "phase": {
+                    "id": 2262279,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Charity Tournament - 04/14/2026",
+        "tournament_id": 902469,
+        "city": "Cookeville",
+        "url": "https://smash.gg/tournament/charity-tournament-04-14-2026/event/smash-melee",
+        "streams": null,
+        "timezone": "America/Chicago",
+        "tournament_startAt": 1776212100,
+        "tournament_endAt": 1776229080,
+        "tournament_registrationClosesAt": 1776212160,
+        "images": [
+            {
+                "id": "9353153",
+                "url": "https://images.start.gg/images/tournament/902469/image-ed14c0f6a32b093fcdfaabcc7b706dc8.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "9353168",
+                "url": "https://images.start.gg/images/tournament/902469/image-65e5fba24bfdc177e25840cc1e560027.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "200 W 10th St, Cookeville, TN 38501, USA",
+        "tournament_addrState": "TN",
+        "country_code": "US",
+        "lat": 36.1756046,
+        "lng": -85.5080905
     }
 }
