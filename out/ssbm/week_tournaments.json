@@ -13743,7 +13743,7 @@
         "slug": "tournament/kolleschtreff-1/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -13784,12 +13784,89 @@
         "slug": "tournament/kolleschtreff-1/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 16,
+        "numEntrants": 20,
         "videogame": {
             "id": 1
         },
         "startAt": 1779627600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3229871,
+                "phase": {
+                    "id": 2225403,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13722095
+                    },
+                    {
+                        "id": 13722099
+                    }
+                ]
+            },
+            {
+                "id": 3279368,
+                "phase": {
+                    "id": 2225403,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13722096
+                    },
+                    {
+                        "id": 13722100
+                    }
+                ]
+            },
+            {
+                "id": 3279369,
+                "phase": {
+                    "id": 2225403,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13722097
+                    },
+                    {
+                        "id": 13722101
+                    }
+                ]
+            },
+            {
+                "id": 3279370,
+                "phase": {
+                    "id": 2225403,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13722098
+                    },
+                    {
+                        "id": 13722102
+                    }
+                ]
+            },
+            {
+                "id": 3279371,
+                "phase": {
+                    "id": 2263756,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 3279391,
+                "phase": {
+                    "id": 2263772,
+                    "name": "Amateur Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Kolleschtreff",
         "tournament_id": 888352,
         "city": "Saarlouis",
@@ -23999,28 +24076,6 @@
             }
         ]
     },
-    "1596967": {
-        "id": 1596967,
-        "name": "NETHERWORLD",
-        "slug": "tournament/netherworld-april/event/netherworld",
-        "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 19,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1775721600,
-        "phaseGroups": [
-            {
-                "id": 3262887,
-                "phase": {
-                    "id": 2250924,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1597034": {
         "id": 1597034,
         "name": "Melee Doubles",
@@ -32521,28 +32576,6 @@
         "country_code": "MX",
         "lat": 25.6700133,
         "lng": -100.2879947
-    },
-    "1601587": {
-        "id": 1601587,
-        "name": "Melee Singles",
-        "slug": "tournament/launceston-smash-club-62/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1775721600,
-        "phaseGroups": [
-            {
-                "id": 3270561,
-                "phase": {
-                    "id": 2256760,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1591933": {
         "id": 1591933,
@@ -52607,5 +52640,55 @@
         "country_code": "US",
         "lat": 41.4557324,
         "lng": -72.8211755
+    },
+    "1606338": {
+        "id": 1606338,
+        "name": "Melee Singles",
+        "slug": "tournament/project-p-karu-3/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1776841200,
+        "phaseGroups": [
+            {
+                "id": 3278139,
+                "phase": {
+                    "id": 2262809,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Project P\u0101karu #3",
+        "tournament_id": 902693,
+        "city": "Christchurch",
+        "url": "https://smash.gg/tournament/project-p-karu-3/event/melee-singles",
+        "streams": null,
+        "timezone": "Pacific/Auckland",
+        "tournament_startAt": 1776835800,
+        "tournament_endAt": 1776848400,
+        "tournament_registrationClosesAt": 1776848400,
+        "images": [
+            {
+                "id": "9355231",
+                "url": "https://images.start.gg/images/tournament/902693/image-ecf2a635a2682f9a77bb401a43a1b75c.png",
+                "type": "profile"
+            },
+            {
+                "id": "9355232",
+                "url": "https://images.start.gg/images/tournament/902693/image-18beccee9d3b25c3490a448e94368229.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "199 Clarence Street, Riccarton, Christchurch 8041, New Zealand",
+        "tournament_addrState": "Canterbury Region",
+        "country_code": "NZ",
+        "lat": -43.5303629,
+        "lng": 172.6016103
     }
 }
