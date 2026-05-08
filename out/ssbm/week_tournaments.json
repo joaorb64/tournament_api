@@ -6307,7 +6307,11 @@
         "tournament_id": 884679,
         "city": "Christchurch",
         "url": "https://smash.gg/tournament/tautahi-onslaught-2026-christchurch-fighting-game-major/event/main-game-super-smash-bros-melee",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "aftershockfgc"
+            }
+        ],
         "timezone": "Pacific/Auckland",
         "tournament_startAt": 1778198400,
         "tournament_endAt": 1778371140,
@@ -40706,7 +40710,7 @@
         "slug": "tournament/pope-s-sunday-mass-rcadian/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -40756,7 +40760,7 @@
         "slug": "tournament/pope-s-sunday-mass-rcadian/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
@@ -44627,5 +44631,59 @@
             "CA",
             "MX"
         ]
+    },
+    "1622090": {
+        "id": 1622090,
+        "name": "Melee Singles",
+        "slug": "tournament/cornell-smash-senior-sendoff/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1778346000,
+        "phaseGroups": [
+            {
+                "id": 3306970,
+                "phase": {
+                    "id": 2283571,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Cornell Smash Senior Sendoff",
+        "tournament_id": 910226,
+        "city": "Ithaca",
+        "url": "https://smash.gg/tournament/cornell-smash-senior-sendoff/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "CornellUltimate"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1778346000,
+        "tournament_endAt": 1778364000,
+        "tournament_registrationClosesAt": 1778358600,
+        "images": [
+            {
+                "id": "9428134",
+                "url": "https://images.start.gg/images/tournament/910226/image-2697d7c465ba193d6fb86b758ced4d68.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9428136",
+                "url": "https://images.start.gg/images/tournament/910226/image-950fcf882fefb29bb5b0b0989c485842.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "107 Jessup Rd, Ithaca, NY 14850, USA",
+        "tournament_addrState": "NY",
+        "country_code": "US",
+        "lat": 42.45592449999999,
+        "lng": -76.4774412
     }
 }
