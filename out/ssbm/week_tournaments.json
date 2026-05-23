@@ -1169,61 +1169,6 @@
         "lat": 35.5819084,
         "lng": -82.6040385
     },
-    "1538832": {
-        "id": 1538832,
-        "name": "Super Smash Bros. Melee Singles",
-        "slug": "tournament/gote-4thekids-11th-annual-charity-event/event/super-smash-bros-melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 22,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1778936400,
-        "phaseGroups": [
-            {
-                "id": 3166914,
-                "phase": {
-                    "id": 2176767,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 13281762
-                    },
-                    {
-                        "id": 13281763
-                    },
-                    {
-                        "id": 13281764
-                    },
-                    {
-                        "id": 13281765
-                    },
-                    {
-                        "id": 13281766
-                    },
-                    {
-                        "id": 13281767
-                    },
-                    {
-                        "id": 13281768
-                    },
-                    {
-                        "id": 13281769
-                    }
-                ]
-            },
-            {
-                "id": 3166915,
-                "phase": {
-                    "id": 2176768,
-                    "name": "Top 8"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1540221": {
         "id": 1540221,
         "name": "Melee Singles",
@@ -3529,7 +3474,11 @@
         "tournament_id": 874662,
         "city": "Barcelona",
         "url": "https://smash.gg/tournament/battlefield-upc-ii-overheat/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "tekkenbcn"
+            }
+        ],
         "timezone": "Europe/Madrid",
         "tournament_startAt": 1779523200,
         "tournament_endAt": 1779645600,
@@ -3579,7 +3528,11 @@
         "tournament_id": 874662,
         "city": "Barcelona",
         "url": "https://smash.gg/tournament/battlefield-upc-ii-overheat/event/melee-crew-battle-3p",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "tekkenbcn"
+            }
+        ],
         "timezone": "Europe/Madrid",
         "tournament_startAt": 1779523200,
         "tournament_endAt": 1779645600,
@@ -27695,28 +27648,6 @@
             }
         ]
     },
-    "1627847": {
-        "id": 1627847,
-        "name": "Melee Singles Bracket",
-        "slug": "tournament/swiss-melee-league-ep-12/event/melee-singles-bracket",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 2,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1778936700,
-        "phaseGroups": [
-            {
-                "id": 3317514,
-                "phase": {
-                    "id": 2291267,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1627565": {
         "id": 1627565,
         "name": "Melee Singles Round Robin",
@@ -37732,7 +37663,7 @@
         "name": "Melee Singles",
         "slug": "tournament/tr-ll-may-2026/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 8,
         "videogame": {
             "id": 1
@@ -44215,5 +44146,67 @@
         "country_code": "US",
         "lat": 43.0596155,
         "lng": -87.8856194
+    },
+    "1632322": {
+        "id": 1632322,
+        "name": "Melee Singles",
+        "slug": "tournament/merchant-city-melee-11/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1779814800,
+        "phaseGroups": [
+            {
+                "id": 3325342,
+                "phase": {
+                    "id": 2297191,
+                    "name": "Melee Singles"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 3325343,
+                "phase": {
+                    "id": 2297192,
+                    "name": "Amateur Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Merchant City Melee #11",
+        "tournament_id": 915367,
+        "city": "Glasgow",
+        "url": "https://smash.gg/tournament/merchant-city-melee-11/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "GlaikitB"
+            }
+        ],
+        "timezone": "Europe/London",
+        "tournament_startAt": 1779814800,
+        "tournament_endAt": 1779832800,
+        "tournament_registrationClosesAt": 1779818400,
+        "images": [
+            {
+                "id": "9478384",
+                "url": "https://images.start.gg/images/tournament/915367/image-4711c0dd17573b6a0cba65cfc7deb4b3.png",
+                "type": "profile"
+            },
+            {
+                "id": "9478386",
+                "url": "https://images.start.gg/images/tournament/915367/image-5db4f8c12c470f05420c4643e6abea48.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "50 Albion St, Glasgow G1 1LH, UK",
+        "tournament_addrState": "Scotland",
+        "country_code": "GB",
+        "lat": 55.8577672,
+        "lng": -4.2444951
     }
 }
