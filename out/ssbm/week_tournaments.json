@@ -24438,7 +24438,11 @@
         "tournament_id": 913776,
         "city": "Bloomington",
         "url": "https://smash.gg/tournament/fifi-fest-1/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "ISU_Smash"
+            }
+        ],
         "timezone": "America/Chicago",
         "tournament_startAt": 1780009200,
         "tournament_endAt": 1780027200,
@@ -24462,28 +24466,6 @@
         "country_code": "US",
         "lat": 40.4768909,
         "lng": -88.9920118
-    },
-    "1629213": {
-        "id": 1629213,
-        "name": "Melee Singles",
-        "slug": "tournament/friendlies-pr-194/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 9,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1779291000,
-        "phaseGroups": [
-            {
-                "id": 3320080,
-                "phase": {
-                    "id": 2293161,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1629259": {
         "id": 1629259,
@@ -36127,7 +36109,7 @@
         "videogame": {
             "id": 1
         },
-        "startAt": 1780009200,
+        "startAt": 1780010100,
         "phaseGroups": [
             {
                 "id": 3326308,
@@ -36142,7 +36124,11 @@
         "tournament_id": 913776,
         "city": "Bloomington",
         "url": "https://smash.gg/tournament/fifi-fest-1/event/melee-doubles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "ISU_Smash"
+            }
+        ],
         "timezone": "America/Chicago",
         "tournament_startAt": 1780009200,
         "tournament_endAt": 1780027200,
@@ -40806,8 +40792,8 @@
         "name": "Melee Singles",
         "slug": "tournament/school-of-smash-uio-153/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 10,
         "videogame": {
             "id": 1
         },
@@ -40817,49 +40803,59 @@
                 "id": 3328181,
                 "phase": {
                     "id": 2299393,
+                    "name": "pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13961887
+                    },
+                    {
+                        "id": 13961889
+                    },
+                    {
+                        "id": 13961891
+                    },
+                    {
+                        "id": 13961893
+                    },
+                    {
+                        "id": 13961895
+                    }
+                ]
+            },
+            {
+                "id": 3329451,
+                "phase": {
+                    "id": 2299393,
+                    "name": "pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 13961888
+                    },
+                    {
+                        "id": 13961890
+                    },
+                    {
+                        "id": 13961892
+                    },
+                    {
+                        "id": 13961894
+                    },
+                    {
+                        "id": 13961896
+                    }
+                ]
+            },
+            {
+                "id": 3329453,
+                "phase": {
+                    "id": 2300423,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "School of Smash UiO #153",
-        "tournament_id": 916238,
-        "city": "Oslo",
-        "url": "https://smash.gg/tournament/school-of-smash-uio-153/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "smashoslo"
-            },
-            {
-                "streamName": "anbilm2"
-            },
-            {
-                "streamName": "uio_gaming"
-            }
-        ],
-        "timezone": "Europe/Oslo",
-        "tournament_startAt": 1779890400,
-        "tournament_endAt": 1779912000,
-        "tournament_registrationClosesAt": 1779899400,
-        "images": [
-            {
-                "id": "9486556",
-                "url": "https://images.start.gg/images/tournament/916238/image-5cfc33dc642047bc213a6453b687b852.png",
-                "type": "profile"
-            },
-            {
-                "id": "9486557",
-                "url": "https://images.start.gg/images/tournament/916238/image-fa3e8314c9dd585a86cc506606cc2e6e.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Slemdalsveien 15, 0369 Oslo, Norge",
-        "tournament_addrState": "Oslo",
-        "country_code": "NO",
-        "lat": 59.9322745,
-        "lng": 10.7125538
+        ]
     },
     "1633987": {
         "id": 1633987,
@@ -40867,7 +40863,7 @@
         "slug": "tournament/school-of-smash-uio-153/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 1,
         "videogame": {
             "id": 1
         },
@@ -45156,28 +45152,6 @@
         "lat": 39.2883403,
         "lng": -76.5714335
     },
-    "1626687": {
-        "id": 1626687,
-        "name": "Melee Singles",
-        "slug": "tournament/burning-jeff-bridges-bill-ding-s-chicken-option-selects-viii/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1779292800,
-        "phaseGroups": [
-            {
-                "id": 3314975,
-                "phase": {
-                    "id": 2289640,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1634770": {
         "id": 1634770,
         "name": "Melee Singles",
@@ -45277,5 +45251,333 @@
         "country_code": "GB",
         "lat": 51.4517505,
         "lng": -2.5942398
+    },
+    "1634827": {
+        "id": 1634827,
+        "name": "Melee Singles",
+        "slug": "tournament/melee-at-retro-knights-7/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1780614000,
+        "phaseGroups": [
+            {
+                "id": 3329448,
+                "phase": {
+                    "id": 2300419,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Melee at Retro Knights #7",
+        "tournament_id": 916660,
+        "city": "Leominster",
+        "url": "https://smash.gg/tournament/melee-at-retro-knights-7/event/melee-singles",
+        "streams": null,
+        "timezone": "America/New_York",
+        "tournament_startAt": 1780614000,
+        "tournament_endAt": 1780624800,
+        "tournament_registrationClosesAt": 1780614000,
+        "images": [
+            {
+                "id": "9490612",
+                "url": "https://images.start.gg/images/tournament/916660/image-14e03dc9834f2d4bff826026a715cc2c.jpg",
+                "type": "profile"
+            },
+            {
+                "id": "9490613",
+                "url": "https://images.start.gg/images/tournament/916660/image-550183d07eae3cf83cb1cbd83f2277ef.jpg",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "375 Harvard St, Leominster, MA 01453, USA",
+        "tournament_addrState": "MA",
+        "country_code": "US",
+        "lat": 42.5240164,
+        "lng": -71.71793090000001
+    },
+    "1634835": {
+        "id": 1634835,
+        "name": "Melee Doubles",
+        "slug": "tournament/new-game-plus-revival-10-7/event/melee-doubles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1780396200,
+        "phaseGroups": [
+            {
+                "id": 3329460,
+                "phase": {
+                    "id": 2300430,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "New Game Plus Revival 10.7",
+        "tournament_id": 916663,
+        "city": "Boston",
+        "url": "https://smash.gg/tournament/new-game-plus-revival-10-7/event/melee-doubles",
+        "streams": [
+            {
+                "streamName": "meleeboston"
+            },
+            {
+                "streamName": "Puunk_Live"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1780436700,
+        "tournament_endAt": 1780459080,
+        "tournament_registrationClosesAt": 1780442100,
+        "images": [
+            {
+                "id": "9490626",
+                "url": "https://images.start.gg/images/tournament/916663/image-45a1f98afae5254097e9f64a19b91ae3.png",
+                "type": "banner"
+            },
+            {
+                "id": "9490627",
+                "url": "https://images.start.gg/images/tournament/916663/image-1f086f979dccf9fb8d3a0f0dea669af4.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1031 Commonwealth Ave, Boston, MA 02215, USA",
+        "tournament_addrState": "MA",
+        "country_code": "US",
+        "lat": 42.35208240000001,
+        "lng": -71.1218004
+    },
+    "1634834": {
+        "id": 1634834,
+        "name": "Melee Redemption",
+        "slug": "tournament/new-game-plus-revival-10-7/event/melee-redemption",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1780436700,
+        "phaseGroups": [
+            {
+                "id": 3329459,
+                "phase": {
+                    "id": 2300429,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "New Game Plus Revival 10.7",
+        "tournament_id": 916663,
+        "city": "Boston",
+        "url": "https://smash.gg/tournament/new-game-plus-revival-10-7/event/melee-redemption",
+        "streams": [
+            {
+                "streamName": "meleeboston"
+            },
+            {
+                "streamName": "Puunk_Live"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1780436700,
+        "tournament_endAt": 1780459080,
+        "tournament_registrationClosesAt": 1780442100,
+        "images": [
+            {
+                "id": "9490626",
+                "url": "https://images.start.gg/images/tournament/916663/image-45a1f98afae5254097e9f64a19b91ae3.png",
+                "type": "banner"
+            },
+            {
+                "id": "9490627",
+                "url": "https://images.start.gg/images/tournament/916663/image-1f086f979dccf9fb8d3a0f0dea669af4.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1031 Commonwealth Ave, Boston, MA 02215, USA",
+        "tournament_addrState": "MA",
+        "country_code": "US",
+        "lat": 42.35208240000001,
+        "lng": -71.1218004
+    },
+    "1634833": {
+        "id": 1634833,
+        "name": "Melee Singles",
+        "slug": "tournament/new-game-plus-revival-10-7/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1780443000,
+        "phaseGroups": [
+            {
+                "id": 3329458,
+                "phase": {
+                    "id": 2300428,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "New Game Plus Revival 10.7",
+        "tournament_id": 916663,
+        "city": "Boston",
+        "url": "https://smash.gg/tournament/new-game-plus-revival-10-7/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "meleeboston"
+            },
+            {
+                "streamName": "Puunk_Live"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1780436700,
+        "tournament_endAt": 1780459080,
+        "tournament_registrationClosesAt": 1780442100,
+        "images": [
+            {
+                "id": "9490626",
+                "url": "https://images.start.gg/images/tournament/916663/image-45a1f98afae5254097e9f64a19b91ae3.png",
+                "type": "banner"
+            },
+            {
+                "id": "9490627",
+                "url": "https://images.start.gg/images/tournament/916663/image-1f086f979dccf9fb8d3a0f0dea669af4.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "1031 Commonwealth Ave, Boston, MA 02215, USA",
+        "tournament_addrState": "MA",
+        "country_code": "US",
+        "lat": 42.35208240000001,
+        "lng": -71.1218004
+    },
+    "1634841": {
+        "id": 1634841,
+        "name": "Melee Singles",
+        "slug": "tournament/weekly-grind-7/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1780254000,
+        "phaseGroups": [
+            {
+                "id": 3329469,
+                "phase": {
+                    "id": 2300438,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Weekly Grind #7",
+        "tournament_id": 916666,
+        "city": "Auburn Hills",
+        "url": "https://smash.gg/tournament/weekly-grind-7/event/melee-singles",
+        "streams": null,
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1780250400,
+        "tournament_endAt": 1780272000,
+        "tournament_registrationClosesAt": 1780253220,
+        "images": [
+            {
+                "id": "9490736",
+                "url": "https://images.start.gg/images/tournament/916666/image-6691828bbc1dffdb2e635d75249e5b3c.png",
+                "type": "profile"
+            },
+            {
+                "id": "9490737",
+                "url": "https://images.start.gg/images/tournament/916666/image-026019f66c86fd4edf51a95837110b6a.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "4211 Joslyn Rd #100, Auburn Hills, MI 48326, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 42.7040281,
+        "lng": -83.28571389999999
+    },
+    "1634820": {
+        "id": 1634820,
+        "name": "Melee Singles",
+        "slug": "tournament/raptor-boost-142/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1779921000,
+        "phaseGroups": [
+            {
+                "id": 3329436,
+                "phase": {
+                    "id": 2300411,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Raptor Boost 142",
+        "tournament_id": 916650,
+        "city": "Hurricane",
+        "url": "https://smash.gg/tournament/raptor-boost-142/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "GameGroveWV"
+            },
+            {
+                "streamName": "Marshall Smashers"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1779921000,
+        "tournament_endAt": 1779933600,
+        "tournament_registrationClosesAt": 1804109400,
+        "images": [
+            {
+                "id": "9490570",
+                "url": "https://images.start.gg/images/tournament/916650/image-47761c664764f090937f82f5527faf3a.png",
+                "type": "profile"
+            },
+            {
+                "id": "9490571",
+                "url": "https://images.start.gg/images/tournament/916650/image-4ed06c1a8556f1869a5c61823f5e4ae7.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "495 Putnam Village Dr, Hurricane, WV 25526, USA",
+        "tournament_addrState": "WV",
+        "country_code": "US",
+        "lat": 38.456734,
+        "lng": -81.927055
     }
 }
