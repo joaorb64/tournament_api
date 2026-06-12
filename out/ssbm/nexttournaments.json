@@ -1,5 +1,5 @@
 {
-    "updateTime": 1781273210,
+    "updateTime": 1781276884,
     "events": [
         {
             "id": 1645823,
@@ -169,7 +169,7 @@
             "slug": "tournament/wii-the-north-4/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 5,
+            "numEntrants": 6,
             "videogame": {
                 "id": 1
             },
@@ -317,58 +317,49 @@
             "lng": -79.39742199999999
         },
         {
-            "id": 1638795,
-            "name": "Side Bracket: Smash Bros. Melee Singles",
-            "slug": "tournament/pocono-stadium-8-a-smash-bros-biweekly/event/side-bracket-smash-bros-melee-singles",
+            "id": 1645872,
+            "name": "Melee Singles",
+            "slug": "tournament/ubco-x-oksl-june-13th/event/melee-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 6,
+            "numEntrants": 0,
             "videogame": {
                 "id": 1
             },
-            "startAt": 1781650800,
+            "startAt": 1781384400,
             "phaseGroups": [
                 {
-                    "id": 3336369,
+                    "id": 3349540,
                     "phase": {
-                        "id": 2305720,
-                        "name": "Bracket"
+                        "id": 2314933,
+                        "name": "Melee Final Bracket"
                     },
                     "progressionsOut": null
                 }
             ],
-            "tournament": "Pocono Stadium 8: A Smash Bros. Biweekly",
-            "tournament_id": 918595,
-            "city": "Pocono Summit",
-            "url": "https://smash.gg/tournament/pocono-stadium-8-a-smash-bros-biweekly/event/side-bracket-smash-bros-melee-singles",
-            "streams": [
-                {
-                    "streamName": "MuditaGamingLounge"
-                }
-            ],
-            "timezone": "America/New_York",
-            "tournament_startAt": 1781564460,
-            "tournament_endAt": 1781582340,
-            "tournament_registrationClosesAt": 1781650800,
+            "tournament": "UBCO x OKSL June 13th",
+            "tournament_id": 922076,
+            "city": "Kelowna",
+            "url": "https://smash.gg/tournament/ubco-x-oksl-june-13th/event/melee-singles",
+            "streams": null,
+            "timezone": "America/Vancouver",
+            "tournament_startAt": 1781384400,
+            "tournament_endAt": 1781402400,
+            "tournament_registrationClosesAt": 1781402400,
             "images": [
                 {
-                    "id": "9509238",
-                    "url": "https://images.start.gg/images/tournament/918595/image-fabf39d4aef564c68161b3b27e177512.png",
+                    "id": "9540665",
+                    "url": "https://images.start.gg/images/tournament/922076/image-dd75a9bc98355c1314324547f49bfdca.jpg",
                     "type": "profile"
-                },
-                {
-                    "id": "9509239",
-                    "url": "https://images.start.gg/images/tournament/918595/image-9145c62f6b16bf93b00fc63160939253.png",
-                    "type": "banner"
                 }
             ],
             "tournament_multievent": false,
             "tournament_venueName": null,
-            "tournament_venueAddress": "2657 PA-940 #101, Pocono Summit, PA 18346, USA",
-            "tournament_addrState": "PA",
-            "country_code": "US",
-            "lat": 41.1091006,
-            "lng": -75.4040843
+            "tournament_venueAddress": "3333 University Way, Kelowna, BC V1V 1V7, Canada",
+            "tournament_addrState": "BC",
+            "country_code": "CA",
+            "lat": 49.9387517,
+            "lng": -119.3947484
         },
         {
             "id": 1626115,
@@ -539,6 +530,95 @@
             "lng": -4.1453428
         },
         {
+            "id": 1628455,
+            "name": "Melee Singles",
+            "slug": "tournament/valhalla-shipwrecked/event/melee-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 12,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1781271000,
+            "phaseGroups": [
+                {
+                    "id": 3318664,
+                    "phase": {
+                        "id": 2292152,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14057989
+                        },
+                        {
+                            "id": 14057991
+                        },
+                        {
+                            "id": 14057993
+                        },
+                        {
+                            "id": 14057995
+                        },
+                        {
+                            "id": 14057997
+                        },
+                        {
+                            "id": 14057999
+                        }
+                    ]
+                },
+                {
+                    "id": 3349521,
+                    "phase": {
+                        "id": 2292152,
+                        "name": "Pools"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14057990
+                        },
+                        {
+                            "id": 14057992
+                        },
+                        {
+                            "id": 14057994
+                        },
+                        {
+                            "id": 14057996
+                        },
+                        {
+                            "id": 14057998
+                        },
+                        {
+                            "id": 14058000
+                        }
+                    ]
+                },
+                {
+                    "id": 3349522,
+                    "phase": {
+                        "id": 2314915,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1628457,
+            "name": "Melee Doubles",
+            "slug": "tournament/valhalla-shipwrecked/event/melee-doubles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1781262000,
+            "phaseGroups": []
+        },
+        {
             "id": 1644172,
             "name": "Melee Singles",
             "slug": "tournament/yeti-weekly-484/event/melee-singles",
@@ -692,6 +772,60 @@
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 1638795,
+            "name": "Side Bracket: Smash Bros. Melee Singles",
+            "slug": "tournament/pocono-stadium-8-a-smash-bros-biweekly/event/side-bracket-smash-bros-melee-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 6,
+            "videogame": {
+                "id": 1
+            },
+            "startAt": 1781650800,
+            "phaseGroups": [
+                {
+                    "id": 3336369,
+                    "phase": {
+                        "id": 2305720,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Pocono Stadium 8: A Smash Bros. Biweekly",
+            "tournament_id": 918595,
+            "city": "Pocono Summit",
+            "url": "https://smash.gg/tournament/pocono-stadium-8-a-smash-bros-biweekly/event/side-bracket-smash-bros-melee-singles",
+            "streams": [
+                {
+                    "streamName": "MuditaGamingLounge"
+                }
+            ],
+            "timezone": "America/New_York",
+            "tournament_startAt": 1781564460,
+            "tournament_endAt": 1781582340,
+            "tournament_registrationClosesAt": 1781650800,
+            "images": [
+                {
+                    "id": "9509238",
+                    "url": "https://images.start.gg/images/tournament/918595/image-fabf39d4aef564c68161b3b27e177512.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "9509239",
+                    "url": "https://images.start.gg/images/tournament/918595/image-9145c62f6b16bf93b00fc63160939253.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "2657 PA-940 #101, Pocono Summit, PA 18346, USA",
+            "tournament_addrState": "PA",
+            "country_code": "US",
+            "lat": 41.1091006,
+            "lng": -75.4040843
         },
         {
             "id": 1645774,
@@ -27331,88 +27465,6 @@
             "country_code": "US",
             "lat": 32.6024867,
             "lng": -85.4869588
-        },
-        {
-            "id": 1628457,
-            "name": "Melee Doubles",
-            "slug": "tournament/valhalla-shipwrecked/event/melee-doubles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1781262000,
-            "phaseGroups": [],
-            "tournament": "Valhalla: Shipwrecked",
-            "tournament_id": 913408,
-            "city": "K\u00f8benhavn",
-            "url": "https://smash.gg/tournament/valhalla-shipwrecked/event/melee-doubles",
-            "streams": null,
-            "timezone": "Europe/Copenhagen",
-            "tournament_startAt": 1781254800,
-            "tournament_endAt": 1781449200,
-            "tournament_registrationClosesAt": 1781251200,
-            "images": [
-                {
-                    "id": "9460763",
-                    "url": "https://images.start.gg/images/tournament/913408/image-c2923d09470bcbf4c03c488e1f2a2ab3.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "9460777",
-                    "url": "https://images.start.gg/images/tournament/913408/image-bdef8730b6833d89d24176372a96b2f5.png",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "N\u00f8rrebrogade 208, 2200 K\u00f8benhavn, Denmark",
-            "tournament_addrState": null,
-            "country_code": "DK",
-            "lat": 55.6997207,
-            "lng": 12.543353
-        },
-        {
-            "id": 1628455,
-            "name": "Melee Singles",
-            "slug": "tournament/valhalla-shipwrecked/event/melee-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
-            "videogame": {
-                "id": 1
-            },
-            "startAt": 1781271000,
-            "phaseGroups": [],
-            "tournament": "Valhalla: Shipwrecked",
-            "tournament_id": 913408,
-            "city": "K\u00f8benhavn",
-            "url": "https://smash.gg/tournament/valhalla-shipwrecked/event/melee-singles",
-            "streams": null,
-            "timezone": "Europe/Copenhagen",
-            "tournament_startAt": 1781254800,
-            "tournament_endAt": 1781449200,
-            "tournament_registrationClosesAt": 1781251200,
-            "images": [
-                {
-                    "id": "9460763",
-                    "url": "https://images.start.gg/images/tournament/913408/image-c2923d09470bcbf4c03c488e1f2a2ab3.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "9460777",
-                    "url": "https://images.start.gg/images/tournament/913408/image-bdef8730b6833d89d24176372a96b2f5.png",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "N\u00f8rrebrogade 208, 2200 K\u00f8benhavn, Denmark",
-            "tournament_addrState": null,
-            "country_code": "DK",
-            "lat": 55.6997207,
-            "lng": 12.543353
         },
         {
             "id": 1627759,
