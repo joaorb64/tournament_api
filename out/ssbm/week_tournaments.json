@@ -4081,7 +4081,17 @@
         "tournament_id": 892032,
         "city": "Kingston",
         "url": "https://smash.gg/tournament/fight-for-the-throne-2026-fgc-tournament-at-eh-game-expo-3k-prize-pools/event/melee-singles-500-pot-bonus-sunday",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "NoStyleEsports"
+            },
+            {
+                "streamName": "VGBootCamp"
+            },
+            {
+                "streamName": "FightForTheThrone"
+            }
+        ],
         "timezone": "America/Toronto",
         "tournament_startAt": 1783087200,
         "tournament_endAt": 1783292400,
@@ -9318,96 +9328,6 @@
         "lat": 43.0596155,
         "lng": -87.8856194
     },
-    "1631660": {
-        "id": 1631660,
-        "name": "Melee Singles ($50 pot bonus)",
-        "slug": "tournament/peaceeiys-pretentious-b-day-bash-part-2-290-in-pot-bonuses/event/melee-singles-50-pot-bonus",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 4,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3323909,
-                "phase": {
-                    "id": 2296287,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 13938657
-                    },
-                    {
-                        "id": 13938659
-                    },
-                    {
-                        "id": 13938661
-                    }
-                ]
-            },
-            {
-                "id": 3323919,
-                "phase": {
-                    "id": 2296287,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 13938658
-                    },
-                    {
-                        "id": 13938660
-                    },
-                    {
-                        "id": 13938662
-                    }
-                ]
-            },
-            {
-                "id": 3323910,
-                "phase": {
-                    "id": 2296288,
-                    "name": "Final Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "PeaceEIYs Pretentious B-day Bash (Part 2)  - $290 in pot bonuses!",
-        "tournament_id": 915062,
-        "city": "Wilkes-Barre",
-        "url": "https://smash.gg/tournament/peaceeiys-pretentious-b-day-bash-part-2-290-in-pot-bonuses/event/melee-singles-50-pot-bonus",
-        "streams": [
-            {
-                "streamName": "WilkesEsports"
-            }
-        ],
-        "timezone": "America/New_York",
-        "tournament_startAt": 1782590400,
-        "tournament_endAt": 1782618900,
-        "tournament_registrationClosesAt": 1781994600,
-        "images": [
-            {
-                "id": "9475203",
-                "url": "https://images.start.gg/images/tournament/915062/image-2c1747bd55f1f86a8c5fb01f2ba89fe8.png",
-                "type": "profile"
-            },
-            {
-                "id": "9475204",
-                "url": "https://images.start.gg/images/tournament/915062/image-cb66e587ce70dcd4217ba4699fc34762.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "84 W South St, Wilkes-Barre, PA 18701, USA",
-        "tournament_addrState": "PA",
-        "country_code": "US",
-        "lat": 41.2441949,
-        "lng": -75.8902177
-    },
     "1632526": {
         "id": 1632526,
         "name": "Melee Singles",
@@ -11049,56 +10969,6 @@
         "country_code": "US",
         "lat": 31.9685988,
         "lng": -99.9018131
-    },
-    "1638290": {
-        "id": 1638290,
-        "name": "Melee Singles",
-        "slug": "tournament/theory-of-relativity-june-2026/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782591300,
-        "phaseGroups": [
-            {
-                "id": 3335608,
-                "phase": {
-                    "id": 2305074,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ],
-        "tournament": "Theory of Relativity June 2026",
-        "tournament_id": 918350,
-        "city": "Katy",
-        "url": "https://smash.gg/tournament/theory-of-relativity-june-2026/event/melee-singles",
-        "streams": null,
-        "timezone": "America/Chicago",
-        "tournament_startAt": 1782591300,
-        "tournament_endAt": 1782613800,
-        "tournament_registrationClosesAt": 1782601800,
-        "images": [
-            {
-                "id": "9507289",
-                "url": "https://images.start.gg/images/tournament/918350/image-06fc592d0a4f62fdca4ccf7549f5c3de.png",
-                "type": "profile"
-            },
-            {
-                "id": "9507290",
-                "url": "https://images.start.gg/images/tournament/918350/image-6ab2f1d7c2fa8897fb0623af410a6708.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "873 S Mason Rd #360, Katy, TX 77450, USA",
-        "tournament_addrState": "TX",
-        "country_code": "US",
-        "lat": 29.7699521,
-        "lng": -95.7508259
     },
     "1638291": {
         "id": 1638291,
@@ -13302,7 +13172,7 @@
         "slug": "tournament/get-reel-take-12/event/3-00-pm-super-smash-bros-melee",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 10,
+        "numEntrants": 11,
         "videogame": {
             "id": 1
         },
@@ -14221,28 +14091,6 @@
         "country_code": "CA",
         "lat": 42.9773532,
         "lng": -81.2255498
-    },
-    "1624614": {
-        "id": 1624614,
-        "name": "Melee",
-        "slug": "tournament/the-ziegge-6-1/event/melee",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 3,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3311538,
-                "phase": {
-                    "id": 2286936,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1643838": {
         "id": 1643838,
@@ -15234,7 +15082,7 @@
         "slug": "tournament/uvic-june-2026-monthly-it-s-in-july-now/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 15,
         "videogame": {
             "id": 1
         },
@@ -15248,43 +15096,15 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "UVic June 2026 Monthly: It's in July Now.",
-        "tournament_id": 922597,
-        "city": "Victoria",
-        "url": "https://smash.gg/tournament/uvic-june-2026-monthly-it-s-in-july-now/event/melee-singles",
-        "streams": null,
-        "timezone": "America/Vancouver",
-        "tournament_startAt": 1783191600,
-        "tournament_endAt": 1783216800,
-        "tournament_registrationClosesAt": 1783202400,
-        "images": [
-            {
-                "id": "9546102",
-                "url": "https://images.start.gg/images/tournament/922597/image-48613d914554558b8e43f25d5632ab49.png",
-                "type": "banner"
-            },
-            {
-                "id": "9546109",
-                "url": "https://images.start.gg/images/tournament/922597/image-b5a7acbf73cb0d2227572e4524205bba.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "99111 Ring Rd, Victoria, BC V8P 5C2, Canada",
-        "tournament_addrState": "BC",
-        "country_code": "CA",
-        "lat": 48.4610396,
-        "lng": -123.3114894
+        ]
     },
     "1646985": {
         "id": 1646985,
         "name": "Melee Doubles",
         "slug": "tournament/uvic-june-2026-monthly-it-s-in-july-now/event/melee-doubles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -15298,35 +15118,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "UVic June 2026 Monthly: It's in July Now.",
-        "tournament_id": 922597,
-        "city": "Victoria",
-        "url": "https://smash.gg/tournament/uvic-june-2026-monthly-it-s-in-july-now/event/melee-doubles",
-        "streams": null,
-        "timezone": "America/Vancouver",
-        "tournament_startAt": 1783191600,
-        "tournament_endAt": 1783216800,
-        "tournament_registrationClosesAt": 1783202400,
-        "images": [
-            {
-                "id": "9546102",
-                "url": "https://images.start.gg/images/tournament/922597/image-48613d914554558b8e43f25d5632ab49.png",
-                "type": "banner"
-            },
-            {
-                "id": "9546109",
-                "url": "https://images.start.gg/images/tournament/922597/image-b5a7acbf73cb0d2227572e4524205bba.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "99111 Ring Rd, Victoria, BC V8P 5C2, Canada",
-        "tournament_addrState": "BC",
-        "country_code": "CA",
-        "lat": 48.4610396,
-        "lng": -123.3114894
+        ]
     },
     "1646986": {
         "id": 1646986,
@@ -15348,35 +15140,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "UVic June 2026 Monthly: It's in July Now.",
-        "tournament_id": 922597,
-        "city": "Victoria",
-        "url": "https://smash.gg/tournament/uvic-june-2026-monthly-it-s-in-july-now/event/silver-bracket",
-        "streams": null,
-        "timezone": "America/Vancouver",
-        "tournament_startAt": 1783191600,
-        "tournament_endAt": 1783216800,
-        "tournament_registrationClosesAt": 1783202400,
-        "images": [
-            {
-                "id": "9546102",
-                "url": "https://images.start.gg/images/tournament/922597/image-48613d914554558b8e43f25d5632ab49.png",
-                "type": "banner"
-            },
-            {
-                "id": "9546109",
-                "url": "https://images.start.gg/images/tournament/922597/image-b5a7acbf73cb0d2227572e4524205bba.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "99111 Ring Rd, Victoria, BC V8P 5C2, Canada",
-        "tournament_addrState": "BC",
-        "country_code": "CA",
-        "lat": 48.4610396,
-        "lng": -123.3114894
+        ]
     },
     "1643642": {
         "id": 1643642,
@@ -16370,28 +16134,6 @@
             }
         ]
     },
-    "1647043": {
-        "id": 1647043,
-        "name": "Melee singles",
-        "slug": "tournament/chicagoland-s-multiplex-flex-gaming-31-1/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 6,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3351500,
-                "phase": {
-                    "id": 2316471,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1648462": {
         "id": 1648462,
         "name": "Melee Singles",
@@ -16485,28 +16227,6 @@
         "country_code": "CA",
         "lat": 45.5884227,
         "lng": -62.6445424
-    },
-    "1648752": {
-        "id": 1648752,
-        "name": "Melee Doubles",
-        "slug": "tournament/smash-the-vault-2-1/event/melee-doubles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3354321,
-                "phase": {
-                    "id": 2318668,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1648751": {
         "id": 1648751,
@@ -17621,7 +17341,7 @@
         "name": "Melee - Singles",
         "slug": "tournament/mba-9-copa/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1
@@ -23013,134 +22733,6 @@
             }
         ]
     },
-    "1653919": {
-        "id": 1653919,
-        "name": "Amateur Bracket",
-        "slug": "tournament/lab-monster-101/event/amateur-bracket",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 9,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3362802,
-                "phase": {
-                    "id": 2325309,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1653918": {
-        "id": 1653918,
-        "name": "Melee Singles",
-        "slug": "tournament/lab-monster-101/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 16,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3362800,
-                "phase": {
-                    "id": 2325307,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14123363
-                    },
-                    {
-                        "id": 14123367
-                    },
-                    {
-                        "id": 14123371
-                    },
-                    {
-                        "id": 14123375
-                    }
-                ]
-            },
-            {
-                "id": 3363062,
-                "phase": {
-                    "id": 2325307,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14123364
-                    },
-                    {
-                        "id": 14123368
-                    },
-                    {
-                        "id": 14123372
-                    },
-                    {
-                        "id": 14123376
-                    }
-                ]
-            },
-            {
-                "id": 3367266,
-                "phase": {
-                    "id": 2325307,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14123365
-                    },
-                    {
-                        "id": 14123369
-                    },
-                    {
-                        "id": 14123373
-                    },
-                    {
-                        "id": 14123377
-                    }
-                ]
-            },
-            {
-                "id": 3367290,
-                "phase": {
-                    "id": 2325307,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14123366
-                    },
-                    {
-                        "id": 14123370
-                    },
-                    {
-                        "id": 14123374
-                    },
-                    {
-                        "id": 14123378
-                    }
-                ]
-            },
-            {
-                "id": 3362801,
-                "phase": {
-                    "id": 2325308,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1653897": {
         "id": 1653897,
         "name": "Ammy bracket",
@@ -25381,7 +24973,7 @@
         "name": "ESC 105: Super Smash Bros. Melee Tournament",
         "slug": "tournament/enigmatic-smash-clash-event-105/event/esc-105-super-smash-bros-melee-tournament",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 6,
         "videogame": {
             "id": 1
@@ -29141,28 +28733,6 @@
                 "id": 3367551,
                 "phase": {
                     "id": 2328792,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1637049": {
-        "id": 1637049,
-        "name": "Melee Singles",
-        "slug": "tournament/scramons-birthday-bash/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 10,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1782594000,
-        "phaseGroups": [
-            {
-                "id": 3333633,
-                "phase": {
-                    "id": 2303458,
                     "name": "Bracket"
                 },
                 "progressionsOut": null
@@ -35390,7 +34960,7 @@
         "slug": "tournament/short-fuse-july-4th-regional-beta-run/event/melee-singles-short-fuse-regional-beta-run",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 2,
+        "numEntrants": 13,
         "videogame": {
             "id": 1
         },
@@ -35404,51 +34974,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Short Fuse (July 4th Regional Beta Run)",
-        "tournament_id": 928480,
-        "city": "Lynnwood",
-        "url": "https://smash.gg/tournament/short-fuse-july-4th-regional-beta-run/event/melee-singles-short-fuse-regional-beta-run",
-        "streams": [
-            {
-                "streamName": "rubbernec320"
-            },
-            {
-                "streamName": "sonicbpro"
-            },
-            {
-                "streamName": "kn3vs"
-            },
-            {
-                "streamName": "sorenandreas2k"
-            },
-            {
-                "streamName": "recupid"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1783182600,
-        "tournament_endAt": 1783224000,
-        "tournament_registrationClosesAt": 1783186200,
-        "images": [
-            {
-                "id": "9600799",
-                "url": "https://images.start.gg/images/tournament/928480/image-9736140d7f20ece0efbd9b98eb0274a0.png",
-                "type": "profile"
-            },
-            {
-                "id": "9600801",
-                "url": "https://images.start.gg/images/tournament/928480/image-96749eadd7180eac7e969a09edf754ba.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "6210 200th St SW, Lynnwood, WA 98036, USA",
-        "tournament_addrState": "WA",
-        "country_code": "US",
-        "lat": 47.8166287,
-        "lng": -122.3172731
+        ]
     },
     "1658923": {
         "id": 1658923,
@@ -42339,5 +41865,62 @@
         "country_code": null,
         "lat": null,
         "lng": null
+    },
+    "1661433": {
+        "id": 1661433,
+        "name": "Melee Singles",
+        "slug": "tournament/smasheville-161-1/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1783278000,
+        "phaseGroups": [
+            {
+                "id": 3375804,
+                "phase": {
+                    "id": 2335041,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Smasheville #161",
+        "tournament_id": 929834,
+        "city": "Asheville",
+        "url": "https://smash.gg/tournament/smasheville-161-1/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "avahesmash"
+            },
+            {
+                "streamName": "supersmashconofficial"
+            }
+        ],
+        "timezone": "America/New_York",
+        "tournament_startAt": 1783278000,
+        "tournament_endAt": 1783296000,
+        "tournament_registrationClosesAt": 1783281600,
+        "images": [
+            {
+                "id": "9612577",
+                "url": "https://images.start.gg/images/tournament/929834/image-c687c433b82e8edc5199195963ef59d6.png",
+                "type": "banner"
+            },
+            {
+                "id": "9612578",
+                "url": "https://images.start.gg/images/tournament/929834/image-7f6f57fabda4c0db296a1492569db33e.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "505 New Leicester Hwy, Asheville, NC 28806, USA",
+        "tournament_addrState": "NC",
+        "country_code": "US",
+        "lat": 35.61102,
+        "lng": -82.62791
     }
 }
