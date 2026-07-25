@@ -11261,7 +11261,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/citifest-2026/event/ultimate-singles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 176,
         "videogame": {
             "id": 1386
@@ -18812,8 +18812,8 @@
         "name": "Super Smash Bros. Ultimate",
         "slug": "tournament/bfgl-x-yo-mana-yo-melee-iv/event/super-smash-bros-ultimate",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 10,
+        "state": "ACTIVE",
+        "numEntrants": 11,
         "videogame": {
             "id": 1386
         },
@@ -18832,7 +18832,11 @@
         "tournament_id": 912139,
         "city": "Tallinn",
         "url": "https://smash.gg/tournament/bfgl-x-yo-mana-yo-melee-iv/event/super-smash-bros-ultimate",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "bfgl_main"
+            }
+        ],
         "timezone": "Europe/Tallinn",
         "tournament_startAt": 1784970000,
         "tournament_endAt": 1784998800,
@@ -24576,39 +24580,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "TGM Unlimited 2026",
-        "tournament_id": 904390,
-        "city": "Mainz",
-        "url": "https://smash.gg/tournament/tgm-unlimited-2026/event/ultimate-singles",
-        "streams": [
-            {
-                "streamName": "tgmgonsenheim"
-            }
-        ],
-        "timezone": "Europe/Berlin",
-        "tournament_startAt": 1784966400,
-        "tournament_endAt": 1785096000,
-        "tournament_registrationClosesAt": 1784671140,
-        "images": [
-            {
-                "id": "9602010",
-                "url": "https://images.start.gg/images/tournament/904390/image-b5a51549710189ede773b5ba8a51381a.png",
-                "type": "banner"
-            },
-            {
-                "id": "9602015",
-                "url": "https://images.start.gg/images/tournament/904390/image-4432b406bac8bfbc0cb686cc25dda779.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Kirchstra\u00dfe 45, 55124 Mainz, Deutschland",
-        "tournament_addrState": "RP",
-        "country_code": "DE",
-        "lat": 50.0024533,
-        "lng": 8.206277
+        ]
     },
     "1631157": {
         "id": 1631157,
@@ -42197,12 +42169,66 @@
         "slug": "tournament/sen-smash-5/event/singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 16,
+        "numEntrants": 24,
         "videogame": {
             "id": 1386
         },
         "startAt": 1785034800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3357936,
+                "phase": {
+                    "id": 2321384,
+                    "name": "Main Tournament"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14092522
+                    },
+                    {
+                        "id": 14092523
+                    },
+                    {
+                        "id": 14092524
+                    },
+                    {
+                        "id": 14092525
+                    },
+                    {
+                        "id": 14212728
+                    },
+                    {
+                        "id": 14213264
+                    },
+                    {
+                        "id": 14214108
+                    },
+                    {
+                        "id": 14218066
+                    },
+                    {
+                        "id": 14222408
+                    },
+                    {
+                        "id": 14223597
+                    },
+                    {
+                        "id": 14229968
+                    },
+                    {
+                        "id": 14230763
+                    }
+                ]
+            },
+            {
+                "id": 3357937,
+                "phase": {
+                    "id": 2321385,
+                    "name": "B-Class Tournament"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "\u5343\u30b9\u30de / Sen Smash #5",
         "tournament_id": 924511,
         "city": "\u67cf\u5e02",
@@ -43673,61 +43699,6 @@
         "country_code": "CO",
         "lat": 4.6408954,
         "lng": -74.07432539999999
-    },
-    "1645452": {
-        "id": 1645452,
-        "name": "Ultimate Singles",
-        "slug": "tournament/island-challenge-fire-trial-1/event/ultimate-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 26,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1784367060,
-        "phaseGroups": [
-            {
-                "id": 3348871,
-                "phase": {
-                    "id": 2314384,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14055727
-                    },
-                    {
-                        "id": 14055728
-                    },
-                    {
-                        "id": 14055729
-                    },
-                    {
-                        "id": 14055730
-                    },
-                    {
-                        "id": 14055731
-                    },
-                    {
-                        "id": 14055732
-                    },
-                    {
-                        "id": 14055733
-                    },
-                    {
-                        "id": 14055734
-                    }
-                ]
-            },
-            {
-                "id": 3348872,
-                "phase": {
-                    "id": 2314385,
-                    "name": "Grand Trial (Top 8)"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1645479": {
         "id": 1645479,
@@ -50122,7 +50093,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/smash-at-up-diliman/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 29,
         "videogame": {
             "id": 1386
@@ -52890,8 +52861,8 @@
         "name": "Bracket 1 vs 1 Ultimate",
         "slug": "tournament/moonlight-6/event/bracket-1-vs-1-ultimate",
         "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 16,
+        "state": "CREATED",
+        "numEntrants": 20,
         "videogame": {
             "id": 1386
         },
@@ -62561,28 +62532,6 @@
             }
         ]
     },
-    "1665009": {
-        "id": 1665009,
-        "name": "Ultimate Doubles",
-        "slug": "tournament/fre-ndlies-sind-aus-15/event/ultimate-doubles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 4,
-        "videogame": {
-            "id": 1386
-        },
-        "startAt": 1784368800,
-        "phaseGroups": [
-            {
-                "id": 3381645,
-                "phase": {
-                    "id": 2339685,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1664973": {
         "id": 1664973,
         "name": "Ultimate Singles",
@@ -66784,7 +66733,7 @@
         "name": "\u30b7\u30f3\u30b0\u30eb\u30b9/1on1 tournament",
         "slug": "tournament/3-147/event/1on1-tournament",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 36,
         "videogame": {
             "id": 1386
@@ -73478,7 +73427,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/autopilot-club-37/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 15,
         "videogame": {
             "id": 1386
@@ -84956,7 +84905,7 @@
         "name": "Singles",
         "slug": "tournament/to-win-11/event/singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 44,
         "videogame": {
             "id": 1386
@@ -85061,42 +85010,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "TO WIN#11",
-        "tournament_id": 934161,
-        "city": "\u6e0b\u8c37\u533a",
-        "url": "https://smash.gg/tournament/to-win-11/event/singles",
-        "streams": [
-            {
-                "streamName": "Celestia"
-            },
-            {
-                "streamName": "\u3059\u307e\u307b"
-            }
-        ],
-        "timezone": "Asia/Tokyo",
-        "tournament_startAt": 1784941200,
-        "tournament_endAt": 1784977200,
-        "tournament_registrationClosesAt": 1784898000,
-        "images": [
-            {
-                "id": "9650677",
-                "url": "https://images.start.gg/images/tournament/934161/image-4fbc82eb13d389201f834d1e178f9d7c.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "9650678",
-                "url": "https://images.start.gg/images/tournament/934161/image-920bdcca6b15cdf418265cc0b05120c8.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "\u65e5\u672c\u3001\u3012150-0001 \u6771\u4eac\u90fd\u6e0b\u8c37\u533a\u795e\u5bae\u524d\uff15\u4e01\u76ee\uff12\uff19\u2212\uff19 \u3081\u3050\u307f\u30cf\u30a4\u30de\u30f3\u30b7\u30e7\u30f3 703",
-        "tournament_addrState": "\u6771\u4eac\u90fd",
-        "country_code": "JP",
-        "lat": 35.6642808,
-        "lng": 139.7032002
+        ]
     },
     "1670071": {
         "id": 1670071,
@@ -106378,7 +106292,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/uvic-142-the-big-1000-pre-local/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 29,
         "videogame": {
             "id": 1386
@@ -131322,7 +131236,7 @@
         "name": "Ultimate Singles",
         "slug": "tournament/super-barista-bros-ulti-saturday-41/event/ultimate-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 24,
         "videogame": {
             "id": 1386
@@ -144337,7 +144251,7 @@
         "name": "Midlands Circuit Finale",
         "slug": "tournament/midlands-circuit-finale-2026/event/midlands-circuit-finale",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 16,
         "videogame": {
             "id": 1386
@@ -144436,35 +144350,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Midlands Circuit Finale 2026",
-        "tournament_id": 932374,
-        "city": "Coventry",
-        "url": "https://smash.gg/tournament/midlands-circuit-finale-2026/event/midlands-circuit-finale",
-        "streams": null,
-        "timezone": "Europe/London",
-        "tournament_startAt": 1784970000,
-        "tournament_endAt": 1785009600,
-        "tournament_registrationClosesAt": 1784930340,
-        "images": [
-            {
-                "id": "9635015",
-                "url": "https://images.start.gg/images/tournament/932374/image-7f8be6309c89943e1fd540b73ce591e3.jpg",
-                "type": "profile"
-            },
-            {
-                "id": "9635016",
-                "url": "https://images.start.gg/images/tournament/932374/image-876d33458d90b49fdcf168ab35ca2731.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Department of Statistics, University of Warwick, Coventry CV4 7EZ, UK",
-        "tournament_addrState": "England",
-        "country_code": "GB",
-        "lat": 52.38398429999999,
-        "lng": -1.5610597
+        ]
     },
     "1671782": {
         "id": 1671782,
@@ -144472,7 +144358,7 @@
         "slug": "tournament/midlands-circuit-finale-2026/event/ultimate-ladder",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 20,
+        "numEntrants": 23,
         "videogame": {
             "id": 1386
         },
@@ -144491,7 +144377,11 @@
         "tournament_id": 932374,
         "city": "Coventry",
         "url": "https://smash.gg/tournament/midlands-circuit-finale-2026/event/ultimate-ladder",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "Warwick Nintendo Society"
+            }
+        ],
         "timezone": "Europe/London",
         "tournament_startAt": 1784970000,
         "tournament_endAt": 1785009600,
@@ -150140,7 +150030,7 @@
         "name": "I was bored tonight",
         "slug": "tournament/scuffed-bracket-thats-way-too-late/event/i-was-bored-tonight",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 8,
         "videogame": {
             "id": 1386
@@ -150343,5 +150233,152 @@
         "country_code": "BR",
         "lat": -22.8948165,
         "lng": -43.29411109999999
+    },
+    "1675039": {
+        "id": 1675039,
+        "name": "Ultimate Singles",
+        "slug": "tournament/turn-up-the-heat-22/event/ultimate-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1785017700,
+        "phaseGroups": [
+            {
+                "id": 3398360,
+                "phase": {
+                    "id": 2352775,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14230735
+                    },
+                    {
+                        "id": 14230736
+                    },
+                    {
+                        "id": 14230737
+                    },
+                    {
+                        "id": 14230738
+                    },
+                    {
+                        "id": 14230739
+                    },
+                    {
+                        "id": 14230740
+                    },
+                    {
+                        "id": 14230741
+                    },
+                    {
+                        "id": 14230742
+                    }
+                ]
+            },
+            {
+                "id": 3398361,
+                "phase": {
+                    "id": 2352776,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Turn up the Heat #22",
+        "tournament_id": 936622,
+        "city": "Heroica Nogales",
+        "url": "https://smash.gg/tournament/turn-up-the-heat-22/event/ultimate-singles",
+        "streams": [
+            {
+                "streamName": "choche_mx_y_asociados"
+            },
+            {
+                "streamName": "Team Of The West"
+            }
+        ],
+        "timezone": "America/Hermosillo",
+        "tournament_startAt": 1785016800,
+        "tournament_endAt": 1785034800,
+        "tournament_registrationClosesAt": 1785200400,
+        "images": [
+            {
+                "id": "9674470",
+                "url": "https://images.start.gg/images/tournament/936622/image-f072c871d2b96831ff626926f38f7454.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9674482",
+                "url": "https://images.start.gg/images/tournament/936622/image-06d5ff3846a64e0885046a3ffe5e22b0.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Anillo Perif\u00e9rico Boulevard Adolfo, Adolfo Ruiz Cortinez 1537, Altamira, 84047 Heroica Nogales, Son., Mexico",
+        "tournament_addrState": "Son.",
+        "country_code": "MX",
+        "lat": 31.3071573,
+        "lng": -110.9408462
+    },
+    "1675040": {
+        "id": 1675040,
+        "name": "Bracket de Redencion",
+        "slug": "tournament/turn-up-the-heat-22/event/bracket-de-redencion",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1386
+        },
+        "startAt": 1785024000,
+        "phaseGroups": [
+            {
+                "id": 3398362,
+                "phase": {
+                    "id": 2352777,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Turn up the Heat #22",
+        "tournament_id": 936622,
+        "city": "Heroica Nogales",
+        "url": "https://smash.gg/tournament/turn-up-the-heat-22/event/bracket-de-redencion",
+        "streams": [
+            {
+                "streamName": "choche_mx_y_asociados"
+            },
+            {
+                "streamName": "Team Of The West"
+            }
+        ],
+        "timezone": "America/Hermosillo",
+        "tournament_startAt": 1785016800,
+        "tournament_endAt": 1785034800,
+        "tournament_registrationClosesAt": 1785200400,
+        "images": [
+            {
+                "id": "9674470",
+                "url": "https://images.start.gg/images/tournament/936622/image-f072c871d2b96831ff626926f38f7454.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9674482",
+                "url": "https://images.start.gg/images/tournament/936622/image-06d5ff3846a64e0885046a3ffe5e22b0.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Anillo Perif\u00e9rico Boulevard Adolfo, Adolfo Ruiz Cortinez 1537, Altamira, 84047 Heroica Nogales, Son., Mexico",
+        "tournament_addrState": "Son.",
+        "country_code": "MX",
+        "lat": 31.3071573,
+        "lng": -110.9408462
     }
 }
