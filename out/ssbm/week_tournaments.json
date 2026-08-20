@@ -26659,50 +26659,6 @@
             }
         ]
     },
-    "1687734": {
-        "id": 1687734,
-        "name": "Melee Singles",
-        "slug": "tournament/kill-confirm-online/event/melee-singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 8,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1786597200,
-        "phaseGroups": [
-            {
-                "id": 3419741,
-                "phase": {
-                    "id": 2369330,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1687746": {
-        "id": 1687746,
-        "name": "NOT TOO LATE FOR A MELEE AT 1",
-        "slug": "tournament/melee-at-1am-11/event/not-too-late-for-a-melee-at-1",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 12,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1786597200,
-        "phaseGroups": [
-            {
-                "id": 3419753,
-                "phase": {
-                    "id": 2369342,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1687774": {
         "id": 1687774,
         "name": "Melee Doubles (FREE!)",
@@ -41831,8 +41787,8 @@
         "name": "Melee Singles",
         "slug": "tournament/kill-confirm-online-2/event/melee-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 10,
         "videogame": {
             "id": 1
         },
@@ -41846,34 +41802,92 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Kill Confirm Online #2",
-        "tournament_id": 944839,
+        ]
+    },
+    "1692195": {
+        "id": 1692195,
+        "name": "Melee Singles",
+        "slug": "tournament/the-cashbox-38/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1787695200,
+        "phaseGroups": [],
+        "tournament": "The Cashbox #38",
+        "tournament_id": 944842,
         "city": null,
-        "url": "https://smash.gg/tournament/kill-confirm-online-2/event/melee-singles",
-        "streams": null,
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1787202000,
-        "tournament_endAt": 1787209140,
-        "tournament_registrationClosesAt": 1787202000,
-        "images": [
+        "url": "https://smash.gg/tournament/the-cashbox-38/event/melee-singles",
+        "streams": [
             {
-                "id": "9756971",
-                "url": "https://images.start.gg/images/tournament/944839/image-e91551bc5ca2e701f28073239a8b3352.png",
-                "type": "profile"
+                "streamName": "Hungrybox"
             },
             {
-                "id": "9756972",
-                "url": "https://images.start.gg/images/tournament/944839/image-cb8ce6bfe4874627f1dd06a2d8049f0d.png",
+                "streamName": "TeamLiquid"
+            },
+            {
+                "streamName": "ShuBy_k"
+            },
+            {
+                "streamName": "ogkid_ssbm"
+            }
+        ],
+        "timezone": null,
+        "tournament_startAt": 1787695200,
+        "tournament_endAt": 1787716800,
+        "tournament_registrationClosesAt": 1787691600,
+        "images": [
+            {
+                "id": "9757014",
+                "url": "https://images.start.gg/images/tournament/944842/image-6b4fd9e36c034870d523dcbf4c2d9efc.png",
                 "type": "banner"
+            },
+            {
+                "id": "9757015",
+                "url": "https://images.start.gg/images/tournament/944842/image-0d5a204b1185e91df75060bf44313fd8.png",
+                "type": "profile"
             }
         ],
         "tournament_multievent": false,
         "tournament_venueName": null,
-        "tournament_venueAddress": "",
+        "tournament_venueAddress": null,
         "tournament_addrState": null,
         "country_code": null,
         "lat": null,
-        "lng": null
+        "lng": null,
+        "region_lock": [
+            "US",
+            "DO",
+            "PR",
+            "VI",
+            "CA",
+            "MX",
+            "CR",
+            "GT"
+        ]
+    },
+    "1692186": {
+        "id": 1692186,
+        "name": "NOT TOO LATE FOR A MELEE AT 1",
+        "slug": "tournament/melee-at-1am-15/event/not-too-late-for-a-melee-at-1",
+        "isOnline": true,
+        "state": "ACTIVE",
+        "numEntrants": 11,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1787202000,
+        "phaseGroups": [
+            {
+                "id": 3427199,
+                "phase": {
+                    "id": 2375190,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     }
 }
