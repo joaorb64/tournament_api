@@ -14560,7 +14560,7 @@
         "slug": "tournament/ufa-2026-byoc-arcades/event/super-smash-bros-melee-wii",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 24,
+        "numEntrants": 27,
         "videogame": {
             "id": 1
         },
@@ -14570,7 +14570,11 @@
         "tournament_id": 909271,
         "city": "Aubervilliers",
         "url": "https://smash.gg/tournament/ufa-2026-byoc-arcades/event/super-smash-bros-melee-wii",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "tpk_live"
+            }
+        ],
         "timezone": "Europe/Paris",
         "tournament_startAt": 1789124400,
         "tournament_endAt": 1789336740,
@@ -24817,8 +24821,8 @@
         "name": "Melee singles",
         "slug": "tournament/creature-club-22/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 15,
+        "state": "ACTIVE",
+        "numEntrants": 17,
         "videogame": {
             "id": 1
         },
@@ -24865,35 +24869,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Creature Club 22",
-        "tournament_id": 946799,
-        "city": "Brunswick East",
-        "url": "https://smash.gg/tournament/creature-club-22/event/melee-singles",
-        "streams": null,
-        "timezone": "Australia/Melbourne",
-        "tournament_startAt": 1788426000,
-        "tournament_endAt": 1788440400,
-        "tournament_registrationClosesAt": 1789048740,
-        "images": [
-            {
-                "id": "9776526",
-                "url": "https://images.start.gg/images/tournament/946799/image-e321fb15c1ab7b01da551380cb3b63f4.png",
-                "type": "profile"
-            },
-            {
-                "id": "9776527",
-                "url": "https://images.start.gg/images/tournament/946799/image-918a998b55cf7eda4399fe107550a303.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "140 Lygon St, Brunswick East VIC 3057, Australia",
-        "tournament_addrState": "VIC",
-        "country_code": "AU",
-        "lat": -37.7738377,
-        "lng": 144.9715201
+        ]
     },
     "1696222": {
         "id": 1696222,
@@ -45948,5 +45924,50 @@
         "country_code": "NL",
         "lat": 53.2144552,
         "lng": 6.568780299999999
+    },
+    "1702383": {
+        "id": 1702383,
+        "name": "Melee singles",
+        "slug": "tournament/xgc-2-0-33/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1788802200,
+        "phaseGroups": [
+            {
+                "id": 3444138,
+                "phase": {
+                    "id": 2388247,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "XGC 2.0 #33",
+        "tournament_id": 949700,
+        "city": "Dublin 1",
+        "url": "https://smash.gg/tournament/xgc-2-0-33/event/melee-singles",
+        "streams": null,
+        "timezone": "Europe/Dublin",
+        "tournament_startAt": 1788802200,
+        "tournament_endAt": 1788816600,
+        "tournament_registrationClosesAt": 1788800400,
+        "images": [
+            {
+                "id": "9804944",
+                "url": "https://images.start.gg/images/tournament/949700/image-0eea6f8e51b5ec43454540b37aacca72.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Custom House Square, Mayor Street Lower, International Financial Services Centre, Dublin 1, Ireland",
+        "tournament_addrState": "D",
+        "country_code": "IE",
+        "lat": 53.34961699999999,
+        "lng": -6.243003
     }
 }
