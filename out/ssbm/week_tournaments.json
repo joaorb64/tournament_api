@@ -15774,7 +15774,7 @@
         "name": "Doudou Fighting Games Melee (Wii+Classic Monitor not CRT)",
         "slug": "tournament/doudou-fighting-games-3-ufa-waiting-room/event/doudou-fighting-games-melee-wii-classic-monitor-not-crt",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 14,
         "videogame": {
             "id": 1
@@ -17167,28 +17167,6 @@
         "country_code": "US",
         "lat": 28.4583305,
         "lng": -81.4688681
-    },
-    "1695537": {
-        "id": 1695537,
-        "name": "Melee Singles (Frozen)",
-        "slug": "tournament/gelegentlich-mal-online-05/event/melee-singles-frozen",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 15,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1788094800,
-        "phaseGroups": [
-            {
-                "id": 3433031,
-                "phase": {
-                    "id": 2379572,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1695669": {
         "id": 1695669,
@@ -19295,28 +19273,6 @@
                 "phase": {
                     "id": 2380922,
                     "name": "double elim"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1696154": {
-        "id": 1696154,
-        "name": "Melee Doubles",
-        "slug": "tournament/bagarre-en-fran-ais-10-doubles-edition-1/event/melee-doubles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 6,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1788094800,
-        "phaseGroups": [
-            {
-                "id": 3433959,
-                "phase": {
-                    "id": 2380346,
-                    "name": "Bracket"
                 },
                 "progressionsOut": null
             }
@@ -35284,6 +35240,21 @@
                     "id": 2388628,
                     "name": "Bracket"
                 },
+                "progressionsOut": [
+                    {
+                        "id": 14415186
+                    },
+                    {
+                        "id": 14415187
+                    }
+                ]
+            },
+            {
+                "id": 3447473,
+                "phase": {
+                    "id": 2390708,
+                    "name": "Grands"
+                },
                 "progressionsOut": null
             }
         ]
@@ -41094,7 +41065,7 @@
         "slug": "tournament/juan-cuesta-series-3/event/melee-singles-with-a-twist",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 4,
+        "numEntrants": 5,
         "videogame": {
             "id": 1
         },
@@ -41411,5 +41382,101 @@
         "country_code": "CZ",
         "lat": 50.0651185,
         "lng": 14.4258723
+    },
+    "1704240": {
+        "id": 1704240,
+        "name": "Melee Singles",
+        "slug": "tournament/stock-exchange-131/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1788890400,
+        "phaseGroups": [
+            {
+                "id": 3447490,
+                "phase": {
+                    "id": 2390720,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14415214
+                    },
+                    {
+                        "id": 14415216
+                    },
+                    {
+                        "id": 14415218
+                    },
+                    {
+                        "id": 14415220
+                    }
+                ]
+            },
+            {
+                "id": 3447491,
+                "phase": {
+                    "id": 2390720,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14415215
+                    },
+                    {
+                        "id": 14415217
+                    },
+                    {
+                        "id": 14415219
+                    },
+                    {
+                        "id": 14415221
+                    }
+                ]
+            },
+            {
+                "id": 3447492,
+                "phase": {
+                    "id": 2390721,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Stock Exchange #131",
+        "tournament_id": 950632,
+        "city": "Bournemouth",
+        "url": "https://smash.gg/tournament/stock-exchange-131/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "teamsunsetssb"
+            }
+        ],
+        "timezone": "Europe/London",
+        "tournament_startAt": 1788890400,
+        "tournament_endAt": 1788904800,
+        "tournament_registrationClosesAt": 1788894000,
+        "images": [
+            {
+                "id": "9818674",
+                "url": "https://images.start.gg/images/tournament/950632/image-ff47f9ba7b765a9cb2032353fd88fe0e.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9818675",
+                "url": "https://images.start.gg/images/tournament/950632/image-762ae18a17a41a7a93d6ab8cc7e877e2.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "31 Vanguard Rd, Bournemouth BH8 9NU, UK",
+        "tournament_addrState": "England",
+        "country_code": "GB",
+        "lat": 50.7484318,
+        "lng": -1.8402946
     }
 }
