@@ -3588,7 +3588,7 @@
         "videogame": {
             "id": 1
         },
-        "startAt": 1789855200,
+        "startAt": 1789862400,
         "phaseGroups": [
             {
                 "id": 3359197,
@@ -3806,9 +3806,9 @@
         "url": "https://smash.gg/tournament/resonance-season-2-a-west-washington-crew-battle-leauge/event/melee-singles",
         "streams": null,
         "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1784408400,
+        "tournament_startAt": 1789851600,
         "tournament_endAt": 1789884000,
-        "tournament_registrationClosesAt": 1789826280,
+        "tournament_registrationClosesAt": 1789714740,
         "images": [
             {
                 "id": "9565877",
@@ -3831,21 +3831,51 @@
     },
     "1651565": {
         "id": 1651565,
-        "name": "FInale Crew Battle",
+        "name": "Finale Crew Battle",
         "slug": "tournament/resonance-season-2-a-west-washington-crew-battle-leauge/event/finale-crew-battle",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 0,
+        "numEntrants": 16,
         "videogame": {
             "id": 1
         },
-        "startAt": 1789844400,
+        "startAt": 1789858800,
         "phaseGroups": [
             {
                 "id": 3359200,
                 "phase": {
                     "id": 2322323,
                     "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14469371
+                    },
+                    {
+                        "id": 14469373
+                    }
+                ]
+            },
+            {
+                "id": 3462972,
+                "phase": {
+                    "id": 2322323,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14469372
+                    },
+                    {
+                        "id": 14469374
+                    }
+                ]
+            },
+            {
+                "id": 3462973,
+                "phase": {
+                    "id": 2402584,
+                    "name": "Finale"
                 },
                 "progressionsOut": null
             }
@@ -3856,9 +3886,9 @@
         "url": "https://smash.gg/tournament/resonance-season-2-a-west-washington-crew-battle-leauge/event/finale-crew-battle",
         "streams": null,
         "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1784408400,
+        "tournament_startAt": 1789851600,
         "tournament_endAt": 1789884000,
-        "tournament_registrationClosesAt": 1789826280,
+        "tournament_registrationClosesAt": 1789714740,
         "images": [
             {
                 "id": "9565877",
@@ -47822,5 +47852,55 @@
         "country_code": "US",
         "lat": 41.7369803,
         "lng": -111.8338359
+    },
+    "1713470": {
+        "id": 1713470,
+        "name": "E02 Melee Singles",
+        "slug": "tournament/the-break-room-s01/event/e02-melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1790996400,
+        "phaseGroups": [
+            {
+                "id": 3463012,
+                "phase": {
+                    "id": 2402619,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Break Room S01",
+        "tournament_id": 931353,
+        "city": "Makati City",
+        "url": "https://smash.gg/tournament/the-break-room-s01/event/e02-melee-singles",
+        "streams": null,
+        "timezone": "Asia/Manila",
+        "tournament_startAt": 1789178400,
+        "tournament_endAt": 1791019800,
+        "tournament_registrationClosesAt": 1789185600,
+        "images": [
+            {
+                "id": "9626456",
+                "url": "https://images.start.gg/images/tournament/931353/image-47dcb9380cf20be0b995ae6c2a23e442.png",
+                "type": "banner"
+            },
+            {
+                "id": "9626458",
+                "url": "https://images.start.gg/images/tournament/931353/image-6ef786d34adce86448e8d1a4664117c7.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "H, 98 Sen. Gil J. Puyat Ave, Makati City, 1230 Metro Manila, Philippines",
+        "tournament_addrState": "NCR",
+        "country_code": "PH",
+        "lat": 14.5582282,
+        "lng": 121.0089205
     }
 }
