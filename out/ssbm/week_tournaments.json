@@ -1071,78 +1071,6 @@
         "lat": 33.7725419,
         "lng": -84.39396320000002
     },
-    "1503439": {
-        "id": 1503439,
-        "name": "Melee Singles",
-        "slug": "tournament/riptide-2026-4/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 565,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1789228800,
-        "phaseGroups": [],
-        "tournament": "Riptide 2026",
-        "tournament_id": 851461,
-        "city": "Sandusky",
-        "url": "https://smash.gg/tournament/riptide-2026-4/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "btssmash"
-            },
-            {
-                "streamName": "btssmash2"
-            },
-            {
-                "streamName": "btssmash3"
-            },
-            {
-                "streamName": "gooshigaming"
-            },
-            {
-                "streamName": "splatoontourney"
-            },
-            {
-                "streamName": "holdthismatch"
-            },
-            {
-                "streamName": "vgbootcamp2"
-            },
-            {
-                "streamName": "usmkracing"
-            },
-            {
-                "streamName": "iplsplatoon"
-            },
-            {
-                "streamName": "vgbootcamp"
-            }
-        ],
-        "timezone": "America/New_York",
-        "tournament_startAt": 1789128000,
-        "tournament_endAt": 1789354800,
-        "tournament_registrationClosesAt": 1789412400,
-        "images": [
-            {
-                "id": "8871538",
-                "url": "https://images.start.gg/images/tournament/851461/image-4af455b10f48b4d42d39e4f3a2e8f55e.png",
-                "type": "profile"
-            },
-            {
-                "id": "9197267",
-                "url": "https://images.start.gg/images/tournament/851461/image-d9f14221cd72b3c08681db1f5e5d7e73.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "7000 Kalahari Dr, Sandusky, OH 44870, USA",
-        "tournament_addrState": "OH",
-        "country_code": "US",
-        "lat": 41.3826751,
-        "lng": -82.64328
-    },
     "1572424": {
         "id": 1572424,
         "name": "Smash Melee Singles - Best of 3",
@@ -1249,13 +1177,22 @@
         "name": "Super Smash Bros. Melee Doubles",
         "slug": "tournament/h-town-throwdown-fall-2026/event/super-smash-bros-melee-doubles",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 7,
         "videogame": {
             "id": 1
         },
         "startAt": 1789826400,
-        "phaseGroups": []
+        "phaseGroups": [
+            {
+                "id": 3237810,
+                "phase": {
+                    "id": 2231750,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ]
     },
     "1581939": {
         "id": 1581939,
@@ -1263,12 +1200,96 @@
         "slug": "tournament/h-town-throwdown-fall-2026/event/super-smash-bros-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 24,
+        "numEntrants": 25,
         "videogame": {
             "id": 1
         },
         "startAt": 1789837200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3237722,
+                "phase": {
+                    "id": 2231697,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14474715
+                    },
+                    {
+                        "id": 14474720
+                    }
+                ]
+            },
+            {
+                "id": 3237723,
+                "phase": {
+                    "id": 2231697,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14474716
+                    },
+                    {
+                        "id": 14474721
+                    }
+                ]
+            },
+            {
+                "id": 3237724,
+                "phase": {
+                    "id": 2231697,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14474717
+                    },
+                    {
+                        "id": 14474722
+                    }
+                ]
+            },
+            {
+                "id": 3237725,
+                "phase": {
+                    "id": 2231697,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14474718
+                    },
+                    {
+                        "id": 14474723
+                    }
+                ]
+            },
+            {
+                "id": 3464261,
+                "phase": {
+                    "id": 2231697,
+                    "name": "Pools"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14474719
+                    },
+                    {
+                        "id": 14474724
+                    }
+                ]
+            },
+            {
+                "id": 3237726,
+                "phase": {
+                    "id": 2231698,
+                    "name": "Final Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "H-Town Throwdown Fall 2026",
         "tournament_id": 891225,
         "city": "Huntington",
@@ -2483,7 +2504,16 @@
             "id": 1
         },
         "startAt": 1790344800,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3330284,
+                "phase": {
+                    "id": 2300960,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "J\u00f6tunheim 2026",
         "tournament_id": 916740,
         "city": "Reykjav\u00edk",
@@ -6890,28 +6920,6 @@
             "CA"
         ]
     },
-    "1670624": {
-        "id": 1670624,
-        "name": "Melee Singles",
-        "slug": "tournament/ramen-brawl-vii/event/melee-singles",
-        "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 0,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1789228800,
-        "phaseGroups": [
-            {
-                "id": 3390688,
-                "phase": {
-                    "id": 2346988,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1662684": {
         "id": 1662684,
         "name": "Melee Singles",
@@ -8769,61 +8777,6 @@
         "country_code": "US",
         "lat": 43.1517027,
         "lng": -77.5883516
-    },
-    "1685756": {
-        "id": 1685756,
-        "name": "Super Smash Bros. Melee (Wii)",
-        "slug": "tournament/ufa-2026-byoc-arcades/event/super-smash-bros-melee-wii",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 33,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1789228800,
-        "phaseGroups": [
-            {
-                "id": 3439103,
-                "phase": {
-                    "id": 2384101,
-                    "name": "BRACKET"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14389042
-                    },
-                    {
-                        "id": 14389043
-                    },
-                    {
-                        "id": 14389044
-                    },
-                    {
-                        "id": 14389045
-                    },
-                    {
-                        "id": 14389046
-                    },
-                    {
-                        "id": 14389047
-                    },
-                    {
-                        "id": 14389048
-                    },
-                    {
-                        "id": 14389049
-                    }
-                ]
-            },
-            {
-                "id": 3440858,
-                "phase": {
-                    "id": 2385566,
-                    "name": "TOP 8"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1687402": {
         "id": 1687402,
@@ -11420,7 +11373,7 @@
         "slug": "tournament/mints-melee-monthly-1/event/melee-singles",
         "isOnline": true,
         "state": "CREATED",
-        "numEntrants": 12,
+        "numEntrants": 14,
         "videogame": {
             "id": 1
         },
@@ -20701,49 +20654,6 @@
         "lat": 48.593691,
         "lng": 7.721359199999999
     },
-    "1705040": {
-        "id": 1705040,
-        "name": "MAIN: Melee Singles",
-        "slug": "tournament/odd-melee-ggb-306/event/main-melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 4,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1789227000,
-        "phaseGroups": [
-            {
-                "id": 3454796,
-                "phase": {
-                    "id": 2396600,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14437235
-                    },
-                    {
-                        "id": 14437236
-                    },
-                    {
-                        "id": 14437237
-                    },
-                    {
-                        "id": 14437238
-                    }
-                ]
-            },
-            {
-                "id": 3454797,
-                "phase": {
-                    "id": 2396601,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1705205": {
         "id": 1705205,
         "name": "Melee singles",
@@ -22614,40 +22524,6 @@
                 "phase": {
                     "id": 2393178,
                     "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1706224": {
-        "id": 1706224,
-        "name": "Melee Singles",
-        "slug": "tournament/burning-stocks-18-parker-is-a-controversial-figure/event/melee-singles",
-        "isOnline": false,
-        "state": "ACTIVE",
-        "numEntrants": 1,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1789227000,
-        "phaseGroups": [
-            {
-                "id": 3450498,
-                "phase": {
-                    "id": 2393174,
-                    "name": "Pools"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14423050
-                    }
-                ]
-            },
-            {
-                "id": 3450499,
-                "phase": {
-                    "id": 2393175,
-                    "name": "Grand Finals"
                 },
                 "progressionsOut": null
             }
@@ -31508,39 +31384,7 @@
                     }
                 ]
             }
-        ],
-        "tournament": "GG Bergen #307",
-        "tournament_id": 951163,
-        "city": "Laksev\u00e5g",
-        "url": "https://smash.gg/tournament/gg-bergen-307/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "GGBergentv"
-            }
-        ],
-        "timezone": "Europe/Oslo",
-        "tournament_startAt": 1789824600,
-        "tournament_endAt": 1789846200,
-        "tournament_registrationClosesAt": 1789844400,
-        "images": [
-            {
-                "id": "9823105",
-                "url": "https://images.start.gg/images/tournament/951163/image-127a95d5074be8a75d3a7c5004f81c9a.png",
-                "type": "profile"
-            },
-            {
-                "id": "9823106",
-                "url": "https://images.start.gg/images/tournament/951163/image-702650158ea1aff52f75c5a4f0f3a771.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Herman Grans vei 6, 5162 Laksev\u00e5g, Norway",
-        "tournament_addrState": "Vestland",
-        "country_code": "NO",
-        "lat": 60.382274,
-        "lng": 5.2987019
+        ]
     },
     "1710164": {
         "id": 1710164,
@@ -37990,8 +37834,8 @@
         "name": "ECLIPSE SINGLES",
         "slug": "tournament/eclipse-91-1/event/eclipse-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 0,
+        "state": "ACTIVE",
+        "numEntrants": 7,
         "videogame": {
             "id": 1
         },
@@ -38005,39 +37849,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "ECLIPSE 91",
-        "tournament_id": 954311,
-        "city": null,
-        "url": "https://smash.gg/tournament/eclipse-91-1/event/eclipse-singles",
-        "streams": [
-            {
-                "streamName": "SSBM_ECLIPSE"
-            }
-        ],
-        "timezone": null,
-        "tournament_startAt": 1789833600,
-        "tournament_endAt": 1789851600,
-        "tournament_registrationClosesAt": 1789833000,
-        "images": [
-            {
-                "id": "9852662",
-                "url": "https://images.start.gg/images/tournament/954311/image-1c1bf43e14df87ba3b4d4d754a2da321.png",
-                "type": "banner"
-            },
-            {
-                "id": "9852663",
-                "url": "https://images.start.gg/images/tournament/954311/image-34972200f6755a5cb0f70559ee058dd9.png",
-                "type": "profile"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": null,
-        "tournament_addrState": null,
-        "country_code": null,
-        "lat": null,
-        "lng": null
+        ]
     },
     "1712206": {
         "id": 1712206,
@@ -45195,39 +45007,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "CHOP. 16",
-        "tournament_id": 926953,
-        "city": "Graz",
-        "url": "https://smash.gg/tournament/chop-16/event/ssbm-singles",
-        "streams": [
-            {
-                "streamName": "haseh"
-            }
-        ],
-        "timezone": "Europe/Vienna",
-        "tournament_startAt": 1789808400,
-        "tournament_endAt": 1789851600,
-        "tournament_registrationClosesAt": 1789851600,
-        "images": [
-            {
-                "id": "9585471",
-                "url": "https://images.start.gg/images/tournament/926953/image-8d102d9ca2e658f94e5ee9f151e0b4e3.png",
-                "type": "profile"
-            },
-            {
-                "id": "9585472",
-                "url": "https://images.start.gg/images/tournament/926953/image-bd76269ea8c6f2d4ebcba65967b8f64a.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": false,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "Eggenberger Allee 31, 8020 Graz, \u00d6sterreich",
-        "tournament_addrState": "Steiermark",
-        "country_code": "AT",
-        "lat": 47.0698599,
-        "lng": 15.4047514
+        ]
     },
     "1713935": {
         "id": 1713935,
@@ -46034,7 +45814,7 @@
         "slug": "tournament/melee-at-reesch-s-on-tuesdays-64/event/main-bracket-bo5",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 3,
+        "numEntrants": 4,
         "videogame": {
             "id": 1
         },
@@ -46177,5 +45957,59 @@
         "country_code": "US",
         "lat": 38.9501274,
         "lng": -94.4883476
+    },
+    "1714163": {
+        "id": 1714163,
+        "name": "Melee Singles",
+        "slug": "tournament/cmpg-236/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 3,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1790114400,
+        "phaseGroups": [
+            {
+                "id": 3464313,
+                "phase": {
+                    "id": 2403571,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "CMPG #236",
+        "tournament_id": 955342,
+        "city": "Mount Pleasant",
+        "url": "https://smash.gg/tournament/cmpg-236/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "CMICH Esports"
+            }
+        ],
+        "timezone": "America/Detroit",
+        "tournament_startAt": 1790114400,
+        "tournament_endAt": 1790128800,
+        "tournament_registrationClosesAt": 1790115600,
+        "images": [
+            {
+                "id": "9862778",
+                "url": "https://images.start.gg/images/tournament/955342/image-254b0994fa74b919c49625e438be276d.jpg",
+                "type": "banner"
+            },
+            {
+                "id": "9862779",
+                "url": "https://images.start.gg/images/tournament/955342/image-c603f04c845c85afc4f705941e3512d8.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Ryan Hall, Mt Pleasant, MI 48858, USA",
+        "tournament_addrState": "MI",
+        "country_code": "US",
+        "lat": 43.5811011,
+        "lng": -84.7734956
     }
 }
