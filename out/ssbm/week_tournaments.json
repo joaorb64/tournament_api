@@ -9312,7 +9312,11 @@
         "tournament_id": 942342,
         "city": "Myrtle Beach",
         "url": "https://smash.gg/tournament/swig-n-dorf-up-to-500-pot-bonus/event/melee-singles",
-        "streams": null,
+        "streams": [
+            {
+                "streamName": "MyrtleBeachSmash"
+            }
+        ],
         "timezone": "America/New_York",
         "tournament_startAt": 1790434800,
         "tournament_endAt": 1790470800,
@@ -30432,7 +30436,7 @@
         "name": "Melee Singles! (7:30 Start)",
         "slug": "tournament/melee-abbey-tavern-159/event/melee-singles-7-30-start",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 49,
         "videogame": {
             "id": 1
@@ -34699,7 +34703,7 @@
         "slug": "tournament/the-break-room-s01/event/e02-melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 7,
+        "numEntrants": 15,
         "videogame": {
             "id": 1
         },
@@ -34709,41 +34713,29 @@
                 "id": 3463012,
                 "phase": {
                     "id": 2402619,
-                    "name": "Pools (Bo3)"
+                    "name": "Lower Division (Bo3)"
                 },
                 "progressionsOut": [
                     {
-                        "id": 14476337
+                        "id": 14480136
                     },
                     {
-                        "id": 14476339
-                    },
-                    {
-                        "id": 14476341
-                    },
-                    {
-                        "id": 14476343
+                        "id": 14480138
                     }
                 ]
             },
             {
-                "id": 3464726,
+                "id": 3465866,
                 "phase": {
                     "id": 2402619,
-                    "name": "Pools (Bo3)"
+                    "name": "Lower Division (Bo3)"
                 },
                 "progressionsOut": [
                     {
-                        "id": 14476338
+                        "id": 14480137
                     },
                     {
-                        "id": 14476340
-                    },
-                    {
-                        "id": 14476342
-                    },
-                    {
-                        "id": 14476344
+                        "id": 14480139
                     }
                 ]
             },
@@ -34754,6 +34746,39 @@
                     "name": "Top 8 (Bo5)"
                 },
                 "progressionsOut": null
+            },
+            {
+                "id": 3465864,
+                "phase": {
+                    "id": 2404820,
+                    "name": "Main Bracket (Bo3)"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14480110
+                    },
+                    {
+                        "id": 14480111
+                    },
+                    {
+                        "id": 14480112
+                    },
+                    {
+                        "id": 14480113
+                    },
+                    {
+                        "id": 14480114
+                    },
+                    {
+                        "id": 14480115
+                    },
+                    {
+                        "id": 14480116
+                    },
+                    {
+                        "id": 14480117
+                    }
+                ]
             }
         ],
         "tournament": "The Break Room S01",
@@ -34763,7 +34788,7 @@
         "streams": null,
         "timezone": "Asia/Manila",
         "tournament_startAt": 1789178400,
-        "tournament_endAt": 1791019800,
+        "tournament_endAt": 1791106200,
         "tournament_registrationClosesAt": 1790845200,
         "images": [
             {
@@ -37936,7 +37961,7 @@
         "streams": null,
         "timezone": "Asia/Manila",
         "tournament_startAt": 1789178400,
-        "tournament_endAt": 1791019800,
+        "tournament_endAt": 1791106200,
         "tournament_registrationClosesAt": 1790845200,
         "images": [
             {
@@ -48515,5 +48540,55 @@
                 "progressionsOut": null
             }
         ]
+    },
+    "1717237": {
+        "id": 1717237,
+        "name": "E03 Melee Singles",
+        "slug": "tournament/the-break-room-s01/event/e03-melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 4,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1791079200,
+        "phaseGroups": [
+            {
+                "id": 3469125,
+                "phase": {
+                    "id": 2407453,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Break Room S01",
+        "tournament_id": 931353,
+        "city": "Makati City",
+        "url": "https://smash.gg/tournament/the-break-room-s01/event/e03-melee-singles",
+        "streams": null,
+        "timezone": "Asia/Manila",
+        "tournament_startAt": 1789178400,
+        "tournament_endAt": 1791106200,
+        "tournament_registrationClosesAt": 1790845200,
+        "images": [
+            {
+                "id": "9626456",
+                "url": "https://images.start.gg/images/tournament/931353/image-47dcb9380cf20be0b995ae6c2a23e442.png",
+                "type": "banner"
+            },
+            {
+                "id": "9626458",
+                "url": "https://images.start.gg/images/tournament/931353/image-6ef786d34adce86448e8d1a4664117c7.png",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "H, 98 Sen. Gil J. Puyat Ave, Makati City, 1230 Metro Manila, Philippines",
+        "tournament_addrState": "NCR",
+        "country_code": "PH",
+        "lat": 14.5582282,
+        "lng": 121.0089205
     }
 }
