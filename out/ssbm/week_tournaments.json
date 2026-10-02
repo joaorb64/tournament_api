@@ -5661,7 +5661,16 @@
             "id": 1
         },
         "startAt": 1791039600,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3309532,
+                "phase": {
+                    "id": 2285447,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Show Me Your Moves '26",
         "tournament_id": 910945,
         "city": "Urbana",
@@ -19434,65 +19443,6 @@
             }
         ]
     },
-    "1713002": {
-        "id": 1713002,
-        "name": "Melee Singles",
-        "slug": "tournament/labsesh-44/event/melee-singles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 6,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1790352000,
-        "phaseGroups": [
-            {
-                "id": 3462219,
-                "phase": {
-                    "id": 2402012,
-                    "name": "Melee singles"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
-    "1713003": {
-        "id": 1713003,
-        "name": "Melee doubles",
-        "slug": "tournament/labsesh-44/event/melee-doubles",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 3,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1790352000,
-        "phaseGroups": [
-            {
-                "id": 3462221,
-                "phase": {
-                    "id": 2402014,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14504555
-                    },
-                    {
-                        "id": 14504556
-                    }
-                ]
-            },
-            {
-                "id": 3473126,
-                "phase": {
-                    "id": 2410070,
-                    "name": "Grands"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1713038": {
         "id": 1713038,
         "name": "Melee Singles",
@@ -20862,7 +20812,7 @@
         "name": "Melee Singles",
         "slug": "tournament/sf-state-smash-thursdays-10-01-2026/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 7,
         "videogame": {
             "id": 1
@@ -31093,7 +31043,7 @@
     "1719327": {
         "id": 1719327,
         "name": "Melee Singles",
-        "slug": "tournament/umass-dollar-bracket-ult-and-melee-singles-october-1st-2027/event/melee-singles",
+        "slug": "tournament/umass-dollar-bracket-ult-and-melee-singles-october-1st-2026/event/melee-singles",
         "isOnline": false,
         "state": "COMPLETED",
         "numEntrants": 14,
@@ -48619,5 +48569,55 @@
         "country_code": "NO",
         "lat": 63.41611139999999,
         "lng": 10.4074562
+    },
+    "1724634": {
+        "id": 1724634,
+        "name": "Melee",
+        "slug": "tournament/augsburger-time-flip-3/event/melee",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1792224000,
+        "phaseGroups": [
+            {
+                "id": 3481717,
+                "phase": {
+                    "id": 2416957,
+                    "name": "Round Robin"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Augsburger Time Flip #3",
+        "tournament_id": 960249,
+        "city": "Augsburg",
+        "url": "https://smash.gg/tournament/augsburger-time-flip-3/event/melee",
+        "streams": null,
+        "timezone": "Europe/Berlin",
+        "tournament_startAt": 1792224000,
+        "tournament_endAt": 1792231200,
+        "tournament_registrationClosesAt": 1792227540,
+        "images": [
+            {
+                "id": "9907537",
+                "url": "https://images.start.gg/images/tournament/960249/image-954ba440e265b141201d6d570e4457ea-optimized.png",
+                "type": "profile"
+            },
+            {
+                "id": "9907538",
+                "url": "https://images.start.gg/images/tournament/960249/image-b99af4cf9c49665bdcb93ddd6b794a51-optimized.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "B\u00fcrgermeister-Aurnhammer-Stra\u00dfe 5, 86199 Augsburg, Deutschland",
+        "tournament_addrState": "BY",
+        "country_code": "DE",
+        "lat": 48.34120979999999,
+        "lng": 10.8685843
     }
 }
