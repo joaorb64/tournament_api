@@ -21522,7 +21522,7 @@
         "name": "Melee Singles",
         "slug": "tournament/kastle-smashers-23/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 24,
         "videogame": {
             "id": 1
@@ -21544,7 +21544,7 @@
         "name": "Ammy bracket",
         "slug": "tournament/kastle-smashers-23/event/ammy-bracket",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1
@@ -31506,7 +31506,7 @@
         "name": "Melee Singles",
         "slug": "tournament/landing-at-the-msc-60/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 9,
         "videogame": {
             "id": 1
@@ -45028,7 +45028,7 @@
         "name": "Singles",
         "slug": "tournament/melee-at-night-1188/event/singles",
         "isOnline": true,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 19,
         "videogame": {
             "id": 1
@@ -46377,8 +46377,8 @@
         "name": "Melee at 1am - Singles",
         "slug": "tournament/melee-at-1am-60/event/melee-at-1am-singles",
         "isOnline": true,
-        "state": "CREATED",
-        "numEntrants": 20,
+        "state": "ACTIVE",
+        "numEntrants": 21,
         "videogame": {
             "id": 1
         },
@@ -46392,6 +46392,91 @@
                 },
                 "progressionsOut": null
             }
+        ]
+    },
+    "1730789": {
+        "id": 1730789,
+        "name": "Melee Singles",
+        "slug": "tournament/beginner-beatdown-278/event/melee-singles",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1791705600,
+        "phaseGroups": [
+            {
+                "id": 3492257,
+                "phase": {
+                    "id": 2424912,
+                    "name": "Main Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14575861
+                    },
+                    {
+                        "id": 14575862
+                    },
+                    {
+                        "id": 14575863
+                    },
+                    {
+                        "id": 14575864
+                    }
+                ]
+            },
+            {
+                "id": 3492258,
+                "phase": {
+                    "id": 2424913,
+                    "name": "Top 4"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Beginner Beatdown #278",
+        "tournament_id": 963137,
+        "city": null,
+        "url": "https://smash.gg/tournament/beginner-beatdown-278/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "croc0_dile"
+            },
+            {
+                "streamName": "ethan_is_away"
+            },
+            {
+                "streamName": "Popebenedict_xvi"
+            }
+        ],
+        "timezone": "Australia/Brisbane",
+        "tournament_startAt": 1791705600,
+        "tournament_endAt": 1791718200,
+        "tournament_registrationClosesAt": 1791705300,
+        "images": [
+            {
+                "id": "9933818",
+                "url": "https://images.start.gg/images/tournament/963137/image-bd13dd2c22d27f320aaeda3073093f64-optimized.png",
+                "type": "banner"
+            },
+            {
+                "id": "9933819",
+                "url": "https://images.start.gg/images/tournament/963137/image-b9015641fb4b65b5cd6761b55dd40e24-optimized.jpg",
+                "type": "profile"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Oceania",
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": -22.7359095,
+        "lng": 140.0187653,
+        "region_lock": [
+            "AU",
+            "NZ"
         ]
     }
 }
