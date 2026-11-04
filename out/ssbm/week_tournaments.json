@@ -6018,12 +6018,36 @@
         "slug": "tournament/dialled-in/event/melee-doubles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 1,
+        "numEntrants": 3,
         "videogame": {
             "id": 1
         },
         "startAt": 1794078000,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3432502,
+                "phase": {
+                    "id": 2379188,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14658435
+                    },
+                    {
+                        "id": 14658436
+                    }
+                ]
+            },
+            {
+                "id": 3432504,
+                "phase": {
+                    "id": 2379189,
+                    "name": "Top 4"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Dialled In",
         "tournament_id": 946365,
         "city": "Vancouver",
@@ -6069,12 +6093,42 @@
         "slug": "tournament/dialled-in/event/melee-singles",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 24,
+        "numEntrants": 27,
         "videogame": {
             "id": 1
         },
         "startAt": 1794085200,
-        "phaseGroups": [],
+        "phaseGroups": [
+            {
+                "id": 3432499,
+                "phase": {
+                    "id": 2379186,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14658431
+                    },
+                    {
+                        "id": 14658432
+                    },
+                    {
+                        "id": 14658433
+                    },
+                    {
+                        "id": 14658434
+                    }
+                ]
+            },
+            {
+                "id": 3432501,
+                "phase": {
+                    "id": 2379187,
+                    "name": "Top 8"
+                },
+                "progressionsOut": null
+            }
+        ],
         "tournament": "Dialled In",
         "tournament_id": 946365,
         "city": "Vancouver",
@@ -15957,28 +16011,6 @@
         "lat": 47.2196215,
         "lng": -1.5343349
     },
-    "1736185": {
-        "id": 1736185,
-        "name": "Super Smash Bros Melee Bracket (Console)",
-        "slug": "tournament/down-back-tuesdays-the-big-one-iii-halloween-3rd-anniversary-party/event/super-smash-bros-melee-bracket-console",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 18,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1793154600,
-        "phaseGroups": [
-            {
-                "id": 3500771,
-                "phase": {
-                    "id": 2431963,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1736368": {
         "id": 1736368,
         "name": "Amateur Bracket",
@@ -19467,61 +19499,6 @@
         "country_code": "US",
         "lat": 36.0158001,
         "lng": -78.9189615
-    },
-    "1739524": {
-        "id": 1739524,
-        "name": "Melee Singles! (7:30 Start)",
-        "slug": "tournament/melee-abbey-tavern-164-halloween-edition/event/melee-singles-7-30-start",
-        "isOnline": false,
-        "state": "COMPLETED",
-        "numEntrants": 57,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1793156400,
-        "phaseGroups": [
-            {
-                "id": 3506178,
-                "phase": {
-                    "id": 2436174,
-                    "name": "Bracket"
-                },
-                "progressionsOut": [
-                    {
-                        "id": 14616996
-                    },
-                    {
-                        "id": 14616997
-                    },
-                    {
-                        "id": 14616998
-                    },
-                    {
-                        "id": 14616999
-                    },
-                    {
-                        "id": 14617000
-                    },
-                    {
-                        "id": 14617001
-                    },
-                    {
-                        "id": 14617002
-                    },
-                    {
-                        "id": 14617003
-                    }
-                ]
-            },
-            {
-                "id": 3506179,
-                "phase": {
-                    "id": 2436175,
-                    "name": "Top 8"
-                },
-                "progressionsOut": null
-            }
-        ]
     },
     "1725717": {
         "id": 1725717,
@@ -27330,28 +27307,6 @@
             }
         ]
     },
-    "1743349": {
-        "id": 1743349,
-        "name": "Singles",
-        "slug": "tournament/melee-at-night-1206/event/singles",
-        "isOnline": true,
-        "state": "COMPLETED",
-        "numEntrants": 16,
-        "videogame": {
-            "id": 1
-        },
-        "startAt": 1793156400,
-        "phaseGroups": [
-            {
-                "id": 3512505,
-                "phase": {
-                    "id": 2441196,
-                    "name": "Bracket"
-                },
-                "progressionsOut": null
-            }
-        ]
-    },
     "1741397": {
         "id": 1741397,
         "name": "Melee Singles",
@@ -30059,8 +30014,8 @@
         "name": "Melee Doubles (6:30 pm Start)",
         "slug": "tournament/melee-abbey-tavern-165/event/melee-doubles-6-30-pm-start",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 4,
+        "state": "ACTIVE",
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -30074,42 +30029,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Melee @ Abbey Tavern #165",
-        "tournament_id": 969592,
-        "city": "San Francisco",
-        "url": "https://smash.gg/tournament/melee-abbey-tavern-165/event/melee-doubles-6-30-pm-start",
-        "streams": [
-            {
-                "streamName": "SFMelee"
-            },
-            {
-                "streamName": "sidestream"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1793759400,
-        "tournament_endAt": 1793779140,
-        "tournament_registrationClosesAt": 1793761200,
-        "images": [
-            {
-                "id": "9993886",
-                "url": "https://images.start.gg/images/tournament/969592/image-779942c85b4adcc1315009b9c3d62805-optimized.png",
-                "type": "profile"
-            },
-            {
-                "id": "9993887",
-                "url": "https://images.start.gg/images/tournament/969592/image-a0d5480c44918a4b57d906ef1536f906-optimized.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "4100 Geary Blvd, San Francisco, CA 94118, USA",
-        "tournament_addrState": "CA",
-        "country_code": "US",
-        "lat": 37.7813544,
-        "lng": -122.4634205
+        ]
     },
     "1744313": {
         "id": 1744313,
@@ -30117,7 +30037,7 @@
         "slug": "tournament/melee-abbey-tavern-165/event/melee-singles-7-30-start",
         "isOnline": false,
         "state": "CREATED",
-        "numEntrants": 27,
+        "numEntrants": 36,
         "videogame": {
             "id": 1
         },
@@ -30164,42 +30084,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Melee @ Abbey Tavern #165",
-        "tournament_id": 969592,
-        "city": "San Francisco",
-        "url": "https://smash.gg/tournament/melee-abbey-tavern-165/event/melee-singles-7-30-start",
-        "streams": [
-            {
-                "streamName": "SFMelee"
-            },
-            {
-                "streamName": "sidestream"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1793759400,
-        "tournament_endAt": 1793779140,
-        "tournament_registrationClosesAt": 1793761200,
-        "images": [
-            {
-                "id": "9993886",
-                "url": "https://images.start.gg/images/tournament/969592/image-779942c85b4adcc1315009b9c3d62805-optimized.png",
-                "type": "profile"
-            },
-            {
-                "id": "9993887",
-                "url": "https://images.start.gg/images/tournament/969592/image-a0d5480c44918a4b57d906ef1536f906-optimized.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "4100 Geary Blvd, San Francisco, CA 94118, USA",
-        "tournament_addrState": "CA",
-        "country_code": "US",
-        "lat": 37.7813544,
-        "lng": -122.4634205
+        ]
     },
     "1744291": {
         "id": 1744291,
@@ -32097,7 +31982,7 @@
         "name": "Melee Singles",
         "slug": "tournament/rpm-115/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 11,
         "videogame": {
             "id": 1
@@ -33027,7 +32912,7 @@
         "name": "Melee Singles - Experienced",
         "slug": "tournament/utk-melee-20-introducing-the-amateur-bracket/event/melee-singles-experienced",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 9,
         "videogame": {
             "id": 1
@@ -33049,7 +32934,7 @@
         "name": "Melee Singles - Amateur",
         "slug": "tournament/utk-melee-20-introducing-the-amateur-bracket/event/melee-singles-amateur",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 9,
         "videogame": {
             "id": 1
@@ -33403,8 +33288,8 @@
         "name": "Redemption Bracket (Bo3)",
         "slug": "tournament/melee-at-reesch-s-on-tuesdays-70/event/redemption-bracket-bo3-1",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 4,
+        "state": "ACTIVE",
+        "numEntrants": 6,
         "videogame": {
             "id": 1
         },
@@ -35580,7 +35465,7 @@
         "name": "Melee Singles - all bo5",
         "slug": "tournament/uw-melee-weekly-fall-26-8-eye-of-the-storm/event/melee-singles-all-bo5",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 20,
         "videogame": {
             "id": 1
@@ -38922,7 +38807,7 @@
         "name": "Melee Singles",
         "slug": "tournament/coal-week-156/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 10,
         "videogame": {
             "id": 1
@@ -41933,7 +41818,7 @@
         "name": "Melee Singles",
         "slug": "tournament/cmpg-241/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 7,
         "videogame": {
             "id": 1
@@ -43377,7 +43262,7 @@
         "name": "Melee Singles",
         "slug": "tournament/unc-smashfest-61/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 8,
         "videogame": {
             "id": 1
@@ -43709,7 +43594,7 @@
         "name": "Melee Singles",
         "slug": "tournament/we-tech-those-183/event/melee-singles",
         "isOnline": false,
-        "state": "ACTIVE",
+        "state": "COMPLETED",
         "numEntrants": 11,
         "videogame": {
             "id": 1
@@ -45037,8 +44922,8 @@
         "name": "Melee Singles",
         "slug": "tournament/smash-club-uw-11-3-2026-lordapplepie-s-revenge/event/melee-singles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 10,
+        "state": "ACTIVE",
+        "numEntrants": 34,
         "videogame": {
             "id": 1
         },
@@ -45085,47 +44970,15 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Smash Club @ UW 11/3/2026: LordApplePie\u2019s revenge",
-        "tournament_id": 971391,
-        "city": "Seattle",
-        "url": "https://smash.gg/tournament/smash-club-uw-11-3-2026-lordapplepie-s-revenge/event/melee-singles",
-        "streams": [
-            {
-                "streamName": "uwsmash"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1793757600,
-        "tournament_endAt": 1793772000,
-        "tournament_registrationClosesAt": 1793759400,
-        "images": [
-            {
-                "id": "10011662",
-                "url": "https://images.start.gg/images/tournament/971391/image-45a6baf4b1090d3c0ae43cd5abf4bea5-optimized.png",
-                "type": "profile"
-            },
-            {
-                "id": "10011663",
-                "url": "https://images.start.gg/images/tournament/971391/image-125e4bc51d45d7bf0d72456aab483ed0-optimized.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "1135 NE Campus Pkwy, Seattle, WA 98105, USA",
-        "tournament_addrState": "WA",
-        "country_code": "US",
-        "lat": 47.6558541,
-        "lng": -122.3158624
+        ]
     },
     "1748231": {
         "id": 1748231,
         "name": "Melee Doubles",
         "slug": "tournament/smash-club-uw-11-3-2026-lordapplepie-s-revenge/event/melee-doubles",
         "isOnline": false,
-        "state": "CREATED",
-        "numEntrants": 1,
+        "state": "ACTIVE",
+        "numEntrants": 8,
         "videogame": {
             "id": 1
         },
@@ -45139,39 +44992,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Smash Club @ UW 11/3/2026: LordApplePie\u2019s revenge",
-        "tournament_id": 971391,
-        "city": "Seattle",
-        "url": "https://smash.gg/tournament/smash-club-uw-11-3-2026-lordapplepie-s-revenge/event/melee-doubles",
-        "streams": [
-            {
-                "streamName": "uwsmash"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1793757600,
-        "tournament_endAt": 1793772000,
-        "tournament_registrationClosesAt": 1793759400,
-        "images": [
-            {
-                "id": "10011662",
-                "url": "https://images.start.gg/images/tournament/971391/image-45a6baf4b1090d3c0ae43cd5abf4bea5-optimized.png",
-                "type": "profile"
-            },
-            {
-                "id": "10011663",
-                "url": "https://images.start.gg/images/tournament/971391/image-125e4bc51d45d7bf0d72456aab483ed0-optimized.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "1135 NE Campus Pkwy, Seattle, WA 98105, USA",
-        "tournament_addrState": "WA",
-        "country_code": "US",
-        "lat": 47.6558541,
-        "lng": -122.3158624
+        ]
     },
     "1748230": {
         "id": 1748230,
@@ -45193,39 +45014,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Smash Club @ UW 11/3/2026: LordApplePie\u2019s revenge",
-        "tournament_id": 971391,
-        "city": "Seattle",
-        "url": "https://smash.gg/tournament/smash-club-uw-11-3-2026-lordapplepie-s-revenge/event/melee-singles-amateur-bracket",
-        "streams": [
-            {
-                "streamName": "uwsmash"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1793757600,
-        "tournament_endAt": 1793772000,
-        "tournament_registrationClosesAt": 1793759400,
-        "images": [
-            {
-                "id": "10011662",
-                "url": "https://images.start.gg/images/tournament/971391/image-45a6baf4b1090d3c0ae43cd5abf4bea5-optimized.png",
-                "type": "profile"
-            },
-            {
-                "id": "10011663",
-                "url": "https://images.start.gg/images/tournament/971391/image-125e4bc51d45d7bf0d72456aab483ed0-optimized.jpg",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "1135 NE Campus Pkwy, Seattle, WA 98105, USA",
-        "tournament_addrState": "WA",
-        "country_code": "US",
-        "lat": 47.6558541,
-        "lng": -122.3158624
+        ]
     },
     "1748240": {
         "id": 1748240,
@@ -45777,7 +45566,7 @@
         "name": "Smash Melee!!!!!!!!!",
         "slug": "tournament/tntech-smash-11-03-2026/event/smash-melee",
         "isOnline": false,
-        "state": "CREATED",
+        "state": "ACTIVE",
         "numEntrants": 10,
         "videogame": {
             "id": 1
@@ -46452,42 +46241,7 @@
                 },
                 "progressionsOut": null
             }
-        ],
-        "tournament": "Melee @ Abbey Tavern #165",
-        "tournament_id": 969592,
-        "city": "San Francisco",
-        "url": "https://smash.gg/tournament/melee-abbey-tavern-165/event/ammy-bracket-9-00-pm-start",
-        "streams": [
-            {
-                "streamName": "SFMelee"
-            },
-            {
-                "streamName": "sidestream"
-            }
-        ],
-        "timezone": "America/Los_Angeles",
-        "tournament_startAt": 1793759400,
-        "tournament_endAt": 1793779140,
-        "tournament_registrationClosesAt": 1793761200,
-        "images": [
-            {
-                "id": "9993886",
-                "url": "https://images.start.gg/images/tournament/969592/image-779942c85b4adcc1315009b9c3d62805-optimized.png",
-                "type": "profile"
-            },
-            {
-                "id": "9993887",
-                "url": "https://images.start.gg/images/tournament/969592/image-a0d5480c44918a4b57d906ef1536f906-optimized.png",
-                "type": "banner"
-            }
-        ],
-        "tournament_multievent": true,
-        "tournament_venueName": null,
-        "tournament_venueAddress": "4100 Geary Blvd, San Francisco, CA 94118, USA",
-        "tournament_addrState": "CA",
-        "country_code": "US",
-        "lat": 37.7813544,
-        "lng": -122.4634205
+        ]
     },
     "1748769": {
         "id": 1748769,
@@ -47359,5 +47113,264 @@
         "country_code": "US",
         "lat": 35.2056619,
         "lng": -84.84120879999999
+    },
+    "1749004": {
+        "id": 1749004,
+        "name": "Melee Doubles (2v2)",
+        "slug": "tournament/shuuten-tokyo-31/event/melee-doubles-2v2",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1796439600,
+        "phaseGroups": [
+            {
+                "id": 3521171,
+                "phase": {
+                    "id": 2448254,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Shuuten Tokyo #31\uff08\u7d42\u70b9\u6771\u4eac\uff09",
+        "tournament_id": 971767,
+        "city": null,
+        "url": "https://smash.gg/tournament/shuuten-tokyo-31/event/melee-doubles-2v2",
+        "streams": [
+            {
+                "streamName": "jmlee337"
+            },
+            {
+                "streamName": "shuutentokyo"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1796439600,
+        "tournament_endAt": 1798275600,
+        "tournament_registrationClosesAt": 1796443200,
+        "images": [
+            {
+                "id": "10015032",
+                "url": "https://images.start.gg/images/tournament/971767/image-6cfe24fcb30e25a7451bb62ed294e1b8-optimized.png",
+                "type": "profile"
+            },
+            {
+                "id": "10015033",
+                "url": "https://images.start.gg/images/tournament/971767/image-2bb2bdbfb1ba197e813535589c5ec1fb-optimized.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Tokyo, Japan",
+        "tournament_addrState": "Tokyo",
+        "country_code": "JP",
+        "lat": 35.6764225,
+        "lng": 139.650027
+    },
+    "1749003": {
+        "id": 1749003,
+        "name": "Melee Singles (1v1)",
+        "slug": "tournament/shuuten-tokyo-31/event/melee-singles-1v1",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1796439600,
+        "phaseGroups": [
+            {
+                "id": 3521168,
+                "phase": {
+                    "id": 2448251,
+                    "name": "Bracket"
+                },
+                "progressionsOut": [
+                    {
+                        "id": 14661062
+                    },
+                    {
+                        "id": 14661063
+                    },
+                    {
+                        "id": 14661064
+                    },
+                    {
+                        "id": 14661065
+                    },
+                    {
+                        "id": 14661066
+                    },
+                    {
+                        "id": 14661067
+                    },
+                    {
+                        "id": 14661068
+                    },
+                    {
+                        "id": 14661069
+                    }
+                ]
+            },
+            {
+                "id": 3521169,
+                "phase": {
+                    "id": 2448252,
+                    "name": "B Bracket"
+                },
+                "progressionsOut": null
+            },
+            {
+                "id": 3521170,
+                "phase": {
+                    "id": 2448253,
+                    "name": "A Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Shuuten Tokyo #31\uff08\u7d42\u70b9\u6771\u4eac\uff09",
+        "tournament_id": 971767,
+        "city": null,
+        "url": "https://smash.gg/tournament/shuuten-tokyo-31/event/melee-singles-1v1",
+        "streams": [
+            {
+                "streamName": "jmlee337"
+            },
+            {
+                "streamName": "shuutentokyo"
+            }
+        ],
+        "timezone": "Asia/Tokyo",
+        "tournament_startAt": 1796439600,
+        "tournament_endAt": 1798275600,
+        "tournament_registrationClosesAt": 1796443200,
+        "images": [
+            {
+                "id": "10015032",
+                "url": "https://images.start.gg/images/tournament/971767/image-6cfe24fcb30e25a7451bb62ed294e1b8-optimized.png",
+                "type": "profile"
+            },
+            {
+                "id": "10015033",
+                "url": "https://images.start.gg/images/tournament/971767/image-2bb2bdbfb1ba197e813535589c5ec1fb-optimized.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": true,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Tokyo, Japan",
+        "tournament_addrState": "Tokyo",
+        "country_code": "JP",
+        "lat": 35.6764225,
+        "lng": 139.650027
+    },
+    "1748970": {
+        "id": 1748970,
+        "name": "Melee Singles AKMM #8",
+        "slug": "tournament/alaska-melee-monthly-8/event/melee-singles-akmm-8",
+        "isOnline": true,
+        "state": "CREATED",
+        "numEntrants": 0,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1796013300,
+        "phaseGroups": [
+            {
+                "id": 3521115,
+                "phase": {
+                    "id": 2448209,
+                    "name": "round 1"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "Alaska Melee Monthly #8",
+        "tournament_id": 971750,
+        "city": null,
+        "url": "https://smash.gg/tournament/alaska-melee-monthly-8/event/melee-singles-akmm-8",
+        "streams": null,
+        "timezone": null,
+        "tournament_startAt": 1796013300,
+        "tournament_endAt": 1796028900,
+        "tournament_registrationClosesAt": 1796121300,
+        "images": [
+            {
+                "id": "10014842",
+                "url": "https://images.start.gg/images/tournament/971750/image-9743b204ee31068d8c2b805aa30cba31-optimized.png",
+                "type": "profile"
+            },
+            {
+                "id": "10014843",
+                "url": "https://images.start.gg/images/tournament/971750/image-8fdb8e7377c9ed5ae5cc7dd7ab9c51fe-optimized.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": null,
+        "tournament_addrState": null,
+        "country_code": null,
+        "lat": null,
+        "lng": null
+    },
+    "1749020": {
+        "id": 1749020,
+        "name": "Melee Singles",
+        "slug": "tournament/the-double-shot-melee-14/event/melee-singles",
+        "isOnline": false,
+        "state": "CREATED",
+        "numEntrants": 1,
+        "videogame": {
+            "id": 1
+        },
+        "startAt": 1793930400,
+        "phaseGroups": [
+            {
+                "id": 3521192,
+                "phase": {
+                    "id": 2448274,
+                    "name": "Bracket"
+                },
+                "progressionsOut": null
+            }
+        ],
+        "tournament": "The Double Shot Melee #14",
+        "tournament_id": 971776,
+        "city": "Tijuana",
+        "url": "https://smash.gg/tournament/the-double-shot-melee-14/event/melee-singles",
+        "streams": [
+            {
+                "streamName": "soids"
+            }
+        ],
+        "timezone": "America/Tijuana",
+        "tournament_startAt": 1793930400,
+        "tournament_endAt": 1793952000,
+        "tournament_registrationClosesAt": 1793930100,
+        "images": [
+            {
+                "id": "10015077",
+                "url": "https://images.start.gg/images/tournament/971776/image-df47ac2c7a81dc54ab00727f3850e098-optimized.png",
+                "type": "profile"
+            },
+            {
+                "id": "10015078",
+                "url": "https://images.start.gg/images/tournament/971776/image-1bdcbed14778ac1458bc91348b3687d6-optimized.png",
+                "type": "banner"
+            }
+        ],
+        "tournament_multievent": false,
+        "tournament_venueName": null,
+        "tournament_venueAddress": "Av. Francisco I. Madero 1727, Zona Centro, 22000 Tijuana, B.C., M\u00e9xico",
+        "tournament_addrState": "B.C.",
+        "country_code": "MX",
+        "lat": 32.5265248,
+        "lng": -117.0344783
     }
 }
