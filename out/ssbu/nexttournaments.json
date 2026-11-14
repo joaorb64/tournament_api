@@ -1,5 +1,5 @@
 {
-    "updateTime": 1794658033,
+    "updateTime": 1794661641,
     "events": [
         {
             "id": 1755885,
@@ -47,58 +47,428 @@
             "lng": 136.6217224
         },
         {
-            "id": 1692880,
-            "name": "MAIN: SUPER SMASH BROS. ULTIMATE",
-            "slug": "tournament/bfgl-dna-2026/event/main-super-smash-bros-ultimate",
+            "id": 1745061,
+            "name": "StepUp 1V1",
+            "slug": "tournament/stepup-5/event/stepup-1v1",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 12,
+            "numEntrants": 0,
             "videogame": {
                 "id": 1386
             },
-            "startAt": 1795262400,
+            "startAt": 1796475600,
             "phaseGroups": [
                 {
-                    "id": 3428371,
+                    "id": 3515099,
                     "phase": {
-                        "id": 2376104,
+                        "id": 2443276,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14642692
+                        },
+                        {
+                            "id": 14642693
+                        },
+                        {
+                            "id": 14642694
+                        },
+                        {
+                            "id": 14642695
+                        },
+                        {
+                            "id": 14642696
+                        },
+                        {
+                            "id": 14642697
+                        },
+                        {
+                            "id": 14642698
+                        },
+                        {
+                            "id": 14642699
+                        }
+                    ]
+                },
+                {
+                    "id": 3515100,
+                    "phase": {
+                        "id": 2443277,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 3515101,
+                    "phase": {
+                        "id": 2443278,
+                        "name": "Ladder"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "StepUp #5",
+            "tournament_id": 969918,
+            "city": "Bordeaux",
+            "url": "https://smash.gg/tournament/stepup-5/event/stepup-1v1",
+            "streams": [
+                {
+                    "streamName": "asso_grab"
+                },
+                {
+                    "streamName": "murcielago_ssbu"
+                }
+            ],
+            "timezone": "Europe/Paris",
+            "tournament_startAt": 1797080400,
+            "tournament_endAt": 1797102000,
+            "tournament_registrationClosesAt": 1797080400,
+            "images": [
+                {
+                    "id": "9996889",
+                    "url": "https://images.start.gg/images/tournament/969918/image-0ff0964a9b0323968eeb7323b6629ad8-optimized.jpg",
+                    "type": "profile"
+                },
+                {
+                    "id": "9996890",
+                    "url": "https://images.start.gg/images/tournament/969918/image-ae0f5c33bc2ce4d17081ce81aa5798c1-optimized.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
+            "tournament_addrState": "Nouvelle-Aquitaine",
+            "country_code": "FR",
+            "lat": 44.8375555,
+            "lng": -0.5758531
+        },
+        {
+            "id": 1745063,
+            "name": "Ladder 1v1",
+            "slug": "tournament/stepup-5/event/ladder-1v1",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1796482800,
+            "phaseGroups": [
+                {
+                    "id": 3515103,
+                    "phase": {
+                        "id": 2443280,
+                        "name": "Ladder"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "StepUp #5",
+            "tournament_id": 969918,
+            "city": "Bordeaux",
+            "url": "https://smash.gg/tournament/stepup-5/event/ladder-1v1",
+            "streams": [
+                {
+                    "streamName": "asso_grab"
+                },
+                {
+                    "streamName": "murcielago_ssbu"
+                }
+            ],
+            "timezone": "Europe/Paris",
+            "tournament_startAt": 1797080400,
+            "tournament_endAt": 1797102000,
+            "tournament_registrationClosesAt": 1797080400,
+            "images": [
+                {
+                    "id": "9996889",
+                    "url": "https://images.start.gg/images/tournament/969918/image-0ff0964a9b0323968eeb7323b6629ad8-optimized.jpg",
+                    "type": "profile"
+                },
+                {
+                    "id": "9996890",
+                    "url": "https://images.start.gg/images/tournament/969918/image-ae0f5c33bc2ce4d17081ce81aa5798c1-optimized.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
+            "tournament_addrState": "Nouvelle-Aquitaine",
+            "country_code": "FR",
+            "lat": 44.8375555,
+            "lng": -0.5758531
+        },
+        {
+            "id": 1745062,
+            "name": "Liste d'attente",
+            "slug": "tournament/stepup-5/event/liste-d-attente",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1797080400,
+            "phaseGroups": [
+                {
+                    "id": 3515102,
+                    "phase": {
+                        "id": 2443279,
+                        "name": "File"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "StepUp #5",
+            "tournament_id": 969918,
+            "city": "Bordeaux",
+            "url": "https://smash.gg/tournament/stepup-5/event/liste-d-attente",
+            "streams": [
+                {
+                    "streamName": "asso_grab"
+                },
+                {
+                    "streamName": "murcielago_ssbu"
+                }
+            ],
+            "timezone": "Europe/Paris",
+            "tournament_startAt": 1797080400,
+            "tournament_endAt": 1797102000,
+            "tournament_registrationClosesAt": 1797080400,
+            "images": [
+                {
+                    "id": "9996889",
+                    "url": "https://images.start.gg/images/tournament/969918/image-0ff0964a9b0323968eeb7323b6629ad8-optimized.jpg",
+                    "type": "profile"
+                },
+                {
+                    "id": "9996890",
+                    "url": "https://images.start.gg/images/tournament/969918/image-ae0f5c33bc2ce4d17081ce81aa5798c1-optimized.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
+            "tournament_addrState": "Nouvelle-Aquitaine",
+            "country_code": "FR",
+            "lat": 44.8375555,
+            "lng": -0.5758531
+        },
+        {
+            "id": 1755908,
+            "name": "PGS 07/dez - Smash Ultimate Singles",
+            "slug": "tournament/team-dash-pgs-dezembro-2026/event/pgs-07-dez-smash-ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1796682600,
+            "phaseGroups": [
+                {
+                    "id": 3532167,
+                    "phase": {
+                        "id": 2457092,
                         "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
             ],
-            "tournament": "BFGL // DNA 2026",
-            "tournament_id": 941340,
-            "city": "Tallinn",
-            "url": "https://smash.gg/tournament/bfgl-dna-2026/event/main-super-smash-bros-ultimate",
+            "tournament": "Team DASH PGS dezembro/2026",
+            "tournament_id": 975004,
+            "city": "Liberdade",
+            "url": "https://smash.gg/tournament/team-dash-pgs-dezembro-2026/event/pgs-07-dez-smash-ultimate-singles",
             "streams": [
                 {
-                    "streamName": "bfgl_main"
+                    "streamName": "teamdashbr"
                 }
             ],
-            "timezone": "Europe/Tallinn",
-            "tournament_startAt": 1795165200,
-            "tournament_endAt": 1795377600,
-            "tournament_registrationClosesAt": 1795384500,
+            "timezone": "America/Sao_Paulo",
+            "tournament_startAt": 1796423400,
+            "tournament_endAt": 1797904800,
+            "tournament_registrationClosesAt": 1798909140,
             "images": [
                 {
-                    "id": "9721253",
-                    "url": "https://images.start.gg/images/tournament/941340/image-ac343149bbf95804b005c630d688979e-optimized.png",
+                    "id": "10047359",
+                    "url": "https://images.start.gg/images/tournament/975004/image-f38a2a394f096486947468a07baeb6ae-optimized.png",
                     "type": "profile"
                 },
                 {
-                    "id": "10041379",
-                    "url": "https://images.start.gg/images/tournament/941340/image-763ebc8bd1f12e5edc14a11984312b15-optimized.jpg",
+                    "id": "10047360",
+                    "url": "https://images.start.gg/images/tournament/975004/image-7733b5e31f2776d7fc4a8d7f470fb765-optimized.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "R. Pires da Mota, 1201 - Liberdade, S\u00e3o Paulo - SP, 01529-001, Brasil",
+            "tournament_addrState": "SP",
+            "country_code": "BR",
+            "lat": -23.5708424,
+            "lng": -46.638763
+        },
+        {
+            "id": 1755909,
+            "name": "PGS 14/dez - Smash Ultimate Singles",
+            "slug": "tournament/team-dash-pgs-dezembro-2026/event/pgs-14-dez-smash-ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1797287400,
+            "phaseGroups": [
+                {
+                    "id": 3532168,
+                    "phase": {
+                        "id": 2457093,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Team DASH PGS dezembro/2026",
+            "tournament_id": 975004,
+            "city": "Liberdade",
+            "url": "https://smash.gg/tournament/team-dash-pgs-dezembro-2026/event/pgs-14-dez-smash-ultimate-singles",
+            "streams": [
+                {
+                    "streamName": "teamdashbr"
+                }
+            ],
+            "timezone": "America/Sao_Paulo",
+            "tournament_startAt": 1796423400,
+            "tournament_endAt": 1797904800,
+            "tournament_registrationClosesAt": 1798909140,
+            "images": [
+                {
+                    "id": "10047359",
+                    "url": "https://images.start.gg/images/tournament/975004/image-f38a2a394f096486947468a07baeb6ae-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "10047360",
+                    "url": "https://images.start.gg/images/tournament/975004/image-7733b5e31f2776d7fc4a8d7f470fb765-optimized.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "R. Pires da Mota, 1201 - Liberdade, S\u00e3o Paulo - SP, 01529-001, Brasil",
+            "tournament_addrState": "SP",
+            "country_code": "BR",
+            "lat": -23.5708424,
+            "lng": -46.638763
+        },
+        {
+            "id": 1755916,
+            "name": "PGS 21/dez - Smash Ultimate Singles",
+            "slug": "tournament/team-dash-pgs-dezembro-2026/event/pgs-21-dez-smash-ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 1,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1797892200,
+            "phaseGroups": [
+                {
+                    "id": 3532176,
+                    "phase": {
+                        "id": 2457101,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Team DASH PGS dezembro/2026",
+            "tournament_id": 975004,
+            "city": "Liberdade",
+            "url": "https://smash.gg/tournament/team-dash-pgs-dezembro-2026/event/pgs-21-dez-smash-ultimate-singles",
+            "streams": [
+                {
+                    "streamName": "teamdashbr"
+                }
+            ],
+            "timezone": "America/Sao_Paulo",
+            "tournament_startAt": 1796423400,
+            "tournament_endAt": 1797904800,
+            "tournament_registrationClosesAt": 1798909140,
+            "images": [
+                {
+                    "id": "10047359",
+                    "url": "https://images.start.gg/images/tournament/975004/image-f38a2a394f096486947468a07baeb6ae-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "10047360",
+                    "url": "https://images.start.gg/images/tournament/975004/image-7733b5e31f2776d7fc4a8d7f470fb765-optimized.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "R. Pires da Mota, 1201 - Liberdade, S\u00e3o Paulo - SP, 01529-001, Brasil",
+            "tournament_addrState": "SP",
+            "country_code": "BR",
+            "lat": -23.5708424,
+            "lng": -46.638763
+        },
+        {
+            "id": 1755920,
+            "name": "\u30b7\u30f3\u30b0\u30eb\u30b9",
+            "slug": "tournament/21-23/event/super-smash-bros-ultimate-singles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1795172400,
+            "phaseGroups": [
+                {
+                    "id": 3532182,
+                    "phase": {
+                        "id": 2457107,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "\u3082\u3073\u3059\u307e\u3063\uff01#21",
+            "tournament_id": 975007,
+            "city": "\u5ddd\u5d0e\u5e02",
+            "url": "https://smash.gg/tournament/21-23/event/super-smash-bros-ultimate-singles",
+            "streams": null,
+            "timezone": "Asia/Tokyo",
+            "tournament_startAt": 1795165200,
+            "tournament_endAt": 1795183200,
+            "tournament_registrationClosesAt": 1795172400,
+            "images": [
+                {
+                    "id": "10047520",
+                    "url": "https://images.start.gg/images/tournament/975007/image-05fc90ad7a2f8a27ba9f5bc2add4711e-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "10047521",
+                    "url": "https://images.start.gg/images/tournament/975007/image-c880d2abeb8edb43486c5f2143e2fd8c-optimized.png",
                     "type": "banner"
                 }
             ],
             "tournament_multievent": false,
             "tournament_venueName": null,
-            "tournament_venueAddress": "Ehitajate tee 5, 19086 Tallinn, Estonia",
-            "tournament_addrState": "Harju maakond",
-            "country_code": "EE",
-            "lat": 59.394824,
-            "lng": 24.6715322
+            "tournament_venueAddress": "\u65e5\u672c\u3001\u3012212-0011 \u795e\u5948\u5ddd\u770c\u5ddd\u5d0e\u5e02\u5e78\u533a\u5e78\u753a\uff11\u4e01\u76ee\uff17\uff18\uff18",
+            "tournament_addrState": "\u795e\u5948\u5ddd\u770c",
+            "country_code": "JP",
+            "lat": 35.5349683,
+            "lng": 139.6979253
         },
         {
             "id": 1739324,
@@ -106,7 +476,7 @@
             "slug": "tournament/ultimate-press-start-1/event/1v1-smash-ultimate",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 0,
+            "numEntrants": 9,
             "videogame": {
                 "id": 1386
             },
@@ -239,7 +609,7 @@
             "slug": "tournament/gurula-weekly-52/event/ultimate-singles",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 5,
+            "numEntrants": 7,
             "videogame": {
                 "id": 1386
             },
@@ -277,78 +647,6 @@
             "country_code": "FI",
             "lat": 60.2047903,
             "lng": 24.9617379
-        },
-        {
-            "id": 1736230,
-            "name": "Road To Top Monthly Tournament S16E4",
-            "slug": "tournament/153-1/event/road-to-top-monthly-tournament-s16e4",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 17,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794715200,
-            "phaseGroups": [],
-            "tournament": "\u9f0e\u9014 #153",
-            "tournament_id": 965625,
-            "city": "\u5e7f\u5dde\u5e02",
-            "url": "https://smash.gg/tournament/153-1/event/road-to-top-monthly-tournament-s16e4",
-            "streams": null,
-            "timezone": "Asia/Shanghai",
-            "tournament_startAt": 1794715200,
-            "tournament_endAt": 1794740400,
-            "tournament_registrationClosesAt": 1794740400,
-            "images": [
-                {
-                    "id": "9957142",
-                    "url": "https://images.start.gg/images/tournament/965625/image-9c77a107f9056ef29dbdbbba366830e6-optimized.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "\u4e2d\u56fd\u5e7f\u4e1c\u7701\u5e7f\u5dde\u5e02\u6d77\u73e0\u533a\u6d77\u5370\u5357\u82d12\u53f7 \u90ae\u653f\u7f16\u7801: 510230",
-            "tournament_addrState": "\u5e7f\u4e1c\u7701",
-            "country_code": "CN",
-            "lat": 23.10041,
-            "lng": 113.28628
-        },
-        {
-            "id": 1736228,
-            "name": "Road To Top Newbie Tournament S16E5",
-            "slug": "tournament/153-1/event/road-to-top-newbie-tournament-s16e5",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 9,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794715200,
-            "phaseGroups": [],
-            "tournament": "\u9f0e\u9014 #153",
-            "tournament_id": 965625,
-            "city": "\u5e7f\u5dde\u5e02",
-            "url": "https://smash.gg/tournament/153-1/event/road-to-top-newbie-tournament-s16e5",
-            "streams": null,
-            "timezone": "Asia/Shanghai",
-            "tournament_startAt": 1794715200,
-            "tournament_endAt": 1794740400,
-            "tournament_registrationClosesAt": 1794740400,
-            "images": [
-                {
-                    "id": "9957142",
-                    "url": "https://images.start.gg/images/tournament/965625/image-9c77a107f9056ef29dbdbbba366830e6-optimized.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "\u4e2d\u56fd\u5e7f\u4e1c\u7701\u5e7f\u5dde\u5e02\u6d77\u73e0\u533a\u6d77\u5370\u5357\u82d12\u53f7 \u90ae\u653f\u7f16\u7801: 510230",
-            "tournament_addrState": "\u5e7f\u4e1c\u7701",
-            "country_code": "CN",
-            "lat": 23.10041,
-            "lng": 113.28628
         },
         {
             "id": 1680451,
@@ -717,6 +1015,275 @@
             "lng": -57.577279
         },
         {
+            "id": 1712932,
+            "name": "Smash Challenger Series #7",
+            "slug": "tournament/pixel-palooza/event/smash-challenger-series-7",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 43,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794668400,
+            "phaseGroups": [
+                {
+                    "id": 3470767,
+                    "phase": {
+                        "id": 2408702,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 3530042,
+                    "phase": {
+                        "id": 2455377,
+                        "name": "Top 64"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14688930
+                        },
+                        {
+                            "id": 14688931
+                        },
+                        {
+                            "id": 14688932
+                        },
+                        {
+                            "id": 14688933
+                        },
+                        {
+                            "id": 14688934
+                        },
+                        {
+                            "id": 14688935
+                        },
+                        {
+                            "id": 14688936
+                        },
+                        {
+                            "id": 14688937
+                        }
+                    ]
+                }
+            ],
+            "tournament": "Pixel Palooza",
+            "tournament_id": 954680,
+            "city": "Puerto Ordaz",
+            "url": "https://smash.gg/tournament/pixel-palooza/event/smash-challenger-series-7",
+            "streams": null,
+            "timezone": "America/Caracas",
+            "tournament_startAt": 1794661200,
+            "tournament_endAt": 1794693600,
+            "tournament_registrationClosesAt": 1794715140,
+            "images": [
+                {
+                    "id": "9855825",
+                    "url": "https://images.start.gg/images/tournament/954680/image-f66fdff2c712678eea7555a28121ff99-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "9952836",
+                    "url": "https://images.start.gg/images/tournament/954680/image-2b3c20baaf6cbf3da7ace6b53acbe1ef-optimized.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "C. C. Ciudad Altavista II piso 2 local 28, Altavista., Puerto Ordaz 8050, Bol\u00edvar, Venezuela",
+            "tournament_addrState": "Bol\u00edvar",
+            "country_code": "VE",
+            "lat": 8.293262,
+            "lng": -62.73653499999999
+        },
+        {
+            "id": 1744909,
+            "name": "StepUp 1V1",
+            "slug": "tournament/stepup-4-1/event/stepup-1v1",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 25,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794056400,
+            "phaseGroups": [
+                {
+                    "id": 3514828,
+                    "phase": {
+                        "id": 2443083,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14641270
+                        },
+                        {
+                            "id": 14641271
+                        },
+                        {
+                            "id": 14641272
+                        },
+                        {
+                            "id": 14641273
+                        },
+                        {
+                            "id": 14641274
+                        },
+                        {
+                            "id": 14641275
+                        },
+                        {
+                            "id": 14641276
+                        },
+                        {
+                            "id": 14641277
+                        }
+                    ]
+                },
+                {
+                    "id": 3514829,
+                    "phase": {
+                        "id": 2443084,
+                        "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                },
+                {
+                    "id": 3514830,
+                    "phase": {
+                        "id": 2443085,
+                        "name": "Ladder"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1744911,
+            "name": "Ladder 1v1",
+            "slug": "tournament/stepup-4-1/event/ladder-1v1",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 19,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794063600,
+            "phaseGroups": [
+                {
+                    "id": 3514832,
+                    "phase": {
+                        "id": 2443087,
+                        "name": "Ladder"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1744910,
+            "name": "Liste d'attente",
+            "slug": "tournament/stepup-4-1/event/liste-d-attente",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794661200,
+            "phaseGroups": [
+                {
+                    "id": 3514831,
+                    "phase": {
+                        "id": 2443086,
+                        "name": "File"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1569406,
+            "name": "Ultimate Singles (1v1)",
+            "slug": "tournament/town-and-z-ri-monthly-12/event/ultimate-singles-1v1",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 36,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794657600,
+            "phaseGroups": [
+                {
+                    "id": 3217514,
+                    "phase": {
+                        "id": 2215686,
+                        "name": "Main Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1569407,
+            "name": "Amateur Bracket",
+            "slug": "tournament/town-and-z-ri-monthly-12/event/amateur-bracket",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 11,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794664800,
+            "phaseGroups": [
+                {
+                    "id": 3217515,
+                    "phase": {
+                        "id": 2215687,
+                        "name": "Amateur Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "Town and Z\u00fcri (Monthly) #12",
+            "tournament_id": 885294,
+            "city": "Z\u00fcrich",
+            "url": "https://smash.gg/tournament/town-and-z-ri-monthly-12/event/amateur-bracket",
+            "streams": [
+                {
+                    "streamName": "sbzofficial"
+                },
+                {
+                    "streamName": "marchmarmots"
+                }
+            ],
+            "timezone": "Europe/Zurich",
+            "tournament_startAt": 1794657600,
+            "tournament_endAt": 1794681000,
+            "tournament_registrationClosesAt": 1794653760,
+            "images": [
+                {
+                    "id": "9182215",
+                    "url": "https://images.start.gg/images/tournament/885294/image-6cb03c5a98451fce86092ff01b28f61a-optimized.png",
+                    "type": "banner"
+                },
+                {
+                    "id": "9182216",
+                    "url": "https://images.start.gg/images/tournament/885294/image-a852de7623e893815164bb82f84b7052-optimized.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "8001 Z\u00fcrich, Schweiz",
+            "tournament_addrState": "ZH",
+            "country_code": "CH",
+            "lat": 47.3765624,
+            "lng": 8.5464069
+        },
+        {
             "id": 1737498,
             "name": "Ultimate Singles",
             "slug": "tournament/smashveria-13/event/ultimate-singles",
@@ -811,7 +1378,7 @@
             "name": "LARP Singles",
             "slug": "tournament/moai-saga-xiii/event/larp-singles",
             "isOnline": false,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 20,
             "videogame": {
                 "id": 1386
@@ -827,106 +1394,6 @@
                     "progressionsOut": null
                 }
             ]
-        },
-        {
-            "id": 1748632,
-            "name": "Ultimate Singles",
-            "slug": "tournament/hyrule-frontiers-kokiri-forest-1/event/ultimate-singles",
-            "isOnline": false,
-            "state": "ACTIVE",
-            "numEntrants": 29,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794652200,
-            "phaseGroups": [
-                {
-                    "id": 3520637,
-                    "phase": {
-                        "id": 2447804,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14659761
-                        },
-                        {
-                            "id": 14659762
-                        },
-                        {
-                            "id": 14659763
-                        },
-                        {
-                            "id": 14659764
-                        },
-                        {
-                            "id": 14659765
-                        },
-                        {
-                            "id": 14659766
-                        },
-                        {
-                            "id": 14659767
-                        },
-                        {
-                            "id": 14659768
-                        }
-                    ]
-                },
-                {
-                    "id": 3520638,
-                    "phase": {
-                        "id": 2447805,
-                        "name": "La batalla del tiempo (Top8)"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1748633,
-            "name": "Amateur Bracket",
-            "slug": "tournament/hyrule-frontiers-kokiri-forest-1/event/amateur-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 28,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794670200,
-            "phaseGroups": [],
-            "tournament": "Hyrule Frontiers: Kokiri Forest",
-            "tournament_id": 971586,
-            "city": "Vitoria-Gasteiz",
-            "url": "https://smash.gg/tournament/hyrule-frontiers-kokiri-forest-1/event/amateur-bracket",
-            "streams": [
-                {
-                    "streamName": "SmashVitoria"
-                }
-            ],
-            "timezone": "Europe/Madrid",
-            "tournament_startAt": 1794652200,
-            "tournament_endAt": 1794688260,
-            "tournament_registrationClosesAt": 1794601800,
-            "images": [
-                {
-                    "id": "10013478",
-                    "url": "https://images.start.gg/images/tournament/971586/image-f16f06bfdecdf618d05323104393bb03-optimized.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "10013489",
-                    "url": "https://images.start.gg/images/tournament/971586/image-598e458c06b598448d512a9f20966c28-optimized.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Urbina Kalea, 21, 01002 Vitoria-Gasteiz, Araba, Espa\u00f1a",
-            "tournament_addrState": "PV",
-            "country_code": "ES",
-            "lat": 42.8534645,
-            "lng": -2.6691909
         },
         {
             "id": 1694127,
@@ -978,449 +1445,6 @@
                     "phase": {
                         "id": 2377776,
                         "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1700772,
-            "name": "Ultimate Singles",
-            "slug": "tournament/le-sanctuaire-2026/event/ultimate-singles",
-            "isOnline": false,
-            "state": "ACTIVE",
-            "numEntrants": 144,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3441728,
-                    "phase": {
-                        "id": 2386276,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14392569
-                        },
-                        {
-                            "id": 14392573
-                        },
-                        {
-                            "id": 14392577
-                        },
-                        {
-                            "id": 14392581
-                        },
-                        {
-                            "id": 14392585
-                        },
-                        {
-                            "id": 14392589
-                        },
-                        {
-                            "id": 14392593
-                        },
-                        {
-                            "id": 14392597
-                        },
-                        {
-                            "id": 14392601
-                        },
-                        {
-                            "id": 14392605
-                        },
-                        {
-                            "id": 14392609
-                        },
-                        {
-                            "id": 14392613
-                        },
-                        {
-                            "id": 14392617
-                        },
-                        {
-                            "id": 14392621
-                        },
-                        {
-                            "id": 14392625
-                        },
-                        {
-                            "id": 14392629
-                        },
-                        {
-                            "id": 14392633
-                        },
-                        {
-                            "id": 14392637
-                        },
-                        {
-                            "id": 14392641
-                        },
-                        {
-                            "id": 14392645
-                        },
-                        {
-                            "id": 14392649
-                        },
-                        {
-                            "id": 14392653
-                        },
-                        {
-                            "id": 14392657
-                        },
-                        {
-                            "id": 14392661
-                        },
-                        {
-                            "id": 14662726
-                        },
-                        {
-                            "id": 14664098
-                        },
-                        {
-                            "id": 14666087
-                        },
-                        {
-                            "id": 14667899
-                        }
-                    ]
-                },
-                {
-                    "id": 3441729,
-                    "phase": {
-                        "id": 2386276,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14392570
-                        },
-                        {
-                            "id": 14392574
-                        },
-                        {
-                            "id": 14392578
-                        },
-                        {
-                            "id": 14392582
-                        },
-                        {
-                            "id": 14392586
-                        },
-                        {
-                            "id": 14392590
-                        },
-                        {
-                            "id": 14392594
-                        },
-                        {
-                            "id": 14392598
-                        },
-                        {
-                            "id": 14392602
-                        },
-                        {
-                            "id": 14392606
-                        },
-                        {
-                            "id": 14392610
-                        },
-                        {
-                            "id": 14392614
-                        },
-                        {
-                            "id": 14392618
-                        },
-                        {
-                            "id": 14392622
-                        },
-                        {
-                            "id": 14392626
-                        },
-                        {
-                            "id": 14392630
-                        },
-                        {
-                            "id": 14392634
-                        },
-                        {
-                            "id": 14392638
-                        },
-                        {
-                            "id": 14392642
-                        },
-                        {
-                            "id": 14392646
-                        },
-                        {
-                            "id": 14392650
-                        },
-                        {
-                            "id": 14392654
-                        },
-                        {
-                            "id": 14392658
-                        },
-                        {
-                            "id": 14392662
-                        },
-                        {
-                            "id": 14662727
-                        },
-                        {
-                            "id": 14662728
-                        },
-                        {
-                            "id": 14666407
-                        },
-                        {
-                            "id": 14667898
-                        }
-                    ]
-                },
-                {
-                    "id": 3441730,
-                    "phase": {
-                        "id": 2386276,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14392571
-                        },
-                        {
-                            "id": 14392575
-                        },
-                        {
-                            "id": 14392579
-                        },
-                        {
-                            "id": 14392583
-                        },
-                        {
-                            "id": 14392587
-                        },
-                        {
-                            "id": 14392591
-                        },
-                        {
-                            "id": 14392595
-                        },
-                        {
-                            "id": 14392599
-                        },
-                        {
-                            "id": 14392603
-                        },
-                        {
-                            "id": 14392607
-                        },
-                        {
-                            "id": 14392611
-                        },
-                        {
-                            "id": 14392615
-                        },
-                        {
-                            "id": 14392619
-                        },
-                        {
-                            "id": 14392623
-                        },
-                        {
-                            "id": 14392627
-                        },
-                        {
-                            "id": 14392631
-                        },
-                        {
-                            "id": 14392635
-                        },
-                        {
-                            "id": 14392639
-                        },
-                        {
-                            "id": 14392643
-                        },
-                        {
-                            "id": 14392647
-                        },
-                        {
-                            "id": 14392651
-                        },
-                        {
-                            "id": 14392655
-                        },
-                        {
-                            "id": 14392659
-                        },
-                        {
-                            "id": 14392663
-                        },
-                        {
-                            "id": 14662729
-                        },
-                        {
-                            "id": 14662730
-                        },
-                        {
-                            "id": 14667148
-                        },
-                        {
-                            "id": 14667697
-                        }
-                    ]
-                },
-                {
-                    "id": 3441731,
-                    "phase": {
-                        "id": 2386276,
-                        "name": "Pools"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14392572
-                        },
-                        {
-                            "id": 14392576
-                        },
-                        {
-                            "id": 14392580
-                        },
-                        {
-                            "id": 14392584
-                        },
-                        {
-                            "id": 14392588
-                        },
-                        {
-                            "id": 14392592
-                        },
-                        {
-                            "id": 14392596
-                        },
-                        {
-                            "id": 14392600
-                        },
-                        {
-                            "id": 14392604
-                        },
-                        {
-                            "id": 14392608
-                        },
-                        {
-                            "id": 14392612
-                        },
-                        {
-                            "id": 14392616
-                        },
-                        {
-                            "id": 14392620
-                        },
-                        {
-                            "id": 14392624
-                        },
-                        {
-                            "id": 14392628
-                        },
-                        {
-                            "id": 14392632
-                        },
-                        {
-                            "id": 14392636
-                        },
-                        {
-                            "id": 14392640
-                        },
-                        {
-                            "id": 14392644
-                        },
-                        {
-                            "id": 14392648
-                        },
-                        {
-                            "id": 14392652
-                        },
-                        {
-                            "id": 14392656
-                        },
-                        {
-                            "id": 14392660
-                        },
-                        {
-                            "id": 14392664
-                        },
-                        {
-                            "id": 14662731
-                        },
-                        {
-                            "id": 14662732
-                        },
-                        {
-                            "id": 14667388
-                        },
-                        {
-                            "id": 14668858
-                        }
-                    ]
-                },
-                {
-                    "id": 3441732,
-                    "phase": {
-                        "id": 2386277,
-                        "name": "Top 32"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14392665
-                        },
-                        {
-                            "id": 14392666
-                        },
-                        {
-                            "id": 14392667
-                        },
-                        {
-                            "id": 14392668
-                        },
-                        {
-                            "id": 14392669
-                        },
-                        {
-                            "id": 14392670
-                        },
-                        {
-                            "id": 14392671
-                        },
-                        {
-                            "id": 14392672
-                        }
-                    ]
-                },
-                {
-                    "id": 3441733,
-                    "phase": {
-                        "id": 2386278,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                },
-                {
-                    "id": 3441735,
-                    "phase": {
-                        "id": 2386280,
-                        "name": "Ligue Argent"
-                    },
-                    "progressionsOut": null
-                },
-                {
-                    "id": 3441736,
-                    "phase": {
-                        "id": 2386281,
-                        "name": "Ligue Or"
                     },
                     "progressionsOut": null
                 }
@@ -1539,34 +1563,12 @@
             ]
         },
         {
-            "id": 1717259,
-            "name": "Ultimate Doubles",
-            "slug": "tournament/deadzone-13-of-mmoose-and-ken/event/ultimate-doubles",
-            "isOnline": false,
-            "state": "ACTIVE",
-            "numEntrants": 12,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3469184,
-                    "phase": {
-                        "id": 2407489,
-                        "name": "Bracket (Bo3)"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 1717260,
             "name": "Ultimate Redemption Ladder",
             "slug": "tournament/deadzone-13-of-mmoose-and-ken/event/ultimate-redemption-ladder",
             "isOnline": false,
             "state": "CREATED",
-            "numEntrants": 42,
+            "numEntrants": 43,
             "videogame": {
                 "id": 1386
             },
@@ -1669,6 +1671,28 @@
             "lng": -1.5593414
         },
         {
+            "id": 1717259,
+            "name": "Ultimate Doubles",
+            "slug": "tournament/deadzone-13-of-mmoose-and-ken/event/ultimate-doubles",
+            "isOnline": false,
+            "state": "COMPLETED",
+            "numEntrants": 12,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794650400,
+            "phaseGroups": [
+                {
+                    "id": 3469184,
+                    "phase": {
+                        "id": 2407489,
+                        "name": "Bracket (Bo3)"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 1745675,
             "name": "Ultimate Singles (1v1)",
             "slug": "tournament/wild-beast-2/event/ultimate-singles-1v1",
@@ -1689,6 +1713,164 @@
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 1738971,
+            "name": "SSBU Singles",
+            "slug": "tournament/chop-17/event/ssbu-singles",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 21,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794650400,
+            "phaseGroups": [
+                {
+                    "id": 3505302,
+                    "phase": {
+                        "id": 2435460,
+                        "name": "Pools (Bo3)"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14614405
+                        },
+                        {
+                            "id": 14614409
+                        }
+                    ]
+                },
+                {
+                    "id": 3505303,
+                    "phase": {
+                        "id": 2435460,
+                        "name": "Pools (Bo3)"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14614406
+                        },
+                        {
+                            "id": 14614410
+                        }
+                    ]
+                },
+                {
+                    "id": 3505304,
+                    "phase": {
+                        "id": 2435460,
+                        "name": "Pools (Bo3)"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14614407
+                        },
+                        {
+                            "id": 14614411
+                        }
+                    ]
+                },
+                {
+                    "id": 3505305,
+                    "phase": {
+                        "id": 2435460,
+                        "name": "Pools (Bo3)"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14614408
+                        },
+                        {
+                            "id": 14614412
+                        }
+                    ]
+                },
+                {
+                    "id": 3505306,
+                    "phase": {
+                        "id": 2435461,
+                        "name": "Bracket (Bo5)"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1738977,
+            "name": "SSBU Opferbracket",
+            "slug": "tournament/chop-17/event/ssbu-opferbracket",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 6,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794650400,
+            "phaseGroups": [
+                {
+                    "id": 3505313,
+                    "phase": {
+                        "id": 2435468,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1738974,
+            "name": "SSBU Doubles",
+            "slug": "tournament/chop-17/event/ssbu-doubles",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 4,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794675600,
+            "phaseGroups": [
+                {
+                    "id": 3505310,
+                    "phase": {
+                        "id": 2435465,
+                        "name": "SSBU Doubes"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "CHOP. 17",
+            "tournament_id": 966979,
+            "city": "Graz",
+            "url": "https://smash.gg/tournament/chop-17/event/ssbu-doubles",
+            "streams": [
+                {
+                    "streamName": "haseh"
+                }
+            ],
+            "timezone": "Europe/Vienna",
+            "tournament_startAt": 1794650400,
+            "tournament_endAt": 1794693600,
+            "tournament_registrationClosesAt": 1794690000,
+            "images": [
+                {
+                    "id": "9969636",
+                    "url": "https://images.start.gg/images/tournament/966979/image-d288d92bbfb3ef9d780691142b1804aa-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "9969637",
+                    "url": "https://images.start.gg/images/tournament/966979/image-f7bcf563c487ff3e39382069acb1dc41-optimized.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Eggenberger Allee 31, 8020 Graz, \u00d6sterreich",
+            "tournament_addrState": "Steiermark",
+            "country_code": "AT",
+            "lat": 47.0698599,
+            "lng": 15.4047514
         },
         {
             "id": 1741188,
@@ -1743,33 +1925,11 @@
             ]
         },
         {
-            "id": 1741187,
-            "name": "Ultimate Ammies",
-            "slug": "tournament/craicdown-24-double-trouble/event/ultimate-ammies",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3508931,
-                    "phase": {
-                        "id": 2438397,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 1741181,
             "name": "Ultimate Singles (1v1)",
             "slug": "tournament/craicdown-24-double-trouble/event/ultimate-singles-1v1",
             "isOnline": false,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 41,
             "videogame": {
                 "id": 1386
@@ -1904,6 +2064,28 @@
             ]
         },
         {
+            "id": 1741187,
+            "name": "Ultimate Ammies",
+            "slug": "tournament/craicdown-24-double-trouble/event/ultimate-ammies",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794650400,
+            "phaseGroups": [
+                {
+                    "id": 3508931,
+                    "phase": {
+                        "id": 2438397,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
             "id": 1741212,
             "name": "Ultimate Singles",
             "slug": "tournament/i-wanna-smash-09/event/ultimate-singles",
@@ -1959,200 +2141,11 @@
             ]
         },
         {
-            "id": 1751486,
-            "name": "Ultimate Singles",
-            "slug": "tournament/sherry-showdown-16-demon-garden/event/ultimate-singles",
-            "isOnline": false,
-            "state": "ACTIVE",
-            "numEntrants": 55,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3525128,
-                    "phase": {
-                        "id": 2451451,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14674649
-                        },
-                        {
-                            "id": 14674653
-                        },
-                        {
-                            "id": 14674657
-                        },
-                        {
-                            "id": 14674661
-                        }
-                    ]
-                },
-                {
-                    "id": 3525129,
-                    "phase": {
-                        "id": 2451451,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14674650
-                        },
-                        {
-                            "id": 14674654
-                        },
-                        {
-                            "id": 14674658
-                        },
-                        {
-                            "id": 14674662
-                        }
-                    ]
-                },
-                {
-                    "id": 3525130,
-                    "phase": {
-                        "id": 2451451,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14674651
-                        },
-                        {
-                            "id": 14674655
-                        },
-                        {
-                            "id": 14674659
-                        },
-                        {
-                            "id": 14674663
-                        }
-                    ]
-                },
-                {
-                    "id": 3525131,
-                    "phase": {
-                        "id": 2451451,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14674652
-                        },
-                        {
-                            "id": 14674656
-                        },
-                        {
-                            "id": 14674660
-                        },
-                        {
-                            "id": 14674664
-                        }
-                    ]
-                },
-                {
-                    "id": 3525132,
-                    "phase": {
-                        "id": 2451452,
-                        "name": "Top 16"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1751487,
-            "name": "Ultimate Ladder",
-            "slug": "tournament/sherry-showdown-16-demon-garden/event/ultimate-ladder",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794067200,
-            "phaseGroups": []
-        },
-        {
-            "id": 1751488,
-            "name": "VALHALLA",
-            "slug": "tournament/sherry-showdown-16-demon-garden/event/valhalla",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794069000,
-            "phaseGroups": []
-        },
-        {
-            "id": 1751489,
-            "name": "VALHALLINHA",
-            "slug": "tournament/sherry-showdown-16-demon-garden/event/valhallinha",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794069000,
-            "phaseGroups": []
-        },
-        {
-            "id": 1754726,
-            "name": "TRASH MOD",
-            "slug": "tournament/sherry-showdown-16-demon-garden/event/trash-mod",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 24,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3530217,
-                    "phase": {
-                        "id": 2455516,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
-            "id": 1735599,
-            "name": "Ultimate Apprentice Bracket",
-            "slug": "tournament/lunacity-edition-41/event/ultimate-apprentice-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794648600,
-            "phaseGroups": [
-                {
-                    "id": 3499752,
-                    "phase": {
-                        "id": 2431180,
-                        "name": "Apprentice bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 1735598,
             "name": "Ultimate Singles",
             "slug": "tournament/lunacity-edition-41/event/ultimate-singles",
             "isOnline": false,
-            "state": "CREATED",
+            "state": "ACTIVE",
             "numEntrants": 18,
             "videogame": {
                 "id": 1386
@@ -2224,6 +2217,28 @@
                     "phase": {
                         "id": 2456529,
                         "name": "Top 8"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1735599,
+            "name": "Ultimate Apprentice Bracket",
+            "slug": "tournament/lunacity-edition-41/event/ultimate-apprentice-bracket",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794648600,
+            "phaseGroups": [
+                {
+                    "id": 3499752,
+                    "phase": {
+                        "id": 2431180,
+                        "name": "Apprentice bracket"
                     },
                     "progressionsOut": null
                 }
@@ -2421,188 +2436,77 @@
             ]
         },
         {
-            "id": 1690719,
-            "name": "\u30b9\u30de\u30d6\u30e9SP 1on1 \u30c8\u30fc\u30ca\u30e1\u30f3\u30c8",
-            "slug": "tournament/innosuma-raise-5/event/sp-1on1",
+            "id": 1743159,
+            "name": "Ultimate Singles",
+            "slug": "tournament/new-era-12/event/ultimate-singles",
             "isOnline": false,
             "state": "COMPLETED",
-            "numEntrants": 11,
+            "numEntrants": 24,
             "videogame": {
                 "id": 1386
             },
-            "startAt": 1794628800,
+            "startAt": 1794650400,
             "phaseGroups": [
                 {
-                    "id": 3424768,
+                    "id": 3512255,
                     "phase": {
-                        "id": 2373313,
-                        "name": "\u7dcf\u5f53\u305f\u308a"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14697651
-                        },
-                        {
-                            "id": 14697653
-                        },
-                        {
-                            "id": 14697655
-                        }
-                    ]
-                },
-                {
-                    "id": 3531418,
-                    "phase": {
-                        "id": 2373313,
-                        "name": "\u7dcf\u5f53\u305f\u308a"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14697652
-                        },
-                        {
-                            "id": 14697654
-                        },
-                        {
-                            "id": 14697656
-                        }
-                    ]
-                },
-                {
-                    "id": 3436805,
-                    "phase": {
-                        "id": 2382612,
-                        "name": "\u6c7a\u52dd\u30c8\u30ca\u30e1"
+                        "id": 2440966,
+                        "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
             ]
         },
         {
-            "id": 1729284,
+            "id": 1746649,
             "name": "Ultimate Singles",
-            "slug": "tournament/-3305/event/ultimate-singles",
+            "slug": "tournament/autopilot-club-41/event/ultimate-singles",
             "isOnline": false,
             "state": "COMPLETED",
-            "numEntrants": 23,
+            "numEntrants": 33,
             "videogame": {
                 "id": 1386
             },
-            "startAt": 1794621600,
+            "startAt": 1794628800,
             "phaseGroups": [
                 {
-                    "id": 3489100,
+                    "id": 3517678,
                     "phase": {
-                        "id": 2422853,
-                        "name": "Top48"
+                        "id": 2445326,
+                        "name": "Pools Bracket (bo3)"
                     },
                     "progressionsOut": [
                         {
-                            "id": 14690534
+                            "id": 14651534
                         },
                         {
-                            "id": 14690538
+                            "id": 14651535
                         },
                         {
-                            "id": 14690542
+                            "id": 14651536
                         },
                         {
-                            "id": 14690546
+                            "id": 14651537
                         },
                         {
-                            "id": 14690550
+                            "id": 14651538
                         },
                         {
-                            "id": 14690554
+                            "id": 14651539
+                        },
+                        {
+                            "id": 14651540
+                        },
+                        {
+                            "id": 14651541
                         }
                     ]
                 },
                 {
-                    "id": 3527960,
+                    "id": 3517679,
                     "phase": {
-                        "id": 2422853,
-                        "name": "Top48"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14690535
-                        },
-                        {
-                            "id": 14690539
-                        },
-                        {
-                            "id": 14690543
-                        },
-                        {
-                            "id": 14690547
-                        },
-                        {
-                            "id": 14690551
-                        },
-                        {
-                            "id": 14690555
-                        }
-                    ]
-                },
-                {
-                    "id": 3527961,
-                    "phase": {
-                        "id": 2422853,
-                        "name": "Top48"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14690536
-                        },
-                        {
-                            "id": 14690540
-                        },
-                        {
-                            "id": 14690544
-                        },
-                        {
-                            "id": 14690548
-                        },
-                        {
-                            "id": 14690552
-                        },
-                        {
-                            "id": 14690556
-                        }
-                    ]
-                },
-                {
-                    "id": 3527962,
-                    "phase": {
-                        "id": 2422853,
-                        "name": "Top48"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14690537
-                        },
-                        {
-                            "id": 14690541
-                        },
-                        {
-                            "id": 14690545
-                        },
-                        {
-                            "id": 14690549
-                        },
-                        {
-                            "id": 14690553
-                        },
-                        {
-                            "id": 14690557
-                        }
-                    ]
-                },
-                {
-                    "id": 3489147,
-                    "phase": {
-                        "id": 2422882,
-                        "name": "Top24"
+                        "id": 2445327,
+                        "name": "Top 8 (bo5)"
                     },
                     "progressionsOut": null
                 }
@@ -2713,271 +2617,22 @@
             ]
         },
         {
-            "id": 1744754,
-            "name": "Singles Tournament",
-            "slug": "tournament/impact-major-7/event/singles-tournament",
+            "id": 1755068,
+            "name": "SSBU Singles",
+            "slug": "tournament/smash-rose-60/event/ssbu-singles",
             "isOnline": false,
             "state": "COMPLETED",
-            "numEntrants": 169,
+            "numEntrants": 11,
             "videogame": {
                 "id": 1386
             },
             "startAt": 1794614400,
             "phaseGroups": [
                 {
-                    "id": 3514613,
+                    "id": 3530841,
                     "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640786
-                        },
-                        {
-                            "id": 14640794
-                        },
-                        {
-                            "id": 14640802
-                        },
-                        {
-                            "id": 14640810
-                        },
-                        {
-                            "id": 14640818
-                        },
-                        {
-                            "id": 14640826
-                        }
-                    ]
-                },
-                {
-                    "id": 3514614,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640787
-                        },
-                        {
-                            "id": 14640795
-                        },
-                        {
-                            "id": 14640803
-                        },
-                        {
-                            "id": 14640811
-                        },
-                        {
-                            "id": 14640819
-                        },
-                        {
-                            "id": 14640827
-                        }
-                    ]
-                },
-                {
-                    "id": 3514615,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640788
-                        },
-                        {
-                            "id": 14640796
-                        },
-                        {
-                            "id": 14640804
-                        },
-                        {
-                            "id": 14640812
-                        },
-                        {
-                            "id": 14640820
-                        },
-                        {
-                            "id": 14640828
-                        }
-                    ]
-                },
-                {
-                    "id": 3514616,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640789
-                        },
-                        {
-                            "id": 14640797
-                        },
-                        {
-                            "id": 14640805
-                        },
-                        {
-                            "id": 14640813
-                        },
-                        {
-                            "id": 14640821
-                        },
-                        {
-                            "id": 14640829
-                        }
-                    ]
-                },
-                {
-                    "id": 3514617,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640790
-                        },
-                        {
-                            "id": 14640798
-                        },
-                        {
-                            "id": 14640806
-                        },
-                        {
-                            "id": 14640814
-                        },
-                        {
-                            "id": 14640822
-                        },
-                        {
-                            "id": 14640830
-                        }
-                    ]
-                },
-                {
-                    "id": 3514618,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640791
-                        },
-                        {
-                            "id": 14640799
-                        },
-                        {
-                            "id": 14640807
-                        },
-                        {
-                            "id": 14640815
-                        },
-                        {
-                            "id": 14640823
-                        },
-                        {
-                            "id": 14640831
-                        }
-                    ]
-                },
-                {
-                    "id": 3514619,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640792
-                        },
-                        {
-                            "id": 14640800
-                        },
-                        {
-                            "id": 14640808
-                        },
-                        {
-                            "id": 14640816
-                        },
-                        {
-                            "id": 14640824
-                        },
-                        {
-                            "id": 14640832
-                        }
-                    ]
-                },
-                {
-                    "id": 3514620,
-                    "phase": {
-                        "id": 2442896,
-                        "name": "\u4e88\u9078\u30d7\u30fc\u30eb"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640793
-                        },
-                        {
-                            "id": 14640801
-                        },
-                        {
-                            "id": 14640809
-                        },
-                        {
-                            "id": 14640817
-                        },
-                        {
-                            "id": 14640825
-                        },
-                        {
-                            "id": 14640833
-                        }
-                    ]
-                },
-                {
-                    "id": 3514621,
-                    "phase": {
-                        "id": 2442897,
-                        "name": "A\u30af\u30e9\u30b9\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14640834
-                        },
-                        {
-                            "id": 14640835
-                        },
-                        {
-                            "id": 14640836
-                        },
-                        {
-                            "id": 14640837
-                        },
-                        {
-                            "id": 14640838
-                        },
-                        {
-                            "id": 14640839
-                        },
-                        {
-                            "id": 14640840
-                        },
-                        {
-                            "id": 14640841
-                        }
-                    ]
-                },
-                {
-                    "id": 3514622,
-                    "phase": {
-                        "id": 2442898,
-                        "name": "TOP8"
+                        "id": 2455970,
+                        "name": "Bracket"
                     },
                     "progressionsOut": null
                 }
@@ -3061,12 +2716,176 @@
             ]
         },
         {
+            "id": 1717489,
+            "name": "Tournoi 1vs1",
+            "slug": "tournament/42-tournament-22-1/event/tournoi-1vs1",
+            "isOnline": false,
+            "state": "ACTIVE",
+            "numEntrants": 59,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794610800,
+            "phaseGroups": [
+                {
+                    "id": 3469569,
+                    "phase": {
+                        "id": 2407782,
+                        "name": "Tournoi 1vs1"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14654688
+                        },
+                        {
+                            "id": 14654690
+                        },
+                        {
+                            "id": 14654692
+                        },
+                        {
+                            "id": 14654694
+                        },
+                        {
+                            "id": 14654696
+                        },
+                        {
+                            "id": 14654698
+                        },
+                        {
+                            "id": 14654700
+                        },
+                        {
+                            "id": 14654702
+                        }
+                    ]
+                },
+                {
+                    "id": 3519072,
+                    "phase": {
+                        "id": 2407782,
+                        "name": "Tournoi 1vs1"
+                    },
+                    "progressionsOut": [
+                        {
+                            "id": 14654689
+                        },
+                        {
+                            "id": 14654691
+                        },
+                        {
+                            "id": 14654693
+                        },
+                        {
+                            "id": 14654695
+                        },
+                        {
+                            "id": 14654697
+                        },
+                        {
+                            "id": 14654699
+                        },
+                        {
+                            "id": 14654701
+                        },
+                        {
+                            "id": 14654703
+                        }
+                    ]
+                },
+                {
+                    "id": 3469570,
+                    "phase": {
+                        "id": 2407783,
+                        "name": "top 16"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1717491,
+            "name": "Waiting List",
+            "slug": "tournament/42-tournament-22-1/event/waiting-list",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 2,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794654000,
+            "phaseGroups": [
+                {
+                    "id": 3469572,
+                    "phase": {
+                        "id": 2407785,
+                        "name": "Waiting List"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1717490,
+            "name": "Amateur Bracket",
+            "slug": "tournament/42-tournament-22-1/event/amateur-bracket",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 0,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794673800,
+            "phaseGroups": [
+                {
+                    "id": 3469571,
+                    "phase": {
+                        "id": 2407784,
+                        "name": "Rising Stars"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "42 Tournament #22",
+            "tournament_id": 956911,
+            "city": "Renens",
+            "url": "https://smash.gg/tournament/42-tournament-22-1/event/amateur-bracket",
+            "streams": [
+                {
+                    "streamName": "Smash 42"
+                }
+            ],
+            "timezone": "Europe/Zurich",
+            "tournament_startAt": 1794610800,
+            "tournament_endAt": 1794695400,
+            "tournament_registrationClosesAt": 1794612600,
+            "images": [
+                {
+                    "id": "9876967",
+                    "url": "https://images.start.gg/images/tournament/956911/image-280ca7aeb51c0fabce38c516e3190bb8-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "9876968",
+                    "url": "https://images.start.gg/images/tournament/956911/image-a39f6c64bc73e90dfe2ad9dbb5571dbe-optimized.png",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Rue de Lausanne 64, 1020 Renens, Suisse",
+            "tournament_addrState": "VD",
+            "country_code": "CH",
+            "lat": 46.5320986,
+            "lng": 6.5922692
+        },
+        {
             "id": 1687259,
             "name": "Ultimate Singles",
             "slug": "tournament/northern-fights-3/event/ultimate-singles",
             "isOnline": false,
             "state": "ACTIVE",
-            "numEntrants": 43,
+            "numEntrants": 44,
             "videogame": {
                 "id": 1386
             },
@@ -3283,43 +3102,6 @@
             "lng": 5.729351299999999
         },
         {
-            "id": 1755792,
-            "name": "Round Robin",
-            "slug": "tournament/springsspecialbums/event/round-robin",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 7,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794520800,
-            "phaseGroups": [
-                {
-                    "id": 3531944,
-                    "phase": {
-                        "id": 2456911,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14697518
-                        },
-                        {
-                            "id": 14697519
-                        }
-                    ]
-                },
-                {
-                    "id": 3531945,
-                    "phase": {
-                        "id": 2456912,
-                        "name": "Grands"
-                    },
-                    "progressionsOut": null
-                }
-            ]
-        },
-        {
             "id": 1751182,
             "name": "Ultimate Singles",
             "slug": "tournament/gurula-weekly-51/event/ultimate-singles",
@@ -3340,6 +3122,199 @@
                     "progressionsOut": null
                 }
             ]
+        },
+        {
+            "id": 1714707,
+            "name": "Torneo Smash Bros Ultimate",
+            "slug": "tournament/espacio-gaming-season-1/event/torneo-smash-bros-ultimate",
+            "isOnline": false,
+            "state": "COMPLETED",
+            "numEntrants": 8,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1792774800,
+            "phaseGroups": [
+                {
+                    "id": 3465196,
+                    "phase": {
+                        "id": 2404303,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ]
+        },
+        {
+            "id": 1692880,
+            "name": "MAIN: SUPER SMASH BROS. ULTIMATE",
+            "slug": "tournament/bfgl-dna-2026/event/main-super-smash-bros-ultimate",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 12,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1795262400,
+            "phaseGroups": [
+                {
+                    "id": 3428371,
+                    "phase": {
+                        "id": 2376104,
+                        "name": "Bracket"
+                    },
+                    "progressionsOut": null
+                }
+            ],
+            "tournament": "BFGL // DNA 2026",
+            "tournament_id": 941340,
+            "city": "Tallinn",
+            "url": "https://smash.gg/tournament/bfgl-dna-2026/event/main-super-smash-bros-ultimate",
+            "streams": [
+                {
+                    "streamName": "bfgl_main"
+                }
+            ],
+            "timezone": "Europe/Tallinn",
+            "tournament_startAt": 1795165200,
+            "tournament_endAt": 1795377600,
+            "tournament_registrationClosesAt": 1795384500,
+            "images": [
+                {
+                    "id": "9721253",
+                    "url": "https://images.start.gg/images/tournament/941340/image-ac343149bbf95804b005c630d688979e-optimized.png",
+                    "type": "profile"
+                },
+                {
+                    "id": "10041379",
+                    "url": "https://images.start.gg/images/tournament/941340/image-763ebc8bd1f12e5edc14a11984312b15-optimized.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": false,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Ehitajate tee 5, 19086 Tallinn, Estonia",
+            "tournament_addrState": "Harju maakond",
+            "country_code": "EE",
+            "lat": 59.394824,
+            "lng": 24.6715322
+        },
+        {
+            "id": 1736230,
+            "name": "Road To Top Monthly Tournament S16E4",
+            "slug": "tournament/153-1/event/road-to-top-monthly-tournament-s16e4",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 17,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794715200,
+            "phaseGroups": [],
+            "tournament": "\u9f0e\u9014 #153",
+            "tournament_id": 965625,
+            "city": "\u5e7f\u5dde\u5e02",
+            "url": "https://smash.gg/tournament/153-1/event/road-to-top-monthly-tournament-s16e4",
+            "streams": null,
+            "timezone": "Asia/Shanghai",
+            "tournament_startAt": 1794715200,
+            "tournament_endAt": 1794740400,
+            "tournament_registrationClosesAt": 1794740400,
+            "images": [
+                {
+                    "id": "9957142",
+                    "url": "https://images.start.gg/images/tournament/965625/image-9c77a107f9056ef29dbdbbba366830e6-optimized.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "\u4e2d\u56fd\u5e7f\u4e1c\u7701\u5e7f\u5dde\u5e02\u6d77\u73e0\u533a\u6d77\u5370\u5357\u82d12\u53f7 \u90ae\u653f\u7f16\u7801: 510230",
+            "tournament_addrState": "\u5e7f\u4e1c\u7701",
+            "country_code": "CN",
+            "lat": 23.10041,
+            "lng": 113.28628
+        },
+        {
+            "id": 1736228,
+            "name": "Road To Top Newbie Tournament S16E5",
+            "slug": "tournament/153-1/event/road-to-top-newbie-tournament-s16e5",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 9,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794715200,
+            "phaseGroups": [],
+            "tournament": "\u9f0e\u9014 #153",
+            "tournament_id": 965625,
+            "city": "\u5e7f\u5dde\u5e02",
+            "url": "https://smash.gg/tournament/153-1/event/road-to-top-newbie-tournament-s16e5",
+            "streams": null,
+            "timezone": "Asia/Shanghai",
+            "tournament_startAt": 1794715200,
+            "tournament_endAt": 1794740400,
+            "tournament_registrationClosesAt": 1794740400,
+            "images": [
+                {
+                    "id": "9957142",
+                    "url": "https://images.start.gg/images/tournament/965625/image-9c77a107f9056ef29dbdbbba366830e6-optimized.jpg",
+                    "type": "profile"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "\u4e2d\u56fd\u5e7f\u4e1c\u7701\u5e7f\u5dde\u5e02\u6d77\u73e0\u533a\u6d77\u5370\u5357\u82d12\u53f7 \u90ae\u653f\u7f16\u7801: 510230",
+            "tournament_addrState": "\u5e7f\u4e1c\u7701",
+            "country_code": "CN",
+            "lat": 23.10041,
+            "lng": 113.28628
+        },
+        {
+            "id": 1748633,
+            "name": "Amateur Bracket",
+            "slug": "tournament/hyrule-frontiers-kokiri-forest-1/event/amateur-bracket",
+            "isOnline": false,
+            "state": "CREATED",
+            "numEntrants": 28,
+            "videogame": {
+                "id": 1386
+            },
+            "startAt": 1794670200,
+            "phaseGroups": [],
+            "tournament": "Hyrule Frontiers: Kokiri Forest",
+            "tournament_id": 971586,
+            "city": "Vitoria-Gasteiz",
+            "url": "https://smash.gg/tournament/hyrule-frontiers-kokiri-forest-1/event/amateur-bracket",
+            "streams": [
+                {
+                    "streamName": "SmashVitoria"
+                }
+            ],
+            "timezone": "Europe/Madrid",
+            "tournament_startAt": 1794652200,
+            "tournament_endAt": 1794688260,
+            "tournament_registrationClosesAt": 1794601800,
+            "images": [
+                {
+                    "id": "10013478",
+                    "url": "https://images.start.gg/images/tournament/971586/image-f16f06bfdecdf618d05323104393bb03-optimized.jpg",
+                    "type": "profile"
+                },
+                {
+                    "id": "10013489",
+                    "url": "https://images.start.gg/images/tournament/971586/image-598e458c06b598448d512a9f20966c28-optimized.jpg",
+                    "type": "banner"
+                }
+            ],
+            "tournament_multievent": true,
+            "tournament_venueName": null,
+            "tournament_venueAddress": "Urbina Kalea, 21, 01002 Vitoria-Gasteiz, Araba, Espa\u00f1a",
+            "tournament_addrState": "PV",
+            "country_code": "ES",
+            "lat": 42.8534645,
+            "lng": -2.6691909
         },
         {
             "id": 1751030,
@@ -3379,28 +3354,6 @@
             "country_code": "CN",
             "lat": 34.2658138,
             "lng": 108.9540936
-        },
-        {
-            "id": 1751029,
-            "name": "11.7 week",
-            "slug": "tournament/2026-11-1/event/11-7-week",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794065340,
-            "phaseGroups": [
-                {
-                    "id": 3524345,
-                    "phase": {
-                        "id": 2450835,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
         },
         {
             "id": 1751031,
@@ -3518,28 +3471,6 @@
             "country_code": "CN",
             "lat": 34.2658138,
             "lng": 108.9540936
-        },
-        {
-            "id": 1714707,
-            "name": "Torneo Smash Bros Ultimate",
-            "slug": "tournament/espacio-gaming-season-1/event/torneo-smash-bros-ultimate",
-            "isOnline": false,
-            "state": "COMPLETED",
-            "numEntrants": 8,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1792774800,
-            "phaseGroups": [
-                {
-                    "id": 3465196,
-                    "phase": {
-                        "id": 2404303,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ]
         },
         {
             "id": 1752259,
@@ -19671,63 +19602,6 @@
             "lng": 47.9774052
         },
         {
-            "id": 1744910,
-            "name": "Liste d'attente",
-            "slug": "tournament/stepup-4-1/event/liste-d-attente",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 1,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794661200,
-            "phaseGroups": [
-                {
-                    "id": 3514831,
-                    "phase": {
-                        "id": 2443086,
-                        "name": "File"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Stepup #4",
-            "tournament_id": 969848,
-            "city": "Bordeaux",
-            "url": "https://smash.gg/tournament/stepup-4-1/event/liste-d-attente",
-            "streams": [
-                {
-                    "streamName": "asso_grab"
-                },
-                {
-                    "streamName": "murcielago_ssbu"
-                }
-            ],
-            "timezone": "Europe/Paris",
-            "tournament_startAt": 1794661200,
-            "tournament_endAt": 1794682800,
-            "tournament_registrationClosesAt": 1794600000,
-            "images": [
-                {
-                    "id": "9996238",
-                    "url": "https://images.start.gg/images/tournament/969848/image-ab17ce00b1d221a72eae30eb460376b4-optimized.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "10019018",
-                    "url": "https://images.start.gg/images/tournament/969848/image-70ff4eb8000d881f4f646c62dd720ad8-optimized.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
-            "tournament_addrState": "Nouvelle-Aquitaine",
-            "country_code": "FR",
-            "lat": 44.8375555,
-            "lng": -0.5758531
-        },
-        {
             "id": 1755256,
             "name": "Ultimate Singles",
             "slug": "tournament/fired-up-6/event/ultimate-singles",
@@ -20672,228 +20546,6 @@
             "country_code": "BR",
             "lat": -15.7744697,
             "lng": -47.8856512
-        },
-        {
-            "id": 1738971,
-            "name": "SSBU Singles",
-            "slug": "tournament/chop-17/event/ssbu-singles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 21,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3505302,
-                    "phase": {
-                        "id": 2435460,
-                        "name": "Pools (Bo3)"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14614405
-                        },
-                        {
-                            "id": 14614409
-                        }
-                    ]
-                },
-                {
-                    "id": 3505303,
-                    "phase": {
-                        "id": 2435460,
-                        "name": "Pools (Bo3)"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14614406
-                        },
-                        {
-                            "id": 14614410
-                        }
-                    ]
-                },
-                {
-                    "id": 3505304,
-                    "phase": {
-                        "id": 2435460,
-                        "name": "Pools (Bo3)"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14614407
-                        },
-                        {
-                            "id": 14614411
-                        }
-                    ]
-                },
-                {
-                    "id": 3505305,
-                    "phase": {
-                        "id": 2435460,
-                        "name": "Pools (Bo3)"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14614408
-                        },
-                        {
-                            "id": 14614412
-                        }
-                    ]
-                },
-                {
-                    "id": 3505306,
-                    "phase": {
-                        "id": 2435461,
-                        "name": "Bracket (Bo5)"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "CHOP. 17",
-            "tournament_id": 966979,
-            "city": "Graz",
-            "url": "https://smash.gg/tournament/chop-17/event/ssbu-singles",
-            "streams": [
-                {
-                    "streamName": "haseh"
-                }
-            ],
-            "timezone": "Europe/Vienna",
-            "tournament_startAt": 1794650400,
-            "tournament_endAt": 1794693600,
-            "tournament_registrationClosesAt": 1794690000,
-            "images": [
-                {
-                    "id": "9969636",
-                    "url": "https://images.start.gg/images/tournament/966979/image-d288d92bbfb3ef9d780691142b1804aa-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9969637",
-                    "url": "https://images.start.gg/images/tournament/966979/image-f7bcf563c487ff3e39382069acb1dc41-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Eggenberger Allee 31, 8020 Graz, \u00d6sterreich",
-            "tournament_addrState": "Steiermark",
-            "country_code": "AT",
-            "lat": 47.0698599,
-            "lng": 15.4047514
-        },
-        {
-            "id": 1738977,
-            "name": "SSBU Opferbracket",
-            "slug": "tournament/chop-17/event/ssbu-opferbracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794650400,
-            "phaseGroups": [
-                {
-                    "id": 3505313,
-                    "phase": {
-                        "id": 2435468,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "CHOP. 17",
-            "tournament_id": 966979,
-            "city": "Graz",
-            "url": "https://smash.gg/tournament/chop-17/event/ssbu-opferbracket",
-            "streams": [
-                {
-                    "streamName": "haseh"
-                }
-            ],
-            "timezone": "Europe/Vienna",
-            "tournament_startAt": 1794650400,
-            "tournament_endAt": 1794693600,
-            "tournament_registrationClosesAt": 1794690000,
-            "images": [
-                {
-                    "id": "9969636",
-                    "url": "https://images.start.gg/images/tournament/966979/image-d288d92bbfb3ef9d780691142b1804aa-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9969637",
-                    "url": "https://images.start.gg/images/tournament/966979/image-f7bcf563c487ff3e39382069acb1dc41-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Eggenberger Allee 31, 8020 Graz, \u00d6sterreich",
-            "tournament_addrState": "Steiermark",
-            "country_code": "AT",
-            "lat": 47.0698599,
-            "lng": 15.4047514
-        },
-        {
-            "id": 1738974,
-            "name": "SSBU Doubles",
-            "slug": "tournament/chop-17/event/ssbu-doubles",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 4,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794675600,
-            "phaseGroups": [
-                {
-                    "id": 3505310,
-                    "phase": {
-                        "id": 2435465,
-                        "name": "SSBU Doubes"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "CHOP. 17",
-            "tournament_id": 966979,
-            "city": "Graz",
-            "url": "https://smash.gg/tournament/chop-17/event/ssbu-doubles",
-            "streams": [
-                {
-                    "streamName": "haseh"
-                }
-            ],
-            "timezone": "Europe/Vienna",
-            "tournament_startAt": 1794650400,
-            "tournament_endAt": 1794693600,
-            "tournament_registrationClosesAt": 1794690000,
-            "images": [
-                {
-                    "id": "9969636",
-                    "url": "https://images.start.gg/images/tournament/966979/image-d288d92bbfb3ef9d780691142b1804aa-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9969637",
-                    "url": "https://images.start.gg/images/tournament/966979/image-f7bcf563c487ff3e39382069acb1dc41-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Eggenberger Allee 31, 8020 Graz, \u00d6sterreich",
-            "tournament_addrState": "Steiermark",
-            "country_code": "AT",
-            "lat": 47.0698599,
-            "lng": 15.4047514
         },
         {
             "id": 1746799,
@@ -36474,120 +36126,6 @@
             "country_code": "GB",
             "lat": 51.3782228,
             "lng": -2.3263987
-        },
-        {
-            "id": 1569406,
-            "name": "Ultimate Singles (1v1)",
-            "slug": "tournament/town-and-z-ri-monthly-12/event/ultimate-singles-1v1",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 15,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794657600,
-            "phaseGroups": [
-                {
-                    "id": 3217514,
-                    "phase": {
-                        "id": 2215686,
-                        "name": "Main Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Town and Z\u00fcri (Monthly) #12",
-            "tournament_id": 885294,
-            "city": "Z\u00fcrich",
-            "url": "https://smash.gg/tournament/town-and-z-ri-monthly-12/event/ultimate-singles-1v1",
-            "streams": [
-                {
-                    "streamName": "sbzofficial"
-                },
-                {
-                    "streamName": "marchmarmots"
-                }
-            ],
-            "timezone": "Europe/Zurich",
-            "tournament_startAt": 1794657600,
-            "tournament_endAt": 1794681000,
-            "tournament_registrationClosesAt": 1794653760,
-            "images": [
-                {
-                    "id": "9182215",
-                    "url": "https://images.start.gg/images/tournament/885294/image-6cb03c5a98451fce86092ff01b28f61a-optimized.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "9182216",
-                    "url": "https://images.start.gg/images/tournament/885294/image-a852de7623e893815164bb82f84b7052-optimized.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "8001 Z\u00fcrich, Schweiz",
-            "tournament_addrState": "ZH",
-            "country_code": "CH",
-            "lat": 47.3765624,
-            "lng": 8.5464069
-        },
-        {
-            "id": 1569407,
-            "name": "Amateur Bracket",
-            "slug": "tournament/town-and-z-ri-monthly-12/event/amateur-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 5,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794664800,
-            "phaseGroups": [
-                {
-                    "id": 3217515,
-                    "phase": {
-                        "id": 2215687,
-                        "name": "Amateur Bracket"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Town and Z\u00fcri (Monthly) #12",
-            "tournament_id": 885294,
-            "city": "Z\u00fcrich",
-            "url": "https://smash.gg/tournament/town-and-z-ri-monthly-12/event/amateur-bracket",
-            "streams": [
-                {
-                    "streamName": "sbzofficial"
-                },
-                {
-                    "streamName": "marchmarmots"
-                }
-            ],
-            "timezone": "Europe/Zurich",
-            "tournament_startAt": 1794657600,
-            "tournament_endAt": 1794681000,
-            "tournament_registrationClosesAt": 1794653760,
-            "images": [
-                {
-                    "id": "9182215",
-                    "url": "https://images.start.gg/images/tournament/885294/image-6cb03c5a98451fce86092ff01b28f61a-optimized.png",
-                    "type": "banner"
-                },
-                {
-                    "id": "9182216",
-                    "url": "https://images.start.gg/images/tournament/885294/image-a852de7623e893815164bb82f84b7052-optimized.jpg",
-                    "type": "profile"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "8001 Z\u00fcrich, Schweiz",
-            "tournament_addrState": "ZH",
-            "country_code": "CH",
-            "lat": 47.3765624,
-            "lng": 8.5464069
         },
         {
             "id": 1754734,
@@ -64153,89 +63691,6 @@
             "lng": -81.249965
         },
         {
-            "id": 1712932,
-            "name": "Smash Challenger Series #7",
-            "slug": "tournament/pixel-palooza/event/smash-challenger-series-7",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 25,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794668400,
-            "phaseGroups": [
-                {
-                    "id": 3470766,
-                    "phase": {
-                        "id": 2408701,
-                        "name": "Top 64"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14642701
-                        },
-                        {
-                            "id": 14642702
-                        },
-                        {
-                            "id": 14642703
-                        },
-                        {
-                            "id": 14642704
-                        },
-                        {
-                            "id": 14642705
-                        },
-                        {
-                            "id": 14642706
-                        },
-                        {
-                            "id": 14642707
-                        },
-                        {
-                            "id": 14642708
-                        }
-                    ]
-                },
-                {
-                    "id": 3470767,
-                    "phase": {
-                        "id": 2408702,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "Pixel Palooza",
-            "tournament_id": 954680,
-            "city": "Puerto Ordaz",
-            "url": "https://smash.gg/tournament/pixel-palooza/event/smash-challenger-series-7",
-            "streams": null,
-            "timezone": "America/Caracas",
-            "tournament_startAt": 1794661200,
-            "tournament_endAt": 1794693600,
-            "tournament_registrationClosesAt": 1794715140,
-            "images": [
-                {
-                    "id": "9855825",
-                    "url": "https://images.start.gg/images/tournament/954680/image-f66fdff2c712678eea7555a28121ff99-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9952836",
-                    "url": "https://images.start.gg/images/tournament/954680/image-2b3c20baaf6cbf3da7ace6b53acbe1ef-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": false,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "C. C. Ciudad Altavista II piso 2 local 28, Altavista., Puerto Ordaz 8050, Bol\u00edvar, Venezuela",
-            "tournament_addrState": "Bol\u00edvar",
-            "country_code": "VE",
-            "lat": 8.293262,
-            "lng": -62.73653499999999
-        },
-        {
             "id": 1751251,
             "name": "Ultimate Singles [SAMSTAG]",
             "slug": "tournament/dust-13-jeopardy/event/ultimate-singles-samstag",
@@ -78924,218 +78379,6 @@
             "country_code": "FR",
             "lat": 50.7236509,
             "lng": 1.6195777
-        },
-        {
-            "id": 1745061,
-            "name": "StepUp 1V1",
-            "slug": "tournament/stepup-5/event/stepup-1v1",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1796475600,
-            "phaseGroups": [
-                {
-                    "id": 3515099,
-                    "phase": {
-                        "id": 2443276,
-                        "name": "Bracket"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14642692
-                        },
-                        {
-                            "id": 14642693
-                        },
-                        {
-                            "id": 14642694
-                        },
-                        {
-                            "id": 14642695
-                        },
-                        {
-                            "id": 14642696
-                        },
-                        {
-                            "id": 14642697
-                        },
-                        {
-                            "id": 14642698
-                        },
-                        {
-                            "id": 14642699
-                        }
-                    ]
-                },
-                {
-                    "id": 3515100,
-                    "phase": {
-                        "id": 2443277,
-                        "name": "Top 8"
-                    },
-                    "progressionsOut": null
-                },
-                {
-                    "id": 3515101,
-                    "phase": {
-                        "id": 2443278,
-                        "name": "Ladder"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "StepUp #5",
-            "tournament_id": 969918,
-            "city": "Bordeaux",
-            "url": "https://smash.gg/tournament/stepup-5/event/stepup-1v1",
-            "streams": [
-                {
-                    "streamName": "asso_grab"
-                },
-                {
-                    "streamName": "murcielago_ssbu"
-                }
-            ],
-            "timezone": "Europe/Paris",
-            "tournament_startAt": 1797080400,
-            "tournament_endAt": 1797102000,
-            "tournament_registrationClosesAt": 1797080400,
-            "images": [
-                {
-                    "id": "9996889",
-                    "url": "https://images.start.gg/images/tournament/969918/image-0ff0964a9b0323968eeb7323b6629ad8-optimized.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "9996890",
-                    "url": "https://images.start.gg/images/tournament/969918/image-ae0f5c33bc2ce4d17081ce81aa5798c1-optimized.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
-            "tournament_addrState": "Nouvelle-Aquitaine",
-            "country_code": "FR",
-            "lat": 44.8375555,
-            "lng": -0.5758531
-        },
-        {
-            "id": 1745063,
-            "name": "Ladder 1v1",
-            "slug": "tournament/stepup-5/event/ladder-1v1",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1796482800,
-            "phaseGroups": [
-                {
-                    "id": 3515103,
-                    "phase": {
-                        "id": 2443280,
-                        "name": "Ladder"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "StepUp #5",
-            "tournament_id": 969918,
-            "city": "Bordeaux",
-            "url": "https://smash.gg/tournament/stepup-5/event/ladder-1v1",
-            "streams": [
-                {
-                    "streamName": "asso_grab"
-                },
-                {
-                    "streamName": "murcielago_ssbu"
-                }
-            ],
-            "timezone": "Europe/Paris",
-            "tournament_startAt": 1797080400,
-            "tournament_endAt": 1797102000,
-            "tournament_registrationClosesAt": 1797080400,
-            "images": [
-                {
-                    "id": "9996889",
-                    "url": "https://images.start.gg/images/tournament/969918/image-0ff0964a9b0323968eeb7323b6629ad8-optimized.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "9996890",
-                    "url": "https://images.start.gg/images/tournament/969918/image-ae0f5c33bc2ce4d17081ce81aa5798c1-optimized.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
-            "tournament_addrState": "Nouvelle-Aquitaine",
-            "country_code": "FR",
-            "lat": 44.8375555,
-            "lng": -0.5758531
-        },
-        {
-            "id": 1745062,
-            "name": "Liste d'attente",
-            "slug": "tournament/stepup-5/event/liste-d-attente",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1797080400,
-            "phaseGroups": [
-                {
-                    "id": 3515102,
-                    "phase": {
-                        "id": 2443279,
-                        "name": "File"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "StepUp #5",
-            "tournament_id": 969918,
-            "city": "Bordeaux",
-            "url": "https://smash.gg/tournament/stepup-5/event/liste-d-attente",
-            "streams": [
-                {
-                    "streamName": "asso_grab"
-                },
-                {
-                    "streamName": "murcielago_ssbu"
-                }
-            ],
-            "timezone": "Europe/Paris",
-            "tournament_startAt": 1797080400,
-            "tournament_endAt": 1797102000,
-            "tournament_registrationClosesAt": 1797080400,
-            "images": [
-                {
-                    "id": "9996889",
-                    "url": "https://images.start.gg/images/tournament/969918/image-0ff0964a9b0323968eeb7323b6629ad8-optimized.jpg",
-                    "type": "profile"
-                },
-                {
-                    "id": "9996890",
-                    "url": "https://images.start.gg/images/tournament/969918/image-ae0f5c33bc2ce4d17081ce81aa5798c1-optimized.jpg",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "125 Cr d'Alsace-et-Lorraine, 33000 Bordeaux, France",
-            "tournament_addrState": "Nouvelle-Aquitaine",
-            "country_code": "FR",
-            "lat": 44.8375555,
-            "lng": -0.5758531
         },
         {
             "id": 1748465,
@@ -111629,225 +110872,6 @@
             "country_code": "MH",
             "lat": 8.7406075,
             "lng": 167.7369819
-        },
-        {
-            "id": 1717489,
-            "name": "Tournoi 1vs1",
-            "slug": "tournament/42-tournament-22-1/event/tournoi-1vs1",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 11,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794610800,
-            "phaseGroups": [
-                {
-                    "id": 3469569,
-                    "phase": {
-                        "id": 2407782,
-                        "name": "Tournoi 1vs1"
-                    },
-                    "progressionsOut": [
-                        {
-                            "id": 14491990
-                        },
-                        {
-                            "id": 14491991
-                        },
-                        {
-                            "id": 14491992
-                        },
-                        {
-                            "id": 14491993
-                        },
-                        {
-                            "id": 14491994
-                        },
-                        {
-                            "id": 14491995
-                        },
-                        {
-                            "id": 14491996
-                        },
-                        {
-                            "id": 14491997
-                        },
-                        {
-                            "id": 14491998
-                        },
-                        {
-                            "id": 14491999
-                        },
-                        {
-                            "id": 14492000
-                        },
-                        {
-                            "id": 14492001
-                        },
-                        {
-                            "id": 14492002
-                        },
-                        {
-                            "id": 14492003
-                        },
-                        {
-                            "id": 14492004
-                        },
-                        {
-                            "id": 14492005
-                        }
-                    ]
-                },
-                {
-                    "id": 3469570,
-                    "phase": {
-                        "id": 2407783,
-                        "name": "top 16"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "42 Tournament #22",
-            "tournament_id": 956911,
-            "city": "Renens",
-            "url": "https://smash.gg/tournament/42-tournament-22-1/event/tournoi-1vs1",
-            "streams": [
-                {
-                    "streamName": "Smash 42"
-                }
-            ],
-            "timezone": "Europe/Zurich",
-            "tournament_startAt": 1794610800,
-            "tournament_endAt": 1794695400,
-            "tournament_registrationClosesAt": 1794612600,
-            "images": [
-                {
-                    "id": "9876967",
-                    "url": "https://images.start.gg/images/tournament/956911/image-280ca7aeb51c0fabce38c516e3190bb8-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9876968",
-                    "url": "https://images.start.gg/images/tournament/956911/image-a39f6c64bc73e90dfe2ad9dbb5571dbe-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Rue de Lausanne 64, 1020 Renens, Suisse",
-            "tournament_addrState": "VD",
-            "country_code": "CH",
-            "lat": 46.5320986,
-            "lng": 6.5922692
-        },
-        {
-            "id": 1717491,
-            "name": "Waiting List",
-            "slug": "tournament/42-tournament-22-1/event/waiting-list",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794654000,
-            "phaseGroups": [
-                {
-                    "id": 3469572,
-                    "phase": {
-                        "id": 2407785,
-                        "name": "Waiting List"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "42 Tournament #22",
-            "tournament_id": 956911,
-            "city": "Renens",
-            "url": "https://smash.gg/tournament/42-tournament-22-1/event/waiting-list",
-            "streams": [
-                {
-                    "streamName": "Smash 42"
-                }
-            ],
-            "timezone": "Europe/Zurich",
-            "tournament_startAt": 1794610800,
-            "tournament_endAt": 1794695400,
-            "tournament_registrationClosesAt": 1794612600,
-            "images": [
-                {
-                    "id": "9876967",
-                    "url": "https://images.start.gg/images/tournament/956911/image-280ca7aeb51c0fabce38c516e3190bb8-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9876968",
-                    "url": "https://images.start.gg/images/tournament/956911/image-a39f6c64bc73e90dfe2ad9dbb5571dbe-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Rue de Lausanne 64, 1020 Renens, Suisse",
-            "tournament_addrState": "VD",
-            "country_code": "CH",
-            "lat": 46.5320986,
-            "lng": 6.5922692
-        },
-        {
-            "id": 1717490,
-            "name": "Amateur Bracket",
-            "slug": "tournament/42-tournament-22-1/event/amateur-bracket",
-            "isOnline": false,
-            "state": "CREATED",
-            "numEntrants": 0,
-            "videogame": {
-                "id": 1386
-            },
-            "startAt": 1794673800,
-            "phaseGroups": [
-                {
-                    "id": 3469571,
-                    "phase": {
-                        "id": 2407784,
-                        "name": "Rising Stars"
-                    },
-                    "progressionsOut": null
-                }
-            ],
-            "tournament": "42 Tournament #22",
-            "tournament_id": 956911,
-            "city": "Renens",
-            "url": "https://smash.gg/tournament/42-tournament-22-1/event/amateur-bracket",
-            "streams": [
-                {
-                    "streamName": "Smash 42"
-                }
-            ],
-            "timezone": "Europe/Zurich",
-            "tournament_startAt": 1794610800,
-            "tournament_endAt": 1794695400,
-            "tournament_registrationClosesAt": 1794612600,
-            "images": [
-                {
-                    "id": "9876967",
-                    "url": "https://images.start.gg/images/tournament/956911/image-280ca7aeb51c0fabce38c516e3190bb8-optimized.png",
-                    "type": "profile"
-                },
-                {
-                    "id": "9876968",
-                    "url": "https://images.start.gg/images/tournament/956911/image-a39f6c64bc73e90dfe2ad9dbb5571dbe-optimized.png",
-                    "type": "banner"
-                }
-            ],
-            "tournament_multievent": true,
-            "tournament_venueName": null,
-            "tournament_venueAddress": "Rue de Lausanne 64, 1020 Renens, Suisse",
-            "tournament_addrState": "VD",
-            "country_code": "CH",
-            "lat": 46.5320986,
-            "lng": 6.5922692
         },
         {
             "id": 1726105,
